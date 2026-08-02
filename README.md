@@ -82,6 +82,29 @@ python3 mqa_monitor.py --catalog dados-gov-pt        # altro catalogo
 
 Al primo run non c'è confronto: quello snapshot è la baseline.
 
+## Pagina pubblica
+
+`build_site.py` ricostruisce la serie storica e genera i dati della pagina:
+
+```bash
+python3 build_site.py --catalog dati-gov-it
+```
+
+Produce `mqa/storico.csv` (una riga per ente per rilevazione, per analisi offline)
+e `docs/data.json`, letto da `docs/index.html`.
+
+Lo storico non viene appeso ma **ricalcolato** ogni volta a partire dagli snapshot
+in `mqa/dataset/`: un run ripetuto o fallito non lascia righe duplicate, e
+cancellare uno snapshot lo toglie anche dallo storico.
+
+Per pubblicarla: *Settings -> Pages -> Source: Deploy from a branch -> `main` /
+`docs`*. Per vederla in locale serve un server HTTP, perche la pagina carica
+`data.json` via fetch:
+
+```bash
+cd docs && python3 -m http.server
+```
+
 ## Automazione
 
 `.github/workflows/mqa-weekly.yml` gira ogni domenica alle 10:00 UTC

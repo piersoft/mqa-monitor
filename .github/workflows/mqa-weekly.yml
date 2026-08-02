@@ -58,6 +58,9 @@ jobs:
           echo "day=$DAY" >> "$GITHUB_OUTPUT"
           echo "report=mqa/report_${CATALOG}_${GROUP_BY}_${DAY}.md" >> "$GITHUB_OUTPUT"
 
+      - name: Ricostruisci storico e pagina pubblica
+        run: python3 build_site.py --catalog "${{ inputs.catalog || 'dati-gov-it' }}"
+
       - name: Riepilogo nel job summary
         run: cat "${{ steps.run.outputs.report }}" >> "$GITHUB_STEP_SUMMARY"
 
@@ -65,7 +68,7 @@ jobs:
         run: |
           git config user.name "mqa-bot"
           git config user.email "actions@github.com"
-          git add mqa
+          git add mqa docs
           git diff --staged --quiet || git commit -m "MQA snapshot ${{ steps.run.outputs.day }}"
           git push
 

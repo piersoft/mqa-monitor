@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qualità dei metadati — rilevazione settimanale</title>
+<meta name="description" content="Andamento settimanale del punteggio MQA di data.europa.eu per gli enti che pubblicano su dati.gov.it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --carta:#edf0f2; --carta-alta:#f7f9fa; --inchiostro:#17252f; --tenue:#6b7c87;
+  --riga:#ccd6dc; --riga-forte:#9fb0ba;
+  --su:#146b58; --giu:#a63e28; --fermo:#8595a0;
+  --eccellente:#146b58; --buono:#4b7f57; --sufficiente:#9a7328; --scarso:#a63e28;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --condensato:"IBM Plex Sans Condensed",system-ui,sans-serif;
+  --testo:"IBM Plex Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--carta);color:var(--inchiostro);
+  font-family:var(--testo);font-size:15px;line-height:1.5;
+}
+.involucro{max-width:1160px;margin:0 auto;padding:0 20px 80px}
+
+/* ---------- testata ---------- */
+header{padding:44px 0 28px;border-bottom:2px solid var(--inchiostro)}
+.occhiello{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--tenue);margin:0 0 10px
+}
+h1{
+  font-family:var(--condensato);font-weight:700;font-size:clamp(30px,5vw,52px);
+  line-height:1.02;letter-spacing:-.015em;margin:0;max-width:16ch
+}
+.sottotitolo{margin:14px 0 0;max-width:56ch;color:#3d4d57}
+.misure{
+  display:flex;flex-wrap:wrap;gap:34px;margin-top:30px;
+  padding-top:22px;border-top:1px solid var(--riga)
+}
+.misura .valore{
+  font-family:var(--mono);font-size:26px;font-weight:600;
+  font-variant-numeric:tabular-nums;line-height:1
+}
+.misura .etichetta{
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--tenue);margin-top:7px
+}
+
+/* ---------- andamento del catalogo ---------- */
+.andamento{margin:34px 0 0;padding:20px 22px;background:var(--carta-alta);border:1px solid var(--riga)}
+.andamento h2{font-family:var(--condensato);font-size:15px;font-weight:600;margin:0 0 14px;letter-spacing:.01em}
+.andamento svg{display:block;width:100%;height:96px;overflow:visible}
+
+/* ---------- controlli ---------- */
+.controlli{
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+  margin:34px 0 0;padding-bottom:14px;border-bottom:1px solid var(--riga)
+}
+input[type=search],select{
+  font-family:var(--testo);font-size:14px;color:var(--inchiostro);
+  background:#fff;border:1px solid var(--riga-forte);border-radius:0;
+  padding:9px 12px;min-height:40px
+}
+input[type=search]{flex:1 1 250px}
+input[type=search]:focus-visible,select:focus-visible,tr.ente:focus-visible{
+  outline:2px solid var(--inchiostro);outline-offset:1px
+}
+.conteggio{font-family:var(--mono);font-size:12px;color:var(--tenue);margin-left:auto}
+
+/* ---------- tabella ---------- */
+table{width:100%;border-collapse:collapse;margin-top:2px}
+thead th{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--tenue);font-weight:500;text-align:left;padding:14px 10px 10px;
+  border-bottom:1px solid var(--riga-forte);white-space:nowrap
+}
+th.num,td.num{text-align:right;font-variant-numeric:tabular-nums}
+tbody td{padding:11px 10px;border-bottom:1px solid var(--riga);vertical-align:middle}
+tr.ente{cursor:pointer}
+tr.ente:hover td{background:var(--carta-alta)}
+.nome{font-family:var(--condensato);font-size:16.5px;font-weight:500;letter-spacing:.005em}
+.slug{font-family:var(--mono);font-size:10.5px;color:var(--tenue);margin-top:2px}
+.punteggio{font-family:var(--mono);font-size:16px;font-weight:600;font-variant-numeric:tabular-nums}
+.conta{font-family:var(--mono);font-size:13.5px;color:#46565f;font-variant-numeric:tabular-nums}
+.delta{font-family:var(--mono);font-size:13.5px;font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
+.delta.su{color:var(--su)}
+.delta.giu{color:var(--giu)}
+.delta.fermo{color:var(--fermo)}
+.giudizio{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;
+  padding:3px 8px;border:1px solid currentColor;white-space:nowrap
+}
+.giudizio.Excellent{color:var(--eccellente)}
+.giudizio.Good{color:var(--buono)}
+.giudizio.Sufficient{color:var(--sufficiente)}
+.giudizio.Bad{color:var(--scarso)}
+
+/* ---------- tracciato: l'elemento firma ---------- */
+.tracciato{width:132px;height:34px;display:block}
+.tracciato .riferimento{stroke:var(--riga-forte);stroke-width:1;stroke-dasharray:2 3}
+.tracciato .percorso{fill:none;stroke:var(--inchiostro);stroke-width:1.6;
+  stroke-linejoin:round;stroke-linecap:round}
+.tracciato .capo{fill:var(--inchiostro)}
+.unica{font-family:var(--mono);font-size:10.5px;color:var(--tenue)}
+
+/* ---------- dettaglio ---------- */
+tr.dettaglio td{background:var(--carta-alta);padding:20px 10px 26px}
+.dettaglio-corpo{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start}
+.dettaglio-corpo svg{width:min(100%,540px);height:150px;overflow:visible}
+.rilevazioni{font-family:var(--mono);font-size:12.5px;border-collapse:collapse}
+.rilevazioni th{text-align:left;color:var(--tenue);font-weight:500;padding:0 18px 6px 0}
+.rilevazioni td{padding:3px 18px 3px 0;border:0;font-variant-numeric:tabular-nums}
+.assente{padding:40px 0;color:var(--tenue);font-family:var(--mono);font-size:13px}
+.asse{font-family:var(--mono);font-size:10px;fill:var(--tenue)}
+.linea-asse{stroke:var(--riga);stroke-width:1}
+.serie{fill:none;stroke:var(--inchiostro);stroke-width:1.5}
+.punto{fill:var(--inchiostro)}
+
+footer{
+  margin-top:52px;padding-top:20px;border-top:1px solid var(--riga);
+  font-size:13px;color:var(--tenue);max-width:70ch
+}
+footer a{color:inherit}
+
+@media (max-width:780px){
+  .nascondi-stretto{display:none}
+  .misure{gap:24px}
+  header{padding-top:30px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="involucro">
+
+<header>
+  <p class="occhiello">Rilevazione settimanale · <span id="catalogo">—</span></p>
+  <h1>Qualità dei metadati, ente per ente</h1>
+  <p class="sottotitolo">
+    Punteggio MQA assegnato da data.europa.eu ai dataset pubblicati su dati.gov.it,
+    aggregato per ente titolare del catalogo di origine. Ogni domenica una nuova misura.
+  </p>
+  <div class="misure">
+    <div class="misura"><div class="valore" id="m-enti">—</div><div class="etichetta">Enti</div></div>
+    <div class="misura"><div class="valore" id="m-dataset">—</div><div class="etichetta">Dataset misurati</div></div>
+    <div class="misura"><div class="valore" id="m-media">—</div><div class="etichetta">Media catalogo</div></div>
+    <div class="misura"><div class="valore" id="m-data">—</div><div class="etichetta">Ultima rilevazione</div></div>
+  </div>
+</header>
+
+<section class="andamento" id="blocco-andamento" hidden>
+  <h2>Andamento del catalogo</h2>
+  <svg id="grafico-catalogo" role="img" aria-label="Andamento della media del catalogo nel tempo"></svg>
+</section>
+
+<div class="controlli">
+  <input type="search" id="cerca" placeholder="Cerca un ente" aria-label="Cerca un ente">
+  <select id="ordina" aria-label="Ordinamento">
+    <option value="media-desc">Punteggio, dal più alto</option>
+    <option value="media-asc">Punteggio, dal più basso</option>
+    <option value="delta-asc">Chi scende di più</option>
+    <option value="delta-desc">Chi sale di più</option>
+    <option value="n-desc">Numero di dataset</option>
+    <option value="nome-asc">Nome</option>
+  </select>
+  <select id="filtro" aria-label="Filtro per giudizio">
+    <option value="">Tutti i giudizi</option>
+    <option value="Excellent">Excellent</option>
+    <option value="Good">Good</option>
+    <option value="Sufficient">Sufficient</option>
+    <option value="Bad">Bad</option>
+  </select>
+  <span class="conteggio" id="conteggio"></span>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Ente</th>
+      <th scope="col" class="num">Dataset</th>
+      <th scope="col" class="num">Punteggio</th>
+      <th scope="col" class="num">Settimana</th>
+      <th scope="col" class="nascondi-stretto">Andamento</th>
+      <th scope="col" class="nascondi-stretto">Giudizio</th>
+    </tr>
+  </thead>
+  <tbody id="corpo"></tbody>
+</table>
+
+<footer>
+  <p>Il tracciato in tabella mostra la forma del movimento, con la scala adattata al
+  singolo ente: la linea tratteggiata è la prima misura disponibile, quindi sopra la
+  linea l’ente ha guadagnato, sotto ha perso. Per i valori assoluti, apri la riga.</p>
+  <p id="nota-fonte">Fonte: data.europa.eu (Metadata Quality Assessment), scala 0–405.
+  Giudizi: Excellent ≥ 351, Good ≥ 221, Sufficient ≥ 121, Bad sotto 121.</p>
+  <p>Gli enti sono identificati dall’organizzazione del catalogo di origine, non da
+  <code>dct:publisher</code>. Dati e codice: <a id="link-repo" href="./">repository</a>.</p>
+</footer>
+
+</div>
+
+<script>
+const MAX = 405;
+let DATI = null, DATE = [];
+
+const nf1 = new Intl.NumberFormat('it-IT', {minimumFractionDigits:1, maximumFractionDigits:1});
+const nf0 = new Intl.NumberFormat('it-IT');
+
+function dataBreve(iso){
+  const [a,m,g] = iso.split('-');
+  return g + '/' + m;
+}
+
+/* Tracciato: la forma del movimento dell'ente, con la linea tratteggiata
+   fissata sulla prima misura disponibile. Sopra la linea ha guadagnato,
+   sotto ha perso. Il valore assoluto sta gia' nella colonna Punteggio. */
+function tracciato(serie){
+  const L = 132, A = 34, pad = 5;
+  if (serie.length < 2) return '<span class="unica">prima misura</span>';
+  const n = DATE.length;
+  const x = i => n < 2 ? L/2 : pad + (L - pad*2) * (i / (n - 1));
+  const vals = serie.map(p => p[1]);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  if (hi - lo < 4){ const c = (hi+lo)/2; lo = c - 2; hi = c + 2; }
+  const m = (hi - lo) * 0.22;
+  lo -= m; hi += m;
+  const y = v => A - pad - (A - pad*2) * ((v - lo) / (hi - lo));
+  const base = y(vals[0]);
+  let s = `<svg class="tracciato" viewBox="0 0 ${L} ${A}" role="img" aria-label="Andamento delle rilevazioni">`;
+  s += `<line class="riferimento" x1="0" y1="${base}" x2="${L}" y2="${base}"/>`;
+  s += `<polyline class="percorso" points="${serie.map(p=>`${x(p[0])},${y(p[1])}`).join(' ')}"/>`;
+  const u = serie[serie.length-1];
+  s += `<circle class="capo" cx="${x(u[0])}" cy="${y(u[1])}" r="2.6"/>`;
+  return s + '</svg>';
+}
+
+function segnoDelta(d){
+  if (d === null || d === undefined) return '<span class="delta fermo">—</span>';
+  if (Math.abs(d) < 0.05) return '<span class="delta fermo">invariato</span>';
+  const cls = d > 0 ? 'su' : 'giu';
+  const seg = d > 0 ? '▲' : '▼';
+  return `<span class="delta ${cls}">${seg} ${nf1.format(Math.abs(d))}</span>`;
+}
+
+function graficoGrande(serie, L, A){
+  L = L || 540; A = A || 150;
+  const sx = 40, dx = 12, su = 12, giu = 26;
+  if (!serie.length) return '';
+  const n = DATE.length;
+  const x = i => n < 2 ? sx + (L-sx-dx)/2 : sx + (L-sx-dx) * (i/(n-1));
+  const vals = serie.map(p => p[1]);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  if (hi - lo < 20){ const c=(hi+lo)/2; lo = Math.max(0, c-10); hi = Math.min(MAX, c+10); }
+  const m = (hi - lo) * 0.15;
+  lo = Math.max(0, lo - m); hi = Math.min(MAX, hi + m);
+  const y = v => A - giu - (A-su-giu) * ((v - lo) / (hi - lo || 1));
+  let s = `<svg viewBox="0 0 ${L} ${A}" role="img" aria-label="Serie storica del punteggio">`;
+  [lo, (lo+hi)/2, hi].forEach(v => {
+    s += `<line class="linea-asse" x1="${sx}" y1="${y(v)}" x2="${L-dx}" y2="${y(v)}"/>`;
+    s += `<text class="asse" x="${sx-8}" y="${y(v)+3.5}" text-anchor="end">${nf0.format(Math.round(v))}</text>`;
+  });
+  s += `<polyline class="serie" points="${serie.map(p=>`${x(p[0])},${y(p[1])}`).join(' ')}"/>`;
+  serie.forEach(p => {
+    s += `<circle class="punto" cx="${x(p[0])}" cy="${y(p[1])}" r="2.5"/>`;
+    s += `<text class="asse" x="${x(p[0])}" y="${A-8}" text-anchor="middle">${dataBreve(DATE[p[0]])}</text>`;
+  });
+  return s + '</svg>';
+}
+
+function graficoCatalogo(){
+  const serie = DATI.serie_catalogo.map((v,i) => [i, v]);
+  if (serie.length < 2) return;
+  document.getElementById('blocco-andamento').hidden = false;
+  const el = document.getElementById('grafico-catalogo');
+  el.outerHTML = graficoGrande(serie, 1120, 190)
+    .replace('<svg ', '<svg id="grafico-catalogo" ');
+}
+
+function riga(e, i){
+  return `<tr class="ente" tabindex="0" data-i="${i}" aria-expanded="false">
+    <td><div class="nome">${e.nome}</div><div class="slug">${e.slug || e.id}</div></td>
+    <td class="num conta">${nf0.format(e.n)}</td>
+    <td class="num punteggio">${nf1.format(e.media)}</td>
+    <td class="num">${segnoDelta(e.delta)}</td>
+    <td class="nascondi-stretto">${tracciato(e.serie)}</td>
+    <td class="nascondi-stretto"><span class="giudizio ${e.rating}">${e.rating}</span></td>
+  </tr>`;
+}
+
+function dettaglio(e){
+  const righe = e.serie.slice().reverse().map(p =>
+    `<tr><td>${DATE[p[0]]}</td><td>${nf1.format(p[1])}</td><td>${nf0.format(p[2])}</td></tr>`
+  ).join('');
+  return `<tr class="dettaglio"><td colspan="6"><div class="dettaglio-corpo">
+    <div>${graficoGrande(e.serie)}</div>
+    <table class="rilevazioni">
+      <tr><th>Rilevazione</th><th>Punteggio</th><th>Dataset</th></tr>${righe}
+    </table>
+  </div></td></tr>`;
+}
+
+function disegna(){
+  const q = document.getElementById('cerca').value.trim().toLowerCase();
+  const ord = document.getElementById('ordina').value;
+  const filtro = document.getElementById('filtro').value;
+
+  let lista = DATI.enti.filter(e =>
+    (!filtro || e.rating === filtro) &&
+    (!q || e.nome.toLowerCase().includes(q) || (e.slug||'').includes(q))
+  );
+
+  const d = e => (e.delta === null || e.delta === undefined) ? 0 : e.delta;
+  const ordini = {
+    'media-desc': (a,b) => b.media - a.media,
+    'media-asc':  (a,b) => a.media - b.media,
+    'delta-asc':  (a,b) => d(a) - d(b),
+    'delta-desc': (a,b) => d(b) - d(a),
+    'n-desc':     (a,b) => b.n - a.n,
+    'nome-asc':   (a,b) => a.nome.localeCompare(b.nome, 'it'),
+  };
+  lista.sort(ordini[ord]);
+
+  const corpo = document.getElementById('corpo');
+  corpo.innerHTML = lista.length
+    ? lista.map((e,i) => riga(e,i)).join('')
+    : '<tr><td colspan="6" class="assente">Nessun ente corrisponde alla ricerca.</td></tr>';
+  corpo.dataset.lista = JSON.stringify(lista.map(e => e.id));
+  window.__lista = lista;
+
+  document.getElementById('conteggio').textContent =
+    lista.length + (lista.length === 1 ? ' ente' : ' enti');
+}
+
+function apriChiudi(tr){
+  const succ = tr.nextElementSibling;
+  if (succ && succ.classList.contains('dettaglio')){
+    succ.remove();
+    tr.setAttribute('aria-expanded','false');
+    return;
+  }
+  document.querySelectorAll('tr.dettaglio').forEach(r => r.remove());
+  document.querySelectorAll('tr.ente').forEach(r => r.setAttribute('aria-expanded','false'));
+  tr.insertAdjacentHTML('afterend', dettaglio(window.__lista[+tr.dataset.i]));
+  tr.setAttribute('aria-expanded','true');
+}
+
+fetch('data.json')
+  .then(r => r.json())
+  .then(d => {
+    DATI = d; DATE = d.date;
+    document.getElementById('catalogo').textContent = d.catalogo;
+    document.getElementById('m-enti').textContent = nf0.format(d.totali.enti);
+    document.getElementById('m-dataset').textContent = nf0.format(d.totali.dataset);
+    document.getElementById('m-media').textContent = nf1.format(d.totali.media);
+    document.getElementById('m-data').textContent = d.aggiornato;
+    document.title = `Qualità dei metadati — ${d.catalogo} — ${d.aggiornato}`;
+    graficoCatalogo();
+    disegna();
+  })
+  .catch(() => {
+    document.getElementById('corpo').innerHTML =
+      '<tr><td colspan="6" class="assente">Dati non disponibili. La pagina va servita via HTTP: da locale, <code>python3 -m http.server</code> dentro <code>docs/</code>.</td></tr>';
+  });
+
+['cerca','ordina','filtro'].forEach(id =>
+  document.getElementById(id).addEventListener('input', disegna));
+
+document.getElementById('corpo').addEventListener('click', ev => {
+  const tr = ev.target.closest('tr.ente');
+  if (tr) apriChiudi(tr);
+});
+document.getElementById('corpo').addEventListener('keydown', ev => {
+  if (ev.key !== 'Enter' && ev.key !== ' ') return;
+  const tr = ev.target.closest('tr.ente');
+  if (tr){ ev.preventDefault(); apriChiudi(tr); }
+});
+</script>
+</body>
+</html>
