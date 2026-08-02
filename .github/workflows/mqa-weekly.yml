@@ -9,8 +9,13 @@ on:
       catalog:
         description: "ID catalogo su data.europa.eu"
         default: "dati-gov-it"
+      group_by:
+        description: "Livello di aggregazione"
+        type: choice
+        options: [organization, publisher]
+        default: organization
       min_datasets:
-        description: "Soglia minima di dataset per publisher"
+        description: "Soglia minima di dataset per ente"
         default: "5"
       top:
         description: "Quanti publisher mostrare per sezione"
@@ -39,17 +44,19 @@ jobs:
         id: run
         env:
           CATALOG: ${{ inputs.catalog || 'dati-gov-it' }}
+          GROUP_BY: ${{ inputs.group_by || 'organization' }}
           MIN_DATASETS: ${{ inputs.min_datasets || '5' }}
           TOP: ${{ inputs.top || '25' }}
         run: |
           python3 mqa_monitor.py \
             --catalog "$CATALOG" \
+            --group-by "$GROUP_BY" \
             --outdir ./mqa \
             --min-datasets "$MIN_DATASETS" \
             --top "$TOP"
           DAY=$(date -u +%F)
           echo "day=$DAY" >> "$GITHUB_OUTPUT"
-          echo "report=mqa/report_${CATALOG}_${DAY}.md" >> "$GITHUB_OUTPUT"
+          echo "report=mqa/report_${CATALOG}_${GROUP_BY}_${DAY}.md" >> "$GITHUB_OUTPUT"
 
       - name: Riepilogo nel job summary
         run: cat "${{ steps.run.outputs.report }}" >> "$GITHUB_STEP_SUMMARY"
