@@ -155,6 +155,25 @@ Per pubblicarla: *Settings -> Pages -> Source: Deploy from a branch -> `main` /
 cd docs && python3 -m http.server
 ```
 
+### Link diretti
+
+Ogni ente ha un indirizzo condivisibile:
+
+```
+https://piersoft.github.io/mqa-monitor/?titolare=c_f563
+https://piersoft.github.io/mqa-monitor/?titolare=Comune%20di%20Montemesola
+https://piersoft.github.io/mqa-monitor/?organizzazione=comune-di-torino
+```
+
+Accetta il codice (IPA per i titolari, slug o UUID per le organizzazioni) oppure
+il nome, anche parziale. Il livello si imposta da solo e la riga si apre gia
+espansa. Aprendo una riga l'indirizzo si aggiorna, quindi si copia dalla barra
+del browser.
+
+GitHub Pages serve solo file statici, ma la query string arriva comunque al
+browser: la risoluzione avviene lato client in `docs/index.html`, senza bisogno
+di rewrite lato server.
+
 ## Automazione
 
 `.github/workflows/mqa-weekly.yml` gira ogni domenica alle 10:00 UTC

@@ -204,6 +204,10 @@ footer a{color:inherit}
 </table>
 
 <footer>
+  <p>Ogni ente ha un indirizzo diretto: aggiungi <code>?titolare=c_f563</code> o
+  <code>?organizzazione=comune-di-torino</code> a questo indirizzo. Funziona anche
+  con il nome per esteso, e l’indirizzo si aggiorna da solo quando apri una riga,
+  cosi si copia dalla barra del browser.</p>
   <p>Il tracciato in tabella mostra la forma del movimento, con la scala adattata al
   singolo ente: la linea tratteggiata è la prima misura disponibile, quindi sopra la
   linea l’ente ha guadagnato, sotto ha perso. Per i valori assoluti, apri la riga.</p>
@@ -399,17 +403,61 @@ function disegna(){
     lista.length + ' ' + (lista.length === 1 ? NOMI[LIV].sing : NOMI[LIV].plur);
 }
 
+const PARAM = {holder:'titolare', organization:'organizzazione'};
+
+function aggiornaUrl(ente){
+  const u = new URL(location.href);
+  u.search = '';
+  if (ente) u.searchParams.set(PARAM[LIV], ente.slug || ente.id);
+  history.replaceState(null, '', u);
+}
+
 function apriChiudi(tr){
   const succ = tr.nextElementSibling;
   if (succ && succ.classList.contains('dettaglio')){
     succ.remove();
     tr.setAttribute('aria-expanded','false');
+    aggiornaUrl(null);
     return;
   }
   document.querySelectorAll('tr.dettaglio').forEach(r => r.remove());
   document.querySelectorAll('tr.ente').forEach(r => r.setAttribute('aria-expanded','false'));
-  tr.insertAdjacentHTML('afterend', dettaglio(window.__lista[+tr.dataset.i]));
+  const ente = window.__lista[+tr.dataset.i];
+  tr.insertAdjacentHTML('afterend', dettaglio(ente));
   tr.setAttribute('aria-expanded','true');
+  aggiornaUrl(ente);
+}
+
+/* Link diretti a un ente: ?titolare=c_f563, ?titolare=Comune di Montemesola,
+   ?organizzazione=comune-di-torino. Pages serve solo file statici, ma la query
+   string arriva comunque al browser e la risolviamo qui. */
+function trovaEnte(livello, valore) {
+  const v = valore.trim().toLowerCase();
+  const enti = DATI.livelli[livello].enti;
+  return enti.find(e => (e.id || '').toLowerCase() === v)
+      || enti.find(e => (e.slug || '').toLowerCase() === v)
+      || enti.find(e => e.nome.toLowerCase() === v)
+      || enti.find(e => e.nome.toLowerCase().includes(v));
+}
+
+function apriDaUrl(){
+  const q = new URLSearchParams(location.search);
+  for (const [livello, chiave] of Object.entries(PARAM)){
+    const valore = q.get(chiave);
+    if (!valore || !DATI.livelli[livello]) continue;
+    const ente = trovaEnte(livello, valore);
+    if (!ente) continue;
+    LIV = livello;
+    document.getElementById('livello').value = livello;
+    document.getElementById('cerca').value = ente.nome;
+    misure(); graficoCatalogo(); disegna();
+    const tr = document.querySelector('tbody tr.ente');
+    if (tr){
+      apriChiudi(tr);
+      tr.scrollIntoView({block:'center', behavior:'smooth'});
+    }
+    return;
+  }
 }
 
 fetch('data.json')
@@ -422,6 +470,7 @@ fetch('data.json')
     document.title = `Qualità dei metadati — ${d.catalogo} — ${d.aggiornato}`;
     graficoCatalogo();
     disegna();
+    apriDaUrl();
   })
   .catch(() => {
     document.getElementById('corpo').innerHTML =
