@@ -1,107 +1,125 @@
 # Monitoraggio MQA — data.europa.eu
 
-Rilevazione settimanale dello scoring MQA (Metadata Quality Assessment) di
-[data.europa.eu](https://data.europa.eu/data/combined) **per organizzazione titolare del
-catalogo di origine** (Comune di Milano, INPS, Regione Toscana...), con confronto
-automatico rispetto alla settimana precedente.
+Rilevazione giornaliera del punteggio MQA (Metadata Quality Assessment) che
+data.europa.eu assegna ai dataset di dati.gov.it, aggregato **per ente** e con
+confronto storico.
 
-Nasce per il catalogo `dati-gov-it`, ma funziona con qualsiasi catalogo del portale.
+Pagina pubblica: <https://piersoft.github.io/mqa-monitor/>
+
+Nasce per il catalogo `dati-gov-it`, ma funziona con qualsiasi catalogo del
+portale europeo.
+
+---
+
+## Il problema
+
+Il portale europeo espone il punteggio dataset per dataset, ma non un modo per
+scorrerli tutti né per aggregarli per ente: restava il controllo manuale, uno
+alla volta. E soprattutto il livello che EDP monitora — `dct:publisher` — su un
+catalogo federato come dati.gov.it non identifica nessuno: sono uffici, redazioni
+e denominazioni interne.
+
+## I tre livelli
+
+| Livello | Fonte | Voci | Cosa è | Dimensioni |
+|---|---|---:|---|---|
+| **Titolari** | SPARQL, `dct:rightsHolder` | 1.614 | L'ente proprietario dei dati | sì |
+| **Organizzazioni** | SPARQL, `dcat:contactPoint` | 398 | Chi ospita il catalogo di origine | sì |
+| Editori | API, `dct:publisher` | 1.608 | Il valore grezzo monitorato da EDP | no |
+
+I primi due sono le viste della pagina. Gli **editori** restano calcolati in
+`mqa/storico.csv` ma fuori dalla pagina: servono solo a spiegare perché i numeri
+del portale europeo non coincidono con questi.
+
+### Perché il titolare
+
+Il Comune di Montemesola ha 40 dataset, pubblicati sul portale regionale
+pugliese. Su EDP arrivano con publisher `Redazione OD` e contact point
+`regione-puglia`: ai primi due livelli il Comune **non compare affatto**.
+
+Il titolare sopravvive solo nel triplestore, dove `dct:rightsHolder` porta al
+nome e al codice IPA (`c_f563`). L'API di ricerca non lo espone.
+
+Vale anche il contrario: `dct:publisher` produce 1.637 voci contro 398
+organizzazioni, e il publisher più frequente di Regione Marche risulta "Comune di
+Civitanova Marche", quello del MEF "Open", quello di Regione Puglia
+"Redazione OD".
+
+### Perché non `dct:hasPart`
+
+dati.gov.it dichiara i sotto-cataloghi nel proprio `catalog.ttl`, ma EDP
+appiattisce la gerarchia in harvesting: nel triplestore il grafo del catalogo
+contiene solo `dcat:dataset`, `dcat:record` e `dcat:service`. Il legame con
+l'organizzazione passa quindi da `dcat:contactPoint`, che è un URI diretto
+(`https://www.dati.gov.it/organization/<uuid>`) e si raggruppa nativamente.
+
+## Le cinque dimensioni
+
+Reperibilità, accessibilità, interoperabilità, riusabilità e contesto arrivano
+solo dal triplestore. L'API di ricerca espone il solo totale, e via REST
+costerebbero una chiamata per dataset — misurato: ~90 minuti e rate limit oltre
+gli 8 thread paralleli. Con SPARQL sono due query aggregate, ~45 secondi in
+tutto, e nessun carico su dati.gov.it.
+
+Dettagli utili per chi volesse rifare le query:
+
+- ogni dataset vive nel proprio grafo, il cui URI coincide con quello del dataset
+- le misure stanno in `.../metrics/<id>`
+- il namespace delle metriche è `https://piveau.eu/ns/voc#` (non
+  `europeandataportal.eu`, che restituisce risultati vuoti senza errore)
 
 ## Come funziona
 
-L'API di ricerca di data.europa.eu espone lo scoring in `quality_meas.scoring`
-(scala 0–405). La paginazione classica si ferma a 10.000 risultati: per scorrere
-un catalogo intero serve il parametro `scroll=true`, che restituisce uno
-`scrollId` da riusare su `/api/hub/search/scroll`.
-
-Lo script:
-
-1. scorre l'intero catalogo (~65.000 dataset per `dati-gov-it`, ~25 secondi);
-2. aggrega per ente — n. dataset, media, mediana, min, max, rating MQA,
-   quanti dataset *Excellent* e quanti *Bad*, quanti `dct:publisher` distinti;
-3. salva due snapshot datati:
-   - `mqa/aggregato/<catalogo>_<livello>_<data>.csv` — l'aggregato,
-   - `mqa/dataset/<catalogo>_<data>.csv.gz` — il dettaglio per dataset,
-     utile per capire *quali* dataset hanno fatto scendere un ente;
-4. confronta con lo snapshot precedente e genera
-   `mqa/report_<catalogo>_<livello>_<data>.md` con chi sale, chi scende, i nuovi
-   enti e quelli spariti.
-
-### I tre livelli
-
-| Livello | Da dove | Voci | Cosa e | Dimensioni |
-|---|---|---:|---|---|
-| **Titolari** | SPARQL, `dct:rightsHolder` | 1.614 | L'ente proprietario dei dati | si |
-| Organizzazioni | SPARQL, `dcat:contactPoint` | 398 | Chi ospita il catalogo di origine | si |
-| Editori | API, `dct:publisher` | 1.608 | Il valore grezzo monitorato da EDP | no |
-
-Titolari e Organizzazioni sono le due viste della pagina. Gli **Editori** restano
-calcolati in `mqa/storico.csv` ma fuori dalla pagina: sono il livello che EDP
-espone nelle API, utile solo per spiegare perche i numeri del portale europeo non
-coincidono con questi.
-
-Il livello **titolare** e l'unico corretto quando una PA pubblica tramite il
-catalogo di qualcun altro. Il Comune di Montemesola ha 40 dataset sul portale
-regionale pugliese: su EDP arrivano con publisher "Redazione OD" e contact point
-`regione-puglia`, quindi ai primi due livelli il Comune non compare affatto.
-Il titolare sopravvive solo nel triplestore, dove `dct:rightsHolder` porta al nome
-e al codice IPA (`c_f563`).
-
-### Le cinque dimensioni
-
-Reperibilita, accessibilita, interoperabilita, riusabilita e contesto arrivano
-solo dal triplestore: l'API di ricerca espone il solo totale, e via REST
-costerebbero una chiamata per dataset (misurato: ~90 minuti e rate limit oltre gli
-8 thread). Con SPARQL sono due query aggregate da ~45 secondi in tutto.
-
-Nota su `dct:hasPart`: dati.gov.it dichiara i sotto-cataloghi nel `catalog.ttl`,
-ma EDP appiattisce la gerarchia in harvesting e nel triplestore non ne resta
-traccia. Il legame con l'organizzazione passa quindi da `dcat:contactPoint`.
-
-Il titolare e comunque l'unico livello: reperibilita,
-accessibilita, interoperabilita, riusabilita e contesto, che l'API di ricerca non
-espone e che via REST costerebbero una chiamata per dataset.
-
-`mqa_sparql.py` le raccoglie tutte con una sola query aggregata (~35 secondi,
-9.684 misure), senza carico su dati.gov.it. Il namespace delle metriche e
-`https://piveau.eu/ns/voc#`; ogni dataset vive nel proprio grafo, le misure in
-`.../metrics/<id>`.
-
-### Perche non `dct:publisher`
-
-data.europa.eu monitora `dct:publisher`, che su un catalogo federato come
-dati.gov.it e' inaffidabile come unita di analisi: contiene uffici, redazioni e
-denominazioni interne. Nel catalogo attuale i publisher distinti sono 1.637
-contro 398 organizzazioni, e il publisher piu frequente di Regione Marche
-risulta "Comune di Civitanova Marche", quello del MEF "Open", quello di Regione
-Puglia "Redazione OD".
-
-Il legame con l'ente reale sta in `contact_point.resource`, che su ogni dataset
-harvestato da dati.gov.it punta a
-`https://www.dati.gov.it/organization/<uuid>` (copertura verificata: 100% dei
-64.656 dataset). Lo script usa quell'UUID come chiave: resta stabile anche se
-l'ente cambia denominazione.
-
-Il livello `publisher` resta comunque disponibile: nella pagina con il menu
-*Editori*, e per il report Markdown con `mqa_monitor.py --group-by publisher`.
-
-### Titoli leggibili degli enti
-
-L'etichetta viene risolta in cascata: `mqa/org_titles.json` se presente, poi
-l'API CKAN di dati.gov.it, poi come fallback la titolazione dello slug
-(`comune-di-milano` -> "Comune di Milano"), che copre bene ma perde gli accenti
-(`Citta Metropolitana di Napoli`).
-
-Per rigenerare il file dei titoli:
-
-```bash
-curl -s "https://www.dati.gov.it/opendata/api/3/action/organization_list?all_fields=true&limit=1000" \
-  | python3 -c "import json,sys; d=json.load(sys.stdin)['result']; \
-    json.dump({o['name']: o.get('title') or o['name'] for o in d}, \
-    open('mqa/org_titles.json','w'), ensure_ascii=False, indent=1, sort_keys=True)"
+```
+mqa_sparql.py    →  mqa/titolari/<cat>_<data>.csv        ogni giorno,  ~45 s
+                    mqa/organizzazioni/<cat>_<data>.csv
+mqa_monitor.py   →  mqa/dataset/<cat>_<data>.csv.gz      solo lunedì,  ~25 s
+                    mqa/aggregato/<cat>_<livello>_<data>.csv
+                    mqa/report_<cat>_<livello>_<data>.md
+build_site.py    →  mqa/storico.csv                      ogni giorno
+                    docs/data.json
 ```
 
-Lo storico è il `git log`: ogni run è un commit.
+`mqa_monitor.py` usa il parametro `scroll=true` dell'API di ricerca: la
+paginazione normale si ferma a 10.000 risultati, lo scroll no. Restituisce uno
+`scrollId` da riusare su `/api/hub/search/scroll`, e con
+`includes=id,publisher.name,quality_meas.scoring,contact_point` scarica 64.656
+dataset in circa 25 secondi.
+
+`build_site.py` **ricostruisce** ogni volta storico e dati della pagina a partire
+dagli snapshot: un run ripetuto o fallito non lascia righe duplicate, e cancellare
+uno snapshot lo toglie anche dallo storico. In cambio, quei file sono l'unica
+fonte — non vanno eliminati per fare spazio.
+
+Lo storico completo è comunque il `git log`: ogni rilevazione è un commit.
+
+## Cadenza
+
+Il workflow gira **ogni mattina** alle 06:00 UTC (08:00 italiane in ora legale,
+07:00 in ora solare), perché EDP ricalcola quasi ogni giorno mentre l'harvesting
+di dati.gov.it chiude il sabato sera: con la rilevazione settimanale, tra la
+correzione di un ente e la sua verifica potevano passare tredici giorni.
+
+Non tutto però gira ogni giorno:
+
+| Passo | Cadenza | Peso per run |
+|---|---|---:|
+| SPARQL (titolari, organizzazioni) | ogni giorno | 177 KB, testo comprimibile |
+| Scroll dell'API (`.csv.gz`) | solo lunedì | 1.056 KB, già compresso |
+
+Il `.csv.gz` non si comprime in git: a cadenza giornaliera sarebbero ~385 MB
+l'anno. Serve solo per i nomi leggibili delle organizzazioni e per il livello
+editori, che non cambiano in un giorno. L'input `forza_scroll` lo esegue comunque.
+
+La colonna **7 giorni** confronta con la rilevazione più vicina a una settimana
+prima, non con quella del giorno precedente: una variazione giornaliera è spesso
+rumore — un server che non risponde per un'ora fa scendere l'accessibilità e
+risalire il giorno dopo.
+
+`docs/data.json` tiene tutte le rilevazioni degli ultimi 60 giorni e poi una a
+settimana: con 2.000 enti ogni rilevazione pesa ~30 KB, e un anno di dati
+giornalieri renderebbe la pagina inutilizzabile. Lo storico integrale resta in
+`mqa/storico.csv`.
 
 ## Soglie di rating
 
@@ -112,50 +130,53 @@ Lo storico è il `git log`: ogni run è un commit.
 | Sufficient | 121–220 |
 | Bad | 0–120 |
 
+Le cinque dimensioni valgono rispettivamente 100, 100, 110, 75 e 20 punti.
+
+## Perché il totale non coincide con quello di data.europa.eu
+
+Per l'intero catalogo `dati-gov-it` il portale europeo pubblica **371/405**,
+questa pagina una media più bassa. Non è una discrepanza: sono due statistiche
+diverse.
+
+- **EDP** costruisce un dataset "rappresentativo", applicando ai pesi massimi la
+  percentuale di successo di ogni controllo, arrotondata all'unità.
+- **Qui** si fa la media aritmetica dei punteggi dei singoli dataset.
+
+| Dimensione | Qui | EDP |
+|---|---:|---:|
+| Findability | 99,9 | 100 |
+| Accessibility | 64,4 | 72 |
+| **Interoperability** | **69,5** | **104** |
+| Reusability | 74,4 | 75 |
+| Contextuality | 20,0 | 20 |
+
+Quattro dimensioni su cinque coincidono quasi perfettamente: quasi tutto lo scarto
+sta nell'interoperabilità, perché quei controlli si applicano alle
+*distribuzioni* e non ai dataset. Un dataset con dieci distribuzioni di cui una
+proprietaria perde punti nel proprio punteggio, ma nel conteggio aggregato pesa
+nove "sì" contro un "no".
+
+Per capire chi deve migliorare cosa serve la media dei punteggi, che si scompone
+per ente. Il valore ufficiale viene comunque letto a ogni run da
+`api/mqa/cache/catalogues/<catalogo>` e mostrato in fondo alla pagina.
+
 ## Esecuzione locale
 
 Solo libreria standard, nessuna dipendenza. Serve Python ≥ 3.8.
 
 ```bash
-python3 mqa_monitor.py --outdir ./mqa --min-datasets 5 --top 25
-python3 mqa_monitor.py --catalog dados-gov-pt        # altro catalogo
+python3 mqa_sparql.py --catalog dati-gov-it     # titolari e organizzazioni
+python3 mqa_monitor.py --outdir ./mqa           # scroll dell'API + report
+python3 build_site.py --catalog dati-gov-it     # storico e dati della pagina
 ```
 
-Al primo run non c'è confronto: quello snapshot è la baseline.
-
-## Pagina pubblica
-
-`build_site.py` ricostruisce la serie storica e genera i dati della pagina:
-
-```bash
-python3 build_site.py --catalog dati-gov-it
-```
-
-Produce `mqa/storico.csv` (una riga per ente per livello per rilevazione, per
-analisi offline) e `docs/data.json`, letto da `docs/index.html`.
-
-Entrambi i livelli — **organizzazioni** ed **editori** — vengono calcolati dagli
-stessi snapshot, senza riscaricare nulla: ogni riga di `mqa/dataset/*.csv.gz`
-porta gia `org_uuid`, `org_slug` e `publisher`. Nella pagina si passa dall'uno
-all'altro con il primo menu a tendina.
-
-`docs/data.json` tiene le ultime 104 rilevazioni (due anni), regolabile con
-`--max-rilevazioni`. Lo storico completo resta in `mqa/storico.csv` e negli
-snapshot.
-
-Lo storico non viene appeso ma **ricalcolato** ogni volta a partire dagli snapshot
-in `mqa/dataset/`: un run ripetuto o fallito non lascia righe duplicate, e
-cancellare uno snapshot lo toglie anche dallo storico.
-
-Per pubblicarla: *Settings -> Pages -> Source: Deploy from a branch -> `main` /
-`docs`*. Per vederla in locale serve un server HTTP, perche la pagina carica
-`data.json` via fetch:
+La pagina va servita via HTTP, perché carica `data.json` via fetch:
 
 ```bash
 cd docs && python3 -m http.server
 ```
 
-### Link diretti
+## Link diretti
 
 Ogni ente ha un indirizzo condivisibile:
 
@@ -166,46 +187,46 @@ https://piersoft.github.io/mqa-monitor/?organizzazione=comune-di-torino
 ```
 
 Accetta il codice (IPA per i titolari, slug o UUID per le organizzazioni) oppure
-il nome, anche parziale. Il livello si imposta da solo e la riga si apre gia
-espansa. Aprendo una riga l'indirizzo si aggiorna, quindi si copia dalla barra
-del browser.
+il nome, anche parziale. Il livello si imposta da solo e la riga si apre già
+espansa. Aprendo una riga l'indirizzo si aggiorna, quindi si copia dalla barra del
+browser.
 
 GitHub Pages serve solo file statici, ma la query string arriva comunque al
-browser: la risoluzione avviene lato client in `docs/index.html`, senza bisogno
-di rewrite lato server.
+browser: la risoluzione avviene lato client, senza rewrite lato server.
 
-## Automazione
+## Pubblicazione
 
-`.github/workflows/mqa-weekly.yml` gira ogni domenica alle 10:00 UTC
-(12:00 italiane in ora legale, 11:00 in ora solare), committa lo snapshot e
-apre una issue con il report. Avviabile anche a mano da *Actions →
-Run workflow*, scegliendo catalogo e soglie.
+*Settings → Pages → Deploy from a branch → `main` / `docs`*. Serve
+`docs/.nojekyll`, altrimenti Pages passa i file a Jekyll e pubblica il README al
+posto di `index.html`.
 
-## Perche il numero non coincide con quello di data.europa.eu
+## Titoli leggibili degli enti
 
-Per l'intero catalogo `dati-gov-it` il portale europeo pubblica **371/405**, questa
-pagina una media piu bassa. Non e una discrepanza: sono due statistiche diverse.
+L'etichetta delle organizzazioni viene risolta in cascata: `mqa/org_titles.json`
+se presente, poi l'API CKAN di dati.gov.it, poi come fallback la titolazione dello
+slug (`comune-di-milano` → "Comune di Milano"), che copre bene ma perde gli
+accenti (`Citta Metropolitana di Napoli`).
 
-- **EDP** costruisce un dataset "rappresentativo", applicando ai pesi massimi la
-  percentuale di successo di ogni controllo, arrotondata all'unita.
-- **Qui** si fa la media aritmetica dei punteggi dei singoli dataset.
+Per rigenerare il file dei titoli:
 
-Quattro dimensioni su cinque coincidono quasi perfettamente; quasi tutto lo scarto
-sta nell'**interoperabilita** (69,5 contro 104), perche quei controlli si applicano
-alle *distribuzioni* e non ai dataset: un dataset con dieci distribuzioni di cui una
-proprietaria perde punti nel proprio punteggio, ma nel conteggio aggregato pesa nove
-"si" contro un "no".
+```bash
+curl -s "https://www.dati.gov.it/opendata/api/3/action/organization_list?all_fields=true&limit=1000" \
+  | python3 -c "import json,sys; d=json.load(sys.stdin)['result']; \
+    json.dump({o['name']: o.get('title') or o['name'] for o in d}, \
+    open('mqa/org_titles.json','w'), ensure_ascii=False, indent=1, sort_keys=True)"
+```
 
-Per capire chi deve migliorare cosa serve la media dei punteggi, che si scompone per
-ente. Il valore ufficiale viene comunque letto a ogni run da
-`api/mqa/cache/catalogues/<catalogo>` e mostrato in fondo alla pagina.
+L'API può rispondere 403 da alcuni IP: in quel caso lo script prosegue con i
+titoli già presenti o con il fallback.
 
 ## Limiti noti
 
-- L'API espone solo lo **score totale**, non le cinque dimensioni
-  (findability, accessibility, interoperability, reusability, contextuality).
-- Con `--group-by publisher` gli enti sono identificati per **nome testuale**:
-  una PA che cambia denominazione risulta come "sparito + nuovo". Con
-  l'aggregazione per organizzazione (default) il problema non si pone.
-- L'API CKAN di dati.gov.it puo rispondere 403 da alcuni IP: in quel caso lo
-  script prosegue con i titoli gia in `org_titles.json` o con il fallback.
+- Il livello SPARQL copre 61.510 dataset contro i 64.656 dello scroll: la
+  differenza sono quelli privi di misure di qualità nel triplestore. Le medie
+  restano confrontabili, i conteggi assoluti no.
+- L'endpoint SPARQL è pubblico e senza SLA: rifiuta le query la cui stima di
+  esecuzione supera i 60 secondi. Nel workflow lo step è `continue-on-error`,
+  così un rifiuto non blocca il resto.
+- Gli editori sono identificati per nome testuale: una PA che si rinomina risulta
+  "sparita + nuova". Titolari e organizzazioni usano chiavi stabili (codice IPA e
+  UUID).
