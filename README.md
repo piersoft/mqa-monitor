@@ -42,7 +42,8 @@ harvestato da dati.gov.it punta a
 64.656 dataset). Lo script usa quell'UUID come chiave: resta stabile anche se
 l'ente cambia denominazione.
 
-Il livello `publisher` resta disponibile con `--group-by publisher`.
+Il livello `publisher` resta comunque disponibile: nella pagina con il menu
+*Editori*, e per il report Markdown con `mqa_monitor.py --group-by publisher`.
 
 ### Titoli leggibili degli enti
 
@@ -90,8 +91,17 @@ Al primo run non c'è confronto: quello snapshot è la baseline.
 python3 build_site.py --catalog dati-gov-it
 ```
 
-Produce `mqa/storico.csv` (una riga per ente per rilevazione, per analisi offline)
-e `docs/data.json`, letto da `docs/index.html`.
+Produce `mqa/storico.csv` (una riga per ente per livello per rilevazione, per
+analisi offline) e `docs/data.json`, letto da `docs/index.html`.
+
+Entrambi i livelli — **organizzazioni** ed **editori** — vengono calcolati dagli
+stessi snapshot, senza riscaricare nulla: ogni riga di `mqa/dataset/*.csv.gz`
+porta gia `org_uuid`, `org_slug` e `publisher`. Nella pagina si passa dall'uno
+all'altro con il primo menu a tendina.
+
+`docs/data.json` tiene le ultime 104 rilevazioni (due anni), regolabile con
+`--max-rilevazioni`. Lo storico completo resta in `mqa/storico.csv` e negli
+snapshot.
 
 Lo storico non viene appeso ma **ricalcolato** ogni volta a partire dagli snapshot
 in `mqa/dataset/`: un run ripetuto o fallito non lascia righe duplicate, e

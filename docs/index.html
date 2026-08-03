@@ -145,7 +145,7 @@ footer a{color:inherit}
     aggregato per ente titolare del catalogo di origine. Ogni domenica una nuova misura.
   </p>
   <div class="misure">
-    <div class="misura"><div class="valore" id="m-enti">—</div><div class="etichetta">Enti</div></div>
+    <div class="misura"><div class="valore" id="m-enti">—</div><div class="etichetta" id="e-enti">Enti</div></div>
     <div class="misura"><div class="valore" id="m-dataset">—</div><div class="etichetta">Dataset misurati</div></div>
     <div class="misura"><div class="valore" id="m-media">—</div><div class="etichetta">Media catalogo</div></div>
     <div class="misura"><div class="valore" id="m-data">—</div><div class="etichetta">Ultima rilevazione</div></div>
@@ -158,7 +158,11 @@ footer a{color:inherit}
 </section>
 
 <div class="controlli">
-  <input type="search" id="cerca" placeholder="Cerca un ente" aria-label="Cerca un ente">
+  <select id="livello" aria-label="Livello di aggregazione">
+    <option value="organization">Organizzazioni</option>
+    <option value="publisher">Editori</option>
+  </select>
+  <input type="search" id="cerca" placeholder="Cerca" aria-label="Cerca">
   <select id="ordina" aria-label="Ordinamento">
     <option value="media-desc">Punteggio, dal più alto</option>
     <option value="media-asc">Punteggio, dal più basso</option>
@@ -180,7 +184,7 @@ footer a{color:inherit}
 <table>
   <thead>
     <tr>
-      <th scope="col">Ente</th>
+      <th scope="col" id="col-ente">Ente</th>
       <th scope="col" class="num">Dataset</th>
       <th scope="col" class="num">Punteggio</th>
       <th scope="col" class="num">Settimana</th>
@@ -197,15 +201,19 @@ footer a{color:inherit}
   linea l’ente ha guadagnato, sotto ha perso. Per i valori assoluti, apri la riga.</p>
   <p id="nota-fonte">Fonte: data.europa.eu (Metadata Quality Assessment), scala 0–405.
   Giudizi: Excellent ≥ 351, Good ≥ 221, Sufficient ≥ 121, Bad sotto 121.</p>
-  <p>Gli enti sono identificati dall’organizzazione del catalogo di origine, non da
-  <code>dct:publisher</code>. Dati e codice: <a id="link-repo" href="./">repository</a>.</p>
+  <p><strong>Organizzazioni</strong>: l’ente titolare del catalogo di origine, identificato
+  da un UUID stabile. <strong>Editori</strong>: il valore grezzo di <code>dct:publisher</code>,
+  quello che monitora data.europa.eu — piu granulare, ma contiene uffici, redazioni e
+  denominazioni interne, e cambia identita se l’ente si rinomina.
+  Dati e codice: <a id="link-repo" href="./">repository</a>.</p>
 </footer>
 
 </div>
 
 <script>
 const MAX = 405;
-let DATI = null, DATE = [];
+let DATI = null, DATE = [], LIV = 'organization';
+const blocco = () => DATI.livelli[LIV];
 
 const nf1 = new Intl.NumberFormat('it-IT', {minimumFractionDigits:1, maximumFractionDigits:1});
 const nf0 = new Intl.NumberFormat('it-IT');
@@ -272,9 +280,10 @@ function graficoGrande(serie, L, A){
 }
 
 function graficoCatalogo(){
-  const serie = DATI.serie_catalogo.map((v,i) => [i, v]);
-  if (serie.length < 2) return;
-  document.getElementById('blocco-andamento').hidden = false;
+  const b = document.getElementById('blocco-andamento');
+  const serie = blocco().serie_catalogo.map((v,i) => [i, v]);
+  if (serie.length < 2){ b.hidden = true; return; }
+  b.hidden = false;
   const el = document.getElementById('grafico-catalogo');
   el.outerHTML = graficoGrande(serie, 1120, 190)
     .replace('<svg ', '<svg id="grafico-catalogo" ');
@@ -303,12 +312,23 @@ function dettaglio(e){
   </div></td></tr>`;
 }
 
+function misure(){
+  const t = blocco().totali;
+  const org = LIV === 'organization';
+  document.getElementById('m-enti').textContent = nf0.format(t.enti);
+  document.getElementById('e-enti').textContent = org ? 'Enti' : 'Editori';
+  document.getElementById('m-dataset').textContent = nf0.format(t.dataset);
+  document.getElementById('m-media').textContent = nf1.format(t.media);
+  document.getElementById('col-ente').textContent = org ? 'Ente' : 'Editore';
+  document.getElementById('cerca').placeholder = org ? 'Cerca un ente' : 'Cerca un editore';
+}
+
 function disegna(){
   const q = document.getElementById('cerca').value.trim().toLowerCase();
   const ord = document.getElementById('ordina').value;
   const filtro = document.getElementById('filtro').value;
 
-  let lista = DATI.enti.filter(e =>
+  let lista = blocco().enti.filter(e =>
     (!filtro || e.rating === filtro) &&
     (!q || e.nome.toLowerCase().includes(q) || (e.slug||'').includes(q))
   );
@@ -332,7 +352,9 @@ function disegna(){
   window.__lista = lista;
 
   document.getElementById('conteggio').textContent =
-    lista.length + (lista.length === 1 ? ' ente' : ' enti');
+    lista.length + ' ' + (LIV === 'organization'
+      ? (lista.length === 1 ? 'ente' : 'enti')
+      : (lista.length === 1 ? 'editore' : 'editori'));
 }
 
 function apriChiudi(tr){
@@ -353,10 +375,8 @@ fetch('data.json')
   .then(d => {
     DATI = d; DATE = d.date;
     document.getElementById('catalogo').textContent = d.catalogo;
-    document.getElementById('m-enti').textContent = nf0.format(d.totali.enti);
-    document.getElementById('m-dataset').textContent = nf0.format(d.totali.dataset);
-    document.getElementById('m-media').textContent = nf1.format(d.totali.media);
     document.getElementById('m-data').textContent = d.aggiornato;
+    misure();
     document.title = `Qualità dei metadati — ${d.catalogo} — ${d.aggiornato}`;
     graficoCatalogo();
     disegna();
@@ -366,8 +386,14 @@ fetch('data.json')
       '<tr><td colspan="6" class="assente">Dati non disponibili. La pagina va servita via HTTP: da locale, <code>python3 -m http.server</code> dentro <code>docs/</code>.</td></tr>';
   });
 
-['cerca','ordina','filtro'].forEach(id =>
-  document.getElementById(id).addEventListener('input', disegna));
+['livello','cerca','ordina','filtro'].forEach(id =>
+  document.getElementById(id).addEventListener('input', () => {
+    if (id === 'livello'){
+      LIV = document.getElementById('livello').value;
+      misure(); graficoCatalogo();
+    }
+    disegna();
+  }));
 
 document.getElementById('corpo').addEventListener('click', ev => {
   const tr = ev.target.closest('tr.ente');
