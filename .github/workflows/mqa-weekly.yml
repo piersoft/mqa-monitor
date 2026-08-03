@@ -2,8 +2,8 @@ name: Monitoraggio MQA settimanale
 
 on:
   schedule:
-    # 10:00 UTC = 12:00 ora legale italiana (11:00 in ora solare)
-    - cron: "0 10 * * 0"
+    # 06:00 UTC = 08:00 ora legale italiana (07:00 in ora solare)
+    - cron: "0 6 * * 1"
   workflow_dispatch:
     inputs:
       catalog:
