@@ -181,6 +181,25 @@ di rewrite lato server.
 apre una issue con il report. Avviabile anche a mano da *Actions →
 Run workflow*, scegliendo catalogo e soglie.
 
+## Perche il numero non coincide con quello di data.europa.eu
+
+Per l'intero catalogo `dati-gov-it` il portale europeo pubblica **371/405**, questa
+pagina una media piu bassa. Non e una discrepanza: sono due statistiche diverse.
+
+- **EDP** costruisce un dataset "rappresentativo", applicando ai pesi massimi la
+  percentuale di successo di ogni controllo, arrotondata all'unita.
+- **Qui** si fa la media aritmetica dei punteggi dei singoli dataset.
+
+Quattro dimensioni su cinque coincidono quasi perfettamente; quasi tutto lo scarto
+sta nell'**interoperabilita** (69,5 contro 104), perche quei controlli si applicano
+alle *distribuzioni* e non ai dataset: un dataset con dieci distribuzioni di cui una
+proprietaria perde punti nel proprio punteggio, ma nel conteggio aggregato pesa nove
+"si" contro un "no".
+
+Per capire chi deve migliorare cosa serve la media dei punteggi, che si scompone per
+ente. Il valore ufficiale viene comunque letto a ogni run da
+`api/mqa/cache/catalogues/<catalogo>` e mostrato in fondo alla pagina.
+
 ## Limiti noti
 
 - L'API espone solo lo **score totale**, non le cinque dimensioni

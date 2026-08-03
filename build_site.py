@@ -29,6 +29,8 @@ from collections import defaultdict
 
 from mqa_monitor import MAX_SCORE, bucket, carica_titoli, titolizza
 
+MQA_CACHE = "https://data.europa.eu/api/mqa/cache/catalogues/%s"
+
 DATA_RE = re.compile(r"_(\d{4}-\d{2}-\d{2})\.csv\.gz$")
 DATA_CSV_RE = re.compile(r"_(\d{4}-\d{2}-\d{2})\.csv$")
 DIMENSIONI = ["findability", "accessibility", "interoperability",
@@ -198,7 +200,31 @@ def blocco_livello(storico, date):
     }
 
 
-def salva_json(storici, catalog, docsdir, max_rilevazioni):
+def punteggio_ufficiale(catalog):
+    """Il punteggio che data.europa.eu pubblica per il catalogo.
+
+    Non e' la media dei punteggi dei dataset: e' il punteggio di un dataset
+    "rappresentativo", ottenuto applicando ai pesi massimi le percentuali di
+    successo di ogni controllo. Le due statistiche divergono quando le
+    distribuzioni sono sbilanciate tra i dataset. Lo riportiamo per rendere
+    confrontabile la pagina con il portale europeo.
+    """
+    import urllib.request
+    try:
+        req = urllib.request.Request(MQA_CACHE % catalog, headers={
+            "User-Agent": "mqa-monitor/4.0", "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            d = json.loads(r.read())["result"]["results"][0]
+        return {
+            "score": d.get("score"),
+            "dim": dict((k, d[k]["score"]["points"]) for k in DIMENSIONI
+                        if isinstance(d.get(k), dict) and "score" in d[k]),
+        }
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def salva_json(storici, catalog, docsdir, max_rilevazioni, ufficiale=None):
     usati = [storici[k] for k in ("holder", "organization") if storici.get(k)]
     date = sorted(set().union(*[set(s) for s in usati])) if usati else []
     if not date:
@@ -218,6 +244,7 @@ def salva_json(storici, catalog, docsdir, max_rilevazioni):
             "aggiornato": date[-1],
             "max_score": MAX_SCORE,
             "date": date,
+            "ufficiale": ufficiale,
             "livelli": livelli,
         }, f, ensure_ascii=False, separators=(",", ":"))
     return path
@@ -250,7 +277,11 @@ def main():
     print("[2/3] salvo lo storico ...")
     p1 = salva_storico(storici, args.outdir)
     print("[3/3] preparo i dati della pagina ...")
-    p2 = salva_json(storici, args.catalog, args.docsdir, args.max_rilevazioni)
+    ufficiale = punteggio_ufficiale(args.catalog)
+    if ufficiale:
+        print("      punteggio ufficiale del catalogo: %s" % ufficiale["score"])
+    p2 = salva_json(storici, args.catalog, args.docsdir,
+                    args.max_rilevazioni, ufficiale)
     print("\nOK\n  %s\n  %s" % (p1, p2))
 
 

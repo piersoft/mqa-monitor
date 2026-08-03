@@ -213,6 +213,7 @@ footer a{color:inherit}
   linea l’ente ha guadagnato, sotto ha perso. Per i valori assoluti, apri la riga.</p>
   <p id="nota-fonte">Fonte: data.europa.eu (Metadata Quality Assessment), scala 0–405.
   Giudizi: Excellent ≥ 351, Good ≥ 221, Sufficient ≥ 121, Bad sotto 121.</p>
+  <p id="nota-ufficiale" hidden></p>
   <p><strong>Titolari</strong>: <code>dct:rightsHolder</code>, l’ente a cui i dati
   appartengono davvero. E l’unico livello che riconosce chi pubblica tramite un
   catalogo altrui — un Comune ospitato dal portale regionale, per esempio — e l’unico
@@ -440,6 +441,22 @@ function trovaEnte(livello, valore) {
       || enti.find(e => e.nome.toLowerCase().includes(v));
 }
 
+/* data.europa.eu pubblica per il catalogo un punteggio piu alto del nostro.
+   Non e' una discrepanza: sono due statistiche diverse. */
+function notaUfficiale(){
+  const u = DATI.ufficiale;
+  if (!u || u.score == null) return;
+  const el = document.getElementById('nota-ufficiale');
+  el.innerHTML = `Per l’intero catalogo <code>${DATI.catalogo}</code> data.europa.eu
+    pubblica <strong>${nf0.format(u.score)}/${MAX}</strong>, mentre qui la media dei
+    punteggi dei singoli dataset è più bassa. Non è un errore: il portale europeo
+    calcola il punteggio di un dataset “rappresentativo”, applicando ai pesi massimi
+    la percentuale di successo di ogni controllo; questa pagina fa invece la media
+    dei punteggi reali. Le due misure divergono soprattutto sull’interoperabilità,
+    dove i controlli si applicano alle distribuzioni e non ai dataset.`;
+  el.hidden = false;
+}
+
 function apriDaUrl(){
   const q = new URLSearchParams(location.search);
   for (const [livello, chiave] of Object.entries(PARAM)){
@@ -469,6 +486,7 @@ fetch('data.json')
     misure();
     document.title = `Qualità dei metadati — ${d.catalogo} — ${d.aggiornato}`;
     graficoCatalogo();
+    notaUfficiale();
     disegna();
     apriDaUrl();
   })
