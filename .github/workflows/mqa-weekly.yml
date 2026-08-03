@@ -1,9 +1,12 @@
-name: Monitoraggio MQA settimanale
+name: Monitoraggio MQA
 
 on:
   schedule:
-    # 10:00 UTC = 12:00 ora legale italiana (11:00 in ora solare)
-    - cron: "0 10 * * 0"
+    # 06:00 UTC = 08:00 ora legale italiana (07:00 in ora solare)
+    # EDP ricalcola quasi ogni giorno: la rilevazione SPARQL gira tutti i giorni,
+    # lo scroll dell'API solo il lunedi (il .csv.gz e' gia compresso e non si
+    # comprime in git: 1 MB al giorno gonfierebbe il repo).
+    - cron: "0 6 * * *"
   workflow_dispatch:
     inputs:
       catalog:
@@ -18,8 +21,12 @@ on:
         description: "Soglia minima di dataset per ente"
         default: "5"
       top:
-        description: "Quanti publisher mostrare per sezione"
+        description: "Quanti enti mostrare per sezione"
         default: "25"
+      forza_scroll:
+        description: "Esegui anche lo scroll dell'API (di norma solo il lunedi)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -40,7 +47,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Che giorno e
+        id: giorno
+        run: echo "dow=$(date -u +%u)" >> "$GITHUB_OUTPUT"
+
       - name: Esegui snapshot e diff
+        if: steps.giorno.outputs.dow == '1' || inputs.forza_scroll
         id: run
         env:
           CATALOG: ${{ inputs.catalog || 'dati-gov-it' }}
@@ -66,6 +78,7 @@ jobs:
         run: python3 build_site.py --catalog "${{ inputs.catalog || 'dati-gov-it' }}"
 
       - name: Riepilogo nel job summary
+        if: steps.run.outputs.report != ''
         run: cat "${{ steps.run.outputs.report }}" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit dello snapshot
@@ -77,6 +90,7 @@ jobs:
           git push
 
       - name: Apri issue con il report
+        if: steps.run.outputs.report != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

@@ -195,7 +195,7 @@ footer a{color:inherit}
       <th scope="col" id="col-ente">Ente</th>
       <th scope="col" class="num">Dataset</th>
       <th scope="col" class="num">Punteggio</th>
-      <th scope="col" class="num">Settimana</th>
+      <th scope="col" class="num">7 giorni</th>
       <th scope="col" class="nascondi-stretto">Andamento</th>
       <th scope="col" class="nascondi-stretto">Giudizio</th>
     </tr>
@@ -208,6 +208,11 @@ footer a{color:inherit}
   <code>?organizzazione=comune-di-torino</code> a questo indirizzo. Funziona anche
   con il nome per esteso, e l’indirizzo si aggiorna da solo quando apri una riga,
   cosi si copia dalla barra del browser.</p>
+  <p>La rilevazione gira ogni mattina: data.europa.eu ricalcola quasi
+  quotidianamente. La colonna <em>7 giorni</em> confronta con la misura di una
+  settimana prima, non con quella del giorno precedente, perché una variazione
+  giornaliera è spesso rumore — un server che non risponde per un’ora fa scendere
+  l’accessibilità e risalire il giorno dopo.</p>
   <p>Il tracciato in tabella mostra la forma del movimento, con la scala adattata al
   singolo ente: la linea tratteggiata è la prima misura disponibile, quindi sopra la
   linea l’ente ha guadagnato, sotto ha perso. Per i valori assoluti, apri la riga.</p>

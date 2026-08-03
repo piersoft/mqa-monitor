@@ -20,6 +20,7 @@ Uso:
 
 import argparse
 import csv
+import datetime as dt
 import glob
 import gzip
 import json
@@ -144,6 +145,24 @@ def salva_storico(storici, outdir):
     return path
 
 
+def indice_riferimento(date, ultimo_i, giorni=7):
+    """Indice della rilevazione piu vicina a `giorni` giorni prima dell'ultima.
+
+    Con la cadenza giornaliera il confronto con la rilevazione precedente e
+    rumore: un server che non risponde per un'ora fa scendere l'accessibility
+    e risalire il giorno dopo.
+    """
+    if ultimo_i <= 0:
+        return None
+    bersaglio = dt.date.fromisoformat(date[ultimo_i]) - dt.timedelta(days=giorni)
+    migliore, scarto = None, None
+    for i in range(ultimo_i):
+        d = abs((dt.date.fromisoformat(date[i]) - bersaglio).days)
+        if scarto is None or d < scarto:
+            migliore, scarto = i, d
+    return migliore
+
+
 def blocco_livello(storico, date):
     """Prepara enti + totali + serie del catalogo per un singolo livello."""
     pos = dict((d, i) for i, d in enumerate(date))
@@ -162,12 +181,16 @@ def blocco_livello(storico, date):
 
     presenti = [i for i, d in enumerate(date) if d in storico]
     ultimo_i = presenti[-1] if presenti else len(date) - 1
+    rif = indice_riferimento(date, ultimo_i)
+    if rif is not None and rif not in presenti:
+        candidati = [i for i in presenti if i < ultimo_i]
+        rif = candidati[-1] if candidati else None
     lista = []
     for chiave, v in voci.items():
         ultimo = v["punti"].get(ultimo_i)
         if not ultimo:
             continue  # non piu presente nell'ultima rilevazione
-        prec = v["punti"].get(presenti[-2]) if len(presenti) > 1 else None
+        prec = v["punti"].get(rif) if rif is not None else None
         voce = {
             "id": chiave, "nome": v["nome"], "slug": v["slug"],
             "media": ultimo[0], "n": ultimo[1],
@@ -224,12 +247,34 @@ def punteggio_ufficiale(catalog):
         return None
 
 
+def assottiglia(date, giorni_pieni=60, passo=7):
+    """Tiene tutte le rilevazioni recenti, poi una ogni `passo` giorni.
+
+    Con la rilevazione giornaliera lo storico completo gonfierebbe data.json
+    (~30 KB per rilevazione con 2.000 enti). Lo storico integrale resta in
+    mqa/storico.csv e negli snapshot.
+    """
+    if not date:
+        return date
+    limite = dt.date.fromisoformat(date[-1]) - dt.timedelta(days=giorni_pieni)
+    recenti = [d for d in date if dt.date.fromisoformat(d) > limite]
+    vecchie, ultima = [], None
+    for d in date:
+        if d in recenti:
+            continue
+        g = dt.date.fromisoformat(d)
+        if ultima is None or (g - ultima).days >= passo:
+            vecchie.append(d)
+            ultima = g
+    return vecchie + recenti
+
+
 def salva_json(storici, catalog, docsdir, max_rilevazioni, ufficiale=None):
     usati = [storici[k] for k in ("holder", "organization") if storici.get(k)]
     date = sorted(set().union(*[set(s) for s in usati])) if usati else []
     if not date:
         raise SystemExit("nessuno snapshot trovato: lancia prima mqa_monitor.py")
-    date = date[-max_rilevazioni:]
+    date = assottiglia(date)[-max_rilevazioni:]
 
     livelli = {}
     for livello in ("holder", "organization"):
