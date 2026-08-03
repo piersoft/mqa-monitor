@@ -27,6 +27,30 @@ Lo script:
    `mqa/report_<catalogo>_<livello>_<data>.md` con chi sale, chi scende, i nuovi
    enti e quelli spariti.
 
+### I tre livelli
+
+| Livello | Da dove | Voci | Cosa e |
+|---|---|---:|---|
+| **Titolari** | SPARQL, `dct:rightsHolder` | 1.614 | L'ente proprietario dei dati |
+| Organizzazioni | API, `contact_point` | 398 | Chi ospita il catalogo di origine |
+| Editori | API, `dct:publisher` | 1.608 | Il valore grezzo monitorato da EDP |
+
+Il livello **titolare** e l'unico corretto quando una PA pubblica tramite il
+catalogo di qualcun altro. Il Comune di Montemesola ha 40 dataset sul portale
+regionale pugliese: su EDP arrivano con publisher "Redazione OD" e contact point
+`regione-puglia`, quindi ai primi due livelli il Comune non compare affatto.
+Il titolare sopravvive solo nel triplestore, dove `dct:rightsHolder` porta al nome
+e al codice IPA (`c_f563`).
+
+E anche l'unico livello con le **cinque dimensioni** MQA: reperibilita,
+accessibilita, interoperabilita, riusabilita e contesto, che l'API di ricerca non
+espone e che via REST costerebbero una chiamata per dataset.
+
+`mqa_sparql.py` le raccoglie tutte con una sola query aggregata (~35 secondi,
+9.684 misure), senza carico su dati.gov.it. Il namespace delle metriche e
+`https://piveau.eu/ns/voc#`; ogni dataset vive nel proprio grafo, le misure in
+`.../metrics/<id>`.
+
 ### Perche non `dct:publisher`
 
 data.europa.eu monitora `dct:publisher`, che su un catalogo federato come

@@ -114,6 +114,14 @@ tr.dettaglio td{background:var(--carta-alta);padding:20px 10px 26px}
 .rilevazioni{font-family:var(--mono);font-size:12.5px;border-collapse:collapse}
 .rilevazioni th{text-align:left;color:var(--tenue);font-weight:500;padding:0 18px 6px 0}
 .rilevazioni td{padding:3px 18px 3px 0;border:0;font-variant-numeric:tabular-nums}
+.dimensioni h3{font-family:var(--condensato);font-size:14px;font-weight:600;margin:0 0 10px}
+.dim-riga{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.dim-nome{font-family:var(--mono);font-size:11px;color:var(--tenue);width:118px}
+.dim-barra{width:150px;height:9px;background:#dde4e8;display:inline-block}
+.dim-barra i{display:block;height:100%;background:var(--inchiostro)}
+.dim-barra i.bassa{background:var(--giu)}
+.dim-val{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums}
+.dim-max{color:var(--tenue)}
 .assente{padding:40px 0;color:var(--tenue);font-family:var(--mono);font-size:13px}
 .asse{font-family:var(--mono);font-size:10px;fill:var(--tenue)}
 .linea-asse{stroke:var(--riga);stroke-width:1}
@@ -159,6 +167,7 @@ footer a{color:inherit}
 
 <div class="controlli">
   <select id="livello" aria-label="Livello di aggregazione">
+    <option value="holder">Titolari</option>
     <option value="organization">Organizzazioni</option>
     <option value="publisher">Editori</option>
   </select>
@@ -201,18 +210,22 @@ footer a{color:inherit}
   linea l’ente ha guadagnato, sotto ha perso. Per i valori assoluti, apri la riga.</p>
   <p id="nota-fonte">Fonte: data.europa.eu (Metadata Quality Assessment), scala 0–405.
   Giudizi: Excellent ≥ 351, Good ≥ 221, Sufficient ≥ 121, Bad sotto 121.</p>
+  <p><strong>Titolari</strong>: <code>dct:rightsHolder</code>, l’ente a cui i dati
+  appartengono davvero. E l’unico livello che riconosce chi pubblica tramite un
+  catalogo altrui — un Comune ospitato dal portale regionale, per esempio — e l’unico
+  con le cinque dimensioni. Arriva dall’endpoint SPARQL, non dall’API di ricerca.</p>
   <p><strong>Organizzazioni</strong>: l’ente titolare del catalogo di origine, identificato
   da un UUID stabile. <strong>Editori</strong>: il valore grezzo di <code>dct:publisher</code>,
   quello che monitora data.europa.eu — piu granulare, ma contiene uffici, redazioni e
   denominazioni interne, e cambia identita se l’ente si rinomina.
-  Dati e codice: <a href="https://github.com/piersoft/mqa-monitor">github.com/piersoft/mqa-monitor</a>.</p>
+  Dati e codice: <a id="link-repo" href="./">repository</a>.</p>
 </footer>
 
 </div>
 
 <script>
 const MAX = 405;
-let DATI = null, DATE = [], LIV = 'organization';
+let DATI = null, DATE = [], LIV = 'holder';
 const blocco = () => DATI.livelli[LIV];
 
 const nf1 = new Intl.NumberFormat('it-IT', {minimumFractionDigits:1, maximumFractionDigits:1});
@@ -281,7 +294,8 @@ function graficoGrande(serie, L, A){
 
 function graficoCatalogo(){
   const b = document.getElementById('blocco-andamento');
-  const serie = blocco().serie_catalogo.map((v,i) => [i, v]);
+  const serie = blocco().serie_catalogo
+    .map((v,i) => [i, v]).filter(p => p[1] !== null);
   if (serie.length < 2){ b.hidden = true; return; }
   b.hidden = false;
   const el = document.getElementById('grafico-catalogo');
@@ -300,27 +314,56 @@ function riga(e, i){
   </tr>`;
 }
 
+const MAX_DIM = {findability:100, accessibility:100, interoperability:110,
+                 reusability:75, contextuality:20};
+const ETICH_DIM = {findability:'Reperibilita', accessibility:'Accessibilita',
+                   interoperability:'Interoperabilita', reusability:'Riusabilita',
+                   contextuality:'Contesto'};
+
+function dimensioni(d){
+  if (!d) return '';
+  const barre = Object.keys(MAX_DIM).filter(k => d[k] !== undefined).map(k => {
+    const pct = Math.round(d[k] / MAX_DIM[k] * 100);
+    const scarso = pct < 60;
+    return `<div class="dim-riga">
+      <span class="dim-nome">${ETICH_DIM[k]}</span>
+      <span class="dim-barra"><i style="width:${pct}%" class="${scarso?'bassa':''}"></i></span>
+      <span class="dim-val">${nf1.format(d[k])}<span class="dim-max">/${MAX_DIM[k]}</span></span>
+    </div>`;
+  }).join('');
+  return `<div class="dimensioni"><h3>Dimensioni MQA</h3>${barre}</div>`;
+}
+
 function dettaglio(e){
   const righe = e.serie.slice().reverse().map(p =>
     `<tr><td>${DATE[p[0]]}</td><td>${nf1.format(p[1])}</td><td>${nf0.format(p[2])}</td></tr>`
   ).join('');
   return `<tr class="dettaglio"><td colspan="6"><div class="dettaglio-corpo">
     <div>${graficoGrande(e.serie)}</div>
+    ${dimensioni(e.dim)}
     <table class="rilevazioni">
       <tr><th>Rilevazione</th><th>Punteggio</th><th>Dataset</th></tr>${righe}
     </table>
   </div></td></tr>`;
 }
 
+const NOMI = {
+  holder:       {sing:'titolare', plur:'titolari', col:'Titolare', cerca:'Cerca un titolare'},
+  organization: {sing:'ente',     plur:'enti',     col:'Ente',     cerca:'Cerca un ente'},
+  publisher:    {sing:'editore',  plur:'editori',  col:'Editore',  cerca:'Cerca un editore'},
+};
+
 function misure(){
   const t = blocco().totali;
-  const org = LIV === 'organization';
+  const n = NOMI[LIV];
   document.getElementById('m-enti').textContent = nf0.format(t.enti);
-  document.getElementById('e-enti').textContent = org ? 'Enti' : 'Editori';
+  document.getElementById('e-enti').textContent =
+    n.plur.charAt(0).toUpperCase() + n.plur.slice(1);
   document.getElementById('m-dataset').textContent = nf0.format(t.dataset);
   document.getElementById('m-media').textContent = nf1.format(t.media);
-  document.getElementById('col-ente').textContent = org ? 'Ente' : 'Editore';
-  document.getElementById('cerca').placeholder = org ? 'Cerca un ente' : 'Cerca un editore';
+  document.getElementById('col-ente').textContent = n.col;
+  document.getElementById('cerca').placeholder = n.cerca;
+  document.getElementById('m-data').textContent = t.data || DATI.aggiornato;
 }
 
 function disegna(){
@@ -352,9 +395,7 @@ function disegna(){
   window.__lista = lista;
 
   document.getElementById('conteggio').textContent =
-    lista.length + ' ' + (LIV === 'organization'
-      ? (lista.length === 1 ? 'ente' : 'enti')
-      : (lista.length === 1 ? 'editore' : 'editori'));
+    lista.length + ' ' + (lista.length === 1 ? NOMI[LIV].sing : NOMI[LIV].plur);
 }
 
 function apriChiudi(tr){

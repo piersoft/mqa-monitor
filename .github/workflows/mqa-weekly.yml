@@ -2,8 +2,8 @@ name: Monitoraggio MQA settimanale
 
 on:
   schedule:
-    # 06:00 UTC = 08:00 ora legale italiana (07:00 in ora solare)
-    - cron: "0 6 * * 1"
+    # 10:00 UTC = 12:00 ora legale italiana (11:00 in ora solare)
+    - cron: "0 10 * * 0"
   workflow_dispatch:
     inputs:
       catalog:
@@ -57,6 +57,10 @@ jobs:
           DAY=$(date -u +%F)
           echo "day=$DAY" >> "$GITHUB_OUTPUT"
           echo "report=mqa/report_${CATALOG}_${GROUP_BY}_${DAY}.md" >> "$GITHUB_OUTPUT"
+
+      - name: Rilevazione per titolare (SPARQL)
+        continue-on-error: true
+        run: python3 mqa_sparql.py --catalog "${{ inputs.catalog || 'dati-gov-it' }}"
 
       - name: Ricostruisci storico e pagina pubblica
         run: python3 build_site.py --catalog "${{ inputs.catalog || 'dati-gov-it' }}"

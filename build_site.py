@@ -30,6 +30,9 @@ from collections import defaultdict
 from mqa_monitor import MAX_SCORE, bucket, carica_titoli, titolizza
 
 DATA_RE = re.compile(r"_(\d{4}-\d{2}-\d{2})\.csv\.gz$")
+DATA_CSV_RE = re.compile(r"_(\d{4}-\d{2}-\d{2})\.csv$")
+DIMENSIONI = ["findability", "accessibility", "interoperability",
+              "reusability", "contextuality"]
 
 
 def leggi_snapshot(path):
@@ -94,6 +97,31 @@ def costruisci_storico(outdir, catalog, titoli, livello):
     return storico
 
 
+def storico_titolari(outdir, catalog):
+    """Livello titolare: legge le rilevazioni SPARQL in mqa/titolari/."""
+    storico = {}
+    for path in sorted(glob.glob(os.path.join(
+            outdir, "titolari", "%s_*.csv" % catalog))):
+        m = DATA_CSV_RE.search(os.path.basename(path))
+        if not m:
+            continue
+        day = m.group(1)
+        righe = {}
+        with open(path, encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                media = float(r["scoring"])
+                righe[r["id"]] = {
+                    "data": day, "chiave": r["id"], "slug": r["id"],
+                    "etichetta": r["titolare"],
+                    "n_dataset": int(r["n_dataset"]),
+                    "media": round(media, 2), "mediana": "", "min": "", "max": "",
+                    "rating": bucket(media),
+                    "dim": dict((d, float(r[d])) for d in DIMENSIONI if r.get(d)),
+                }
+        storico[day] = righe
+    return storico
+
+
 CAMPI = ["data", "livello", "chiave", "slug", "etichetta", "n_dataset", "media",
          "mediana", "min", "max", "rating"]
 
@@ -108,6 +136,7 @@ def salva_storico(storici, outdir):
                 for r in sorted(storici[livello][day].values(),
                                 key=lambda x: -x["media"]):
                     r = dict(r, livello=livello)
+                    r.pop("dim", None)
                     w.writerow(r)
     return path
 
@@ -117,40 +146,52 @@ def blocco_livello(storico, date):
     pos = dict((d, i) for i, d in enumerate(date))
     voci = {}
     for day in date:
+        if day not in storico:
+            continue
         for chiave, r in storico[day].items():
             v = voci.setdefault(chiave, {"nome": r["etichetta"], "slug": r["slug"],
                                          "punti": {}})
             v["nome"] = r["etichetta"]
             v["slug"] = r["slug"]
             v["punti"][pos[day]] = [round(r["media"], 1), r["n_dataset"]]
+            if r.get("dim"):
+                v["dim"] = dict((k, round(x, 1)) for k, x in r["dim"].items())
 
-    ultimo_i = len(date) - 1
+    presenti = [i for i, d in enumerate(date) if d in storico]
+    ultimo_i = presenti[-1] if presenti else len(date) - 1
     lista = []
     for chiave, v in voci.items():
         ultimo = v["punti"].get(ultimo_i)
         if not ultimo:
             continue  # non piu presente nell'ultima rilevazione
-        prec = v["punti"].get(ultimo_i - 1)
-        lista.append({
+        prec = v["punti"].get(presenti[-2]) if len(presenti) > 1 else None
+        voce = {
             "id": chiave, "nome": v["nome"], "slug": v["slug"],
             "media": ultimo[0], "n": ultimo[1],
             "delta": round(ultimo[0] - prec[0], 1) if prec else None,
             "rating": bucket(ultimo[0]),
             "serie": [[i, v["punti"][i][0], v["punti"][i][1]]
                       for i in sorted(v["punti"])],
-        })
+        }
+        if v.get("dim"):
+            voce["dim"] = v["dim"]
+        lista.append(voce)
     lista.sort(key=lambda x: -x["media"])
 
     tot_n = sum(x["n"] for x in lista)
     serie_cat = []
     for day in date:
+        if day not in storico:
+            serie_cat.append(None)
+            continue
         righe = storico[day].values()
         n = sum(r["n_dataset"] for r in righe)
         serie_cat.append(round(
             sum(r["media"] * r["n_dataset"] for r in righe) / max(n, 1), 1))
     return {
         "totali": {"enti": len(lista), "dataset": tot_n,
-                   "media": serie_cat[-1] if serie_cat else 0},
+                   "media": serie_cat[ultimo_i] if serie_cat else 0,
+                   "data": date[ultimo_i] if date else None},
         "serie_catalogo": serie_cat,
         "enti": lista,
     }
@@ -195,6 +236,12 @@ def main():
     for livello in ("organization", "publisher"):
         storici[livello] = costruisci_storico(
             args.outdir, args.catalog, titoli, livello)
+        ultimo = sorted(storici[livello])[-1] if storici[livello] else None
+        print("  %-13s %d rilevazioni, %d voci nell'ultima"
+              % (livello, len(storici[livello]),
+                 len(storici[livello][ultimo]) if ultimo else 0))
+    storici["holder"] = storico_titolari(args.outdir, args.catalog)
+    for livello in ("holder",):
         ultimo = sorted(storici[livello])[-1] if storici[livello] else None
         print("  %-13s %d rilevazioni, %d voci nell'ultima"
               % (livello, len(storici[livello]),

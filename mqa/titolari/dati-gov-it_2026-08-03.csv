@@ -1,0 +1,1615 @@
+id,titolare,n_dataset,scoring,pct,findability,accessibility,interoperability,reusability,contextuality
+anci,Anci - Associazione Nazionale Comuni Italiani,1,405.0,100.0,100.0,100.0,110.0,75.0,20.0
+ucp_ar,Unione dei Comuni del Pratomagno,3,405.0,100.0,100.0,100.0,110.0,75.0,20.0
+inps,Istituto Nazionale di Previdenza Sociale,2280,399.23,98.58,100.0,100.0,104.23,75.0,20.0
+c_l400,Comune di Treviglio,44,398.18,98.32,100.0,94.55,108.64,75.0,20.0
+iacp_ba,Arca - Puglia Centrale,4,395.0,97.53,100.0,100.0,100.0,75.0,20.0
+unical,Università della Calabria,5,393.0,97.04,100.0,100.0,98.0,75.0,20.0
+c_h901,Comune di San Giovanni Valdarno,16,390.86,96.51,100.0,100.0,95.86,75.0,20.0
+c_i804,Comune di Sulmona,12,388.33,95.88,100.0,100.0,93.33,75.0,20.0
+c_d735,Comune di Fosdinovo,15,387.35,95.64,100.0,100.0,92.35,75.0,20.0
+atsbs,Agenzia di Tutela della Salute di Brescia,10,387.0,95.56,100.0,100.0,92.0,75.0,20.0
+asl_vvta,ASL TARANTO,15,386.33,95.39,100.0,100.0,91.33,75.0,20.0
+c_l537,Comune di Vaiano,18,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+DMDAPY,Città metropolitana di Torino,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_d208,Comune di Cuorgnè,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+mr,Unione dei Comuni valdostani Mont-Rose,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+r_piemont,Regione Piemonte,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_i829,Comune di Sondrio,16,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+KH5RHFCV,MUR,69,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l727,Comune di Venaria Reale,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e879,Comune di Mandello del Lario,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_h183,Comune di Rapallo,8,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+01796490744,GAL Terra dei Messapi,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e020,Comune di Giaveno,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e047,Comune di Giovinazzo,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f916,Comune di Nociglia,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+C_G997,Comune di Pratiglione,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+uni_bo,Alma Mater Studiorum - University of Bologna,2,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+cm_valtetir,Comunità Montana Valtellina di Tirano,11,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_b946,Comune di Casavatore,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f410,Comune di Montale,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+ASL_BR,ASL BRINDISI,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+atsin,Agenzia di Tutela della Salute dell'Insubria,10,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+p_vr,Provincia di Verona,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+bmspa,Brescia Mobilita' Spa,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l750,Città di Vercelli,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+art,Autorità di regolazione dei trasporti,32,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_d223,Comune di Cursi,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l172,Comune di Santa Cesarea Terme,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+p_ag,Libero Consorzio Comunale di Agrigento,11,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l304,Comune di Tortona,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+cmto,Città metropolitana di Torino,67,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f280,Comune di Mola di Bari,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f221,Comune di Minervino di Lecce,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+CMVI,Comunità Montana Valle Imagna,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_c529,Comune di Cerreto Guidi,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f831,Comune di Pineto,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_i452,Comune di Sassari,23,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e335,Comune di Isernia,8,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_d600,Comune di Finale Ligure,2,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l571,Comune di Valenzano,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f585,Comune di Roseto degli Abruzzi,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_m187,Comune di Zollino,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_b492,Comune di Campagna,6,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_b675,Comune di Capoterra,13,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_a359,Comune di Arbus,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l219,Comune di Rivalta di Torino,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+uni_pv,Università degli Studi di Pavia,2,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+01582480537,Attivarti.org,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+msbcs,Messinaservizi Bene Comune S.p.A.,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l010,Comune di Surano,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_h793,Comune di San Cesario di Lecce,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f117,Comune di Melpignano,8,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_a479,Comune di Asti,27,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l746,Comune di Verbania,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_d761,Comune di Francavilla Fontana,2,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+p_RO,Provincia di Rovigo,15,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f152,Comune di Mesagne,8,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+arltl_0,ARTI Puglia,13,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e805,Comune di Magione,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_i754,Comune di Siracusa,10,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+asset,ASSET Puglia,28,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l858,Comune di Vieste,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_h118,Comune di Quartu Sant'Elena,11,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_b584,Comune di Candela,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_a638,Comune di Barcellona Pozzo di Gotto,17,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l702,Comune di Vecchiano,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+p_bi,Provincia di Biella,10,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+eanln_rm,"ENEA - Agenzia Nazionale per Le Nuove Tecnologie, L'Energia e Lo Sviluppo Economico Sostenibile",18,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+unite,Università degli Studi di Teramo,11,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l115,Comune di San Pietro in Lama,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_g674,Comune di Pinerolo,17,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_a182,Comune di Alessandria,7,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+PM,Politecnico di Milano,25,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+astvp,Agenzia di Tutela della Salute della Val Padana,13,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+izs_loer,"Istituto Zooprofilattico Sperimentale della Lombardia e dell'Emilia Romagna ""Bruno Ubertini""",11,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+ucve,Unione dei Comuni valdostani Evancon,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_a125,Comune di Alba Adriatica,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_b791,Comune di Carmagnola,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_a388,Comune di Arenzano,10,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f288,Comune di Molinella,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l842,Comune di Vico del Gargano,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+cciaa_me,"Camera di Commercio, Industria, Artigianato e Agricoltura di Messina",1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_m262,Comune di Cellole,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+uni_por,Università degli Studi del Piemonte Orientale,18,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e882,Comune di Manduria,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+p_al,Provincia di Alessandria,44,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_i363,Comune di Santo Stefano di Magra,8,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+Z3N82Q,Città metropolitana di Torino,9,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_a783,Comune di Benevento,11,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_c309,Comune di Castiglione del Lago,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+USUCB,Università degli Studi di Urbino Carlo Bo,13,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f194,Comune di Miggiano,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e472,Comune di Latina,13,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l113,Comune di Termoli,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_g291,Comune Palo Del Colle,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f889,Comune di Nichelino,15,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+ciasm,ASM Costruire Insieme,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+arlpa_pa,ARPA,12,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+p_cz,Provincia di Catanzaro,8,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_c627,Comune di Chieri,28,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+aspan,ASP Ambito 9,8,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_m122,Comune di Volpiano,10,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+asstom,Azienda Socio Sanitaria Territoriale Ovest Milanese,22,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+IRES PIEMONTE,IRES PIEMONTE,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+UNSTU_MC,Università degli Studi di Macerata,9,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+ires_pie,IRES Piemonte,10,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_i703,Comune di Settimo Torinese,6,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_b019,Comune di Borgomanero,10,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_h096,Città di Putignano,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e502,Comune di Matera,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+udcvvmb,Unione dei Comuni valdostani Valdigne-Mont-Blanc,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_c852xf,Unione Pedemontana Parmense,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f335,Comune di Moncalieri,7,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l122,Comune di Terralba,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e053,Comune di Giuggianello,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l066,Comune di Tavagnasco,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_d872,Comune di Galliate,6,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+agcm_,Autorità garante della concorrenza e del mercato,55,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+GOOLCD,Camera di commercio di Torino,8,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+arlfa,"Agenzia regionale per il lavoro, la formazione e l'accreditamento",3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+a13_f952,ASL Novara,6,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l008,Comune di Supersano,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_l887,Comune di Specchia,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+uni_ct,Universita' degli Studi di Catania,30,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+UFOZKZ,Comune di Saluzzo,8,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e463,Comune di La Spezia,6,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+PUSV,Puglia Sviluppo SpA,8,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+conbimte,Consorzio BIM Vomano Tordino di Teramo,7,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_c869,Comune di Collesalvetti,17,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_g712,Comune di Pisticci,8,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+r_piemon,Regione Piemonte,550,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+adisu,Adisu,12,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_b285,Comune di Busca ,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+uni_fe,Università degli Studi di Ferrara,23,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+p_is,Provincia di Isernia,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+APMes,Autorità di Sistema Portuale dello Stretto,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+udct,Unione dei Comuni del Trasimeno,7,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e156,Comune di Gravina di Catania,10,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_i048,Comune di Sannazzaro De' Burgondi,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+ait_048,Autorità Idrica Toscana,12,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+ipres,IPRES,51,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+udsa_,Università degli Studi dell'Aquila,16,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_a281,Comune di Andrano,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e038,Comune di Gioia del Colle,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_a859,Comune di Biella,7,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_c990,Comune di Corciano,6,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+atsb,Agenzia di Tutela della Salute di Bergamo,10,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_e630,Comune di Lizzano,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_a453,Comune di Arzachena,11,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f881,Comune di Neviano,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_b690,Comune di Caprarica di Lecce,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+crpuglia,Consiglio Regionale della Puglia,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_b822,Comune di Carpignano Salentino,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_h645,Comune di Ruvo di Puglia,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_d205,Comune di Cuneo,45,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+agdogane,Agenzia delle Dogane e dei Monopoli,31,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+uni_udi,Università degli studi di Udine,9,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f158,Comune di Messina,102,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+cds,TAR Sardegna,436,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+udsm_me,Università degli Studi di Messina,13,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_f994,Comune di Occhiobello,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0
+c_a944,Comune di Bologna,699,384.99,95.06,100.0,100.0,90.0,74.99,20.0
+c_e202,Comune di Grosseto,104,384.62,94.97,100.0,100.0,89.62,75.0,20.0
+c_f839,Comune di Napoli,36,384.44,94.92,100.0,100.0,89.44,75.0,20.0
+r_campan,Regione Campania,366,384.34,94.9,100.0,99.56,90.0,74.78,20.0
+c_f027,Comune di Massafra,38,384.21,94.87,100.0,100.0,89.21,75.0,20.0
+artpp,ARET - Pugliapromozione,23,384.13,94.85,100.0,100.0,89.13,75.0,20.0
+c_g636,Comune di Pieve a Nievole,16,383.89,94.79,100.0,94.07,94.81,75.0,20.0
+c_i187,Comune di Santa Fiora,15,383.67,94.73,100.0,100.0,88.67,75.0,20.0
+r_puglia,Regione Puglia,247,383.66,94.73,100.0,99.6,89.31,74.76,20.0
+actre,Azienda Consorziale Trasporti,4,382.5,94.44,100.0,100.0,90.0,72.5,20.0
+c_g999,Comune di Prato,276,382.25,94.38,100.0,97.97,89.28,75.0,20.0
+c_b626,Comune di Cantagallo,14,382.14,94.36,100.0,100.0,87.14,75.0,20.0
+arlpa,ARPAL,6,381.67,94.24,100.0,100.0,90.0,71.67,20.0
+c_f084,Comune di Mediglia,3,381.67,94.24,100.0,100.0,90.0,71.67,20.0
+c_l390,Comune di San Vincenzo,41,381.59,94.22,100.0,100.0,86.59,75.0,20.0
+2YIVZP,Comune di Santa Luce,11,381.36,94.16,100.0,100.0,86.36,75.0,20.0
+c_g926,Comune di Porto Viro,5,381.0,94.07,100.0,100.0,86.0,75.0,20.0
+r_sicili,Regione Siciliana,180,380.72,94.0,100.0,96.44,89.28,75.0,20.0
+8IT8ZE,Comune di Castel del Piano,17,380.29,93.9,100.0,95.29,90.0,75.0,20.0
+c_m059,Comune di Vinci,17,380.29,93.9,100.0,95.29,90.0,75.0,20.0
+agid,Agenzia per l’Italia Digitale - Servizio Strategie di procurement e innovazione del mercato,40,380.25,93.89,100.0,96.25,89.0,75.0,20.0
+c_f656,Comune di Montevarchi,29,380.17,93.87,100.0,94.48,90.69,75.0,20.0
+atmsp,Azienda Trasporti Messina S.p.A,4,380.0,93.83,100.0,100.0,85.0,75.0,20.0
+c_c002,Comune di Cassano allo Ionio,9,379.44,93.69,100.0,94.44,90.0,75.0,20.0
+C_d863,Comune di Galatone,39,379.1,93.6,100.0,93.85,90.26,75.0,20.0
+c_l328,Città di Trani,5,379.0,93.58,100.0,100.0,84.0,75.0,20.0
+cmfi,Città metropolitana di Firenze,168,378.87,93.55,100.0,96.19,87.68,75.0,20.0
+c_f437,Comune di Monte Argentario,30,378.43,93.44,100.0,93.14,90.29,75.0,20.0
+atspv,Agenzia di Tutela della Salute di Pavia,13,378.08,93.35,100.0,100.0,83.08,75.0,20.0
+c_l775,Comune di Vernio,18,376.11,92.87,100.0,100.0,81.11,75.0,20.0
+c_f052,Comune di Matera,216,375.93,92.82,100.0,92.22,88.7,75.0,20.0
+ATO_PU,Autorità idrica Pugliese (AIP),13,375.77,92.78,100.0,100.0,80.77,75.0,20.0
+m_lps,Ministero del Lavoro,83,375.0,92.59,100.0,100.0,80.0,75.0,20.0
+aorn_063,Azienda Ospedaliera di Rilievo Nazionale Antonio Cardarelli,10,375.0,92.59,100.0,100.0,90.0,65.0,20.0
+a_cb,Azienda Sanitaria Regione Molise,3,375.0,92.59,100.0,100.0,90.0,65.0,20.0
+5N2TR557,PagoPA S.p.A.,12,375.0,92.59,100.0,100.0,90.0,65.0,20.0
+afs,ASST Fatebenefratelli Sacco,3,375.0,92.59,100.0,100.0,90.0,65.0,20.0
+uctvt,Unione di Comuni Terre di Vini e di Tartufi,1,375.0,92.59,100.0,100.0,90.0,65.0,20.0
+B25CX1,Comune di Pescaglia,16,375.0,92.59,100.0,90.0,90.0,75.0,20.0
+c_c978,Comune di Copertino,16,375.0,92.59,100.0,90.0,90.0,75.0,20.0
+asstb,Asst Spedali Civili di Brescia,8,375.0,92.59,100.0,100.0,90.0,65.0,20.0
+c_a874,Comune di Binetto,3,375.0,92.59,100.0,100.0,80.0,75.0,20.0
+c_g687,Comune di Piombino,21,374.52,92.47,100.0,96.19,83.33,75.0,20.0
+cmct,Città Metropolitana di Catania,22,373.18,92.14,100.0,78.18,100.0,75.0,20.0
+c_f572,Comune di Montemurlo,48,372.86,92.06,100.0,84.29,93.57,75.0,20.0
+p_PI,Provincia di Pisa,83,372.74,92.03,100.0,91.43,86.31,75.0,20.0
+ARPAP,ARPA Puglia ,21,372.62,92.0,100.0,88.57,89.05,75.0,20.0
+c_a734,Comune di Beinasco,3,371.67,91.77,100.0,100.0,76.67,75.0,20.0
+8W0Q4VWZ,Agenzia Nazionale per la Meteorologia e Climatologia - ItaliaMeteo,8,370.71,91.53,100.0,100.0,75.71,75.0,20.0
+XW88C90Q,Euro-Mediterranean Center on Climate Change Foundation,2,370.0,91.36,100.0,100.0,75.0,75.0,20.0
+c_h985,Comune di San Marco in Lamis,10,368.53,91.0,100.0,90.59,82.94,75.0,20.0
+cdcvd_,Consorzio Dei Comuni della Valle D'Aosta Bacino Imbrifero Montano della Dora Baltea,5,367.0,90.62,100.0,82.0,90.0,75.0,20.0
+arsls,Agenzia Regionale Strategica per la Salute ed il Sociale,75,366.87,90.59,100.0,85.07,86.8,75.0,20.0
+p_pt,Provincia di Pistoia,11,366.82,90.57,100.0,95.45,76.36,75.0,20.0
+02904120546,Associazione Centro Studi Città di Foligno,6,366.67,90.54,100.0,86.67,85.0,75.0,20.0
+c_i921,Comune di Spoleto,5,365.0,90.12,100.0,100.0,70.0,75.0,20.0
+c_i991,Comune di Subbiano,16,365.0,90.12,100.0,80.0,90.0,75.0,20.0
+clrfl_,Consorzio per la Ricerca sulla Filiera Lattiero Casearia,12,365.0,90.12,100.0,80.0,90.0,75.0,20.0
+IVsAPIC,IVASS - Istituto per la Vigilanza sulle Assicurazioni,19,365.0,90.12,100.0,100.0,70.0,75.0,20.0
+clasv,Lamma Toscana,6443,364.9,90.1,100.0,99.89,70.01,75.0,20.0
+c_c996,Comune di Coreglia Antelminelli,16,364.0,89.88,100.0,76.0,93.0,75.0,20.0
+c_a632,Comune di Barberino di Mugello,16,363.97,89.87,100.0,72.41,96.55,75.0,20.0
+PT,Politecnico di Torino,12,363.33,89.71,100.0,100.0,68.33,75.0,20.0
+c_b984,Casole d'Elsa,17,363.0,89.63,100.0,72.33,95.67,75.0,20.0
+c_a468,Sinalunga,17,361.67,89.3,100.0,68.0,98.67,75.0,20.0
+c_m126,Comune di Volterra,16,360.62,89.04,100.0,80.0,85.62,75.0,20.0
+pr_marm,Parco regionale della Maremma,18,360.56,89.03,100.0,60.0,105.56,75.0,20.0
+C_D634,Comune di Flero,53,360.28,88.96,100.0,75.28,90.0,75.0,20.0
+asstv,Azienda Socio Sanitaria Territoriale della Brianza,10,360.0,88.89,100.0,100.0,65.0,75.0,20.0
+PCM,PCM - Dipartimento della Protezione Civile,566,359.29,88.71,100.0,74.56,89.73,75.0,20.0
+c_f551,Comune di Montelupo Fiorentino,34,358.82,88.6,100.0,78.24,85.59,75.0,20.0
+CMWAVL,Unione dei Comuni valdostani Walser,3,358.33,88.48,100.0,100.0,63.33,75.0,20.0
+c_g251,Comune di Palagianello,3,358.33,88.48,100.0,73.33,90.0,75.0,20.0
+m_svec,MIMIT - Ministero delle Imprese e del Made in Italy,370,355.43,87.76,100.0,70.43,90.0,75.0,20.0
+c_i532,Comune di Schivenoglia,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_m088,Comune di Vittoria,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cgdf_tn,Comun General de Fascia,19,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+USC,Università degli Studi di Camerino,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciaa_vi,"Camera di Commercio, Industria, Artigianato e Agricoltura di Vicenza",44,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g736,Comune di Taipana,14,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f750,Comune di Morsano al Tagliamento,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+05487980723,AMIU,8,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e820,Comune di Magnano in Riviera,37,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+ccas,Camera di Commercio Arezzo Siena,11,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f395,Comune di Montagnareale,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d668,Comune di Fontanelice,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i564,Comune di Sedilo,26,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c086,Comune di Castel del Rio,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+aril_,Aspal - Agenzia Sarda per le Politiche Attive del Lavoro,15,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c980,Comune di Copparo,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+udctp_,Unione dei Comuni Terre di Pianura,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cp_022,Comunità della Paganella,20,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h196,Comune di Ravascletto,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_b985,Comune di Casoli,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f965,Comune di Novi Ligure,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+UIA75WMM,Fondazione RESTART,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+UICCIAA,"Unione Italiana delle Camere di Commercio Industria, Artigianato e Agricoltura",83,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g780,Comune di Polcenigo,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciaa_vr,"Camera di Commercio, Industria, Artigianato e Agricoltura di Verona",37,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h951,Comune di San Leonardo,6,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+p_av,Provincia di Avellino,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l801,Comune di Verzegnis,9,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+m_bac-P7FOAB,Biblioteca nazionale centrale di firenze,1,355.0,87.65,100.0,70.0,90.0,75.0,20.0
+cciaa_fg,"Camera di Commercio, Industria, Artigianato e Agricoltura di Foggia",14,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+arpas_ca,Agenzia Regionale per la Protezione dell'Ambiente della Sardegna,12,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c918,Comune di Comeglians,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+aci_037,ASP Circondario Imolese,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i939,Comune di Staranzano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g768,Comune di Poggio Renatico,22,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+umape,Unione Montana Appennino Parma Est,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+p_pd,Provincia di Padova,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h347,Comune di Rive d'Arcano,6,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cissa_pi,Consorzio Intercomunale Servizi Socio Assistenziali di Pianezza,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f144,Comune di Mereto di Tomba,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciarso,"Camera di Commercio, Industria, Artigianato e Agricoltura del Sud Est Sicilia",9,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f156,Comune di Mesola,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+03304640547,AFoR,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+assbre,ASBR - Azienda Speciale Servizi Bassa Reggiana,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h609,Comune di Roveredo in Piano,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d962,Comune di Gemona del Friuli,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_m309,Comune di Fonte Nuova,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g508,Comune di Petilia Policastro,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+eripcfvg,Ente Regionale per Il Patrimonio Culturale della Regione Autonoma Friuli Venezia Giulia - Erpac,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+uirbf,Comunita' Riviera Friulana,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h895,Comune di San Giorgio di Nogaro,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d700,Comune di Forgaria nel Friuli,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_m263,Comune di Porto Cesareo,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h509,Comune di Romano di Lombardia,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g886,Comune di Porcia,12,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciaa_ao,Camera Valdostana delle Imprese e delle Professioni,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+09000640012,SORIS ,9,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c420,Comune di Cefalà Diana,16,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a283,Comune di Andreis,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_b483,Comune di Camino al Tagliamento,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a516,Comune di Aviano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+ctvf_tn,Comunità Territoriale della Val di Fiemme,19,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d408,Comune di Enemonzo,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+utigemo,Comunità di Montagna del Gemonese,8,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a254,Comune di Amaro,7,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e178,Comune di Grigno,20,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+atsmetmi,Agenzia di Tutela della Salute della Citta' Metropolitana di Milano,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cccl,"Camera di Commercio, Industria, Artigianato e Agricoltura di Como-Lecco",17,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f718,Comune di Mordano,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+iuss_pv,Istituto Universitario di Studi Superiori di Pavia,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c494,Comune di Cercivento,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciaa_ge,"Camera di Commercio, Industria, Artigianato e Agricoltura di Genova",20,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i877,Comune di Sovicille,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l144,Comune di Terzo di Aquileia,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e476,Comune di Lauco,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e473,Comune di Latisana,14,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e957,Comune di Marineo,8,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i562,Comune di Sedegliano,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c389,Comune di Cavazzo Carnico,9,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+f_756,Comune di Mortegliano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e410,Comune di Lagosanto,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_m399,Comune di Treppo Ligosullo,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+asstl,Azienda Socio Sanitaria Territoriale di Lecco,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+arls_031,ERSA,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a166,Comune di Albisola Superiore,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f356,Comune di Monfalcone,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g028,Comune di Olgiate Olona,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l273,Comune di Torremaggiore,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+GY7G6Z8F,"Camera di Commercio, Industria, Artigianato e Agricoltura di Cremona-Mantova-Pavia",13,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a894,Comune di Bitritto,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e148,Comune di Grassobbio,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_m409,Comune di Tresignana,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cbimt_ud,Consorzio del Bacino Imbrifero Montano del Tagliamento Nelle Province di Udine e Pordenone,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h455,Comune di Roccella Valdemone,11,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f080,Comune di Mede,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+uni_ba,Università degli Studi di Bari - Aldo Moro,105,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c101,Comune di Castelfiorentino,6,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciaa_to,"Camera di Commercio, Industria, Artigianato e Agricoltura di Torino",23,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l039,Comune di Talmassons,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+atsmb,Agenzia di Tutela della Salute della Brianza,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f832,Comune di Muzzana del Turgnano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e289,Comune di Imola,16,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l725,Comune di Venafro,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e629,Comune di Lizzanello,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l703,Comune di Vedano Olona,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciaa_cs,"Camera di Commercio, Industria, Artigianato e Agricoltura di Cosenza",9,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e899,Comune di Manzano,21,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+UNITO,Università di Torino,14,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d455,Comune di Faedis,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_b247,Comune di Budoia,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a184,Comune di Alessano,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a436,Comune di Arquata Scrivia,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c885,Comune di Colloredo di Monte Albano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c342,Comune di Enna,12,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+SPABDOMM,"Magnifica Comunità di Montagna Dolomiti Friulane, Cavallo e Cansiglio",4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i464,Comune di Sauris,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h657,Comune di Sacile,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+uticar,Regione Autonoma Friuli-Venezia Giulia,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g381,Comune di Paularo,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+r_liguri,Regione Liguria,19,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l868,Comune di Vigarano Mainarda,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e078,Comune di Goito,9,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+uni_napa,Università degli Studi di Napoli 'Parthenope',15,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+atsm,ATS della Montagna,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g888,Comune di Pordenone,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+l_686,Comune di Varmo,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+apss,Azienda sanitaria universitaria integrata del Trentino - Asuit,14,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+SEUNSTNA,"Universita' degli Studi della Campania ""L. Vanvitelli""",11,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+iss_rm,Istituto Superiore di Sanità,13,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+01749570303,IRES,22,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h715,Comune di Salle,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c882,Comune di Collinas,6,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i657,Comune di Serravalle Scrivia,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d719,Comune di Forni di Sopra,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l245,Comune di Torre Annunziata,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g352,Comune di Pasian di Prato,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g300,Comune di Paluzza,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cavb_,Comunità Alta Valsugana e Bersntol,20,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i328,Comune di San Teodoro,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e271,Comune di Gussago,7,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g710,Comune di Pisogne,9,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciaapp,"Camera di Commercio, Industria, Artigianato e Agricoltura di Pistoia-Prato",32,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i914,Comune di Spino d'Adda,15,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+r_friuve,Regione Autonoma Friuli Venezia Giulia - Direzione Centrale Autonomie Locali,6,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c327,Comune di Castions di Strada,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c121,Comune di Castel Guelfo di Bologna,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f621,COMUNE DI Monte San Giusto,52,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h286,Comune di Rignano sull'Arno,17,355.0,87.65,100.0,64.14,95.86,75.0,20.0
+c_e618,Comune di Milena,6,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h206,Comune di Reana del Rojale,25,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d332,Comune di Domodossola,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f083,Comune di Medicina,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e760,Comune di Lusevera,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l424,Comune di Trieste,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d540,Comune di Ferla,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+asstla,Azienda Socio Sanitaria Territoriale Lariana,16,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c421,Comune di Cefalù,20,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+WQF3ZW8F,Ministero del Turismo,16,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+inail,INAIL,102,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h029,Comune di Premariacco,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciaa_rc,"Camera di Commercio, Industria, Artigianato e Agricoltura di Reggio Calabria",31,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_m410,Comune di Riva del Po,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l307,Comune di Tortoreto,7,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d705,Comune di Forlimpopoli,9,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+acfts,Azienda Forestale Trento - Sopramonte,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g966,Comune di Pozzuolo del Friuli,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+p_pr,Provincia di Parma,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_b550,Comune di Campomarino,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+01581060223,Alto Garda Servizi SpA,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+utidt,Comunità di montagna del Natisone e Torre,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+icms_,Istituzione Comunale Marsala Schola,6,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+arpal,Agenzia Regionale per Le Politiche Attive del Lavoro - Arpal Umbria,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cdg_,Comunità delle Giudicarie,16,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cnit,CNIT - Consorzio Nazionale Interuniversitario per le Telecomunicazioni,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+aou_pisa,Azienda Ospedaliero-Universitaria Pisana,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g786,Comune di Policoro,11,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d324,Comune di San Dorligo della Valle,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_m147,Comune di Zanica,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a810,Comune di Bertiolo,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h533,Comune di Ronchis,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cvc_tn,Comunità della Valle di Cembra,24,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cvs_,Comunità della Valle di Sole,23,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciaadl,"Camera di Commercio, Industria, Artigianato e Agricoltura di Venezia Rovigo",12,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+R_SARDEG,Regione Autonoma della Sardegna,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e854,Comune di Maletto,11,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_b788,Comune di Carlino,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i056,Comune di San Nicola La Strada,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a700,Comune di Basiliano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+co_unap,Consorzio Universitario Piceno,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+UNSTTREN,Università di Trento,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+p_tn82l3,Consiglio della Provincia Autonoma di Trento,6,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i403,Comune di San Vito al Tagliamento,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_b604,Comune di Canino,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d730,Comune di Forte dei Marmi,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g384,Comune di Paulilatino,9,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+utismsm,Comunita' Sile,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d360,Comune di Dozza,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+m_d,Istituto Geografico Militare,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+amtbs,Amtab,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a892,Comune di Bitetto,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e320,Comune di Jolanda di Savoia,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+arpa_fvg,Agenzia Regionale per la Protezione dell'Ambiente del Friuli Venezia Giulia,20,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+ccmm,Camera di Commercio di Milano Monza Brianza Lodi,18,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciaa_bz,"Camera di Commercio, Industria, Artigianato, Turismo e Agricoltura di Bolzano",16,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a965,Comune di Bondeno,30,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h002,Comune di Prato Carnico,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e553,Comune di Lestizza,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c641,Comune di Chiopris-Viscone,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_b892,Comune di Casalfiumanese,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l018,Comune di Sutrio,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_­l024,Comune di Taggia,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g949,Comune di Povoletto,33,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+udctf_fe,Unione Terre e Fiumi,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+asstvo,Azienda Socio Sanitaria Territoriale della Valle Olona,17,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f980,Comune di Nurachi,29,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d630,Comune di Flaibano,7,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g344,Comune di Parrano,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i849,Comune di Soresina,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d004,Comune di Coriano,8,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g891,Comune di Porpetto,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a553,Comune di Bagnaria Arsa,25,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+rseu_087,E.R.S.U. Catania,7,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d718,Comune di Forni Avoltri,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g084,Comune di Orani,20,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciaa_mo,"Camera di Commercio, Industria, Artigianato e Agricoltura di Modena",20,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cvt_tn,Comunità Valsugana e Tesino,26,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d085,Comune di Coseano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+ccbvn,"Camera di Commercio, Industria, Artigianato e Agricoltura Monte Rosa Laghi Alto Piemonte",21,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d670,Comune di Fontanafredda,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+pcm,PCM - Dipartimento della Trasformazione Digitale,8,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l909,Comune di Villa Santina,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+ispra_rm,Istituto Superiore per la Protezione e la Ricerca Ambientale,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+epnd_fri,Parco Naturale Dolomiti Friulane,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a983,Comune di Bordano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c654,Comune di Chiusa Sclafani,13,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e953,Comune di Marianopoli,27,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a640,Comune di Barcis,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c352,Comune di Catanzaro,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+ROOFCYM9,Comunità del Collio,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+udcvtc,Unione dei Comuni Valli Taro e Ceno,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f991,Comune di Nuxis,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+uticana,Comunita' di Montagna Canal del Ferro e Val Canale,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c991,Comune di Cordenons,6,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a163,Comune di Albino,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+M_ef,Ministero dell' Economia e delle Finanze,21,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e107,Comune di Goro,16,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l246,Comune di Torreano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f898,Comune di Nimis,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c556,Comune di Cervignano del Friuli,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+ATU65953667,Argento vivo. Fotografia Patrimonio Culturale,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d383,Comune di Duino-Aurisina,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g198,Comune di Ovaro,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g969,Comune di Pradamano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d269,Comune di Deliceto,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_m400,Comune di Fiumicello Villa Vicentina,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_c293,Comune di Castenedolo,8,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a491,Comune di Attimis,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i028,Comune di San Mauro Castelverde,7,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+C_H229,Comune di Remanzacco,26,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+uni_pa,Università degli Studi di Palermo,19,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_f760,Comune di Moruzzo,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+ccmt,Camera di Commercio della Maremma e del Tirreno,31,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_b033,Comune di Borgo San Dalmazzo,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l473,Comune di Turri,17,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+nucir_im,Nuovo Circondario Imolese,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h787,Comune di San Canzian d'Isonzo,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a346,Comune di Aquileia,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+um_acqua,Unione dei Comuni della Romagna Forlivese - Unione Montana,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+mcdac_tn,Magnifica Comunità degli Altipiani Cimbri,24,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a447,Comune di Arta Terme,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l195,Comune di Tolmezzo,9,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e098,Comune di Gorizia,12,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+CCDFRIU,Comunita' Collinare Del Friuli,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cmdrc,Città Metropolitana di Reggio Calabria,11,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cr_022,Comunità Rotaliana-Königsberg,21,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h200,Comune di Raveo,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+ITEA,ITEA Spa,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_a710,Comune di Bastia Umbra,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+izs_um,Istituto Zooprofilattico Sperimentale dell'Umbria e delle Marche,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+arida_03,Agenzia Regionale per il Diritto allo Studio,6,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+alsvi,Agenzia Lavoro,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_d645,Comune di Fogliano Redipuglia,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_b044,Comune di Borgo Tossignano,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_g831,Comune di Pontebba,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_e833,Comune di Majano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+arsac,ARSAC - Azienda Regionale per lo Sviluppo dell’Agricoltura Calabrese,7,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+cciaa_cn,"Camera di Commercio, Industria, Artigianato e Agricoltura di Cuneo",16,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i699,Comune di Settimo San Pietro,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_i777,Comune di Socchieve,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_l521,Comune di Uta,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0
+c_h294,Comune di Rimini,71,354.72,87.59,100.0,100.0,59.72,75.0,20.0
+regcal,Regione Calabria,324,354.63,87.56,100.0,100.0,59.63,75.0,20.0
+csdlr,Regione Friuli Venezia Giulia,197,354.59,87.55,100.0,99.59,60.0,75.0,20.0
+um_cr,Unione Municipia,8,353.75,87.35,100.0,100.0,60.0,73.75,20.0
+m_ef,Ministero dell'Economia e delle Finanze,3709,353.73,87.34,98.73,99.89,60.11,75.0,20.0
+c_c469,Comune di Cento,6,353.33,87.24,100.0,86.67,71.67,75.0,20.0
+umdma,Unione Montana Dei Monti Azzurri,34,353.24,87.22,100.0,100.0,58.24,75.0,20.0
+c_g436,COMUNE DI Penna San Giovanni,50,353.0,87.16,100.0,100.0,58.0,75.0,20.0
+comvalfo,Comune di Valfornace,38,352.89,87.13,100.0,97.89,60.0,75.0,20.0
+r_umbria,Regione Umbria,356,352.78,87.11,100.0,95.73,62.05,75.0,20.0
+c_a334,Comune di Appignano,61,352.7,87.09,100.0,100.0,57.7,75.0,20.0
+c_l483,Comune di Udine,34,352.65,87.07,100.0,97.65,60.0,75.0,20.0
+c_g273,Comune di Palermo,1676,352.6,87.06,100.0,99.09,58.5,75.0,20.0
+c_f496,COMUNE DI Montefano,56,352.5,87.04,100.0,100.0,57.5,75.0,20.0
+c_h223,Comune di Reggio nell'Emilia,247,352.37,87.0,100.0,98.3,59.15,74.92,20.0
+ardsu_to,Azienda Regionale per il Diritto allo Studio Universitario,45,352.33,87.0,100.0,68.0,89.33,75.0,20.0
+c_f844,Comune di Narni,11,352.27,86.98,100.0,92.73,64.55,75.0,20.0
+c_a662,Comune di Bari,158,351.96,86.9,100.0,100.0,56.96,75.0,20.0
+aci,Automobile Club d'Italia - ACI,83,351.85,86.88,99.37,97.48,60.0,75.0,20.0
+c_d566,COMUNE DI Poggio San Vicino,25,351.8,86.86,100.0,100.0,56.8,75.0,20.0
+ummc,Unione Montana Marca di Camerino,12,351.67,86.83,100.0,100.0,56.67,75.0,20.0
+c_i158,Comune di San Severino Marche,65,351.62,86.82,100.0,98.77,57.85,75.0,20.0
+iipsa,Istituto Italiano per la Storia Antica,10,351.0,86.67,100.0,100.0,56.0,75.0,20.0
+c_f552,Comune di Montelupone,69,350.94,86.65,100.0,96.52,59.42,75.0,20.0
+c_F793,Comune di Muccia,53,350.85,86.63,100.0,98.49,57.36,75.0,20.0
+c_l501,Comune di Urbisaglia,61,350.74,86.6,100.0,98.69,57.05,75.0,20.0
+c_h791,San Casciano in Val di Pesa,21,350.71,86.6,100.0,65.71,90.0,75.0,20.0
+c_f460,COMUNE DI Monte Cavallo,28,350.71,86.6,100.0,97.14,58.57,75.0,20.0
+c_d948,Comune di Gavorrano,16,350.71,86.6,100.0,57.14,98.57,75.0,20.0
+c_a947,Comune di Bolognola,42,350.71,86.6,100.0,98.1,57.62,75.0,20.0
+c_i286,COMUNE DI Sant'Angelo in Pontano,51,350.69,86.59,100.0,98.43,57.25,75.0,20.0
+c_d853,Comune di Gagliole,51,350.69,86.59,100.0,98.43,57.25,75.0,20.0
+c_l065,Comune di Tavagnacco,18,350.56,86.56,100.0,95.56,60.0,75.0,20.0
+cmbo,Città Metropolitana di Bologna,31,350.48,86.54,100.0,100.0,55.48,75.0,20.0
+c_e506,Comune di Lecce,505,350.35,86.51,100.0,66.38,89.01,74.96,20.0
+c_a329,Comune di Apiro,59,350.25,86.48,100.0,97.29,57.97,75.0,20.0
+c_h323,COMUNE DI Ripe San Ginesio,41,350.12,86.45,100.0,98.05,57.07,75.0,20.0
+C_d014,Comune di Cormons,16,350.0,86.42,100.0,95.0,60.0,75.0,20.0
+lepida,Lepida Scpa,2,350.0,86.42,100.0,100.0,60.0,70.0,20.0
+c_g690,COMUNE DI Pioraco,56,350.0,86.42,100.0,97.14,57.86,75.0,20.0
+c_g657,COMUNE DI Pieve Torina,50,349.8,86.37,100.0,96.8,58.0,75.0,20.0
+umavp,UNIONE MONTANA POTENZA ESINO MUSONE,19,349.74,86.36,100.0,100.0,54.74,75.0,20.0
+c_i686,Comune di Sesto al Reghena,15,349.67,86.34,100.0,94.67,60.0,75.0,20.0
+unive,Università Ca' Foscari Venezia,15,349.67,86.34,100.0,94.67,60.0,75.0,20.0
+c_g515,Comune di Petriolo,60,349.67,86.34,100.0,97.33,57.33,75.0,20.0
+c_i661,COMUNE DI Serravalle di Chienti,33,349.55,86.31,100.0,97.58,56.97,75.0,20.0
+c_l366,Comune di Treia,77,349.55,86.31,100.0,96.88,57.66,75.0,20.0
+c_l517,Comune di Ussita,47,349.47,86.29,100.0,96.6,57.87,75.0,20.0
+c_e986,Comune di Martina Franca,32,349.38,86.27,100.0,65.0,89.38,75.0,20.0
+c_m408,Comune di Barberino Tavarnelle,32,349.0,86.17,100.0,65.78,88.22,75.0,20.0
+c_f622,Comune di Monte San Martino,41,348.66,86.09,100.0,96.1,57.56,75.0,20.0
+c_c886,Comune di Colmurano,47,348.62,86.08,100.0,96.6,57.02,75.0,20.0
+c_d564,COMUNE DI Fiastra,39,348.33,86.01,100.0,95.9,57.44,75.0,20.0
+c_g919,Comune di Porto Recanati,100,348.0,85.93,100.0,96.0,57.0,75.0,20.0
+c_f268,Comune di Mogliano,73,347.88,85.9,100.0,95.62,57.26,75.0,20.0
+c_g098,Comune di Oria,21,347.86,85.89,100.0,65.71,87.14,75.0,20.0
+c_e694,COMUNE DI Loro Piceno,56,347.86,85.89,100.0,95.71,57.14,75.0,20.0
+c_h222,Comune di Reggello,17,347.67,85.84,100.0,54.67,98.0,75.0,20.0
+c_b398,Comune di Caldarola,50,347.4,85.78,100.0,95.2,57.2,75.0,20.0
+c_c704,Comune di Cingoli,95,347.38,85.77,100.0,94.92,57.46,75.0,20.0
+c_c415,Comune di Cecina,17,347.35,85.77,100.0,71.76,80.59,75.0,20.0
+c_c582,Comune di Cessapalombo,47,347.34,85.76,100.0,94.89,57.45,75.0,20.0
+c_i436,COMUNE DI Sarnano,52,347.31,85.76,100.0,95.38,56.92,75.0,20.0
+p_TN,Provincia Autonoma di Trento,1093,347.03,85.69,100.0,92.97,59.24,74.82,20.0
+c_i651,COMUNE DI Serrapetrona,45,347.0,85.68,100.0,94.67,57.33,75.0,20.0
+c_c817,Comune di Codroipo,10,347.0,85.68,100.0,92.0,60.0,75.0,20.0
+p_pe,Provincia di Pescara,21,346.9,85.65,100.0,61.9,90.0,75.0,20.0
+cciaa_le,Camera di Commercio di Lecce,447,346.81,85.63,100.0,61.16,90.65,75.0,20.0
+c_c251,Comune di Castelraimondo,63,346.75,85.62,100.0,93.65,58.1,75.0,20.0
+m_it,Ministero dell'Interno,38,346.59,85.58,97.97,100.0,60.0,68.62,20.0
+c_b562,Comune di Camporotondo di Fiastrone,45,346.56,85.57,100.0,94.67,56.89,75.0,20.0
+c_f482,Comune di Montecosaro,54,346.48,85.55,100.0,94.07,57.41,75.0,20.0
+c_m078,Comune di Visso,58,346.03,85.44,100.0,94.48,56.55,75.0,20.0
+c_m403,Comune di Corigliano-Rossano,12,345.83,85.39,100.0,100.0,60.0,65.83,20.0
+c_b007,Borgo a Mozzano,16,345.67,85.35,100.0,62.67,88.0,75.0,20.0
+c_d429,Comune di Esanatoglia,61,345.49,85.31,100.0,93.44,57.05,75.0,20.0
+c_a999,Comune di Borghetto Santo Spirito,3,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+c_i337,Comune di Santhià,3,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+c_f133,Comune di Merate,5,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+c_h238,Comune di Resana,3,345.0,85.19,100.0,70.0,90.0,65.0,20.0
+c_b850,Comune di Carugate,3,345.0,85.19,100.0,70.0,90.0,65.0,20.0
+iarls,Intercent-ER Agenzia Regionale per lo Sviluppo dei Mercati Telematici,8,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+eavs,Ente Autonomo Volturno Srl,5,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+c_h235,Comune di Rende,9,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+uvv_033,Unione Valnure e Valchero,3,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+ccpbosc,Südtiroler Gemeindenverband,1,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+c_e263,Comune di Guidonia Montecelio,5,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+udcc_090,Unione dei Comuni del Coros,6,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+c_f874,Comune di Nerviano,10,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+c_h088,Comune di Pula,2,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+c_m295,Comune di San Cesareo,1,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+KIS1NL,Comune Bolzano,1,345.0,85.19,100.0,100.0,60.0,65.0,20.0
+c_i569,Comune di Sefro,42,344.05,84.95,100.0,92.38,56.67,75.0,20.0
+udsb_pz,Università della Basilicata,29,343.97,84.93,100.0,88.97,60.0,75.0,20.0
+c_a739,Comune di Belforte del Chienti,54,343.89,84.91,100.0,91.11,57.78,75.0,20.0
+c_f567,Comune di Pollenza,61,343.85,84.9,100.0,92.13,56.72,75.0,20.0
+c_d042,Comune di Corridonia,78,343.72,84.87,100.0,91.79,56.92,75.0,20.0
+c_d027,Comune di Corno di Rosazzo,7,343.57,84.83,100.0,88.57,60.0,75.0,20.0
+ASPA_BZ,Azienda Sanitaria dell'Alto Adige,6,343.33,84.77,100.0,100.0,56.67,66.67,20.0
+c_e228,COMUNE DI Gualdo,44,343.18,84.74,100.0,90.91,57.27,75.0,20.0
+cciaa_rm,Camera di Commercio Industria Artigianato e Agricoltura di Roma,20,343.0,84.69,100.0,100.0,58.0,65.0,20.0
+c_f454,Comune di Montecassiano,73,342.95,84.68,100.0,91.23,56.71,75.0,20.0
+r_basili,Regione Basilicata,224,342.9,84.67,98.39,53.57,95.94,75.0,20.0
+c_c621,Comune di Chiavari,53,342.74,84.63,100.0,57.74,90.0,75.0,20.0
+c_b474,Comune di Camerino,81,342.41,84.55,100.0,91.11,56.3,75.0,20.0
+c_e671,Comune di Longare,15,342.33,84.53,100.0,57.33,90.0,75.0,20.0
+AA1D3A2,PCM - Dipartimento per la trasformazione digitale,27,342.04,84.45,100.0,97.04,60.0,65.0,20.0
+c_d612,Comune di Firenze,1990,342.01,84.45,100.0,61.68,85.35,74.98,19.99
+c_h876,Comune di San Ginesio,63,341.98,84.44,100.0,89.84,57.14,75.0,20.0
+c_d628,Comune di Fiuminata,58,341.9,84.42,100.0,90.34,56.55,75.0,20.0
+c_b598,Comune di Caneva,6,341.67,84.36,100.0,86.67,60.0,75.0,20.0
+c_l191,Comune di Tolentino,79,340.82,84.15,100.0,91.9,53.92,75.0,20.0
+c_f384,Comune di Monsummano Terme,161,340.34,84.03,100.0,72.05,73.29,75.0,20.0
+m_sa,Ministero della Salute,51,340.1,83.98,100.0,62.35,82.75,75.0,20.0
+00586190217,STA - Strutture Trasporto Alto Adige SpA,2,340.0,83.95,100.0,100.0,50.0,70.0,20.0
+c_b406,Comune di Calenzano,16,340.0,83.95,100.0,55.0,90.0,75.0,20.0
+c_h665,Comune di Sagrado,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_l325,Comune di Tramonti di Sotto,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_c758,Comune di Cividale del Friuli,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_l057,Comune di Tarvisio,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_c790,Comune di Claut,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_d804,Comune di Frisanco,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_d426,Comune di Erto e Casso,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_a530,Comune di Azzano Decimo,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_i904,Comune di Spilimbergo,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_c699,Comune di Cimolais,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_h040,Comune di Prepotto,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_c640,Comune di Chions,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_b309,Comune di Buttrio,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_f275,Comune di Moimacco,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_h906,Comune di San Giovanni al Natisone,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_h531,Comune di Ronchi dei Legionari,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_h010,Comune di Pravisdomini,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_e083,Comune di Gonars,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_l324,Comune di Tramonti di Sopra,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_g389,Comune di Pavia di Udine,5,339.0,83.7,100.0,84.0,60.0,75.0,20.0
+c_c267,Comune di Castelsantangelo sul Nera,52,338.46,83.57,100.0,87.69,55.77,75.0,20.0
+c_a809,Comune di Bertinoro,7,337.86,83.42,100.0,88.57,54.29,75.0,20.0
+c_f632,Comune di Potenza Picena,88,337.5,83.33,100.0,88.18,54.32,75.0,20.0
+c_g752,Comune di Poggibonsi,28,337.14,83.24,100.0,57.14,85.0,75.0,20.0
+c_i293,Comune di Sant'Antimo,10,337.0,83.21,100.0,100.0,52.0,65.0,20.0
+c_a475,Comune di Assisi,6,336.67,83.13,100.0,91.67,60.0,65.0,20.0
+c_b259,Comune di Buja,4,335.0,82.72,100.0,80.0,60.0,75.0,20.0
+c_h816,Comune di San Daniele del Friuli,4,335.0,82.72,100.0,80.0,60.0,75.0,20.0
+ISTAT,Istituto Nazionale di Statistica - ISTAT,13,335.0,82.72,100.0,100.0,40.0,75.0,20.0
+c_a103,Comune di Aiello del Friuli,4,335.0,82.72,100.0,80.0,60.0,75.0,20.0
+c_l382,Comune di Treppo Grande,4,335.0,82.72,100.0,80.0,60.0,75.0,20.0
+c_h089,Comune di Pulfero,4,335.0,82.72,100.0,80.0,60.0,75.0,20.0
+c_i551,Comune di Scorzè,6,335.0,82.72,100.0,60.0,90.0,65.0,20.0
+agcom,AGCOM,1,335.0,82.72,100.0,50.0,90.0,75.0,20.0
+c_f749,COMUNE di Morrovalle,57,334.65,82.63,100.0,81.75,57.89,75.0,20.0
+c_969,Comune di Genova,104,334.52,82.6,100.0,51.54,87.98,75.0,20.0
+bdi_rm,Banca d'Italia,80,334.38,82.56,100.0,99.38,40.0,75.0,20.0
+c_c609,Comune di Chianni,15,334.33,82.55,100.0,62.67,76.67,75.0,20.0
+r_emiro,Regione Emilia-Romagna,640,333.44,82.33,100.0,87.19,51.25,75.0,20.0
+p_bz,Agenzia provinciale per l'ambiente,890,331.3,81.8,100.0,97.25,44.86,69.19,20.0
+CRSA,CREA - Consiglio per la ricerca in agricoltura e l'analisi dell'economia agraria,8,331.25,81.79,100.0,100.0,40.0,71.25,20.0
+c_c745,Comune di Città di Castello,11,330.45,81.59,100.0,63.64,71.82,75.0,20.0
+trafair,Trafair,6,330.0,81.48,100.0,60.0,75.0,75.0,20.0
+c_f023,Comune di Massa,8,330.0,81.48,100.0,60.0,75.0,75.0,20.0
+arpa_umb,Agenzia Regionale per la Protezione dell'Ambiente dell'Umbria,32,329.06,81.25,100.0,94.38,39.69,75.0,20.0
+cvtiap,anticorruzione,70,329.0,81.23,100.0,44.0,90.0,75.0,20.0
+c_d969,Comune di Genova - servizi civici,45,328.56,81.13,100.0,45.11,88.44,75.0,20.0
+c_d312,Comune di Doberdo' del Lago,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_e889,Comune di Maniago,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_m200,Comune di Zuglio,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+uc_sorba,Unione Comuni del Sorbara,6,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+P.IVA 06360270018,5T S.r.l.,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_h161,Comune di Ragogna,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_h891,Comune di San Giorgio della Richinvelda,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_m0954j,Comune di Vivaro,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_c791,Comune di Clauzetto,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_d461,Comune di Fagagna,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_b215,Comune di Brugnera,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_g680,Comune di Pinzano al Tagliamento,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_a354,Comune di Arba,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_a855,Comune di Bicinicco,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_m311,Comune di Campolongo Tapogliano,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_f089,Comune di Meduno,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0
+c_a657,Comune di Barga,12,328.04,81.0,100.0,44.35,88.7,75.0,20.0
+ls_ca,Agenzia Laore Sardegna,12,326.67,80.66,100.0,71.67,60.0,75.0,20.0
+c_i726,Comune di Siena,328,325.67,80.41,100.0,56.04,74.63,75.0,20.0
+c_i225,Comune di Santa Margherita Ligure,56,325.54,80.38,100.0,40.54,90.0,75.0,20.0
+c_c608,Comune di Chianciano Terme,1,325.0,80.25,100.0,70.0,60.0,75.0,20.0
+c_b132,Comune di Breganze,3,325.0,80.25,100.0,70.0,60.0,75.0,20.0
+c_i207,Comune di Santa Giustina in Colle,3,325.0,80.25,100.0,70.0,60.0,75.0,20.0
+c_m401,Comune di Barbarano Mossano,3,325.0,80.25,100.0,70.0,60.0,75.0,20.0
+c_g688,Comune di Piombino Dese,3,325.0,80.25,100.0,70.0,60.0,75.0,20.0
+c_d674,Comune di Fontanelle,3,325.0,80.25,100.0,70.0,60.0,75.0,20.0
+uni_bo/CLE/AFORM,AFORM - Education Division,26,325.0,80.25,100.0,50.77,79.23,75.0,20.0
+c_f978,Comune di Numana,29,324.66,80.16,100.0,69.66,60.0,75.0,20.0
+C_D171,Comune di Crispiano,36,324.44,80.11,100.0,42.22,87.22,75.0,20.0
+c_f132,Gemeinde Meran  - Amt für Stadtplanung und Privatbauten,8,323.57,79.89,100.0,77.14,51.43,75.0,20.0
+c_l833,Comune di Viareggio,58,323.47,79.87,100.0,35.56,92.92,75.0,20.0
+c_f979,Comune di Nuoro,5,323.0,79.75,100.0,100.0,36.0,67.0,20.0
+c_e471,Comune di Latiano,9,320.56,79.15,100.0,37.78,87.78,75.0,20.0
+c_i240,Comune di Santa Maria di Licodia,43,319.88,78.98,100.0,34.88,90.0,75.0,20.0
+c_c770,Comune di Civitanova Marche,118,319.07,78.78,100.0,70.85,53.22,75.0,20.0
+c_cp112,Comune di Castelfranco Piandisco',192,318.33,78.6,100.0,34.17,89.17,75.0,20.0
+UNRENGAL,Unione Reno Galliera,21,317.38,78.37,100.0,65.71,61.9,69.76,20.0
+cr_campa,Consiglio Regionale della Campania,25,317.0,78.27,62.0,100.0,60.0,75.0,20.0
+r_toscan,Regione Toscana,448,316.12,78.05,100.0,33.1,88.56,74.58,19.88
+c_g478,Comune di Perugia,9,316.11,78.05,100.0,64.44,56.67,75.0,20.0
+c_f816,Comune di Muro Leccese,12,315.0,77.78,100.0,33.33,86.67,75.0,20.0
+aptss,APT Servizi,2,315.0,77.78,100.0,60.0,60.0,75.0,20.0
+08555280018,GTT - Gruppo Torinese Trasporti,3,315.0,77.78,100.0,73.33,46.67,75.0,20.0
+c_c385,Comune di Cavasso Nuovo,4,315.0,77.78,100.0,60.0,60.0,75.0,20.0
+c_b536,Comune di Campoformido,2,315.0,77.78,100.0,60.0,60.0,75.0,20.0
+ciss_chi,Consorzio Intercomunale Servizi Sociali di Chivasso,17,314.41,77.63,100.0,29.41,90.0,75.0,20.0
+cciaa_lu,Camera di Commercio Industria Artigianato Agricoltura di Lucca,44,314.09,77.55,100.0,27.27,91.82,75.0,20.0
+c_a390,Comune di Arezzo,983,313.32,77.36,100.0,39.13,79.2,75.0,20.0
+c_c773,Comune di Civitavecchia,10,313.0,77.28,100.0,68.0,60.0,65.0,20.0
+c_e666,Comune di Lonate Pozzolo,5,313.0,77.28,100.0,68.0,60.0,65.0,20.0
+c_b809,Comune di Carovigno,58,311.9,77.01,100.0,26.9,90.0,75.0,20.0
+ c_l378,Comune di Trento,38,311.32,76.87,100.0,56.58,59.74,75.0,20.0
+c_a893,Comune di Bitonto,55,310.82,76.75,100.0,25.82,90.0,75.0,20.0
+r_marche,Regione Marche,76,310.66,76.71,100.0,54.74,60.92,75.0,20.0
+C_L123,Comune di Terranuova Bracciolini,15,310.33,76.62,100.0,25.33,90.0,75.0,20.0
+c_h061,Comune di Prignano sulla Secchia,48,308.96,76.29,100.0,23.96,90.0,75.0,20.0
+c_f127,Comune di Mentana,45,308.56,76.19,100.0,23.56,90.0,75.0,20.0
+cmge,CMGE,6,308.33,76.13,100.0,60.0,60.0,68.33,20.0
+uni_bo/CLE/ARAG,ARAG - Finance and Subsidiaries Division,6,308.33,76.13,100.0,46.67,66.67,75.0,20.0
+c_c963,Comune di Conselice,8,307.5,75.93,100.0,40.0,72.5,75.0,20.0
+c_a035,Comune di Acqualagna,9,307.22,75.86,100.0,46.67,65.56,75.0,20.0
+c_c312,Comune di Castiglione delle Stiviere,36,307.22,75.86,100.0,22.22,90.0,75.0,20.0
+c_e801,Comune di Magenta,40,307.0,75.8,100.0,22.0,90.0,75.0,20.0
+arpat,ARPAT - Agenzia regionale per la protezione ambientale della Toscana,59,306.36,75.64,100.0,21.36,90.0,75.0,20.0
+m_bac-M900M0,Istituto centrale per il catalogo e la documentazione,23,305.87,75.52,100.0,20.0,90.87,75.0,20.0
+c_g535,Comune di Piacenza,72,305.69,75.48,100.0,20.69,90.0,75.0,20.0
+p_LU,Provincia di Lucca,94,305.43,75.41,100.0,20.0,90.43,75.0,20.0
+c_d297,Comune di Diano Marina,6,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+cdccl,Consorzio Dei Comuni del Cassinate per La Programmazione e Gestione Dei Servizi Sociali,6,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b893,Comune di Casalgrande,28,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a225,Comune di Altamura,32,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_i330,Comune di Santeramo in Colle,16,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_g087,Comune di Orbassano,47,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+p_fc,Provincia di Forli' Cesena,22,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_d403,Comune di Empoli,2,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_i660,Comune di Serravalle Pistoiese,2,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+ars_tosc,Ars,2,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+cvfp,Commissione di Vigilanza Sui Fondi Pensione,18,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_g634,Comune di Pieve Emanuele,29,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b036,Comune di Borgo San Lorenzo,37,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_i684,Comune di Sesto Fiorentino,53,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+cgatc_,Consorzio di Gestione Area Marina Protetta Torre del Cerrano,3,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+uts_re,Unione Tresinaro Secchia,9,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a459,Comune di Arzignano,27,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b960,Comune di Caselle Torinese,31,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_f269,Comune di Mogliano Veneto,42,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_f563,Comune di Montemesola,40,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b248,Comune di Budoni,29,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+cir_emva,Unione dei Comuni del Circondario Empolese Valdelsa,1,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_c912,Comune di Comacchio,50,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+asl14_vco,Azienda Sanitaria Locale VCO,10,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_e496,Comune di Laveno Mombello,31,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_d711,Comune di Formigine,86,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_m208,Comune di Lamezia Terme,36,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_c141,Comune di Castellarano,38,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+cm_monem,Unione dei Comuni Valdostani Mont - Emilius,5,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_h488,Comune di Roggiano Gravina,27,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a849,Comune di Biassono,10,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_f851,Comune di Nave,42,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_c895,Comune di Cologno Monzese,56,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b227,Comune di Brusciano,10,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a564,Comune di Bagno a Ripoli,30,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_g160,Comune di Osio Sotto,38,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a802,Comune di Bernareggio,49,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a145,Comune di Albenga,33,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_f712,Comune di Morbegno,12,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+pr_migli,Ente Parco Regionale  Migliarino San Rossore Massaciuccoli,2,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_c741,Comune di Cisternino,10,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a365,Comune di Arcene,41,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_g015,Comune di Olbia,40,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b292,Comune di Bussero,14,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a864,Comune di Bientina,5,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+m_bac,Provincia Autonoma di Bolzano,14,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_g843,Comune di Pontedera,5,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+g-870,Comune di Pontremoli,1,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b296,Comune di Bussolengo,50,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_f648,Comune di Montespertoli,3,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_e667,Comune di Lonato del Garda,6,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_h625,Comune di Rubano,22,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+p_fg,Provincia di Foggia,13,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_d912,Comune di Garbagnate Milanese,36,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_f864,Comune di Nembro,23,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_e621,Comune di Livigno,44,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_d013,Comune di Cormano,33,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_c208,Comune di Castel Mella,27,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_h628,Comune di Rubiera,24,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+umavc,Unione Montana Alta Val di Cecina,3,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+coaltava,Unione Valdera,5,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_e488,Comune di Lavagna,36,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_g488,Comune di Peschiera Borromeo,13,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_c986,Comune di Corbetta,23,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_g254,Comune di Palaia,5,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a366,Comune di Arcevia,2,305.0,75.31,100.0,60.0,50.0,75.0,20.0
+c_e027,Comune Giffoni Valle Piana,12,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_l434,Comune di Triuggio,17,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_f503,Comune di Montefiorino,48,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_e955,Comune di Marigliano,9,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+p_li,Provincia di Livorno,6,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a887,Comune di Bisignano,5,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_i950,Comune di Sternatia,3,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a818,Comune di Besana in Brianza,40,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_f944,Comune di Nova Milanese,43,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_d865,Comune di Galbiate,17,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+aous_052,Azienda ospedaliero-universitaria Senese,17,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_l634,Comune di Valmadrera,46,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a825,Comune di Besnate,15,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_i462a,Unione Dei Comuni del Distretto Ceramico,8,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_l831,Comune di Viano,35,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+cma_065,Comunita Montana Alburni,7,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_d789,Comune di Frattamaggiore,9,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_l049,Comune di Taranto,58,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_e379,Comune di Ivrea,11,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_d607,Comune di Fiorano Modenese,86,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_g250,Comune di Palagano,48,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_g482,Comune di Pescara,55,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_g230,Comune di Pagani,24,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b297,Comune di Bussoleno,14,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_e904,Comune di Maranello,86,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+ c_a674 ,Comune di Baronissi,27,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b647,Comune di Capannoli,5,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a586,Comune di Baiso,35,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_h404,Comune di Rocca di Papa,10,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+C_E169,Comune di Greve in Chianti,8,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+m_bac-HPORL2,MiC – Direzione generale Organizzazione,2,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_i462,Comune di Sassuolo,85,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_i728,Comune di Signa,20,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_e734,Comune di Luino,12,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_d284,Comune di Desenzano del Garda,43,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+m_bac-7C56L5,Istituto centrale per gli archivi,172,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_c014,Comune di Cassina De' Pecchi,49,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_i496,Comune di Scandiano,35,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b303,Comune di Buti,5,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_i433,Comune di Sarezzo,42,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b923,Comune di Casamassima,38,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_d292,Comune di Teggiano,37,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_e951,Comune di Mariano Comense,42,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b392,Comune di Calcinaia,5,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_e171,Comune di Grezzana,14,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_l900,Comune di Vigonza,26,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_a159,Comune di Albiate,54,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_d024,Comune di Tarquinia,6,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+p_no,Provincia di Novara,48,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_i628,Comune di Seriate,25,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_d783,Comune di Frassinoro,48,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_b950,Comune di Cascina,6,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_l404,Comune di Treviolo,39,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_e4557,Comune di Casciana Terme Lari,5,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_f119,Comune di Melzo,13,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+c_d845,Comune di Gaggiano,52,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+USFir,Università di Firenze - DISIT Lab,1,305.0,75.31,100.0,20.0,90.0,75.0,20.0
+arte_048,Artea,30,304.0,75.06,100.0,22.67,86.33,75.0,20.0
+c_e625,Comune Livorno,107,303.88,75.03,100.0,32.71,76.17,75.0,20.0
+c_d488,COMUNE DI Fano,35,303.57,74.96,100.0,63.43,45.14,75.0,20.0
+c_e810,Comune di Magliano in Toscana,9,302.78,74.76,100.0,20.0,87.78,75.0,20.0
+p_lo,Provincia di Lodi,78,301.67,74.49,100.0,46.67,60.0,75.0,20.0
+Comune di Castello di Godego,Comune di Castello di Godego,6,301.67,74.49,100.0,46.67,60.0,75.0,20.0
+c_c665,Comune di Chivasso,33,301.36,74.41,100.0,19.39,88.18,74.09,19.7
+c_i654,COMUNE DI Serra Sant'Abbondio,9,299.44,73.94,100.0,55.56,48.89,75.0,20.0
+m_pi,"Ministero dell'Istruzione, dell'Universita' e della Ricerca",105,298.62,73.73,100.0,20.48,83.14,75.0,20.0
+c_a233,Comune di Altidona,9,298.33,73.66,100.0,20.0,83.33,75.0,20.0
+r_calabr,Consiglio regionale della Calabria,34,297.65,73.49,100.0,42.65,60.0,75.0,20.0
+c_d629U,Unione di Comuni Montana Lunigiana,24,296.67,73.25,100.0,20.0,81.67,75.0,20.0
+c_a327,Comune di Apecchio,11,295.91,73.06,100.0,49.09,51.82,75.0,20.0
+c_a769,Comune di Belvedere Ostrense,3,295.0,72.84,100.0,46.67,53.33,75.0,20.0
+Comune di Noventa di Piave,Comune di Noventa di Piave,4,295.0,72.84,100.0,40.0,60.0,75.0,20.0
+c_f381,Comune di Monsano,3,295.0,72.84,100.0,46.67,53.33,75.0,20.0
+c_a044,Comune di Acquasanta Terme,4,295.0,72.84,100.0,20.0,80.0,75.0,20.0
+c_f051,Comune di Matelica,24,295.0,72.84,100.0,40.0,60.0,75.0,20.0
+c_l850,Comune di Vicopisano,8,295.0,72.84,100.0,20.0,80.0,75.0,20.0
+m_bac-01IKHL,Istituto centrale per il catalogo unico delle biblioteche italiane e per le informazioni bibliografiche,1,295.0,72.84,100.0,20.0,90.0,65.0,20.0
+c_c524,Comune di Cerreto D'Esi,3,295.0,72.84,100.0,46.67,53.33,75.0,20.0
+c_f206,Comune di Milazzo,42,294.05,72.6,100.0,39.05,60.0,75.0,20.0
+c_f257,Comune di Modena,112,292.94,72.33,100.0,37.14,60.79,75.0,20.0
+d_969,Comune di Genova - musei e biblioteche,9,291.67,72.02,100.0,20.0,76.67,75.0,20.0
+c_e364,Comune di Isorella,3,291.67,72.02,100.0,46.67,60.0,65.0,20.0
+Comune di Brendola,Comune di Brendola,34,291.47,71.97,100.0,36.47,60.0,75.0,20.0
+c_i196,Comune di Sant'Agata sul Santerno,8,291.25,71.91,100.0,30.0,66.25,75.0,20.0
+Comune di Pederobba,Comune di Pederobba,8,291.25,71.91,100.0,36.25,60.0,75.0,20.0
+Comune di Rosà,Comune di Rosà,5,291.0,71.85,100.0,36.0,60.0,75.0,20.0
+Comune di Baone,Comune di Baone,10,291.0,71.85,100.0,36.0,60.0,75.0,20.0
+c_b636,COMUNE DI Cantiano,9,290.56,71.74,100.0,46.67,48.89,75.0,20.0
+Comune di Selvazzano Dentro,Comune di Selvazzano Dentro,21,290.24,71.66,100.0,35.24,60.0,75.0,20.0
+c_a389,Comune di Arese,89,290.06,71.62,100.0,24.49,74.83,70.73,20.0
+c_h302,Comune di Riolo Terme,3,288.33,71.19,100.0,46.67,46.67,75.0,20.0
+c_e207,Comune di Grottammare,16,288.33,71.19,100.0,34.81,58.52,75.0,20.0
+c_f745,COMUNE DI Morro D'Alba,3,288.33,71.19,100.0,46.67,46.67,75.0,20.0
+c_h979,COMUNE di San Marcello,3,288.33,71.19,100.0,46.67,46.67,75.0,20.0
+c_a092,Comune di Agugliano,58,287.93,71.09,100.0,20.0,72.93,75.0,20.0
+c_d808,COMUNE DI Frontone,8,287.5,70.99,100.0,50.0,42.5,75.0,20.0
+CREV,CREV,4,287.5,70.99,100.0,20.0,72.5,75.0,20.0
+c_a252,Comune di Amandola,7,286.43,70.72,100.0,20.0,71.43,75.0,20.0
+Comune di Caldiero,Comune di Caldiero,21,286.43,70.72,100.0,31.43,60.0,75.0,20.0
+INEA/CEF/ICT/A2019/2063604,Odala,2,285.0,70.37,100.0,20.0,70.0,75.0,20.0
+c_a047,Comune di Acquaviva Picena,3,285.0,70.37,100.0,20.0,70.0,75.0,20.0
+age,Agenzia delle Entrate,2,285.0,70.37,100.0,20.0,70.0,75.0,20.0
+c_c060,Comune di Castelbellino,6,285.0,70.37,100.0,33.33,56.67,75.0,20.0
+c_b794,Comune di Carmignano,3,285.0,70.37,100.0,20.0,70.0,75.0,20.0
+c_f680,Comune di Montirone,4,285.0,70.37,100.0,40.0,60.0,65.0,20.0
+c_g682,COMUNE DI Piobbico,10,285.0,70.37,100.0,44.0,46.0,75.0,20.0
+Comune di Nervesa Della Battaglia,Comune di Nervesa Della Battaglia,24,285.0,70.37,100.0,30.0,60.0,75.0,20.0
+c_i577,Comune di Segrate,9,283.89,70.1,100.0,28.89,60.0,75.0,20.0
+Comune di Costa di Rovigo,Comune di Costa di Rovigo,28,283.57,70.02,100.0,28.57,60.0,75.0,20.0
+c_i653,Comune di Serra San Quirico,7,283.57,70.02,100.0,31.43,57.14,75.0,20.0
+Comune di Lugo di Vicenza,Comune di Lugo di Vicenza,25,283.0,69.88,100.0,20.0,68.0,75.0,20.0
+c_e507,Comune di Lecco,9,282.78,69.82,100.0,37.78,60.0,65.0,20.0
+c_l511,Comune di Usmate Velate,9,282.78,69.82,100.0,37.78,60.0,65.0,20.0
+Comune di Candiana,Comune di Candiana,31,282.74,69.81,100.0,27.74,60.0,75.0,20.0
+Comune di Vigo Di Cadore,Comune di Vigo Di Cadore,3,281.67,69.55,100.0,46.67,40.0,75.0,20.0
+c_g771,COMUNE DI Poggio San Marcello,6,281.67,69.55,100.0,33.33,53.33,75.0,20.0
+Comune di Valle Di Cadore,Comune di Valle Di Cadore,3,281.67,69.55,100.0,46.67,40.0,75.0,20.0
+Comune di Torreglia,Comune di Torreglia,26,281.15,69.42,100.0,26.15,60.0,75.0,20.0
+c_c615,Comune di Chiaravalle,13,281.15,69.42,100.0,26.15,60.0,75.0,20.0
+cmna,Città Metropolitana di Napoli,92,281.09,69.4,100.0,26.09,60.0,75.0,20.0
+c_b805,Comune di Caronno Pertusella,5,281.0,69.38,100.0,36.0,60.0,65.0,20.0
+c_b223,Comune di Brusaporto,10,281.0,69.38,100.0,36.0,60.0,65.0,20.0
+udsm_mi,Università degli studi di Milano,10,281.0,69.38,100.0,28.0,60.0,73.0,20.0
+c_h342,Comune di Rivarolo Mantovano,10,281.0,69.38,100.0,36.0,60.0,65.0,20.0
+c_h177,Comune di Ranzanico,10,281.0,69.38,100.0,36.0,60.0,65.0,20.0
+c_f145,COMUNE DI Mergo,7,280.71,69.31,100.0,31.43,54.29,75.0,20.0
+Comune di Alonte,Comune di Alonte,29,280.52,69.26,100.0,25.52,60.0,75.0,20.0
+Comune di Soave,Comune di Soave,35,280.43,69.24,100.0,25.43,60.0,75.0,20.0
+c_g157,Comune di Osimo,46,280.22,69.19,100.0,25.22,60.0,75.0,20.0
+c_h809,COMUNE DI San Costanzo,12,280.0,69.14,100.0,26.67,58.33,75.0,20.0
+c_b352,Comune di Cagli,8,280.0,69.14,100.0,40.0,45.0,75.0,20.0
+c_d965,Comune di Genga,4,280.0,69.14,100.0,40.0,45.0,75.0,20.0
+Comune di Meolo,Comune di Meolo,39,279.62,69.04,100.0,24.62,60.0,75.0,20.0
+c_a652,Comune di Bareggio,11,279.55,69.02,100.0,34.55,60.0,65.0,20.0
+Comune di Cazzano di Tramigna,Comune di Cazzano di Tramigna,39,279.1,68.91,100.0,24.1,60.0,75.0,20.0
+uncobaro,Unione dei Comuni della Bassa Romagna,32,279.06,68.9,100.0,22.5,61.56,75.0,20.0
+c_io71,Comune di San Paolo di Jesi,10,279.0,68.89,100.0,28.0,56.0,75.0,20.0
+Comune di Foza,Comune di Foza,25,279.0,68.89,100.0,20.0,64.0,75.0,20.0
+cvdl_tn,Comunità della Valle dei Laghi,23,278.48,68.76,100.0,23.48,60.0,75.0,20.0
+c_f581,COMUNE DI Ostra Vetere,47,278.4,68.74,100.0,23.4,60.0,75.0,20.0
+Comune di Montegaldella,Comune di Montegaldella,16,278.12,68.67,100.0,20.0,63.12,75.0,20.0
+Comune di Arsiè,Comune di Arsiè,20,278.0,68.64,100.0,20.0,63.0,75.0,20.0
+Comune di Refrontolo,Comune di Refrontolo,34,277.94,68.63,100.0,22.94,60.0,75.0,20.0
+c_f205,Comune di Milano,2599,277.91,68.62,100.0,25.08,58.0,74.83,20.0
+00514490010,Comune di Torino,2048,277.65,68.56,100.0,26.21,56.46,74.99,20.0
+Comune di Pove del Grappa,Comune di Pove del Grappa,31,277.58,68.54,100.0,22.58,60.0,75.0,20.0
+c_e837,Comune di Maiolati Spontini,8,277.5,68.52,100.0,30.0,52.5,75.0,20.0
+c_a626,Comune di Barbara,32,277.5,68.52,100.0,22.5,60.0,75.0,20.0
+c_i643,Comune di Serra de' Conti,32,277.5,68.52,100.0,22.5,60.0,75.0,20.0
+c_f401,COMUNE DI Ostra,49,276.63,68.3,100.0,21.63,60.0,75.0,20.0
+c_i608,Comune di Senigallia,54,276.48,68.27,100.0,21.48,60.0,75.0,20.0
+Comune di Arsiero,Comune di Arsiero,34,276.47,68.26,100.0,20.0,61.47,75.0,20.0
+c_m318,COMUNE DI Trecastelli,48,276.46,68.26,100.0,21.67,59.79,75.0,20.0
+c_f434,Comune di Monte Cremasco,7,276.43,68.25,100.0,31.43,60.0,65.0,20.0
+c_d141,Comune di Credera Rubbiano,7,276.43,68.25,100.0,31.43,60.0,65.0,20.0
+c_l389,Comune di Trescore Cremasco,7,276.43,68.25,100.0,31.43,60.0,65.0,20.0
+c_l995,Comune di Villanuova Sul Clisi,7,276.43,68.25,100.0,31.43,60.0,65.0,20.0
+c_g603,Comune di Pieranica,7,276.43,68.25,100.0,31.43,60.0,65.0,20.0
+c_b650,Comune di Capergnanica,7,276.43,68.25,100.0,31.43,60.0,65.0,20.0
+c_d203,Comune di Cumignano sul Naviglio,7,276.43,68.25,100.0,31.43,60.0,65.0,20.0
+Comune di Castelnuovo del Garda,Comune di Castelnuovo del Garda,36,276.39,68.24,100.0,20.0,61.39,75.0,20.0
+Comune di Treviso,Comune di Treviso,254,276.06,68.16,100.0,20.94,60.12,75.0,20.0
+avepa,Agenzia veneta per i pagamenti - AVEPA,34,275.88,68.12,100.0,20.0,60.88,75.0,20.0
+Regione del Veneto,Regione del Veneto,114,275.7,68.07,100.0,20.0,60.7,75.0,20.0
+c_h501,Roma Capitale - AREA TEMATICA: SERVIZI ALLA PERSONA,348,275.49,68.02,100.0,20.46,60.03,75.0,20.0
+r_lazio,Agenzia Regionale di Protezione Civile,407,275.47,68.02,97.59,23.93,58.94,75.0,20.0
+p_LC,Provincia di Lecco,27,275.37,67.99,100.0,25.93,60.0,69.44,20.0
+Comune di Vicenza,Comune di Vicenza,178,275.34,67.99,100.0,20.0,60.34,75.0,20.0
+udcvs,Unione dei Comuni Valle del Savio,523,275.06,67.92,100.0,20.15,59.9,75.0,20.0
+Comune di San Mauro di Saline,Comune di San Mauro di Saline,9,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Ormelle,Comune di Ormelle,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Fratta Polesine,Comune di Fratta Polesine,17,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Jesolo,Comune di Jesolo,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Cinto Euganeo,Comune di Cinto Euganeo,10,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Terrazzo,Comune di Terrazzo,24,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Valli del Pasubio,Comune di Valli del Pasubio,39,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Valbrenta,Comune di Valbrenta,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Cornedo Vicentino,Comune di Cornedo Vicentino,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+p_ra,Provincia di Ravenna,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Sarcedo,Comune di Sarcedo,26,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Caldogno,Comune di Caldogno,18,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Merlara,Comune di Merlara,23,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Unione Montana Del Bassanese,Unione Montana Del Bassanese,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Teolo,Comune di Teolo,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+its_022,Trentino Digitale Spa,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Salcedo,Comune di Salcedo,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Calvene,Comune di Calvene,14,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Minerbe,Comune di Minerbe,29,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Noventa Padovana,Comune di Noventa Padovana,20,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Torrebelvicino,Comune di Torrebelvicino,34,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Legnaro,Comune di Legnaro,22,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Pianezze,Comune di Pianezze,34,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Sona,Comune di Sona,33,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_g003,Comune di Offagna,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Trissino,Comune di Trissino,19,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Mezzane di Sotto,Comune di Mezzane di Sotto,20,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Sant'Elena,Comune di Sant'Elena,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Gruaro,Comune di Gruaro,24,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Santa Lucia di Piave,Comune di Santa Lucia di Piave,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+r_trenti,Regione Autonoma Trentino Alto-Adige/Südtirol,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Salizzole,Comune di Salizzole,20,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Asiago,Comune di Asiago,25,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+udca_,Unione Terra dei Castelli,36,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Anguillara Veneta,Comune di Anguillara Veneta,29,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Cavaso del Tomba,Comune di Cavaso del Tomba,30,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Tregnago,Comune di Tregnago,13,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_d829,Comune di Fusignano,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Gorgo al Monticano,Comune di Gorgo al Monticano,30,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Bolzano Vicentino,Comune di Bolzano Vicentino,15,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Laghi,Comune di Laghi,12,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_f611,Comune di Monterotondo,12,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Crocetta del Montello,Comune di Crocetta del Montello,32,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_f574,Comune di Montenars,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Collegio Regionale Veneto Guide Alpine,Collegio Regionale Veneto Guide Alpine,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_i758,Comune di Sirolo,53,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Santa Caterina d'Este,Comune di Santa Caterina d'Este,14,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Sanguinetto,Comune di Sanguinetto,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Isola Vicentina,Comune di Isola Vicentina,19,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+CPC,Comunità di Primiero,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+ucgc,Unione dei Comuni Valdostani Grand-Combin,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Campagna Lupia,Comune di Campagna Lupia,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Montorso Vicentino,Comune di Montorso Vicentino,10,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+07937540016,SMAT - Società Metropolitana Acque Torino S.p.A.,4,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+AVEPA,Agenzia veneta per i pagamenti - AVEPA,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+umtv,Unione Montana del Tronto e Valfluvione,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Preganziol,Comune di Preganziol,20,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Sovizzo,Comune di Sovizzo,13,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Villanova di Camposampiero,Comune di Villanova di Camposampiero,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Curtarolo,Comune di Curtarolo,19,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_l344,Comune di Sant'Ippolito,12,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Sarego,Comune di Sarego,39,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+cdcoame,Comune di Colli al Metauro,36,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Valdastico,Comune di Valdastico,31,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Possagno,Comune di Possagno,31,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Rivoli Veronese,Comune di Rivoli Veronese,18,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_g803,Comune di Polverigi,60,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+izsm,Istituto Zooprofilattico Sperimentale del Mezzogiorno,15,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_g220,Comune di Paderno Dugnano,6,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Lendinara,Comune di Lendinara,11,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Povegliano Veronese,Comune di Povegliano Veronese,36,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Castelnovo Bariano,Comune di Castelnovo Bariano,28,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Occhiobello,Comune di Occhiobello,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Biagio di Callalta,Comune di San Biagio di Callalta,13,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Marostica,Comune di Marostica,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Villafranca di Verona,Comune di Villafranca di Verona,6,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Stino di Livenza,Comune di San Stino di Livenza,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Badia Polesine,Comune di Badia Polesine,35,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+cdtro,Comune di Terre Roveresche,37,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Pressana,Comune di Pressana,15,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Sandrigo,Comune di Sandrigo,18,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Federazione dei Comuni del Camposampierese,Federazione dei Comuni del Camposampierese,23,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Arqua' Petrarca,Comune di Arqua' Petrarca,17,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_a551,Comune di Bagnara di Romagna,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Vittorio Veneto,Comune di Vittorio Veneto,6,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_d791,COMUNE DI Fratte Rosa,10,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Villa Bartolomea,Comune di Villa Bartolomea,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_f348,COMUNE DI Mondolfo,52,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Conegliano,Comune di Conegliano,24,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_f474,COMUNE DI Monteciccardo,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Fior,Comune di San Fior,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Rotzo,Comune di Rotzo,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Susegana,Comune di Susegana,4,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Montegrotto Terme,Comune di Montegrotto Terme,9,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Bassano del Grappa,Comune di Bassano del Grappa,26,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Pietro di Feletto,Comune di San Pietro di Feletto,28,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Roncade,Comune di Roncade,14,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Torri di Quartesolo,Comune di Torri di Quartesolo,29,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_e783,Comune di Macerata,56,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Borgo Veneto,Comune di Borgo Veneto,22,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_l081,COMUNE DI Tavullia,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Amministrazione Provinciale Di Belluno,Amministrazione Provinciale Di Belluno,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Bosaro,Comune di Bosaro,30,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Consiglio di bacino Laguna di Venezia,Consiglio di bacino Laguna di Venezia,23,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Castelmassa,Comune di Castelmassa,32,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Codogne',Comune di Codogne',16,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Bergantino,Comune di Bergantino,17,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Lusia,Comune di Lusia,15,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_h211,Comune di Recanati,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Oderzo,Comune di Oderzo,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_a191,Comune di Alfonsine,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di  Nervesa della Battaglia,Comune di  Nervesa della Battaglia,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Vigasio,Comune di Vigasio,20,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Negrar di Valpolicella,Comune di Negrar di Valpolicella,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Albaredo d'Adige,Comune di Albaredo d'Adige,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Piacenza D'adige,Comune di Piacenza D'adige,28,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Schio,Comune di Schio,43,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Farra di Soligo,Comune di Farra di Soligo,23,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Veneto Lavoro,Veneto Lavoro,4,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Istituto Regionale Ville Venete,Istituto Regionale Ville Venete,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Casalserugo,Comune di Casalserugo,4,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+cmgp_007,Unione dei Comuni Valdostani Grand-Paradis,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Follina,Comune di Follina,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_b468,Comune di Camerano,52,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Revine Lago,Comune di Revine Lago,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Battaglia Terme,Comune di Battaglia Terme,9,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_g453,COMUNE DI Pergola,48,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Cartigliano,Comune di Cartigliano,6,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Valdagno,Comune di Valdagno,9,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Roverchiara,Comune di Roverchiara,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Galliera Veneta,Comune di Galliera Veneta,6,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Tezze sul Brenta,Comune di Tezze sul Brenta,6,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Noale,Comune di Noale,31,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Barbona,Comune di Barbona,10,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Pernumia,Comune di Pernumia,11,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Rovere Veronese,Comune di Rovere Veronese,36,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Pietro in Cariano,Comune di San Pietro in Cariano,24,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+cm_esino,Unione Montana esino frasassi,6,275.0,67.9,100.0,33.33,46.67,75.0,20.0
+Comune di Lazise,Comune di Lazise,39,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Camponogara,Comune di Camponogara,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Giovanni Lupatoto,Comune di San Giovanni Lupatoto,14,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Campolongo Maggiore,Comune di Campolongo Maggiore,15,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Crespadoro,Comune di Crespadoro,30,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Montebelluna,Comune di Montebelluna,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Santorso,Comune di Santorso,45,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Saccolongo,Comune di Saccolongo,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_d358,Comune di Dovera,8,275.0,67.9,100.0,30.0,60.0,65.0,20.0
+Comune di Isola della Scala,Comune di Isola della Scala,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Cerea,Comune di Cerea,38,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Lastebasse,Comune di Lastebasse,20,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Mussolente,Comune di Mussolente,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Villadose,Comune di Villadose,33,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Cogollo del Cengio,Comune di Cogollo del Cengio,27,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Camisano Vicentino,Comune di Camisano Vicentino,24,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Agna,Comune di Agna,11,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Bevilacqua,Comune di Bevilacqua,22,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+07401840017,Turismo Torino e Provincia s.c.r.l.,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Rossano Veneto,Comune di Rossano Veneto,28,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Carbonera,Comune di Carbonera,38,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Posina,Comune di Posina,32,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Monselice,Comune di Monselice,6,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+ucv_109,Unione Comuni Valdaso,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Porto Tolle,Comune di Porto Tolle,27,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Creazzo,Comune di Creazzo,48,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Ferrara Di Monte Baldo,Comune di Ferrara Di Monte Baldo,26,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Michele al Tagliamento,Comune di San Michele al Tagliamento,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Albettone,Comune di Albettone,11,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_d121,Comune di Cotignola,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Colognola ai Colli,Comune di Colognola ai Colli,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Valeggio sul Mincio,Comune di Valeggio sul Mincio,9,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Veronella,Comune di Veronella,13,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Nogarole Vicentino,Comune di Nogarole Vicentino,17,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Pincara,Comune di Pincara,14,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Altro,Altro,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+asstnm,Azienda Socio Sanitaria Territoriale Nord Milano,10,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Chiuppano,Comune di Chiuppano,27,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Grumolo delle Abbadesse,Comune di Grumolo delle Abbadesse,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Gambellara,Comune di Gambellara,38,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_d749,COMUNE DI Fossombrone,23,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Gazzo Veronese,Comune di Gazzo Veronese,19,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Pietro di Morubio,Comune di San Pietro di Morubio,26,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Trecenta,Comune di Trecenta,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Ceneselli,Comune di Ceneselli,17,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di  Moriago della Battaglia,Comune di  Moriago della Battaglia,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Legnago,Comune di Legnago,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Pieve del Grappa,Comune di Pieve del Grappa,31,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Roveredo Di Gua,Comune di Roveredo Di Gua,17,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Monfumo,Comune di Monfumo,34,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+umdm,Unione Montana del Montefeltro,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Enego,Comune di Enego,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Mareno di Piave,Comune di Mareno di Piave,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Cordignano,Comune di Cordignano,38,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Giacciano con Baruchella,Comune di Giacciano con Baruchella,4,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Donà di Piave,Comune di San Donà di Piave,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_i690,Comune di Sesto San Giovanni,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Isola Rizza,Comune di Isola Rizza,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Castelfranco Veneto,Comune di Castelfranco Veneto,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Montecchio Precalcino,Comune di Montecchio Precalcino,50,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Malo,Comune di Malo,40,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+ansfisa,Agenzia Nazionale per la Sicurezza delle Ferrovie e delle Infrastrutture Stradali e Autostradali,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Asolo,Comune di Asolo,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Brugine,Comune di Brugine,10,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Megliadino San Vitale,Comune di Megliadino San Vitale,14,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Zimella,Comune di Zimella,15,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Dueville,Comune di Dueville,15,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Val Liona,Comune di Val Liona,14,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_f347,COMUNE DI Mondavio,32,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Giorgio in Bosco,Comune di San Giorgio in Bosco,12,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_f589,COMUNE DI Monte Porzio,14,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Erbe',Comune di Erbe',18,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Fossalta di Portogruaro,Comune di Fossalta di Portogruaro,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Zugliano,Comune di Zugliano,17,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Bovolone,Comune di Bovolone,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Albignasego,Comune di Albignasego,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Vedelago,Comune di Vedelago,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Sernaglia della Battaglia,Comune di Sernaglia della Battaglia,35,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_i625,Comune di Seregno,8,275.0,67.9,100.0,30.0,60.0,65.0,20.0
+Comune di Pescantina,Comune di Pescantina,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_b846,COMUNE DI Cartoceto,30,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Zenson di Piave,Comune di Zenson di Piave,33,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Fiesso Umbertiano,Comune di Fiesso Umbertiano,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Belfiore,Comune di Belfiore,32,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Quinto di Treviso,Comune di Quinto di Treviso,25,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Pieve di Soligo,Comune di Pieve di Soligo,25,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Casale sul Sile,Comune di Casale sul Sile,31,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Castagnaro,Comune di Castagnaro,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Pozzoleone,Comune di Pozzoleone,22,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Riese Pio X,Comune di Riese Pio X,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Lonigo,Comune di Lonigo,4,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Zermeghedo,Comune di Zermeghedo,19,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Musile di Piave,Comune di Musile di Piave,22,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Fara Vicentino,Comune di Fara Vicentino,18,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Segusino,Comune di Segusino,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Villanova Marchesana,Comune di Villanova Marchesana,10,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Velo d'Astico,Comune di Velo d'Astico,14,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Angiari,Comune di Angiari,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_f560,COMUNE di Montemarciano,29,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Zevio,Comune di Zevio,26,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Castel d'Azzano,Comune di Castel d'Azzano,40,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Sant'anna D'alfaedo,Comune di Sant'anna D'alfaedo,15,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Thiene,Comune di Thiene,19,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Cerro Veronese,Comune di Cerro Veronese,18,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Tonezza Del Cimone,Comune di Tonezza Del Cimone,12,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Portogruaro,Comune di Portogruaro,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Campo San Martino,Comune di Campo San Martino,15,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Ponte San Nicolo,Comune di Ponte San Nicolo,19,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Fossalta di Piave,Comune di Fossalta di Piave,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+udcvm,Unione dei Comuni Valle del Metauro,6,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Gazzo,Comune di Gazzo,37,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Cavallino-Treporti,Comune di Cavallino-Treporti,6,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Adria,Comune di Adria,18,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Illasi,Comune di Illasi,25,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Colceresa,Comune di Colceresa,4,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Mira,Comune di Mira,57,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Cessalto,Comune di Cessalto,32,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_d472,Comune di Falconara Marittima,52,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Nove,Comune di Nove,26,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Agugliaro,Comune di Agugliaro,18,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Giavera del Montello,Comune di Giavera del Montello,37,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+ESA Copernicus,ESA Copernicus,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Vito di Leguzzano,Comune di San Vito di Leguzzano,40,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Colle Umberto,Comune di Colle Umberto,31,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Borso del Grappa,Comune di Borso del Grappa,32,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Roana,Comune di Roana,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_f029,Comune di Massa Lombarda,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Pedemonte,Comune di Pedemonte,32,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Nogarole Rocca,Comune di Nogarole Rocca,31,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Fontaniva,Comune di Fontaniva,28,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_c152,COMUNE DI Castelleone di Suasa,45,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Buttapietra,Comune di Buttapietra,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Concordia Sagittaria,Comune di Concordia Sagittaria,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Ficarolo,Comune di Ficarolo,28,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_g163,Comune di Osoppo,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Marano Vicentino,Comune di Marano Vicentino,27,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_e730,Comune di Lugo,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Nogara,Comune di Nogara,27,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Oppeano,Comune di Oppeano,28,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Concamarise,Comune di Concamarise,24,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Padova,Comune di Padova,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Sant'Urbano,Comune di Sant'Urbano,22,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Zovencedo,Comune di Zovencedo,25,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Pietro in Gu,Comune di San Pietro in Gu,28,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Paese,Comune di Paese,17,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Moriago della Battaglia,Comune di Moriago della Battaglia,17,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Monte di Malo,Comune di Monte di Malo,39,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Mozzecane,Comune di Mozzecane,26,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di San Martino di Lupari,Comune di San Martino di Lupari,22,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Villafranca Padovana,Comune di Villafranca Padovana,13,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Taglio Di Po,Comune di Taglio Di Po,26,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Lusiana Conco,Comune di Lusiana Conco,25,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+cm_monte76,Unione dei Comuni valdostani Monte Cervino,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Gallio,Comune di Gallio,30,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Consiglio di Bacino Verona Nord,Consiglio di Bacino Verona Nord,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Casier,Comune di Casier,34,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Castelcucco,Comune di Castelcucco,30,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Pettorazza Grimani,Comune di Pettorazza Grimani,23,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Trevenzuolo,Comune di Trevenzuolo,20,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Marano di Valpolicella,Comune di Marano di Valpolicella,11,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Ronco all'Adige,Comune di Ronco all'Adige,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_a547,Comune di Bagnacavallo,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+uc_vdt,Unione dei Comuni Vallata del Tronto,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Stienta,Comune di Stienta,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Romano D'ezzelino,Comune di Romano D'ezzelino,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Caorle,Comune di Caorle,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Masi,Comune di Masi,15,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Casale di Scodosia,Comune di Casale di Scodosia,9,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_d211,Comune di Cupramontana,9,275.0,67.9,100.0,28.89,51.11,75.0,20.0
+Comune di Montegalda,Comune di Montegalda,29,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+COMUNE DI MONTEFORTE D'ALPONE,COMUNE DI MONTEFORTE D'ALPONE,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Montecchio Maggiore,Comune di Montecchio Maggiore,30,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Salgareda,Comune di Salgareda,32,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Cassola,Comune di Cassola,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+aldm_an,Assemblea Legislativa delle Marche,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di La Valle Agordina,Comune di La Valle Agordina,10,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_d007,COMUNE DI Corinaldo,51,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Saonara,Comune di Saonara,19,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_l409,Comune di Trezzano sul Naviglio (MI),13,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Calto,Comune di Calto,27,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_f600,Comune di Monte Roberto,11,275.0,67.9,100.0,27.27,52.73,75.0,20.0
+Comune di Pastrengo,Comune di Pastrengo,24,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Villaverla,Comune di Villaverla,6,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_e690,Comune di Loreto,51,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Erbezzo,Comune di Erbezzo,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+c_b026,Comune di Borgo Pace,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+sapns,Sistema Ambiente Provincia di Napoli S.P.A.,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Villorba,Comune di Villorba,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Brogliano,Comune di Brogliano,25,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Recoaro Terme,Comune di Recoaro Terme,20,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Ponzano Veneto,Comune di Ponzano Veneto,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Spresiano,Comune di Spresiano,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Gaiba,Comune di Gaiba,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Galzignano Terme,Comune di Galzignano Terme,19,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Carre',Comune di Carre',31,275.0,67.9,100.0,20.0,60.0,75.0,20.0
+Comune di Rovigo,Comune di Rovigo,97,274.79,67.85,100.0,20.0,59.79,75.0,20.0
+c_c948,Comune di Concesio,23,274.57,67.8,100.0,23.48,60.0,71.09,20.0
+c_c100,Comune di Castelfidardo,65,274.23,67.71,100.0,20.0,59.23,75.0,20.0
+c_h958,COMUNE DI San Lorenzo in Campo,36,273.89,67.63,100.0,20.0,58.89,75.0,20.0
+m_inf,Ministero Infrastrutture e Trasporti,70,273.86,67.62,95.43,23.43,60.0,75.0,20.0
+Comune di Limena,Comune di Limena,15,273.67,67.57,100.0,20.0,58.67,75.0,20.0
+c_a462,Comune di Ascoli Piceno,13,273.46,67.52,100.0,20.0,58.46,75.0,20.0
+c_h771,Comune di San Benedetto Po,17,273.24,67.47,100.0,20.0,60.0,73.24,20.0
+c_f453,COMUNE DI Montecarotto,11,273.18,67.45,100.0,27.27,50.91,75.0,20.0
+c_d451,Comune di Fabriano,10,273.0,67.41,100.0,28.0,50.0,75.0,20.0
+udcda_bs,Unione Dei Comuni Delle Alpi Orobie Bresciane,10,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+c_l778,Comune di Verolavecchia,10,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+c_c457,Comune di Cenate Sotto,10,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+c_c396,Comune di Cavernago,10,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+c_e370,Comune di Isso,20,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+c_a846,Comune di Bianzano,10,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+p_cr,Provincia di Cremona,10,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+c_f633,COMUNE DI Monte Urano,10,273.0,67.41,100.0,20.0,58.0,75.0,20.0
+c_e100,Comune di Gorlago,10,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+c_l812,Comune di Vestone,10,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+c_e297,Comune di Incudine,10,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+c_m188,Comune di Zone,10,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+c_g546,Comune di Pian Camuno,10,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+c_i916,Comune di Spinone Al  Lago,10,273.0,67.41,100.0,28.0,60.0,65.0,20.0
+c_c248,COMUNE DI Castelplanio,10,273.0,67.41,100.0,28.0,50.0,75.0,20.0
+c_d150,Comune di Cremona,73,272.95,67.4,100.0,24.38,60.0,68.56,20.0
+trenord,Trenord,9,272.78,67.35,100.0,28.89,57.78,66.11,20.0
+c_f520,COMUNE DI Montegiorgio,9,272.78,67.35,100.0,20.0,57.78,75.0,20.0
+Comune di Ospitale Di Cadore,Comune di Ospitale Di Cadore,26,272.69,67.33,100.0,20.0,57.69,75.0,20.0
+el,PoliS - Lombardia,175,272.66,67.32,100.0,23.2,60.0,69.46,20.0
+Comune di Verona,Comune di Verona,68,272.65,67.32,100.0,20.0,57.65,75.0,20.0
+r_lombar,Regione Lombardia,1248,272.61,67.31,100.0,27.65,57.83,67.14,20.0
+c_i912,COMUNE DI Spinetoli,8,272.5,67.28,100.0,20.0,57.5,75.0,20.0
+c_h575,Comune di Rosora,8,272.5,67.28,100.0,30.0,47.5,75.0,20.0
+c_c093,COMUNE DI Castel di Lama,8,272.5,67.28,100.0,20.0,57.5,75.0,20.0
+c_i324,COMUNE DI Sant'Elpidio a Mare,8,272.5,67.28,100.0,20.0,57.5,75.0,20.0
+Comune di Lamon,Comune di Lamon,16,272.5,67.28,100.0,20.0,57.5,75.0,20.0
+Comune di Fonzaso,Comune di Fonzaso,16,272.5,67.28,100.0,20.0,57.5,75.0,20.0
+p_mb,Provincia di Monza e della Brianza,174,272.3,67.23,100.0,24.6,60.0,67.7,20.0
+c_f415,COMUNE DI Montalto delle Marche,7,272.14,67.2,100.0,20.0,57.14,75.0,20.0
+c_b534,Comune di Campofilone,7,272.14,67.2,100.0,20.0,57.14,75.0,20.0
+Comune di Alpago,Comune di Alpago,7,272.14,67.2,100.0,20.0,57.14,75.0,20.0
+c_e868,COMUNE DI Maltignano,7,272.14,67.2,100.0,20.0,57.14,75.0,20.0
+c_f614,Comune di Monterubbiano,7,272.14,67.2,100.0,20.0,57.14,75.0,20.0
+c_c321,Comune di Castignano,7,272.14,67.2,100.0,20.0,57.14,75.0,20.0
+Comune di Ponte Nelle Alpi,Comune di Ponte Nelle Alpi,20,272.0,67.16,100.0,20.0,57.0,75.0,20.0
+c_c707,Comune di Cinisello Balsamo,18,271.67,67.08,100.0,20.0,60.0,71.67,20.0
+c_e807,Comune di Magliano di Tenna,6,271.67,67.08,100.0,20.0,56.67,75.0,20.0
+c_c935,COMUNE DI Comunanza,6,271.67,67.08,100.0,20.0,56.67,75.0,20.0
+c_g920,Comune di Porto San Giorgio,6,271.67,67.08,100.0,20.0,56.67,75.0,20.0
+c_f722,COMUNE DI Moresco,6,271.67,67.08,100.0,20.0,56.67,75.0,20.0
+c_c877,COMUNE DI Colli del Tronto,6,271.67,67.08,100.0,20.0,56.67,75.0,20.0
+c_d142,Comune di Crema,24,271.67,67.08,100.0,26.67,60.0,65.0,20.0
+c_f487,COMUNE DI Montedinove,5,271.0,66.91,100.0,20.0,56.0,75.0,20.0
+c_l728,COMUNE DI Venarotta,5,271.0,66.91,100.0,20.0,56.0,75.0,20.0
+c_d477,COMUNE DI Falerone,5,271.0,66.91,100.0,20.0,56.0,75.0,20.0
+c_a335,Comune di Appignano del Tronto,5,271.0,66.91,100.0,20.0,56.0,75.0,20.0
+c_f044,Comune di Massignano,5,271.0,66.91,100.0,20.0,56.0,75.0,20.0
+c_d691,COMUNE DI Force,5,271.0,66.91,100.0,20.0,56.0,75.0,20.0
+c_d286,Comune di Desio,19,270.79,66.86,100.0,24.21,60.0,66.58,20.0
+c_i461,Comune di Sassoferrato,14,270.71,66.84,100.0,25.71,50.0,75.0,20.0
+c_a794,Comune di Bergamo,48,270.62,66.82,100.0,21.67,59.58,69.38,20.0
+cmmi,Città Metropolitana Milano,196,270.61,66.82,100.0,22.45,60.0,68.16,20.0
+c_g921,COMUNE DI Porto Sant'Elpidio,9,270.56,66.8,100.0,20.0,55.56,75.0,20.0
+c_h390,COMUNE DI Roccafluvione,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_g873,COMUNE DI Ponzano di Fermo,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_f501,COMUNE DI Montefiore dell'Aso,8,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_d096,COMUNE DI Cossignano,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_e983,Comune di Martignana di Po,16,270.0,66.67,100.0,25.0,60.0,65.0,20.0
+c_b727,COMUNE DI Carassai,8,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_d652,COMUNE DI Folignano,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_f428,COMUNE DI Montappone,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_g516,COMUNE DI Petritoli,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_h321,COMUNE DI Ripatransone,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_h588,COMUNE DI Rotella,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_f591,COMUNE DI Monteprandone,8,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_c331,Comune di Castorano,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_h182,COMUNE DI Rapagnano,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_g005,COMUNE DI Offida,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_m331,COMUNE DI Vallefoglia,16,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_f599,Comune di Monte Rinaldo,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_g137,COMUNE DI Ortezzano,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_i315,COMUNE DI Santa Vittoria in Matenano,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_d542,Comune di Fermo,4,270.0,66.67,100.0,20.0,55.0,75.0,20.0
+c_b395,Comune di Calcio,17,269.71,66.6,100.0,24.71,60.0,65.0,20.0
+c_h264,Comune di Rho,26,269.62,66.57,100.0,20.0,60.0,69.62,20.0
+c_e447,COMUNE DI Lapedona,7,269.29,66.49,100.0,20.0,54.29,75.0,20.0
+c_b899,Comune di Casalmaiocco,19,269.21,66.47,100.0,24.21,60.0,65.0,20.0
+c_g388,Comune di Pavia,29,269.14,66.45,100.0,20.0,60.0,69.14,20.0
+c_b300,Comune di Busto Arsizio,21,268.81,66.37,100.0,23.81,60.0,65.0,20.0
+c_e089,Comune di Gonzaga,21,268.81,66.37,100.0,23.81,60.0,65.0,20.0
+c_b126,Comune di Brebbia,23,268.48,66.29,100.0,23.48,60.0,65.0,20.0
+c_f704,Comune di Monza,35,268.43,66.28,100.0,22.29,60.0,66.14,20.0
+c_g403,COMUNE DI Pedaso,3,268.33,66.25,100.0,20.0,53.33,75.0,20.0
+c_a760,Comune di Belmonte Piceno,3,268.33,66.25,100.0,20.0,53.33,75.0,20.0
+c_l279,COMUNE DI Torre San Patrizio,3,268.33,66.25,100.0,20.0,53.33,75.0,20.0
+c_f626,Comune di Monte San Pietrangeli,3,268.33,66.25,100.0,20.0,53.33,75.0,20.0
+c_f380,Comune di Monsampolo del Tronto,3,268.33,66.25,100.0,20.0,53.33,75.0,20.0
+c_a437,Comune di Arquata del Tronto,3,268.33,66.25,100.0,20.0,53.33,75.0,20.0
+c_i774,Comune di Smerillo,6,268.33,66.25,100.0,20.0,53.33,75.0,20.0
+c_f516,COMUNE DI Montegallo,3,268.33,66.25,100.0,20.0,53.33,75.0,20.0
+Comune di Feltre,Comune di Feltre,6,268.33,66.25,100.0,20.0,53.33,75.0,20.0
+c_g289,COMUNE DI Palmiano,3,268.33,66.25,100.0,20.0,53.33,75.0,20.0
+umavm,Unione Montana Alta Valle del Metauro,12,268.33,66.25,100.0,20.0,53.33,75.0,20.0
+c_f664,COMUNE DI Monte Vidon Combatte,3,268.33,66.25,100.0,20.0,53.33,75.0,20.0
+c_c059,Comune di Castelbelforte,25,268.2,66.22,100.0,23.2,60.0,65.0,20.0
+c_h827,Comune di San Donato Milanese,10,268.0,66.17,100.0,20.0,60.0,68.0,20.0
+c_h883,Unione di Comuni Lombarda San Giorgio e Bigarello,27,267.96,66.16,100.0,22.96,60.0,65.0,20.0
+c_c553,Comune di Cervia,6,267.86,66.14,100.0,20.0,52.86,75.0,20.0
+c_i909,Comune di Spineda,28,267.86,66.14,100.0,22.86,60.0,65.0,20.0
+c_h769,COMUNE DI San Benedetto del Tronto,8,267.5,66.05,100.0,20.0,52.5,75.0,20.0
+c_i932,COMUNE DI Staffolo ,10,267.0,65.93,100.0,28.0,44.0,75.0,20.0
+c_e208,COMUNE DI Grottazzolina,5,267.0,65.93,100.0,20.0,52.0,75.0,20.0
+c_d210,COMUNE DI Cupra Marittima,5,267.0,65.93,100.0,20.0,52.0,75.0,20.0
+lispa,Azienda Regionale per l'Innovazione e gli Acquisti S.p.A.,5,267.0,65.93,100.0,20.0,60.0,67.0,20.0
+c_a740,Comune di Belforte all'Isauro,14,266.43,65.79,100.0,20.0,51.43,75.0,20.0
+c_f136,Comune di Mercatino Conca,14,266.43,65.79,100.0,20.0,51.43,75.0,20.0
+c_I287,COMUNE DI Sant'Angelo in Vado,14,266.43,65.79,100.0,20.0,51.43,75.0,20.0
+c_b816,Comune di Carpegna,14,266.43,65.79,100.0,20.0,51.43,75.0,20.0
+c_l500,Comune di Urbino,14,266.43,65.79,100.0,20.0,51.43,75.0,20.0
+c_l078,Comune di Tavoleto,14,266.43,65.79,100.0,20.0,51.43,75.0,20.0
+c_f524,COMUNE DI Monte Grimano Terme,14,266.43,65.79,100.0,20.0,51.43,75.0,20.0
+c_l498,COMUNE DI Urbania,14,266.43,65.79,100.0,20.0,51.43,75.0,20.0
+c_M413,Comune di Sassocorvaro Auditore,14,266.43,65.79,100.0,20.0,51.43,75.0,20.0
+c_f135,COMUNE DI Mercatello sul Metauro,14,266.43,65.79,100.0,20.0,51.43,75.0,20.0
+c_G514,Comune di Petriano,14,266.43,65.79,100.0,20.0,51.43,75.0,20.0
+c_d541,Comune di Fermignano,14,266.43,65.79,100.0,20.0,51.43,75.0,20.0
+c_f450,COMUNE DI Montecalvo in Foglia,13,265.77,65.62,100.0,20.0,50.77,75.0,20.0
+c_e884,Comune di Manerbio,8,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_h341,Comune di Rivarolo del Re Ed Uniti,25,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_b212,Comune di Brugherio,9,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_d266,Comune di Delebio,6,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_h315,Comune di Ripalta Cremasca,7,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_e863,Comune di Malnate,8,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+copas_lo,Parco Regionale Adda Sud,6,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_c709,Comune di Cino,6,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_m104,Comune di Vobarno,10,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_e462,Comune di Lasnigo,7,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_a687,Comune di Barzio,4,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_h484,Comune di Roè Volciano,8,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_i498,Comune di Scandolara Ripa D'Oglio,3,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_a273,Comune di Andalo Valtellino,5,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+p_bs,Provincia di Brescia,3,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_g004,Comune di Offanengo,6,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_e617,Comune di Lissone,11,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+ucltdg,Unione di Comuni Lombarda Terra Dei Gonzaga,2,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_e785,Comune di Macerata Feltria,16,265.0,65.43,100.0,20.0,50.0,75.0,20.0
+c_d057,Comune di Corte de' Frati,3,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_l751,Comune di Vercurago,10,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_g061,Comune di Ome,8,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_f681,Comune di Montodine,7,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_f372,Comune di Monguzzo,7,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_g529,Comune di Pezzaze,9,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_h650,Comune di Sabbio Chiese,7,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+06341981006,ATAC S.p.A. Azienda per la mobilità,10,265.0,65.43,100.0,20.0,50.0,75.0,20.0
+c_i602,Comune di Senago,3,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_h623,Comune di Rozzano,12,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_f797,Comune di Muggiò (MB),5,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_c816,Comune di Codogno,25,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_a193,Comune di Algua,1,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+UCCDFO,Unione Lombarda dei Comuni Oglio - Ciria,2,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_l312,Comune di Toscolano Maderno,10,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_d258,Comune di Dazio,5,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_l265,Comune di Torre de' Roveri,10,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_h630,Comune di Rudiano,4,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_a578,Comune di Bagolino,9,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_b102,Comune di Bovezzo,3,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_a962,Comune di Bonate Sotto,9,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_e648,Comune di Lodi,8,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+r_lomb,Consiglio Regionale della Lombardia,12,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_a799,Comune di Berlingo,10,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_g047,Comune di Olmeneta,3,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_c634,Comune di Chieve,7,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_a817,Comune di Berzo Inferiore,10,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_i759,Comune di Sirone,8,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_d088,Comune di Cosio Valtellino,6,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+arpa_mi,ARPA LOMBARDIA,8,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_h493,Comune di Rogolo,3,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_m101,Comune di Vizzola Ticino,6,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_mont,Comune di Montorfano,6,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_c089,Comune di Casteldidone,29,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_b157,Comune di Brescia,24,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_c536,Comune di Cerro al Lambro,7,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_b639,Comune di Cantu',8,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_c785,Comune di Civo,4,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_h316,Comune di Ripalta Guerina,7,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_l872,Comune di Vigevano,9,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_l777,Comune di Verolanuova,8,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_i476,Comune di Monticelli Brusati,10,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_e193,Comune di Grontardo,3,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_a249,Comune di Alzate Brianza,6,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_a319,Comune di Anzano del Parco,6,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_l547,Comune di Valbrona,6,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+uclf_mn,Unione Lombarda di Comuni FOEDUS,3,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_d710,Comune di Formigara,7,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+Consorzio BIM Piave di Belluno,Consorzio BIM Piave di Belluno,42,265.0,65.43,100.0,20.0,50.0,75.0,20.0
+c_b110,Comune di Bozzolo,10,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_f115,Comune di Mello,5,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_g993,Comune di Prata Camportaccio,2,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_i162,Comune di San Siro,5,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_d416,Comune di Erba,6,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_h314,Comune di Ripalta Arpina,7,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_g686,Comune di Pioltello,2,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_d151,Comune di Cremosano,8,265.0,65.43,100.0,20.0,60.0,65.0,20.0
+c_e743,COMUNE DI Lunano,11,264.09,65.21,100.0,20.0,49.09,75.0,20.0
+c_g551,COMUNE DI Piandimeleto,11,264.09,65.21,100.0,20.0,49.09,75.0,20.0
+c_f467,COMUNE DI Monte Cerignone,11,264.09,65.21,100.0,20.0,49.09,75.0,20.0
+c_d807,Comune di Frontino,11,264.09,65.21,100.0,20.0,49.09,75.0,20.0
+c_g627,Comune di Pietrarubbia,11,264.09,65.21,100.0,20.0,49.09,75.0,20.0
+c_e388,Comune di Jesi,16,263.75,65.12,100.0,25.0,43.75,75.0,20.0
+CMVS8,Comunità Montana di Valle Sabbia,29,263.28,65.01,100.0,20.0,56.55,66.72,20.0
+c_i566,Comune di Sedriano,10,263.0,64.94,100.0,20.0,58.0,65.0,20.0
+c_g416,Comune di Peglio,10,263.0,64.94,100.0,20.0,48.0,75.0,20.0
+c_d458,Comune di Faenza,3,261.67,64.61,100.0,20.0,46.67,75.0,20.0
+c_i787,Comune di Solarolo,3,261.67,64.61,100.0,20.0,46.67,75.0,20.0
+c_b982,Comune di Casola Valsenio,3,261.67,64.61,100.0,20.0,46.67,75.0,20.0
+c_c065,Comune di Castel Bolognese,3,261.67,64.61,100.0,20.0,46.67,75.0,20.0
+c_l528,Comune di Vado Ligure,3,261.67,64.61,100.0,46.67,30.0,65.0,20.0
+udcb_ra,Unione della Romagna Faentina,3,261.67,64.61,100.0,20.0,46.67,75.0,20.0
+c_b188,Comune di Brisighella,3,261.67,64.61,100.0,20.0,46.67,75.0,20.0
+Comune di Cortina d'Ampezzo,Comune di Cortina d'Ampezzo,3,261.67,64.61,100.0,20.0,46.67,75.0,20.0
+Comune di Santa Giustina,Comune di Santa Giustina,4,260.0,64.2,100.0,20.0,45.0,75.0,20.0
+aisg_052,ATO Toscana Sud,2,260.0,64.2,100.0,20.0,45.0,75.0,20.0
+c_g479,Comune di Pesaro,20,258.0,63.7,100.0,20.0,43.0,75.0,20.0
+c_e122,COMUNE DI Gradara,17,256.18,63.25,100.0,20.0,41.18,75.0,20.0
+ARPAV,ARPAV,111,256.08,63.23,100.0,20.0,41.08,75.0,20.0
+Comune di Auronzo di Cadore,Comune di Auronzo di Cadore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Selva Di Cadore,Comune di Selva Di Cadore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di San Pietro di Cadore,Comune di San Pietro di Cadore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Livinallongo Del Col Di Lana,Comune di Livinallongo Del Col Di Lana,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Cibiana di Cadore,Comune di Cibiana di Cadore,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Pieve Di Cadore,Comune di Pieve Di Cadore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Sovramonte,Comune di Sovramonte,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di San Nicolo' Di Comelico,Comune di San Nicolo' Di Comelico,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Sospirolo,Comune di Sospirolo,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Perarolo Di Cadore,Comune di Perarolo Di Cadore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Sedico,Comune di Sedico,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Colle Santa Lucia,Comune di Colle Santa Lucia,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+02863660359,Amiat - Azienda Multiservizi Igiene Ambientale Torino S.p.A.,8,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Vodo Di Cadore,Comune di Vodo Di Cadore,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Soverzene,Comune di Soverzene,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Val Di Zoldo,Comune di Val Di Zoldo,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Cencenighe Agordino,Comune di Cencenighe Agordino,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Longarone,Comune di Longarone,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Seren Del Grappa,Comune di Seren Del Grappa,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Vallada Agordina,Comune di Vallada Agordina,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Rocca Pietore,Comune di Rocca Pietore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Gosaldo,Comune di Gosaldo,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Quero Vas,Comune di Quero Vas,9,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di San Tomaso Agordino,Comune di San Tomaso Agordino,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+c_d836,COMUNE DI Gabicce Mare,16,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+tmp_sunshine,Consorzio Sunshine,1,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Voltago Agordino,Comune di Voltago Agordino,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Alleghe,Comune di Alleghe,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Limana,Comune di Limana,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Tambre,Comune di Tambre,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Lentiai,Comune di Lentiai,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Domegge di Cadore,Comune di Domegge di Cadore,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Zoppé Di Cadore,Comune di Zoppé Di Cadore,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di San Vito Di Cadore,Comune di San Vito Di Cadore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Lozzo di Cadore,Comune di Lozzo di Cadore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Cesiomaggiore,Comune di Cesiomaggiore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Calalzo di Cadore,Comune di Calalzo di Cadore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+000000000,Osservatorio Culturale del Piemonte,8,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Borca di Cadore,Comune di Borca di Cadore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Belluno,Comune di Belluno,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Pedavena,Comune di Pedavena,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Castellavazzo,Comune di Castellavazzo,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Canale d'Agordo,Comune di Canale d'Agordo,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Rivamonte Agordino,Comune di Rivamonte Agordino,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Taibon Agordino,Comune di Taibon Agordino,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Alano di Piave,Comune di Alano di Piave,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Lorenzago Di Cadore,Comune di Lorenzago Di Cadore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+10735431008,Roma Servizi per la Mobilità,1,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Danta di Cadore,Comune di Danta di Cadore,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Agordo,Comune di Agordo,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Santo Stefano di Cadore,Comune di Santo Stefano di Cadore,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Comelico Superiore,Comune di Comelico Superiore,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di Falcade,Comune di Falcade,2,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+Comune di San Gregorio Nelle Alpi,Comune di San Gregorio Nelle Alpi,3,255.0,62.96,100.0,20.0,40.0,75.0,20.0
+c_d548,Comune di Ferrara,275,239.25,59.07,100.0,25.42,18.84,75.0,20.0
