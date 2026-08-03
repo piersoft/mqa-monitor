@@ -97,11 +97,11 @@ def costruisci_storico(outdir, catalog, titoli, livello):
     return storico
 
 
-def storico_titolari(outdir, catalog):
-    """Livello titolare: legge le rilevazioni SPARQL in mqa/titolari/."""
+def storico_sparql(outdir, catalog, cartella):
+    """Livelli da SPARQL: leggono le rilevazioni in mqa/<cartella>/."""
     storico = {}
     for path in sorted(glob.glob(os.path.join(
-            outdir, "titolari", "%s_*.csv" % catalog))):
+            outdir, cartella, "%s_*.csv" % catalog))):
         m = DATA_CSV_RE.search(os.path.basename(path))
         if not m:
             continue
@@ -111,7 +111,8 @@ def storico_titolari(outdir, catalog):
             for r in csv.DictReader(f):
                 media = float(r["scoring"])
                 righe[r["id"]] = {
-                    "data": day, "chiave": r["id"], "slug": r["id"],
+                    "data": day, "chiave": r["id"],
+                    "slug": r.get("slug") or r["id"],
                     "etichetta": r["titolare"],
                     "n_dataset": int(r["n_dataset"]),
                     "media": round(media, 2), "mediana": "", "min": "", "max": "",
@@ -198,14 +199,16 @@ def blocco_livello(storico, date):
 
 
 def salva_json(storici, catalog, docsdir, max_rilevazioni):
-    date = sorted(set().union(*[set(s) for s in storici.values()]))
+    usati = [storici[k] for k in ("holder", "organization") if storici.get(k)]
+    date = sorted(set().union(*[set(s) for s in usati])) if usati else []
     if not date:
         raise SystemExit("nessuno snapshot trovato: lancia prima mqa_monitor.py")
     date = date[-max_rilevazioni:]
 
     livelli = {}
-    for livello, storico in storici.items():
-        livelli[livello] = blocco_livello(storico, date)
+    for livello in ("holder", "organization"):
+        if storici.get(livello):
+            livelli[livello] = blocco_livello(storici[livello], date)
 
     os.makedirs(docsdir, exist_ok=True)
     path = os.path.join(docsdir, "data.json")
@@ -232,16 +235,14 @@ def main():
 
     print("[1/3] leggo gli snapshot ...")
     titoli = carica_titoli(args.outdir, args.ckan_url)
-    storici = {}
-    for livello in ("organization", "publisher"):
-        storici[livello] = costruisci_storico(
-            args.outdir, args.catalog, titoli, livello)
-        ultimo = sorted(storici[livello])[-1] if storici[livello] else None
-        print("  %-13s %d rilevazioni, %d voci nell'ultima"
-              % (livello, len(storici[livello]),
-                 len(storici[livello][ultimo]) if ultimo else 0))
-    storici["holder"] = storico_titolari(args.outdir, args.catalog)
-    for livello in ("holder",):
+    storici = {
+        "holder": storico_sparql(args.outdir, args.catalog, "titolari"),
+        "organization": storico_sparql(args.outdir, args.catalog, "organizzazioni"),
+        # publisher resta nello storico per analisi, ma fuori dalla pagina
+        "publisher": costruisci_storico(
+            args.outdir, args.catalog, titoli, "publisher"),
+    }
+    for livello in ("holder", "organization", "publisher"):
         ultimo = sorted(storici[livello])[-1] if storici[livello] else None
         print("  %-13s %d rilevazioni, %d voci nell'ultima"
               % (livello, len(storici[livello]),

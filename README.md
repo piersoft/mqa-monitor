@@ -29,11 +29,16 @@ Lo script:
 
 ### I tre livelli
 
-| Livello | Da dove | Voci | Cosa e |
-|---|---|---:|---|
-| **Titolari** | SPARQL, `dct:rightsHolder` | 1.614 | L'ente proprietario dei dati |
-| Organizzazioni | API, `contact_point` | 398 | Chi ospita il catalogo di origine |
-| Editori | API, `dct:publisher` | 1.608 | Il valore grezzo monitorato da EDP |
+| Livello | Da dove | Voci | Cosa e | Dimensioni |
+|---|---|---:|---|---|
+| **Titolari** | SPARQL, `dct:rightsHolder` | 1.614 | L'ente proprietario dei dati | si |
+| Organizzazioni | SPARQL, `dcat:contactPoint` | 398 | Chi ospita il catalogo di origine | si |
+| Editori | API, `dct:publisher` | 1.608 | Il valore grezzo monitorato da EDP | no |
+
+Titolari e Organizzazioni sono le due viste della pagina. Gli **Editori** restano
+calcolati in `mqa/storico.csv` ma fuori dalla pagina: sono il livello che EDP
+espone nelle API, utile solo per spiegare perche i numeri del portale europeo non
+coincidono con questi.
 
 Il livello **titolare** e l'unico corretto quando una PA pubblica tramite il
 catalogo di qualcun altro. Il Comune di Montemesola ha 40 dataset sul portale
@@ -42,7 +47,18 @@ regionale pugliese: su EDP arrivano con publisher "Redazione OD" e contact point
 Il titolare sopravvive solo nel triplestore, dove `dct:rightsHolder` porta al nome
 e al codice IPA (`c_f563`).
 
-E anche l'unico livello con le **cinque dimensioni** MQA: reperibilita,
+### Le cinque dimensioni
+
+Reperibilita, accessibilita, interoperabilita, riusabilita e contesto arrivano
+solo dal triplestore: l'API di ricerca espone il solo totale, e via REST
+costerebbero una chiamata per dataset (misurato: ~90 minuti e rate limit oltre gli
+8 thread). Con SPARQL sono due query aggregate da ~45 secondi in tutto.
+
+Nota su `dct:hasPart`: dati.gov.it dichiara i sotto-cataloghi nel `catalog.ttl`,
+ma EDP appiattisce la gerarchia in harvesting e nel triplestore non ne resta
+traccia. Il legame con l'organizzazione passa quindi da `dcat:contactPoint`.
+
+Il titolare e comunque l'unico livello: reperibilita,
 accessibilita, interoperabilita, riusabilita e contesto, che l'API di ricerca non
 espone e che via REST costerebbero una chiamata per dataset.
 

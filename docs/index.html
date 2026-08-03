@@ -169,7 +169,6 @@ footer a{color:inherit}
   <select id="livello" aria-label="Livello di aggregazione">
     <option value="holder">Titolari</option>
     <option value="organization">Organizzazioni</option>
-    <option value="publisher">Editori</option>
   </select>
   <input type="search" id="cerca" placeholder="Cerca" aria-label="Cerca">
   <select id="ordina" aria-label="Ordinamento">
@@ -214,10 +213,13 @@ footer a{color:inherit}
   appartengono davvero. E l’unico livello che riconosce chi pubblica tramite un
   catalogo altrui — un Comune ospitato dal portale regionale, per esempio — e l’unico
   con le cinque dimensioni. Arriva dall’endpoint SPARQL, non dall’API di ricerca.</p>
-  <p><strong>Organizzazioni</strong>: l’ente titolare del catalogo di origine, identificato
-  da un UUID stabile. <strong>Editori</strong>: il valore grezzo di <code>dct:publisher</code>,
-  quello che monitora data.europa.eu — piu granulare, ma contiene uffici, redazioni e
-  denominazioni interne, e cambia identita se l’ente si rinomina.
+  <p><strong>Organizzazioni</strong>: chi ospita il catalogo di origine, identificato
+  dall’UUID in <code>dcat:contactPoint</code>. Un Comune che pubblica sul portale
+  regionale compare qui sotto la Regione, e come titolare sotto il proprio nome.</p>
+  <p>data.europa.eu monitora invece <code>dct:publisher</code>, che su un catalogo
+  federato contiene uffici e redazioni: e il motivo per cui i numeri qui non
+  coincidono con quelli del portale europeo. Resta calcolato in
+  <code>mqa/storico.csv</code>, fuori da questa pagina.
   Dati e codice: <a id="link-repo" href="./">repository</a>.</p>
 </footer>
 
@@ -350,7 +352,6 @@ function dettaglio(e){
 const NOMI = {
   holder:       {sing:'titolare', plur:'titolari', col:'Titolare', cerca:'Cerca un titolare'},
   organization: {sing:'ente',     plur:'enti',     col:'Ente',     cerca:'Cerca un ente'},
-  publisher:    {sing:'editore',  plur:'editori',  col:'Editore',  cerca:'Cerca un editore'},
 };
 
 function misure(){
