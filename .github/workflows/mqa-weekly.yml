@@ -6,7 +6,7 @@ on:
     # EDP ricalcola quasi ogni giorno: la rilevazione SPARQL gira tutti i giorni,
     # lo scroll dell'API solo il lunedi (il .csv.gz e' gia compresso e non si
     # comprime in git: 1 MB al giorno gonfierebbe il repo).
-    - cron: "0 6 * * *"
+    - cron: "17 6 * * *"
   workflow_dispatch:
     inputs:
       catalog:
