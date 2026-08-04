@@ -68,7 +68,7 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX voc: <https://piveau.eu/ns/voc#>"""
 
 QUERY_TITOLARI = PREFISSI + """
-SELECT ?id (SAMPLE(?nome) AS ?etichetta) ?metrica
+SELECT ?id (MIN(?nome) AS ?etichetta) ?metrica
        (COUNT(DISTINCT ?ds) AS ?n) (AVG(?v) AS ?media)
 WHERE {
   GRAPH <%s> { ?c dcat:dataset ?ds }
