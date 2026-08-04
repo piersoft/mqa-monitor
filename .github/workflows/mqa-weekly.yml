@@ -6,7 +6,7 @@ on:
     # EDP ricalcola quasi ogni giorno: la rilevazione SPARQL gira tutti i giorni,
     # lo scroll dell'API solo il lunedi (il .csv.gz e' gia compresso e non si
     # comprime in git: 1 MB al giorno gonfierebbe il repo).
-    - cron: "17 6 * * *"
+    - cron: "0 6 * * *"
   workflow_dispatch:
     inputs:
       catalog:
@@ -70,7 +70,10 @@ jobs:
           echo "day=$DAY" >> "$GITHUB_OUTPUT"
           echo "report=mqa/report_${CATALOG}_${GROUP_BY}_${DAY}.md" >> "$GITHUB_OUTPUT"
 
-      - name: Rilevazione per titolare (SPARQL)
+      # continue-on-error perche il lunedi lo scroll dell'API deve comunque
+      # essere committato anche se il triplestore non risponde. Il controllo
+      # esplicito piu sotto fa fallire il job se non e uscito nulla di nuovo.
+      - name: Rilevazione SPARQL (titolari e organizzazioni)
         continue-on-error: true
         run: python3 mqa_sparql.py --catalog "${{ inputs.catalog || 'dati-gov-it' }}"
 
@@ -80,6 +83,20 @@ jobs:
       - name: Riepilogo nel job summary
         if: steps.run.outputs.report != ''
         run: cat "${{ steps.run.outputs.report }}" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verifica che ci sia una rilevazione di oggi
+        env:
+          CATALOG: ${{ inputs.catalog || 'dati-gov-it' }}
+        run: |
+          DAY=$(date -u +%F)
+          TROVATI=$(ls mqa/titolari/${CATALOG}_${DAY}.csv \
+                       mqa/organizzazioni/${CATALOG}_${DAY}.csv \
+                       mqa/dataset/${CATALOG}_${DAY}.csv.gz 2>/dev/null | wc -l)
+          echo "rilevazioni con data $DAY: $TROVATI"
+          if [ "$TROVATI" -eq 0 ]; then
+            echo "::error::Nessuna rilevazione prodotta per $DAY. Controlla il log dello step SPARQL."
+            exit 1
+          fi
 
       - name: Commit dello snapshot
         run: |

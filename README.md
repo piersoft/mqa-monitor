@@ -58,8 +58,30 @@ l'organizzazione passa quindi da `dcat:contactPoint`, che è un URI diretto
 Reperibilità, accessibilità, interoperabilità, riusabilità e contesto arrivano
 solo dal triplestore. L'API di ricerca espone il solo totale, e via REST
 costerebbero una chiamata per dataset — misurato: ~90 minuti e rate limit oltre
-gli 8 thread paralleli. Con SPARQL sono due query aggregate, ~45 secondi in
-tutto, e nessun carico su dati.gov.it.
+gli 8 thread paralleli.
+
+### Il limite dei 60 secondi
+
+Il gateway di data.europa.eu chiude la connessione a 60 secondi, e l'endpoint si
+degrada dopo richieste ravvicinate: recupera solo dopo qualche minuto di quiete.
+Questo ha condizionato il disegno delle query.
+
+- **Titolari**: una query aggregata, 20–45 secondi. Vicina al limite, quindi con
+  cinque tentativi e attese fino a due minuti e mezzo. Se non passa, il livello
+  viene saltato e si riprova il giorno dopo.
+- **Organizzazioni**: **una query per ente**, 398 richieste da meno di un secondo
+  l'una, circa 4 minuti in tutto. Sembra un controsenso, ma la query aggregata
+  su tutte le organizzazioni ha funzionato per un solo giorno (9 s) prima che
+  Virtuoso cambiasse piano di esecuzione e smettesse di rientrare nei 60 secondi
+  — anche spezzata per singola metrica. Fissando l'URI dell'organizzazione
+  l'indice viene usato e la risposta è immediata anche per Regione Toscana,
+  12.575 dataset. Se una richiesta fallisce si ritenta solo quella.
+
+I due livelli sono indipendenti: quello che riesce viene salvato comunque. Se
+non ne riesce nessuno lo script esce con errore, e nel workflow un controllo
+esplicito verifica che esista una rilevazione con la data di oggi — senza,
+un guasto del triplestore si presenterebbe come un run verde che non scrive
+nulla.
 
 Dettagli utili per chi volesse rifare le query:
 
