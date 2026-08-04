@@ -1975,7 +1975,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-08-04,holder,SPABDOMM,SPABDOMM,"Magnifica Comunità di Montagna Dolomiti Friulane, Cavallo e Cansiglio",4,355.0,,,,Excellent
 2026-08-04,holder,c_i464,c_i464,Comune di Sauris,2,355.0,,,,Excellent
 2026-08-04,holder,c_h657,c_h657,Comune di Sacile,2,355.0,,,,Excellent
-2026-08-04,holder,uticar,uticar,Regione Autonoma Friuli-Venezia Giulia,4,355.0,,,,Excellent
+2026-08-04,holder,uticar,uticar,Comunità di Montagna della Carnia,4,355.0,,,,Excellent
 2026-08-04,holder,c_g381,c_g381,Comune di Paularo,4,355.0,,,,Excellent
 2026-08-04,holder,r_liguri,r_liguri,Regione Liguria,19,355.0,,,,Excellent
 2026-08-04,holder,c_l868,c_l868,Comune di Vigarano Mainarda,5,355.0,,,,Excellent
@@ -2246,7 +2246,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-08-04,holder,c_f567,c_f567,Comune di Pollenza,61,343.85,,,,Good
 2026-08-04,holder,c_d042,c_d042,Comune di Corridonia,78,343.72,,,,Good
 2026-08-04,holder,c_d027,c_d027,Comune di Corno di Rosazzo,7,343.57,,,,Good
-2026-08-04,holder,ASPA_BZ,ASPA_BZ,Azienda Sanitaria dell'Alto Adige,6,343.33,,,,Good
+2026-08-04,holder,ASPA_BZ,ASPA_BZ,Südtiroler Sanitätsbetrieb,6,343.33,,,,Good
 2026-08-04,holder,c_e228,c_e228,COMUNE DI Gualdo,44,343.18,,,,Good
 2026-08-04,holder,cciaa_rm,cciaa_rm,Camera di Commercio Industria Artigianato e Agricoltura di Roma,20,343.0,,,,Good
 2026-08-04,holder,c_f454,c_f454,Comune di Montecassiano,73,342.95,,,,Good
@@ -2369,7 +2369,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-08-04,holder,c_h061,c_h061,Comune di Prignano sulla Secchia,48,308.96,,,,Good
 2026-08-04,holder,c_f127,c_f127,Comune di Mentana,45,308.56,,,,Good
 2026-08-04,holder,cmge,cmge,CMGE,6,308.33,,,,Good
-2026-08-04,holder,uni_bo/CLE/ARAG,uni_bo/CLE/ARAG,ARAG - Area Finanza e Partecipate,6,308.33,,,,Good
+2026-08-04,holder,uni_bo/CLE/ARAG,uni_bo/CLE/ARAG,ARAG - Finance and Subsidiaries Division,6,308.33,,,,Good
 2026-08-04,holder,c_c963,c_c963,Comune di Conselice,8,307.5,,,,Good
 2026-08-04,holder,c_a035,c_a035,Comune di Acqualagna,9,307.22,,,,Good
 2026-08-04,holder,c_c312,c_c312,Comune di Castiglione delle Stiviere,36,307.22,,,,Good
