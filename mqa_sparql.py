@@ -155,7 +155,7 @@ def nomi_titolari(catalog, verbose=True):
     d = interroga(QUERY_NOMI % (GRAFO % catalog), timeout=90)
     varianti = {}
     for b in d["results"]["bindings"]:
-        chiave, nome = b["id"]["value"], b["nome"]["value"]
+        chiave, nome = b["id"]["value"].lower(), b["nome"]["value"]
         n = int(b["n"]["value"])
         varianti.setdefault(chiave, {})
         varianti[chiave][nome] = max(varianti[chiave].get(nome, 0), n)
@@ -181,7 +181,7 @@ def rileva_titolari(catalog, verbose=True):
     enti = {}
     for b in righe:
         chiave = b["id"]["value"]
-        nome, n_nomi = nomi.get(chiave, (chiave, 0))
+        nome, n_nomi = nomi.get(chiave.lower(), (chiave, 0))
         e = enti.setdefault(chiave, {"id": chiave, "titolare": nome,
                                      "n_nomi": n_nomi})
         breve = METRICHE.get(b["metrica"]["value"].split("#")[-1])
@@ -252,9 +252,80 @@ CAMPI = ["id", "slug", "titolare", "n_dataset", "scoring", "pct", "findability",
          "n_nomi"]
 
 
+DIM_TUTTE = ["scoring", "findability", "accessibility", "interoperability",
+             "reusability", "contextuality"]
+
+
+def fondi_chiavi(righe, campo_id="id", campo_n="n_dataset",
+                 campo_nome="titolare"):
+    """Unisce le voci il cui codice differisce solo per maiuscole o spazi.
+
+    I codici IPA sono per convenzione minuscoli, ma nei metadati capita di
+    trovarli scritti in modo diverso: `M_ef` e `m_ef` sono entrambi il Ministero
+    dell'Economia, `PCM` e `pcm` la Presidenza del Consiglio. Senza normalizzare
+    comparirebbero come due enti distinti. Le misure si fondono con la media
+    pesata sui dataset; come denominazione resta quella del gruppo piu numeroso.
+    """
+    gruppi = {}
+    for r in righe:
+        gruppi.setdefault(str(r.get(campo_id, "")).strip().lower(), []).append(r)
+
+    out = []
+    for chiave, voci in gruppi.items():
+        if len(voci) == 1:
+            v = dict(voci[0])
+            v[campo_id] = chiave
+            out.append(v)
+            continue
+        voci.sort(key=lambda x: -int(x.get(campo_n) or 0))
+        tot = sum(int(v.get(campo_n) or 0) for v in voci) or 1
+        unita = dict(voci[0])
+        unita[campo_id] = chiave
+        unita[campo_n] = tot
+        for d in DIM_TUTTE:
+            pesi = [(float(v[d]), int(v.get(campo_n) or 0))
+                    for v in voci if v.get(d) not in (None, "")]
+            if pesi:
+                unita[d] = round(sum(x * n for x, n in pesi) / max(tot, 1), 2)
+        if "n_nomi" in unita:
+            unita["n_nomi"] = max(int(v.get("n_nomi") or 0) for v in voci)
+        out.append(unita)
+    return out
+
+
+MISURE = ["scoring", "findability", "accessibility", "interoperability",
+          "reusability", "contextuality"]
+
+
+def fondi_per_codice(righe):
+    """Unisce le voci con lo stesso codice a meno di maiuscole.
+
+    Il MEF compare come `m_ef` (3.709 dataset) e `M_ef` (21): stesso ente, due
+    righe. Anche PCM e AVEPA. Le misure si ricombinano pesando per numero di
+    dataset, che e' il modo corretto di rimettere insieme due medie parziali.
+    """
+    per = {}
+    for r in righe:
+        chiave = r["id"].lower()
+        if chiave not in per:
+            r["id"] = chiave
+            per[chiave] = r
+            continue
+        a, b = per[chiave], r
+        na, nb = a.get("n_dataset", 0), b.get("n_dataset", 0)
+        tot = na + nb
+        for m in MISURE:
+            if m in a or m in b:
+                a[m] = round((a.get(m, 0) * na + b.get(m, 0) * nb) / max(tot, 1), 2)
+        a["n_dataset"] = tot
+        if len(b.get("titolare", "")) > len(a.get("titolare", "")):
+            a["titolare"] = b["titolare"]
+    return list(per.values())
+
+
 def completa(righe):
     out = []
-    for e in righe:
+    for e in fondi_chiavi(list(righe)):
         if "scoring" not in e:
             continue
         e["pct"] = round(e["scoring"] / MASSIMI["scoring"] * 100, 2)

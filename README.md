@@ -70,6 +70,19 @@ Non serve una fonte alternativa: le stesse varianti compaiono identiche in
 (`lod.dati.gov.it/sparql`), che anzi ne aggiunge una in piu. Il dato e sporco
 all'origine, nel `holder_name` dei dataset in CKAN — EDP si limita a propagarlo.
 
+Anche il codice va normalizzato: i codici IPA sono per convenzione minuscoli, ma
+nei metadati capita di trovarli scritti diversamente. `M_ef` e `m_ef` sono
+entrambi il Ministero dell'Economia, `PCM` e `pcm` la Presidenza del Consiglio,
+`AVEPA` e `avepa` l'agenzia veneta. Senza normalizzare comparirebbero come enti
+distinti: da 1.614 voci si scende a 1.611. Le misure si fondono con la media
+pesata sui dataset, e la fusione avviene anche in lettura dello storico, cosi le
+serie gia salvate restano continue.
+
+Il codice stesso puo comparire con maiuscole diverse: il MEF e sia `m_ef`
+(3.709 dataset) sia `M_ef` (21), e lo stesso vale per PCM e AVEPA. Sono tre casi
+su 1.611, e le voci vengono unite pesando le misure per numero di dataset, che e
+il modo corretto di ricombinare due medie parziali.
+
 Quando un ente ha piu denominazioni la pagina lo segnala nel dettaglio della
 riga: e un difetto di metadati che la PA puo correggere.
 

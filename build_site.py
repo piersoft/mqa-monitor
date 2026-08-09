@@ -29,6 +29,7 @@ import re
 from collections import defaultdict
 
 from mqa_monitor import MAX_SCORE, bucket, carica_titoli, titolizza
+from mqa_sparql import fondi_chiavi
 
 MQA_CACHE = "https://data.europa.eu/api/mqa/cache/catalogues/%s"
 
@@ -111,11 +112,12 @@ def storico_sparql(outdir, catalog, cartella):
         day = m.group(1)
         righe = {}
         with open(path, encoding="utf-8") as f:
-            for r in csv.DictReader(f):
+            letti = fondi_chiavi(list(csv.DictReader(f)), campo_nome="titolare")
+            for r in letti:
                 media = float(r["scoring"])
                 righe[r["id"]] = {
                     "data": day, "chiave": r["id"],
-                    "slug": r.get("slug") or r["id"],
+                    "slug": r.get("slug") or chiave,
                     "etichetta": r["titolare"],
                     "n_dataset": int(r["n_dataset"]),
                     "media": round(media, 2), "mediana": "", "min": "", "max": "",
