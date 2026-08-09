@@ -218,6 +218,24 @@ La pagina va servita via HTTP, perché carica `data.json` via fetch:
 cd docs && python3 -m http.server
 ```
 
+## Dettaglio dataset per dataset
+
+Nel dettaglio di un **titolare** un pulsante scarica un CSV con una riga per
+dataset: identificativo, URL su data.europa.eu, punteggio e le cinque dimensioni,
+ordinati dal peggiore al migliore. E l'elenco delle cose da sistemare.
+
+Il CSV non e pregenerato: la pagina interroga SPARQL dal browser al momento del
+clic (l'endpoint espone `access-control-allow-origin: *`). Servono due query,
+perche in una sola si superano i 60 secondi del gateway: prima gli URI dei
+dataset del titolare, poi le misure con `VALUES ?ds`, che fissando i soggetti fa
+usare l'indice. I `VALUES` si spezzano in blocchi da 300.
+
+Solo per i titolari, non per le organizzazioni: la mediana e **10 dataset** per
+titolare e il 96% ne ha meno di cento, mentre un'organizzazione come Regione
+Toscana ne ha 12.575 di 255 enti diversi — un elenco che nessuno potrebbe usare.
+Ed e il titolare che deve correggere i propri metadati, non chi ospita il
+catalogo.
+
 ## Link diretti
 
 Ogni ente ha un indirizzo condivisibile:

@@ -122,6 +122,17 @@ tr.dettaglio td{background:var(--carta-alta);padding:20px 10px 26px}
 .dim-barra i.bassa{background:var(--giu)}
 .dim-val{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums}
 .dim-max{color:var(--tenue)}
+.scarica{margin-top:6px}
+.scarica button{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--inchiostro);background:#fff;border:1px solid var(--riga-forte);
+  padding:9px 14px;cursor:pointer;min-height:38px
+}
+.scarica button:hover:not(:disabled){background:var(--carta);border-color:var(--inchiostro)}
+.scarica button:disabled{color:var(--tenue);cursor:default}
+.scarica button:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
+.scarica .esito{font-family:var(--mono);font-size:11.5px;color:var(--tenue);margin-top:7px}
+.scarica .esito.male{color:var(--giu)}
 .avviso{font-size:12.5px;color:#7a5c1e;background:#f6efdd;border-left:2px solid #9a7328;
   padding:8px 11px;margin:0 0 14px;max-width:46ch}
 .assente{padding:40px 0;color:var(--tenue);font-family:var(--mono);font-size:13px}
@@ -361,6 +372,11 @@ function dettaglio(e){
     <table class="rilevazioni">
       <tr><th>Rilevazione</th><th>Punteggio</th><th>Dataset</th></tr>${righe}
     </table>
+    ${LIV === 'holder' ? `<div class="scarica">
+      <button type="button" data-scarica="${e.id}" data-nome="${e.nome.replace(/"/g,'&quot;')}">
+        Scarica il dettaglio dei ${nf0.format(e.n)} dataset</button>
+      <div class="esito" data-esito="${e.id}"></div>
+    </div>` : ''}
   </div></td></tr>`;
 }
 
@@ -421,6 +437,101 @@ function aggiornaUrl(ente){
   u.search = '';
   if (ente) u.searchParams.set(PARAM[LIV], ente.slug || ente.id);
   history.replaceState(null, '', u);
+}
+
+/* Scarica il dettaglio dataset per dataset interrogando SPARQL dal browser.
+   L'endpoint espone access-control-allow-origin: *, quindi la chiamata diretta
+   e possibile. Due passi, perche in uno solo la query va oltre i 60 secondi del
+   gateway: prima gli URI dei dataset del titolare (immediato), poi le misure con
+   VALUES ?ds, che fissando i soggetti fa usare l'indice. I VALUES si spezzano in
+   blocchi: la mediana e 10 dataset per titolare, ma nove enti superano il migliaio. */
+const SPARQL = 'https://data.europa.eu/sparql';
+const BLOCCO = 300;
+const DIM_ORD = ['scoring','findability','accessibility','interoperability',
+                 'reusability','contextuality'];
+
+async function chiedi(query){
+  const r = await fetch(SPARQL, {
+    method: 'POST',
+    headers: {'Content-Type':'application/x-www-form-urlencoded',
+              'Accept':'application/sparql-results+json'},
+    body: new URLSearchParams({query})
+  });
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  return (await r.json()).results.bindings;
+}
+
+async function dettaglioDataset(id, avanzamento){
+  const P = `PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX dqv: <http://www.w3.org/ns/dqv#>
+PREFIX voc: <https://piveau.eu/ns/voc#>`;
+
+  avanzamento('cerco i dataset…');
+  const lista = await chiedi(`${P}
+SELECT ?ds WHERE { GRAPH ?ds { ?ds dct:rightsHolder ?h . ?h dct:identifier "${id}" } }`);
+  const uri = lista.map(b => b.ds.value);
+  if (!uri.length) return [];
+
+  const per = {};
+  for (let i = 0; i < uri.length; i += BLOCCO){
+    const blocco = uri.slice(i, i + BLOCCO);
+    avanzamento(`misure ${Math.min(i + BLOCCO, uri.length)}/${uri.length}…`);
+    const righe = await chiedi(`${P}
+SELECT ?ds ?metrica ?v WHERE {
+  VALUES ?ds { ${blocco.map(u => '<' + u + '>').join(' ')} }
+  GRAPH ?mg { ?ds dqv:hasQualityMeasurement ?m . ?m dqv:isMeasurementOf ?metrica ; dqv:value ?v }
+  FILTER(?metrica IN (voc:scoring, voc:findabilityScoring, voc:accessibilityScoring,
+                      voc:interoperabilityScoring, voc:reusabilityScoring,
+                      voc:contextualityScoring))
+}`);
+    for (const b of righe){
+      const d = per[b.ds.value] || (per[b.ds.value] = {});
+      const nome = b.metrica.value.split('#').pop()
+        .replace('Scoring','').replace(/^./, c => c.toLowerCase());
+      d[nome === '' ? 'scoring' : nome] = Number(b.v.value);
+    }
+  }
+  return uri.filter(u => per[u]).map(u => ({uri: u, ...per[u]}));
+}
+
+function scaricaCsv(nomeFile, righe){
+  const testa = ['dataset_id','url','punteggio','reperibilita','accessibilita',
+                 'interoperabilita','riusabilita','contesto'];
+  const corpo = righe.map(r => [
+    r.uri.split('/').pop(), r.uri,
+    ...DIM_ORD.map(k => r[k] === undefined ? '' : r[k])
+  ]);
+  const csv = [testa, ...corpo]
+    .map(r => r.map(c => /[",;\n]/.test(String(c)) ? '"' + String(c).replace(/"/g,'""') + '"' : c).join(','))
+    .join('\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob(['\ufeff' + csv], {type:'text/csv;charset=utf-8'}));
+  a.download = nomeFile;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+async function avviaScarico(bottone){
+  const id = bottone.dataset.scarica;
+  const nome = bottone.dataset.nome;
+  const esito = document.querySelector(`[data-esito="${id}"]`);
+  const etichetta = bottone.textContent;
+  bottone.disabled = true;
+  esito.className = 'esito';
+  try {
+    const righe = await dettaglioDataset(id, m => { esito.textContent = m; });
+    if (!righe.length){ esito.textContent = 'nessun dataset con misure'; return; }
+    righe.sort((a,b) => (a.scoring ?? 0) - (b.scoring ?? 0));
+    const slug = nome.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    scaricaCsv(`mqa_${slug || id}_${DATI.aggiornato}.csv`, righe);
+    esito.textContent = `${righe.length} dataset, dal peggiore al migliore`;
+  } catch (err) {
+    esito.className = 'esito male';
+    esito.textContent = "l'endpoint SPARQL non ha risposto, riprova fra qualche minuto";
+  } finally {
+    bottone.disabled = false;
+    bottone.textContent = etichetta;
+  }
 }
 
 function apriChiudi(tr){
@@ -515,6 +626,8 @@ fetch('data.json')
   }));
 
 document.getElementById('corpo').addEventListener('click', ev => {
+  const bottone = ev.target.closest('[data-scarica]');
+  if (bottone){ ev.stopPropagation(); avviaScarico(bottone); return; }
   const tr = ev.target.closest('tr.ente');
   if (tr) apriChiudi(tr);
 });
