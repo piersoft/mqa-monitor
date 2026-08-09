@@ -237,6 +237,10 @@ Nel dettaglio di un **titolare** un pulsante scarica un CSV con una riga per
 dataset: identificativo, URL su data.europa.eu, punteggio e le cinque dimensioni,
 ordinati dal peggiore al migliore. E l'elenco delle cose da sistemare.
 
+L'URL nel CSV punta alla pagina del dataset su data.europa.eu. Nel triplestore
+l'URI porta un suffisso di versione (`~~1`) che la pagina web non riconosce —
+con quello l'API risponde 404 — quindi va rimosso.
+
 Il CSV non e pregenerato: la pagina interroga SPARQL dal browser al momento del
 clic (l'endpoint espone `access-control-allow-origin: *`). Servono due query,
 perche in una sola si superano i 60 secondi del gateway: prima gli URI dei

@@ -494,13 +494,21 @@ SELECT ?ds ?metrica ?v WHERE {
   return uri.filter(u => per[u]).map(u => ({uri: u, ...per[u]}));
 }
 
+/* L'URI nel triplestore porta un suffisso di versione (~~1) che la pagina web di
+   EDP non riconosce: con quello l'API risponde 404. Va tolto, e va usato l'URL
+   della pagina invece dell'URI semantico. */
+function idDataset(uri){
+  return uri.split('/').pop().replace(/~~\d+$/, '');
+}
+
 function scaricaCsv(nomeFile, righe){
   const testa = ['dataset_id','url','punteggio','reperibilita','accessibilita',
                  'interoperabilita','riusabilita','contesto'];
-  const corpo = righe.map(r => [
-    r.uri.split('/').pop(), r.uri,
-    ...DIM_ORD.map(k => r[k] === undefined ? '' : r[k])
-  ]);
+  const corpo = righe.map(r => {
+    const id = idDataset(r.uri);
+    return [id, `https://data.europa.eu/data/datasets/${encodeURIComponent(id)}?locale=it`,
+            ...DIM_ORD.map(k => r[k] === undefined ? '' : r[k])];
+  });
   const csv = [testa, ...corpo]
     .map(r => r.map(c => /[",;\n]/.test(String(c)) ? '"' + String(c).replace(/"/g,'""') + '"' : c).join(','))
     .join('\n');
