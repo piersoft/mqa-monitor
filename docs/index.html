@@ -466,9 +466,15 @@ async function dettaglioDataset(id, avanzamento){
 PREFIX dqv: <http://www.w3.org/ns/dqv#>
 PREFIX voc: <https://piveau.eu/ns/voc#>`;
 
+  // Il confronto e' case-insensitive: nel triplestore il codice puo' avere
+  // maiuscole (p_TN, M_ef, PCM) mentre qui la chiave e' normalizzata a minuscolo.
+  // Cosi' si prendono anche le varianti dello stesso ente.
   avanzamento('cerco i dataset…');
   const lista = await chiedi(`${P}
-SELECT ?ds WHERE { GRAPH ?ds { ?ds dct:rightsHolder ?h . ?h dct:identifier "${id}" } }`);
+SELECT ?ds WHERE {
+  GRAPH ?ds { ?ds dct:rightsHolder ?h . ?h dct:identifier ?i
+              FILTER(LCASE(STR(?i)) = "${id.toLowerCase()}") }
+}`);
   const uri = lista.map(b => b.ds.value);
   if (!uri.length) return [];
 
@@ -597,7 +603,12 @@ function apriDaUrl(){
     document.getElementById('livello').value = livello;
     document.getElementById('cerca').value = ente.nome;
     misure(); graficoCatalogo(); disegna();
-    const tr = document.querySelector('tbody tr.ente');
+    /* Non la prima riga: quella dell'ente richiesto. Due titolari possono avere
+       la stessa denominazione (p_tn e p_tn82l3 sono entrambi "Provincia Autonoma
+       di Trento"), e la ricerca per nome li mostra entrambi. */
+    const pos = (window.__lista || []).findIndex(x => x.id === ente.id);
+    const tr = document.querySelector(`tbody tr.ente[data-i="${pos}"]`)
+            || document.querySelector('tbody tr.ente');
     if (tr){
       apriChiudi(tr);
       tr.scrollIntoView({block:'center', behavior:'smooth'});

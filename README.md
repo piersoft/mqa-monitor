@@ -264,7 +264,9 @@ https://piersoft.github.io/mqa-monitor/?organizzazione=comune-di-torino
 ```
 
 Accetta il codice (IPA per i titolari, slug o UUID per le organizzazioni) oppure
-il nome, anche parziale. Il livello si imposta da solo e la riga si apre già
+il nome, anche parziale. La riga che si apre e quella dell'ente richiesto, non la
+prima del risultato: due titolari possono condividere la denominazione — `p_tn` e
+`p_tn82l3` sono entrambi "Provincia Autonoma di Trento". Il livello si imposta da solo e la riga si apre già
 espansa. Aprendo una riga l'indirizzo si aggiorna, quindi si copia dalla barra del
 browser.
 
