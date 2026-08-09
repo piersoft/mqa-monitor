@@ -29,7 +29,6 @@ import re
 from collections import defaultdict
 
 from mqa_monitor import MAX_SCORE, bucket, carica_titoli, titolizza
-from mqa_sparql import fondi_chiavi
 
 MQA_CACHE = "https://data.europa.eu/api/mqa/cache/catalogues/%s"
 
@@ -112,11 +111,25 @@ def storico_sparql(outdir, catalog, cartella):
         day = m.group(1)
         righe = {}
         with open(path, encoding="utf-8") as f:
-            letti = fondi_chiavi(list(csv.DictReader(f)), campo_nome="titolare")
-            for r in letti:
+            for r in csv.DictReader(f):
                 media = float(r["scoring"])
-                righe[r["id"]] = {
-                    "data": day, "chiave": r["id"],
+                chiave = r["id"].lower()
+                if chiave in righe:  # stesso codice, maiuscole diverse
+                    a = righe[chiave]
+                    na, nb = a["n_dataset"], int(r["n_dataset"])
+                    tot = max(na + nb, 1)
+                    a["media"] = round((a["media"] * na + media * nb) / tot, 2)
+                    for k in DIMENSIONI:
+                        if r.get(k):
+                            a["dim"][k] = round(
+                                (a["dim"].get(k, 0) * na + float(r[k]) * nb) / tot, 2)
+                    a["n_dataset"] = na + nb
+                    a["rating"] = bucket(a["media"])
+                    if len(r["titolare"]) > len(a["etichetta"]):
+                        a["etichetta"] = r["titolare"]
+                    continue
+                righe[chiave] = {
+                    "data": day, "chiave": chiave,
                     "slug": r.get("slug") or chiave,
                     "etichetta": r["titolare"],
                     "n_dataset": int(r["n_dataset"]),
