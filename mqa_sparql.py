@@ -68,16 +68,29 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX voc: <https://piveau.eu/ns/voc#>"""
 
 QUERY_TITOLARI = PREFISSI + """
-SELECT ?id (MIN(?nome) AS ?etichetta) ?metrica
-       (COUNT(DISTINCT ?ds) AS ?n) (AVG(?v) AS ?media)
+SELECT ?id ?metrica (COUNT(DISTINCT ?ds) AS ?n) (AVG(?v) AS ?media)
 WHERE {
   GRAPH <%s> { ?c dcat:dataset ?ds }
-  GRAPH ?ds { ?ds dct:rightsHolder ?h . ?h foaf:name ?nome ; dct:identifier ?id }
+  GRAPH ?ds { ?ds dct:rightsHolder ?h . ?h dct:identifier ?id }
   GRAPH ?mg { ?ds dqv:hasQualityMeasurement ?m .
               ?m dqv:isMeasurementOf ?metrica ; dqv:value ?v }
 """ + FILTRO + """
 }
 GROUP BY ?id ?metrica"""
+
+# Denominazioni dei titolari con la loro frequenza (~3 secondi).
+#
+# foaf:name e testo libero compilato da ogni redattore: 1.514 titolari su 1.614
+# hanno piu di una denominazione. Il Comune di Matera ne ha sei, fra cui
+# "cittadinanza" e "comunita-di-pratica"; la Provincia di Bolzano ne ha 117.
+# Prendere un nome a caso (SAMPLE) o il primo alfabetico (MIN) produce etichette
+# sbagliate: si sceglie quello usato dal maggior numero di dataset, perche gli
+# errori sono minoritari per costruzione.
+QUERY_NOMI = PREFISSI + """
+SELECT ?id ?nome (COUNT(DISTINCT ?ds) AS ?n) WHERE {
+  GRAPH <%s> { ?c dcat:dataset ?ds }
+  GRAPH ?ds { ?ds dct:rightsHolder ?h . ?h dct:identifier ?id ; foaf:name ?nome }
+} GROUP BY ?id ?nome"""
 
 # elenco delle organizzazioni presenti nel catalogo (~6 secondi)
 QUERY_ELENCO_ORG = PREFISSI + """
@@ -137,8 +150,30 @@ def _accumula(enti, chiave, etichetta, righe):
 
 # ------------------------------------------------------------------ titolari
 
+def nomi_titolari(catalog, verbose=True):
+    """id -> (denominazione piu usata, quante denominazioni diverse)."""
+    d = interroga(QUERY_NOMI % (GRAFO % catalog), timeout=90)
+    varianti = {}
+    for b in d["results"]["bindings"]:
+        chiave, nome = b["id"]["value"], b["nome"]["value"]
+        n = int(b["n"]["value"])
+        varianti.setdefault(chiave, {})
+        varianti[chiave][nome] = max(varianti[chiave].get(nome, 0), n)
+    out = {}
+    for chiave, v in varianti.items():
+        # a parita di frequenza il piu lungo: preferisce la forma estesa
+        modale = sorted(v.items(), key=lambda x: (-x[1], -len(x[0])))[0][0]
+        out[chiave] = (modale, len(v))
+    if verbose:
+        confusi = sum(1 for _, n in out.values() if n > 1)
+        print("      %d denominazioni risolte, %d titolari con piu di una"
+              % (len(out), confusi))
+    return out
+
+
 def rileva_titolari(catalog, verbose=True):
     t0 = time.time()
+    nomi = nomi_titolari(catalog, verbose)
     d = interroga(QUERY_TITOLARI % (GRAFO % catalog), timeout=120, verbose=verbose)
     righe = d["results"]["bindings"]
     if verbose:
@@ -146,8 +181,9 @@ def rileva_titolari(catalog, verbose=True):
     enti = {}
     for b in righe:
         chiave = b["id"]["value"]
-        e = enti.setdefault(chiave, {"id": chiave,
-                                     "titolare": b["etichetta"]["value"]})
+        nome, n_nomi = nomi.get(chiave, (chiave, 0))
+        e = enti.setdefault(chiave, {"id": chiave, "titolare": nome,
+                                     "n_nomi": n_nomi})
         breve = METRICHE.get(b["metrica"]["value"].split("#")[-1])
         if not breve:
             continue
@@ -212,7 +248,8 @@ def nomi_organizzazioni(outdir, catalog):
 # ---------------------------------------------------------------- salvataggio
 
 CAMPI = ["id", "slug", "titolare", "n_dataset", "scoring", "pct", "findability",
-         "accessibility", "interoperability", "reusability", "contextuality"]
+         "accessibility", "interoperability", "reusability", "contextuality",
+         "n_nomi"]
 
 
 def completa(righe):

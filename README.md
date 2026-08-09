@@ -53,6 +53,26 @@ contiene solo `dcat:dataset`, `dcat:record` e `dcat:service`. Il legame con
 l'organizzazione passa quindi da `dcat:contactPoint`, che è un URI diretto
 (`https://www.dati.gov.it/organization/<uuid>`) e si raggruppa nativamente.
 
+### Le denominazioni dei titolari
+
+`dct:identifier` (il codice IPA, `c_f052`) e una chiave affidabile. `foaf:name`
+no: e testo libero compilato da ogni redattore, e **43 titolari su 1.614** hanno
+piu di una denominazione. Il Comune di Matera ne ha cinque — fra cui
+`cittadinanza` e `comunita-di-pratica` — e la Provincia di Bolzano 117.
+
+Lo script sceglie la denominazione usata dal maggior numero di dataset: gli
+errori sono minoritari per costruzione, quindi il valore modale e quasi sempre
+quello giusto ("Comune di Matera", 157 dataset contro 47 di `comune-di-matera`).
+A parita di frequenza vince la forma piu lunga, che di norma e quella estesa.
+
+Non serve una fonte alternativa: le stesse varianti compaiono identiche in
+`lista_amministrazioni.csv` e nell'endpoint SPARQL di dati.gov.it
+(`lod.dati.gov.it/sparql`), che anzi ne aggiunge una in piu. Il dato e sporco
+all'origine, nel `holder_name` dei dataset in CKAN — EDP si limita a propagarlo.
+
+Quando un ente ha piu denominazioni la pagina lo segnala nel dettaglio della
+riga: e un difetto di metadati che la PA puo correggere.
+
 ## Le cinque dimensioni
 
 Reperibilità, accessibilità, interoperabilità, riusabilità e contesto arrivano

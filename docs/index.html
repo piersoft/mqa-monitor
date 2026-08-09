@@ -122,6 +122,8 @@ tr.dettaglio td{background:var(--carta-alta);padding:20px 10px 26px}
 .dim-barra i.bassa{background:var(--giu)}
 .dim-val{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums}
 .dim-max{color:var(--tenue)}
+.avviso{font-size:12.5px;color:#7a5c1e;background:#f6efdd;border-left:2px solid #9a7328;
+  padding:8px 11px;margin:0 0 14px;max-width:46ch}
 .assente{padding:40px 0;color:var(--tenue);font-family:var(--mono);font-size:13px}
 .asse{font-family:var(--mono);font-size:10px;fill:var(--tenue)}
 .linea-asse{stroke:var(--riga);stroke-width:1}
@@ -353,6 +355,9 @@ function dettaglio(e){
   return `<tr class="dettaglio"><td colspan="6"><div class="dettaglio-corpo">
     <div>${graficoGrande(e.serie)}</div>
     ${dimensioni(e.dim)}
+    ${e.n_nomi ? `<p class="avviso">Nei metadati questo ente compare con
+      <strong>${e.n_nomi} denominazioni diverse</strong>. Qui usiamo la più
+      frequente.</p>` : ''}
     <table class="rilevazioni">
       <tr><th>Rilevazione</th><th>Punteggio</th><th>Dataset</th></tr>${righe}
     </table>

@@ -121,6 +121,7 @@ def storico_sparql(outdir, catalog, cartella):
                     "media": round(media, 2), "mediana": "", "min": "", "max": "",
                     "rating": bucket(media),
                     "dim": dict((d, float(r[d])) for d in DIMENSIONI if r.get(d)),
+                    "n_nomi": int(r["n_nomi"]) if r.get("n_nomi") else 0,
                 }
         storico[day] = righe
     return storico
@@ -141,6 +142,7 @@ def salva_storico(storici, outdir):
                                 key=lambda x: -x["media"]):
                     r = dict(r, livello=livello)
                     r.pop("dim", None)
+                    r.pop("n_nomi", None)
                     w.writerow(r)
     return path
 
@@ -178,6 +180,8 @@ def blocco_livello(storico, date):
             v["punti"][pos[day]] = [round(r["media"], 1), r["n_dataset"]]
             if r.get("dim"):
                 v["dim"] = dict((k, round(x, 1)) for k, x in r["dim"].items())
+            if r.get("n_nomi"):
+                v["n_nomi"] = r["n_nomi"]
 
     presenti = [i for i, d in enumerate(date) if d in storico]
     ultimo_i = presenti[-1] if presenti else len(date) - 1
@@ -201,6 +205,8 @@ def blocco_livello(storico, date):
         }
         if v.get("dim"):
             voce["dim"] = v["dim"]
+        if v.get("n_nomi", 0) > 1:
+            voce["n_nomi"] = v["n_nomi"]
         lista.append(voce)
     lista.sort(key=lambda x: -x["media"])
 
