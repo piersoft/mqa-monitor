@@ -137,6 +137,12 @@ def storico_sparql(outdir, catalog, cartella):
                     "rating": bucket(media),
                     "dim": dict((d, float(r[d])) for d in DIMENSIONI if r.get(d)),
                     "n_nomi": int(r["n_nomi"]) if r.get("n_nomi") else 0,
+                    "ipa": {
+                        "in": r.get("in_ipa") == "1",
+                        "nome": r.get("ipa_nome") or "",
+                        "prov": r.get("ipa_prov") or "",
+                        "reg": r.get("ipa_reg") or "",
+                    } if r.get("in_ipa") is not None else None,
                 }
         storico[day] = righe
     return storico
@@ -158,6 +164,7 @@ def salva_storico(storici, outdir):
                     r = dict(r, livello=livello)
                     r.pop("dim", None)
                     r.pop("n_nomi", None)
+                    r.pop("ipa", None)
                     w.writerow(r)
     return path
 
@@ -197,6 +204,8 @@ def blocco_livello(storico, date):
                 v["dim"] = dict((k, round(x, 1)) for k, x in r["dim"].items())
             if r.get("n_nomi"):
                 v["n_nomi"] = r["n_nomi"]
+            if r.get("ipa") is not None:
+                v["ipa"] = r["ipa"]
 
     presenti = [i for i, d in enumerate(date) if d in storico]
     ultimo_i = presenti[-1] if presenti else len(date) - 1
@@ -222,6 +231,15 @@ def blocco_livello(storico, date):
             voce["dim"] = v["dim"]
         if v.get("n_nomi", 0) > 1:
             voce["n_nomi"] = v["n_nomi"]
+        ipa = v.get("ipa")
+        if ipa is not None:
+            if not ipa["in"]:
+                voce["ipa_ko"] = True
+            elif ipa["nome"] and ipa["nome"].lower() != v["nome"].lower():
+                voce["ipa_nome"] = ipa["nome"]
+                if ipa["prov"]:
+                    voce["ipa_luogo"] = "%s (%s)" % (ipa["reg"], ipa["prov"]) \
+                        if ipa["reg"] else ipa["prov"]
         lista.append(voce)
     lista.sort(key=lambda x: -x["media"])
 

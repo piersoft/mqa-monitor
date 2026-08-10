@@ -83,6 +83,29 @@ Il codice stesso puo comparire con maiuscole diverse: il MEF e sia `m_ef`
 su 1.611, e le voci vengono unite pesando le misure per numero di dataset, che e
 il modo corretto di ricombinare due medie parziali.
 
+### Validazione contro IPA
+
+`dct:identifier` dovrebbe contenere il codice IPA dell'ente. Lo script scarica
+l'elenco ufficiale delle amministrazioni (aggiornato ogni 7 giorni in
+`mqa/ipa.json`) e verifica che il codice esista davvero.
+
+**411 titolari su 1.610 dichiarano un codice che in IPA non esiste**: la partita
+IVA (`00514490010` per il Comune di Torino), la denominazione messa al posto del
+codice (`comune di treviso`, `regione del veneto`), o codici malformati
+(`c_969`). Non e che quegli enti manchino da IPA: e il codice a non essere un
+codice. La pagina lo segnala nel dettaglio della riga.
+
+IPA **non** viene usato per sostituire le denominazioni: scrive gli accenti come
+apostrofi (`Comune di Cuorgne'`) e a volte in maiuscolo, quindi su diversi enti
+peggiorerebbe. Quando la denominazione ufficiale differisce da quella del
+catalogo — 169 casi — viene mostrata accanto, senza sostituirla. E il caso di
+ANAC: codice `cvtiap` (l'eredita della CiVIT, mai aggiornato), denominazione nei
+metadati `anticorruzione`, in IPA "Autorita' Nazionale Anticorruzione - A.N.AC.".
+
+Il modale corregge gli errori minoritari, IPA riconosce quelli sistematici: ANAC
+usa `anticorruzione` su tutti e 70 i suoi dataset, e nessuna maggioranza avrebbe
+potuto correggerlo.
+
 Quando un ente ha piu denominazioni la pagina lo segnala nel dettaglio della
 riga: e un difetto di metadati che la PA puo correggere.
 

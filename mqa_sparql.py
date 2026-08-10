@@ -33,6 +33,7 @@ import csv
 import datetime as dt
 import glob
 import gzip
+import io
 import json
 import os
 import re
@@ -43,6 +44,8 @@ import urllib.request
 from mqa_monitor import titolizza
 
 ENDPOINT = "https://data.europa.eu/sparql"
+IPA_URL = ("https://indicepa.gov.it/public-services/opendata-read-service.php"
+           "?dstype=FS&filename=amministrazioni.txt")
 GRAFO = "http://data.europa.eu/88u/catalogue/%s"
 ORG_RE = re.compile(r"/organization/([0-9a-fA-F-]{8,})")
 
@@ -137,6 +140,55 @@ def interroga(query, tries=5, timeout=90, attese=(20, 45, 90, 150), verbose=Fals
     raise SparqlNonDisponibile("%s" % ultimo)
 
 
+# ---------------------------------------------------------------- indice IPA
+
+def carica_ipa(outdir, giorni=7, verbose=True):
+    """codice IPA -> denominazione ufficiale, provincia, regione.
+
+    Non si usa per sostituire il nome del catalogo: IPA scrive gli accenti come
+    apostrofi ("Comune di Cuorgne'") e a volte in maiuscolo, quindi su alcuni
+    enti peggiorerebbe. Serve invece a validare il codice: 409 titolari su 1.611
+    dichiarano un identificativo che in IPA non esiste — partite IVA, la
+    denominazione messa al posto del codice, codici malformati. Quelli sono
+    errori certi, e finora non avevamo modo di riconoscerli.
+    """
+    path = os.path.join(outdir, "ipa.json")
+    if os.path.exists(path):
+        eta = (time.time() - os.path.getmtime(path)) / 86400
+        if eta < giorni:
+            with open(path, encoding="utf-8") as f:
+                return json.load(f)
+    try:
+        req = urllib.request.Request(IPA_URL, headers={
+            "User-Agent": "mqa-monitor/5.0"})
+        with urllib.request.urlopen(req, timeout=180) as r:
+            testo = r.read().decode("utf-8-sig", "replace")
+        indice = {}
+        righe = csv.DictReader(io.StringIO(testo), delimiter="\t")
+        for r in righe:
+            cod = (r.get("cod_amm") or "").strip().lower()
+            if cod:
+                indice[cod] = {
+                    "nome": (r.get("des_amm") or "").strip(),
+                    "prov": (r.get("Provincia") or "").strip(),
+                    "reg": (r.get("Regione") or "").strip(),
+                }
+        if indice:
+            os.makedirs(outdir, exist_ok=True)
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(indice, f, ensure_ascii=False, sort_keys=True)
+            if verbose:
+                print("      indice IPA aggiornato (%d amministrazioni)" % len(indice))
+            return indice
+    except Exception as e:  # noqa: BLE001
+        if verbose:
+            print("      IPA non raggiungibile (%s)" % type(e).__name__)
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
 def _accumula(enti, chiave, etichetta, righe):
     e = enti.setdefault(chiave, {"id": chiave, "titolare": etichetta})
     for b in righe:
@@ -171,9 +223,10 @@ def nomi_titolari(catalog, verbose=True):
     return out
 
 
-def rileva_titolari(catalog, verbose=True):
+def rileva_titolari(catalog, outdir=".", verbose=True):
     t0 = time.time()
     nomi = nomi_titolari(catalog, verbose)
+    ipa = carica_ipa(outdir, verbose=verbose)
     d = interroga(QUERY_TITOLARI % (GRAFO % catalog), timeout=120, verbose=verbose)
     righe = d["results"]["bindings"]
     if verbose:
@@ -182,8 +235,14 @@ def rileva_titolari(catalog, verbose=True):
     for b in righe:
         chiave = b["id"]["value"]
         nome, n_nomi = nomi.get(chiave.lower(), (chiave, 0))
-        e = enti.setdefault(chiave, {"id": chiave, "titolare": nome,
-                                     "n_nomi": n_nomi})
+        voce = ipa.get(chiave.lower())
+        e = enti.setdefault(chiave, {
+            "id": chiave, "titolare": nome, "n_nomi": n_nomi,
+            "ipa_nome": voce["nome"] if voce else "",
+            "ipa_prov": voce["prov"] if voce else "",
+            "ipa_reg": voce["reg"] if voce else "",
+            "in_ipa": 1 if voce else 0,
+        })
         breve = METRICHE.get(b["metrica"]["value"].split("#")[-1])
         if not breve:
             continue
@@ -249,7 +308,7 @@ def nomi_organizzazioni(outdir, catalog):
 
 CAMPI = ["id", "slug", "titolare", "n_dataset", "scoring", "pct", "findability",
          "accessibility", "interoperability", "reusability", "contextuality",
-         "n_nomi"]
+         "n_nomi", "in_ipa", "ipa_nome", "ipa_prov", "ipa_reg"]
 
 
 DIM_TUTTE = ["scoring", "findability", "accessibility", "interoperability",
@@ -367,7 +426,7 @@ def main():
     if args.solo != "organizzazioni":
         print("[titolari] dct:rightsHolder, query unica ...")
         try:
-            righe = rileva_titolari(args.catalog)
+            righe = rileva_titolari(args.catalog, args.outdir)
             salva(righe, args.outdir, args.catalog, day, "titolari")
             esiti["titolari"] = len(righe)
         except SparqlNonDisponibile as e:

@@ -133,6 +133,8 @@ tr.dettaglio td{background:var(--carta-alta);padding:20px 10px 26px}
 .scarica button:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
 .scarica .esito{font-family:var(--mono);font-size:11.5px;color:var(--tenue);margin-top:7px}
 .scarica .esito.male{color:var(--giu)}
+.ufficiale{font-size:12.5px;color:#3d4d57;background:#eaeff1;border-left:2px solid var(--riga-forte);
+  padding:8px 11px;margin:0 0 14px;max-width:46ch}
 .avviso{font-size:12.5px;color:#7a5c1e;background:#f6efdd;border-left:2px solid #9a7328;
   padding:8px 11px;margin:0 0 14px;max-width:46ch}
 .assente{padding:40px 0;color:var(--tenue);font-family:var(--mono);font-size:13px}
@@ -366,6 +368,11 @@ function dettaglio(e){
   return `<tr class="dettaglio"><td colspan="6"><div class="dettaglio-corpo">
     <div>${graficoGrande(e.serie)}</div>
     ${dimensioni(e.dim)}
+    ${e.ipa_ko ? `<p class="avviso">Il codice <code>${e.id}</code> non risulta
+      nell’Indice delle Pubbliche Amministrazioni. Nei metadati dovrebbe esserci
+      il codice IPA dell’ente, non la partita IVA o la denominazione.</p>` : ''}
+    ${e.ipa_nome && e.ipa_nome.toLowerCase() !== e.nome.toLowerCase() ? `<p class="ufficiale">
+      In IPA questo codice risulta come <strong>${e.ipa_nome}</strong>${e.ipa_luogo ? ' — ' + e.ipa_luogo : ''}.</p>` : ''}
     ${e.n_nomi ? `<p class="avviso">Nei metadati questo ente compare con
       <strong>${e.n_nomi} denominazioni diverse</strong>. Qui usiamo la più
       frequente.</p>` : ''}
