@@ -135,6 +135,7 @@ tr.dettaglio td{background:var(--carta-alta);padding:20px 10px 26px}
 .scarica .esito.male{color:var(--giu)}
 .ufficiale{font-size:12.5px;color:#3d4d57;background:#eaeff1;border-left:2px solid var(--riga-forte);
   padding:8px 11px;margin:0 0 14px;max-width:46ch}
+.cerca-ipa{display:block;margin-top:6px}
 .avviso{font-size:12.5px;color:#7a5c1e;background:#f6efdd;border-left:2px solid #9a7328;
   padding:8px 11px;margin:0 0 14px;max-width:46ch}
 .assente{padding:40px 0;color:var(--tenue);font-family:var(--mono);font-size:13px}
@@ -368,9 +369,10 @@ function dettaglio(e){
   return `<tr class="dettaglio"><td colspan="6"><div class="dettaglio-corpo">
     <div>${graficoGrande(e.serie)}</div>
     ${dimensioni(e.dim)}
-    ${e.ipa_ko ? `<p class="avviso">Il codice <code>${e.id}</code> non risulta
-      nell’Indice delle Pubbliche Amministrazioni. Nei metadati dovrebbe esserci
-      il codice IPA dell’ente, non la partita IVA o la denominazione.</p>` : ''}
+    ${e.ipa_ko ? `<p class="avviso" data-ipa="${e.id}">Il codice
+      <code>${e.id}</code> non risulta nell’Indice delle Pubbliche Amministrazioni.
+      Nei metadati dovrebbe esserci il codice IPA dell’ente, non la partita IVA o
+      la denominazione. <span class="cerca-ipa">cerco il codice giusto…</span></p>` : ''}
     ${e.ipa_nome && e.ipa_nome.toLowerCase() !== e.nome.toLowerCase() ? `<p class="ufficiale">
       In IPA questo codice risulta come <strong>${e.ipa_nome}</strong>${e.ipa_luogo ? ' — ' + e.ipa_luogo : ''}.</p>` : ''}
     ${e.n_nomi ? `<p class="avviso">Nei metadati questo ente compare con
@@ -452,6 +454,37 @@ function aggiornaUrl(ente){
    gateway: prima gli URI dei dataset del titolare (immediato), poi le misure con
    VALUES ?ds, che fissando i soggetti fa usare l'indice. I VALUES si spezzano in
    blocchi: la mediana e 10 dataset per titolare, ma nove enti superano il migliaio. */
+/* IndicePA espone un datastore CKAN con CORS aperto: cercando il codice
+   sbagliato fra tutti i campi (partita IVA, codice fiscale, ISTAT) si risale
+   spesso all'ente e quindi al codice IPA corretto. Una chiamata sola, e solo
+   quando si apre la riga di un titolare il cui codice non e' valido: sono 411
+   su 1.610, quindi nella maggior parte dei casi non parte nulla. */
+const IPA_API = 'https://indicepa.gov.it/ipa-dati/api/3/action/datastore_search';
+const IPA_RES = 'd09adf99-dc10-4349-8c53-27b1e5aa97b6';
+
+async function suggerisciCodice(codice, dove){
+  try {
+    const u = `${IPA_API}?resource_id=${IPA_RES}&q=${encodeURIComponent(codice)}&limit=4`;
+    const r = await fetch(u);
+    if (!r.ok) throw new Error(r.status);
+    const rec = (await r.json()).result.records || [];
+    if (!rec.length){
+      dove.textContent = 'In IPA non risulta nessun ente con questo valore.';
+      return;
+    }
+    if (rec.length === 1){
+      const e = rec[0];
+      dove.innerHTML = `Sembra <strong>${e.Denominazione_ente}</strong>, il cui
+        codice IPA è <code>${e.Codice_IPA}</code>.`;
+      return;
+    }
+    dove.innerHTML = 'In IPA corrisponde a più enti: ' +
+      rec.map(e => `${e.Denominazione_ente} (<code>${e.Codice_IPA}</code>)`).join(', ') + '.';
+  } catch (err) {
+    dove.textContent = 'IndicePA non ha risposto.';
+  }
+}
+
 const SPARQL = 'https://data.europa.eu/sparql';
 const BLOCCO = 300;
 const DIM_ORD = ['scoring','findability','accessibility','interoperability',
@@ -569,6 +602,8 @@ function apriChiudi(tr){
   tr.insertAdjacentHTML('afterend', dettaglio(ente));
   tr.setAttribute('aria-expanded','true');
   aggiornaUrl(ente);
+  const span = document.querySelector(`[data-ipa="${ente.id}"] .cerca-ipa`);
+  if (span) suggerisciCodice(ente.id, span);
 }
 
 /* Link diretti a un ente: ?titolare=c_f563, ?titolare=Comune di Montemesola,

@@ -95,6 +95,12 @@ codice (`comune di treviso`, `regione del veneto`), o codici malformati
 (`c_969`). Non e che quegli enti manchino da IPA: e il codice a non essere un
 codice. La pagina lo segnala nel dettaglio della riga.
 
+Aprendo la riga di un titolare con codice non valido, la pagina interroga il
+datastore CKAN di IndicePA (CORS aperto) cercando quel valore fra tutti i campi:
+partita IVA, codice fiscale, codice ISTAT. Spesso risale all'ente e mostra il
+codice corretto — `00514490010` risulta essere il Comune di Torino, codice IPA
+`c_l219`. Una chiamata sola, e solo per i 411 titolari che ne hanno bisogno.
+
 IPA **non** viene usato per sostituire le denominazioni: scrive gli accenti come
 apostrofi (`Comune di Cuorgne'`) e a volte in maiuscolo, quindi su diversi enti
 peggiorerebbe. Quando la denominazione ufficiale differisce da quella del
