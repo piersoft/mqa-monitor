@@ -19584,8 +19584,8 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-08-10,publisher,anticorruzione,,anticorruzione,1,385.0,385,385,385,Excellent
 2026-08-10,publisher,Agid,,Agid,27,385.0,385,385,385,Excellent
 2026-08-10,publisher,Comune di Bologna - Dipartimento Cura e Qualità del Territorio,,Comune di Bologna - Dipartimento Cura e Qualità del Territorio,3,385.0,385,385,385,Excellent
-2026-08-10,publisher,Area Analisi e Ricerche,,Area Analisi e Ricerche,5,385.0,385,385,385,Excellent
 2026-08-10,publisher,Comune di Matera,,Comune di Matera,2,385.0,385,385,385,Excellent
+2026-08-10,publisher,Area Analisi e Ricerche,,Area Analisi e Ricerche,5,385.0,385,385,385,Excellent
 2026-08-10,publisher,"Sezione Promozione del Commercio, Artigianato e Internazionalizzazione delle Imprese",,"Sezione Promozione del Commercio, Artigianato e Internazionalizzazione delle Imprese",1,385.0,385,385,385,Excellent
 2026-08-10,publisher,Sezione Regionale di Vigilanza,,Sezione Regionale di Vigilanza,1,385.0,385,385,385,Excellent
 2026-08-10,publisher,Struttura Speciale Comunicazione Istituzionale,,Struttura Speciale Comunicazione Istituzionale,2,385.0,385,385,385,Excellent
@@ -19990,51 +19990,26 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-08-10,publisher,Comune di Milano - Direzione Sicurezza Urbana Unità Informatica,,Comune di Milano - Direzione Sicurezza Urbana Unità Informatica,5,355.0,355,355,355,Excellent
 2026-08-10,publisher,Unità Open Data,,Unità Open Data,1,355.0,355,355,355,Excellent
 2026-08-10,publisher,Infrastrutture Lombarde,,Infrastrutture Lombarde,3,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Bondeno,,Comune di Bondeno,30,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Rive D'arcano,,Comune di Rive D'arcano,6,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Magnano In Riviera,,Comune di Magnano In Riviera,37,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Bagnaria Arsa,,Comune di Bagnaria Arsa,25,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Nimis,,Comune di Nimis,4,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Reana Del Rojale,,Comune di Reana Del Rojale,25,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Remanzacco,,Comune di Remanzacco,24,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Paulilatino,,Comune di Paulilatino,9,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Coseano,,Comune di Coseano,2,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Taipana,,Comune di Taipana,14,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Sedilo,,Comune di Sedilo,26,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Cefalu',,Comune di Cefalu',20,355.0,355,355,355,Excellent
-2026-08-10,publisher,Citta' Metropolitana  Di Reggio Calabria,,Citta' Metropolitana  Di Reggio Calabria,11,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di San Teodoro,,Comune di San Teodoro,5,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Castenedolo,,Comune di Castenedolo,8,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Pisogne,,Comune di Pisogne,9,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Ersu Catania,,Comune di Ersu Catania,7,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Alessano,,Comune di Alessano,4,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Marianopoli,,Comune di Marianopoli,27,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di San Leonardo,,Comune di San Leonardo,6,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Povoletto,,Comune di Povoletto,31,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Porpetto,,Comune di Porpetto,2,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Flaibano,,Comune di Flaibano,5,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Sesto Al Reghena,,Comune di Sesto Al Reghena,14,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Ferla,,Comune di Ferla,3,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Tolmezzo,,Comune di Tolmezzo,5,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Pulfero,,Comune di Pulfero,1,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Goro,,Comune di Goro,16,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Enna,,Comune di Enna,12,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Istituzione Comunale Marsala Schola,,Comune di Istituzione Comunale Marsala Schola,6,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Tresignana,,Comune di Tresignana,3,355.0,355,355,355,Excellent
-2026-08-10,publisher,Comune di Manzano,,Comune di Manzano,5,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Milano - Direzione Lavoro Giovani e Sport,,Comune di Milano - Direzione Lavoro Giovani e Sport,2,355.0,355,355,355,Excellent
 2026-08-10,publisher,Direzione Urbanistica,,Direzione Urbanistica,2,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Marianopoli,,Comune di Marianopoli,27,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Orani,,Comune di Orani,20,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Turri,,Comune di Turri,17,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Amaro,,Comune di Amaro,5,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Nurachi,,Comune di Nurachi,29,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Sesto Al Reghena,,Comune di Sesto Al Reghena,14,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Tolmezzo,,Comune di Tolmezzo,5,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Goro,,Comune di Goro,16,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Enna,,Comune di Enna,12,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Verzegnis,,Comune di Verzegnis,5,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Cavazzo Carnico,,Comune di Cavazzo Carnico,5,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Poggio Renatico,,Comune di Poggio Renatico,22,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Talmassons,,Comune di Talmassons,3,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Vigarano Mainarda,,Comune di Vigarano Mainarda,5,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Cefala' Diana,,Comune di Cefala' Diana,16,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Tresignana,,Comune di Tresignana,3,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Montagnareale,,Comune di Montagnareale,3,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Pisogne,,Comune di Pisogne,9,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Gussago,,Comune di Gussago,7,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Copparo,,Comune di Copparo,3,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Roccella Valdemone,,Comune di Roccella Valdemone,11,355.0,355,355,355,Excellent
@@ -20058,6 +20033,31 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-08-10,publisher,Comune di Schivenoglia,,Comune di Schivenoglia,3,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di San Mauro Castelverde,,Comune di San Mauro Castelverde,7,355.0,355,355,355,Excellent
 2026-08-10,publisher,Comune di Mesola,,Comune di Mesola,3,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Bondeno,,Comune di Bondeno,30,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Rive D'arcano,,Comune di Rive D'arcano,6,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Magnano In Riviera,,Comune di Magnano In Riviera,37,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Bagnaria Arsa,,Comune di Bagnaria Arsa,25,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Nimis,,Comune di Nimis,4,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Reana Del Rojale,,Comune di Reana Del Rojale,25,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Remanzacco,,Comune di Remanzacco,24,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Paulilatino,,Comune di Paulilatino,9,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Coseano,,Comune di Coseano,2,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Taipana,,Comune di Taipana,14,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Sedilo,,Comune di Sedilo,26,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Cefalu',,Comune di Cefalu',20,355.0,355,355,355,Excellent
+2026-08-10,publisher,Citta' Metropolitana  Di Reggio Calabria,,Citta' Metropolitana  Di Reggio Calabria,11,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di San Teodoro,,Comune di San Teodoro,5,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Castenedolo,,Comune di Castenedolo,8,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Ersu Catania,,Comune di Ersu Catania,7,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Alessano,,Comune di Alessano,4,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di San Leonardo,,Comune di San Leonardo,6,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Povoletto,,Comune di Povoletto,31,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Porpetto,,Comune di Porpetto,2,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Flaibano,,Comune di Flaibano,5,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Ferla,,Comune di Ferla,3,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Pulfero,,Comune di Pulfero,1,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Istituzione Comunale Marsala Schola,,Comune di Istituzione Comunale Marsala Schola,6,355.0,355,355,355,Excellent
+2026-08-10,publisher,Comune di Manzano,,Comune di Manzano,5,355.0,355,355,355,Excellent
 2026-08-10,publisher,"Biologisches Labor, Landesagentur für Umwelt, Autonome Provinz Bozen",,"Biologisches Labor, Landesagentur für Umwelt, Autonome Provinz Bozen",1,355.0,355,355,355,Excellent
 2026-08-10,publisher,"PAB: Rip. 34 Innovazione, Ricerca, Università e Musei",,"PAB: Rip. 34 Innovazione, Ricerca, Università e Musei",1,355.0,355,355,355,Excellent
 2026-08-10,publisher,Agentur für Bevölkerungsschutz,,Agentur für Bevölkerungsschutz,1,355.0,355,355,355,Excellent
