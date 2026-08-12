@@ -193,9 +193,11 @@ tr.dettaglio td{background:var(--carta-alta);padding:20px 10px 26px}
 .dim-barra i.bassa{background:var(--giu)}
 .dim-val{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums}
 .dim-max{color:var(--tenue)}
-/* riga propria, subito sotto grafico e dimensioni: in coda alla serie storica
-   il comando restava fuori schermo per gli enti con molte rilevazioni */
-.scarica{flex-basis:100%;margin:0}
+/* il comando sta accanto all'eventuale nota su IPA o sulle denominazioni, e
+   comunque prima della serie storica: in coda alla tabella restava fuori schermo
+   per gli enti con molte rilevazioni */
+.scarica{margin:0}
+.rilevazioni{flex-basis:100%}
 .scarica button{
   font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;
   color:var(--inchiostro);background:#fff;border:1px solid var(--riga-forte);
@@ -495,11 +497,6 @@ function dettaglio(e, i){
   return `<tr class="dettaglio" id="dett-${i}"><td colspan="6"><div class="dettaglio-corpo">
     <div>${graficoGrande(e.serie)}</div>
     ${dimensioni(e.dim)}
-    ${LIV === 'holder' ? `<div class="scarica">
-      <button type="button" data-scarica="${e.id}" data-nome="${e.nome.replace(/"/g,'&quot;')}">
-        Scarica il dettaglio dei ${nf0.format(e.n)} dataset</button>
-      <div class="esito" data-esito="${e.id}"></div>
-    </div>` : ''}
     ${e.ipa_ko ? `<p class="avviso" data-ipa="${e.id}">Il codice
       <code>${e.id}</code> non risulta nell’Indice delle Pubbliche
       Amministrazioni. Nei metadati deve essere riportato il codice IPA dell’ente,
@@ -509,6 +506,11 @@ function dettaglio(e, i){
     ${e.n_nomi ? `<p class="avviso">Nei metadati l’ente compare con
       <strong>${e.n_nomi} denominazioni diverse</strong>: viene utilizzata la più
       frequente.</p>` : ''}
+    ${LIV === 'holder' ? `<div class="scarica">
+      <button type="button" data-scarica="${e.id}" data-nome="${e.nome.replace(/"/g,'&quot;')}">
+        Scarica il dettaglio dei ${nf0.format(e.n)} dataset</button>
+      <div class="esito" data-esito="${e.id}"></div>
+    </div>` : ''}
     <table class="rilevazioni">
       <tr><th>Rilevazione</th><th>Punteggio</th><th>Dataset</th></tr>${righe}
     </table>
