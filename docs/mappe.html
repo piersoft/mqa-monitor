@@ -13,17 +13,21 @@
 :root{
   /* Grigi e colori di stato tarati per WCAG 2.1 AA: 4.5:1 sul testo, 3:1 sui
      bordi dei controlli, rispetto a --carta, --carta-alta e al bianco. */
-  --carta:#ffffff; --carta-alta:#f5f6f7; --inchiostro:#19191a; --tenue:#5d7083;
-  --primario:#0066cc;
-  --riga:#d4d6d8; --riga-forte:#5d7083;
-  --eccellente:#008055; --buono:#31694a; --sufficiente:#995c00; --scarso:#cc334d;
+  /* Token di Cruscotto Italia (AgID/cruscotto-italia), linee guida Design Italia.
+     I bordi dei controlli usano --mute e non --border: #E3E7EB si ferma a
+     1,24:1, sotto il 3:1 del criterio 1.4.11. */
+  --carta:#ffffff; --carta-alta:#f5f6f7; --inchiostro:#17324d; --tenue:#455a72;
+  --primario:#0066cc; --primario-scuro:#004c99;
+  --riga:#e3e7eb; --riga-forte:#455a72;
+  --eccellente:#008055; --buono:#31694a; --sufficiente:#8a5300; --scarso:#cc334d;
   --assente:#c3ccd1;
-  --mono:"Roboto Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --mono:"SF Mono",Monaco,"Cascadia Code","Roboto Mono",Consolas,monospace;
   --condensato:"Titillium Web",system-ui,sans-serif;
   --testo:"Titillium Web",system-ui,sans-serif;
 }
 select,.interruttore button,.legenda{border-radius:4px}
-a{color:var(--primario)}
+a{color:var(--primario);text-underline-offset:2px}
+a:hover{color:var(--primario-scuro)}
 footer a{color:inherit}
 
 *{box-sizing:border-box}
@@ -47,7 +51,7 @@ footer p{margin:0 0 12px;max-width:78ch}
 a{color:inherit}
 
 header{padding:44px 0 28px;border-bottom:2px solid var(--inchiostro)}
-.occhiello{font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+.occhiello{font-family:var(--mono);font-size:11px;letter-spacing:.12em;
   text-transform:uppercase;color:var(--tenue);margin:0 0 10px}
 .occhiello a{text-decoration:none;border-bottom:1px solid var(--riga-forte)}
 h1{font-family:var(--condensato);font-weight:700;font-size:clamp(30px,5vw,52px);
