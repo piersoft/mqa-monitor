@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Come includere il monitoraggio MQA in una pagina di dati.gov.it</title>
+<style>
+body{font-family:"Titillium Web",system-ui,sans-serif;max-width:820px;margin:0 auto;
+  padding:40px 20px 80px;color:#191919;line-height:1.55}
+h1{font-size:30px;line-height:1.15;margin:0 0 6px;color:#17334f}
+h2{font-size:20px;margin:38px 0 10px;color:#17334f}
+p{max-width:68ch}
+pre{background:#f5f6f7;border:1px solid #d4d6d8;border-radius:4px;padding:14px 16px;
+  overflow-x:auto;font-family:"Roboto Mono",monospace;font-size:13px;line-height:1.5}
+code{font-family:"Roboto Mono",monospace;font-size:.92em}
+.nota{border-left:3px solid #0066cc;background:#f5f6f7;padding:12px 16px;margin:18px 0}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:14.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid #d4d6d8;vertical-align:top}
+th{color:#5d7083;font-weight:600;font-size:13px}
+</style>
+</head>
+<body>
+
+<h1>Includere il monitoraggio MQA in dati.gov.it</h1>
+<p>La dashboard è una pagina statica senza back end: legge un solo file JSON
+rigenerato ogni mattina. Può quindi essere ospitata così com'è, oppure inclusa
+in una pagina del portale.</p>
+
+<h2>Veste grafica</h2>
+<p>La pagina adotta i valori del tema di dati.gov.it
+(<code>bootstrap_italia/assets/agid</code>): fondo bianco, testo
+<code>#19191a</code>, primario <code>#0066cc</code>, Titillium Web e Roboto Mono,
+raggi di 4&nbsp;px sui controlli. È l'unica veste: non c'è un parametro per
+cambiarla, così ogni indirizzo resta condivisibile senza portarsi dietro
+impostazioni di presentazione.</p>
+<p><strong>Non importiamo il CSS del portale.</strong> Sono 486&nbsp;KB di una
+versione di Bootstrap Italia diversa da quella corrente, e questa pagina non usa
+componenti della libreria: caricarla aggiungerebbe peso e conflitti con la
+tabella, i grafici e la mappa. Ne replichiamo i soli valori, verificati uno per
+uno per WCAG 2.1 AA sui fondi effettivi.</p>
+
+<h2>Inclusione</h2>
+<p>Vale la stessa convenzione già in uso per la dashboard di monitoraggio:
+<code>?embed=1</code>. La pagina la riconosce, e riconosce comunque da sé di
+trovarsi dentro un riquadro.</p>
+
+<pre>&lt;iframe id="dashIframe" src="https://piersoft.github.io/mqa-monitor/?embed=1"
+        title="Qualità dei metadati, ente per ente"
+        style="width:100%;border:0;height:2300px" loading="lazy"&gt;&lt;/iframe&gt;
+
+&lt;script&gt;
+window.addEventListener('message', function (ev) {
+  if (ev.origin !== 'https://piersoft.github.io') return;   // origine attesa
+  var d = ev.data &amp;&amp; ev.data.mqaMonitor;
+  if (d &amp;&amp; d.altezza) document.getElementById('dashIframe').style.height = d.altezza + 'px';
+});
+&lt;/script&gt;</pre>
+
+<div class="nota">
+  <p><strong>L'altezza non va più indovinata.</strong> Riconoscendo di stare in un
+  riquadro, la pagina delimita da sola la tabella e ne fissa l'intestazione: con
+  1.610 righe il documento sarebbe altrimenti alto oltre centomila pixel. L'altezza
+  comunicata si assesta intorno ai 2.300&nbsp;px e si aggiorna a ogni ricerca o
+  apertura di riga.</p>
+  <p>Diventano quindi superflui, sulla pagina che la ospita, sia il
+  <code>min-height</code> fisso sia la regola per il mobile
+  (<code>height: 5210px !important</code>), sia gli
+  <code>overflow: visible !important</code> sui contenitori Drupal.</p>
+</div>
+
+<h2>Dove ospitare il file</h2>
+<p>Il file può stare sotto <code>/sites/default/files/</code> come l'altra
+dashboard, oppure restare dov'è e venire incluso da lì. In entrambi i casi
+<code>data.json</code> può essere letto da GitHub Pages, che lo serve con
+<code>access-control-allow-origin: *</code>: la copia sul portale resta allineata
+ogni mattina senza che nessuno ricarichi nulla.</p>
+<div class="nota">
+  <p><strong>Un indirizzo citabile serve comunque.</strong> Dentro un riquadro la
+  barra del browser mostra l'indirizzo del portale, quindi i collegamenti diretti a
+  un singolo ente — <code>?titolare=c_f052</code>, quelli da mandare alle
+  amministrazioni perché vedano i propri dati — non sono condivisibili da lì.
+  Conviene tenere entrambe le destinazioni per lo stesso identico file: la pagina
+  autonoma come indirizzo citabile, il riquadro come vista integrata.</p>
+</div>
+
+<h2>Cosa serve al portale</h2>
+<table>
+  <tr><th>Elemento</th><th>Peso</th><th>Origine</th></tr>
+  <tr><td><code>index.html</code></td><td>~35 KB</td><td>statico</td></tr>
+  <tr><td><code>data.json</code></td><td>~600 KB</td><td>rigenerato ogni mattina</td></tr>
+  <tr><td>font</td><td>—</td><td>Google Fonts, o quelli già serviti dal portale</td></tr>
+  <tr><td>data.europa.eu</td><td>—</td><td>solo al clic su “scarica il dettaglio”</td></tr>
+  <tr><td>IndicePA</td><td>—</td><td>solo per i codici non validi</td></tr>
+</table>
+<p>Le mappe aggiungono Leaflet e i confini Istat. Nessuna chiamata parte al
+caricamento della dashboard oltre a <code>data.json</code>.</p>
+
+<h2>Accessibilità</h2>
+<p>Entrambe le pagine sono verificate WCAG 2.1 AA: zero violazioni con axe-core,
+contrasti calcolati sui fondi effettivi, navigazione da tastiera con
+<em>skip link</em>, <code>&lt;main&gt;</code> e comandi etichettati.</p>
+<p>Un'avvertenza sull'inclusione: dentro un riquadro lo <em>skip link</em> salta al
+contenuto della dashboard, non a quello del portale, e l'intestazione della pagina
+inclusa si aggiunge a quella istituzionale. Se la dashboard diventa il contenuto
+principale della pagina che la ospita, conviene che quella pagina non ripeta titolo
+e sottotitolo.</p>
+
+</body>
+</html>

@@ -7,19 +7,41 @@
 <meta name="description" content="Andamento settimanale del punteggio MQA di data.europa.eu per gli enti che pubblicano su dati.gov.it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  /* I grigi e i colori di stato sono tarati per WCAG 2.1 AA (4.5:1 sul testo,
-     3:1 sui bordi dei controlli) rispetto a --carta, --carta-alta e al bianco. */
-  --carta:#edf0f2; --carta-alta:#f7f9fa; --inchiostro:#17252f; --tenue:#556570;
-  --riga:#ccd6dc; --riga-forte:#788994;
-  --su:#146b58; --giu:#a63e28; --fermo:#5f6c75;
-  --eccellente:#146b58; --buono:#416f4b; --sufficiente:#835f1e; --scarso:#a63e28;
-  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  --condensato:"IBM Plex Sans Condensed",system-ui,sans-serif;
-  --testo:"IBM Plex Sans",system-ui,sans-serif;
+  /* Veste istituzionale. I valori vengono dal tema di dati.gov.it
+     (bootstrap_italia/assets/agid): fondo #fff, testo #19191a, primario #0066cc,
+     Titillium Web. Non importiamo il CSS del portale — sono 486 KB di una
+     versione diversa da quella corrente, e la pagina non usa componenti
+     Bootstrap Italia: ne replichiamo i soli valori.
+     Grigi e colori di stato tarati per WCAG 2.1 AA (4.5:1 sul testo, 3:1 sui
+     bordi dei controlli) su --carta, --carta-alta e bianco. */
+  --carta:#ffffff; --carta-alta:#f5f6f7; --inchiostro:#19191a; --tenue:#5d7083;
+  --primario:#0066cc;
+  --riga:#d4d6d8; --riga-forte:#5d7083;
+  --su:#008055; --giu:#cc334d; --fermo:#5d7083;
+  --eccellente:#008055; --buono:#31694a; --sufficiente:#995c00; --scarso:#cc334d;
+  --mono:"Roboto Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --condensato:"Titillium Web",system-ui,sans-serif;
+  --testo:"Titillium Web",system-ui,sans-serif;
 }
+/* ---------- dentro un riquadro (?embed=1 o iframe) ----------
+   Con 1.610 righe il documento sarebbe alto oltre centomila pixel: delimitiamo
+   la tabella e fissiamo l'intestazione, cosi' l'altezza complessiva torna
+   trattabile e puo' essere comunicata all'ospite. Il limite e' in pixel e non in
+   vh: dentro un riquadro che si adatta al contenuto, un'altezza in vh crescerebbe
+   insieme al riquadro senza fermarsi. */
+[data-incorporato] .tabella{max-height:620px;overflow:auto}
+[data-incorporato] thead th{
+  position:sticky;top:0;z-index:2;background:var(--carta);
+  box-shadow:inset 0 -1px 0 var(--riga-forte)
+}
+
+input[type=search],select,.scarica button,.giudizio,.vai-mappe{border-radius:4px}
+a{color:var(--primario)}
+footer a{color:inherit}
+
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{
@@ -497,8 +519,10 @@ function disegna(){
 const PARAM = {holder:'titolare', organization:'organizzazione'};
 
 function aggiornaUrl(ente){
+  /* si tocca solo il parametro dell'ente: azzerare la query cancellerebbe
+     anche embed=1 e qualsiasi altro parametro passato dall'ospite */
   const u = new URL(location.href);
-  u.search = '';
+  Object.values(PARAM).forEach(k => u.searchParams.delete(k));
   if (ente) u.searchParams.set(PARAM[LIV], ente.slug || ente.id);
   history.replaceState(null, '', u);
 }
@@ -714,6 +738,28 @@ function apriDaUrl(){
     return;
   }
 }
+
+/* dati.gov.it incornicia le dashboard con ?embed=1: seguiamo la convenzione
+   gia' in uso, oltre a riconoscere da soli di stare dentro un iframe */
+if (window.parent !== window ||
+    new URLSearchParams(location.search).get('embed') === '1'){
+  document.documentElement.dataset.incorporato = 'si';
+}
+
+/* L'ospite non puo' sapere quanto e' alta la pagina: gliela comunichiamo a ogni
+   cambio di contenuto, cosi' sostituisce le altezze fisse indovinate a mano. */
+var ultimaAltezza = 0;
+function annunciaAltezza(){
+  if (window.parent === window) return;
+  var h = Math.ceil(document.documentElement.getBoundingClientRect().height);
+  if (Math.abs(h - ultimaAltezza) < 8) return;   // evita rimbalzi
+  ultimaAltezza = h;
+  parent.postMessage({mqaMonitor: {altezza: h}}, '*');
+}
+if (window.parent !== window && 'ResizeObserver' in window){
+  new ResizeObserver(annunciaAltezza).observe(document.documentElement);
+}
+window.addEventListener('load', annunciaAltezza);
 
 fetch('data.json')
   .then(r => r.json())

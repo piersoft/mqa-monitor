@@ -7,20 +7,25 @@
 <meta name="description" content="Distribuzione territoriale dei dataset e del punteggio MQA di data.europa.eu: titolari comunali e cataloghi regionali federati su dati.gov.it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
 :root{
   /* Grigi e colori di stato tarati per WCAG 2.1 AA: 4.5:1 sul testo, 3:1 sui
      bordi dei controlli, rispetto a --carta, --carta-alta e al bianco. */
-  --carta:#edf0f2; --carta-alta:#f7f9fa; --inchiostro:#17252f; --tenue:#556570;
-  --riga:#ccd6dc; --riga-forte:#788994;
-  --eccellente:#146b58; --buono:#416f4b; --sufficiente:#835f1e; --scarso:#a63e28;
+  --carta:#ffffff; --carta-alta:#f5f6f7; --inchiostro:#19191a; --tenue:#5d7083;
+  --primario:#0066cc;
+  --riga:#d4d6d8; --riga-forte:#5d7083;
+  --eccellente:#008055; --buono:#31694a; --sufficiente:#995c00; --scarso:#cc334d;
   --assente:#c3ccd1;
-  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  --condensato:"IBM Plex Sans Condensed",system-ui,sans-serif;
-  --testo:"IBM Plex Sans",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --condensato:"Titillium Web",system-ui,sans-serif;
+  --testo:"Titillium Web",system-ui,sans-serif;
 }
+select,.interruttore button,.legenda{border-radius:4px}
+a{color:var(--primario)}
+footer a{color:inherit}
+
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--carta);color:var(--inchiostro);
