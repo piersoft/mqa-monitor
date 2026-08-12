@@ -81,7 +81,11 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
   background:rgba(255,255,255,.95);border:1px solid var(--riga-forte);
   padding:12px 14px;max-width:250px}
 .legenda h2{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;
-  text-transform:uppercase;color:var(--tenue);font-weight:500;margin:0 0 9px}
+  text-transform:uppercase;color:var(--inchiostro);font-weight:600;margin:0 0 9px}
+.legenda h2 .filtrabile{
+  text-transform:none;letter-spacing:.02em;font-weight:400;color:var(--tenue)
+}
+.legenda h2 .filtrabile::before{content:"· "}
 .classi{list-style:none;margin:0;padding:0}
 .classi li{margin:0}
 .riga-classe{display:flex;align-items:center;gap:8px;width:100%;padding:5px 4px;
@@ -408,7 +412,10 @@ function legenda(){
     : dati.regioni.filter(function(r){ return r.catalogo; });
   var voce = stato.comuni ? "comuni" : "territori";
 
-  var html='<h2>'+(perMqa?"Punteggio MQA":"Numero di dataset")+'</h2>'+
+  /* Il suffisso dice che le classi si possono toccare: senza, la legenda
+     sembra puramente descrittiva e nessuno prova a filtrarla. */
+  var html='<h2>'+(perMqa?"Punteggio MQA":"Numero di dataset")+
+    ' <span class="filtrabile">filtrabile</span></h2>'+
     '<ul class="classi">';
   elenco.forEach(function(cl){
     var quanti=insieme.filter(function(x){
