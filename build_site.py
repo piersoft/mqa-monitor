@@ -185,7 +185,7 @@ def indice_riferimento(date, ultimo_i, giorni=7):
     return migliore
 
 
-def blocco_livello(storico, date):
+def blocco_livello(storico, date, livello=None):
     """Prepara enti e totali per un singolo livello.
 
     Non si calcola piu' la media del catalogo: e' la media dei punteggi dei
@@ -236,7 +236,11 @@ def blocco_livello(storico, date):
             voce["dim"] = v["dim"]
         if v.get("n_nomi", 0) > 1:
             voce["n_nomi"] = v["n_nomi"]
-        ipa = v.get("ipa")
+        # La validazione IPA vale solo per i titolari: le organizzazioni sono
+        # identificate dall'UUID CKAN di dati.gov.it, che in IPA non deve
+        # esserci. Senza questo controllo l'avviso "codice non valido" comparirebbe
+        # su tutte e 398.
+        ipa = v.get("ipa") if livello == "holder" else None
         if ipa is not None:
             if not ipa["in"]:
                 voce["ipa_ko"] = True
@@ -288,7 +292,7 @@ def salva_json(storici, catalog, docsdir, max_rilevazioni):
     livelli = {}
     for livello in ("holder", "organization"):
         if storici.get(livello):
-            livelli[livello] = blocco_livello(storici[livello], date)
+            livelli[livello] = blocco_livello(storici[livello], date, livello)
 
     os.makedirs(docsdir, exist_ok=True)
     path = os.path.join(docsdir, "data.json")
