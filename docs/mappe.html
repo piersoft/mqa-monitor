@@ -85,7 +85,7 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
   font-variant-numeric:tabular-nums}
 
 .tavola{position:relative;margin-top:22px;border:1px solid var(--riga-forte);background:#fff}
-#mappa{height:min(74vh,720px);width:100%;background:var(--carta-alta)}
+#mappa{height:min(84vh,860px);width:100%;background:var(--carta-alta)}
 .leaflet-container{font-family:var(--testo);background:var(--carta-alta)}
 /* i nomi stanno sopra un fondo variabile: l'alone bianco li tiene leggibili
    sia sul verde pieno sia sul grigio delle regioni non federate */
@@ -97,7 +97,9 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
   pointer-events:none
 }
 
-.legenda{position:absolute;left:14px;bottom:22px;z-index:500;
+/* la scala di Leaflet sta in basso a sinistra: la legenda le lascia lo spazio
+   sotto invece di appoggiarcisi sopra */
+.legenda{position:absolute;left:14px;bottom:46px;z-index:500;
   background:rgba(255,255,255,.95);border:1px solid var(--riga-forte);
   padding:12px 14px;max-width:250px}
 .legenda h2{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;
@@ -161,8 +163,8 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
 
 @media (max-width:640px){
   .misure{gap:24px}
-  #mappa{height:64vh}
-  .legenda{left:10px;bottom:14px;max-width:200px;padding:10px 11px}
+  #mappa{height:72vh}
+  .legenda{left:10px;bottom:38px;max-width:200px;padding:10px 11px}
   .conteggio{margin-left:0;width:100%}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
