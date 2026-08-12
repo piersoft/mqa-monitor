@@ -174,11 +174,16 @@ def costruisci_comuni(data, coords):
         rec = acc.setdefault(cod, {
             "cod": cod, "nome": nome, "reg": reg, "prov": prov,
             "lat": lat, "lon": lon, "n": 0, "somma": 0.0, "fonti": [],
+            "reg_cat": None,
         })
         rec["n"] += ente["n"]
         rec["somma"] += ente["media"] * ente["n"]
         rec["fonti"].append({"id": ente["id"], "n": ente["n"],
                              "mqa": ente["media"], "via": motivo})
+        # se anche uno solo dei titolari ricondotti al comune arriva dal
+        # catalogo della propria Regione, il comune vi e' federato
+        if ente.get("reg"):
+            rec["reg_cat"] = ente["reg"]
 
     comuni = []
     for rec in acc.values():
@@ -189,7 +194,7 @@ def costruisci_comuni(data, coords):
             "cod": rec["cod"], "nome": rec["nome"], "reg": rec["reg"],
             "prov": rec["prov"], "lat": rec["lat"], "lon": rec["lon"],
             "n": rec["n"], "mqa": mqa, "rating": rating(mqa),
-            "fonti": len(rec["fonti"]),
+            "fonti": len(rec["fonti"]), "cat": rec["reg_cat"],
         })
 
     comuni.sort(key=lambda x: -x["n"])

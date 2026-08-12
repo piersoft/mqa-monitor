@@ -151,6 +151,10 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
 .pop-piede{font-family:var(--mono);font-size:11px;color:var(--tenue);margin-top:12px;
   padding-top:9px;border-top:1px solid var(--riga);word-break:break-all}
 .pop-piede a{color:#2f5d78}
+.pop-federato{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;color:var(--eccellente);
+  border-top:1px solid var(--riga);margin:10px 0 0;padding-top:8px
+}
 .pop-vuoto{font-size:13.5px;color:#46565f;margin-top:12px;padding-top:11px;
   border-top:1px solid var(--riga)}
 
@@ -515,13 +519,18 @@ function disegnaComuni(){
 }
 function popupComune(c){
   var f=fascia(c.mqa);
+  /* si dichiara solo la presenza nel catalogo regionale, mai l'assenza: la
+     prima e' un'osservazione, la seconda sarebbe una deduzione */
+  var fed = c.cat
+    ? '<p class="pop-federato">Federato nel catalogo regionale '+esc(c.cat)+'</p>'
+    : '';
   return '<p class="pop-nome">'+esc(c.nome)+'</p>'+
     '<p class="pop-sotto">'+esc(c.prov)+' · '+esc(c.reg)+' · '+esc(c.cod)+'</p>'+
     '<div class="pop-cifre">'+
       '<div><p class="valore" style="color:'+f.colore+'">'+dec(c.mqa)+'</p>'+
         '<p class="etichetta">MQA · '+f.nome+'</p></div>'+
       '<div><p class="valore">'+num(c.n)+'</p><p class="etichetta">Dataset</p></div>'+
-    '</div>';
+    '</div>'+fed;
 }
 
 /* ---------- legenda ---------- */
