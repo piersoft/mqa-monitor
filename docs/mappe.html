@@ -132,10 +132,13 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
 .nota-legenda{font-family:var(--mono);font-size:10px;color:var(--tenue);
   margin-top:10px;line-height:1.45;display:flex;align-items:center;gap:7px}
 .tassello{width:12px;height:12px;flex:0 0 12px;border:1px solid var(--riga-forte)}
-.cerchi{display:flex;align-items:flex-end;gap:9px;margin-top:12px;
+.cerchi{display:flex;align-items:flex-end;gap:16px;margin-top:12px;
   padding-top:11px;border-top:1px solid var(--riga)}
-.cerchi span{border:1.5px solid #46565f;background:rgba(70,86,95,.14);border-radius:50%;display:block}
-.cerchi em{font-family:var(--mono);font-size:10px;color:var(--tenue);font-style:normal}
+.cerchi .passo{display:flex;flex-direction:column;align-items:center;gap:5px}
+.cerchi i{border:1.5px solid var(--tenue);background:rgba(69,90,114,.14);
+  border-radius:50%;display:block;flex:none}
+.cerchi em{font-family:var(--mono);font-size:10px;color:var(--tenue);
+  font-style:normal;font-variant-numeric:tabular-nums;line-height:1}
 
 .leaflet-popup-content-wrapper{border-radius:0;box-shadow:0 2px 10px rgba(23,37,47,.22)}
 .leaflet-popup-content{margin:14px 16px;font-size:14px;line-height:1.5}
@@ -584,12 +587,17 @@ function legenda(){
     : '<p class="nota-legenda">Tocca una classe per isolarla · '+insieme.length+' '+voce+'</p>';
 
   if(stato.comuni){
+    /* Ogni cerchio porta la propria cifra sotto: prima le cifre stavano in una
+       riga a se', distribuite a giustezza piena, e non corrispondevano ai
+       cerchi. I riferimenti sono tre e non quattro: con quattro, i due piu'
+       piccoli risultavano indistinguibili. */
     html+='<div class="cerchi">'+
-      [1,100,1000,maxDatasetComune].map(function(n){
+      [1, Math.round(maxDatasetComune/8), maxDatasetComune].map(function(n){
         var r=raggio({n:n});
-        return '<span style="width:'+(r*2)+'px;height:'+(r*2)+'px"></span>';
+        return '<span class="passo">'+
+          '<i style="width:'+(r*2).toFixed(1)+'px;height:'+(r*2).toFixed(1)+'px"></i>'+
+          '<em>'+num(n)+'</em></span>';
       }).join("")+'</div>'+
-      '<div class="scaglioni"><em>1</em><em>100</em><em>1.000</em><em>'+num(maxDatasetComune)+'</em></div>'+
       '<p class="nota-legenda">Area del cerchio proporzionale ai dataset del comune</p>';
   }
   if(stato.regioni){
