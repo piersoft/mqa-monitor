@@ -30,8 +30,6 @@ from collections import defaultdict
 
 from mqa_monitor import MAX_SCORE, bucket, carica_titoli, titolizza
 
-MQA_CACHE = "https://data.europa.eu/api/mqa/cache/catalogues/%s"
-
 DATA_RE = re.compile(r"_(\d{4}-\d{2}-\d{2})\.csv\.gz$")
 DATA_CSV_RE = re.compile(r"_(\d{4}-\d{2}-\d{2})\.csv$")
 DIMENSIONI = ["findability", "accessibility", "interoperability",
@@ -188,7 +186,14 @@ def indice_riferimento(date, ultimo_i, giorni=7):
 
 
 def blocco_livello(storico, date):
-    """Prepara enti + totali + serie del catalogo per un singolo livello."""
+    """Prepara enti e totali per un singolo livello.
+
+    Non si calcola piu' la media del catalogo: e' la media dei punteggi dei
+    singoli dataset, che non coincide ne' con il punteggio che data.europa.eu
+    pubblica per il catalogo ne' con il monitoraggio dinamico di dati.gov.it.
+    Tre numeri diversi per la stessa cosa confondono e basta; l'andamento
+    complessivo sta gia' nel monitoraggio nazionale.
+    """
     pos = dict((d, i) for i, d in enumerate(date))
     voci = {}
     for day in date:
@@ -243,47 +248,12 @@ def blocco_livello(storico, date):
         lista.append(voce)
     lista.sort(key=lambda x: -x["media"])
 
-    tot_n = sum(x["n"] for x in lista)
-    serie_cat = []
-    for day in date:
-        if day not in storico:
-            serie_cat.append(None)
-            continue
-        righe = storico[day].values()
-        n = sum(r["n_dataset"] for r in righe)
-        serie_cat.append(round(
-            sum(r["media"] * r["n_dataset"] for r in righe) / max(n, 1), 1))
     return {
-        "totali": {"enti": len(lista), "dataset": tot_n,
-                   "media": serie_cat[ultimo_i] if serie_cat else 0,
+        "totali": {"enti": len(lista),
+                   "dataset": sum(x["n"] for x in lista),
                    "data": date[ultimo_i] if date else None},
-        "serie_catalogo": serie_cat,
         "enti": lista,
     }
-
-
-def punteggio_ufficiale(catalog):
-    """Il punteggio che data.europa.eu pubblica per il catalogo.
-
-    Non e' la media dei punteggi dei dataset: e' il punteggio di un dataset
-    "rappresentativo", ottenuto applicando ai pesi massimi le percentuali di
-    successo di ogni controllo. Le due statistiche divergono quando le
-    distribuzioni sono sbilanciate tra i dataset. Lo riportiamo per rendere
-    confrontabile la pagina con il portale europeo.
-    """
-    import urllib.request
-    try:
-        req = urllib.request.Request(MQA_CACHE % catalog, headers={
-            "User-Agent": "mqa-monitor/4.0", "Accept": "application/json"})
-        with urllib.request.urlopen(req, timeout=30) as r:
-            d = json.loads(r.read())["result"]["results"][0]
-        return {
-            "score": d.get("score"),
-            "dim": dict((k, d[k]["score"]["points"]) for k in DIMENSIONI
-                        if isinstance(d.get(k), dict) and "score" in d[k]),
-        }
-    except Exception:  # noqa: BLE001
-        return None
 
 
 def assottiglia(date, giorni_pieni=60, passo=7):
@@ -308,7 +278,7 @@ def assottiglia(date, giorni_pieni=60, passo=7):
     return vecchie + recenti
 
 
-def salva_json(storici, catalog, docsdir, max_rilevazioni, ufficiale=None):
+def salva_json(storici, catalog, docsdir, max_rilevazioni):
     usati = [storici[k] for k in ("holder", "organization") if storici.get(k)]
     date = sorted(set().union(*[set(s) for s in usati])) if usati else []
     if not date:
@@ -328,7 +298,6 @@ def salva_json(storici, catalog, docsdir, max_rilevazioni, ufficiale=None):
             "aggiornato": date[-1],
             "max_score": MAX_SCORE,
             "date": date,
-            "ufficiale": ufficiale,
             "livelli": livelli,
         }, f, ensure_ascii=False, separators=(",", ":"))
     return path
@@ -361,11 +330,7 @@ def main():
     print("[2/3] salvo lo storico ...")
     p1 = salva_storico(storici, args.outdir)
     print("[3/3] preparo i dati della pagina ...")
-    ufficiale = punteggio_ufficiale(args.catalog)
-    if ufficiale:
-        print("      punteggio ufficiale del catalogo: %s" % ufficiale["score"])
-    p2 = salva_json(storici, args.catalog, args.docsdir,
-                    args.max_rilevazioni, ufficiale)
+    p2 = salva_json(storici, args.catalog, args.docsdir, args.max_rilevazioni)
     print("\nOK\n  %s\n  %s" % (p1, p2))
 
 

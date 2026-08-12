@@ -235,7 +235,6 @@ footer a{color:inherit}
   <div class="misure">
     <div class="misura"><div class="valore" id="m-enti">—</div><div class="etichetta" id="e-enti">Enti</div></div>
     <div class="misura"><div class="valore" id="m-dataset">—</div><div class="etichetta">Dataset misurati</div></div>
-    <div class="misura"><div class="valore" id="m-media">—</div><div class="etichetta">Media catalogo</div></div>
     <div class="misura"><div class="valore" id="m-data">—</div><div class="etichetta">Ultima rilevazione</div></div>
   </div>
 </header>
@@ -302,8 +301,10 @@ footer a{color:inherit}
   dinamico di dati.gov.it</a>. Questa pagina serve a un’altra domanda: come sta
   messo il singolo ente.</p>
   <p id="nota-fonte">Fonte: data.europa.eu (Metadata Quality Assessment), scala 0–405.
-  Giudizi: Excellent ≥ 351, Good ≥ 221, Sufficient ≥ 121, Bad sotto 121.</p>
-  <p id="nota-ufficiale" hidden></p>
+  Giudizi: Excellent ≥ 351, Good ≥ 221, Sufficient ≥ 121, Bad sotto 121. Il punteggio
+  di un ente è la media dei punteggi dei suoi dataset: il portale europeo calcola
+  invece il punteggio di un dataset “rappresentativo”, quindi i due valori non
+  coincidono.</p>
   <p><strong>Titolari</strong>: <code>dct:rightsHolder</code>, l’ente a cui i dati
   appartengono davvero. E l’unico livello che riconosce chi pubblica tramite un
   catalogo altrui — un Comune ospitato dal portale regionale, per esempio — e l’unico
@@ -461,7 +462,6 @@ function misure(){
   document.getElementById('e-enti').textContent =
     n.plur.charAt(0).toUpperCase() + n.plur.slice(1);
   document.getElementById('m-dataset').textContent = nf0.format(t.dataset);
-  document.getElementById('m-media').textContent = nf1.format(t.media);
   document.getElementById('col-ente').textContent = n.col;
   document.getElementById('cerca').placeholder = n.cerca;
   document.getElementById('m-data').textContent = t.data || DATI.aggiornato;
@@ -681,22 +681,6 @@ function trovaEnte(livello, valore) {
       || enti.find(e => e.nome.toLowerCase().includes(v));
 }
 
-/* data.europa.eu pubblica per il catalogo un punteggio piu alto del nostro.
-   Non e' una discrepanza: sono due statistiche diverse. */
-function notaUfficiale(){
-  const u = DATI.ufficiale;
-  if (!u || u.score == null) return;
-  const el = document.getElementById('nota-ufficiale');
-  el.innerHTML = `Per l’intero catalogo <code>${DATI.catalogo}</code> data.europa.eu
-    pubblica <strong>${nf0.format(u.score)}/${MAX}</strong>, mentre qui la media dei
-    punteggi dei singoli dataset è più bassa. Non è un errore: il portale europeo
-    calcola il punteggio di un dataset “rappresentativo”, applicando ai pesi massimi
-    la percentuale di successo di ogni controllo; questa pagina fa invece la media
-    dei punteggi reali. Le due misure divergono soprattutto sull’interoperabilità,
-    dove i controlli si applicano alle distribuzioni e non ai dataset.`;
-  el.hidden = false;
-}
-
 function apriDaUrl(){
   const q = new URLSearchParams(location.search);
   for (const [livello, chiave] of Object.entries(PARAM)){
@@ -752,7 +736,6 @@ fetch('data.json')
     document.getElementById('m-data').textContent = d.aggiornato;
     misure();
     document.title = `Qualità dei metadati — ${d.catalogo} — ${d.aggiornato}`;
-    notaUfficiale();
     disegna();
     apriDaUrl();
   })
