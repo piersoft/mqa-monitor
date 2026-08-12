@@ -80,6 +80,12 @@ jobs:
       - name: Ricostruisci storico e pagina pubblica
         run: python3 build_site.py --catalog "${{ inputs.catalog || 'dati-gov-it' }}"
 
+      # le mappe leggono docs/data.json, quindi vanno dopo build_site.py;
+      # se falliscono non devono fermare la rilevazione
+      - name: Rigenera le mappe
+        continue-on-error: true
+        run: python3 build_maps.py
+
       - name: Riepilogo nel job summary
         if: steps.run.outputs.report != ''
         run: cat "${{ steps.run.outputs.report }}" >> "$GITHUB_STEP_SUMMARY"
