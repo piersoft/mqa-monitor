@@ -10,10 +10,12 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --carta:#edf0f2; --carta-alta:#f7f9fa; --inchiostro:#17252f; --tenue:#6b7c87;
-  --riga:#ccd6dc; --riga-forte:#9fb0ba;
-  --su:#146b58; --giu:#a63e28; --fermo:#8595a0;
-  --eccellente:#146b58; --buono:#4b7f57; --sufficiente:#9a7328; --scarso:#a63e28;
+  /* I grigi e i colori di stato sono tarati per WCAG 2.1 AA (4.5:1 sul testo,
+     3:1 sui bordi dei controlli) rispetto a --carta, --carta-alta e al bianco. */
+  --carta:#edf0f2; --carta-alta:#f7f9fa; --inchiostro:#17252f; --tenue:#556570;
+  --riga:#ccd6dc; --riga-forte:#788994;
+  --su:#146b58; --giu:#a63e28; --fermo:#5f6c75;
+  --eccellente:#146b58; --buono:#416f4b; --sufficiente:#835f1e; --scarso:#a63e28;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
   --condensato:"IBM Plex Sans Condensed",system-ui,sans-serif;
   --testo:"IBM Plex Sans",system-ui,sans-serif;
@@ -25,6 +27,19 @@ body{
   font-family:var(--testo);font-size:15px;line-height:1.5;
 }
 .involucro{max-width:1160px;margin:0 auto;padding:0 20px 80px}
+
+/* salta al contenuto: visibile solo quando riceve il fuoco */
+.salta{
+  position:absolute;left:-9999px;top:0;z-index:10;
+  font-family:var(--mono);font-size:12px;background:var(--inchiostro);color:#fff;
+  padding:11px 16px;text-decoration:none
+}
+.salta:focus{left:0}
+
+/* la tabella dati puo' eccedere in larghezza: la regione e' raggiungibile da
+   tastiera per poterla scorrere senza mouse */
+.tabella{overflow-x:auto}
+.tabella:focus-visible{outline:2px solid var(--inchiostro);outline-offset:2px}
 
 /* ---------- testata ---------- */
 header{padding:44px 0 28px;border-bottom:2px solid var(--inchiostro)}
@@ -83,7 +98,7 @@ input[type=search],select{
   padding:9px 12px;min-height:40px
 }
 input[type=search]{flex:1 1 250px}
-input[type=search]:focus-visible,select:focus-visible,tr.ente:focus-visible{
+input[type=search]:focus-visible,select:focus-visible{
   outline:2px solid var(--inchiostro);outline-offset:1px
 }
 .conteggio{font-family:var(--mono);font-size:12px;color:var(--tenue);margin-left:auto}
@@ -98,9 +113,18 @@ thead th{
 th.num,td.num{text-align:right;font-variant-numeric:tabular-nums}
 tbody td{padding:11px 10px;border-bottom:1px solid var(--riga);vertical-align:middle}
 tr.ente{cursor:pointer}
+/* aria-expanded non e' consentito su <tr> in una tabella normale: il comando
+   di apertura e' un pulsante dentro la prima cella, che porta anche il nome
+   accessibile della riga. */
+.apri{
+  display:block;width:100%;text-align:left;background:none;border:0;padding:0;
+  font:inherit;color:inherit;cursor:pointer
+}
+.apri:focus-visible{outline:2px solid var(--inchiostro);outline-offset:2px}
 tr.ente:hover td{background:var(--carta-alta)}
-.nome{font-family:var(--condensato);font-size:16.5px;font-weight:500;letter-spacing:.005em}
-.slug{font-family:var(--mono);font-size:10.5px;color:var(--tenue);margin-top:2px}
+.nome{display:block;font-family:var(--condensato);font-size:16.5px;font-weight:500;
+  letter-spacing:.005em}
+.slug{display:block;font-family:var(--mono);font-size:10.5px;color:var(--tenue);margin-top:2px}
 .punteggio{font-family:var(--mono);font-size:16px;font-weight:600;font-variant-numeric:tabular-nums}
 .conta{font-family:var(--mono);font-size:13.5px;color:#46565f;font-variant-numeric:tabular-nums}
 .delta{font-family:var(--mono);font-size:13.5px;font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
@@ -176,6 +200,7 @@ footer a{color:inherit}
 </style>
 </head>
 <body>
+<a class="salta" href="#contenuto">Salta al contenuto</a>
 <div class="involucro">
 
 <header>
@@ -197,6 +222,8 @@ footer a{color:inherit}
     <div class="misura"><div class="valore" id="m-data">—</div><div class="etichetta">Ultima rilevazione</div></div>
   </div>
 </header>
+
+<main id="contenuto">
 
 <section class="andamento" id="blocco-andamento" hidden>
   <h2>Andamento del catalogo</h2>
@@ -227,6 +254,7 @@ footer a{color:inherit}
   <span class="conteggio" id="conteggio"></span>
 </div>
 
+<div class="tabella" tabindex="0" role="region" aria-label="Punteggi per ente">
 <table>
   <thead>
     <tr>
@@ -240,6 +268,9 @@ footer a{color:inherit}
   </thead>
   <tbody id="corpo"></tbody>
 </table>
+</div>
+
+</main>
 
 <footer>
   <p>Ogni ente ha un indirizzo diretto: aggiungi <code>?titolare=c_f563</code> o
@@ -354,8 +385,10 @@ function graficoCatalogo(){
 }
 
 function riga(e, i){
-  return `<tr class="ente" tabindex="0" data-i="${i}" aria-expanded="false">
-    <td><div class="nome">${e.nome}</div><div class="slug">${e.slug || e.id}</div></td>
+  return `<tr class="ente" data-i="${i}">
+    <td><button type="button" class="apri" aria-expanded="false" aria-controls="dett-${i}">
+      <span class="nome">${e.nome}</span><span class="slug">${e.slug || e.id}</span>
+    </button></td>
     <td class="num conta">${nf0.format(e.n)}</td>
     <td class="num punteggio">${nf1.format(e.media)}</td>
     <td class="num">${segnoDelta(e.delta)}</td>
@@ -384,11 +417,11 @@ function dimensioni(d){
   return `<div class="dimensioni"><h3>Dimensioni MQA</h3>${barre}</div>`;
 }
 
-function dettaglio(e){
+function dettaglio(e, i){
   const righe = e.serie.slice().reverse().map(p =>
     `<tr><td>${DATE[p[0]]}</td><td>${nf1.format(p[1])}</td><td>${nf0.format(p[2])}</td></tr>`
   ).join('');
-  return `<tr class="dettaglio"><td colspan="6"><div class="dettaglio-corpo">
+  return `<tr class="dettaglio" id="dett-${i}"><td colspan="6"><div class="dettaglio-corpo">
     <div>${graficoGrande(e.serie)}</div>
     ${dimensioni(e.dim)}
     ${e.ipa_ko ? `<p class="avviso" data-ipa="${e.id}">Il codice
@@ -611,18 +644,19 @@ async function avviaScarico(bottone){
 }
 
 function apriChiudi(tr){
+  const bottone = tr.querySelector('.apri');
   const succ = tr.nextElementSibling;
   if (succ && succ.classList.contains('dettaglio')){
     succ.remove();
-    tr.setAttribute('aria-expanded','false');
+    if (bottone) bottone.setAttribute('aria-expanded','false');
     aggiornaUrl(null);
     return;
   }
   document.querySelectorAll('tr.dettaglio').forEach(r => r.remove());
-  document.querySelectorAll('tr.ente').forEach(r => r.setAttribute('aria-expanded','false'));
+  document.querySelectorAll('.apri').forEach(b => b.setAttribute('aria-expanded','false'));
   const ente = window.__lista[+tr.dataset.i];
-  tr.insertAdjacentHTML('afterend', dettaglio(ente));
-  tr.setAttribute('aria-expanded','true');
+  tr.insertAdjacentHTML('afterend', dettaglio(ente, tr.dataset.i));
+  if (bottone) bottone.setAttribute('aria-expanded','true');
   aggiornaUrl(ente);
   const span = document.querySelector(`[data-ipa="${ente.id}"] .cerca-ipa`);
   if (span) suggerisciCodice(ente.id, span);
@@ -713,11 +747,6 @@ document.getElementById('corpo').addEventListener('click', ev => {
   if (bottone){ ev.stopPropagation(); avviaScarico(bottone); return; }
   const tr = ev.target.closest('tr.ente');
   if (tr) apriChiudi(tr);
-});
-document.getElementById('corpo').addEventListener('keydown', ev => {
-  if (ev.key !== 'Enter' && ev.key !== ' ') return;
-  const tr = ev.target.closest('tr.ente');
-  if (tr){ ev.preventDefault(); apriChiudi(tr); }
 });
 </script>
 </body>
