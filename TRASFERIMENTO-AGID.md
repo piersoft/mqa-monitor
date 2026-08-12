@@ -13,6 +13,8 @@ personali. I punti noti:
 - `docs/mappe.html` — stesso collegamento nel piè di pagina
 - `docs/incorpora.html` — l'esempio di `iframe` e il controllo `ev.origin`
   (`https://piersoft.github.io`), piu' i riferimenti nel testo
+- `README_mappe.md` — contiene un percorso assoluto del Raspberry
+  (`/home/piersoft/mqaedp/mqa-monitor/build_maps.py`): va reso relativo
 - `README.md` — indirizzo della pagina pubblica e tutti gli esempi di link
   diretti (`https://piersoft.github.io/mqa-monitor/?titolare=...`)
 - `.github/workflows/mqa-weekly.yml` — nessun riferimento esplicito, ma va
