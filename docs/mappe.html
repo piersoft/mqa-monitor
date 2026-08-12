@@ -86,6 +86,15 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
 .tavola{position:relative;margin-top:22px;border:1px solid var(--riga-forte);background:#fff}
 #mappa{height:min(74vh,720px);width:100%;background:var(--carta-alta)}
 .leaflet-container{font-family:var(--testo);background:var(--carta-alta)}
+/* i nomi stanno sopra un fondo variabile: l'alone bianco li tiene leggibili
+   sia sul verde pieno sia sul grigio delle regioni non federate */
+.nome-regione span{
+  display:inline-block;transform:translate(-50%,-50%);white-space:nowrap;
+  font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--inchiostro);
+  text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 5px #fff,0 0 5px #fff;
+  pointer-events:none
+}
 
 .legenda{position:absolute;left:14px;bottom:22px;z-index:500;
   background:rgba(255,255,255,.95);border:1px solid var(--riga-forte);
@@ -205,7 +214,12 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
   <a href="https://data.europa.eu/mqa/methodology?locale=it">metodologia MQA</a>
   di data.europa.eu.</p>
   <p><strong>Regioni.</strong> Il dato viene dal livello delle <em>organizzazioni</em>, ristretto ai cataloghi regionali censiti come sorgenti di harvest su dati.gov.it. Una regione grigia non significa assenza di un portale regionale: significa che quel portale non è federato sul catalogo nazionale, quindi i suoi dataset non arrivano a data.europa.eu e non hanno un punteggio MQA.</p>
-  <p><strong>Le due mappe non si sommano.</strong> Un dataset comunale pubblicato attraverso un catalogo regionale è contato una volta fra i comuni, per titolarità, e una volta fra le regioni, per federazione.</p>
+  <p><strong>I nomi delle regioni.</strong> Sono scritti a partire dai confini Istat,
+  che li portano in italiano: i riquadri di sfondo di CARTO hanno le etichette in
+  inglese («Sardinia», «Tuscany») e non offrono un parametro di lingua. Le
+  etichette che si accavallerebbero vengono nascoste, dando la precedenza alle
+  regioni più estese; ingrandendo la mappa ricompaiono.</p>
+<p><strong>Le due mappe non si sommano.</strong> Un dataset comunale pubblicato attraverso un catalogo regionale è contato una volta fra i comuni, per titolarità, e una volta fra le regioni, per federazione.</p>
 </section>
 
 </main>
@@ -282,9 +296,10 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png
   attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a> — confini <a href="https://www.istat.it/notizia/confini-delle-unita-amministrative-a-fini-statistici-al-1-gennaio-2018-2/">Istat, Basi territoriali</a>',
   subdomains:"abcd", maxZoom:18
 }).addTo(mappa);
-L.tileLayer("https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png",{
-  subdomains:"abcd", maxZoom:18, pane:"shadowPane", opacity:.8
-}).addTo(mappa);
+/* Un secondo livello di etichette qui non c'e': quelle di CARTO sono in inglese
+   ("Sardinia", "Sicily", "Tuscany") e i tile raster non hanno un parametro di
+   lingua. I nomi delle regioni li scriviamo noi piu' sotto, presi dai confini
+   Istat che li portano gia' in italiano. */
 
 var stato = {metrica:"mqa", comuni:true, regioni:true, escluse:{}};
 var dati=null, geoRegioni=null, stratoRegioni=null, stratoComuni=null;
@@ -299,6 +314,7 @@ Promise.all([
   maxDatasetRegione = Math.max.apply(null, dati.regioni.map(function(r){ return r.n; }));
   intestazione();
   disegnaRegioni();
+  disegnaNomiRegioni();
   disegnaComuni();
   aggiorna();
 }).catch(function(e){
@@ -354,6 +370,103 @@ function disegnaRegioni(){
     }
   });
 }
+/* Nomi delle regioni, scritti da noi perche' i tile di CARTO li portano in
+   inglese. Tre accorgimenti: il punto di ancoraggio e' il centroide dell'anello
+   piu' grande e non il centro del riquadro (che per Liguria e Puglia cadrebbe in
+   mare), i nomi ufficiali troppo lunghi hanno una forma breve, e le etichette
+   che si sovrappongono vengono nascoste dando la precedenza alle regioni piu'
+   estese. */
+var etichetteRegioni = null;
+
+var NOMI_BREVI = {
+  "Valle d'Aosta/Vallée d'Aoste": "Valle d'Aosta",
+  "Trentino-Alto Adige/Südtirol": "Trentino-Alto Adige",
+  "Friuli-Venezia Giulia": "Friuli-V. Giulia",
+  "Provincia Autonoma di Bolzano/Bozen": "P.A. Bolzano",
+  "Provincia Autonoma di Trento": "P.A. Trento",
+  "Emilia-Romagna": "Emilia-Romagna"
+};
+
+function anelloMaggiore(geom){
+  var anelli = geom.type === "Polygon" ? [geom.coordinates[0]]
+             : geom.coordinates.map(function(p){ return p[0]; });
+  var meglio = null, maxA = -1;
+  anelli.forEach(function(a){
+    var s = 0;
+    for (var i = 0, j = a.length - 1; i < a.length; j = i++){
+      s += a[j][0] * a[i][1] - a[i][0] * a[j][1];
+    }
+    var area = Math.abs(s / 2);
+    if (area > maxA){ maxA = area; meglio = a; }
+  });
+  return meglio;
+}
+
+function centroide(geom){
+  var a = anelloMaggiore(geom), x = 0, y = 0, s = 0;
+  for (var i = 0, j = a.length - 1; i < a.length; j = i++){
+    var f = a[j][0] * a[i][1] - a[i][0] * a[j][1];
+    s += f; x += (a[j][0] + a[i][0]) * f; y += (a[j][1] + a[i][1]) * f;
+  }
+  if (!s) return L.latLng(a[0][1], a[0][0]);
+  return L.latLng(y / (3 * s), x / (3 * s));
+}
+
+function areaRiquadro(f){
+  var b = L.geoJSON(f).getBounds();
+  return (b.getNorth() - b.getSouth()) * (b.getEast() - b.getWest());
+}
+
+function disegnaNomiRegioni(){
+  etichetteRegioni = L.layerGroup();
+  geoRegioni.features.slice()
+    .sort(function(a, b){ return areaRiquadro(b) - areaRiquadro(a); })
+    .forEach(function(f){
+      var nome = f.properties.terr;
+      L.marker(centroide(f.geometry), {
+        interactive:false, keyboard:false,
+        icon: L.divIcon({
+          className:"nome-regione",
+          html:'<span>' + esc(NOMI_BREVI[nome] || nome) + '</span>',
+          iconSize:[0,0]
+        })
+      }).addTo(etichetteRegioni);
+    });
+  aggiornaNomiRegioni();
+  mappa.on("zoomend moveend", aggiornaNomiRegioni);
+}
+
+/* nasconde le etichette che si accavallano: si scorre dalla regione piu' estesa
+   alla piu' piccola, tenendo solo quelle che non toccano una gia' tenuta */
+function sfoltisci(){
+  var tenuti = [];
+  etichetteRegioni.getLayers().forEach(function(m){
+    var el = m.getElement();
+    if (!el) return;
+    el.style.visibility = "visible";
+    var r = el.firstChild.getBoundingClientRect();
+    var scontro = tenuti.some(function(t){
+      return !(r.right < t.left - 4 || r.left > t.right + 4 ||
+               r.bottom < t.top - 2 || r.top > t.bottom + 2);
+    });
+    if (scontro) el.style.visibility = "hidden";
+    else tenuti.push(r);
+  });
+}
+
+function aggiornaNomiRegioni(){
+  if (!etichetteRegioni) return;
+  var mostra = stato.regioni;
+  if (mostra && !mappa.hasLayer(etichetteRegioni)) etichetteRegioni.addTo(mappa);
+  if (!mostra && mappa.hasLayer(etichetteRegioni)){
+    mappa.removeLayer(etichetteRegioni);
+    return;
+  }
+  /* i marker esistono nel DOM solo dopo che Leaflet li ha disegnati: misurarli
+     subito darebbe getElement() nullo e nessuna sovrapposizione rilevata */
+  if (mostra) setTimeout(sfoltisci, 60);
+}
+
 function popupRegione(terr,r){
   var testa='<p class="pop-nome">'+esc(terr)+'</p>';
   if(!r||!r.catalogo){
@@ -468,6 +581,7 @@ function legenda(){
 function aggiorna(){
   if(stato.regioni){ if(!mappa.hasLayer(stratoRegioni)) stratoRegioni.addTo(mappa); }
   else if(mappa.hasLayer(stratoRegioni)) mappa.removeLayer(stratoRegioni);
+  aggiornaNomiRegioni();
 
   if(stato.comuni){ if(!mappa.hasLayer(stratoComuni)) stratoComuni.addTo(mappa); }
   else if(mappa.hasLayer(stratoComuni)) mappa.removeLayer(stratoComuni);
