@@ -68,13 +68,21 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
   padding:12px 14px;max-width:250px}
 .legenda h2{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;
   text-transform:uppercase;color:var(--tenue);font-weight:500;margin:0 0 9px}
-.barra{height:11px;width:100%;border:1px solid var(--riga)}
+.classi{list-style:none;margin:0;padding:0}
+.classi li{display:flex;align-items:center;gap:8px;padding:3px 0}
+.classi li.vuota{opacity:.42}
+.voce-classe{font-family:var(--testo);font-size:12.5px;line-height:1.25}
+.voce-classe em{display:block;font-family:var(--mono);font-size:9.5px;font-style:normal;
+  color:var(--tenue);letter-spacing:.05em;font-variant-numeric:tabular-nums}
+.quanti{margin-left:auto;font-family:var(--mono);font-size:11.5px;color:var(--tenue);
+  font-variant-numeric:tabular-nums}
 .scaglioni{display:flex;justify-content:space-between;font-family:var(--mono);
   font-size:10px;color:var(--tenue);margin-top:5px;font-variant-numeric:tabular-nums}
 .nota-legenda{font-family:var(--mono);font-size:10px;color:var(--tenue);
   margin-top:10px;line-height:1.45;display:flex;align-items:center;gap:7px}
 .tassello{width:12px;height:12px;flex:0 0 12px;border:1px solid var(--riga-forte)}
-.cerchi{display:flex;align-items:flex-end;gap:9px;margin-top:11px}
+.cerchi{display:flex;align-items:flex-end;gap:9px;margin-top:12px;
+  padding-top:11px;border-top:1px solid var(--riga)}
 .cerchi span{border:1.5px solid #46565f;background:rgba(70,86,95,.14);border-radius:50%;display:block}
 .cerchi em{font-family:var(--mono);font-size:10px;color:var(--tenue);font-style:normal}
 
@@ -158,59 +166,31 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
 (function(){
 "use strict";
 
-var SOGLIE = [
-  {min:351, nome:"Ottimo",      colore:"#146b58"},
-  {min:221, nome:"Buono",       colore:"#4b7f57"},
-  {min:121, nome:"Sufficiente", colore:"#9a7328"},
-  {min:0,   nome:"Scarso",      colore:"#a63e28"}
+/* Classi MQA: le quattro fasce del cruscotto, senza sfumature.
+   Un colore vale una fascia, così il confronto fra enti e' immediato
+   e resta stabile nel tempo: un ente cambia colore solo quando cambia
+   davvero fascia, non a ogni decimo di punto. */
+var CLASSI_MQA = [
+  {min:351, nome:"Ottimo",      soglia:"351 – 405", colore:"#146b58"},
+  {min:221, nome:"Buono",       soglia:"221 – 350", colore:"#4b7f57"},
+  {min:121, nome:"Sufficiente", soglia:"121 – 220", colore:"#9a7328"},
+  {min:0,   nome:"Scarso",      soglia:"0 – 120",   colore:"#a63e28"}
 ];
 
-/* Rampa MQA: ancorata ai colori delle fasce del cruscotto, interpolata
-   per rendere leggibili le differenze dentro la fascia "Buono", dove
-   si concentra la maggior parte degli enti. */
-var RAMPA_MQA = [
-  [0,   [166,62,40]],
-  [140, [163,110,42]],
-  [230, [154,140,60]],
-  [300, [104,133,80]],
-  [355, [75,127,87]],
-  [405, [16,95,76]]
-];
-/* Rampa dataset: tinta diversa, così il cambio di metrica si vede subito. */
-var RAMPA_N = [
-  [0,   [226,236,241]],
-  [0.25,[158,193,211]],
-  [0.5, [92,148,177]],
-  [0.75,[45,101,133]],
-  [1,   [16,55,79]]
+/* Classi per numero di dataset: ordini di grandezza, tinta diversa
+   così il cambio di metrica si riconosce subito. */
+var CLASSI_N = [
+  {min:1000, nome:"1.000 e oltre", colore:"#10374f"},
+  {min:100,  nome:"da 100 a 999",  colore:"#2d6585"},
+  {min:10,   nome:"da 10 a 99",    colore:"#6ca3c0"},
+  {min:1,    nome:"da 1 a 9",      colore:"#bcd6e3"}
 ];
 
-function misc(a,b,t){
-  return "rgb("+Math.round(a[0]+(b[0]-a[0])*t)+","
-               +Math.round(a[1]+(b[1]-a[1])*t)+","
-               +Math.round(a[2]+(b[2]-a[2])*t)+")";
+function classe(elenco,v){
+  for(var i=0;i<elenco.length;i++) if(v>=elenco[i].min) return elenco[i];
+  return elenco[elenco.length-1];
 }
-function suRampa(rampa,x){
-  if(x<=rampa[0][0]) return misc(rampa[0][1],rampa[0][1],0);
-  for(var i=1;i<rampa.length;i++){
-    if(x<=rampa[i][0]){
-      var a=rampa[i-1], b=rampa[i];
-      return misc(a[1],b[1],(x-a[0])/(b[0]-a[0]));
-    }
-  }
-  return misc(rampa[rampa.length-1][1],rampa[rampa.length-1][1],0);
-}
-function gradienteCss(rampa,dominio){
-  var stop=rampa.map(function(p){
-    var pos = dominio ? (p[0]-dominio[0])/(dominio[1]-dominio[0]) : p[0];
-    return "rgb("+p[1].join(",")+") "+Math.round(Math.max(0,Math.min(1,pos))*100)+"%";
-  });
-  return "linear-gradient(to right,"+stop.join(",")+")";
-}
-function fascia(mqa){
-  for(var i=0;i<SOGLIE.length;i++) if(mqa>=SOGLIE[i].min) return SOGLIE[i];
-  return SOGLIE[SOGLIE.length-1];
-}
+function fascia(mqa){ return classe(CLASSI_MQA,mqa); }
 function num(v){ return v==null ? "—" : v.toLocaleString("it-IT"); }
 function dec(v){ return v==null ? "—" : v.toLocaleString("it-IT",{minimumFractionDigits:1,maximumFractionDigits:1}); }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){
@@ -271,12 +251,12 @@ function intestazione(){
 /* ---------- colori per metrica ---------- */
 function coloreRegione(r){
   if(!r.catalogo) return "#c3ccd1";
-  if(stato.metrica==="mqa") return suRampa(RAMPA_MQA, r.mqa);
-  return suRampa(RAMPA_N, Math.log10(r.n+1)/Math.log10(maxDatasetRegione+1));
+  return stato.metrica==="mqa" ? classe(CLASSI_MQA,r.mqa).colore
+                               : classe(CLASSI_N,r.n).colore;
 }
 function coloreComune(c){
-  if(stato.metrica==="mqa") return suRampa(RAMPA_MQA, c.mqa);
-  return suRampa(RAMPA_N, Math.log10(c.n+1)/Math.log10(maxDatasetComune+1));
+  return stato.metrica==="mqa" ? classe(CLASSI_MQA,c.mqa).colore
+                               : classe(CLASSI_N,c.n).colore;
 }
 /* Area proporzionale ai dataset: il raggio cresce come la radice quadrata. */
 function raggio(c){ return 2.6 + 20*Math.sqrt(c.n/maxDatasetComune); }
@@ -347,17 +327,29 @@ function popupComune(c){
 function legenda(){
   var el=document.getElementById("legenda");
   el.hidden=false;
-  var html;
-  if(stato.metrica==="mqa"){
-    html='<h2>Punteggio MQA</h2>'+
-      '<div class="barra" style="background:'+gradienteCss(RAMPA_MQA,[0,405])+'"></div>'+
-      '<div class="scaglioni"><span>0</span><span>121</span><span>221</span><span>351</span><span>405</span></div>';
-  }else{
-    html='<h2>Numero di dataset</h2>'+
-      '<div class="barra" style="background:'+gradienteCss(RAMPA_N,null)+'"></div>'+
-      '<div class="scaglioni"><span>1</span><span>10</span><span>100</span><span>1.000</span><span>'+
-        num(maxDatasetRegione)+'</span></div>';
-  }
+  var perMqa = stato.metrica==="mqa";
+  var elenco = perMqa ? CLASSI_MQA : CLASSI_N;
+
+  /* Il conteggio segue lo strato in primo piano: i comuni se accesi,
+     altrimenti i territori regionali. */
+  var insieme = stato.comuni
+    ? dati.comuni
+    : dati.regioni.filter(function(r){ return r.catalogo; });
+  var voce = stato.comuni ? "comuni" : "territori";
+
+  var html='<h2>'+(perMqa?"Punteggio MQA":"Numero di dataset")+'</h2><ul class="classi">';
+  elenco.forEach(function(cl){
+    var quanti=insieme.filter(function(x){
+      return classe(elenco, perMqa?x.mqa:x.n)===cl;
+    }).length;
+    html+='<li'+(quanti?"":' class="vuota"')+'>'+
+      '<span class="tassello" style="background:'+cl.colore+'"></span>'+
+      '<span class="voce-classe">'+cl.nome+
+        (perMqa?'<em>'+cl.soglia+'</em>':'')+'</span>'+
+      '<span class="quanti">'+quanti+'</span></li>';
+  });
+  html+='</ul><p class="nota-legenda">Conteggio riferito a '+insieme.length+' '+voce+'</p>';
+
   if(stato.comuni){
     html+='<div class="cerchi">'+
       [1,100,1000,maxDatasetComune].map(function(n){
