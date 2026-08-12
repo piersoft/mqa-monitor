@@ -681,6 +681,13 @@ function aggiorna(){
       l.setStyle({fillColor:coloreComune(c),
                   fillOpacity:mostra?.55:0,
                   opacity:mostra?.85:0});
+      /* Un cerchio escluso dal filtro non deve piu' rispondere al puntatore:
+         altrimenti, isolando i comuni sopra i mille dataset, passando su Milano
+         si vedevano ancora i nomi dei comuni nascosti sotto. La riga
+         pointerEvents valeva solo per il disegno vettoriale; qui la mappa usa
+         la tela, dove l'ascolto dipende da options.interactive. */
+      l.options.interactive = mostra;
+      if(!mostra){ l.closeTooltip(); l.closePopup(); }
       if(l._path) l._path.style.pointerEvents=mostra?"":"none";
     });
   }
