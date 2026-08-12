@@ -200,7 +200,10 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
 
 <section class="metodo">
   <h2>Come si legge</h2>
-  <p><strong>Comuni.</strong> Il dato viene dal livello dei <em>titolari</em> (<code>dct:rightsHolder</code> più <code>dct:identifier</code>), l'unico che attribuisce ogni dataset all'ente che ne detiene la titolarità, anche quando il dataset è pubblicato dentro il catalogo di una regione. Il codice IPA è ricondotto al codice catastale e quindi al centroide comunale.</p>
+  <p><strong>Comuni.</strong> Il dato viene dal livello dei <em>titolari</em> (<code>dct:rightsHolder</code> più <code>dct:identifier</code>), l'unico che attribuisce ogni dataset all'ente che ne detiene la titolarità, anche quando il dataset è pubblicato dentro il catalogo di una regione. Il codice IPA è ricondotto al codice catastale e quindi al centroide comunale.
+  Come si compone il punteggio è spiegato nella
+  <a href="https://data.europa.eu/mqa/methodology?locale=it">metodologia MQA</a>
+  di data.europa.eu.</p>
   <p><strong>Regioni.</strong> Il dato viene dal livello delle <em>organizzazioni</em>, ristretto ai cataloghi regionali censiti come sorgenti di harvest su dati.gov.it. Una regione grigia non significa assenza di un portale regionale: significa che quel portale non è federato sul catalogo nazionale, quindi i suoi dataset non arrivano a data.europa.eu e non hanno un punteggio MQA.</p>
   <p><strong>Le due mappe non si sommano.</strong> Un dataset comunale pubblicato attraverso un catalogo regionale è contato una volta fra i comuni, per titolarità, e una volta fra le regioni, per federazione.</p>
 </section>

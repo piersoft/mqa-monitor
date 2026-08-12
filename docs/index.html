@@ -183,6 +183,8 @@ tr.dettaglio td{background:var(--carta-alta);padding:20px 10px 26px}
 .rilevazioni th{text-align:left;color:var(--tenue);font-weight:500;padding:0 18px 6px 0}
 .rilevazioni td{padding:3px 18px 3px 0;border:0;font-variant-numeric:tabular-nums}
 .dimensioni h3{font-family:var(--condensato);font-size:14px;font-weight:600;margin:0 0 10px}
+.dimensioni h3 a{color:inherit;text-decoration:underline;text-decoration-color:var(--riga-forte)}
+.dimensioni h3 a:hover{color:var(--primario);text-decoration-color:currentColor}
 .dim-riga{display:flex;align-items:center;gap:10px;margin-bottom:6px}
 .dim-nome{font-family:var(--mono);font-size:11px;color:var(--tenue);width:118px}
 .dim-barra{width:150px;height:9px;background:#dde4e8;display:inline-block}
@@ -255,7 +257,8 @@ footer p{max-width:78ch}
   <p class="occhiello">Rilevazione giornaliera · <span id="catalogo">—</span></p>
   <h1>Qualità dei metadati, <em>ente per ente</em></h1>
   <p class="sottotitolo">
-    Punteggio MQA assegnato da data.europa.eu ai dataset pubblicati su dati.gov.it,
+    <a href="https://data.europa.eu/mqa/methodology?locale=it">Punteggio MQA</a>
+    assegnato da data.europa.eu ai dataset pubblicati su dati.gov.it,
     aggregato per ente titolare del catalogo di origine. Ogni mattina una nuova misura.
   </p>
   <div class="misure">
@@ -335,7 +338,9 @@ footer p{max-width:78ch}
   dinamico di dati.gov.it</a>. Questa pagina serve a un’altra domanda: come sta
   messo il singolo ente.</p>
   <p id="nota-fonte">Fonte: data.europa.eu (Metadata Quality Assessment), scala 0–405.
-  Giudizi: Excellent ≥ 351, Good ≥ 221, Sufficient ≥ 121, Bad sotto 121. Il punteggio
+  Giudizi: Excellent ≥ 351, Good ≥ 221, Sufficient ≥ 121, Bad sotto 121. Come si
+  compone il punteggio, controllo per controllo, è spiegato nella
+  <a href="https://data.europa.eu/mqa/methodology?locale=it">metodologia MQA</a>. Il punteggio
   di un ente è la media dei punteggi dei suoi dataset: il portale europeo calcola
   invece il punteggio di un dataset “rappresentativo”, quindi i due valori non
   coincidono.</p>
@@ -437,6 +442,9 @@ function riga(e, i){
   </tr>`;
 }
 
+/* la metodologia con cui data.europa.eu attribuisce i punteggi */
+const METODOLOGIA = 'https://data.europa.eu/mqa/methodology?locale=it';
+
 const MAX_DIM = {findability:100, accessibility:100, interoperability:110,
                  reusability:75, contextuality:20};
 const ETICH_DIM = {findability:'Reperibilità', accessibility:'Accessibilità',
@@ -454,7 +462,7 @@ function dimensioni(d){
       <span class="dim-val">${nf1.format(d[k])}<span class="dim-max">/${MAX_DIM[k]}</span></span>
     </div>`;
   }).join('');
-  return `<div class="dimensioni"><h3>Dimensioni MQA</h3>${barre}</div>`;
+  return `<div class="dimensioni"><h3><a href="${METODOLOGIA}">Dimensioni MQA</a></h3>${barre}</div>`;
 }
 
 function dettaglio(e, i){
