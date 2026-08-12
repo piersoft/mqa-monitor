@@ -55,6 +55,23 @@ h1{
 .andamento h2{font-family:var(--condensato);font-size:15px;font-weight:600;margin:0 0 14px;letter-spacing:.01em}
 .andamento svg{display:block;width:100%;height:96px;overflow:visible}
 
+/* ---------- collegamento alle mappe ---------- */
+.vai-mappe{
+  display:inline-flex;align-items:baseline;gap:11px;margin-top:22px;
+  padding:11px 16px;background:#fff;border:1px solid var(--inchiostro);
+  color:var(--inchiostro);text-decoration:none
+}
+.vai-mappe .voce{font-family:var(--condensato);font-size:16px;font-weight:600;letter-spacing:.005em}
+.vai-mappe .glossa{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--tenue)}
+.vai-mappe .freccia{font-family:var(--mono);font-size:14px;line-height:1;margin-left:2px}
+.vai-mappe:hover,.vai-mappe:focus-visible{background:var(--inchiostro);color:#fff}
+.vai-mappe:hover .glossa,.vai-mappe:focus-visible .glossa{color:#b9c6cd}
+.vai-mappe:focus-visible{outline:2px solid var(--inchiostro);outline-offset:2px}
+@media (max-width:520px){
+  .vai-mappe{flex-wrap:wrap;gap:4px 10px}
+}
+
 /* ---------- controlli ---------- */
 .controlli{
   display:flex;flex-wrap:wrap;gap:10px;align-items:center;
@@ -168,6 +185,11 @@ footer a{color:inherit}
     Punteggio MQA assegnato da data.europa.eu ai dataset pubblicati su dati.gov.it,
     aggregato per ente titolare del catalogo di origine. Ogni domenica una nuova misura.
   </p>
+  <a class="vai-mappe" href="mappe.html">
+    <span class="voce">Guarda le mappe</span>
+    <span class="glossa">Comuni e cataloghi regionali</span>
+    <span class="freccia" aria-hidden="true">&rarr;</span>
+  </a>
   <div class="misure">
     <div class="misura"><div class="valore" id="m-enti">—</div><div class="etichetta" id="e-enti">Enti</div></div>
     <div class="misura"><div class="valore" id="m-dataset">—</div><div class="etichetta">Dataset misurati</div></div>
