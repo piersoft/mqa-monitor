@@ -132,13 +132,24 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
 .nota-legenda{font-family:var(--mono);font-size:10px;color:var(--tenue);
   margin-top:10px;line-height:1.45;display:flex;align-items:center;gap:7px}
 .tassello{width:12px;height:12px;flex:0 0 12px;border:1px solid var(--riga-forte)}
-.cerchi{display:flex;align-items:flex-end;gap:16px;margin-top:12px;
-  padding-top:11px;border-top:1px solid var(--riga)}
-.cerchi .passo{display:flex;flex-direction:column;align-items:center;gap:5px}
-.cerchi i{border:1.5px solid var(--tenue);background:rgba(69,90,114,.14);
+.titolo-taglie{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--inchiostro);font-weight:600;
+  margin:14px 0 8px;padding-top:11px;border-top:1px solid var(--riga)}
+.titolo-taglie .filtrabile{text-transform:none;letter-spacing:.02em;
+  font-weight:400;color:var(--tenue)}
+.titolo-taglie .filtrabile::before{content:"· "}
+.taglie{list-style:none;margin:0;padding:0}
+.riga-taglia{display:flex;align-items:center;gap:9px;width:100%;
+  background:none;border:0;padding:3px 2px;cursor:pointer;text-align:left;
+  font:inherit;color:inherit;min-height:34px}
+.riga-taglia .bolla{display:flex;align-items:center;justify-content:center;flex:none}
+.riga-taglia i{border:1.5px solid var(--tenue);background:rgba(69,90,114,.14);
   border-radius:50%;display:block;flex:none}
-.cerchi em{font-family:var(--mono);font-size:10px;color:var(--tenue);
-  font-style:normal;font-variant-numeric:tabular-nums;line-height:1}
+.riga-taglia .voce-classe{flex:1}
+.riga-taglia.spenta{opacity:.42}
+.riga-taglia.vuota{opacity:.42;cursor:default}
+.riga-taglia:hover:not(.vuota){background:var(--carta-alta)}
+.riga-taglia:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
 
 .leaflet-popup-content-wrapper{border-radius:0;box-shadow:0 2px 10px rgba(23,37,47,.22)}
 .leaflet-popup-content{margin:14px 16px;font-size:14px;line-height:1.5}
@@ -538,14 +549,25 @@ function popupComune(c){
 
 /* ---------- legenda ---------- */
 /* ---------- filtro per classe ---------- */
+/* La mappa porta due variabili distinte: il colore dice la qualita' dei
+   metadati, l'area del cerchio quanti dataset pubblica il comune. I due filtri
+   sono percio' indipendenti e si combinano: si puo' chiedere "i comuni con
+   molti dataset e punteggio scarso" tenendo accese entrambe le letture. */
 function elencoAttivo(){ return stato.metrica==="mqa" ? CLASSI_MQA : CLASSI_N; }
 function chiaveClasse(cl){ return stato.metrica+":"+cl.nome; }
-function visibile(valore){
-  var cl=classe(elencoAttivo(),valore);
-  return !stato.escluse[chiaveClasse(cl)];
+function chiaveTaglia(cl){ return "taglia:"+cl.nome; }
+
+function visibileColore(valore){
+  return !stato.escluse[chiaveClasse(classe(elencoAttivo(), valore))];
+}
+function visibileTaglia(n){
+  return !stato.escluse[chiaveTaglia(classe(CLASSI_N, n))];
 }
 function filtroAttivo(){
   return elencoAttivo().some(function(cl){ return stato.escluse[chiaveClasse(cl)]; });
+}
+function filtroTagliaAttivo(){
+  return CLASSI_N.some(function(cl){ return stato.escluse[chiaveTaglia(cl)]; });
 }
 
 /* ---------- legenda ---------- */
@@ -587,18 +609,28 @@ function legenda(){
     : '<p class="nota-legenda">Tocca una classe per isolarla · '+insieme.length+' '+voce+'</p>';
 
   if(stato.comuni){
-    /* Ogni cerchio porta la propria cifra sotto: prima le cifre stavano in una
-       riga a se', distribuite a giustezza piena, e non corrispondevano ai
-       cerchi. I riferimenti sono tre e non quattro: con quattro, i due piu'
-       piccoli risultavano indistinguibili. */
-    html+='<div class="cerchi">'+
-      [1, Math.round(maxDatasetComune/8), maxDatasetComune].map(function(n){
-        var r=raggio({n:n});
-        return '<span class="passo">'+
-          '<i style="width:'+(r*2).toFixed(1)+'px;height:'+(r*2).toFixed(1)+'px"></i>'+
-          '<em>'+num(n)+'</em></span>';
-      }).join("")+'</div>'+
-      '<p class="nota-legenda">Area del cerchio proporzionale ai dataset del comune</p>';
+    /* L'area del cerchio e' una scala continua; le fasce servono a filtrarla.
+       Il cerchio mostrato per ciascuna fascia ha il diametro del valore
+       rappresentativo indicato accanto. */
+    html+='<h3 class="titolo-taglie">Dataset per comune '+
+      '<span class="filtrabile">filtrabile</span></h3><ul class="taglie">';
+    CLASSI_N.forEach(function(cl){
+      var quanti=dati.comuni.filter(function(c){ return classe(CLASSI_N,c.n)===cl; }).length;
+      var campione=Math.min(Math.max(cl.min*3, cl.min), maxDatasetComune);
+      var r=raggio({n:campione});
+      var spenta=!!stato.escluse[chiaveTaglia(cl)];
+      html+='<li><button type="button" class="riga-taglia'+(quanti?"":" vuota")+
+        (spenta?" spenta":"")+'" data-taglia="'+esc(cl.nome)+'"'+
+        ' aria-pressed="'+(spenta?"false":"true")+'">'+
+        '<span class="bolla" style="width:46px"><i style="width:'+(r*2).toFixed(1)+
+        'px;height:'+(r*2).toFixed(1)+'px"></i></span>'+
+        '<span class="voce-classe">'+esc(cl.nome)+'</span>'+
+        '<span class="quanti">'+num(quanti)+'</span></button></li>';
+    });
+    html+='</ul>';
+    html+=filtroTagliaAttivo()
+      ? '<button type="button" id="azzera-taglie" class="azzera">Mostra tutte le fasce</button>'
+      : '<p class="nota-legenda">Area del cerchio proporzionale ai dataset del comune</p>';
   }
   if(stato.regioni){
     html+='<p class="nota-legenda"><span class="tassello" style="background:#c3ccd1"></span>'+
@@ -622,7 +654,7 @@ function aggiorna(){
     stratoRegioni.setStyle(function(f){
       var r=perTerr[f.properties.terr];
       if(!r||!r.catalogo) return {fillColor:"#c3ccd1",fillOpacity:.5};
-      var mostra=visibile(stato.metrica==="mqa"?r.mqa:r.n);
+      var mostra=visibileColore(stato.metrica==="mqa"?r.mqa:r.n);
       return {fillColor:mostra?coloreRegione(r):"#dde4e8",
               fillOpacity:mostra?.82:.22};
     });
@@ -630,7 +662,8 @@ function aggiorna(){
   if(stato.comuni){
     stratoComuni.eachLayer(function(l){
       var c=l._dato;
-      var mostra=visibile(stato.metrica==="mqa"?c.mqa:c.n);
+      var mostra=visibileColore(stato.metrica==="mqa"?c.mqa:c.n)
+               && visibileTaglia(c.n);
       l.setStyle({fillColor:coloreComune(c),
                   fillOpacity:mostra?.78:0,
                   opacity:mostra?.85:0});
@@ -641,7 +674,27 @@ function aggiorna(){
 }
 
 document.getElementById("legenda").addEventListener("click",function(e){
-  if(e.target.closest("#azzera")){ stato.escluse={}; aggiorna(); return; }
+  if(e.target.closest("#azzera")){
+    elencoAttivo().forEach(function(x){ delete stato.escluse[chiaveClasse(x)]; });
+    aggiorna(); return;
+  }
+  if(e.target.closest("#azzera-taglie")){
+    CLASSI_N.forEach(function(x){ delete stato.escluse[chiaveTaglia(x)]; });
+    aggiorna(); return;
+  }
+  var t=e.target.closest("button[data-taglia]");
+  if(t){
+    var cn=CLASSI_N.filter(function(x){ return x.nome===t.dataset.taglia; })[0];
+    if(!cn) return;
+    var kt=chiaveTaglia(cn);
+    /* stesso gesto della legenda dei colori: il primo tocco isola, i
+       successivi accendono e spengono la singola fascia */
+    if(!filtroTagliaAttivo()){
+      CLASSI_N.forEach(function(x){ if(x!==cn) stato.escluse[chiaveTaglia(x)]=true; });
+    }else if(stato.escluse[kt]){ delete stato.escluse[kt]; }
+    else { stato.escluse[kt]=true; }
+    aggiorna(); return;
+  }
   var b=e.target.closest("button[data-classe]");
   if(!b) return;
   var elenco=elencoAttivo();
