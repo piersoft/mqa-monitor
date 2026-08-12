@@ -224,7 +224,7 @@ mappa.on("click", function(){ mappa.scrollWheelZoom.enable(); });
 mappa.on("mouseout", function(){ mappa.scrollWheelZoom.disable(); });
 L.control.scale({imperial:false}).addTo(mappa);
 L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png",{
-  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a> — confini <a href="https://github.com/openpolis/geojson-italy">openpolis</a>',
+  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a> — confini <a href="https://www.istat.it/notizia/confini-delle-unita-amministrative-a-fini-statistici-al-1-gennaio-2018-2/">Istat, Basi territoriali</a>',
   subdomains:"abcd", maxZoom:18
 }).addTo(mappa);
 L.tileLayer("https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png",{
