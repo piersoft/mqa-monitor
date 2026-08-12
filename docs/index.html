@@ -75,7 +75,7 @@ h1{
 }
 .sottotitolo{margin:14px 0 0;max-width:56ch;color:#3d4d57}
 .misure{
-  display:flex;flex-wrap:wrap;gap:34px;margin-top:30px;
+  display:flex;flex-wrap:wrap;align-items:center;gap:34px;margin-top:30px;
   padding-top:22px;border-top:1px solid var(--riga)
 }
 .misura .valore{
@@ -89,7 +89,7 @@ h1{
 
 /* ---------- collegamento alle mappe ---------- */
 .vai-mappe{
-  display:inline-flex;align-items:baseline;gap:11px;margin-top:22px;
+  display:inline-flex;align-items:baseline;gap:11px;margin-left:auto;
   padding:11px 16px;background:#fff;border:1px solid var(--inchiostro);
   color:var(--inchiostro);text-decoration:none
 }
@@ -102,6 +102,12 @@ h1{
 .vai-mappe:focus-visible{outline:2px solid var(--inchiostro);outline-offset:2px}
 @media (max-width:520px){
   .vai-mappe{flex-wrap:wrap;gap:4px 10px}
+}
+/* sotto i 780px il collegamento va a capo: senza il margine automatico resta
+   attaccato ai numeri invece di staccarsene */
+@media (max-width:780px){
+  .misure{gap:22px 30px}
+  .vai-mappe{margin-left:0;margin-top:4px}
 }
 
 /* ---------- controlli ---------- */
@@ -196,6 +202,17 @@ tr.dettaglio td{background:var(--carta-alta);padding:20px 10px 26px}
 .cerca-ipa{display:block;margin-top:6px}
 .avviso{font-size:12.5px;color:#7a5c1e;background:#f6efdd;border-left:2px solid #9a7328;
   padding:8px 11px;margin:0 0 14px;max-width:46ch}
+/* L'elenco parte accorciato: con 1.610 righe il resto della pagina — le note in
+   fondo, che spiegano come leggere i numeri — resterebbe irraggiungibile senza
+   una lunga scorsa. */
+.tutti{margin:16px 0 0}
+.tutti button{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--inchiostro);background:#fff;border:1px solid var(--riga-forte);
+  border-radius:4px;padding:10px 15px;cursor:pointer;min-height:40px
+}
+.tutti button:hover{background:var(--carta-alta);border-color:var(--inchiostro)}
+.tutti button:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
 .assente{padding:40px 0;color:var(--tenue);font-family:var(--mono);font-size:13px}
 .asse{font-family:var(--mono);font-size:10px;fill:var(--tenue)}
 .linea-asse{stroke:var(--riga);stroke-width:1}
@@ -237,15 +254,15 @@ footer p{max-width:78ch}
     Punteggio MQA assegnato da data.europa.eu ai dataset pubblicati su dati.gov.it,
     aggregato per ente titolare del catalogo di origine. Ogni mattina una nuova misura.
   </p>
-  <a class="vai-mappe" href="mappe.html">
-    <span class="voce">Guarda le mappe</span>
-    <span class="glossa">Comuni e cataloghi regionali</span>
-    <span class="freccia" aria-hidden="true">&rarr;</span>
-  </a>
   <div class="misure">
     <div class="misura"><div class="valore" id="m-enti">—</div><div class="etichetta" id="e-enti">Enti</div></div>
     <div class="misura"><div class="valore" id="m-dataset">—</div><div class="etichetta">Dataset misurati</div></div>
     <div class="misura"><div class="valore" id="m-data">—</div><div class="etichetta">Ultima rilevazione</div></div>
+    <a class="vai-mappe" href="mappe.html">
+      <span class="voce">Guarda le mappe</span>
+      <span class="glossa">Comuni e cataloghi regionali</span>
+      <span class="freccia" aria-hidden="true">&rarr;</span>
+    </a>
   </div>
 </header>
 
@@ -290,6 +307,9 @@ footer p{max-width:78ch}
   <tbody id="corpo"></tbody>
 </table>
 </div>
+
+<p class="tutti"><button type="button" id="mostra-tutti" aria-expanded="false"
+  aria-controls="corpo" hidden></button></p>
 
 </main>
 
@@ -477,6 +497,9 @@ function misure(){
   document.getElementById('m-data').textContent = t.data || DATI.aggiornato;
 }
 
+const PRIME = 25;
+let espanso = false;
+
 function disegna(){
   const q = document.getElementById('cerca').value.trim().toLowerCase();
   const ord = document.getElementById('ordina').value;
@@ -499,11 +522,21 @@ function disegna(){
   lista.sort(ordini[ord]);
 
   const corpo = document.getElementById('corpo');
+  const mostrate = espanso ? lista : lista.slice(0, PRIME);
   corpo.innerHTML = lista.length
-    ? lista.map((e,i) => riga(e,i)).join('')
+    ? mostrate.map((e,i) => riga(e,i)).join('')
     : '<tr><td colspan="6" class="assente">Nessun ente corrisponde alla ricerca.</td></tr>';
-  corpo.dataset.lista = JSON.stringify(lista.map(e => e.id));
   window.__lista = lista;
+
+  const b = document.getElementById('mostra-tutti');
+  b.hidden = lista.length <= PRIME;
+  if (!b.hidden){
+    const n = NOMI[LIV].plur;
+    b.textContent = espanso
+      ? `Mostra solo i primi ${PRIME}`
+      : `Mostra tutti i ${nf0.format(lista.length)} ${n}`;
+    b.setAttribute('aria-expanded', String(espanso));
+  }
 
   document.getElementById('conteggio').textContent =
     lista.length + ' ' + (lista.length === 1 ? NOMI[LIV].sing : NOMI[LIV].plur);
@@ -699,6 +732,7 @@ function apriDaUrl(){
     const ente = trovaEnte(livello, valore);
     if (!ente) continue;
     LIV = livello;
+    espanso = true;   // l'ente cercato potrebbe stare oltre le prime righe
     document.getElementById('livello').value = livello;
     document.getElementById('cerca').value = ente.nome;
     misure(); disegna();
@@ -762,6 +796,12 @@ fetch('data.json')
     }
     disegna();
   }));
+
+document.getElementById('mostra-tutti').addEventListener('click', () => {
+  espanso = !espanso;
+  disegna();
+  document.getElementById('mostra-tutti').focus();
+});
 
 document.getElementById('corpo').addEventListener('click', ev => {
   const bottone = ev.target.closest('[data-scarica]');
