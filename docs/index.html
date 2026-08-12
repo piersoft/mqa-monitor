@@ -202,11 +202,21 @@ tr.dettaglio td{background:var(--carta-alta);padding:20px 10px 26px}
 .serie{fill:none;stroke:var(--inchiostro);stroke-width:1.5}
 .punto{fill:var(--inchiostro)}
 
+/* Le note sono diventate parecchie: a piena larghezza le righe supererebbero i
+   140 caratteri e diventerebbero faticose da leggere. Su schermo largo si
+   dispongono quindi su due colonne, che tengono la riga sotto i 70 caratteri e
+   allineano il blocco alla tabella; sotto i 900px tornano in colonna unica. */
 footer{
   margin-top:52px;padding-top:20px;border-top:1px solid var(--riga);
-  font-size:13px;color:var(--tenue);max-width:70ch
+  font-size:13px;color:var(--tenue)
 }
 footer a{color:inherit}
+footer p{margin:0 0 14px;break-inside:avoid}
+@media (min-width:900px){
+  footer{column-count:2;column-gap:52px}
+  footer p{max-width:none}
+}
+footer p{max-width:78ch}
 
 @media (max-width:780px){
   .nascondi-stretto{display:none}
