@@ -508,7 +508,8 @@ function dettaglio(e, i){
       frequente.</p>` : ''}
     ${LIV === 'holder' ? `<div class="scarica">
       <button type="button" data-scarica="${e.id}" data-nome="${e.nome.replace(/"/g,'&quot;')}">
-        Scarica il dettaglio dei ${nf0.format(e.n)} dataset</button>
+        ${e.n === 1 ? 'Scarica il dettaglio dell’unico dataset'
+                    : `Scarica il dettaglio dei ${nf0.format(e.n)} dataset`}</button>
       <div class="esito" data-esito="${e.id}"></div>
     </div>` : ''}
     <table class="rilevazioni">
@@ -721,7 +722,9 @@ async function avviaScarico(bottone){
     righe.sort((a,b) => (a.scoring ?? 0) - (b.scoring ?? 0));
     const slug = nome.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
     scaricaCsv(`mqa_${slug || id}_${DATI.aggiornato}.csv`, righe);
-    esito.textContent = `${righe.length} dataset, dal peggiore al migliore`;
+    esito.textContent = righe.length === 1
+      ? 'un dataset'
+      : `${righe.length} dataset, dal peggiore al migliore`;
   } catch (err) {
     esito.className = 'esito male';
     esito.textContent = "l'endpoint SPARQL non ha risposto, riprova fra qualche minuto";
