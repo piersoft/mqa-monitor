@@ -213,19 +213,20 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
   Come si compone il punteggio è spiegato nella
   <a href="https://data.europa.eu/mqa/methodology?locale=it">metodologia MQA</a>
   di data.europa.eu.</p>
-  <p><strong>Regioni.</strong> Il dato viene dal livello delle <em>organizzazioni</em>, ristretto ai cataloghi regionali censiti come sorgenti di harvest su dati.gov.it. Una regione grigia non significa assenza di un portale regionale: significa che quel portale non è federato sul catalogo nazionale, quindi i suoi dataset non arrivano a data.europa.eu e non hanno un punteggio MQA.</p>
-  <p><strong>La cartografia non c’è.</strong> Su data.europa.eu arrivano i dataset
-  di dati.gov.it a esclusione di quelli del <abbr title="Repertorio Nazionale dei
+  <p><strong>Regioni.</strong> Il dato viene dal livello delle <em>organizzazioni</em>, ristretto ai cataloghi regionali censiti come sorgenti di harvest su dati.gov.it. Una regione in grigio non indica l’assenza di un portale regionale, ma il fatto che tale portale non risulta federato sul catalogo nazionale: i relativi dataset non sono conferiti a data.europa.eu e non dispongono di un punteggio MQA.</p>
+  <p><strong>Dati territoriali (RNDT).</strong> Il catalogo <code>dati-gov-it</code>
+  su data.europa.eu non comprende i dataset del <abbr title="Repertorio Nazionale dei
   Dati Territoriali">RNDT</abbr> (<a href="https://geodati.gov.it">geodati.gov.it</a>),
-  che non vengono conferiti al portale europeo e quindi non hanno un punteggio MQA.
-  Un comune o una regione che pubblica soprattutto dati geografici appare qui con un
-  cerchio piccolo, o non appare: non è una misura della sua attività, ma di quanto
-  di essa passa per il canale europeo.</p>
-  <p><strong>I nomi delle regioni.</strong> Sono scritti a partire dai confini Istat,
-  che li portano in italiano: i riquadri di sfondo di CARTO hanno le etichette in
-  inglese («Sardinia», «Tuscany») e non offrono un parametro di lingua. Le
-  etichette che si accavallerebbero vengono nascoste, dando la precedenza alle
-  regioni più estese; ingrandendo la mappa ricompaiono.</p>
+  che al portale europeo sono conferiti tramite un catalogo distinto, non oggetto del
+  presente monitoraggio. I comuni e le regioni la cui produzione è prevalentemente di
+  natura territoriale figurano pertanto con un cerchio di dimensioni ridotte, o non
+  figurano affatto: l’area del cerchio non misura l’attività complessiva dell’ente,
+  ma la sola parte rilevata su questo catalogo.</p>
+  <p><strong>I nomi delle regioni.</strong> Sono tratti dai confini Istat, che li
+  riportano in italiano: le etichette dei riquadri di sfondo sono in lingua inglese e
+  non è disponibile un parametro di lingua. Le etichette che risulterebbero
+  sovrapposte vengono omesse, con precedenza alle regioni di maggiore estensione;
+  ingrandendo la mappa ricompaiono.</p>
 <p><strong>Le due mappe non si sommano.</strong> Un dataset comunale pubblicato attraverso un catalogo regionale è contato una volta fra i comuni, per titolarità, e una volta fra le regioni, per federazione.</p>
 </section>
 

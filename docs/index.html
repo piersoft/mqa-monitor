@@ -321,47 +321,61 @@ footer p{max-width:78ch}
 </main>
 
 <footer>
-  <p>Ogni ente ha un indirizzo diretto: aggiungi <code>?titolare=c_f563</code> o
-  <code>?organizzazione=comune-di-torino</code> a questo indirizzo. Funziona anche
-  con il nome per esteso, e l’indirizzo si aggiorna da solo quando apri una riga,
-  cosi si copia dalla barra del browser.</p>
-  <p>La rilevazione gira ogni mattina: data.europa.eu ricalcola quasi
-  quotidianamente. La colonna <em>7 giorni</em> confronta con la misura di una
-  settimana prima, non con quella del giorno precedente, perché una variazione
-  giornaliera è spesso rumore — un server che non risponde per un’ora fa scendere
-  l’accessibilità e risalire il giorno dopo.</p>
-  <p>Il tracciato in tabella mostra la forma del movimento, con la scala adattata al
-  singolo ente: la linea tratteggiata è la prima misura disponibile, quindi sopra la
-  linea l’ente ha guadagnato, sotto ha perso. Per i valori assoluti, apri la riga.</p>
-  <p>L’andamento complessivo del catalogo nel tempo, con una serie storica ben più
-  lunga, sta nel <a href="https://www.dati.gov.it/Monitoraggio/monitoraggio-dinamico">monitoraggio
-  dinamico di dati.gov.it</a>. Questa pagina serve a un’altra domanda: come sta
-  messo il singolo ente.</p>
-  <p><strong>Cosa non c’è.</strong> Su data.europa.eu arrivano i dataset di
-  dati.gov.it a esclusione di quelli del <abbr title="Repertorio Nazionale dei Dati
-  Territoriali">RNDT</abbr> (<a href="https://geodati.gov.it">geodati.gov.it</a>):
-  i dati geografici non vengono conferiti al portale europeo, quindi non hanno un
-  punteggio MQA e qui non compaiono. Un ente che pubblica soprattutto cartografia
-  risulterà con pochi dataset, o non risulterà affatto.</p>
+  <p>Ogni ente dispone di un indirizzo diretto: al presente indirizzo si aggiunge
+  <code>?titolare=c_f563</code> oppure <code>?organizzazione=comune-di-torino</code>.
+  È accettato anche il nome per esteso. All’apertura di una riga l’indirizzo si
+  aggiorna automaticamente, ed è quindi copiabile dalla barra del browser.</p>
+
+  <p>La rilevazione è giornaliera, poiché data.europa.eu ricalcola i punteggi con
+  frequenza quasi quotidiana. La colonna <em>7 giorni</em> riporta la variazione
+  rispetto alla misura di una settimana prima e non a quella del giorno precedente:
+  una variazione giornaliera è spesso dovuta a fattori transitori, come
+  l’indisponibilità temporanea di un server, che riduce l’accessibilità per poi
+  ripristinarla il giorno successivo.</p>
+
+  <p>Il tracciato riportato in tabella rappresenta l’andamento delle rilevazioni con
+  scala adattata al singolo ente: la linea tratteggiata corrisponde alla prima misura
+  disponibile, i valori al di sopra indicano un miglioramento e quelli al di sotto un
+  peggioramento. I valori assoluti sono riportati nel dettaglio della riga.</p>
+
+  <p>L’andamento complessivo del catalogo, con una serie storica più estesa, è
+  disponibile nel <a href="https://www.dati.gov.it/Monitoraggio/monitoraggio-dinamico">monitoraggio
+  dinamico di dati.gov.it</a>. La presente pagina ha per oggetto la qualità dei
+  metadati del singolo ente.</p>
+
+  <p><strong>Dati territoriali (RNDT).</strong> Il catalogo <code>dati-gov-it</code>
+  su data.europa.eu non comprende i dataset del <abbr title="Repertorio Nazionale dei
+  Dati Territoriali">RNDT</abbr> (<a href="https://geodati.gov.it">geodati.gov.it</a>),
+  che al portale europeo sono conferiti tramite un catalogo distinto, non oggetto del
+  presente monitoraggio. Gli enti la cui produzione è prevalentemente di natura
+  territoriale risultano pertanto con un numero ridotto di dataset, o non risultano
+  affatto.</p>
+
   <p id="nota-fonte">Fonte: data.europa.eu (Metadata Quality Assessment), scala 0–405.
-  Giudizi: Excellent ≥ 351, Good ≥ 221, Sufficient ≥ 121, Bad sotto 121. Come si
-  compone il punteggio, controllo per controllo, è spiegato nella
-  <a href="https://data.europa.eu/mqa/methodology?locale=it">metodologia MQA</a>. Il punteggio
-  di un ente è la media dei punteggi dei suoi dataset: il portale europeo calcola
-  invece il punteggio di un dataset “rappresentativo”, quindi i due valori non
-  coincidono.</p>
-  <p><strong>Titolari</strong>: <code>dct:rightsHolder</code>, l’ente a cui i dati
-  appartengono davvero. E l’unico livello che riconosce chi pubblica tramite un
-  catalogo altrui — un Comune ospitato dal portale regionale, per esempio — e l’unico
-  con le cinque dimensioni. Arriva dall’endpoint SPARQL, non dall’API di ricerca.</p>
-  <p><strong>Organizzazioni</strong>: chi ospita il catalogo di origine, identificato
-  dall’UUID in <code>dcat:contactPoint</code>. Un Comune che pubblica sul portale
-  regionale compare qui sotto la Regione, e come titolare sotto il proprio nome.</p>
-  <p>data.europa.eu monitora invece <code>dct:publisher</code>, che su un catalogo
-  federato contiene uffici e redazioni: e il motivo per cui i numeri qui non
-  coincidono con quelli del portale europeo. Resta calcolato in
-  <code>mqa/storico.csv</code>, fuori da questa pagina.
-  Dati e codice: <a href="https://github.com/piersoft/mqa-monitor">github.com/piersoft/mqa-monitor</a>.</p>
+  Giudizi: Excellent ≥ 351, Good ≥ 221, Sufficient ≥ 121, Bad inferiore a 121. La
+  composizione del punteggio, controllo per controllo, è descritta nella
+  <a href="https://data.europa.eu/mqa/methodology?locale=it">metodologia MQA</a>. Il
+  punteggio attribuito a un ente è la media dei punteggi dei suoi dataset, mentre il
+  portale europeo calcola il punteggio di un dataset «rappresentativo»: i due valori
+  non coincidono.</p>
+
+  <p><strong>Titolari</strong>: <code>dct:rightsHolder</code>, l’ente cui i dati
+  appartengono. È l’unico livello che riconosce gli enti che pubblicano tramite il
+  catalogo di un altro soggetto — per esempio un Comune ospitato dal portale
+  regionale — e l’unico per cui sono disponibili le cinque dimensioni. Il dato
+  proviene dall’endpoint SPARQL e non dall’API di ricerca.</p>
+
+  <p><strong>Organizzazioni</strong>: il soggetto che ospita il catalogo di origine,
+  identificato dall’UUID in <code>dcat:contactPoint</code>. Un Comune che pubblica sul
+  portale regionale compare a questo livello sotto la Regione e, come titolare, sotto
+  la propria denominazione.</p>
+
+  <p>data.europa.eu aggrega invece per <code>dct:publisher</code>, che in un catalogo
+  federato contiene uffici e redazioni: è la ragione per cui i valori qui riportati
+  non coincidono con quelli del portale europeo. Il livello resta calcolato in
+  <code>mqa/storico.csv</code>, al di fuori della presente pagina.</p>
+
+  <p>Dati e codice: <a href="https://github.com/piersoft/mqa-monitor">github.com/piersoft/mqa-monitor</a>.</p>
 </footer>
 
 </div>
@@ -479,13 +493,13 @@ function dettaglio(e, i){
     <div>${graficoGrande(e.serie)}</div>
     ${dimensioni(e.dim)}
     ${e.ipa_ko ? `<p class="avviso" data-ipa="${e.id}">Il codice
-      <code>${e.id}</code> non risulta nell’Indice delle Pubbliche Amministrazioni.
-      Nei metadati dovrebbe esserci il codice IPA dell’ente, non la partita IVA o
-      la denominazione. <span class="cerca-ipa">cerco il codice giusto…</span></p>` : ''}
+      <code>${e.id}</code> non risulta nell’Indice delle Pubbliche
+      Amministrazioni. Nei metadati deve essere riportato il codice IPA dell’ente,
+      non la partita IVA né la denominazione. <span class="cerca-ipa">cerco il codice giusto…</span></p>` : ''}
     ${e.ipa_nome && e.ipa_nome.toLowerCase() !== e.nome.toLowerCase() ? `<p class="ufficiale">
-      In IPA questo codice risulta come <strong>${e.ipa_nome}</strong>${e.ipa_luogo ? ' — ' + e.ipa_luogo : ''}.</p>` : ''}
-    ${e.n_nomi ? `<p class="avviso">Nei metadati questo ente compare con
-      <strong>${e.n_nomi} denominazioni diverse</strong>. Qui usiamo la più
+      In IPA il codice risulta associato a <strong>${e.ipa_nome}</strong>${e.ipa_luogo ? ' — ' + e.ipa_luogo : ''}.</p>` : ''}
+    ${e.n_nomi ? `<p class="avviso">Nei metadati l’ente compare con
+      <strong>${e.n_nomi} denominazioni diverse</strong>: viene utilizzata la più
       frequente.</p>` : ''}
     <table class="rilevazioni">
       <tr><th>Rilevazione</th><th>Punteggio</th><th>Dataset</th></tr>${righe}
@@ -592,19 +606,20 @@ async function suggerisciCodice(codice, dove){
     if (!r.ok) throw new Error(r.status);
     const rec = (await r.json()).result.records || [];
     if (!rec.length){
-      dove.textContent = 'In IPA non risulta nessun ente con questo valore.';
+      dove.textContent = 'In IPA non risulta alcun ente con questo valore.';
       return;
     }
     if (rec.length === 1){
       const e = rec[0];
-      dove.innerHTML = `Sembra <strong>${e.Denominazione_ente}</strong>, il cui
-        codice IPA è <code>${e.Codice_IPA}</code>.`;
+      dove.innerHTML = `In IPA il valore corrisponde a
+        <strong>${e.Denominazione_ente}</strong>, codice IPA
+        <code>${e.Codice_IPA}</code>.`;
       return;
     }
     dove.innerHTML = 'In IPA corrisponde a più enti: ' +
       rec.map(e => `${e.Denominazione_ente} (<code>${e.Codice_IPA}</code>)`).join(', ') + '.';
   } catch (err) {
-    dove.textContent = 'IndicePA non ha risposto.';
+    dove.textContent = 'IndicePA non ha fornito risposta.';
   }
 }
 
