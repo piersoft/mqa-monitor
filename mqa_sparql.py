@@ -95,6 +95,15 @@ SELECT ?id ?nome (COUNT(DISTINCT ?ds) AS ?n) WHERE {
   GRAPH ?ds { ?ds dct:rightsHolder ?h . ?h dct:identifier ?id ; foaf:name ?nome }
 } GROUP BY ?id ?nome"""
 
+# Da quale catalogo arrivano i dataset di ciascun titolare (~3 secondi).
+# Serve a dire, quando e' vero, che un ente e' federato nel catalogo della
+# propria Regione: se i suoi dataset passano di li', vi e' presente.
+QUERY_PROVENIENZA = PREFISSI + """
+SELECT ?id ?cp (COUNT(DISTINCT ?ds) AS ?n) WHERE {
+  GRAPH <%s> { ?c dcat:dataset ?ds }
+  GRAPH ?ds { ?ds dct:rightsHolder ?h . ?h dct:identifier ?id . ?ds dcat:contactPoint ?cp }
+} GROUP BY ?id ?cp"""
+
 # elenco delle organizzazioni presenti nel catalogo (~6 secondi)
 QUERY_ELENCO_ORG = PREFISSI + """
 SELECT DISTINCT ?cp WHERE {
@@ -223,10 +232,27 @@ def nomi_titolari(catalog, verbose=True):
     return out
 
 
+def provenienza(catalog, mappa_org, verbose=True):
+    """id titolare -> insieme degli slug dei cataloghi che lo ospitano."""
+    d = interroga(QUERY_PROVENIENZA % (GRAFO % catalog), timeout=90)
+    per = {}
+    for b in d["results"]["bindings"]:
+        m = ORG_RE.search(b["cp"]["value"])
+        if not m:
+            continue
+        slug = (mappa_org.get(m.group(1)) or ("", ""))[0]
+        if slug:
+            per.setdefault(b["id"]["value"].lower(), set()).add(slug)
+    if verbose:
+        print("      provenienza risolta per %d titolari" % len(per))
+    return per
+
+
 def rileva_titolari(catalog, outdir=".", verbose=True):
     t0 = time.time()
     nomi = nomi_titolari(catalog, verbose)
     ipa = carica_ipa(outdir, verbose=verbose)
+    prov = provenienza(catalog, nomi_organizzazioni(outdir, catalog), verbose)
     d = interroga(QUERY_TITOLARI % (GRAFO % catalog), timeout=120, verbose=verbose)
     righe = d["results"]["bindings"]
     if verbose:
@@ -242,6 +268,7 @@ def rileva_titolari(catalog, outdir=".", verbose=True):
             "ipa_prov": voce["prov"] if voce else "",
             "ipa_reg": voce["reg"] if voce else "",
             "in_ipa": 1 if voce else 0,
+            "via": ";".join(sorted(prov.get(chiave.lower(), ()))),
         })
         breve = METRICHE.get(b["metrica"]["value"].split("#")[-1])
         if not breve:
@@ -308,7 +335,7 @@ def nomi_organizzazioni(outdir, catalog):
 
 CAMPI = ["id", "slug", "titolare", "n_dataset", "scoring", "pct", "findability",
          "accessibility", "interoperability", "reusability", "contextuality",
-         "n_nomi", "in_ipa", "ipa_nome", "ipa_prov", "ipa_reg"]
+         "n_nomi", "in_ipa", "ipa_nome", "ipa_prov", "ipa_reg", "via"]
 
 
 DIM_TUTTE = ["scoring", "findability", "accessibility", "interoperability",

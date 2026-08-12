@@ -208,6 +208,8 @@ tr.dettaglio td{background:var(--carta-alta);padding:20px 10px 26px}
 .scarica button:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
 .scarica .esito{font-family:var(--mono);font-size:11.5px;color:var(--tenue);margin-top:7px}
 .scarica .esito.male{color:var(--giu)}
+.federato{font-family:var(--testo);font-size:12.5px;color:#3d4d57;background:#eaeff1;
+  border-left:2px solid var(--su);padding:8px 11px;margin:0;max-width:46ch}
 .ufficiale{font-size:12.5px;color:#3d4d57;background:#eaeff1;border-left:2px solid var(--riga-forte);
   padding:8px 11px;margin:0 0 14px;max-width:46ch}
 .cerca-ipa{display:block;margin-top:6px}
@@ -370,6 +372,13 @@ footer p{max-width:78ch}
   regionale — e l’unico per cui sono disponibili le cinque dimensioni. Il dato
   proviene dall’endpoint SPARQL e non dall’API di ricerca.</p>
 
+  <p><strong>Federazione nel catalogo regionale.</strong> Quando i dataset di un
+  ente arrivano dal catalogo della propria Regione, il dettaglio lo segnala: l’ente
+  vi è federato. L’indicazione compare solo in questo caso. La sua assenza significa
+  che i dataset arrivano dal catalogo dell’ente stesso, il che per un Comune può
+  essere un’informazione e per un ente nazionale è la norma: la lettura è lasciata
+  a chi consulta.</p>
+
   <p><strong>Organizzazioni</strong>: il soggetto che ospita il catalogo di origine,
   identificato dall’UUID in <code>dcat:contactPoint</code>. Un Comune che pubblica sul
   portale regionale compare a questo livello sotto la Regione e, come titolare, sotto
@@ -470,6 +479,16 @@ function riga(e, i){
 /* la metodologia con cui data.europa.eu attribuisce i punteggi */
 const METODOLOGIA = 'https://data.europa.eu/mqa/methodology?locale=it';
 
+/* Si dichiara solo la presenza in un catalogo regionale, mai l'assenza: la
+   prima e' un'osservazione, la seconda sarebbe una deduzione che per molti enti
+   non reggerebbe. */
+function catalogoRegionale(e){
+  return e.reg
+    ? `<p class="federato">I dataset arrivano dal catalogo regionale
+       <strong>${e.reg}</strong>: l’ente vi è federato.</p>`
+    : '';
+}
+
 const MAX_DIM = {findability:100, accessibility:100, interoperability:110,
                  reusability:75, contextuality:20};
 const ETICH_DIM = {findability:'Reperibilità', accessibility:'Accessibilità',
@@ -503,6 +522,7 @@ function dettaglio(e, i){
       non la partita IVA né la denominazione. <span class="cerca-ipa">cerco il codice giusto…</span></p>` : ''}
     ${e.ipa_nome && e.ipa_nome.toLowerCase() !== e.nome.toLowerCase() ? `<p class="ufficiale">
       In IPA il codice risulta associato a <strong>${e.ipa_nome}</strong>${e.ipa_luogo ? ' — ' + e.ipa_luogo : ''}.</p>` : ''}
+    ${catalogoRegionale(e)}
     ${e.n_nomi ? `<p class="avviso">Nei metadati l’ente compare con
       <strong>${e.n_nomi} denominazioni diverse</strong>: viene utilizzata la più
       frequente.</p>` : ''}

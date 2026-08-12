@@ -35,6 +35,45 @@ DATA_CSV_RE = re.compile(r"_(\d{4}-\d{2}-\d{2})\.csv$")
 DIMENSIONI = ["findability", "accessibility", "interoperability",
               "reusability", "contextuality"]
 
+# Cataloghi regionali federati su dati.gov.it.
+#
+# Si dichiara soltanto la presenza, mai l'assenza: se i dataset di un ente
+# passano dal catalogo della sua Regione, l'ente vi e' federato, e questa e'
+# un'osservazione. Il contrario sarebbe una deduzione, e il censimento per
+# tipologia mostra che non reggerebbe: fra i 1.610 titolari passano da un
+# catalogo regionale enti di 32 tipologie diverse — non solo comuni, ma anche
+# ASL, camere di commercio, universita', agenzie regionali, fondazioni. Nessuna
+# regola per categoria distingue chi in un catalogo regionale ci si aspetta da
+# chi no. L'assenza della nota parla da se': per un Comune dice qualcosa, per
+# l'ISTAT e' ovvia.
+CATALOGHI_REGIONALI = {
+    "regione-piemonte": "Piemonte",
+    "regione-lombardia": "Lombardia",
+    "provincia-autonoma-di-trento": "Provincia Autonoma di Trento",
+    "provincia-autonoma-di-bolzano": "Provincia Autonoma di Bolzano",
+    "regione-veneto": "Veneto",
+    "regione-friuli-venezia-giulia": "Friuli-Venezia Giulia",
+    "regione-liguria": "Liguria",
+    "regione-emilia-romagna": "Emilia-Romagna",
+    "regione-toscana": "Toscana",
+    "regione-umbria": "Umbria",
+    "regione-marche": "Marche",
+    "regione-lazio": "Lazio",
+    "regione-campania": "Campania",
+    "regione-puglia": "Puglia",
+    "regione-basilicata": "Basilicata",
+    "regione-calabria": "Calabria",
+    "regione-siciliana": "Sicilia",
+}
+
+
+def catalogo_regionale(riga):
+    """Nome del catalogo regionale da cui arrivano i dataset, se e' cosi'."""
+    for v in (riga.get("via") or "").split(";"):
+        if v in CATALOGHI_REGIONALI:
+            return CATALOGHI_REGIONALI[v]
+    return None
+
 
 def leggi_snapshot(path):
     """[(org_uuid, org_slug, publisher, scoring), ...] dai dataset con scoring."""
@@ -135,6 +174,7 @@ def storico_sparql(outdir, catalog, cartella):
                     "rating": bucket(media),
                     "dim": dict((d, float(r[d])) for d in DIMENSIONI if r.get(d)),
                     "n_nomi": int(r["n_nomi"]) if r.get("n_nomi") else 0,
+                    "reg": catalogo_regionale(r),
                     "ipa": {
                         "in": r.get("in_ipa") == "1",
                         "nome": r.get("ipa_nome") or "",
@@ -163,6 +203,7 @@ def salva_storico(storici, outdir):
                     r.pop("dim", None)
                     r.pop("n_nomi", None)
                     r.pop("ipa", None)
+                    r.pop("reg", None)
                     w.writerow(r)
     return path
 
@@ -211,6 +252,8 @@ def blocco_livello(storico, date, livello=None):
                 v["n_nomi"] = r["n_nomi"]
             if r.get("ipa") is not None:
                 v["ipa"] = r["ipa"]
+            if r.get("reg"):
+                v["reg"] = r["reg"]
 
     presenti = [i for i, d in enumerate(date) if d in storico]
     ultimo_i = presenti[-1] if presenti else len(date) - 1
@@ -240,6 +283,8 @@ def blocco_livello(storico, date, livello=None):
         # identificate dall'UUID CKAN di dati.gov.it, che in IPA non deve
         # esserci. Senza questo controllo l'avviso "codice non valido" comparirebbe
         # su tutte e 398.
+        if livello == "holder" and v.get("reg"):
+            voce["reg"] = v["reg"]
         ipa = v.get("ipa") if livello == "holder" else None
         if ipa is not None:
             if not ipa["in"]:
