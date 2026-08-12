@@ -69,13 +69,24 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
 .legenda h2{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;
   text-transform:uppercase;color:var(--tenue);font-weight:500;margin:0 0 9px}
 .classi{list-style:none;margin:0;padding:0}
-.classi li{display:flex;align-items:center;gap:8px;padding:3px 0}
-.classi li.vuota{opacity:.42}
+.classi li{margin:0}
+.riga-classe{display:flex;align-items:center;gap:8px;width:100%;padding:5px 4px;
+  background:none;border:0;border-radius:0;text-align:left;cursor:pointer;
+  font:inherit;color:inherit}
+.riga-classe:hover{background:var(--carta)}
+.riga-classe:focus-visible{outline:2px solid var(--inchiostro);outline-offset:-2px}
+.riga-classe[aria-pressed="false"] .voce-classe,
+.riga-classe[aria-pressed="false"] .quanti{color:#a9b5bc}
+.riga-classe.vuota{opacity:.45}
 .voce-classe{font-family:var(--testo);font-size:12.5px;line-height:1.25}
 .voce-classe em{display:block;font-family:var(--mono);font-size:9.5px;font-style:normal;
   color:var(--tenue);letter-spacing:.05em;font-variant-numeric:tabular-nums}
 .quanti{margin-left:auto;font-family:var(--mono);font-size:11.5px;color:var(--tenue);
   font-variant-numeric:tabular-nums}
+.azzera{display:block;width:100%;margin-top:9px;padding:7px 8px;cursor:pointer;
+  background:var(--inchiostro);color:#fff;border:0;border-radius:0;
+  font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase}
+.azzera:focus-visible{outline:2px solid var(--inchiostro);outline-offset:2px}
 .scaglioni{display:flex;justify-content:space-between;font-family:var(--mono);
   font-size:10px;color:var(--tenue);margin-top:5px;font-variant-numeric:tabular-nums}
 .nota-legenda{font-family:var(--mono);font-size:10px;color:var(--tenue);
@@ -171,10 +182,10 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
    e resta stabile nel tempo: un ente cambia colore solo quando cambia
    davvero fascia, non a ogni decimo di punto. */
 var CLASSI_MQA = [
-  {min:351, nome:"Ottimo",      soglia:"351 – 405", colore:"#146b58"},
-  {min:221, nome:"Buono",       soglia:"221 – 350", colore:"#4b7f57"},
-  {min:121, nome:"Sufficiente", soglia:"121 – 220", colore:"#9a7328"},
-  {min:0,   nome:"Scarso",      soglia:"0 – 120",   colore:"#a63e28"}
+  {min:351, nome:"Ottimo",      soglia:"351 – 405", colore:"#1e8a5f"},
+  {min:221, nome:"Buono",       soglia:"221 – 350", colore:"#93b83a"},
+  {min:121, nome:"Sufficiente", soglia:"121 – 220", colore:"#e08a1e"},
+  {min:0,   nome:"Scarso",      soglia:"0 – 120",   colore:"#8c2f1d"}
 ];
 
 /* Classi per numero di dataset: ordini di grandezza, tinta diversa
@@ -211,7 +222,7 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.
   subdomains:"abcd", maxZoom:18, pane:"shadowPane", opacity:.8
 }).addTo(mappa);
 
-var stato = {metrica:"mqa", comuni:true, regioni:true};
+var stato = {metrica:"mqa", comuni:true, regioni:true, escluse:{}};
 var dati=null, geoRegioni=null, stratoRegioni=null, stratoComuni=null;
 var maxDatasetComune=1, maxDatasetRegione=1;
 
@@ -324,31 +335,51 @@ function popupComune(c){
 }
 
 /* ---------- legenda ---------- */
+/* ---------- filtro per classe ---------- */
+function elencoAttivo(){ return stato.metrica==="mqa" ? CLASSI_MQA : CLASSI_N; }
+function chiaveClasse(cl){ return stato.metrica+":"+cl.nome; }
+function visibile(valore){
+  var cl=classe(elencoAttivo(),valore);
+  return !stato.escluse[chiaveClasse(cl)];
+}
+function filtroAttivo(){
+  return elencoAttivo().some(function(cl){ return stato.escluse[chiaveClasse(cl)]; });
+}
+
+/* ---------- legenda ---------- */
 function legenda(){
   var el=document.getElementById("legenda");
   el.hidden=false;
   var perMqa = stato.metrica==="mqa";
-  var elenco = perMqa ? CLASSI_MQA : CLASSI_N;
+  var elenco = elencoAttivo();
 
   /* Il conteggio segue lo strato in primo piano: i comuni se accesi,
-     altrimenti i territori regionali. */
+     altrimenti i territori regionali. Resta il totale della classe,
+     non il filtrato, così si vede sempre quanti enti ci sono dentro. */
   var insieme = stato.comuni
     ? dati.comuni
     : dati.regioni.filter(function(r){ return r.catalogo; });
   var voce = stato.comuni ? "comuni" : "territori";
 
-  var html='<h2>'+(perMqa?"Punteggio MQA":"Numero di dataset")+'</h2><ul class="classi">';
+  var html='<h2>'+(perMqa?"Punteggio MQA":"Numero di dataset")+'</h2>'+
+    '<ul class="classi">';
   elenco.forEach(function(cl){
     var quanti=insieme.filter(function(x){
       return classe(elenco, perMqa?x.mqa:x.n)===cl;
     }).length;
-    html+='<li'+(quanti?"":' class="vuota"')+'>'+
-      '<span class="tassello" style="background:'+cl.colore+'"></span>'+
+    var spenta=!!stato.escluse[chiaveClasse(cl)];
+    html+='<li><button type="button" class="riga-classe'+(quanti?"":" vuota")+'"'+
+      ' data-classe="'+esc(cl.nome)+'" aria-pressed="'+(!spenta)+'">'+
+      '<span class="tassello" style="background:'+cl.colore+
+        (spenta?';opacity:.2':'')+'"></span>'+
       '<span class="voce-classe">'+cl.nome+
         (perMqa?'<em>'+cl.soglia+'</em>':'')+'</span>'+
-      '<span class="quanti">'+quanti+'</span></li>';
+      '<span class="quanti">'+quanti+'</span></button></li>';
   });
-  html+='</ul><p class="nota-legenda">Conteggio riferito a '+insieme.length+' '+voce+'</p>';
+  html+='</ul>';
+  html+=filtroAttivo()
+    ? '<button type="button" id="azzera" class="azzera">Mostra tutte le classi</button>'
+    : '<p class="nota-legenda">Tocca una classe per isolarla · '+insieme.length+' '+voce+'</p>';
 
   if(stato.comuni){
     html+='<div class="cerchi">'+
@@ -379,16 +410,45 @@ function aggiorna(){
     dati.regioni.forEach(function(r){ perTerr[r.terr]=r; });
     stratoRegioni.setStyle(function(f){
       var r=perTerr[f.properties.terr];
-      return {fillColor:r?coloreRegione(r):"#c3ccd1",
-              fillOpacity:r&&r.catalogo?.82:.5};
+      if(!r||!r.catalogo) return {fillColor:"#c3ccd1",fillOpacity:.5};
+      var mostra=visibile(stato.metrica==="mqa"?r.mqa:r.n);
+      return {fillColor:mostra?coloreRegione(r):"#dde4e8",
+              fillOpacity:mostra?.82:.22};
     });
   }
   if(stato.comuni){
-    stratoComuni.eachLayer(function(l){ l.setStyle({fillColor:coloreComune(l._dato)}); });
+    stratoComuni.eachLayer(function(l){
+      var c=l._dato;
+      var mostra=visibile(stato.metrica==="mqa"?c.mqa:c.n);
+      l.setStyle({fillColor:coloreComune(c),
+                  fillOpacity:mostra?.78:0,
+                  opacity:mostra?.85:0});
+      if(l._path) l._path.style.pointerEvents=mostra?"":"none";
+    });
   }
   legenda();
 }
 
+document.getElementById("legenda").addEventListener("click",function(e){
+  if(e.target.closest("#azzera")){ stato.escluse={}; aggiorna(); return; }
+  var b=e.target.closest("button[data-classe]");
+  if(!b) return;
+  var elenco=elencoAttivo();
+  var cl=elenco.filter(function(x){ return x.nome===b.dataset.classe; })[0];
+  if(!cl) return;
+  var k=chiaveClasse(cl);
+  /* Primo tocco quando sono tutte accese: isola la classe.
+     Tocchi successivi: accende e spegne la singola classe. */
+  if(!filtroAttivo()){
+    elenco.forEach(function(x){
+      if(x!==cl) stato.escluse[chiaveClasse(x)]=true;
+    });
+  }else{
+    if(stato.escluse[k]) delete stato.escluse[k];
+    else stato.escluse[k]=true;
+  }
+  aggiorna();
+});
 document.getElementById("metrica").addEventListener("change",function(e){
   stato.metrica=e.target.value; aggiorna();
 });
