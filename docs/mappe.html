@@ -520,13 +520,27 @@ function popupRegione(terr,r){
 /* ---------- strato comuni ---------- */
 function disegnaComuni(){
   stratoComuni=L.layerGroup();
-  dati.comuni.forEach(function(c){
+  /* I cerchi si disegnano dal piu' piccolo al piu' grande, cosi' i grandi
+     restano sopra. A bassa scala il cerchio di Milano copre i centroidi di 106
+     comuni: con l'ordine opposto, passandoci sopra compariva il nome di uno di
+     quelli invece che Milano. Il riempimento e' abbastanza trasparente da
+     lasciar vedere gli addensamenti sottostanti, e ingrandendo la mappa i
+     cerchi si separano e tornano tutti raggiungibili. */
+  dati.comuni.slice().sort(function(a,b){ return a.n-b.n; }).forEach(function(c){
+    /* I cerchi grandi stanno sotto e i piccoli sopra, come vuole la
+       convenzione dei simboli proporzionali: altrimenti un comune piccolo
+       vicino a uno grande sparirebbe. Con il riempimento troppo coperto pero'
+       le sovrapposizioni non si vedevano, e passando sul cerchio di Milano
+       compariva il nome di uno dei 106 comuni che a bassa scala gli cadono
+       dentro. Con il riempimento piu' leggero l'accavallamento si legge, e il
+       numero di dataset nel suggerimento dice subito di che cerchio si tratta. */
     var cerchio=L.circleMarker([c.lat,c.lon],{
-      radius:raggio(c), fillColor:coloreComune(c), fillOpacity:.78,
-      color:"#2c3d47", weight:.7, opacity:.85
+      radius:raggio(c), fillColor:coloreComune(c), fillOpacity:.55,
+      color:"#2c3d47", weight:.8, opacity:.9
     });
     cerchio.bindPopup(popupComune(c),{maxWidth:300});
-    cerchio.bindTooltip(c.nome,{direction:"top",offset:[0,-4]});
+    cerchio.bindTooltip(c.nome+" · "+num(c.n)+(c.n===1?" dataset":" dataset"),
+                        {direction:"top",offset:[0,-4]});
     cerchio._dato=c;
     stratoComuni.addLayer(cerchio);
   });
@@ -665,7 +679,7 @@ function aggiorna(){
       var mostra=visibileColore(stato.metrica==="mqa"?c.mqa:c.n)
                && visibileTaglia(c.n);
       l.setStyle({fillColor:coloreComune(c),
-                  fillOpacity:mostra?.78:0,
+                  fillOpacity:mostra?.55:0,
                   opacity:mostra?.85:0});
       if(l._path) l._path.style.pointerEvents=mostra?"":"none";
     });
