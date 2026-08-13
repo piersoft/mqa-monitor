@@ -17,6 +17,7 @@ Output: docs/maps_data.json
 
 import json
 import os
+import time
 import re
 import sys
 import unicodedata
@@ -119,10 +120,32 @@ def carica_json(path):
 
 
 def scarica_harvest():
-    """Elenco dei cataloghi federati su dati.gov.it."""
-    req = urllib.request.Request(HARVEST_API, headers={"User-Agent": "mqa-monitor/1.0"})
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        return json.load(resp)["result"]
+    """Elenco dei cataloghi federati su dati.gov.it, con copia locale.
+
+    L'API risponde 500 a intermittenza, e quando succede le mappe non venivano
+    piu' rigenerate: l'elenco dei cataloghi federati cambia pero' di rado — sono
+    17 e restano tali per mesi — quindi si conserva l'ultima risposta buona in
+    docs/harvest.json e la si riusa quando la chiamata fallisce. Se non c'e' ne'
+    rete ne' copia, allora si esce con errore: proseguire senza elenco
+    produrrebbe una mappa con tutte le regioni in grigio.
+    """
+    copia = os.path.join(HERE, "mqa", "harvest.json")
+    try:
+        req = urllib.request.Request(HARVEST_API,
+                                     headers={"User-Agent": "mqa-monitor/1.0"})
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            elenco = json.load(resp)["result"]
+        with open(copia, "w", encoding="utf-8") as fh:
+            json.dump(elenco, fh, ensure_ascii=False)
+        return elenco
+    except Exception as e:  # noqa: BLE001
+        if not os.path.exists(copia):
+            raise
+        eta = (time.time() - os.path.getmtime(copia)) / 86400
+        print("  elenco non raggiungibile (%s): uso la copia locale, %d giorni"
+              % (type(e).__name__, eta))
+        with open(copia, encoding="utf-8") as fh:
+            return json.load(fh)
 
 
 # --------------------------------------------------------------------------
