@@ -2,11 +2,19 @@ name: Monitoraggio MQA
 
 on:
   schedule:
-    # 06:00 UTC = 08:00 ora legale italiana (07:00 in ora solare)
-    # EDP ricalcola quasi ogni giorno: la rilevazione SPARQL gira tutti i giorni,
-    # lo scroll dell'API solo il lunedi (il .csv.gz e' gia compresso e non si
-    # comprime in git: 1 MB al giorno gonfierebbe il repo).
-    - cron: "0 6 * * *"
+    # EDP ricalcola quasi ogni giorno: la rilevazione SPARQL gira tutti i
+    # giorni, lo scroll dell'API solo il lunedi (il .csv.gz e' gia compresso e
+    # non si comprime in git: 1 MB al giorno gonfierebbe il repo).
+    #
+    # Due corse al giorno. La seconda serve a recuperare le giornate in cui il
+    # triplestore di data.europa.eu non risponde — succede: il 15 agosto ha
+    # dato 504 per ore. Se la rilevazione del giorno c'e' gia', il passo SPARQL
+    # viene saltato e la corsa pomeridiana non fa nulla.
+    #
+    # Minuti dispari perche' allo scoccare dell'ora la coda di GitHub e' piu'
+    # affollata; l'orario reale slitta comunque di qualche decina di minuti.
+    - cron: "17 6 * * *"     # 08:17 ora legale italiana, 07:17 in ora solare
+    - cron: "47 13 * * *"    # 15:47 ora legale italiana, 14:47 in ora solare
   workflow_dispatch:
     inputs:
       catalog:
@@ -73,7 +81,22 @@ jobs:
       # continue-on-error perche il lunedi lo scroll dell'API deve comunque
       # essere committato anche se il triplestore non risponde. Il controllo
       # esplicito piu sotto fa fallire il job se non e uscito nulla di nuovo.
+      - name: Serve la rilevazione?
+        id: serve
+        env:
+          CATALOG: ${{ inputs.catalog || 'dati-gov-it' }}
+        run: |
+          DAY=$(date -u +%F)
+          if [ -f "mqa/titolari/${CATALOG}_${DAY}.csv" ]; then
+            echo "la rilevazione del $DAY c'e' gia': salto la parte SPARQL"
+            echo "serve=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "nessuna rilevazione per il $DAY: procedo"
+            echo "serve=si" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Rilevazione SPARQL (titolari e organizzazioni)
+        if: steps.serve.outputs.serve == 'si'
         continue-on-error: true
         run: python3 mqa_sparql.py --catalog "${{ inputs.catalog || 'dati-gov-it' }}"
 
