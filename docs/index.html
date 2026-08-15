@@ -231,6 +231,16 @@ tr.dettaglio td{background:var(--carta-alta);padding:20px 10px 26px}
 .linea-asse{stroke:var(--riga);stroke-width:1}
 .serie{fill:none;stroke:var(--inchiostro);stroke-width:1.5}
 .punto{fill:var(--inchiostro)}
+.tocco{fill:transparent}
+.tocco:hover{fill:var(--inchiostro);fill-opacity:.08}
+.valore-punto{
+  flex-basis:100%;order:-1;min-height:20px;margin:-6px 0 2px;
+  font-family:var(--mono);font-size:12px;color:var(--inchiostro)
+}
+.valore-punto .scarto{font-weight:600}
+.valore-punto .scarto.su{color:var(--su)}
+.valore-punto .scarto.giu{color:var(--giu)}
+.valore-punto .scarto.fermo{color:var(--fermo);font-weight:400}
 
 /* Le note sono diventate parecchie: a piena larghezza le righe supererebbero i
    140 caratteri e diventerebbero faticose da leggere. Su schermo largo si
@@ -340,6 +350,11 @@ footer p{max-width:78ch}
   l’indisponibilità temporanea di un server, che riduce l’accessibilità per poi
   ripristinarla il giorno successivo.</p>
 
+  <p>Nel grafico del dettaglio, passando sopra un punto ne compaiono data,
+  punteggio, variazione rispetto alla rilevazione precedente e numero di dataset.
+  La scala verticale si adatta all’escursione della singola serie, non all’intero
+  intervallo 0–405: variazioni di pochi punti sarebbero altrimenti impercettibili.</p>
+
   <p>Il tracciato riportato in tabella rappresenta l’andamento delle rilevazioni con
   scala adattata al singolo ente: la linea tratteggiata corrisponde alla prima misura
   disponibile, i valori al di sopra indicano un miglioramento e quelli al di sotto un
@@ -446,9 +461,13 @@ function graficoGrande(serie, L, A){
   const x = i => n < 2 ? sx + (L-sx-dx)/2 : sx + (L-sx-dx) * (i/(n-1));
   const vals = serie.map(p => p[1]);
   let lo = Math.min(...vals), hi = Math.max(...vals);
-  if (hi - lo < 20){ const c=(hi+lo)/2; lo = Math.max(0, c-10); hi = Math.min(MAX, c+10); }
-  const m = (hi - lo) * 0.15;
-  lo = Math.max(0, lo - m); hi = Math.min(MAX, hi + m);
+  /* La finestra verticale segue l'escursione della serie invece di essere
+     fissa: con una banda di venti punti buona parte dei movimenti restava
+     schiacciata. Il minimo di due punti per lato serve alle serie piatte, che
+     altrimenti dividerebbero per zero. */
+  const mezza = Math.max((hi - lo) * 0.75, 2);
+  const c = (hi + lo) / 2;
+  lo = Math.max(0, c - mezza); hi = Math.min(MAX, c + mezza);
   const y = v => A - giu - (A-su-giu) * ((v - lo) / (hi - lo || 1));
   let s = `<svg viewBox="0 0 ${L} ${A}" role="img" aria-label="Serie storica del punteggio">`;
   [lo, (lo+hi)/2, hi].forEach(v => {
@@ -456,9 +475,16 @@ function graficoGrande(serie, L, A){
     s += `<text class="asse" x="${sx-8}" y="${y(v)+3.5}" text-anchor="end">${nf0.format(Math.round(v))}</text>`;
   });
   s += `<polyline class="serie" points="${serie.map(p=>`${x(p[0])},${y(p[1])}`).join(' ')}"/>`;
-  serie.forEach(p => {
+  serie.forEach((p, k) => {
     s += `<circle class="punto" cx="${x(p[0])}" cy="${y(p[1])}" r="2.5"/>`;
     s += `<text class="asse" x="${x(p[0])}" y="${A-8}" text-anchor="middle">${dataBreve(DATE[p[0]])}</text>`;
+    /* cerchio invisibile piu' largo del punto: serve solo a raccogliere il
+       passaggio del puntatore, che su un raggio di 2,5 px sarebbe una caccia */
+    const prec = k > 0 ? serie[k-1][1] : null;
+    const d = prec === null ? '' : (p[1] - prec).toFixed(1).replace('.', ',');
+    s += `<circle class="tocco" cx="${x(p[0])}" cy="${y(p[1])}" r="14"
+      data-data="${DATE[p[0]]}" data-val="${nf1.format(p[1])}"
+      data-n="${nf0.format(p[2])}" data-delta="${d}"/>`;
   });
   return s + '</svg>';
 }
@@ -507,6 +533,30 @@ function dimensioni(d){
     </div>`;
   }).join('');
   return `<div class="dimensioni"><h3><a href="${METODOLOGIA}">Dimensioni MQA</a></h3>${barre}</div>`;
+}
+
+/* Una riga di valori che segue il puntatore sul grafico: senza, per leggere un
+   punto bisognava contare le tacche o scendere alla tabella. */
+function agganciaGrafico(riga){
+  const svg = riga.querySelector('svg');
+  if (!svg) return;
+  const eti = document.createElement('div');
+  eti.className = 'valore-punto';
+  eti.hidden = true;
+  riga.querySelector('.dettaglio-corpo').appendChild(eti);
+
+  svg.addEventListener('mouseover', ev => {
+    const t = ev.target.closest('.tocco');
+    if (!t) return;
+    const d = t.dataset;
+    const v = d.delta === '' ? null : parseFloat(d.delta.replace(',', '.'));
+    const segno = v === null ? ''
+      : v === 0 ? ' <span class="scarto fermo">invariato</span>'
+      : ` <span class="scarto ${v > 0 ? 'su' : 'giu'}">${v > 0 ? '+' : ''}${d.delta}</span>`;
+    eti.innerHTML = `<strong>${d.data}</strong> · ${d.val}${segno} · ${d.n} dataset`;
+    eti.hidden = false;
+  });
+  svg.addEventListener('mouseleave', () => { eti.hidden = true; });
 }
 
 function dettaglio(e, i){
@@ -767,6 +817,7 @@ function apriChiudi(tr){
   document.querySelectorAll('.apri').forEach(b => b.setAttribute('aria-expanded','false'));
   const ente = window.__lista[+tr.dataset.i];
   tr.insertAdjacentHTML('afterend', dettaglio(ente, tr.dataset.i));
+  agganciaGrafico(tr.nextElementSibling);
   if (bottone) bottone.setAttribute('aria-expanded','true');
   aggiornaUrl(ente);
   const span = document.querySelector(`[data-ipa="${ente.id}"] .cerca-ipa`);
