@@ -41,10 +41,10 @@ Livello di aggregazione: **organizzazione (catalogo di origine)**
 | Regione Veneto | 6606 | 274.8 | Good | 0 |
 | Istituto Zooprofilattico Sperimentale del Mezzogiorno | 15 | 275.0 | Good | 0 |
 | Comune di Monterotondo | 12 | 275.0 | Good | 0 |
+| Agenzia Veneta per i Pagamenti Avepa | 7 | 275.0 | Good | 0 |
 | Agenzia Nazionale per la Sicurezza delle Ferrovie e delle Infrastrutture Stradali e Autostradali | 21 | 275.0 | Good | 0 |
 | Azienda Socio Sanitaria Territoriale Nord Milano | 10 | 275.0 | Good | 0 |
 | Unione dei Comuni Valdostani Monte Cervino | 5 | 275.0 | Good | 0 |
-| Agenzia Veneta per i Pagamenti Avepa | 7 | 275.0 | Good | 0 |
 | Roma Capitale | 359 | 275.1 | Good | 0 |
 | Regione Lazio | 407 | 275.5 | Good | 0 |
 | Comune di Torino | 2090 | 277.9 | Good | 0 |
@@ -56,8 +56,8 @@ Livello di aggregazione: **organizzazione (catalogo di origine)**
 | Comune di Chivasso | 33 | 301.4 | Good | 0 |
 | Provincia di Lodi | 78 | 301.7 | Good | 0 |
 | Regione Emilia Romagna | 2108 | 304.2 | Good | 0 |
-| Comune di Baiso | 35 | 305.0 | Good | 0 |
-| Comune di Casalgrande | 28 | 305.0 | Good | 0 |
-| Comune di Castellarano | 38 | 305.0 | Good | 0 |
-| Comune di Sassuolo | 85 | 305.0 | Good | 0 |
-| Comune di Caselle Torinese | 31 | 305.0 | Good | 0 |
+| Comune di Baronissi | 27 | 305.0 | Good | 0 |
+| Comune di Formigine | 86 | 305.0 | Good | 0 |
+| Comune di Casamassima | 38 | 305.0 | Good | 0 |
+| Comune di Cormano | 33 | 305.0 | Good | 0 |
+| Comune di Nova Milanese | 43 | 305.0 | Good | 0 |
