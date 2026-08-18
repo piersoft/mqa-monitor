@@ -264,6 +264,9 @@ footer p{max-width:78ch}
   header{padding-top:30px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.valore-punto{min-height:1.45em}
+.valore-punto.riposo{color:var(--tenue)}
+.valore-punto.riposo strong{font-weight:500}
 </style>
 </head>
 <body>
@@ -542,21 +545,32 @@ function agganciaGrafico(riga){
   if (!svg) return;
   const eti = document.createElement('div');
   eti.className = 'valore-punto';
-  eti.hidden = true;
   riga.querySelector('.dettaglio-corpo').appendChild(eti);
+  const tocchi = svg.querySelectorAll('.tocco');
+  const ultimo = tocchi[tocchi.length - 1];
 
-  svg.addEventListener('mouseover', ev => {
-    const t = ev.target.closest('.tocco');
-    if (!t) return;
+  /* L'etichetta non viene mai nascosta: a riposo mostra l'ultima
+     rilevazione. Nascondendola il grafico risaliva, il punto usciva da
+     sotto il puntatore e partiva un rimbalzo fra hover e layout. */
+  const scrivi = (t, riposo) => {
     const d = t.dataset;
     const v = d.delta === '' ? null : parseFloat(d.delta.replace(',', '.'));
     const segno = v === null ? ''
       : v === 0 ? ' <span class="scarto fermo">invariato</span>'
       : ` <span class="scarto ${v > 0 ? 'su' : 'giu'}">${v > 0 ? '+' : ''}${d.delta}</span>`;
+    eti.className = riposo ? 'valore-punto riposo' : 'valore-punto';
     eti.innerHTML = `<strong>${d.data}</strong> · ${d.val}${segno} · ${d.n} dataset`;
-    eti.hidden = false;
+  };
+  const aRiposo = () => {
+    if (ultimo) scrivi(ultimo, true);
+    else { eti.className = 'valore-punto riposo'; eti.innerHTML = '&nbsp;'; }
+  };
+  svg.addEventListener('mouseover', ev => {
+    const t = ev.target.closest('.tocco');
+    if (t) scrivi(t, false);
   });
-  svg.addEventListener('mouseleave', () => { eti.hidden = true; });
+  svg.addEventListener('mouseleave', aRiposo);
+  aRiposo();
 }
 
 function dettaglio(e, i){
