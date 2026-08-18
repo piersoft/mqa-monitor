@@ -267,6 +267,8 @@ footer p{max-width:78ch}
 .valore-punto{min-height:1.45em}
 .valore-punto.riposo{color:var(--tenue)}
 .valore-punto.riposo strong{font-weight:500}
+.scatto-giu{display:block;margin-top:3px;font-family:var(--mono);font-size:10px;
+  letter-spacing:.02em;color:var(--giu);white-space:nowrap}
 </style>
 </head>
 <body>
@@ -458,6 +460,16 @@ function segnoDelta(d){
   return `<span class="delta ${cls}">${seg} ${nf1.format(Math.abs(d))}</span>`;
 }
 
+/* Un calo nell'ultima misura puo' restare invisibile dietro un delta
+   settimanale positivo: qui viene segnalato sotto il numero a sette giorni.
+   Solo le discese: serve da avviso, non da seconda metrica. */
+function scattoGiu(e){
+  const v = e.delta1;
+  if (v === null || v === undefined || v > -1) return '';
+  return `<span class="scatto-giu" title="Scostamento rispetto alla rilevazione precedente"
+    >\u25bc ${nf1.format(Math.abs(v))} sull\u2019ultima</span>`;
+}
+
 function graficoGrande(serie, L, A){
   L = L || 540; A = A || 150;
   const sx = 40, dx = 12, su = 12, giu = 26;
@@ -501,7 +513,7 @@ function riga(e, i){
     </button></td>
     <td class="num conta">${nf0.format(e.n)}</td>
     <td class="num punteggio">${nf1.format(e.media)}</td>
-    <td class="num">${segnoDelta(e.delta)}</td>
+    <td class="num">${segnoDelta(e.delta)}${scattoGiu(e)}</td>
     <td class="nascondi-stretto">${tracciato(e.serie)}</td>
     <td class="nascondi-stretto"><span class="giudizio ${e.rating}">${e.rating}</span></td>
   </tr>`;
