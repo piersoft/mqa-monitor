@@ -24,8 +24,8 @@ c_h183,,Comune di Rapallo,8,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Comune di
 01796490744,,GAL Terra dei Messapi,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,0,,,,gal-terra-dei-messapi
 c_e020,,Comune di Giaveno,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Comune di Giaveno,TO,Piemonte,comune-di-giaveno
 c_e047,,Comune di Giovinazzo,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Comune di Giovinazzo,BA,Puglia,comune-di-giovinazzo
-c_g997,,Comune di Pratiglione,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Comune di Pratiglione,TO,Piemonte,regione-piemonte
 c_f916,,Comune di Nociglia,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Comune di Nociglia,LE,Puglia,regione-puglia
+c_g997,,Comune di Pratiglione,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Comune di Pratiglione,TO,Piemonte,regione-piemonte
 uni_bo,,Alma Mater Studiorum - University of Bologna,2,385.0,95.06,100.0,100.0,90.0,75.0,20.0,2,1,Alma Mater Studiorum - Universita' di Bologna,BO,Emilia-Romagna,universita-di-bologna
 cm_valtetir,,Comunità Montana Valtellina di Tirano,11,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,COMUNITA' MONTANA VALTELLINA DI TIRANO,SO,Lombardia,comunita-montana-valtellina-di-tirano
 c_b946,,Comune di Casavatore,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Comune di Casavatore,NA,Campania,comune-di-casavatore
@@ -84,8 +84,8 @@ c_l115,,Comune di San Pietro in Lama,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,
 c_g674,,Comune di Pinerolo,17,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Comune di Pinerolo,TO,Piemonte,regione-piemonte
 c_a182,,Comune di Alessandria,7,385.0,95.06,100.0,100.0,90.0,75.0,20.0,2,1,Comune di Alessandria,AL,Piemonte,comune-di-alessandria;regione-piemonte
 pm,,Politecnico di Milano,25,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Politecnico di Milano,MI,Lombardia,politecnico-di-milano
-izs_loer,,"Istituto Zooprofilattico Sperimentale della Lombardia e dell'Emilia Romagna ""Bruno Ubertini""",11,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Istituto Zooprofilattico Sperimentale della Lombardia e dell'Emilia Romagna Bruno Ubertini,BS,Lombardia,istituto-zooprofilattico-sperimentale-della-lombardia-e-dell-emilia-romagna-bruno-ubertini
 astvp,,Agenzia di Tutela della Salute della Val Padana,13,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Agenzia di Tutela della Salute della Val Padana,MN,Lombardia,agenzia-di-tutela-della-salute-della-val-padana
+izs_loer,,"Istituto Zooprofilattico Sperimentale della Lombardia e dell'Emilia Romagna ""Bruno Ubertini""",11,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Istituto Zooprofilattico Sperimentale della Lombardia e dell'Emilia Romagna Bruno Ubertini,BS,Lombardia,istituto-zooprofilattico-sperimentale-della-lombardia-e-dell-emilia-romagna-bruno-ubertini
 ucve,,Unione dei Comuni valdostani Evancon,5,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Unione Dei Comuni Valdostani Evancon,AO,Valle d'Aosta/Vallée d'Aoste,unione-dei-comuni-valdostani-evancon
 c_a125,,Comune di Alba Adriatica,4,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Comune di Alba Adriatica,TE,Abruzzo,comune-di-alba-adriatica
 c_b791,,Comune di Carmagnola,3,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Comune di Carmagnola,TO,Piemonte,regione-piemonte
@@ -274,8 +274,8 @@ c_l801,,Comune di Verzegnis,9,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune 
 m_bac-p7foab,,Biblioteca nazionale centrale di firenze,1,355.0,87.65,100.0,70.0,90.0,75.0,20.0,1,0,,,,ministero-dei-beni-culturali
 cciaa_fg,,"Camera di Commercio, Industria, Artigianato e Agricoltura di Foggia",14,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,"Camera di Commercio, Industria, Artigianato e Agricoltura di Foggia",FG,Puglia,unione-italiana-delle-camere-di-commercio-industria-artigianato-e-agricoltura
 arpas_ca,,Agenzia Regionale per la Protezione dell'Ambiente della Sardegna,12,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Agenzia Regionale per la Protezione dell'Ambiente della Sardegna,CA,Sardegna,agenzia-regionale-per-la-protezione-dell-ambiente-della-sardegna
-c_c918,,Comune di Comeglians,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Comeglians,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 aci_037,,ASP Circondario Imolese,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Asp Circondario Imolese,BO,Emilia-Romagna,regione-emilia-romagna
+c_c918,,Comune di Comeglians,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Comeglians,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 c_i939,,Comune di Staranzano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Staranzano,GO,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 c_g768,,Comune di Poggio Renatico,22,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Poggio Renatico,FE,Emilia-Romagna,boxxapps
 umape,,Unione Montana Appennino Parma Est,5,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Unione Montana Appennino Parma Est,PR,Emilia-Romagna,regione-emilia-romagna
@@ -320,8 +320,8 @@ c_l144,,Comune di Terzo di Aquileia,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1
 c_e476,,Comune di Lauco,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Lauco,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 c_e473,,Comune di Latisana,14,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Latisana,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 c_e957,,Comune di Marineo,8,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Marineo,PA,Sicilia,boxxapps
-c_c389,,Comune di Cavazzo Carnico,9,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Cavazzo Carnico,UD,Friuli-Venezia Giulia,boxxapps;regione-friuli-venezia-giulia
 c_i562,,Comune di Sedegliano,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Sedegliano,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
+c_c389,,Comune di Cavazzo Carnico,9,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Cavazzo Carnico,UD,Friuli-Venezia Giulia,boxxapps;regione-friuli-venezia-giulia
 f_756,,Comune di Mortegliano,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Mortegliano,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 c_e410,,Comune di Lagosanto,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Lagosanto,FE,Emilia-Romagna,boxxapps
 c_m399,,Comune di Treppo Ligosullo,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Treppo Ligosullo,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
@@ -348,8 +348,8 @@ c_e289,,Comune di Imola,16,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di 
 c_l725,,Comune di Venafro,10,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Venafro,IS,Molise,comune-di-venafro
 c_e629,,Comune di Lizzanello,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Lizzanello,LE,Puglia,boxxapps
 c_l703,,Comune di Vedano Olona,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Vedano Olona,VA,Lombardia,comune-di-vedano-olona
-c_e899,,Comune di Manzano,21,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Manzano,UD,Friuli-Venezia Giulia,boxxapps;regione-friuli-venezia-giulia
 cciaa_cs,,"Camera di Commercio, Industria, Artigianato e Agricoltura di Cosenza",9,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,"Camera di Commercio, Industria, Artigianato e Agricoltura di Cosenza",CS,Calabria,unione-italiana-delle-camere-di-commercio-industria-artigianato-e-agricoltura
+c_e899,,Comune di Manzano,21,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Manzano,UD,Friuli-Venezia Giulia,boxxapps;regione-friuli-venezia-giulia
 unito,,Università di Torino,14,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Universita' degli Studi di Torino,TO,Piemonte,universita-di-torino
 c_d455,,Comune di Faedis,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Faedis,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 c_b247,,Comune di Budoia,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Budoia,PN,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
@@ -503,8 +503,8 @@ uni_pa,,Università degli Studi di Palermo,19,355.0,87.65,100.0,100.0,60.0,75.0,
 c_f760,,Comune di Moruzzo,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Moruzzo,UD,Friuli-Venezia Giulia,boxxapps
 ccmt,,Camera di Commercio della Maremma e del Tirreno,31,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Camera di Commercio della Maremma e del Tirreno,LI,Toscana,unione-italiana-delle-camere-di-commercio-industria-artigianato-e-agricoltura
 c_b033,,Comune di Borgo San Dalmazzo,3,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Borgo San Dalmazzo,CN,Piemonte,comune-di-borgo-san-dalmazzo
-nucir_im,,Nuovo Circondario Imolese,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Nuovo Circondario Imolese,BO,Emilia-Romagna,regione-emilia-romagna
 c_l473,,Comune di Turri,17,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Turri,VS,Sardegna,boxxapps
+nucir_im,,Nuovo Circondario Imolese,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Nuovo Circondario Imolese,BO,Emilia-Romagna,regione-emilia-romagna
 c_h787,,Comune di San Canzian d'Isonzo,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di San Canzian d'Isonzo,GO,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 c_a346,,Comune di Aquileia,2,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Comune di Aquileia,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 um_acqua,,Unione dei Comuni della Romagna Forlivese - Unione Montana,4,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Unione dei Comuni della Romagna Forlivese - Unione Montana,FC,Emilia-Romagna,regione-emilia-romagna
@@ -628,7 +628,6 @@ udsb_pz,,Università della Basilicata,29,343.97,84.93,100.0,88.97,60.0,75.0,20.0
 c_a739,,Comune di Belforte del Chienti,54,343.89,84.91,100.0,91.11,57.78,75.0,20.0,1,1,Comune di Belforte del Chienti,MC,Marche,regione-marche
 c_f567,,Comune di Pollenza,61,343.85,84.9,100.0,92.13,56.72,75.0,20.0,1,1,Comune di Pollenza,MC,Marche,regione-marche
 c_d042,,Comune di Corridonia,78,343.72,84.87,100.0,91.79,56.92,75.0,20.0,1,1,Comune di Corridonia,MC,Marche,regione-marche
-c_f205,,Comune di Milano,2599,343.68,84.86,100.0,90.82,57.87,75.0,20.0,1,1,Comune di Milano,MI,Lombardia,comune-di-milano
 c_d027,,Comune di Corno di Rosazzo,7,343.57,84.83,100.0,88.57,60.0,75.0,20.0,1,1,Comune di Corno di Rosazzo,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 aspa_bz,,Azienda Sanitaria dell'Alto Adige,6,343.33,84.77,100.0,100.0,56.67,66.67,20.0,2,1,Azienda Sanitaria dell'Alto Adige - Suedtiroler Sanitaetsbetrieb,BZ,Trentino-Alto Adige/Südtirol,provincia-autonoma-di-bolzano
 c_e228,,COMUNE DI Gualdo,44,343.18,84.74,100.0,90.91,57.27,75.0,20.0,1,1,Comune di Gualdo,MC,Marche,regione-marche
@@ -639,7 +638,7 @@ c_c621,,Comune di Chiavari,53,342.74,84.63,100.0,57.74,90.0,75.0,20.0,1,1,Comune
 c_b474,,Comune di Camerino,81,342.41,84.55,100.0,91.11,56.3,75.0,20.0,1,1,Comune di Camerino,MC,Marche,regione-marche
 c_e671,,Comune di Longare,15,342.33,84.53,100.0,57.33,90.0,75.0,20.0,1,1,Comune di Longare,VI,Veneto,comune-di-longare
 aa1d3a2,,PCM - Dipartimento per la trasformazione digitale,27,342.04,84.45,100.0,97.04,60.0,65.0,20.0,1,0,,,,pcm-dipartimento-trasformazione-digitale
-c_d612,,Comune di Firenze,1990,342.01,84.45,100.0,61.68,85.35,74.98,19.99,1,1,Comune di Firenze,FI,Toscana,regione-toscana
+c_d612,,Comune di Firenze,1990,342.02,84.45,100.0,61.68,85.36,74.98,19.99,1,1,Comune di Firenze,FI,Toscana,regione-toscana
 c_h876,,Comune di San Ginesio,63,341.98,84.44,100.0,89.84,57.14,75.0,20.0,1,1,Comune di San Ginesio,MC,Marche,regione-marche
 c_d628,,Comune di Fiuminata,58,341.9,84.42,100.0,90.34,56.55,75.0,20.0,1,1,Comune di Fiuminata,MC,Marche,regione-marche
 c_b598,,Comune di Caneva,6,341.67,84.36,100.0,86.67,60.0,75.0,20.0,1,1,Comune di Caneva,PN,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
@@ -713,6 +712,7 @@ c_a354,,Comune di Arba,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0,1,1,Comune di A
 c_a855,,Comune di Bicinicco,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0,1,1,Comune di Bicinicco,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 c_m311,,Comune di Campolongo Tapogliano,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0,1,1,Comune di Campolongo Tapogliano,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 c_f089,,Comune di Meduno,3,328.33,81.07,100.0,73.33,60.0,75.0,20.0,1,1,Comune di Meduno,PN,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
+c_f205,,Comune di Milano,2599,327.33,80.82,100.0,74.68,57.65,75.0,20.0,1,1,Comune di Milano,MI,Lombardia,comune-di-milano
 ls_ca,,Agenzia Laore Sardegna,12,326.67,80.66,100.0,71.67,60.0,75.0,20.0,1,1,Laore Sardegna,CA,Sardegna,agenzia-laore-sardegna
 c_i726,,Comune di Siena,328,325.67,80.41,100.0,56.04,74.63,75.0,20.0,1,1,Comune di Siena,SI,Toscana,regione-toscana
 c_i225,,Comune di Santa Margherita Ligure,56,325.54,80.38,100.0,40.54,90.0,75.0,20.0,1,1,Comune di Santa Margherita Ligure,GE,Liguria,comune-di-santa-margherita-ligure
@@ -1011,8 +1011,8 @@ unione montana del bassanese,,Unione Montana Del Bassanese,3,275.0,67.9,100.0,20
 comune di teolo,,Comune di Teolo,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 its_022,,Trentino Digitale Spa,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Trentino Digitale S.p.a.,TN,Trentino-Alto Adige/Südtirol,provincia-autonoma-di-trento
 comune di salcedo,,Comune di Salcedo,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
-comune di minerbe,,Comune di Minerbe,29,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di calvene,,Comune di Calvene,14,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
+comune di minerbe,,Comune di Minerbe,29,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di noventa padovana,,Comune di Noventa Padovana,20,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di torrebelvicino,,Comune di Torrebelvicino,34,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di legnaro,,Comune di Legnaro,22,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
@@ -1034,13 +1034,13 @@ comune di tregnago,,Comune di Tregnago,13,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1
 c_d829,,Comune di Fusignano,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Fusignano,RA,Emilia-Romagna,regione-emilia-romagna
 comune di gorgo al monticano,,Comune di Gorgo al Monticano,30,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di bolzano vicentino,,Comune di Bolzano Vicentino,15,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
-comune di laghi,,Comune di Laghi,12,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 c_f611,,Comune di Monterotondo,12,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Monterotondo,RM,Lazio,comune-di-monterotondo
+comune di laghi,,Comune di Laghi,12,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di crocetta del montello,,Comune di Crocetta del Montello,32,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 c_f574,,Comune di Montenars,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Montenars,UD,Friuli-Venezia Giulia,regione-friuli-venezia-giulia
 collegio regionale veneto guide alpine,,Collegio Regionale Veneto Guide Alpine,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
-c_i758,,Comune di Sirolo,53,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Sirolo,AN,Marche,regione-marche
 comune di santa caterina d'este,,Comune di Santa Caterina d'Este,14,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
+c_i758,,Comune di Sirolo,53,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Sirolo,AN,Marche,regione-marche
 comune di sanguinetto,,Comune di Sanguinetto,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di isola vicentina,,Comune di Isola Vicentina,19,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 cpc,,Comunità di Primiero,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comunita' di Primiero,TN,Trentino-Alto Adige/Südtirol,provincia-autonoma-di-trento
@@ -1054,9 +1054,9 @@ comune di sovizzo,,Comune di Sovizzo,13,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0
 comune di villanova di camposampiero,,Comune di Villanova di Camposampiero,3,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di curtarolo,,Comune di Curtarolo,19,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 c_l344,,Comune di Sant'Ippolito,12,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Sant'Ippolito,PU,Marche,regione-marche
+cdcoame,,Comune di Colli al Metauro,36,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Colli al Metauro,PU,Marche,regione-marche
 comune di valdastico,,Comune di Valdastico,31,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di sarego,,Comune di Sarego,39,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
-cdcoame,,Comune di Colli al Metauro,36,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Colli al Metauro,PU,Marche,regione-marche
 comune di possagno,,Comune di Possagno,31,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di rivoli veronese,,Comune di Rivoli Veronese,18,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 c_g803,,Comune di Polverigi,60,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Polverigi,AN,Marche,regione-marche
@@ -1078,12 +1078,12 @@ federazione dei comuni del camposampierese,,Federazione dei Comuni del Camposamp
 comune di arqua' petrarca,,Comune di Arqua' Petrarca,17,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 c_a551,,Comune di Bagnara di Romagna,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Bagnara di Romagna,RA,Emilia-Romagna,regione-emilia-romagna
 comune di vittorio veneto,,Comune di Vittorio Veneto,6,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
-comune di villa bartolomea,,Comune di Villa Bartolomea,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 c_d791,,COMUNE DI Fratte Rosa,10,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Fratte Rosa,PU,Marche,regione-marche
+comune di villa bartolomea,,Comune di Villa Bartolomea,7,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 c_f348,,COMUNE DI Mondolfo,52,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Mondolfo,PU,Marche,regione-marche
 comune di conegliano,,Comune di Conegliano,24,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
-comune di san fior,,Comune di San Fior,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 c_f474,,COMUNE DI Monteciccardo,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-marche
+comune di san fior,,Comune di San Fior,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di rotzo,,Comune di Rotzo,5,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di susegana,,Comune di Susegana,4,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di montegrotto terme,,Comune di Montegrotto Terme,9,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
@@ -1106,8 +1106,8 @@ comune di oderzo,,Comune di Oderzo,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,
 c_a191,,Comune di Alfonsine,8,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Alfonsine,RA,Emilia-Romagna,regione-emilia-romagna
 comune di  nervesa della battaglia,,Comune di  Nervesa della Battaglia,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di vigasio,,Comune di Vigasio,20,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
-comune di albaredo d'adige,,Comune di Albaredo d'Adige,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di negrar di valpolicella,,Comune di Negrar di Valpolicella,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
+comune di albaredo d'adige,,Comune di Albaredo d'Adige,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di piacenza d'adige,,Comune di Piacenza D'adige,28,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di schio,,Comune di Schio,43,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di farra di soligo,,Comune di Farra di Soligo,23,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
@@ -1130,8 +1130,8 @@ comune di barbona,,Comune di Barbona,10,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0
 comune di pernumia,,Comune di Pernumia,11,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di rovere veronese,,Comune di Rovere Veronese,36,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di san pietro in cariano,,Comune di San Pietro in Cariano,24,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
-comune di lazise,,Comune di Lazise,39,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 cm_esino,,Unione Montana esino frasassi,6,275.0,67.9,100.0,33.33,46.67,75.0,20.0,1,1,Unione Montana dell'Esino Frasassi,AN,Marche,regione-marche
+comune di lazise,,Comune di Lazise,39,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di camponogara,,Comune di Camponogara,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di san giovanni lupatoto,,Comune di San Giovanni Lupatoto,14,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di campolongo maggiore,,Comune di Campolongo Maggiore,15,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
@@ -1170,14 +1170,14 @@ altro,,Altro,2,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 asstnm,,Azienda Socio Sanitaria Territoriale Nord Milano,10,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Azienda Socio Sanitaria Territoriale Nord Milano,MI,Lombardia,azienda-socio-sanitaria-territoriale-nord-milano
 comune di chiuppano,,Comune di Chiuppano,27,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di grumolo delle abbadesse,,Comune di Grumolo delle Abbadesse,21,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
-comune di gambellara,,Comune di Gambellara,38,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 c_d749,,COMUNE DI Fossombrone,23,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Fossombrone,PU,Marche,regione-marche
+comune di gambellara,,Comune di Gambellara,38,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di gazzo veronese,,Comune di Gazzo Veronese,19,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di san pietro di morubio,,Comune di San Pietro di Morubio,26,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di trecenta,,Comune di Trecenta,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di ceneselli,,Comune di Ceneselli,17,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
-comune di legnago,,Comune di Legnago,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di  moriago della battaglia,,Comune di  Moriago della Battaglia,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
+comune di legnago,,Comune di Legnago,16,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di pieve del grappa,,Comune di Pieve del Grappa,31,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di roveredo di gua,,Comune di Roveredo Di Gua,17,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
 comune di monfumo,,Comune di Monfumo,34,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,regione-veneto
