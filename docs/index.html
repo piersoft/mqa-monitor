@@ -304,8 +304,10 @@ footer p{max-width:78ch}
   <select id="ordina" aria-label="Ordinamento">
     <option value="media-desc">Punteggio, dal più alto</option>
     <option value="media-asc">Punteggio, dal più basso</option>
-    <option value="delta-asc">Chi scende di più</option>
-    <option value="delta-desc">Chi sale di più</option>
+    <option value="delta-asc">Chi scende di più (7 giorni)</option>
+    <option value="delta-desc">Chi sale di più (7 giorni)</option>
+    <option value="delta1-asc">Chi è sceso nell’ultima rilevazione</option>
+    <option value="delta1-desc">Chi è salito nell’ultima rilevazione</option>
     <option value="n-desc">Numero di dataset</option>
     <option value="nome-asc">Nome</option>
   </select>
@@ -633,11 +635,16 @@ function disegna(){
   );
 
   const d = e => (e.delta === null || e.delta === undefined) ? 0 : e.delta;
+  /* Scostamento dalla rilevazione precedente: la settimana nasconde i cali
+     improvvisi quando la tendenza complessiva resta in salita. */
+  const d1 = e => (e.delta1 === null || e.delta1 === undefined) ? 0 : e.delta1;
   const ordini = {
     'media-desc': (a,b) => b.media - a.media,
     'media-asc':  (a,b) => a.media - b.media,
     'delta-asc':  (a,b) => d(a) - d(b),
     'delta-desc': (a,b) => d(b) - d(a),
+    'delta1-asc':  (a,b) => d1(a) - d1(b),
+    'delta1-desc': (a,b) => d1(b) - d1(a),
     'n-desc':     (a,b) => b.n - a.n,
     'nome-asc':   (a,b) => a.nome.localeCompare(b.nome, 'it'),
   };

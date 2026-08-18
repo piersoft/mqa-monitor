@@ -261,6 +261,12 @@ def blocco_livello(storico, date, livello=None):
     if rif is not None and rif not in presenti:
         candidati = [i for i in presenti if i < ultimo_i]
         rif = candidati[-1] if candidati else None
+    # Rilevazione immediatamente precedente: serve a intercettare i cali
+    # improvvisi, che il confronto a sette giorni nasconde quando la
+    # tendenza settimanale resta positiva.
+    anteriori = [i for i in presenti if i < ultimo_i]
+    prec_i = anteriori[-1] if anteriori else None
+
     lista = []
     for chiave, v in voci.items():
         ultimo = v["punti"].get(ultimo_i)
@@ -271,6 +277,8 @@ def blocco_livello(storico, date, livello=None):
             "id": chiave, "nome": v["nome"], "slug": v["slug"],
             "media": ultimo[0], "n": ultimo[1],
             "delta": round(ultimo[0] - prec[0], 1) if prec else None,
+            "delta1": (round(ultimo[0] - v["punti"][prec_i][0], 1)
+                       if prec_i is not None and v["punti"].get(prec_i) else None),
             "rating": bucket(ultimo[0]),
             "serie": [[i, v["punti"][i][0], v["punti"][i][1]]
                       for i in sorted(v["punti"])],
