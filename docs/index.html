@@ -476,6 +476,11 @@ function graficoGrande(serie, L, A){
   if (!serie.length) return '';
   const n = DATE.length;
   const x = i => n < 2 ? sx + (L-sx-dx)/2 : sx + (L-sx-dx) * (i/(n-1));
+  /* Una data ogni quante rilevazioni: con una etichetta per punto, oltre le
+     quindici si sovrappongono. Trentaquattro pixel sono la larghezza di
+     "22/08" piu' un margine di respiro. */
+  const quante = Math.max(1, Math.floor((L-sx-dx) / 34));
+  const passo = Math.max(1, Math.ceil(n / quante));
   const vals = serie.map(p => p[1]);
   let lo = Math.min(...vals), hi = Math.max(...vals);
   /* La finestra verticale segue l'escursione della serie invece di essere
@@ -494,7 +499,10 @@ function graficoGrande(serie, L, A){
   s += `<polyline class="serie" points="${serie.map(p=>`${x(p[0])},${y(p[1])}`).join(' ')}"/>`;
   serie.forEach((p, k) => {
     s += `<circle class="punto" cx="${x(p[0])}" cy="${y(p[1])}" r="2.5"/>`;
-    s += `<text class="asse" x="${x(p[0])}" y="${A-8}" text-anchor="middle">${dataBreve(DATE[p[0]])}</text>`;
+    /* si conta a ritroso dall'ultima, cosi' la rilevazione piu' recente
+       porta sempre la sua data */
+    if ((n - 1 - p[0]) % passo === 0)
+      s += `<text class="asse" x="${x(p[0])}" y="${A-8}" text-anchor="middle">${dataBreve(DATE[p[0]])}</text>`;
     /* cerchio invisibile piu' largo del punto: serve solo a raccogliere il
        passaggio del puntatore, che su un raggio di 2,5 px sarebbe una caccia */
     const prec = k > 0 ? serie[k-1][1] : null;
