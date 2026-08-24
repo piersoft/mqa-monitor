@@ -1,101 +1,101 @@
 chiave,etichetta,slug,n_dataset,media,pct,mediana,min,max,rating,n_excellent,n_bad,n_publisher
 79d608ae-ea96-4736-9393-4154086f2e23,Comune di Treviglio,comune-di-treviglio,44,398.18,98.32,405,305,405,Excellent,41,0,1
-0d3685ca-8d03-4226-a31d-ea60b7fcefce,INPS,inps,2460,397.84,98.23,405,305,405,Excellent,2447,0,2
+0d3685ca-8d03-4226-a31d-ea60b7fcefce,INPS,inps,2461,397.81,98.22,405,305,405,Excellent,2447,0,2
 ccc8eb67-5b1d-460c-be0c-1a698c9597aa,Universita della Calabria,universita-della-calabria,5,393.0,97.04,385,385,405,Excellent,5,0,1
 184af785-59d7-44b3-aa77-31a8d724dc2b,Comune di Sulmona,comune-di-sulmona,12,388.33,95.88,385,385,405,Excellent,12,0,1
 f1086794-56a8-4455-9136-cb23744c0ff2,Agenzia di Tutela della Salute di Brescia,agenzia-di-tutela-della-salute-di-brescia,10,387.0,95.56,385,385,405,Excellent,10,0,1
-ad653426-628d-444f-966a-c79a31355be5,Universita degli Studi di Teramo,universita-degli-studi-di-teramo,11,385.0,95.06,385,385,385,Excellent,11,0,1
-937e603c-e069-4080-a8cd-9ec39f851bda,Agenzia di Tutela della Salute di Bergamo,agenzia-di-tutela-della-salute-di-bergamo,10,385.0,95.06,385,385,385,Excellent,10,0,1
-1d92fe0b-49c7-45fe-9ab4-fed6e53f45d6,Comune di Pineto,comune-di-pineto,4,385.0,95.06,385,385,385,Excellent,4,0,1
-49f1740e-4b40-4bd1-8f47-34d270507718,Asp Ambito 9,asp-ambito-9,8,385.0,95.06,385,385,385,Excellent,8,0,1
-e1e9f349-ef2d-4894-91f4-d32f30db0a46,Comune di Giovinazzo,comune-di-giovinazzo,4,385.0,95.06,385,385,385,Excellent,4,0,1
-9c4f6260-2af7-4c64-b145-36b178760710,Comune di Termoli,comune-di-termoli,5,385.0,95.06,385,385,385,Excellent,5,0,1
-1b9af0d3-6292-49a5-9df2-f3a699acb83d,Comune di Cellole,comune-di-cellole,1,385.0,95.06,385,385,385,Excellent,1,0,1
-a23ab1ea-4eba-4401-a013-267026452e44,Universita degli Studi di Catania,universita-degli-studi-di-catania,30,385.0,95.06,385,385,385,Excellent,30,0,1
-82bf1957-ae6b-461f-8da0-9f20fabd7a6c,Comune di Alessandria,comune-di-alessandria,5,385.0,95.06,385,385,385,Excellent,5,0,1
-cfbe70da-ac17-4fac-8887-fa82d7b9cc65,Comune di Barcellona Pozzo di Gotto,comune-di-barcellona-pozzo-di-gotto,17,385.0,95.06,385,385,385,Excellent,17,0,1
-8da04a83-35e0-4f89-8dd2-fdba511e6f5f,Provincia di Catanzaro,provincia-di-catanzaro,8,385.0,95.06,385,385,385,Excellent,8,0,1
-31fbab1c-8afa-4b9a-a0d9-5d46cd2543ae,Istituto Zooprofilattico Sperimentale della Lombardia e dell'Emilia Romagna Bruno Ubertini,istituto-zooprofilattico-sperimentale-della-lombardia-e-dell-emilia-romagna-bruno-ubertini,11,385.0,95.06,385,385,385,Excellent,11,0,1
-70318d13-2c24-46ea-8944-12d58fa13ae3,Comune di Tortona,comune-di-tortona,3,385.0,95.06,385,385,385,Excellent,3,0,1
+5a3755df-20c7-4246-bf94-d6a6a0f30c09,Regione Piemonte,regione-piemonte,913,385.0,95.06,385,385,385,Excellent,913,0,1
+459fbd42-c496-4511-bac8-1f06e341d6ef,Comune di Bologna,comune-di-bologna,700,385.0,95.06,385,385,385,Excellent,700,0,23
+bfe0080a-98b1-495f-a27c-a9ceffde3bf1,Ministero Universita e Ricerca,ministero-universita-e-ricerca,69,385.0,95.06,385,385,385,Excellent,69,0,4
+b153fe18-d340-4f24-b55b-fb0c140126f2,AGCM,agcm,55,385.0,95.06,385,385,385,Excellent,55,0,2
+628f052b-8df3-4c28-9393-6782500a3525,Giustizia Amministrativa,giustizia-amministrativa,436,385.0,95.06,385,385,385,Excellent,436,0,1
+306186ca-caf4-4958-974e-0a99d2543465,ENEA Agenzia Nazionale per le Nuove Tecnologie l'Energia e lo Sviluppo Economico Sostenibile,enea-agenzia-nazionale-per-le-nuove-tecnologie-l-energia-e-lo-sviluppo-economico-sostenibile,18,385.0,95.06,385,385,385,Excellent,18,0,1
+6461fc81-dbf7-4790-9d8d-6efee4c0cb06,Agenzia di Tutela della Salute dell'Insubria,agenzia-di-tutela-della-salute-dell-insubria,10,385.0,95.06,385,385,385,Excellent,10,0,1
+81b7f05a-333b-41ea-82a5-172756e4313e,Universita degli Studi di Ferrara,universita-degli-studi-di-ferrara,23,385.0,95.06,385,385,385,Excellent,23,0,1
+6d38bd89-e867-40f2-be5e-4991acf327ca,Provincia di Verona,provincia-di-verona,3,385.0,95.06,385,385,385,Excellent,3,0,1
 5f8997d6-3acf-4de6-a07a-c46d5da2d47b,Comune di Sassari,comune-di-sassari,23,385.0,95.06,385,385,385,Excellent,23,0,1
-eb41d753-1d8f-4c38-a7e0-8066258fe1cc,Universita degli Studi di Messina,universita-degli-studi-di-messina,13,385.0,95.06,385,385,385,Excellent,13,0,1
-363bf31c-cfec-49bf-b4ca-4af78304983e,Universita degli Studi di Macerata,universita-degli-studi-di-macerata,9,385.0,95.06,385,385,385,Excellent,9,0,1
-bfcad90b-75ba-4ced-9b07-6b2e846c2f70,Comune di Cerreto Guidi,comune-di-cerreto-guidi,5,385.0,95.06,385,385,385,Excellent,5,0,1
-0c4aafe0-74bc-47ad-9878-0a615e9ffc30,Comune di Montale,comune-di-montale,3,385.0,95.06,385,385,385,Excellent,3,0,1
-e15469e8-9a25-4903-87df-0ede1549022c,Unione dei Comuni Valdostani Mont Rose,unione-dei-comuni-valdostani-mont-rose,3,385.0,95.06,385,385,385,Excellent,3,0,1
-b50a950c-fd0c-44e8-bd82-2c75898abe04,Comune di Pisticci,comune-di-pisticci,8,385.0,95.06,385,385,385,Excellent,8,0,1
-aebbeaa2-70f6-4952-8ff6-e7579a1076ce,Comune di la Spezia,comune-di-la-spezia,6,385.0,95.06,385,385,385,Excellent,6,0,1
-ab4e5be9-1a12-40da-bb93-559475c37bc9,Comune di Siracusa,comune-di-siracusa,10,385.0,95.06,385,385,385,Excellent,10,0,1
-6f14896c-52ff-467b-9bda-2d2934ffbe18,Autorita di Regolazione dei Trasporti,autorita-di-regolazione-dei-trasporti,32,385.0,95.06,385,385,385,Excellent,32,0,1
+a23ab1ea-4eba-4401-a013-267026452e44,Universita degli Studi di Catania,universita-degli-studi-di-catania,30,385.0,95.06,385,385,385,Excellent,30,0,1
+4f584de2-6d2d-4662-a8db-68ee4d8b008e,Universita degli Studi dell'Aquila,universita-degli-studi-dell-aquila,16,385.0,95.06,385,385,385,Excellent,16,0,4
 cd67c34e-dc08-44f5-bf58-e50e2601a4de,Universita degli Studi di Udine,universita-degli-studi-di-udine,9,385.0,95.06,385,385,385,Excellent,9,0,1
-e05e5762-9b48-4f5e-a72f-0d9af092bf5b,Comune di Sondrio,comune-di-sondrio,16,385.0,95.06,385,385,385,Excellent,16,0,1
-5b9e346e-78a3-4923-b85b-c73a74cd7768,Gal Terra dei Messapi,gal-terra-dei-messapi,13,385.0,95.06,385,385,385,Excellent,13,0,3
-c94061b3-77ca-466f-acb0-5dccf2b54b07,Comune di Quartu Sant Elena,comune-di-quartu-sant-elena,11,385.0,95.06,385,385,385,Excellent,11,0,1
-e88d614c-c958-4807-bcbb-a82b59a7dd12,Asm Costruire Insieme,asm-costruire-insieme,3,385.0,95.06,385,385,385,Excellent,3,0,1
-8722baa5-6824-4009-86e3-57075b943c5e,Provincia di Biella,provincia-di-biella,10,385.0,95.06,385,385,385,Excellent,10,0,1
-0f63e7d6-119a-4a02-85e9-b11066fc5e58,Agenzia di Tutela della Salute della Val Padana,agenzia-di-tutela-della-salute-della-val-padana,13,385.0,95.06,385,385,385,Excellent,13,0,1
-90149045-e871-4c03-b611-c0b7e6ca4b83,Comune di Isernia,comune-di-isernia,8,385.0,95.06,385,385,385,Excellent,8,0,1
-26a277c1-b2a8-4414-bdf6-965f29aca9c8,Agenzia delle Dogane e dei Monopoli,agenzia-delle-dogane-e-dei-monopoli,31,385.0,95.06,385,385,385,Excellent,31,0,1
-561b129a-4c76-4ae9-912b-16d5e12082e7,Unione dei Comuni Valdostani Evancon,unione-dei-comuni-valdostani-evancon,5,385.0,95.06,385,385,385,Excellent,5,0,1
 15c50db6-58b4-4b9e-88f1-fa2394c7aefa,Autorita Idrica Toscana,autorita-idrica-toscana,12,385.0,95.06,385,385,385,Excellent,12,0,1
 cbed8af0-eb12-43bf-a2f7-4ef4cb9238c3,Unione dei Comuni del Trasimeno,unione-dei-comuni-del-trasimeno,7,385.0,95.06,385,385,385,Excellent,7,0,1
-fc889074-47de-4acb-9ea3-98af4b649e84,Comune di Occhiobello,comune-di-occhiobello,3,385.0,95.06,385,385,385,Excellent,3,0,1
-9efc13b8-1d90-40b8-9447-9a71823448f5,Comune di Gravina di Catania,comune-di-gravina-di-catania,10,385.0,95.06,385,385,385,Excellent,10,0,1
 65d89bdc-7a64-4d28-b3de-87c8b58faa43,Comunita Montana Valle Imagna,comunita-montana-valle-imagna,3,385.0,95.06,385,385,385,Excellent,3,0,1
-21c6292b-f32c-4fd1-9f8d-a3392fde8392,Comune di Vecchiano,comune-di-vecchiano,3,385.0,95.06,385,385,385,Excellent,3,0,1
-d185a6e2-5d7c-4c61-afd2-edb9fa47f182,Comune di Santo Stefano di Magra,comune-di-santo-stefano-di-magra,8,385.0,95.06,385,385,385,Excellent,8,0,1
-9d4caa30-bcae-4df7-8ba0-ac85650bea46,Comune di Mola di Bari,comune-di-mola-di-bari,5,385.0,95.06,385,385,385,Excellent,5,0,1
-9de58538-7d17-40da-bbf8-b6a17d3820dc,Comune di Valenzano,comune-di-valenzano,5,385.0,95.06,385,385,385,Excellent,5,0,1
-fbdec4c2-891e-4e1f-828f-a9e86f31ae59,Comune di Ruvo di Puglia,comune-di-ruvo-di-puglia,5,385.0,95.06,385,385,385,Excellent,5,0,1
-f5f9730b-e56c-4478-bda0-3ad6157f2751,Comune di Giaveno,comune-di-giaveno,5,385.0,95.06,385,385,385,Excellent,5,0,1
-e1b846a5-8eab-44da-b13f-29f192abd0c6,Universita degli Studi di Urbino Carlo Bo,universita-degli-studi-di-urbino-carlo-bo,13,385.0,95.06,385,385,385,Excellent,13,0,1
-6461fc81-dbf7-4790-9d8d-6efee4c0cb06,Agenzia di Tutela della Salute dell'Insubria,agenzia-di-tutela-della-salute-dell-insubria,10,385.0,95.06,385,385,385,Excellent,10,0,1
-04d03e4d-13f6-4b1d-99eb-4bf11744cd16,Libero Consorzio Comunale di Agrigento,libero-consorzio-comunale-di-agrigento,11,385.0,95.06,385,385,385,Excellent,11,0,1
-42c175f4-59d4-4f23-85f6-e9d6e8c9f920,Comune di Mandello del Lario,comune-di-mandello-del-lario,1,385.0,95.06,385,385,385,Excellent,1,0,1
-250720a6-46e3-4f10-abe7-ec9902a49dd7,Comune di Terralba,comune-di-terralba,3,385.0,95.06,385,385,385,Excellent,3,0,1
-5bed28f9-a3fc-4dce-a24b-f8c7728e0dc5,Comune di Latina,comune-di-latina,13,385.0,95.06,385,385,385,Excellent,13,0,1
-37e8c82e-371f-4db7-a426-d81e80b4b30e,Comune di Alba Adriatica,comune-di-alba-adriatica,4,385.0,95.06,385,385,385,Excellent,4,0,1
-15e75a8e-378b-4e6f-a414-ab8346c394b8,Comune di Castiglione del Lago,comune-di-castiglione-del-lago,3,385.0,95.06,385,385,385,Excellent,3,0,1
-0bf640aa-bbd6-4bc8-9409-a5669af7ed19,Agenzia Regionale per il Lavoro la Formazione e l'Accreditamento,agenzia-regionale-per-il-lavoro-la-formazione-e-l-accreditamento,3,385.0,95.06,385,385,385,Excellent,3,0,1
-727baae0-0f4e-44cb-89a0-a75385d48a1d,Comune di Vieste,comune-di-vieste,5,385.0,95.06,385,385,385,Excellent,5,0,1
-e38a5663-2b13-40a0-8be9-b6e1f05d09d4,Comune di Magione,comune-di-magione,3,385.0,95.06,385,385,385,Excellent,3,0,1
-8f03b401-6d17-4410-9dcb-9332966b7696,Unione dei Comuni Valdostani Valdigne Mont Blanc,unione-dei-comuni-valdostani-valdigne-mont-blanc,5,385.0,95.06,385,385,385,Excellent,5,0,1
-6345e208-aeea-4ff9-86ae-bcc1c303f169,Comune di Lizzano,comune-di-lizzano,1,385.0,95.06,385,385,385,Excellent,1,0,1
-6e44f061-4fdf-4ddb-9040-095629a08a9b,Comune di Capoterra,comune-di-capoterra,13,385.0,95.06,385,385,385,Excellent,13,0,1
-7708bac3-06d7-48e1-98c2-788424425574,Comune di Molinella,comune-di-molinella,3,385.0,95.06,385,385,385,Excellent,3,0,1
-2552ed41-d9a2-4a04-ba0a-dab5c123e03d,Comunita Montana Valtellina di Tirano,comunita-montana-valtellina-di-tirano,11,385.0,95.06,385,385,385,Excellent,11,0,1
-d381b465-d6d5-47ee-b07e-99e121265655,Comune Arzachena,comune-arzachena,11,385.0,95.06,385,385,385,Excellent,11,0,1
-2769d5a0-f4ab-4337-b577-a3426d4f0752,Brescia Mobilita Spa,brescia-mobilita-spa,3,385.0,95.06,385,385,385,Excellent,3,0,1
-2e83f50b-b1a4-4668-a484-a8bfbdc936ed,Comune di Benevento,comune-di-benevento,11,385.0,95.06,385,385,385,Excellent,11,0,1
-1377acf3-e741-43d1-a533-a695afadbcd3,Comune di Rapallo,comune-di-rapallo,8,385.0,95.06,385,385,385,Excellent,8,0,1
-90fc5ad2-237d-49fc-9246-c29a9956df4c,Universita degli Studi del Piemonte Orientale,universita-degli-studi-del-piemonte-orientale,18,385.0,95.06,385,385,385,Excellent,18,0,1
-577192d6-7dc6-4fb6-899d-e3f6485cce15,Comune di Sannazzaro De Burgondi,comune-di-sannazzaro-de-burgondi,4,385.0,95.06,385,385,385,Excellent,4,0,1
-5a3755df-20c7-4246-bf94-d6a6a0f30c09,Regione Piemonte,regione-piemonte,913,385.0,95.06,385,385,385,Excellent,913,0,1
-81b7f05a-333b-41ea-82a5-172756e4313e,Universita degli Studi di Ferrara,universita-degli-studi-di-ferrara,23,385.0,95.06,385,385,385,Excellent,23,0,1
-75cb7b56-1316-4b71-9e71-c68c5a62bae5,Provincia di Rovigo,provincia-di-rovigo,15,385.0,95.06,385,385,385,Excellent,15,0,1
-7e7b7ab2-54ec-4df4-8f4a-010b59a2f8d1,Consorzio Bim Vomano Tordino di Teramo,consorzio-bim-vomano-tordino-di-teramo,7,385.0,95.06,385,385,385,Excellent,7,0,1
-bfe0080a-98b1-495f-a27c-a9ceffde3bf1,Ministero Universita e Ricerca,ministero-universita-e-ricerca,69,385.0,95.06,385,385,385,Excellent,69,0,4
-e2aa7491-54b3-44f1-a19e-190ce075479e,Comune di Corciano,comune-di-corciano,6,385.0,95.06,385,385,385,Excellent,6,0,1
-459fbd42-c496-4511-bac8-1f06e341d6ef,Comune di Bologna,comune-di-bologna,700,385.0,95.06,385,385,385,Excellent,700,0,23
-de0b44d2-783e-4e91-8ec9-c79cca8a2299,Politecnico di Milano,politecnico-di-milano,25,385.0,95.06,385,385,385,Excellent,25,0,1
-4f584de2-6d2d-4662-a8db-68ee4d8b008e,Universita degli Studi dell'Aquila,universita-degli-studi-dell-aquila,16,385.0,95.06,385,385,385,Excellent,16,0,4
-306186ca-caf4-4958-974e-0a99d2543465,ENEA Agenzia Nazionale per le Nuove Tecnologie l'Energia e lo Sviluppo Economico Sostenibile,enea-agenzia-nazionale-per-le-nuove-tecnologie-l-energia-e-lo-sviluppo-economico-sostenibile,18,385.0,95.06,385,385,385,Excellent,18,0,1
-a0ca3322-6c33-4420-902a-5dc95ac88d6f,Asst Ovest Milanese,asst-ovest-milanese,22,385.0,95.06,385,385,385,Excellent,22,0,1
-b153fe18-d340-4f24-b55b-fb0c140126f2,AGCM,agcm,55,385.0,95.06,385,385,385,Excellent,55,0,2
-9d3cfaa3-7e89-45c4-81ed-8beff1781023,Comune di Finale Ligure,comune-di-finale-ligure,2,385.0,95.06,385,385,385,Excellent,2,0,1
-a57f2cbd-a57e-4463-b1bd-c99271a3144b,Comune di Roseto degli Abruzzi,comune-di-roseto-degli-abruzzi,5,385.0,95.06,385,385,385,Excellent,5,0,1
-26401515-e0df-4f22-bb55-1a8ba45029d8,Switch Catalog,switch-catalog,1,385.0,95.06,385,385,385,Excellent,1,0,1
-d55cfad7-9b71-4233-9fe2-13b1a4610998,Universita degli Studi di Pavia,universita-degli-studi-di-pavia,2,385.0,95.06,385,385,385,Excellent,2,0,1
-b350a43c-e752-4d61-8b04-718141310786,Comune di Campagna,comune-di-campagna,6,385.0,95.06,385,385,385,Excellent,6,0,1
-252d0ba0-2b2c-4e11-9d76-49c92dcda67e,Comune di Arenzano,comune-di-arenzano,10,385.0,95.06,385,385,385,Excellent,10,0,1
-628f052b-8df3-4c28-9393-6782500a3525,Giustizia Amministrativa,giustizia-amministrativa,436,385.0,95.06,385,385,385,Excellent,436,0,1
-a4da9a0e-9ebf-4db1-9412-0f8a45b672e4,Comune di Arbus,comune-di-arbus,3,385.0,95.06,385,385,385,Excellent,3,0,1
-b91100c9-76c3-4800-b54b-e04aef62dd3d,Comune di San Cesario di Lecce,comune-di-san-cesario-di-lecce,1,385.0,95.06,385,385,385,Excellent,1,0,1
-6d38bd89-e867-40f2-be5e-4991acf327ca,Provincia di Verona,provincia-di-verona,3,385.0,95.06,385,385,385,Excellent,3,0,1
 7845b4fc-6bf0-4adf-b3d4-0c2b399ffdca,Comune di Casavatore,comune-di-casavatore,1,385.0,95.06,385,385,385,Excellent,1,0,1
-927b88eb-98e4-4fea-b1d3-a8f7695013c2,Comune di Vico del Gargano,comune-di-vico-del-gargano,3,385.0,95.06,385,385,385,Excellent,3,0,1
-6e3d98f6-cd37-4413-9085-eb4526542764,Provincia di Isernia,provincia-di-isernia,5,385.0,95.06,385,385,385,Excellent,5,0,1
+0c4aafe0-74bc-47ad-9878-0a615e9ffc30,Comune di Montale,comune-di-montale,3,385.0,95.06,385,385,385,Excellent,3,0,1
+363bf31c-cfec-49bf-b4ca-4af78304983e,Universita degli Studi di Macerata,universita-degli-studi-di-macerata,9,385.0,95.06,385,385,385,Excellent,9,0,1
 29a696fa-00d5-4be1-b3e9-879992b90f8d,Unione Pedemontana Parmense,unione-pedemontana-parmense,3,385.0,95.06,385,385,385,Excellent,3,0,1
+8da04a83-35e0-4f89-8dd2-fdba511e6f5f,Provincia di Catanzaro,provincia-di-catanzaro,8,385.0,95.06,385,385,385,Excellent,8,0,1
+04d03e4d-13f6-4b1d-99eb-4bf11744cd16,Libero Consorzio Comunale di Agrigento,libero-consorzio-comunale-di-agrigento,11,385.0,95.06,385,385,385,Excellent,11,0,1
+eb41d753-1d8f-4c38-a7e0-8066258fe1cc,Universita degli Studi di Messina,universita-degli-studi-di-messina,13,385.0,95.06,385,385,385,Excellent,13,0,1
+0f63e7d6-119a-4a02-85e9-b11066fc5e58,Agenzia di Tutela della Salute della Val Padana,agenzia-di-tutela-della-salute-della-val-padana,13,385.0,95.06,385,385,385,Excellent,13,0,1
+75cb7b56-1316-4b71-9e71-c68c5a62bae5,Provincia di Rovigo,provincia-di-rovigo,15,385.0,95.06,385,385,385,Excellent,15,0,1
+2769d5a0-f4ab-4337-b577-a3426d4f0752,Brescia Mobilita Spa,brescia-mobilita-spa,3,385.0,95.06,385,385,385,Excellent,3,0,1
+70318d13-2c24-46ea-8944-12d58fa13ae3,Comune di Tortona,comune-di-tortona,3,385.0,95.06,385,385,385,Excellent,3,0,1
+cfbe70da-ac17-4fac-8887-fa82d7b9cc65,Comune di Barcellona Pozzo di Gotto,comune-di-barcellona-pozzo-di-gotto,17,385.0,95.06,385,385,385,Excellent,17,0,1
+7708bac3-06d7-48e1-98c2-788424425574,Comune di Molinella,comune-di-molinella,3,385.0,95.06,385,385,385,Excellent,3,0,1
+d185a6e2-5d7c-4c61-afd2-edb9fa47f182,Comune di Santo Stefano di Magra,comune-di-santo-stefano-di-magra,8,385.0,95.06,385,385,385,Excellent,8,0,1
+8f03b401-6d17-4410-9dcb-9332966b7696,Unione dei Comuni Valdostani Valdigne Mont Blanc,unione-dei-comuni-valdostani-valdigne-mont-blanc,5,385.0,95.06,385,385,385,Excellent,5,0,1
+e38a5663-2b13-40a0-8be9-b6e1f05d09d4,Comune di Magione,comune-di-magione,3,385.0,95.06,385,385,385,Excellent,3,0,1
+31fbab1c-8afa-4b9a-a0d9-5d46cd2543ae,Istituto Zooprofilattico Sperimentale della Lombardia e dell'Emilia Romagna Bruno Ubertini,istituto-zooprofilattico-sperimentale-della-lombardia-e-dell-emilia-romagna-bruno-ubertini,11,385.0,95.06,385,385,385,Excellent,11,0,1
+561b129a-4c76-4ae9-912b-16d5e12082e7,Unione dei Comuni Valdostani Evancon,unione-dei-comuni-valdostani-evancon,5,385.0,95.06,385,385,385,Excellent,5,0,1
+21c6292b-f32c-4fd1-9f8d-a3392fde8392,Comune di Vecchiano,comune-di-vecchiano,3,385.0,95.06,385,385,385,Excellent,3,0,1
+e15469e8-9a25-4903-87df-0ede1549022c,Unione dei Comuni Valdostani Mont Rose,unione-dei-comuni-valdostani-mont-rose,3,385.0,95.06,385,385,385,Excellent,3,0,1
+9efc13b8-1d90-40b8-9447-9a71823448f5,Comune di Gravina di Catania,comune-di-gravina-di-catania,10,385.0,95.06,385,385,385,Excellent,10,0,1
+bfcad90b-75ba-4ced-9b07-6b2e846c2f70,Comune di Cerreto Guidi,comune-di-cerreto-guidi,5,385.0,95.06,385,385,385,Excellent,5,0,1
+1d92fe0b-49c7-45fe-9ab4-fed6e53f45d6,Comune di Pineto,comune-di-pineto,4,385.0,95.06,385,385,385,Excellent,4,0,1
+d381b465-d6d5-47ee-b07e-99e121265655,Comune Arzachena,comune-arzachena,11,385.0,95.06,385,385,385,Excellent,11,0,1
+e05e5762-9b48-4f5e-a72f-0d9af092bf5b,Comune di Sondrio,comune-di-sondrio,16,385.0,95.06,385,385,385,Excellent,16,0,1
+ab4e5be9-1a12-40da-bb93-559475c37bc9,Comune di Siracusa,comune-di-siracusa,10,385.0,95.06,385,385,385,Excellent,10,0,1
+e2aa7491-54b3-44f1-a19e-190ce075479e,Comune di Corciano,comune-di-corciano,6,385.0,95.06,385,385,385,Excellent,6,0,1
+6f14896c-52ff-467b-9bda-2d2934ffbe18,Autorita di Regolazione dei Trasporti,autorita-di-regolazione-dei-trasporti,32,385.0,95.06,385,385,385,Excellent,32,0,1
+e1e9f349-ef2d-4894-91f4-d32f30db0a46,Comune di Giovinazzo,comune-di-giovinazzo,4,385.0,95.06,385,385,385,Excellent,4,0,1
+82bf1957-ae6b-461f-8da0-9f20fabd7a6c,Comune di Alessandria,comune-di-alessandria,5,385.0,95.06,385,385,385,Excellent,5,0,1
+9de58538-7d17-40da-bbf8-b6a17d3820dc,Comune di Valenzano,comune-di-valenzano,5,385.0,95.06,385,385,385,Excellent,5,0,1
+6e3d98f6-cd37-4413-9085-eb4526542764,Provincia di Isernia,provincia-di-isernia,5,385.0,95.06,385,385,385,Excellent,5,0,1
+937e603c-e069-4080-a8cd-9ec39f851bda,Agenzia di Tutela della Salute di Bergamo,agenzia-di-tutela-della-salute-di-bergamo,10,385.0,95.06,385,385,385,Excellent,10,0,1
+b50a950c-fd0c-44e8-bd82-2c75898abe04,Comune di Pisticci,comune-di-pisticci,8,385.0,95.06,385,385,385,Excellent,8,0,1
+fc889074-47de-4acb-9ea3-98af4b649e84,Comune di Occhiobello,comune-di-occhiobello,3,385.0,95.06,385,385,385,Excellent,3,0,1
+1377acf3-e741-43d1-a533-a695afadbcd3,Comune di Rapallo,comune-di-rapallo,8,385.0,95.06,385,385,385,Excellent,8,0,1
+ad653426-628d-444f-966a-c79a31355be5,Universita degli Studi di Teramo,universita-degli-studi-di-teramo,11,385.0,95.06,385,385,385,Excellent,11,0,1
+5bed28f9-a3fc-4dce-a24b-f8c7728e0dc5,Comune di Latina,comune-di-latina,13,385.0,95.06,385,385,385,Excellent,13,0,1
+aebbeaa2-70f6-4952-8ff6-e7579a1076ce,Comune di la Spezia,comune-di-la-spezia,6,385.0,95.06,385,385,385,Excellent,6,0,1
+9c4f6260-2af7-4c64-b145-36b178760710,Comune di Termoli,comune-di-termoli,5,385.0,95.06,385,385,385,Excellent,5,0,1
+5b9e346e-78a3-4923-b85b-c73a74cd7768,Gal Terra dei Messapi,gal-terra-dei-messapi,13,385.0,95.06,385,385,385,Excellent,13,0,3
+8722baa5-6824-4009-86e3-57075b943c5e,Provincia di Biella,provincia-di-biella,10,385.0,95.06,385,385,385,Excellent,10,0,1
+2e83f50b-b1a4-4668-a484-a8bfbdc936ed,Comune di Benevento,comune-di-benevento,11,385.0,95.06,385,385,385,Excellent,11,0,1
+26a277c1-b2a8-4414-bdf6-965f29aca9c8,Agenzia delle Dogane e dei Monopoli,agenzia-delle-dogane-e-dei-monopoli,31,385.0,95.06,385,385,385,Excellent,31,0,1
+a57f2cbd-a57e-4463-b1bd-c99271a3144b,Comune di Roseto degli Abruzzi,comune-di-roseto-degli-abruzzi,5,385.0,95.06,385,385,385,Excellent,5,0,1
+f5f9730b-e56c-4478-bda0-3ad6157f2751,Comune di Giaveno,comune-di-giaveno,5,385.0,95.06,385,385,385,Excellent,5,0,1
+727baae0-0f4e-44cb-89a0-a75385d48a1d,Comune di Vieste,comune-di-vieste,5,385.0,95.06,385,385,385,Excellent,5,0,1
+577192d6-7dc6-4fb6-899d-e3f6485cce15,Comune di Sannazzaro De Burgondi,comune-di-sannazzaro-de-burgondi,4,385.0,95.06,385,385,385,Excellent,4,0,1
+e1b846a5-8eab-44da-b13f-29f192abd0c6,Universita degli Studi di Urbino Carlo Bo,universita-degli-studi-di-urbino-carlo-bo,13,385.0,95.06,385,385,385,Excellent,13,0,1
+252d0ba0-2b2c-4e11-9d76-49c92dcda67e,Comune di Arenzano,comune-di-arenzano,10,385.0,95.06,385,385,385,Excellent,10,0,1
+fbdec4c2-891e-4e1f-828f-a9e86f31ae59,Comune di Ruvo di Puglia,comune-di-ruvo-di-puglia,5,385.0,95.06,385,385,385,Excellent,5,0,1
+9d4caa30-bcae-4df7-8ba0-ac85650bea46,Comune di Mola di Bari,comune-di-mola-di-bari,5,385.0,95.06,385,385,385,Excellent,5,0,1
+7e7b7ab2-54ec-4df4-8f4a-010b59a2f8d1,Consorzio Bim Vomano Tordino di Teramo,consorzio-bim-vomano-tordino-di-teramo,7,385.0,95.06,385,385,385,Excellent,7,0,1
+927b88eb-98e4-4fea-b1d3-a8f7695013c2,Comune di Vico del Gargano,comune-di-vico-del-gargano,3,385.0,95.06,385,385,385,Excellent,3,0,1
+0bf640aa-bbd6-4bc8-9409-a5669af7ed19,Agenzia Regionale per il Lavoro la Formazione e l'Accreditamento,agenzia-regionale-per-il-lavoro-la-formazione-e-l-accreditamento,3,385.0,95.06,385,385,385,Excellent,3,0,1
+37e8c82e-371f-4db7-a426-d81e80b4b30e,Comune di Alba Adriatica,comune-di-alba-adriatica,4,385.0,95.06,385,385,385,Excellent,4,0,1
+250720a6-46e3-4f10-abe7-ec9902a49dd7,Comune di Terralba,comune-di-terralba,3,385.0,95.06,385,385,385,Excellent,3,0,1
+90fc5ad2-237d-49fc-9246-c29a9956df4c,Universita degli Studi del Piemonte Orientale,universita-degli-studi-del-piemonte-orientale,18,385.0,95.06,385,385,385,Excellent,18,0,1
+49f1740e-4b40-4bd1-8f47-34d270507718,Asp Ambito 9,asp-ambito-9,8,385.0,95.06,385,385,385,Excellent,8,0,1
+c94061b3-77ca-466f-acb0-5dccf2b54b07,Comune di Quartu Sant Elena,comune-di-quartu-sant-elena,11,385.0,95.06,385,385,385,Excellent,11,0,1
+2552ed41-d9a2-4a04-ba0a-dab5c123e03d,Comunita Montana Valtellina di Tirano,comunita-montana-valtellina-di-tirano,11,385.0,95.06,385,385,385,Excellent,11,0,1
+6e44f061-4fdf-4ddb-9040-095629a08a9b,Comune di Capoterra,comune-di-capoterra,13,385.0,95.06,385,385,385,Excellent,13,0,1
+de0b44d2-783e-4e91-8ec9-c79cca8a2299,Politecnico di Milano,politecnico-di-milano,25,385.0,95.06,385,385,385,Excellent,25,0,1
+a0ca3322-6c33-4420-902a-5dc95ac88d6f,Asst Ovest Milanese,asst-ovest-milanese,22,385.0,95.06,385,385,385,Excellent,22,0,1
+b350a43c-e752-4d61-8b04-718141310786,Comune di Campagna,comune-di-campagna,6,385.0,95.06,385,385,385,Excellent,6,0,1
+d55cfad7-9b71-4233-9fe2-13b1a4610998,Universita degli Studi di Pavia,universita-degli-studi-di-pavia,2,385.0,95.06,385,385,385,Excellent,2,0,1
+a4da9a0e-9ebf-4db1-9412-0f8a45b672e4,Comune di Arbus,comune-di-arbus,3,385.0,95.06,385,385,385,Excellent,3,0,1
+90149045-e871-4c03-b611-c0b7e6ca4b83,Comune di Isernia,comune-di-isernia,8,385.0,95.06,385,385,385,Excellent,8,0,1
+15e75a8e-378b-4e6f-a414-ab8346c394b8,Comune di Castiglione del Lago,comune-di-castiglione-del-lago,3,385.0,95.06,385,385,385,Excellent,3,0,1
+6345e208-aeea-4ff9-86ae-bcc1c303f169,Comune di Lizzano,comune-di-lizzano,1,385.0,95.06,385,385,385,Excellent,1,0,1
+1b9af0d3-6292-49a5-9df2-f3a699acb83d,Comune di Cellole,comune-di-cellole,1,385.0,95.06,385,385,385,Excellent,1,0,1
+42c175f4-59d4-4f23-85f6-e9d6e8c9f920,Comune di Mandello del Lario,comune-di-mandello-del-lario,1,385.0,95.06,385,385,385,Excellent,1,0,1
+26401515-e0df-4f22-bb55-1a8ba45029d8,Switch Catalog,switch-catalog,1,385.0,95.06,385,385,385,Excellent,1,0,1
+b91100c9-76c3-4800-b54b-e04aef62dd3d,Comune di San Cesario di Lecce,comune-di-san-cesario-di-lecce,1,385.0,95.06,385,385,385,Excellent,1,0,1
+9d3cfaa3-7e89-45c4-81ed-8beff1781023,Comune di Finale Ligure,comune-di-finale-ligure,2,385.0,95.06,385,385,385,Excellent,2,0,1
+e88d614c-c958-4807-bcbb-a82b59a7dd12,Asm Costruire Insieme,asm-costruire-insieme,3,385.0,95.06,385,385,385,Excellent,3,0,1
 735660ff-b04c-47e7-9caf-ca70007b059c,Comune di Messina,comune-di-messina,111,384.82,95.02,385,365,385,Excellent,111,0,6
 f3449752-6111-485b-95b1-aeaeefcf2db5,Comune di Napoli,comune-di-napoli,36,384.44,94.92,385,365,385,Excellent,36,0,17
 1419afad-d904-4313-957b-2c933ed3fd3b,Regione Campania,regione-campania,366,384.34,94.9,385,305,385,Excellent,364,0,11
@@ -107,20 +107,19 @@ fa43b4d9-57a0-4c6a-aa5e-d0dda9a3d7eb,Comune di Mediglia,comune-di-mediglia,3,381
 ddbb8cb6-dcca-492f-b5d0-70706a55c9af,Comune di Cassano Allo Ionio,comune-di-cassano-allo-ionio,9,379.44,93.69,385,335,385,Excellent,8,0,1
 6d631e37-cc73-469f-9d51-7f81acba3cb2,Agenzia di Tutela della Salute di Pavia,agenzia-di-tutela-della-salute-di-pavia,13,378.08,93.35,385,355,385,Excellent,13,0,1
 13739888-6a55-4d0c-8c07-829568bbe177,Comune di Matera,comune-di-matera,249,375.8,92.79,385,305,385,Excellent,224,0,4
-7c195bc7-e5c2-4cea-8703-f5985de14972,Asst Fatebenefratelli Sacco,asst-fatebenefratelli-sacco,3,375.0,92.59,375,375,375,Excellent,3,0,1
 9e6524d8-1e13-4a6c-97b4-11260c86ff67,Azienda Ospedaliera di Rilievo Nazionale Antonio Cardarelli,azienda-ospedaliera-di-rilievo-nazionale-antonio-cardarelli,10,375.0,92.59,375,375,375,Excellent,10,0,1
 e238a315-2b93-4e69-b7f3-e550df6b12e1,Asst Spedali Civili di Brescia,asst-spedali-civili-di-brescia,8,375.0,92.59,375,375,375,Excellent,8,0,1
-982b093a-0926-4c5c-825a-c4146f301ac0,Azienda Sanitaria Regione Molise,azienda-sanitaria-regione-molise,3,375.0,92.59,375,375,375,Excellent,3,0,1
+7c195bc7-e5c2-4cea-8703-f5985de14972,Asst Fatebenefratelli Sacco,asst-fatebenefratelli-sacco,3,375.0,92.59,375,375,375,Excellent,3,0,1
 cf59d4fe-9521-4f97-b463-c2e8f1d4e647,Ministero del Lavoro,ministero-del-lavoro,83,375.0,92.59,375,375,375,Excellent,83,0,1
 85194b17-e484-4141-9420-17cf8e31ab59,Pagopa S P a,pagopa-s-p-a,12,375.0,92.59,375,375,375,Excellent,12,0,1
 cf70b8a1-7e49-4592-9dff-b350535c81ec,Unione di Comuni Terre di Vini e di Tartufi,unione-di-comuni-terre-di-vini-e-di-tartufi,1,375.0,92.59,375,375,375,Excellent,1,0,1
+982b093a-0926-4c5c-825a-c4146f301ac0,Azienda Sanitaria Regione Molise,azienda-sanitaria-regione-molise,3,375.0,92.59,375,375,375,Excellent,3,0,1
 2d9eea42-cb60-48fd-9a8a-36ad3691a0ac,Citta Metropolitana di Catania,citta-metropolitana-di-catania,22,373.18,92.14,405,305,405,Excellent,16,0,1
 bc5f05ae-4696-4db9-985a-88a78eab0da9,Comune di Beinasco,comune-di-beinasco,3,371.67,91.77,355,355,405,Excellent,3,0,1
 58f47ff9-996f-418a-938d-da7ac109079d,Agenzia Nazionale per la Meteorologia e Climatologia Italiameteo,agenzia-nazionale-per-la-meteorologia-e-climatologia-italiameteo,8,370.0,91.36,365,365,385,Excellent,8,0,1
 11f2e211-b3ec-4eb2-a905-920eb858b14c,Consorzio dei Comuni della Valle d'Aosta Bacino Imbrifero Montano della Dora Baltea,consorzio-dei-comuni-della-valle-d-aosta-bacino-imbrifero-montano-della-dora-baltea,5,367.0,90.62,355,355,385,Excellent,5,0,1
 78467e9f-bb14-444a-87e0-0faa4e4beca0,IVASS Istituto per la Vigilanza Sulle Assicurazioni,ivass-istituto-per-la-vigilanza-sulle-assicurazioni,19,365.0,90.12,365,365,365,Excellent,19,0,1
 d93b6fc2-fd8f-498e-b3ec-bccb6c29ba65,Consorzio per la Ricerca Sulla Filiera Lattiero Casearia,consorzio-per-la-ricerca-sulla-filiera-lattiero-casearia,12,365.0,90.12,385,305,385,Excellent,9,0,1
-(sconosciuto),(sconosciuto),,2397,364.22,89.93,385,255,385,Excellent,1739,0,289
 ab0d75c7-04eb-4b48-b811-d4ca97bf1406,Politecnico di Torino,politecnico-di-torino,12,363.33,89.71,355,355,405,Excellent,12,0,1
 9a8e1504-1866-47db-8588-d6068902f965,Comune di Flero,comune-di-flero,53,360.28,88.96,385,305,385,Excellent,37,0,1
 8c5d1e2f-95c7-4bc4-aeaf-ec34a5b31313,Azienda Socio Sanitaria Territoriale della Brianza,azienda-socio-sanitaria-territoriale-della-brianza,10,360.0,88.89,355,355,405,Excellent,10,0,1
@@ -128,84 +127,84 @@ ab0d75c7-04eb-4b48-b811-d4ca97bf1406,Politecnico di Torino,politecnico-di-torino
 585452e2-12b4-4187-89d6-c33068eff19f,Regione Puglia,regione-puglia,2012,358.48,88.51,385,255,405,Excellent,1366,0,246
 e8c2e2f1-1cf7-4e2f-a559-389ecaf779a7,Unione dei Comuni Valdostani Walser,unione-dei-comuni-valdostani-walser,3,358.33,88.48,345,345,385,Excellent,1,0,1
 49a01f53-cd1b-4629-9e2e-64f61a788e41,Ministero delle Imprese e del Made in Italy,ministero-delle-imprese-e-del-made-in-italy,370,355.43,87.76,385,305,385,Excellent,231,0,1
-54503213-4f23-4c39-ba5f-c0b0bb78f900,Ministero del Turismo,ministero-del-turismo,16,355.0,87.65,355,355,355,Excellent,16,0,1
-3fdcdae0-c903-46bf-8555-c254f71cbecc,Azienda Socio Sanitaria Territoriale di Lecco,azienda-socio-sanitaria-territoriale-di-lecco,10,355.0,87.65,355,355,355,Excellent,10,0,1
-5276bffc-0ff5-4c75-820d-169c895fd149,Istituto Superiore di Sanita,istituto-superiore-di-sanita,13,355.0,87.65,355,355,355,Excellent,13,0,1
-f54588ab-46a1-4c1b-8fcc-f4c5fbc830d2,Fondazione Restart,fondazione-restart,10,355.0,87.65,355,355,355,Excellent,10,0,1
-f0fff560-469a-42b7-b17d-21853d107bce,Cnit Consorzio Nazionale Interuniversitario per le Telecomunicazioni,cnit-consorzio-nazionale-interuniversitario-per-le-telecomunicazioni,10,355.0,87.65,355,355,355,Excellent,10,0,1
-a9642632-cc67-477f-b66d-437a4fb7e03d,ATS Citta Metropolitana di Milano,ats-citta-metropolitana-di-milano,10,355.0,87.65,355,355,355,Excellent,10,0,1
-8b8cf2d9-cb93-4c83-b7ef-af40d0669369,Aspal Agenzia Sarda per le Politiche Attive del Lavoro,aspal-agenzia-sarda-per-le-politiche-attive-del-lavoro,15,355.0,87.65,355,355,355,Excellent,15,0,1
-a1c6b7a1-4093-438f-a94b-e8e55b598cff,Universita degli Studi di Camerino,universita-degli-studi-di-camerino,10,355.0,87.65,355,355,355,Excellent,10,0,1
-3954d7c6-fc2b-4dd1-aebf-e336a0e63b64,Azienda Socio Sanitaria Territoriale Lariana,azienda-socio-sanitaria-territoriale-lariana,16,355.0,87.65,355,355,355,Excellent,16,0,1
-3daa7d70-c6f4-405e-8237-8ed37535ae08,Comune di Olgiate Olona,comune-di-olgiate-olona,5,355.0,87.65,355,355,355,Excellent,5,0,1
-e5916554-888e-48fa-8086-c3a5c720639f,Comune di Forte dei Marmi,comune-di-forte-dei-marmi,1,355.0,87.65,355,355,355,Excellent,1,0,1
-8daf7621-05b2-4f9e-8c12-f485eb388d61,ATS della Montagna,ats-della-montagna,10,355.0,87.65,355,355,355,Excellent,10,0,1
-4f460e94-efa3-4855-9fbe-7f289fba8f90,Comune di Vittoria,comune-di-vittoria,5,355.0,87.65,355,355,355,Excellent,5,0,1
-76e0a090-f08c-4ff6-bdd6-bb8c258c5731,Comune di Bitritto,comune-di-bitritto,5,355.0,87.65,355,355,355,Excellent,5,0,1
-cf2d76c3-7883-4391-8002-dcba5c1dbdb0,Comune di Fonte Nuova,comune-di-fonte-nuova,5,355.0,87.65,355,355,355,Excellent,5,0,1
-b5ce8c17-eae1-4b21-b9e9-4ca66c9a59c0,Istituto Zooprofilattico Sperimentale dell'Umbria e delle Marche Togo Rosati,istituto-zooprofilattico-sperimentale-dell-umbria-e-delle-marche-togo-rosati,10,355.0,87.65,355,355,355,Excellent,10,0,1
-b5cdcd76-e358-49ed-a833-a44102a7ece0,Comune di Domodossola,comune-di-domodossola,3,355.0,87.65,355,355,355,Excellent,3,0,1
-3a6dd9fd-f494-4134-b216-b5471bfebb51,Pcm Protezione Civile,pcm-protezione-civile,5,355.0,87.65,355,355,355,Excellent,5,0,1
-3d6faeb4-ce86-4f91-b020-e5df6e9588aa,Comune di Massa,comune-di-massa,4,355.0,87.65,355,355,355,Excellent,4,0,1
-76e91de6-8e18-48c9-b5e4-ed7dbffd6877,Comune di Torre Annunziata,comune-di-torre-annunziata,3,355.0,87.65,355,355,355,Excellent,3,0,1
-75656a6e-699f-49e3-ac14-e055835e9638,Comune di Porto Cesareo,comune-di-porto-cesareo,3,355.0,87.65,355,355,355,Excellent,3,0,1
-6ea4dd4a-6874-435a-a545-7b60761f9e5f,Agenzia Regionale per la Protezione dell'Ambiente della Sardegna,agenzia-regionale-per-la-protezione-dell-ambiente-della-sardegna,12,355.0,87.65,355,355,355,Excellent,12,0,1
-98dea997-f6bf-4e57-8111-87b4c50543e9,Comune di Venafro,comune-di-venafro,10,355.0,87.65,355,355,355,Excellent,10,0,1
-53290502-f70e-43fc-9378-bab36bb0f55c,Provincia di Padova,provincia-di-padova,10,355.0,87.65,355,355,355,Excellent,10,0,1
-8e7b5d19-4a39-4d51-96c9-549ee2eda073,Provincia di Parma,provincia-di-parma,5,355.0,87.65,355,355,355,Excellent,5,0,1
-cfcc1d68-8701-4093-a65d-e7a89c25e557,Comune di Arquata Scrivia,comune-di-arquata-scrivia,2,355.0,87.65,355,355,355,Excellent,2,0,1
-7053f468-42ee-4814-8523-2bc19f0f896f,Universita degli Studi della Campania l'Vanvitelli,universita-degli-studi-della-campania-l-vanvitelli,11,355.0,87.65,355,355,355,Excellent,11,0,1
-d00a1361-e3a8-439d-93cd-59b299441763,Comune di Albino,comune-di-albino,5,355.0,87.65,355,355,355,Excellent,5,0,1
-3c5f03d0-d1a8-43ed-a4ff-fd5904a4f941,Comune di Castelfiorentino,comune-di-castelfiorentino,6,355.0,87.65,355,355,355,Excellent,6,0,1
-fc47d219-e1e1-4df2-8b32-82b9a3642801,Agenzia di Tutela della Salute della Brianza,agenzia-di-tutela-della-salute-della-brianza,10,355.0,87.65,355,355,355,Excellent,10,0,1
-39782b3d-e1a3-41d7-82da-1261dbd51aca,Comune di Catanzaro,comune-di-catanzaro,5,355.0,87.65,355,355,355,Excellent,5,0,1
-d2009474-b069-4c09-98ab-53a72fe75f46,Universita di Torino,universita-di-torino,14,355.0,87.65,355,355,355,Excellent,14,0,1
-bc2358db-2de4-47e7-97d5-6e838bda23c9,Arsac Azienda Regionale per lo Sviluppo dell'Agricoltura Calabrese,arsac-azienda-regionale-per-lo-sviluppo-dell-agricoltura-calabrese,7,355.0,87.65,355,355,355,Excellent,7,0,1
-ec4e87cf-8ff4-47b4-b46c-9c5e393ac286,Comune di Casoli,comune-di-casoli,4,355.0,87.65,355,355,355,Excellent,4,0,1
-dbd34fd7-3ed1-4223-bd2e-7c00df665195,Comune di Bitetto,comune-di-bitetto,4,355.0,87.65,355,355,355,Excellent,4,0,1
-09b27d0d-cea8-4137-8286-3b0588f6c54b,Comune di Novi Ligure,comune-di-novi-ligure,5,355.0,87.65,355,355,355,Excellent,5,0,1
-4264b4df-ebbf-46bb-b2e8-9a5be149046f,Consorzio Universitario Piceno,consorzio-universitario-piceno,10,355.0,87.65,355,355,355,Excellent,10,0,1
-f70946ef-1071-492e-bb55-c41ef2900372,Comune di Canino,comune-di-canino,1,355.0,87.65,355,355,355,Excellent,1,0,1
-293fb0bd-8583-45df-8b52-d682755d6027,Comune di Barga,comune-di-barga,1,355.0,87.65,355,355,355,Excellent,1,0,1
-4c08de84-1e01-4297-b548-765b491521fb,Comune di Mede,comune-di-mede,1,355.0,87.65,355,355,355,Excellent,1,0,1
-0d16adc8-4a2c-4a5c-b04f-8d544911dce0,Comune di Petilia Policastro,comune-di-petilia-policastro,10,355.0,87.65,355,355,355,Excellent,10,0,1
-08fcb3c4-80e9-469e-8dcc-58b81eb5c742,Comune di San Nicola la Strada,comune-di-san-nicola-la-strada,5,355.0,87.65,355,355,355,Excellent,5,0,1
-3a697a3b-53cc-450d-8055-edb0fd902020,Azienda Ospedaliero Universitaria Pisana,azienda-ospedaliero-universitaria-pisana,3,355.0,87.65,355,355,355,Excellent,3,0,1
-1f8c46e7-4335-40ae-b09e-95ee3003d42f,Consorzio Intercomunale Servizi Socio Assistenziali di Pianezza,consorzio-intercomunale-servizi-socio-assistenziali-di-pianezza,3,355.0,87.65,355,355,355,Excellent,3,0,1
-604ab9c6-6297-4d7c-9ec0-1c3f46cabc38,Comune di Taggia,comune-di-taggia,5,355.0,87.65,355,355,355,Excellent,5,0,1
-164c30fb-3f80-40f6-b579-6f6ade5cb08e,Comune di Borgo a Mozzano,comune-di-borgo-a-mozzano,2,355.0,87.65,355,355,355,Excellent,2,0,1
-e3afd770-f17c-452a-b494-35c67aac9067,Azienda Socio Sanitaria Territoriale della Valle Olona,azienda-socio-sanitaria-territoriale-della-valle-olona,17,355.0,87.65,355,355,355,Excellent,17,0,1
-3acc744c-1499-4f62-bcee-0a7fb623ba8c,Comune di Coriano,comune-di-coriano,8,355.0,87.65,355,355,355,Excellent,8,0,1
-251e1965-dfe8-45f1-a2a7-398863225576,Comune di Sovicille,comune-di-sovicille,1,355.0,87.65,355,355,355,Excellent,1,0,1
-6e9c7c6d-c77f-47e8-b93a-d31afd4e92db,Consip,consip,16,355.0,87.65,355,355,355,Excellent,16,0,1
 55388ac0-2be8-4f1f-90f7-8a9b212eb593,Boxxapps,boxxapps,719,355.0,87.65,355,355,355,Excellent,719,0,73
-149533ec-da7e-4667-a756-064b0a2aa6a4,Comune di Borgo San Dalmazzo,comune-di-borgo-san-dalmazzo,3,355.0,87.65,355,355,355,Excellent,3,0,1
-7c47be6b-7409-45b5-bf9b-20e1e55be759,Comune di Deliceto,comune-di-deliceto,3,355.0,87.65,355,355,355,Excellent,3,0,1
-5eb90046-a8eb-411a-bd00-33071cbaeded,Comune di Serravalle Scrivia,comune-di-serravalle-scrivia,2,355.0,87.65,355,355,355,Excellent,2,0,1
-9c4fb242-0259-451d-baf2-54a51e5fd32c,Universita degli Studi di Napoli Parthenope,universita-degli-studi-di-napoli-parthenope,15,355.0,87.65,355,355,355,Excellent,15,0,1
-ec0c9c44-fe90-47b1-bd88-2b9dc57bd25e,Comune di Albisola Superiore,comune-di-albisola-superiore,2,355.0,87.65,355,355,355,Excellent,2,0,1
-ac8db934-572c-4e68-b00c-2fc3d8a29050,Ispra,ispra,10,355.0,87.65,355,355,355,Excellent,10,0,2
-aef1d1e0-3f4b-41cf-bebb-f34390847f42,Unione Italiana delle Camere di Commercio Industria Artigianato e Agricoltura,unione-italiana-delle-camere-di-commercio-industria-artigianato-e-agricoltura,422,355.0,87.65,355,355,355,Excellent,422,0,1
-2faa23b0-90ad-49f2-998e-003f6100e279,Universita di Bari,universita-di-bari,105,355.0,87.65,355,355,355,Excellent,105,0,1
+6e9c7c6d-c77f-47e8-b93a-d31afd4e92db,Consip,consip,16,355.0,87.65,355,355,355,Excellent,16,0,1
 5c562a2c-ee7a-4a78-8f3d-73642b166e5c,INAIL,inail,102,355.0,87.65,355,355,355,Excellent,102,0,2
-8d8c41d3-a539-4f08-b489-a7fed178846a,Comune di Tortoreto,comune-di-tortoreto,7,355.0,87.65,355,355,355,Excellent,7,0,1
-9109e13d-e845-43b7-aed3-916043efe653,Regione Liguria,regione-liguria,19,355.0,87.65,355,355,355,Excellent,19,0,1
-829778e5-41d8-465f-bf50-06ff8deb0245,Comune di Grassobbio,comune-di-grassobbio,3,355.0,87.65,355,355,355,Excellent,3,0,1
-d9b9e2b5-b8ab-4ee6-b2a0-7a710762c60a,Comune di Torremaggiore,comune-di-torremaggiore,1,355.0,87.65,355,355,355,Excellent,1,0,1
-3f34dfc3-ecb9-4495-be5b-5b50b1090f05,Universita degli Studi di Palermo,universita-degli-studi-di-palermo,19,355.0,87.65,355,355,355,Excellent,19,0,1
-d62208e2-c944-4578-a792-7cec058137c0,Provincia di Avellino,provincia-di-avellino,10,355.0,87.65,355,355,355,Excellent,10,0,1
+b5cdcd76-e358-49ed-a833-a44102a7ece0,Comune di Domodossola,comune-di-domodossola,3,355.0,87.65,355,355,355,Excellent,3,0,1
+f54588ab-46a1-4c1b-8fcc-f4c5fbc830d2,Fondazione Restart,fondazione-restart,10,355.0,87.65,355,355,355,Excellent,10,0,1
+aef1d1e0-3f4b-41cf-bebb-f34390847f42,Unione Italiana delle Camere di Commercio Industria Artigianato e Agricoltura,unione-italiana-delle-camere-di-commercio-industria-artigianato-e-agricoltura,422,355.0,87.65,355,355,355,Excellent,422,0,1
+54503213-4f23-4c39-ba5f-c0b0bb78f900,Ministero del Turismo,ministero-del-turismo,16,355.0,87.65,355,355,355,Excellent,16,0,1
+f0fff560-469a-42b7-b17d-21853d107bce,Cnit Consorzio Nazionale Interuniversitario per le Telecomunicazioni,cnit-consorzio-nazionale-interuniversitario-per-le-telecomunicazioni,10,355.0,87.65,355,355,355,Excellent,10,0,1
+3d6faeb4-ce86-4f91-b020-e5df6e9588aa,Comune di Massa,comune-di-massa,4,355.0,87.65,355,355,355,Excellent,4,0,1
+5276bffc-0ff5-4c75-820d-169c895fd149,Istituto Superiore di Sanita,istituto-superiore-di-sanita,13,355.0,87.65,355,355,355,Excellent,13,0,1
+8daf7621-05b2-4f9e-8c12-f485eb388d61,ATS della Montagna,ats-della-montagna,10,355.0,87.65,355,355,355,Excellent,10,0,1
+7053f468-42ee-4814-8523-2bc19f0f896f,Universita degli Studi della Campania l'Vanvitelli,universita-degli-studi-della-campania-l-vanvitelli,11,355.0,87.65,355,355,355,Excellent,11,0,1
+8b8cf2d9-cb93-4c83-b7ef-af40d0669369,Aspal Agenzia Sarda per le Politiche Attive del Lavoro,aspal-agenzia-sarda-per-le-politiche-attive-del-lavoro,15,355.0,87.65,355,355,355,Excellent,15,0,1
+3a6dd9fd-f494-4134-b216-b5471bfebb51,Pcm Protezione Civile,pcm-protezione-civile,5,355.0,87.65,355,355,355,Excellent,5,0,1
+3954d7c6-fc2b-4dd1-aebf-e336a0e63b64,Azienda Socio Sanitaria Territoriale Lariana,azienda-socio-sanitaria-territoriale-lariana,16,355.0,87.65,355,355,355,Excellent,16,0,1
+a1c6b7a1-4093-438f-a94b-e8e55b598cff,Universita degli Studi di Camerino,universita-degli-studi-di-camerino,10,355.0,87.65,355,355,355,Excellent,10,0,1
+0fbdec27-b8fc-4696-8ec9-53a24adfb36e,Asbr Azienda Speciale Servizi Bassa Reggiana,asbr-azienda-speciale-servizi-bassa-reggiana,3,355.0,87.65,355,355,355,Excellent,3,0,1
+ac8db934-572c-4e68-b00c-2fc3d8a29050,Ispra,ispra,10,355.0,87.65,355,355,355,Excellent,10,0,2
+cf2d76c3-7883-4391-8002-dcba5c1dbdb0,Comune di Fonte Nuova,comune-di-fonte-nuova,5,355.0,87.65,355,355,355,Excellent,5,0,1
+a9642632-cc67-477f-b66d-437a4fb7e03d,ATS Citta Metropolitana di Milano,ats-citta-metropolitana-di-milano,10,355.0,87.65,355,355,355,Excellent,10,0,1
+bc2358db-2de4-47e7-97d5-6e838bda23c9,Arsac Azienda Regionale per lo Sviluppo dell'Agricoltura Calabrese,arsac-azienda-regionale-per-lo-sviluppo-dell-agricoltura-calabrese,7,355.0,87.65,355,355,355,Excellent,7,0,1
+5597fffe-b810-404e-94a3-498f3d9d9092,Sebastien Catalog,sebastien-catalog,1,355.0,87.65,355,355,355,Excellent,1,0,1
+b5ce8c17-eae1-4b21-b9e9-4ca66c9a59c0,Istituto Zooprofilattico Sperimentale dell'Umbria e delle Marche Togo Rosati,istituto-zooprofilattico-sperimentale-dell-umbria-e-delle-marche-togo-rosati,10,355.0,87.65,355,355,355,Excellent,10,0,1
 bab3f5ff-6683-4d89-a008-b63dc0d8a3d9,Istituto Universitario di Studi Superiori di Pavia,istituto-universitario-di-studi-superiori-di-pavia,10,355.0,87.65,355,355,355,Excellent,10,0,1
-9c0f897a-b9fe-4c59-a533-33a809d5bf2d,Comune di Cingoli,comune-di-cingoli,1,355.0,87.65,355,355,355,Excellent,1,0,1
+76e91de6-8e18-48c9-b5e4-ed7dbffd6877,Comune di Torre Annunziata,comune-di-torre-annunziata,3,355.0,87.65,355,355,355,Excellent,3,0,1
+1f8c46e7-4335-40ae-b09e-95ee3003d42f,Consorzio Intercomunale Servizi Socio Assistenziali di Pianezza,consorzio-intercomunale-servizi-socio-assistenziali-di-pianezza,3,355.0,87.65,355,355,355,Excellent,3,0,1
+3fdcdae0-c903-46bf-8555-c254f71cbecc,Azienda Socio Sanitaria Territoriale di Lecco,azienda-socio-sanitaria-territoriale-di-lecco,10,355.0,87.65,355,355,355,Excellent,10,0,1
+3daa7d70-c6f4-405e-8237-8ed37535ae08,Comune di Olgiate Olona,comune-di-olgiate-olona,5,355.0,87.65,355,355,355,Excellent,5,0,1
+3c5f03d0-d1a8-43ed-a4ff-fd5904a4f941,Comune di Castelfiorentino,comune-di-castelfiorentino,6,355.0,87.65,355,355,355,Excellent,6,0,1
+3f34dfc3-ecb9-4495-be5b-5b50b1090f05,Universita degli Studi di Palermo,universita-degli-studi-di-palermo,19,355.0,87.65,355,355,355,Excellent,19,0,1
+4264b4df-ebbf-46bb-b2e8-9a5be149046f,Consorzio Universitario Piceno,consorzio-universitario-piceno,10,355.0,87.65,355,355,355,Excellent,10,0,1
+cfcc1d68-8701-4093-a65d-e7a89c25e557,Comune di Arquata Scrivia,comune-di-arquata-scrivia,2,355.0,87.65,355,355,355,Excellent,2,0,1
+fc47d219-e1e1-4df2-8b32-82b9a3642801,Agenzia di Tutela della Salute della Brianza,agenzia-di-tutela-della-salute-della-brianza,10,355.0,87.65,355,355,355,Excellent,10,0,1
+2faa23b0-90ad-49f2-998e-003f6100e279,Universita di Bari,universita-di-bari,105,355.0,87.65,355,355,355,Excellent,105,0,1
+d62208e2-c944-4578-a792-7cec058137c0,Provincia di Avellino,provincia-di-avellino,10,355.0,87.65,355,355,355,Excellent,10,0,1
+6ea4dd4a-6874-435a-a545-7b60761f9e5f,Agenzia Regionale per la Protezione dell'Ambiente della Sardegna,agenzia-regionale-per-la-protezione-dell-ambiente-della-sardegna,12,355.0,87.65,355,355,355,Excellent,12,0,1
+0d16adc8-4a2c-4a5c-b04f-8d544911dce0,Comune di Petilia Policastro,comune-di-petilia-policastro,10,355.0,87.65,355,355,355,Excellent,10,0,1
+8e7b5d19-4a39-4d51-96c9-549ee2eda073,Provincia di Parma,provincia-di-parma,5,355.0,87.65,355,355,355,Excellent,5,0,1
+e3afd770-f17c-452a-b494-35c67aac9067,Azienda Socio Sanitaria Territoriale della Valle Olona,azienda-socio-sanitaria-territoriale-della-valle-olona,17,355.0,87.65,355,355,355,Excellent,17,0,1
+9109e13d-e845-43b7-aed3-916043efe653,Regione Liguria,regione-liguria,19,355.0,87.65,355,355,355,Excellent,19,0,1
+3a697a3b-53cc-450d-8055-edb0fd902020,Azienda Ospedaliero Universitaria Pisana,azienda-ospedaliero-universitaria-pisana,3,355.0,87.65,355,355,355,Excellent,3,0,1
+c59b580b-8e17-459f-b532-db891593d4e6,Comune di Grottammare,comune-di-grottammare,5,355.0,87.65,355,355,355,Excellent,5,0,1
+604ab9c6-6297-4d7c-9ec0-1c3f46cabc38,Comune di Taggia,comune-di-taggia,5,355.0,87.65,355,355,355,Excellent,5,0,1
+811617ad-e7ff-465e-88db-fd5bb52d8e28,Comune di Settimo San Pietro,comune-di-settimo-san-pietro,1,355.0,87.65,355,355,355,Excellent,1,0,1
+164c30fb-3f80-40f6-b579-6f6ade5cb08e,Comune di Borgo a Mozzano,comune-di-borgo-a-mozzano,2,355.0,87.65,355,355,355,Excellent,2,0,1
+86d5653a-9fe3-4471-a15f-c0628134d835,Comune di Vedano Olona,comune-di-vedano-olona,1,355.0,87.65,355,355,355,Excellent,1,0,1
+98dea997-f6bf-4e57-8111-87b4c50543e9,Comune di Venafro,comune-di-venafro,10,355.0,87.65,355,355,355,Excellent,10,0,1
+d2009474-b069-4c09-98ab-53a72fe75f46,Universita di Torino,universita-di-torino,14,355.0,87.65,355,355,355,Excellent,14,0,1
+53290502-f70e-43fc-9378-bab36bb0f55c,Provincia di Padova,provincia-di-padova,10,355.0,87.65,355,355,355,Excellent,10,0,1
+09b27d0d-cea8-4137-8286-3b0588f6c54b,Comune di Novi Ligure,comune-di-novi-ligure,5,355.0,87.65,355,355,355,Excellent,5,0,1
+ec4e87cf-8ff4-47b4-b46c-9c5e393ac286,Comune di Casoli,comune-di-casoli,4,355.0,87.65,355,355,355,Excellent,4,0,1
 123b513b-62c4-4496-b5a1-0372ef6311c6,Comune di Policoro,comune-di-policoro,11,355.0,87.65,355,355,355,Excellent,11,0,1
 24f39537-efc7-4c06-bb10-efd2d2f27ac3,Camera di Commercio delle Marche,camera-di-commercio-delle-marche,65,355.0,87.65,355,355,355,Excellent,65,0,1
-ccbf9a69-462f-4d0d-9862-2158f7ff3f03,Comune di Salle,comune-di-salle,1,355.0,87.65,355,355,355,Excellent,1,0,1
-0fbdec27-b8fc-4696-8ec9-53a24adfb36e,Asbr Azienda Speciale Servizi Bassa Reggiana,asbr-azienda-speciale-servizi-bassa-reggiana,3,355.0,87.65,355,355,355,Excellent,3,0,1
-86d5653a-9fe3-4471-a15f-c0628134d835,Comune di Vedano Olona,comune-di-vedano-olona,1,355.0,87.65,355,355,355,Excellent,1,0,1
-c59b580b-8e17-459f-b532-db891593d4e6,Comune di Grottammare,comune-di-grottammare,5,355.0,87.65,355,355,355,Excellent,5,0,1
-811617ad-e7ff-465e-88db-fd5bb52d8e28,Comune di Settimo San Pietro,comune-di-settimo-san-pietro,1,355.0,87.65,355,355,355,Excellent,1,0,1
-160858a8-41d6-4c3b-b30f-98e785aa3dc4,Comune di Campomarino,comune-di-campomarino,1,355.0,87.65,355,355,355,Excellent,1,0,1
+39782b3d-e1a3-41d7-82da-1261dbd51aca,Comune di Catanzaro,comune-di-catanzaro,5,355.0,87.65,355,355,355,Excellent,5,0,1
+76e0a090-f08c-4ff6-bdd6-bb8c258c5731,Comune di Bitritto,comune-di-bitritto,5,355.0,87.65,355,355,355,Excellent,5,0,1
+3acc744c-1499-4f62-bcee-0a7fb623ba8c,Comune di Coriano,comune-di-coriano,8,355.0,87.65,355,355,355,Excellent,8,0,1
+829778e5-41d8-465f-bf50-06ff8deb0245,Comune di Grassobbio,comune-di-grassobbio,3,355.0,87.65,355,355,355,Excellent,3,0,1
+9c4fb242-0259-451d-baf2-54a51e5fd32c,Universita degli Studi di Napoli Parthenope,universita-degli-studi-di-napoli-parthenope,15,355.0,87.65,355,355,355,Excellent,15,0,1
+4f460e94-efa3-4855-9fbe-7f289fba8f90,Comune di Vittoria,comune-di-vittoria,5,355.0,87.65,355,355,355,Excellent,5,0,1
+ec0c9c44-fe90-47b1-bd88-2b9dc57bd25e,Comune di Albisola Superiore,comune-di-albisola-superiore,2,355.0,87.65,355,355,355,Excellent,2,0,1
+d00a1361-e3a8-439d-93cd-59b299441763,Comune di Albino,comune-di-albino,5,355.0,87.65,355,355,355,Excellent,5,0,1
 389cafd9-534e-4e67-b4b0-71ecdd5bd990,Comune di Soresina,comune-di-soresina,1,355.0,87.65,355,355,355,Excellent,1,0,1
-5597fffe-b810-404e-94a3-498f3d9d9092,Sebastien Catalog,sebastien-catalog,1,355.0,87.65,355,355,355,Excellent,1,0,1
+160858a8-41d6-4c3b-b30f-98e785aa3dc4,Comune di Campomarino,comune-di-campomarino,1,355.0,87.65,355,355,355,Excellent,1,0,1
+08fcb3c4-80e9-469e-8dcc-58b81eb5c742,Comune di San Nicola la Strada,comune-di-san-nicola-la-strada,5,355.0,87.65,355,355,355,Excellent,5,0,1
+75656a6e-699f-49e3-ac14-e055835e9638,Comune di Porto Cesareo,comune-di-porto-cesareo,3,355.0,87.65,355,355,355,Excellent,3,0,1
+ccbf9a69-462f-4d0d-9862-2158f7ff3f03,Comune di Salle,comune-di-salle,1,355.0,87.65,355,355,355,Excellent,1,0,1
+7c47be6b-7409-45b5-bf9b-20e1e55be759,Comune di Deliceto,comune-di-deliceto,3,355.0,87.65,355,355,355,Excellent,3,0,1
+8d8c41d3-a539-4f08-b489-a7fed178846a,Comune di Tortoreto,comune-di-tortoreto,7,355.0,87.65,355,355,355,Excellent,7,0,1
+dbd34fd7-3ed1-4223-bd2e-7c00df665195,Comune di Bitetto,comune-di-bitetto,4,355.0,87.65,355,355,355,Excellent,4,0,1
+293fb0bd-8583-45df-8b52-d682755d6027,Comune di Barga,comune-di-barga,1,355.0,87.65,355,355,355,Excellent,1,0,1
+4c08de84-1e01-4297-b548-765b491521fb,Comune di Mede,comune-di-mede,1,355.0,87.65,355,355,355,Excellent,1,0,1
+149533ec-da7e-4667-a756-064b0a2aa6a4,Comune di Borgo San Dalmazzo,comune-di-borgo-san-dalmazzo,3,355.0,87.65,355,355,355,Excellent,3,0,1
+251e1965-dfe8-45f1-a2a7-398863225576,Comune di Sovicille,comune-di-sovicille,1,355.0,87.65,355,355,355,Excellent,1,0,1
+d9b9e2b5-b8ab-4ee6-b2a0-7a710762c60a,Comune di Torremaggiore,comune-di-torremaggiore,1,355.0,87.65,355,355,355,Excellent,1,0,1
+5eb90046-a8eb-411a-bd00-33071cbaeded,Comune di Serravalle Scrivia,comune-di-serravalle-scrivia,2,355.0,87.65,355,355,355,Excellent,2,0,1
+f70946ef-1071-492e-bb55-c41ef2900372,Comune di Canino,comune-di-canino,1,355.0,87.65,355,355,355,Excellent,1,0,1
+e5916554-888e-48fa-8086-c3a5c720639f,Comune di Forte dei Marmi,comune-di-forte-dei-marmi,1,355.0,87.65,355,355,355,Excellent,1,0,1
+9c0f897a-b9fe-4c59-a533-33a809d5bf2d,Comune di Cingoli,comune-di-cingoli,1,355.0,87.65,355,355,355,Excellent,1,0,1
 f9546d88-5c6e-41d1-97b2-ebd9d0a77d21,Comune di Rimini,comune-di-rimini,72,354.72,87.59,355,335,355,Excellent,71,0,1
 8c4b1fbd-cff7-4ec1-a4a0-8bfe778e1f89,Regione Calabria,regione-calabria,324,354.63,87.56,355,335,355,Excellent,318,0,33
 53041470-c18c-4fd9-8356-f4eddf598ee5,Unione Municipia,unione-municipia,8,353.75,87.35,355,345,355,Excellent,7,0,1
@@ -224,22 +223,22 @@ bd167c31-204e-430f-9337-98bff34cc2af,Provincia di Pescara,provincia-di-pescara,2
 68ceb51d-00d3-45e8-9420-692827d82a38,Comune di Corigliano Rossano,comune-di-corigliano-rossano,12,345.83,85.39,345,345,355,Good,1,0,1
 b85fe2f8-59bf-40b9-af1c-9ee1801d8449,Ministero dell'Interno,ministero-dell-interno,38,345.53,85.32,345,335,355,Good,9,0,2
 b59c46a8-b048-448a-ac68-4b158ad0aaac,Pcm Dipartimento Trasformazione Digitale,pcm-dipartimento-trasformazione-digitale,35,345.0,85.19,345,265,355,Good,8,0,2
-a3ad6393-ac3b-4080-acac-cb4da6ad4080,Comune di Rende,comune-di-rende,9,345.0,85.19,345,345,345,Good,0,0,1
-728accb6-79a7-427c-aef8-ba404c8b606a,Comune di Guidonia Montecelio,comune-di-guidonia-montecelio,5,345.0,85.19,345,345,345,Good,0,0,1
 4dc0cdde-3150-48ae-bacd-8552da668a74,Ente Autonomo Volturno Srl,ente-autonomo-volturno-srl,5,345.0,85.19,345,345,345,Good,0,0,1
-ffb309bb-fdd7-4a73-95db-ccb2ca258bde,Comune di Santhia,comune-di-santhia,3,345.0,85.19,345,345,345,Good,0,0,1
-4b14c525-6bc0-4c2f-928f-cd233f2be88d,Comune di Pula,comune-di-pula,2,345.0,85.19,345,345,345,Good,0,0,1
-f5799c0d-0f96-42ae-886b-4fe5117d238e,Unione dei Comuni del Coros,unione-dei-comuni-del-coros,6,345.0,85.19,345,345,345,Good,0,0,1
-c3777ff3-b760-43ec-86df-929722e6a9ad,Comune di Borghetto Santo Spirito,comune-di-borghetto-santo-spirito,3,345.0,85.19,345,345,345,Good,0,0,1
-d39bb41e-5dc3-46e2-b9be-ba2ac2a1b72c,Comune di Carugate,comune-di-carugate,3,345.0,85.19,345,345,345,Good,0,0,1
-ffaea769-155e-492e-88fa-556b8732aed5,Comune di Resana,comune-di-resana,3,345.0,85.19,345,345,345,Good,0,0,1
-2c8e04d7-6b17-4834-95d8-0fc250174280,Comune di Merate,comune-di-merate,5,345.0,85.19,345,345,345,Good,0,0,1
 f5b11c42-03fe-44c0-8a8d-cd3451b77f75,Comune di Nerviano,comune-di-nerviano,10,345.0,85.19,345,345,345,Good,0,0,1
+a3ad6393-ac3b-4080-acac-cb4da6ad4080,Comune di Rende,comune-di-rende,9,345.0,85.19,345,345,345,Good,0,0,1
+f5799c0d-0f96-42ae-886b-4fe5117d238e,Unione dei Comuni del Coros,unione-dei-comuni-del-coros,6,345.0,85.19,345,345,345,Good,0,0,1
+728accb6-79a7-427c-aef8-ba404c8b606a,Comune di Guidonia Montecelio,comune-di-guidonia-montecelio,5,345.0,85.19,345,345,345,Good,0,0,1
+2c8e04d7-6b17-4834-95d8-0fc250174280,Comune di Merate,comune-di-merate,5,345.0,85.19,345,345,345,Good,0,0,1
+ffb309bb-fdd7-4a73-95db-ccb2ca258bde,Comune di Santhia,comune-di-santhia,3,345.0,85.19,345,345,345,Good,0,0,1
+ffaea769-155e-492e-88fa-556b8732aed5,Comune di Resana,comune-di-resana,3,345.0,85.19,345,345,345,Good,0,0,1
+c3777ff3-b760-43ec-86df-929722e6a9ad,Comune di Borghetto Santo Spirito,comune-di-borghetto-santo-spirito,3,345.0,85.19,345,345,345,Good,0,0,1
+4b14c525-6bc0-4c2f-928f-cd233f2be88d,Comune di Pula,comune-di-pula,2,345.0,85.19,345,345,345,Good,0,0,1
 fc5aa328-c830-4dbe-a1c3-b27c59a7faae,Comune di San Cesareo,comune-di-san-cesareo,1,345.0,85.19,345,345,345,Good,0,0,1
+d39bb41e-5dc3-46e2-b9be-ba2ac2a1b72c,Comune di Carugate,comune-di-carugate,3,345.0,85.19,345,345,345,Good,0,0,1
 fdd90e4e-1f3d-4bd1-acba-cbef7c9c0271,Universita della Basilicata,universita-della-basilicata,29,343.97,84.93,355,275,355,Good,25,0,1
 faab567c-7036-4090-87d2-bf7c558b43b9,Camera di Commercio Industria Artigianato e Agricoltura di Roma,camera-di-commercio-industria-artigianato-e-agricoltura-di-roma,20,343.0,84.69,345,305,345,Good,0,0,1
 d605ab5c-50bd-4895-bace-4ac93714032c,Regione Basilicata,regione-basilicata,224,342.9,84.67,325,245,405,Good,83,0,1
-4188f7ff-0b05-4dbf-982e-9a6d99da7bc6,Provincia Autonoma di Bolzano,provincia-autonoma-di-bolzano,909,342.79,84.64,355,235,365,Good,585,0,53
+4188f7ff-0b05-4dbf-982e-9a6d99da7bc6,Provincia Autonoma di Bolzano,provincia-autonoma-di-bolzano,909,342.79,84.64,355,235,365,Good,585,0,58
 1d8cff3f-b4de-418d-892b-bc5cecc79de7,Comune di Chiavari,comune-di-chiavari,53,342.74,84.63,305,305,385,Good,25,0,1
 1266399c-6435-408b-b63a-c0ed9f226bad,Comune di Longare,comune-di-longare,15,342.33,84.53,305,305,385,Good,7,0,1
 593c0fab-b437-4181-b277-cbf5bc21d81c,Ministero della Salute,ministero-della-salute,51,340.1,83.97,335,285,385,Good,25,0,1
@@ -254,20 +253,20 @@ c7b4166e-36ae-4abb-9827-a9f580a02a2b,Comune di Assisi,comune-di-assisi,6,336.67,
 fd1d1914-d4d4-4705-8479-08d959b02005,Agenzia Laore Sardegna,agenzia-laore-sardegna,12,326.67,80.66,325,275,355,Good,4,0,1
 f9cc510c-3548-4f1f-8b24-d0182de48f33,Universita di Bologna,universita-di-bologna,34,325.59,80.39,275,255,405,Good,14,0,2
 0e25dc4b-2eba-42ff-97a9-9929e4846223,Comune di Santa Margherita Ligure,comune-di-santa-margherita-ligure,56,325.54,80.38,305,305,385,Good,14,0,1
+be8bfab3-995a-404f-8a9f-e41313156ea9,Comune di Chianciano Terme,comune-di-chianciano-terme,1,325.0,80.25,325,325,325,Good,0,0,1
 11abb820-f6d1-4339-a9df-d4771093a720,Comune di Piombino Dese,comune-di-piombino-dese,3,325.0,80.25,325,325,325,Good,0,0,1
-5ec925ed-506c-460f-aa93-b26bacb183c5,Comune di Breganze,comune-di-breganze,3,325.0,80.25,325,325,325,Good,0,0,1
-2aa5fa7b-10fe-4561-ac30-cbeb310a9c7c,Comune di Barbarano Mossano,comune-di-barbarano-mossano,3,325.0,80.25,325,325,325,Good,0,0,1
 39056311-4ed4-44c4-ba81-13cbdd5ccdf3,Comune di Santa Giustina in Colle,comune-di-santa-giustina-in-colle,3,325.0,80.25,325,325,325,Good,0,0,1
 63fed95d-c174-4402-8fdf-6546a6fae2b3,Comune di Fontanelle,comune-di-fontanelle,3,325.0,80.25,325,325,325,Good,0,0,1
-be8bfab3-995a-404f-8a9f-e41313156ea9,Comune di Chianciano Terme,comune-di-chianciano-terme,1,325.0,80.25,325,325,325,Good,0,0,1
+5ec925ed-506c-460f-aa93-b26bacb183c5,Comune di Breganze,comune-di-breganze,3,325.0,80.25,325,325,325,Good,0,0,1
+2aa5fa7b-10fe-4561-ac30-cbeb310a9c7c,Comune di Barbarano Mossano,comune-di-barbarano-mossano,3,325.0,80.25,325,325,325,Good,0,0,1
 1381d40a-605b-4145-95a7-e178e4e8f8a9,Comune di Nuoro,comune-di-nuoro,5,323.0,79.75,305,305,355,Good,1,0,1
 ba554d18-9d9f-4365-a9e7-13b5cddf13cd,Comune di Santa Maria di Licodia,comune-di-santa-maria-di-licodia,43,319.88,78.98,305,305,385,Good,8,0,1
 92f7108f-865e-4967-950d-68fee165c412,Consiglio Regionale della Campania,consiglio-regionale-della-campania,25,317.0,78.27,305,305,335,Good,0,0,1
 2bbf9fca-aef9-4264-b4ef-31848f2cf206,Regione Marche,regione-marche,5463,315.59,77.92,335,245,385,Good,2632,0,238
 d24601dc-4327-45e5-a2a1-28e91d50213a,Consorzio Intercomunale Servizi Sociali di Chivasso,consorzio-intercomunale-servizi-sociali-di-chivasso,17,314.41,77.63,305,305,385,Good,2,0,1
 79884d6c-55d0-4987-9391-9aec2d3b7193,Comune di Arese,comune-di-arese,44,314.09,77.55,305,305,385,Good,5,0,1
-fd8ad81b-a555-4d73-be28-90c3d23e7cb1,Comune di Lonate Pozzolo,comune-di-lonate-pozzolo,5,313.0,77.28,345,265,345,Good,0,0,1
 81e7ba14-4b56-4b50-a681-8ba6f1e48b7e,Comune di Civitavecchia,comune-di-civitavecchia,10,313.0,77.28,345,265,345,Good,0,0,1
+fd8ad81b-a555-4d73-be28-90c3d23e7cb1,Comune di Lonate Pozzolo,comune-di-lonate-pozzolo,5,313.0,77.28,345,265,345,Good,0,0,1
 c87c64da-568e-42fa-870f-7fae083db0a5,Comune di Carovigno,comune-di-carovigno,58,311.9,77.01,305,305,385,Good,5,0,1
 719d1cb4-a300-4451-ad5e-b99819c04c10,Comune di Prignano Sulla Secchia,comune-di-prignano-sulla-secchia,48,308.96,76.29,305,305,385,Good,2,0,1
 04294742-0d45-4507-b740-a70f75ccd6be,Comune di Mentana,comune-di-mentana,45,308.56,76.19,305,305,385,Good,2,0,1
@@ -277,102 +276,102 @@ cec23fa1-4efd-46d0-8948-b6cf4b83b5ef,Comune di Magenta,comune-di-magenta,40,307.
 90e119c6-3b34-484d-a8c8-8dc1a602842e,Comune di Arcene,comune-di-arcene,41,306.95,75.79,305,305,385,Good,1,0,1
 8f1999e8-8405-443f-a216-574808712990,Comune di Piacenza,comune-di-piacenza,72,305.69,75.48,305,305,355,Good,1,0,1
 0c8ebe34-c765-43c0-8deb-67940890204a,Ministero dei Beni Culturali,ministero-dei-beni-culturali,213,305.28,75.38,305,295,355,Good,1,0,5
-7c469a7d-a1b9-4b7e-bdf9-85e21a4f7773,Comune di Seriate,comune-di-seriate,25,305.0,75.31,305,305,305,Good,0,0,1
-d042b660-0e38-4b3f-9463-1a23cf99d4d2,Comune di Nembro,comune-di-nembro,23,305.0,75.31,305,305,305,Good,0,0,1
 c3234889-f512-4ab2-9ee8-0d7ec8a7cb6c,Provincia di Novara,provincia-di-novara,48,305.0,75.31,305,305,305,Good,0,0,1
-451287af-4856-48d9-af89-e389e67cc042,Comune di Bisignano,comune-di-bisignano,5,305.0,75.31,305,305,305,Good,0,0,1
-e879fab1-9906-456a-995c-df320ac6ea54,Comune di Rocca di Papa,comune-di-rocca-di-papa,10,305.0,75.31,305,305,305,Good,0,0,1
-6a63756b-72f3-4dac-b94b-c109b8deb3e1,Unione dei Comuni Valdostani Mont Emilius,unione-dei-comuni-valdostani-mont-emilius,5,305.0,75.31,305,305,305,Good,0,0,1
-e6b7829d-2b34-4568-90fc-64d179a9edfa,Comune di Lonato del Garda,comune-di-lonato-del-garda,6,305.0,75.31,305,305,305,Good,0,0,1
+d56cf387-2ee3-4b03-a193-291be330486f,Comune di Tarquinia,comune-di-tarquinia,6,305.0,75.31,305,305,305,Good,0,0,1
 e386e812-c147-4f3c-a549-d92b24daaa32,Consorzio di Gestione Area Marina Protetta Torre del Cerrano,consorzio-di-gestione-area-marina-protetta-torre-del-cerrano,3,305.0,75.31,305,305,305,Good,0,0,1
-431d91aa-6e51-46ff-8481-de9649039d89,Provincia di Forli Cesena,provincia-di-forli-cesena,22,305.0,75.31,305,305,305,Good,0,0,1
-5123938d-993a-485a-b631-d72d05390429,Provincia di Foggia,provincia-di-foggia,13,305.0,75.31,305,305,305,Good,0,0,1
-17f43b8a-cc01-49a4-aea1-ddb5a7797f7b,Comune di Fiorano Modenese,comune-di-fiorano-modenese,86,305.0,75.31,305,305,305,Good,0,0,1
-8c45992c-9b8b-4be0-96ae-4643bdd88861,Comune di Formigine,comune-di-formigine,86,305.0,75.31,305,305,305,Good,0,0,1
-ec1c625f-0574-4455-a023-164014e53a19,Comune di Sesto Fiorentino,comune-di-sesto-fiorentino,53,305.0,75.31,305,305,305,Good,0,0,1
+7c469a7d-a1b9-4b7e-bdf9-85e21a4f7773,Comune di Seriate,comune-di-seriate,25,305.0,75.31,305,305,305,Good,0,0,1
 13ebed9e-b041-46eb-8b1a-42e103ef4f66,Azienda Sanitaria Locale Vco,azienda-sanitaria-locale-vco,10,305.0,75.31,305,305,305,Good,0,0,1
-947662c1-5497-4c8e-a63a-f6330c842016,Comune di Vigonza,comune-di-vigonza,26,305.0,75.31,305,305,305,Good,0,0,1
-93f00902-8b42-4d0d-8a1e-5dd42f4b00f9,Comune di Bussolengo,comune-di-bussolengo,50,305.0,75.31,305,305,305,Good,0,0,1
+ec1c625f-0574-4455-a023-164014e53a19,Comune di Sesto Fiorentino,comune-di-sesto-fiorentino,53,305.0,75.31,305,305,305,Good,0,0,1
+e6b7829d-2b34-4568-90fc-64d179a9edfa,Comune di Lonato del Garda,comune-di-lonato-del-garda,6,305.0,75.31,305,305,305,Good,0,0,1
+3657a375-aae2-49d4-a97f-80c0d7031438,Comune di Mariano Comense,comune-di-mariano-comense,42,305.0,75.31,305,305,305,Good,0,0,1
 f33d4b00-a1ab-4149-93a8-bbee9760f06d,Comune di Sarezzo,comune-di-sarezzo,42,305.0,75.31,305,305,305,Good,0,0,1
-9eb026f3-5803-44ca-b9fa-5aa17af242dc,Comune di Treviolo,comune-di-treviolo,39,305.0,75.31,305,305,305,Good,0,0,1
-41b72f7a-0ac8-47d9-affe-d0da7a68c572,Comune di Cassina De Pecchi,comune-di-cassina-de-pecchi,49,305.0,75.31,305,305,305,Good,0,0,1
-92117c30-1626-4ee3-bb96-61460cc5b9b5,Commissione di Vigilanza Sui Fondi Pensione,commissione-di-vigilanza-sui-fondi-pensione,18,305.0,75.31,305,305,305,Good,0,0,1
-d84434ba-d5f3-438c-9e1c-a110230e018e,Comune di Castel Mella,comune-di-castel-mella,27,305.0,75.31,305,305,305,Good,0,0,1
-d0749447-a25e-44ee-8fc0-05e19be3ea4f,Comune di Biassono,comune-di-biassono,10,305.0,75.31,305,305,305,Good,0,0,1
-8d28e8ca-f11b-4e47-a2c9-c6b226d92019,Comune di Nave,comune-di-nave,42,305.0,75.31,305,305,305,Good,0,0,1
-f0cb4dd8-ff0b-43cb-a7bf-3f9578be6fb5,Comune di Orbassano,comune-di-orbassano,47,305.0,75.31,305,305,305,Good,0,0,1
-dfac1171-0922-4c4a-9a8f-a852860708d3,Comune di Pescara,comune-di-pescara,55,305.0,75.31,305,305,305,Good,0,0,1
-a94de7dd-d093-48c9-8f79-ea847690e3fe,Comune di Altamura,comune-di-altamura,32,305.0,75.31,305,305,305,Good,0,0,1
-ddc73d4e-2069-4ac9-b79b-26e73b70b4b7,Comune di Sassuolo,comune-di-sassuolo,85,305.0,75.31,305,305,305,Good,0,0,1
-1de0abeb-bd36-419b-9946-9d4582857357,Comune di Montefiorino,comune-di-montefiorino,48,305.0,75.31,305,305,305,Good,0,0,1
-e9805ed5-d9d2-4b15-9ef2-67fa5314f10b,Comune di Signa,comune-di-signa,20,305.0,75.31,305,305,305,Good,0,0,1
+d042b660-0e38-4b3f-9463-1a23cf99d4d2,Comune di Nembro,comune-di-nembro,23,305.0,75.31,305,305,305,Good,0,0,1
 3f45638a-7bce-4437-a8bd-5274c3cd9047,Comune di Grezzana,comune-di-grezzana,14,305.0,75.31,305,305,305,Good,0,0,1
-a1033ff4-b70e-4d7e-aa1e-5926c222801a,Comune di Pagani,comune-di-pagani,24,305.0,75.31,305,305,305,Good,0,0,1
-f61bbd01-416b-4ce0-a6e1-4f4c3f76bdfe,Comune di Comacchio,comune-di-comacchio,50,305.0,75.31,305,305,305,Good,0,0,1
-8c2e5c39-75ef-4c2e-8543-3a51137d8dd5,Comune di Peschiera Borromeo,comune-di-peschiera-borromeo,13,305.0,75.31,305,305,305,Good,0,0,1
-1cc4e791-0710-43ca-b3ee-c6a825b5447d,Comune di Luino,comune-di-luino,12,305.0,75.31,305,305,305,Good,0,0,1
+8259142c-4490-49d3-8cee-6e039f74a7b0,Comune di Baronissi,comune-di-baronissi,27,305.0,75.31,305,305,305,Good,0,0,1
+92117c30-1626-4ee3-bb96-61460cc5b9b5,Commissione di Vigilanza Sui Fondi Pensione,commissione-di-vigilanza-sui-fondi-pensione,18,305.0,75.31,305,305,305,Good,0,0,1
 88563d4b-1955-4469-a796-e2030a63b13d,Comune di Morbegno,comune-di-morbegno,12,305.0,75.31,305,305,305,Good,0,0,1
-ff5e368a-250c-4a2f-9aa5-dbbc4dd537a3,Comune di Frattamaggiore,comune-di-frattamaggiore,9,305.0,75.31,305,305,305,Good,0,0,1
-7ac0a1be-52b2-42ed-8192-c50a4ed59115,Comune di Bussero,comune-di-bussero,14,305.0,75.31,305,305,305,Good,0,0,1
-1a88eae0-074a-49b8-af93-7f978d5ed886,Comunita Montana Alburni,comunita-montana-alburni,7,305.0,75.31,305,305,305,Good,0,0,1
+1cc4e791-0710-43ca-b3ee-c6a825b5447d,Comune di Luino,comune-di-luino,12,305.0,75.31,305,305,305,Good,0,0,1
+e879fab1-9906-456a-995c-df320ac6ea54,Comune di Rocca di Papa,comune-di-rocca-di-papa,10,305.0,75.31,305,305,305,Good,0,0,1
+726bc211-4b26-469b-ba19-0ac8d5ea57e4,Comune di Roggiano Gravina,comune-di-roggiano-gravina,27,305.0,75.31,305,305,305,Good,0,0,1
+a94de7dd-d093-48c9-8f79-ea847690e3fe,Comune di Altamura,comune-di-altamura,32,305.0,75.31,305,305,305,Good,0,0,1
+28359e4a-b6c1-418d-a35a-0680b40b8be2,Comune di Laveno Mombello,comune-di-laveno-mombello,31,305.0,75.31,305,305,305,Good,0,0,1
+4ab04975-f03e-4402-951a-b5eab5c59747,Comune di Pieve Emanuele,comune-di-pieve-emanuele,29,305.0,75.31,305,305,305,Good,0,0,1
+b514a4c1-7cee-480f-85aa-f280e8e4a5e3,Comune di Brusciano,comune-di-brusciano,10,305.0,75.31,305,305,305,Good,0,0,1
 8f6bbec3-a31c-4460-8f2f-e16394c3f6b7,Comune di Triuggio,comune-di-triuggio,17,305.0,75.31,305,305,305,Good,0,0,1
-bde5100c-4c60-4f10-ad56-ab6e6d726be5,Comune di Galbiate,comune-di-galbiate,17,305.0,75.31,305,305,305,Good,0,0,1
-3711f6d7-eacf-4c08-a3b7-8f67981fc8b3,Comune di Giffoni Valle Piana,comune-di-giffoni-valle-piana,12,305.0,75.31,305,305,305,Good,0,0,1
-2c930491-a1fc-4ec9-aa89-4175339bbf42,Comune di Rubano,comune-di-rubano,22,305.0,75.31,305,305,305,Good,0,0,1
-5d75eca0-e879-4dcb-a812-ff2886969289,Comune di Albiate,comune-di-albiate,54,305.0,75.31,305,305,305,Good,0,0,1
-bccd988e-5869-48a1-809c-9c0221a3c3e3,Comune di Cormano,comune-di-cormano,33,305.0,75.31,305,305,305,Good,0,0,1
 305277c9-0b08-44a0-8ad7-abe8a8b80a07,Comune di Borgo San Lorenzo,comune-di-borgo-san-lorenzo,37,305.0,75.31,305,305,305,Good,0,0,1
+30ba8004-fbdd-416c-a1a8-523207ff026b,Comune di Besana in Brianza,comune-di-besana-in-brianza,40,305.0,75.31,305,305,305,Good,0,0,1
+9eb026f3-5803-44ca-b9fa-5aa17af242dc,Comune di Treviolo,comune-di-treviolo,39,305.0,75.31,305,305,305,Good,0,0,1
+b8c2ccf3-9de0-4995-8520-cbdb4534bc61,Comune di Santeramo in Colle,comune-di-santeramo-in-colle,16,305.0,75.31,305,305,305,Good,0,0,1
+41b72f7a-0ac8-47d9-affe-d0da7a68c572,Comune di Cassina De Pecchi,comune-di-cassina-de-pecchi,49,305.0,75.31,305,305,305,Good,0,0,1
+9dde546d-318f-47a0-9a45-b6feafff1004,Comune di Lavagna,comune-di-lavagna,36,305.0,75.31,305,305,305,Good,0,0,1
+17f43b8a-cc01-49a4-aea1-ddb5a7797f7b,Comune di Fiorano Modenese,comune-di-fiorano-modenese,86,305.0,75.31,305,305,305,Good,0,0,1
+2388e0ca-7522-4b20-9d40-050c578b0ce2,Comune di Castelfranco Pian di Sco,comune-di-castelfranco-pian-di-sco,61,305.0,75.31,305,305,305,Good,0,0,1
+33679cb9-991c-489d-aab4-04ae74a2ce00,Comune di Gaggiano,comune-di-gaggiano,52,305.0,75.31,305,305,305,Good,0,0,1
+6ce38fa7-c69b-4416-8165-f5477ffec67a,Comune di Frassinoro,comune-di-frassinoro,48,305.0,75.31,305,305,305,Good,0,0,1
+96b3bbb3-e7c9-46a1-b980-a16ef8591e07,Comune di Palagano,comune-di-palagano,48,305.0,75.31,305,305,305,Good,0,0,1
+1d853219-813f-469f-9382-1582ff3e5203,Comune di Desenzano del Garda,comune-di-desenzano-del-garda,43,305.0,75.31,305,305,305,Good,0,0,1
+c5ea01c8-cbef-41e4-9979-960f011bd72b,Comune di Mogliano Veneto,comune-di-mogliano-veneto,42,305.0,75.31,305,305,305,Good,0,0,1
+8c45992c-9b8b-4be0-96ae-4643bdd88861,Comune di Formigine,comune-di-formigine,86,305.0,75.31,305,305,305,Good,0,0,1
+7d75d1bf-18c1-4f06-975d-8e0ec62ca8c4,Comune di Bagno a Ripoli,comune-di-bagno-a-ripoli,30,305.0,75.31,305,305,305,Good,0,0,1
+d84434ba-d5f3-438c-9e1c-a110230e018e,Comune di Castel Mella,comune-di-castel-mella,27,305.0,75.31,305,305,305,Good,0,0,1
+d5d94045-ed9b-4e90-a1cb-cee5af4049c7,Comune di Rubiera,comune-di-rubiera,24,305.0,75.31,305,305,305,Good,0,0,1
+e28a62a9-2db1-462b-830a-860b767349d0,Comune di Viano,comune-di-viano,35,305.0,75.31,305,305,305,Good,0,0,1
+676f6ea8-fa44-40ae-a00e-a9d39e8fc536,Comune di Osio Sotto,comune-di-osio-sotto,38,305.0,75.31,305,305,305,Good,0,0,1
+dfac1171-0922-4c4a-9a8f-a852860708d3,Comune di Pescara,comune-di-pescara,55,305.0,75.31,305,305,305,Good,0,0,1
+a1033ff4-b70e-4d7e-aa1e-5926c222801a,Comune di Pagani,comune-di-pagani,24,305.0,75.31,305,305,305,Good,0,0,1
+8c2e5c39-75ef-4c2e-8543-3a51137d8dd5,Comune di Peschiera Borromeo,comune-di-peschiera-borromeo,13,305.0,75.31,305,305,305,Good,0,0,1
+ff5e368a-250c-4a2f-9aa5-dbbc4dd537a3,Comune di Frattamaggiore,comune-di-frattamaggiore,9,305.0,75.31,305,305,305,Good,0,0,1
+ac5748dd-3437-4209-b5c5-5db76d03076a,Comune di Caselle Torinese,comune-di-caselle-torinese,31,305.0,75.31,305,305,305,Good,0,0,1
+e9805ed5-d9d2-4b15-9ef2-67fa5314f10b,Comune di Signa,comune-di-signa,20,305.0,75.31,305,305,305,Good,0,0,1
+04d02a1a-8714-4936-ac71-9f0726093934,Comune di Scandiano,comune-di-scandiano,35,305.0,75.31,305,305,305,Good,0,0,1
+f168d8ec-f6c5-4b44-8d90-fb343ccb0806,Comune di Baiso,comune-di-baiso,35,305.0,75.31,305,305,305,Good,0,0,1
+d0c5a020-0e02-47c2-8efd-31e82df5a3b5,Comune di Castellarano,comune-di-castellarano,38,305.0,75.31,305,305,305,Good,0,0,1
 c1a6870b-08d7-422e-af9a-5d2b5c0c9db1,Comune di Casalgrande,comune-di-casalgrande,28,305.0,75.31,305,305,305,Good,0,0,1
 49177a0f-cfbc-44b4-8e0a-2d66b96c9ea9,Unione Tresinaro Secchia,unione-tresinaro-secchia,9,305.0,75.31,305,305,305,Good,0,0,1
-676f6ea8-fa44-40ae-a00e-a9d39e8fc536,Comune di Osio Sotto,comune-di-osio-sotto,38,305.0,75.31,305,305,305,Good,0,0,1
 ae829261-e7c6-4192-a437-90742cbaf1bb,Comune di Albenga,comune-di-albenga,33,305.0,75.31,305,305,305,Good,0,0,1
-661e3ed0-0c36-43de-a4b8-f8eb1e84bcb4,Comune di Budoni,comune-di-budoni,29,305.0,75.31,305,305,305,Good,0,0,1
-2388e0ca-7522-4b20-9d40-050c578b0ce2,Comune di Castelfranco Pian di Sco,comune-di-castelfranco-pian-di-sco,61,305.0,75.31,305,305,305,Good,0,0,1
-894d3c6a-074f-4fc7-b69e-5095f9c15ec0,Comune di Arzignano,comune-di-arzignano,27,305.0,75.31,305,305,305,Good,0,0,1
-b64dd82a-79fa-4527-a6c1-4ece2e547f79,Comune di Corbetta,comune-di-corbetta,23,305.0,75.31,305,305,305,Good,0,0,1
-726bc211-4b26-469b-ba19-0ac8d5ea57e4,Comune di Roggiano Gravina,comune-di-roggiano-gravina,27,305.0,75.31,305,305,305,Good,0,0,1
-9dde546d-318f-47a0-9a45-b6feafff1004,Comune di Lavagna,comune-di-lavagna,36,305.0,75.31,305,305,305,Good,0,0,1
-b2b853f1-474c-4007-a721-1277ef07ecc2,Comune di Besnate,comune-di-besnate,15,305.0,75.31,305,305,305,Good,0,0,1
-fc7a8e44-6034-4f66-bbef-0f8ecef48045,Comune di Teggiano,comune-di-teggiano,37,305.0,75.31,305,305,305,Good,0,0,1
-4ab04975-f03e-4402-951a-b5eab5c59747,Comune di Pieve Emanuele,comune-di-pieve-emanuele,29,305.0,75.31,305,305,305,Good,0,0,1
-3657a375-aae2-49d4-a97f-80c0d7031438,Comune di Mariano Comense,comune-di-mariano-comense,42,305.0,75.31,305,305,305,Good,0,0,1
-92b0fbf4-d3f5-411e-afd5-e0b9bcadd3e8,Comune di Cologno Monzese,comune-di-cologno-monzese,56,305.0,75.31,305,305,305,Good,0,0,1
-d788d1b5-89b5-4280-af15-5d12eda0cdeb,Comune di Garbagnate Milanese,comune-di-garbagnate-milanese,36,305.0,75.31,305,305,305,Good,0,0,1
-1d853219-813f-469f-9382-1582ff3e5203,Comune di Desenzano del Garda,comune-di-desenzano-del-garda,43,305.0,75.31,305,305,305,Good,0,0,1
-33679cb9-991c-489d-aab4-04ae74a2ce00,Comune di Gaggiano,comune-di-gaggiano,52,305.0,75.31,305,305,305,Good,0,0,1
-96b3bbb3-e7c9-46a1-b980-a16ef8591e07,Comune di Palagano,comune-di-palagano,48,305.0,75.31,305,305,305,Good,0,0,1
-3015de2f-2fcf-4b10-8167-6d3b2e25885b,Comune di Marigliano,comune-di-marigliano,9,305.0,75.31,305,305,305,Good,0,0,1
-621fbe81-488b-4f65-8db4-3bc6df177170,Comune di Ivrea,comune-di-ivrea,11,305.0,75.31,305,305,305,Good,0,0,1
-cd92d0da-a26b-42ce-ad92-ecb4e1737eb9,Comune di Melzo,comune-di-melzo,13,305.0,75.31,305,305,305,Good,0,0,1
-38f13216-5f9e-4a57-bb7e-47b90a7c5e06,Comune di Maranello,comune-di-maranello,86,305.0,75.31,305,305,305,Good,0,0,1
-582b250b-7d72-4ca4-bb22-191289cb1e3e,Comune di Livigno,comune-di-livigno,44,305.0,75.31,305,305,305,Good,0,0,1
-30ba8004-fbdd-416c-a1a8-523207ff026b,Comune di Besana in Brianza,comune-di-besana-in-brianza,40,305.0,75.31,305,305,305,Good,0,0,1
-b8c2ccf3-9de0-4995-8520-cbdb4534bc61,Comune di Santeramo in Colle,comune-di-santeramo-in-colle,16,305.0,75.31,305,305,305,Good,0,0,1
-ac5748dd-3437-4209-b5c5-5db76d03076a,Comune di Caselle Torinese,comune-di-caselle-torinese,31,305.0,75.31,305,305,305,Good,0,0,1
-c5ea01c8-cbef-41e4-9979-960f011bd72b,Comune di Mogliano Veneto,comune-di-mogliano-veneto,42,305.0,75.31,305,305,305,Good,0,0,1
-0d12d4c1-640c-4d0f-b0b5-ade2aa7887d9,Comune di Valmadrera,comune-di-valmadrera,46,305.0,75.31,305,305,305,Good,0,0,1
-8259142c-4490-49d3-8cee-6e039f74a7b0,Comune di Baronissi,comune-di-baronissi,27,305.0,75.31,305,305,305,Good,0,0,1
-6ce38fa7-c69b-4416-8165-f5477ffec67a,Comune di Frassinoro,comune-di-frassinoro,48,305.0,75.31,305,305,305,Good,0,0,1
+431d91aa-6e51-46ff-8481-de9649039d89,Provincia di Forli Cesena,provincia-di-forli-cesena,22,305.0,75.31,305,305,305,Good,0,0,1
 b371a946-8d89-4548-b595-f40da8dbcec4,Unione dei Comuni del Distretto Ceramico,unione-dei-comuni-del-distretto-ceramico,8,305.0,75.31,305,305,305,Good,0,0,1
-f168d8ec-f6c5-4b44-8d90-fb343ccb0806,Comune di Baiso,comune-di-baiso,35,305.0,75.31,305,305,305,Good,0,0,1
-f3458141-a39c-49af-9397-aa765863aaec,Comune di Bussoleno,comune-di-bussoleno,14,305.0,75.31,305,305,305,Good,0,0,1
-e28a62a9-2db1-462b-830a-860b767349d0,Comune di Viano,comune-di-viano,35,305.0,75.31,305,305,305,Good,0,0,1
-04d02a1a-8714-4936-ac71-9f0726093934,Comune di Scandiano,comune-di-scandiano,35,305.0,75.31,305,305,305,Good,0,0,1
-f8e04f83-c918-478c-a8a4-024e23276d6f,Comune di Cisternino,comune-di-cisternino,10,305.0,75.31,305,305,305,Good,0,0,1
-d0c5a020-0e02-47c2-8efd-31e82df5a3b5,Comune di Castellarano,comune-di-castellarano,38,305.0,75.31,305,305,305,Good,0,0,1
+ddc73d4e-2069-4ac9-b79b-26e73b70b4b7,Comune di Sassuolo,comune-di-sassuolo,85,305.0,75.31,305,305,305,Good,0,0,1
+d788d1b5-89b5-4280-af15-5d12eda0cdeb,Comune di Garbagnate Milanese,comune-di-garbagnate-milanese,36,305.0,75.31,305,305,305,Good,0,0,1
+947662c1-5497-4c8e-a63a-f6330c842016,Comune di Vigonza,comune-di-vigonza,26,305.0,75.31,305,305,305,Good,0,0,1
+38f13216-5f9e-4a57-bb7e-47b90a7c5e06,Comune di Maranello,comune-di-maranello,86,305.0,75.31,305,305,305,Good,0,0,1
+93f00902-8b42-4d0d-8a1e-5dd42f4b00f9,Comune di Bussolengo,comune-di-bussolengo,50,305.0,75.31,305,305,305,Good,0,0,1
+1de0abeb-bd36-419b-9946-9d4582857357,Comune di Montefiorino,comune-di-montefiorino,48,305.0,75.31,305,305,305,Good,0,0,1
+f61bbd01-416b-4ce0-a6e1-4f4c3f76bdfe,Comune di Comacchio,comune-di-comacchio,50,305.0,75.31,305,305,305,Good,0,0,1
+f0cb4dd8-ff0b-43cb-a7bf-3f9578be6fb5,Comune di Orbassano,comune-di-orbassano,47,305.0,75.31,305,305,305,Good,0,0,1
+5123938d-993a-485a-b631-d72d05390429,Provincia di Foggia,provincia-di-foggia,13,305.0,75.31,305,305,305,Good,0,0,1
+92b0fbf4-d3f5-411e-afd5-e0b9bcadd3e8,Comune di Cologno Monzese,comune-di-cologno-monzese,56,305.0,75.31,305,305,305,Good,0,0,1
+d0749447-a25e-44ee-8fc0-05e19be3ea4f,Comune di Biassono,comune-di-biassono,10,305.0,75.31,305,305,305,Good,0,0,1
+3015de2f-2fcf-4b10-8167-6d3b2e25885b,Comune di Marigliano,comune-di-marigliano,9,305.0,75.31,305,305,305,Good,0,0,1
+cd92d0da-a26b-42ce-ad92-ecb4e1737eb9,Comune di Melzo,comune-di-melzo,13,305.0,75.31,305,305,305,Good,0,0,1
+8d28e8ca-f11b-4e47-a2c9-c6b226d92019,Comune di Nave,comune-di-nave,42,305.0,75.31,305,305,305,Good,0,0,1
 d6c9e819-ced7-4ac9-9a4a-eb412aaf440a,Comune di Diano Marina,comune-di-diano-marina,6,305.0,75.31,305,305,305,Good,0,0,1
-d5d94045-ed9b-4e90-a1cb-cee5af4049c7,Comune di Rubiera,comune-di-rubiera,24,305.0,75.31,305,305,305,Good,0,0,1
-7d75d1bf-18c1-4f06-975d-8e0ec62ca8c4,Comune di Bagno a Ripoli,comune-di-bagno-a-ripoli,30,305.0,75.31,305,305,305,Good,0,0,1
-9827373b-24ef-4062-95b9-366684dc0cef,Comune di Lamezia Terme,comune-di-lamezia-terme,36,305.0,75.31,305,305,305,Good,0,0,1
-28359e4a-b6c1-418d-a35a-0680b40b8be2,Comune di Laveno Mombello,comune-di-laveno-mombello,31,305.0,75.31,305,305,305,Good,0,0,1
-b514a4c1-7cee-480f-85aa-f280e8e4a5e3,Comune di Brusciano,comune-di-brusciano,10,305.0,75.31,305,305,305,Good,0,0,1
-a8c2a6ea-c661-4ff2-b8f6-06ef96ae89aa,Comune di Bernareggio,comune-di-bernareggio,49,305.0,75.31,305,305,305,Good,0,0,1
-be821cea-a9a1-4331-822d-350c68837a4e,Comune di Taranto,comune-di-taranto,58,305.0,75.31,305,305,305,Good,0,0,1
-76897337-1eac-4a68-80cd-18a0dd081ef9,Comune di Nova Milanese,comune-di-nova-milanese,43,305.0,75.31,305,305,305,Good,0,0,1
-eaa9c623-c766-4ee2-9ce0-63823810f8ee,Consorzio dei Comuni del Cassinate per la Programmazione e Gestione dei Servizi Sociali,consorzio-dei-comuni-del-cassinate-per-la-programmazione-e-gestione-dei-servizi-sociali,6,305.0,75.31,305,305,305,Good,0,0,1
-307cf038-81ae-4bc0-b0d9-f9df3d42043a,Comune di Olbia,comune-di-olbia,40,305.0,75.31,305,305,305,Good,0,0,1
+0d12d4c1-640c-4d0f-b0b5-ade2aa7887d9,Comune di Valmadrera,comune-di-valmadrera,46,305.0,75.31,305,305,305,Good,0,0,1
+6a63756b-72f3-4dac-b94b-c109b8deb3e1,Unione dei Comuni Valdostani Mont Emilius,unione-dei-comuni-valdostani-mont-emilius,5,305.0,75.31,305,305,305,Good,0,0,1
+7ac0a1be-52b2-42ed-8192-c50a4ed59115,Comune di Bussero,comune-di-bussero,14,305.0,75.31,305,305,305,Good,0,0,1
 85ca1003-2147-4543-90c4-444cfe977b55,Comune di Casamassima,comune-di-casamassima,38,305.0,75.31,305,305,305,Good,0,0,1
-d56cf387-2ee3-4b03-a193-291be330486f,Comune di Tarquinia,comune-di-tarquinia,6,305.0,75.31,305,305,305,Good,0,0,1
+1a88eae0-074a-49b8-af93-7f978d5ed886,Comunita Montana Alburni,comunita-montana-alburni,7,305.0,75.31,305,305,305,Good,0,0,1
+f8e04f83-c918-478c-a8a4-024e23276d6f,Comune di Cisternino,comune-di-cisternino,10,305.0,75.31,305,305,305,Good,0,0,1
+894d3c6a-074f-4fc7-b69e-5095f9c15ec0,Comune di Arzignano,comune-di-arzignano,27,305.0,75.31,305,305,305,Good,0,0,1
+661e3ed0-0c36-43de-a4b8-f8eb1e84bcb4,Comune di Budoni,comune-di-budoni,29,305.0,75.31,305,305,305,Good,0,0,1
+9827373b-24ef-4062-95b9-366684dc0cef,Comune di Lamezia Terme,comune-di-lamezia-terme,36,305.0,75.31,305,305,305,Good,0,0,1
+2c930491-a1fc-4ec9-aa89-4175339bbf42,Comune di Rubano,comune-di-rubano,22,305.0,75.31,305,305,305,Good,0,0,1
+f3458141-a39c-49af-9397-aa765863aaec,Comune di Bussoleno,comune-di-bussoleno,14,305.0,75.31,305,305,305,Good,0,0,1
+621fbe81-488b-4f65-8db4-3bc6df177170,Comune di Ivrea,comune-di-ivrea,11,305.0,75.31,305,305,305,Good,0,0,1
+451287af-4856-48d9-af89-e389e67cc042,Comune di Bisignano,comune-di-bisignano,5,305.0,75.31,305,305,305,Good,0,0,1
+b64dd82a-79fa-4527-a6c1-4ece2e547f79,Comune di Corbetta,comune-di-corbetta,23,305.0,75.31,305,305,305,Good,0,0,1
+a8c2a6ea-c661-4ff2-b8f6-06ef96ae89aa,Comune di Bernareggio,comune-di-bernareggio,49,305.0,75.31,305,305,305,Good,0,0,1
+bccd988e-5869-48a1-809c-9c0221a3c3e3,Comune di Cormano,comune-di-cormano,33,305.0,75.31,305,305,305,Good,0,0,1
+b2b853f1-474c-4007-a721-1277ef07ecc2,Comune di Besnate,comune-di-besnate,15,305.0,75.31,305,305,305,Good,0,0,1
+3711f6d7-eacf-4c08-a3b7-8f67981fc8b3,Comune di Giffoni Valle Piana,comune-di-giffoni-valle-piana,12,305.0,75.31,305,305,305,Good,0,0,1
+307cf038-81ae-4bc0-b0d9-f9df3d42043a,Comune di Olbia,comune-di-olbia,40,305.0,75.31,305,305,305,Good,0,0,1
+fc7a8e44-6034-4f66-bbef-0f8ecef48045,Comune di Teggiano,comune-di-teggiano,37,305.0,75.31,305,305,305,Good,0,0,1
+5d75eca0-e879-4dcb-a812-ff2886969289,Comune di Albiate,comune-di-albiate,54,305.0,75.31,305,305,305,Good,0,0,1
+be821cea-a9a1-4331-822d-350c68837a4e,Comune di Taranto,comune-di-taranto,58,305.0,75.31,305,305,305,Good,0,0,1
+582b250b-7d72-4ca4-bb22-191289cb1e3e,Comune di Livigno,comune-di-livigno,44,305.0,75.31,305,305,305,Good,0,0,1
+76897337-1eac-4a68-80cd-18a0dd081ef9,Comune di Nova Milanese,comune-di-nova-milanese,43,305.0,75.31,305,305,305,Good,0,0,1
+bde5100c-4c60-4f10-ad56-ab6e6d726be5,Comune di Galbiate,comune-di-galbiate,17,305.0,75.31,305,305,305,Good,0,0,1
+eaa9c623-c766-4ee2-9ce0-63823810f8ee,Consorzio dei Comuni del Cassinate per la Programmazione e Gestione dei Servizi Sociali,consorzio-dei-comuni-del-cassinate-per-la-programmazione-e-gestione-dei-servizi-sociali,6,305.0,75.31,305,305,305,Good,0,0,1
 c25963f5-2065-4819-9072-35a021ed3d11,Regione Emilia Romagna,regione-emilia-romagna,2108,304.21,75.11,275,215,405,Good,634,0,60
 4cd6b877-e777-47cf-9bb7-6eca27571cde,Provincia di Lodi,provincia-di-lodi,78,301.67,74.49,275,275,355,Good,26,0,1
 e4946893-e692-4a22-a460-039f524c0f6e,Comune di Chivasso,comune-di-chivasso,33,301.36,74.41,305,185,305,Good,0,0,1
@@ -384,15 +383,15 @@ fdd54380-d946-4fe5-b511-de523e698fdb,Comune di Milazzo,comune-di-milazzo,42,294.
 f804b34c-a5f7-42ca-bde2-82a0bcadd55e,Comune di Torino,comune-di-torino,2090,277.92,68.62,275,155,405,Good,143,0,23
 3333eed7-8e3a-4ea8-86f1-7241feff768d,Regione Lazio,regione-lazio,407,275.47,68.02,275,225,385,Good,10,0,1
 94b9330e-0382-4d23-a8f6-03c80ac74355,Roma Capitale,roma-capitale,359,275.14,67.94,275,255,405,Good,2,0,9
-9384baac-63eb-4730-8972-9776ad4bfd1d,Comune di Sesto San Giovanni,comune-di-sesto-san-giovanni,3,275.0,67.9,275,275,275,Good,0,0,1
 e5b9a715-0198-4770-a3ec-fba4c674e67f,Agenzia Veneta per i Pagamenti Avepa,agenzia-veneta-per-i-pagamenti-avepa,7,275.0,67.9,275,275,275,Good,0,0,1
-adba4134-0c06-45a6-9849-27ad745861be,Agenzia Nazionale per la Sicurezza delle Ferrovie e delle Infrastrutture Stradali e Autostradali,agenzia-nazionale-per-la-sicurezza-delle-ferrovie-e-delle-infrastrutture-stradali-e-autostradali,21,275.0,67.9,275,275,275,Good,0,0,1
-d9d88285-3187-4d33-87f4-3aff4faf1b52,Unione dei Comuni Valdostani Grand Combin,unione-dei-comuni-valdostani-grand-combin,3,275.0,67.9,275,275,275,Good,0,0,1
 001fcb43-9490-4fc1-a434-526fe7f64a77,Azienda Socio Sanitaria Territoriale Nord Milano,azienda-socio-sanitaria-territoriale-nord-milano,10,275.0,67.9,275,275,275,Good,0,0,1
-8d4dc13b-99b4-47a1-8c85-4e87f115582b,Istituto Zooprofilattico Sperimentale del Mezzogiorno,istituto-zooprofilattico-sperimentale-del-mezzogiorno,15,275.0,67.9,275,275,275,Good,0,0,1
 5752ccee-0ab1-4530-97cb-7466219904fd,Unione dei Comuni Valdostani Monte Cervino,unione-dei-comuni-valdostani-monte-cervino,5,275.0,67.9,275,275,275,Good,0,0,1
-2a1644f1-58a6-43de-97e3-d15d9873bc64,Comune di Monterotondo,comune-di-monterotondo,12,275.0,67.9,275,275,275,Good,0,0,1
+adba4134-0c06-45a6-9849-27ad745861be,Agenzia Nazionale per la Sicurezza delle Ferrovie e delle Infrastrutture Stradali e Autostradali,agenzia-nazionale-per-la-sicurezza-delle-ferrovie-e-delle-infrastrutture-stradali-e-autostradali,21,275.0,67.9,275,275,275,Good,0,0,1
 d858a90f-93fa-4ac7-a78a-5b92196161ef,Unione dei Comuni Valdostani Grand Paradis,unione-dei-comuni-valdostani-grand-paradis,3,275.0,67.9,275,275,275,Good,0,0,1
+d9d88285-3187-4d33-87f4-3aff4faf1b52,Unione dei Comuni Valdostani Grand Combin,unione-dei-comuni-valdostani-grand-combin,3,275.0,67.9,275,275,275,Good,0,0,1
+9384baac-63eb-4730-8972-9776ad4bfd1d,Comune di Sesto San Giovanni,comune-di-sesto-san-giovanni,3,275.0,67.9,275,275,275,Good,0,0,1
+8d4dc13b-99b4-47a1-8c85-4e87f115582b,Istituto Zooprofilattico Sperimentale del Mezzogiorno,istituto-zooprofilattico-sperimentale-del-mezzogiorno,15,275.0,67.9,275,275,275,Good,0,0,1
+2a1644f1-58a6-43de-97e3-d15d9873bc64,Comune di Monterotondo,comune-di-monterotondo,12,275.0,67.9,275,275,275,Good,0,0,1
 e29d26ff-c0a3-4035-8566-63f1a6962b41,Regione Veneto,regione-veneto,6606,274.79,67.85,275,255,355,Good,43,0,1
 966c8ab2-9bb8-4e5b-9165-9d37a1af7333,Ministero Infrastrutture e Trasporti,ministero-infrastrutture-e-trasporti,70,273.86,67.62,275,255,355,Good,3,0,1
 0d28a036-aa28-46cd-becb-7def5df861d7,Regione Lombardia,regione-lombardia,3303,271.16,66.95,265,245,355,Good,15,0,2
