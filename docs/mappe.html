@@ -333,10 +333,25 @@ L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_L
   attribution:'Sfondo <a href="https://www.esri.com/">Esri</a>, HERE, Garmin, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> — confini <a href="https://www.istat.it/notizia/confini-delle-unita-amministrative-a-fini-statistici-al-1-gennaio-2018-2/">Istat, Basi territoriali</a>',
   maxZoom:16
 }).addTo(mappa);
-/* Un secondo livello di etichette qui non c'e': quelle di CARTO sono in inglese
-   ("Sardinia", "Sicily", "Tuscany") e i tile raster non hanno un parametro di
-   lingua. I nomi delle regioni li scriviamo noi piu' sotto, presi dai confini
-   Istat che li portano gia' in italiano. */
+
+/* I nomi delle regioni li scriviamo noi, in italiano, presi dai confini Istat.
+   Le etichette di Esri sono in inglese e duplicherebbero quei nomi, percio' il
+   livello di riferimento resta spento finche' si guarda l'Italia intera: da
+   vicino invece serve, perche' porta i capoluoghi che noi non abbiamo. */
+var ZOOM_ETICHETTE = 9;
+mappa.createPane("etichette");
+mappa.getPane("etichette").style.zIndex = 650;
+mappa.getPane("etichette").style.pointerEvents = "none";
+var etichetteEsri = L.tileLayer(
+  "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",
+  {pane:"etichette", maxZoom:16});
+function aggiornaEtichetteEsri(){
+  var serve = mappa.getZoom() >= ZOOM_ETICHETTE;
+  if (serve && !mappa.hasLayer(etichetteEsri)) etichetteEsri.addTo(mappa);
+  if (!serve && mappa.hasLayer(etichetteEsri)) mappa.removeLayer(etichetteEsri);
+}
+mappa.on("zoomend", aggiornaEtichetteEsri);
+aggiornaEtichetteEsri();
 
 var stato = {metrica:"mqa", comuni:true, regioni:true, escluse:{}};
 var dati=null, geoRegioni=null, stratoRegioni=null, stratoComuni=null;
@@ -493,7 +508,9 @@ function sfoltisci(){
 
 function aggiornaNomiRegioni(){
   if (!etichetteRegioni) return;
-  var mostra = stato.regioni;
+  /* i nomi restano anche a coropletica spenta: sono l'unico riferimento
+     geografico della mappa comunale finche' non si entra nel dettaglio */
+  var mostra = stato.regioni || mappa.getZoom() < ZOOM_ETICHETTE;
   if (mostra && !mappa.hasLayer(etichetteRegioni)) etichetteRegioni.addTo(mappa);
   if (!mostra && mappa.hasLayer(etichetteRegioni)){
     mappa.removeLayer(etichetteRegioni);
