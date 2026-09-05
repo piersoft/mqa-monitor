@@ -324,9 +324,14 @@ L.control.scale({imperial:false}).addTo(mappa);
     setTimeout(function(){ etichette((tentativi || 0) + 1); }, 600);
   }
 })();
-L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png",{
-  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a> — confini <a href="https://www.istat.it/notizia/confini-delle-unita-amministrative-a-fini-statistici-al-1-gennaio-2018-2/">Istat, Basi territoriali</a>',
-  subdomains:"abcd", maxZoom:18
+/* Sfondo Esri World Light Gray Canvas. Si e' dovuto lasciare CARTO perche'
+   ha iniziato a richiedere una chiave: i tasselli tornavano ancora con codice
+   200, ma con la filigrana "API KEY REQUIRED" stampata sopra la mappa. Esri
+   non chiede chiave, ha la stessa tonalita' chiara e nell'indirizzo la y
+   precede la x. */
+L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{
+  attribution:'Sfondo <a href="https://www.esri.com/">Esri</a>, HERE, Garmin, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> — confini <a href="https://www.istat.it/notizia/confini-delle-unita-amministrative-a-fini-statistici-al-1-gennaio-2018-2/">Istat, Basi territoriali</a>',
+  maxZoom:16
 }).addTo(mappa);
 /* Un secondo livello di etichette qui non c'e': quelle di CARTO sono in inglese
    ("Sardinia", "Sicily", "Tuscany") e i tile raster non hanno un parametro di
