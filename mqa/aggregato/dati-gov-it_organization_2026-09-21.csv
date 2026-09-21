@@ -114,11 +114,11 @@ cd92d0da-a26b-42ce-ad92-ecb4e1737eb9,Comune di Melzo,comune-di-melzo,13,385.0,95
 b8c2ccf3-9de0-4995-8520-cbdb4534bc61,Comune di Santeramo in Colle,comune-di-santeramo-in-colle,16,385.0,95.06,385,385,385,Excellent,16,0,1
 0bf640aa-bbd6-4bc8-9409-a5669af7ed19,Agenzia Regionale per il Lavoro la Formazione e l'Accreditamento,agenzia-regionale-per-il-lavoro-la-formazione-e-l-accreditamento,3,385.0,95.06,385,385,385,Excellent,3,0,1
 a4da9a0e-9ebf-4db1-9412-0f8a45b672e4,Comune di Arbus,comune-di-arbus,3,385.0,95.06,385,385,385,Excellent,3,0,1
-7845b4fc-6bf0-4adf-b3d4-0c2b399ffdca,Comune di Casavatore,comune-di-casavatore,1,385.0,95.06,385,385,385,Excellent,1,0,1
 6d38bd89-e867-40f2-be5e-4991acf327ca,Provincia di Verona,provincia-di-verona,3,385.0,95.06,385,385,385,Excellent,3,0,1
-29a696fa-00d5-4be1-b3e9-879992b90f8d,Unione Pedemontana Parmense,unione-pedemontana-parmense,3,385.0,95.06,385,385,385,Excellent,3,0,1
-927b88eb-98e4-4fea-b1d3-a8f7695013c2,Comune di Vico del Gargano,comune-di-vico-del-gargano,3,385.0,95.06,385,385,385,Excellent,3,0,1
 6e3d98f6-cd37-4413-9085-eb4526542764,Provincia di Isernia,provincia-di-isernia,5,385.0,95.06,385,385,385,Excellent,5,0,1
+927b88eb-98e4-4fea-b1d3-a8f7695013c2,Comune di Vico del Gargano,comune-di-vico-del-gargano,3,385.0,95.06,385,385,385,Excellent,3,0,1
+29a696fa-00d5-4be1-b3e9-879992b90f8d,Unione Pedemontana Parmense,unione-pedemontana-parmense,3,385.0,95.06,385,385,385,Excellent,3,0,1
+7845b4fc-6bf0-4adf-b3d4-0c2b399ffdca,Comune di Casavatore,comune-di-casavatore,1,385.0,95.06,385,385,385,Excellent,1,0,1
 0d3685ca-8d03-4226-a31d-ea60b7fcefce,INPS,inps,2499,384.97,95.05,385,305,385,Excellent,2498,0,2
 735660ff-b04c-47e7-9caf-ca70007b059c,Comune di Messina,comune-di-messina,111,384.82,95.02,385,365,385,Excellent,111,0,6
 1419afad-d904-4313-957b-2c933ed3fd3b,Regione Campania,regione-campania,368,384.57,94.95,385,305,385,Excellent,366,0,11
@@ -267,19 +267,19 @@ e2aa7491-54b3-44f1-a19e-190ce075479e,Comune di Corciano,comune-di-corciano,6,355
 55388ac0-2be8-4f1f-90f7-8a9b212eb593,Boxxapps,boxxapps,719,355.0,87.65,355,355,355,Excellent,719,0,73
 24f39537-efc7-4c06-bb10-efd2d2f27ac3,Camera di Commercio delle Marche,camera-di-commercio-delle-marche,65,355.0,87.65,355,355,355,Excellent,65,0,1
 8d8c41d3-a539-4f08-b489-a7fed178846a,Comune di Tortoreto,comune-di-tortoreto,7,355.0,87.65,355,355,355,Excellent,7,0,1
-d2009474-b069-4c09-98ab-53a72fe75f46,Universita di Torino,universita-di-torino,14,355.0,87.65,355,355,355,Excellent,14,0,1
-fc47d219-e1e1-4df2-8b32-82b9a3642801,Agenzia di Tutela della Salute della Brianza,agenzia-di-tutela-della-salute-della-brianza,10,355.0,87.65,355,355,355,Excellent,10,0,1
 53041470-c18c-4fd9-8356-f4eddf598ee5,Unione Municipia,unione-municipia,8,355.0,87.65,355,355,355,Excellent,8,0,1
-4b14c525-6bc0-4c2f-928f-cd233f2be88d,Comune di Pula,comune-di-pula,2,355.0,87.65,355,355,355,Excellent,2,0,1
-54503213-4f23-4c39-ba5f-c0b0bb78f900,Ministero del Turismo,ministero-del-turismo,16,355.0,87.65,355,355,355,Excellent,16,0,1
+fc47d219-e1e1-4df2-8b32-82b9a3642801,Agenzia di Tutela della Salute della Brianza,agenzia-di-tutela-della-salute-della-brianza,10,355.0,87.65,355,355,355,Excellent,10,0,1
 4264b4df-ebbf-46bb-b2e8-9a5be149046f,Consorzio Universitario Piceno,consorzio-universitario-piceno,10,355.0,87.65,355,355,355,Excellent,10,0,1
+d2009474-b069-4c09-98ab-53a72fe75f46,Universita di Torino,universita-di-torino,14,355.0,87.65,355,355,355,Excellent,14,0,1
+54503213-4f23-4c39-ba5f-c0b0bb78f900,Ministero del Turismo,ministero-del-turismo,16,355.0,87.65,355,355,355,Excellent,16,0,1
+4b14c525-6bc0-4c2f-928f-cd233f2be88d,Comune di Pula,comune-di-pula,2,355.0,87.65,355,355,355,Excellent,2,0,1
 0fbdec27-b8fc-4696-8ec9-53a24adfb36e,Asbr Azienda Speciale Servizi Bassa Reggiana,asbr-azienda-speciale-servizi-bassa-reggiana,3,355.0,87.65,355,355,355,Excellent,3,0,1
-5597fffe-b810-404e-94a3-498f3d9d9092,Sebastien Catalog,sebastien-catalog,1,355.0,87.65,355,355,355,Excellent,1,0,1
-86d5653a-9fe3-4471-a15f-c0628134d835,Comune di Vedano Olona,comune-di-vedano-olona,1,355.0,87.65,355,355,355,Excellent,1,0,1
+811617ad-e7ff-465e-88db-fd5bb52d8e28,Comune di Settimo San Pietro,comune-di-settimo-san-pietro,1,355.0,87.65,355,355,355,Excellent,1,0,1
 c59b580b-8e17-459f-b532-db891593d4e6,Comune di Grottammare,comune-di-grottammare,5,355.0,87.65,355,355,355,Excellent,5,0,1
+86d5653a-9fe3-4471-a15f-c0628134d835,Comune di Vedano Olona,comune-di-vedano-olona,1,355.0,87.65,355,355,355,Excellent,1,0,1
 389cafd9-534e-4e67-b4b0-71ecdd5bd990,Comune di Soresina,comune-di-soresina,1,355.0,87.65,355,355,355,Excellent,1,0,1
 160858a8-41d6-4c3b-b30f-98e785aa3dc4,Comune di Campomarino,comune-di-campomarino,1,355.0,87.65,355,355,355,Excellent,1,0,1
-811617ad-e7ff-465e-88db-fd5bb52d8e28,Comune di Settimo San Pietro,comune-di-settimo-san-pietro,1,355.0,87.65,355,355,355,Excellent,1,0,1
+5597fffe-b810-404e-94a3-498f3d9d9092,Sebastien Catalog,sebastien-catalog,1,355.0,87.65,355,355,355,Excellent,1,0,1
 f9546d88-5c6e-41d1-97b2-ebd9d0a77d21,Comune di Rimini,comune-di-rimini,72,354.72,87.59,355,335,355,Excellent,71,0,1
 8c4b1fbd-cff7-4ec1-a4a0-8bfe778e1f89,Regione Calabria,regione-calabria,327,354.63,87.56,355,335,355,Excellent,321,0,33
 aef1d1e0-3f4b-41cf-bebb-f34390847f42,Unione Italiana delle Camere di Commercio Industria Artigianato e Agricoltura,unione-italiana-delle-camere-di-commercio-industria-artigianato-e-agricoltura,469,354.57,87.55,355,155,355,Excellent,468,0,1
