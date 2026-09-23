@@ -472,7 +472,15 @@ def main():
         if migrati:
             print("[nuovo MQA] %d dataset gia' sulla scala 0-7,5: "
                   "esclusi dalla media" % migrati)
+        # Il conteggio finisce in pagina: senza, il calo dei dataset misurati
+        # resterebbe senza spiegazione per chi legge.
+        os.makedirs(args.outdir, exist_ok=True)
+        with open(os.path.join(args.outdir, "migrazione.json"), "w",
+                  encoding="utf-8") as f:
+            json.dump({"data": day, "catalogo": args.catalog,
+                       "migrati": migrati}, f, ensure_ascii=False)
     except Exception as e:  # noqa: BLE001
+        # si lascia in piedi il conteggio precedente invece di azzerarlo
         print("[nuovo MQA] conteggio non riuscito: %s" % type(e).__name__)
 
     if args.solo != "organizzazioni":

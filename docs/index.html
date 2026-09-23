@@ -78,6 +78,8 @@ h1{
 }
 h1 em{font-style:normal;color:var(--primario)}
 .sottotitolo{margin:14px 0 0;max-width:56ch;color:#3d4d57}
+.avviso-mqa{margin:22px 0 0;padding:14px 16px;border-left:3px solid #a66300;
+  background:#fdf6e9;font-size:14px;line-height:1.5;max-width:82ch}
 .misure{
   display:flex;flex-wrap:wrap;align-items:center;gap:34px;margin-top:30px;
   padding-top:22px;border-top:1px solid var(--riga)
@@ -293,6 +295,7 @@ footer p{max-width:78ch}
       <span class="freccia" aria-hidden="true">&rarr;</span>
     </a>
   </div>
+  <p class="avviso-mqa" id="avviso-mqa" hidden></p>
 </header>
 
 <main id="contenuto">
@@ -629,6 +632,29 @@ const NOMI = {
   organization: {sing:'ente',     plur:'enti',     col:'Ente',     cerca:'Cerca un ente'},
 };
 
+/* data.europa.eu sta sostituendo il modello MQA dataset per dataset: i gia'
+   migrati portano voc:scoring sulla scala 0-7,5 e restano fuori dalla media,
+   percio' i dataset misurati sono meno di quelli presenti nel catalogo. */
+function avvisoMigrazione(){
+  const el = document.getElementById('avviso-mqa');
+  if (!el) return;
+  const m = DATI.migrazione;
+  if (!m || !m.migrati) return;
+  const misurati = DATI.livelli.holder.totali.dataset;
+  const quota = m.migrati / (m.migrati + misurati) * 100;
+  el.innerHTML = '<strong>Cambio di metodologia in corso.</strong> '
+    + 'data.europa.eu sta sostituendo il modello MQA: il punteggio passa dalla '
+    + 'scala 0\u2013405 a una scala 0\u20137,5, le dimensioni scendono da cinque '
+    + 'a quattro e la contestualit\u00e0 sparisce. La sostituzione avviene un '
+    + 'dataset alla volta e ad oggi riguarda ' + nf0.format(m.migrati)
+    + ' dataset, il '
+    + quota.toLocaleString('it-IT', {minimumFractionDigits:1, maximumFractionDigits:1})
+    + '% del catalogo. Quei dataset restano fuori dalla media, che continua a '
+    + 'essere espressa su 405: mescolare le due scale farebbe crollare i '
+    + 'punteggi senza che i metadati siano cambiati.';
+  el.hidden = false;
+}
+
 function misure(){
   const t = blocco().totali;
   const n = NOMI[LIV];
@@ -929,6 +955,7 @@ fetch('data.json')
   .then(r => r.json())
   .then(d => {
     DATI = d; DATE = d.date;
+    avvisoMigrazione();
     document.getElementById('catalogo').textContent = d.catalogo;
     document.getElementById('m-data').textContent = d.aggiornato;
     misure();

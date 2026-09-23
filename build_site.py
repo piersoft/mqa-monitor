@@ -335,7 +335,16 @@ def assottiglia(date, giorni_pieni=60, passo=7):
     return vecchie + recenti
 
 
-def salva_json(storici, catalog, docsdir, max_rilevazioni):
+def leggi_migrazione(outdir):
+    """Quanti dataset sono gia' passati alla scala 0-7,5 del nuovo MQA."""
+    try:
+        with open(os.path.join(outdir, "migrazione.json"), encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def salva_json(storici, catalog, docsdir, max_rilevazioni, migrazione=None):
     usati = [storici[k] for k in ("holder", "organization") if storici.get(k)]
     date = sorted(set().union(*[set(s) for s in usati])) if usati else []
     if not date:
@@ -355,6 +364,7 @@ def salva_json(storici, catalog, docsdir, max_rilevazioni):
             "aggiornato": date[-1],
             "max_score": MAX_SCORE,
             "date": date,
+            "migrazione": migrazione,
             "livelli": livelli,
         }, f, ensure_ascii=False, separators=(",", ":"))
     return path
@@ -387,7 +397,8 @@ def main():
     print("[2/3] salvo lo storico ...")
     p1 = salva_storico(storici, args.outdir)
     print("[3/3] preparo i dati della pagina ...")
-    p2 = salva_json(storici, args.catalog, args.docsdir, args.max_rilevazioni)
+    p2 = salva_json(storici, args.catalog, args.docsdir, args.max_rilevazioni,
+                    leggi_migrazione(args.outdir))
     print("\nOK\n  %s\n  %s" % (p1, p2))
 
 
