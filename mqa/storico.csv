@@ -82137,19 +82137,19 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_d948,c_d948,Comune di Gavorrano,16,387.86,,,,Excellent
 2026-09-23,holder,c_d735,c_d735,Comune di Fosdinovo,15,387.35,,,,Excellent
 2026-09-23,holder,atsbs,atsbs,Agenzia di Tutela della Salute di Brescia,10,387.0,,,,Excellent
-2026-09-23,holder,asl_vvta,asl_vvta,ASL TARANTO,15,386.33,,,,Excellent
+2026-09-23,holder,asl_vvta,asl_vvta,ASL TARANTO,14,386.43,,,,Excellent
 2026-09-23,holder,c_g636,c_g636,Comune di Pieve a Nievole,15,385.77,,,,Excellent
 2026-09-23,holder,c_f572,c_f572,Comune di Montemurlo,48,385.71,,,,Excellent
 2026-09-23,holder,c_l537,c_l537,Comune di Vaiano,18,385.0,,,,Excellent
-2026-09-23,holder,dmdapy,dmdapy,Città metropolitana di Torino,4,385.0,,,,Excellent
+2026-09-23,holder,dmdapy,dmdapy,Città metropolitana di Torino,3,385.0,,,,Excellent
 2026-09-23,holder,c_d208,c_d208,Comune di Cuorgnè,1,385.0,,,,Excellent
 2026-09-23,holder,mr,mr,Unione dei Comuni valdostani Mont-Rose,3,385.0,,,,Excellent
 2026-09-23,holder,r_piemont,r_piemont,Regione Piemonte,5,385.0,,,,Excellent
 2026-09-23,holder,cdccl,cdccl,Consorzio Dei Comuni del Cassinate per La Programmazione e Gestione Dei Servizi Sociali,6,385.0,,,,Excellent
 2026-09-23,holder,arlpa,arlpa,ARPAL,6,385.0,,,,Excellent
 2026-09-23,holder,c_i829,c_i829,Comune di Sondrio,16,385.0,,,,Excellent
+2026-09-23,holder,kh5rhfcv,kh5rhfcv,MUR,69,385.0,,,,Excellent
 2026-09-23,holder,c_i330,c_i330,Comune di Santeramo in Colle,16,385.0,,,,Excellent
-2026-09-23,holder,kh5rhfcv,kh5rhfcv,MUR,70,385.0,,,,Excellent
 2026-09-23,holder,c_l727,c_l727,Comune di Venaria Reale,3,385.0,,,,Excellent
 2026-09-23,holder,c_e879,c_e879,Comune di Mandello del Lario,3,385.0,,,,Excellent
 2026-09-23,holder,01796490744,01796490744,GAL Terra dei Messapi,3,385.0,,,,Excellent
@@ -82175,7 +82175,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_f269,c_f269,Comune di Mogliano Veneto,42,385.0,,,,Excellent
 2026-09-23,holder,c_f563,c_f563,Comune di Montemesola,40,385.0,,,,Excellent
 2026-09-23,holder,c_l304,c_l304,Comune di Tortona,3,385.0,,,,Excellent
-2026-09-23,holder,cmto,cmto,Città metropolitana di Torino,67,385.0,,,,Excellent
+2026-09-23,holder,cmto,cmto,Città metropolitana di Torino,66,385.0,,,,Excellent
 2026-09-23,holder,8it8ze,8it8ze,Comune di Castel del Piano,17,385.0,,,,Excellent
 2026-09-23,holder,c_f280,c_f280,Comune di Mola di Bari,5,385.0,,,,Excellent
 2026-09-23,holder,c_f221,c_f221,Comune di Minervino di Lecce,5,385.0,,,,Excellent
@@ -82199,11 +82199,11 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,01582480537,01582480537,Attivarti.org,1,385.0,,,,Excellent
 2026-09-23,holder,a_cb,a_cb,Azienda Sanitaria Regione Molise,3,385.0,,,,Excellent
 2026-09-23,holder,msbcs,msbcs,Messinaservizi Bene Comune S.p.A.,3,385.0,,,,Excellent
-2026-09-23,holder,c_a849,c_a849,Comune di Biassono,10,385.0,,,,Excellent
 2026-09-23,holder,c_f084,c_f084,Comune di Mediglia,3,385.0,,,,Excellent
+2026-09-23,holder,c_a849,c_a849,Comune di Biassono,10,385.0,,,,Excellent
 2026-09-23,holder,c_l010,c_l010,Comune di Surano,3,385.0,,,,Excellent
 2026-09-23,holder,c_h793,c_h793,Comune di San Cesario di Lecce,1,385.0,,,,Excellent
-2026-09-23,holder,c_a944,c_a944,Comune di Bologna,701,385.0,,,,Excellent
+2026-09-23,holder,c_a944,c_a944,Comune di Bologna,653,385.0,,,,Excellent
 2026-09-23,holder,c_f117,c_f117,Comune di Melpignano,8,385.0,,,,Excellent
 2026-09-23,holder,c_a479,c_a479,Comune di Asti,31,385.0,,,,Excellent
 2026-09-23,holder,c_l746,c_l746,Comune di Verbania,3,385.0,,,,Excellent
@@ -82211,7 +82211,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_d761,c_d761,Comune di Francavilla Fontana,2,385.0,,,,Excellent
 2026-09-23,holder,p_ro,p_ro,Provincia di Rovigo,21,385.0,,,,Excellent
 2026-09-23,holder,c_f152,c_f152,Comune di Mesagne,8,385.0,,,,Excellent
-2026-09-23,holder,arltl_0,arltl_0,ARTI Puglia,13,385.0,,,,Excellent
+2026-09-23,holder,arltl_0,arltl_0,ARTI Puglia,12,385.0,,,,Excellent
 2026-09-23,holder,c_e805,c_e805,Comune di Magione,3,385.0,,,,Excellent
 2026-09-23,holder,c_i754,c_i754,Comune di Siracusa,10,385.0,,,,Excellent
 2026-09-23,holder,asset,asset,ASSET Puglia,28,385.0,,,,Excellent
@@ -82244,7 +82244,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,p_al,p_al,Provincia di Alessandria,64,385.0,,,,Excellent
 2026-09-23,holder,c_e621,c_e621,Comune di Livigno,44,385.0,,,,Excellent
 2026-09-23,holder,c_i363,c_i363,Comune di Santo Stefano di Magra,8,385.0,,,,Excellent
-2026-09-23,holder,z3n82q,z3n82q,Città metropolitana di Torino,9,385.0,,,,Excellent
+2026-09-23,holder,z3n82q,z3n82q,Città metropolitana di Torino,7,385.0,,,,Excellent
 2026-09-23,holder,c_a783,c_a783,Comune di Benevento,11,385.0,,,,Excellent
 2026-09-23,holder,c_c309,c_c309,Comune di Castiglione del Lago,3,385.0,,,,Excellent
 2026-09-23,holder,c_g488,c_g488,Comune di Peschiera Borromeo,13,385.0,,,,Excellent
@@ -82257,10 +82257,10 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_f889,c_f889,Comune di Nichelino,15,385.0,,,,Excellent
 2026-09-23,holder,c_e955,c_e955,Comune di Marigliano,9,385.0,,,,Excellent
 2026-09-23,holder,ciasm,ciasm,ASM Costruire Insieme,3,385.0,,,,Excellent
-2026-09-23,holder,arlpa_pa,arlpa_pa,ARPA,12,385.0,,,,Excellent
+2026-09-23,holder,arlpa_pa,arlpa_pa,ARPA,11,385.0,,,,Excellent
 2026-09-23,holder,p_cz,p_cz,Provincia di Catanzaro,9,385.0,,,,Excellent
 2026-09-23,holder,c_d865,c_d865,Comune di Galbiate,17,385.0,,,,Excellent
-2026-09-23,holder,c_c627,c_c627,Comune di Chieri,28,385.0,,,,Excellent
+2026-09-23,holder,c_c627,c_c627,Comune di Chieri,27,385.0,,,,Excellent
 2026-09-23,holder,c_i187,c_i187,Comune di Santa Fiora,15,385.0,,,,Excellent
 2026-09-23,holder,aspan,aspan,ASP Ambito 9,15,385.0,,,,Excellent
 2026-09-23,holder,c_m122,c_m122,Comune di Volpiano,10,385.0,,,,Excellent
@@ -82272,10 +82272,11 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,ires_pie,ires_pie,IRES Piemonte,13,385.0,,,,Excellent
 2026-09-23,holder,c_i703,c_i703,Comune di Settimo Torinese,6,385.0,,,,Excellent
 2026-09-23,holder,c_b019,c_b019,Comune di Borgomanero,10,385.0,,,,Excellent
+2026-09-23,holder,c_f656,c_f656,Comune di Montevarchi,23,385.0,,,,Excellent
 2026-09-23,holder,c_h096,c_h096,Città di Putignano,3,385.0,,,,Excellent
 2026-09-23,holder,udcvvmb,udcvvmb,Unione dei Comuni valdostani Valdigne-Mont-Blanc,5,385.0,,,,Excellent
 2026-09-23,holder,c_c852xf,c_c852xf,Unione Pedemontana Parmense,3,385.0,,,,Excellent
-2026-09-23,holder,c_f335,c_f335,Comune di Moncalieri,7,385.0,,,,Excellent
+2026-09-23,holder,c_f335,c_f335,Comune di Moncalieri,6,385.0,,,,Excellent
 2026-09-23,holder,c_l122,c_l122,Comune di Terralba,3,385.0,,,,Excellent
 2026-09-23,holder,c_g230,c_g230,Comune di Pagani,24,385.0,,,,Excellent
 2026-09-23,holder,c_e053,c_e053,Comune di Giuggianello,4,385.0,,,,Excellent
@@ -82293,7 +82294,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,conbimte,conbimte,Consorzio BIM Vomano Tordino di Teramo,7,385.0,,,,Excellent
 2026-09-23,holder,c_c869,c_c869,Comune di Collesalvetti,17,385.0,,,,Excellent
 2026-09-23,holder,c_g712,c_g712,Comune di Pisticci,8,385.0,,,,Excellent
-2026-09-23,holder,r_piemon,r_piemon,Regione Piemonte,553,385.0,,,,Excellent
+2026-09-23,holder,r_piemon,r_piemon,Regione Piemonte,533,385.0,,,,Excellent
 2026-09-23,holder,adisu,adisu,Adisu,12,385.0,,,,Excellent
 2026-09-23,holder,c_b285,c_b285,Comune di Busca ,10,385.0,,,,Excellent
 2026-09-23,holder,uni_fe,uni_fe,Università degli Studi di Ferrara,23,385.0,,,,Excellent
@@ -82305,7 +82306,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_e734,c_e734,Comune di Luino,12,385.0,,,,Excellent
 2026-09-23,holder,c_i048,c_i048,Comune di Sannazzaro De' Burgondi,4,385.0,,,,Excellent
 2026-09-23,holder,ait_048,ait_048,Autorità Idrica Toscana,12,385.0,,,,Excellent
-2026-09-23,holder,ipres,ipres,IPRES,51,385.0,,,,Excellent
+2026-09-23,holder,ipres,ipres,IPRES,48,385.0,,,,Excellent
 2026-09-23,holder,udcvb,udcvb,Unione dei Comuni Val di Bisenzio,10,385.0,,,,Excellent
 2026-09-23,holder,udsa_,udsa_,Università degli Studi dell'Aquila,16,385.0,,,,Excellent
 2026-09-23,holder,c_a281,c_a281,Comune di Andrano,3,385.0,,,,Excellent
@@ -82332,12 +82333,12 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,udsm_me,udsm_me,Università degli Studi di Messina,13,385.0,,,,Excellent
 2026-09-23,holder,c_f994,c_f994,Comune di Occhiobello,3,385.0,,,,Excellent
 2026-09-23,holder,inps,inps,Istituto Nazionale Previdenza Sociale,2499,384.97,,,,Excellent
-2026-09-23,holder,c_e202,c_e202,Comune di Grosseto,104,384.62,,,,Excellent
-2026-09-23,holder,r_campan,r_campan,Regione Campania,368,384.57,,,,Excellent
+2026-09-23,holder,c_e202,c_e202,Comune di Grosseto,97,384.59,,,,Excellent
+2026-09-23,holder,r_campan,r_campan,Regione Campania,354,384.55,,,,Excellent
 2026-09-23,holder,c_f839,c_f839,Comune di Napoli,36,384.44,,,,Excellent
-2026-09-23,holder,c_f027,c_f027,Comune di Massafra,38,384.21,,,,Excellent
-2026-09-23,holder,artpp,artpp,ARET - Pugliapromozione,23,384.13,,,,Excellent
-2026-09-23,holder,r_puglia,r_puglia,Regione Puglia,248,383.91,,,,Excellent
+2026-09-23,holder,c_f027,c_f027,Comune di Massafra,37,384.19,,,,Excellent
+2026-09-23,holder,artpp,artpp,ARET - Pugliapromozione,22,384.09,,,,Excellent
+2026-09-23,holder,r_puglia,r_puglia,Regione Puglia,247,383.91,,,,Excellent
 2026-09-23,holder,c_c912,c_c912,Comune di Comacchio,50,383.4,,,,Excellent
 2026-09-23,holder,c_l634,c_l634,Comune di Valmadrera,46,383.26,,,,Excellent
 2026-09-23,holder,c_l831,c_l831,Comune di Viano,35,382.71,,,,Excellent
@@ -82345,49 +82346,48 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_i496,c_i496,Comune di Scandiano,35,382.71,,,,Excellent
 2026-09-23,holder,c_a564,c_a564,Comune di Bagno a Ripoli,30,382.33,,,,Excellent
 2026-09-23,holder,c_g999,c_g999,Comune di Prato,276,382.25,,,,Excellent
-2026-09-23,holder,c_b626,c_b626,Comune di Cantagallo,14,382.14,,,,Excellent
 2026-09-23,holder,c_i684,c_i684,Comune di Sesto Fiorentino,53,381.98,,,,Excellent
 2026-09-23,holder,c_d845,c_d845,Comune di Gaggiano,52,381.92,,,,Excellent
 2026-09-23,holder,c_h628,c_h628,Comune di Rubiera,24,381.67,,,,Excellent
 2026-09-23,holder,c_d783,c_d783,Comune di Frassinoro,48,381.67,,,,Excellent
 2026-09-23,holder,c_l390,c_l390,Comune di San Vincenzo,41,381.59,,,,Excellent
 2026-09-23,holder,2yivzp,2yivzp,Comune di Santa Luce,11,381.36,,,,Excellent
+2026-09-23,holder,c_b626,c_b626,Comune di Cantagallo,11,381.36,,,,Excellent
 2026-09-23,holder,c_b007,c_b007,Borgo a Mozzano,16,381.25,,,,Excellent
 2026-09-23,holder,c_i433,c_i433,Comune di Sarezzo,42,381.19,,,,Excellent
 2026-09-23,holder,c_c996,c_c996,Comune di Coreglia Antelminelli,16,381.0,,,,Excellent
 2026-09-23,holder,c_i728,c_i728,Comune di Signa,20,381.0,,,,Excellent
 2026-09-23,holder,c_g926,c_g926,Comune di Porto Viro,5,381.0,,,,Excellent
-2026-09-23,holder,r_sicili,r_sicili,Regione Siciliana,180,380.72,,,,Excellent
 2026-09-23,holder,c_g482,c_g482,Comune di Pescara,55,380.64,,,,Excellent
-2026-09-23,holder,agid,agid,Agenzia per l'Italia Digitale,40,380.25,,,,Excellent
-2026-09-23,holder,c_f656,c_f656,Comune di Montevarchi,29,380.17,,,,Excellent
+2026-09-23,holder,r_sicili,r_sicili,Regione Siciliana,175,380.6,,,,Excellent
+2026-09-23,holder,agid,agid,Agenzia per l'Italia Digitale,39,380.13,,,,Excellent
 2026-09-23,holder,atmsp,atmsp,Azienda Trasporti Messina S.p.A,4,380.0,,,,Excellent
-2026-09-23,holder,c_c978,c_c978,Comune di Copertino,16,380.0,,,,Excellent
-2026-09-23,holder,c_d863,c_d863,Comune di Galatone,39,379.62,,,,Excellent
+2026-09-23,holder,c_c978,c_c978,Comune di Copertino,15,379.67,,,,Excellent
+2026-09-23,holder,c_d863,c_d863,Comune di Galatone,38,379.47,,,,Excellent
 2026-09-23,holder,c_c002,c_c002,Comune di Cassano allo Ionio,9,379.44,,,,Excellent
 2026-09-23,holder,p_pt,p_pt,Provincia di Pistoia,9,379.44,,,,Excellent
 2026-09-23,holder,c_e171,c_e171,Comune di Grezzana,14,379.29,,,,Excellent
 2026-09-23,holder,c_a893,c_a893,Comune di Bitonto,55,379.18,,,,Excellent
 2026-09-23,holder,c_g015,c_g015,Comune di Olbia,40,379.0,,,,Excellent
 2026-09-23,holder,c_l328,c_l328,Città di Trani,5,379.0,,,,Excellent
-2026-09-23,holder,cmfi,cmfi,Città metropolitana di Firenze,168,378.87,,,,Excellent
+2026-09-23,holder,cmfi,cmfi,Città metropolitana di Firenze,167,378.83,,,,Excellent
 2026-09-23,holder,atspv,atspv,Agenzia di Tutela della Salute di Pavia,13,378.08,,,,Excellent
 2026-09-23,holder,c_d013,c_d013,Comune di Cormano,33,377.73,,,,Excellent
 2026-09-23,holder,c_c621,c_c621,Comune di Chiavari,53,377.45,,,,Excellent
 2026-09-23,holder,c_b960,c_b960,Comune di Caselle Torinese,31,377.26,,,,Excellent
 2026-09-23,holder,c_c741,c_c741,Comune di Cisternino,10,377.0,,,,Excellent
+2026-09-23,holder,ato_pu,ato_pu,Autorità idrica Pugliese (AIP),12,376.67,,,,Excellent
 2026-09-23,holder,uts_re,uts_re,Unione Tresinaro Secchia,9,376.11,,,,Excellent
-2026-09-23,holder,c_l775,c_l775,Comune di Vernio,18,376.11,,,,Excellent
-2026-09-23,holder,c_f052,c_f052,Comune di Matera,248,375.97,,,,Excellent
-2026-09-23,holder,ato_pu,ato_pu,Autorità idrica Pugliese (AIP),13,375.77,,,,Excellent
+2026-09-23,holder,c_f052,c_f052,Comune di Matera,238,375.76,,,,Excellent
 2026-09-23,holder,c_f944,c_f944,Comune di Nova Milanese,43,375.7,,,,Excellent
 2026-09-23,holder,c_d284,c_d284,Comune di Desenzano del Garda,43,375.7,,,,Excellent
+2026-09-23,holder,c_l775,c_l775,Comune di Vernio,15,375.67,,,,Excellent
 2026-09-23,holder,p_pi,p_pi,Provincia di Pisa,69,375.43,,,,Excellent
 2026-09-23,holder,m_lps,m_lps,Ministero del Lavoro,83,375.0,,,,Excellent
+2026-09-23,holder,c_g687,c_g687,Comune di Piombino,18,375.0,,,,Excellent
 2026-09-23,holder,c_i991,c_i991,Comune di Subbiano,16,375.0,,,,Excellent
 2026-09-23,holder,b25cx1,b25cx1,Comune di Pescaglia,16,375.0,,,,Excellent
 2026-09-23,holder,c_a874,c_a874,Comune di Binetto,3,375.0,,,,Excellent
-2026-09-23,holder,c_g687,c_g687,Comune di Piombino,21,374.52,,,,Excellent
 2026-09-23,holder,c_l123,c_l123,Comune di Terranuova Bracciolini,15,374.33,,,,Excellent
 2026-09-23,holder,c_d912,c_d912,Comune di Garbagnate Milanese,36,373.89,,,,Excellent
 2026-09-23,holder,cmct,cmct,Città Metropolitana di Catania,23,373.7,,,,Excellent
@@ -82408,10 +82408,10 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_b297,c_b297,Comune di Bussoleno,14,367.86,,,,Excellent
 2026-09-23,holder,c_e488,c_e488,Comune di Lavagna,36,367.22,,,,Excellent
 2026-09-23,holder,cdcvd_,cdcvd_,Consorzio Dei Comuni della Valle D'Aosta Bacino Imbrifero Montano della Dora Baltea,5,367.0,,,,Excellent
-2026-09-23,holder,arsls,arsls,Agenzia Regionale Strategica per la Salute ed il Sociale,75,366.87,,,,Excellent
 2026-09-23,holder,c_h625,c_h625,Comune di Rubano,22,366.82,,,,Excellent
 2026-09-23,holder,c_c665,c_c665,Comune di Chivasso,33,366.82,,,,Excellent
 2026-09-23,holder,02904120546,02904120546,Associazione Centro Studi Città di Foligno,6,366.67,,,,Excellent
+2026-09-23,holder,arsls,arsls,Agenzia Regionale Strategica per la Salute ed il Sociale,73,366.37,,,,Excellent
 2026-09-23,holder,p_pe,p_pe,Provincia di Pescara,21,365.95,,,,Excellent
 2026-09-23,holder,c_a802,c_a802,Comune di Bernareggio,49,365.41,,,,Excellent
 2026-09-23,holder,c_h791,c_h791,San Casciano in Val di Pesa,21,365.0,,,,Excellent
@@ -82423,7 +82423,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,clrfl_,clrfl_,Consorzio per la Ricerca sulla Filiera Lattiero Casearia,12,365.0,,,,Excellent
 2026-09-23,holder,ivsapic,ivsapic,IVASS - Istituto per la Vigilanza sulle Assicurazioni,19,365.0,,,,Excellent
 2026-09-23,holder,c_c312,c_c312,Comune di Castiglione delle Stiviere,36,365.0,,,,Excellent
-2026-09-23,holder,clasv,clasv,Lamma Toscana,6443,364.9,,,,Excellent
+2026-09-23,holder,clasv,clasv,Lamma Toscana,6442,364.9,,,,Excellent
 2026-09-23,holder,c_m126,c_m126,Comune di Volterra,16,364.38,,,,Excellent
 2026-09-23,holder,c_i225,c_i225,Comune di Santa Margherita Ligure,56,363.57,,,,Excellent
 2026-09-23,holder,pt,pt,Politecnico di Torino,12,363.33,,,,Excellent
@@ -82448,25 +82448,26 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_c895,c_c895,Comune di Cologno Monzese,56,356.43,,,,Excellent
 2026-09-23,holder,c_g535,c_g535,Comune di Piacenza,73,356.23,,,,Excellent
 2026-09-23,holder,c_d711,c_d711,Comune di Formigine,86,356.16,,,,Excellent
+2026-09-23,holder,cciaa_le,cciaa_le,Camera di Commercio di Lecce,445,355.02,,,,Excellent
 2026-09-23,holder,c_i532,c_i532,Comune di Schivenoglia,3,355.0,,,,Excellent
-2026-09-23,holder,comune di san mauro di saline,comune di san mauro di saline,Comune di San Mauro di Saline,9,355.0,,,,Excellent
+2026-09-23,holder,comune di san mauro di saline,comune di san mauro di saline,Comune di San Mauro di Saline,7,355.0,,,,Excellent
 2026-09-23,holder,comune di ormelle,comune di ormelle,Comune di Ormelle,1,355.0,,,,Excellent
 2026-09-23,holder,c_m088,c_m088,Comune di Vittoria,5,355.0,,,,Excellent
-2026-09-23,holder,cgdf_tn,cgdf_tn,Comun General de Fascia,19,355.0,,,,Excellent
-2026-09-23,holder,comune di fratta polesine,comune di fratta polesine,Comune di Fratta Polesine,17,355.0,,,,Excellent
+2026-09-23,holder,cgdf_tn,cgdf_tn,Comun General de Fascia,17,355.0,,,,Excellent
+2026-09-23,holder,comune di fratta polesine,comune di fratta polesine,Comune di Fratta Polesine,15,355.0,,,,Excellent
 2026-09-23,holder,usc,usc,Università degli Studi di Camerino,10,355.0,,,,Excellent
 2026-09-23,holder,comune di jesolo,comune di jesolo,Comune di Jesolo,2,355.0,,,,Excellent
-2026-09-23,holder,c_g736,c_g736,Comune di Taipana,14,355.0,,,,Excellent
-2026-09-23,holder,comune di terrazzo,comune di terrazzo,Comune di Terrazzo,24,355.0,,,,Excellent
+2026-09-23,holder,c_g736,c_g736,Comune di Taipana,13,355.0,,,,Excellent
+2026-09-23,holder,comune di terrazzo,comune di terrazzo,Comune di Terrazzo,23,355.0,,,,Excellent
 2026-09-23,holder,c_f750,c_f750,Comune di Morsano al Tagliamento,2,355.0,,,,Excellent
-2026-09-23,holder,comune di valli del pasubio,comune di valli del pasubio,Comune di Valli del Pasubio,39,355.0,,,,Excellent
+2026-09-23,holder,comune di valli del pasubio,comune di valli del pasubio,Comune di Valli del Pasubio,35,355.0,,,,Excellent
 2026-09-23,holder,comune di valbrenta,comune di valbrenta,Comune di Valbrenta,16,355.0,,,,Excellent
-2026-09-23,holder,c_e820,c_e820,Comune di Magnano in Riviera,37,355.0,,,,Excellent
+2026-09-23,holder,c_e820,c_e820,Comune di Magnano in Riviera,35,355.0,,,,Excellent
 2026-09-23,holder,comune di cornedo vicentino,comune di cornedo vicentino,Comune di Cornedo Vicentino,1,355.0,,,,Excellent
 2026-09-23,holder,ccas,ccas,Camera di Commercio Arezzo Siena,11,355.0,,,,Excellent
-2026-09-23,holder,comune di sarcedo,comune di sarcedo,Comune di Sarcedo,26,355.0,,,,Excellent
+2026-09-23,holder,comune di sarcedo,comune di sarcedo,Comune di Sarcedo,25,355.0,,,,Excellent
 2026-09-23,holder,comune di caldogno,comune di caldogno,Comune di Caldogno,18,355.0,,,,Excellent
-2026-09-23,holder,comune di merlara,comune di merlara,Comune di Merlara,23,355.0,,,,Excellent
+2026-09-23,holder,comune di merlara,comune di merlara,Comune di Merlara,22,355.0,,,,Excellent
 2026-09-23,holder,c_f395,c_f395,Comune di Montagnareale,3,355.0,,,,Excellent
 2026-09-23,holder,unione montana del bassanese,unione montana del bassanese,Unione Montana Del Bassanese,3,355.0,,,,Excellent
 2026-09-23,holder,comune di teolo,comune di teolo,Comune di Teolo,5,355.0,,,,Excellent
@@ -82475,14 +82476,14 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,comune di minerbe,comune di minerbe,Comune di Minerbe,29,355.0,,,,Excellent
 2026-09-23,holder,c_d668,c_d668,Comune di Fontanelice,5,355.0,,,,Excellent
 2026-09-23,holder,comune di noventa padovana,comune di noventa padovana,Comune di Noventa Padovana,20,355.0,,,,Excellent
-2026-09-23,holder,c_i564,c_i564,Comune di Sedilo,26,355.0,,,,Excellent
+2026-09-23,holder,c_i564,c_i564,Comune di Sedilo,23,355.0,,,,Excellent
 2026-09-23,holder,c_c086,c_c086,Comune di Castel del Rio,5,355.0,,,,Excellent
-2026-09-23,holder,comune di torrebelvicino,comune di torrebelvicino,Comune di Torrebelvicino,34,355.0,,,,Excellent
+2026-09-23,holder,comune di torrebelvicino,comune di torrebelvicino,Comune di Torrebelvicino,30,355.0,,,,Excellent
 2026-09-23,holder,aril_,aril_,Aspal - Agenzia Sarda per le Politiche Attive del Lavoro,15,355.0,,,,Excellent
-2026-09-23,holder,comune di legnaro,comune di legnaro,Comune di Legnaro,22,355.0,,,,Excellent
-2026-09-23,holder,comune di pianezze,comune di pianezze,Comune di Pianezze,34,355.0,,,,Excellent
+2026-09-23,holder,comune di legnaro,comune di legnaro,Comune di Legnaro,21,355.0,,,,Excellent
+2026-09-23,holder,comune di pianezze,comune di pianezze,Comune di Pianezze,33,355.0,,,,Excellent
 2026-09-23,holder,c_c980,c_c980,Comune di Copparo,3,355.0,,,,Excellent
-2026-09-23,holder,comune di sona,comune di sona,Comune di Sona,33,355.0,,,,Excellent
+2026-09-23,holder,comune di sona,comune di sona,Comune di Sona,31,355.0,,,,Excellent
 2026-09-23,holder,cp_022,cp_022,Comunità della Paganella,20,355.0,,,,Excellent
 2026-09-23,holder,comune di trissino,comune di trissino,Comune di Trissino,19,355.0,,,,Excellent
 2026-09-23,holder,c_d266,c_d266,Comune di Delebio,6,355.0,,,,Excellent
@@ -82492,25 +82493,25 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,comune di mezzane di sotto,comune di mezzane di sotto,Comune di Mezzane di Sotto,20,355.0,,,,Excellent
 2026-09-23,holder,comune di solagna,comune di solagna,Comune di Solagna,11,355.0,,,,Excellent
 2026-09-23,holder,uia75wmm,uia75wmm,Fondazione RESTART,10,355.0,,,,Excellent
-2026-09-23,holder,comune di sant'elena,comune di sant'elena,Comune di Sant'Elena,16,355.0,,,,Excellent
+2026-09-23,holder,comune di sant'elena,comune di sant'elena,Comune di Sant'Elena,14,355.0,,,,Excellent
 2026-09-23,holder,comune di gruaro,comune di gruaro,Comune di Gruaro,24,355.0,,,,Excellent
 2026-09-23,holder,uicciaa,uicciaa,"Unione Italiana delle Camere di Commercio Industria, Artigianato e Agricoltura",83,355.0,,,,Excellent
 2026-09-23,holder,c_g780,c_g780,Comune di Polcenigo,4,355.0,,,,Excellent
 2026-09-23,holder,comune di santa lucia di piave,comune di santa lucia di piave,Comune di Santa Lucia di Piave,1,355.0,,,,Excellent
-2026-09-23,holder,comune di salizzole,comune di salizzole,Comune di Salizzole,20,355.0,,,,Excellent
+2026-09-23,holder,comune di salizzole,comune di salizzole,Comune di Salizzole,19,355.0,,,,Excellent
 2026-09-23,holder,cciaa_vr,cciaa_vr,"Camera di Commercio, Industria, Artigianato e Agricoltura di Verona",37,355.0,,,,Excellent
-2026-09-23,holder,comune di anguillara veneta,comune di anguillara veneta,Comune di Anguillara Veneta,29,355.0,,,,Excellent
+2026-09-23,holder,comune di anguillara veneta,comune di anguillara veneta,Comune di Anguillara Veneta,27,355.0,,,,Excellent
 2026-09-23,holder,c_h951,c_h951,Comune di San Leonardo,6,355.0,,,,Excellent
 2026-09-23,holder,comune di cavaso del tomba,comune di cavaso del tomba,Comune di Cavaso del Tomba,30,355.0,,,,Excellent
 2026-09-23,holder,p_av,p_av,Provincia di Avellino,10,355.0,,,,Excellent
-2026-09-23,holder,c_b300,c_b300,Comune di Busto Arsizio,21,355.0,,,,Excellent
+2026-09-23,holder,c_b300,c_b300,Comune di Busto Arsizio,20,355.0,,,,Excellent
 2026-09-23,holder,c_l801,c_l801,Comune di Verzegnis,9,355.0,,,,Excellent
 2026-09-23,holder,m_bac-p7foab,m_bac-p7foab,Biblioteca nazionale centrale di firenze,1,355.0,,,,Excellent
 2026-09-23,holder,cciaa_fg,cciaa_fg,"Camera di Commercio, Industria, Artigianato e Agricoltura di Foggia",14,355.0,,,,Excellent
-2026-09-23,holder,comune di bolzano vicentino,comune di bolzano vicentino,Comune di Bolzano Vicentino,15,355.0,,,,Excellent
-2026-09-23,holder,comune di gorgo al monticano,comune di gorgo al monticano,Comune di Gorgo al Monticano,30,355.0,,,,Excellent
-2026-09-23,holder,c_f611,c_f611,Comune di Monterotondo,12,355.0,,,,Excellent
+2026-09-23,holder,comune di bolzano vicentino,comune di bolzano vicentino,Comune di Bolzano Vicentino,14,355.0,,,,Excellent
+2026-09-23,holder,comune di gorgo al monticano,comune di gorgo al monticano,Comune di Gorgo al Monticano,27,355.0,,,,Excellent
 2026-09-23,holder,comune di laghi,comune di laghi,Comune di Laghi,12,355.0,,,,Excellent
+2026-09-23,holder,c_f611,c_f611,Comune di Monterotondo,12,355.0,,,,Excellent
 2026-09-23,holder,aci_037,aci_037,ASP Circondario Imolese,1,355.0,,,,Excellent
 2026-09-23,holder,c_c918,c_c918,Comune di Comeglians,2,355.0,,,,Excellent
 2026-09-23,holder,c_h315,c_h315,Comune di Ripalta Cremasca,7,355.0,,,,Excellent
@@ -82520,20 +82521,20 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_g768,c_g768,Comune di Poggio Renatico,22,355.0,,,,Excellent
 2026-09-23,holder,comune di santa caterina d'este,comune di santa caterina d'este,Comune di Santa Caterina d'Este,14,355.0,,,,Excellent
 2026-09-23,holder,comune di sanguinetto,comune di sanguinetto,Comune di Sanguinetto,21,355.0,,,,Excellent
-2026-09-23,holder,comune di isola vicentina,comune di isola vicentina,Comune di Isola Vicentina,19,355.0,,,,Excellent
-2026-09-23,holder,copas_lo,copas_lo,Parco Regionale Adda Sud,6,355.0,,,,Excellent
+2026-09-23,holder,comune di isola vicentina,comune di isola vicentina,Comune di Isola Vicentina,18,355.0,,,,Excellent
+2026-09-23,holder,copas_lo,copas_lo,Parco Regionale Adda Sud,5,355.0,,,,Excellent
 2026-09-23,holder,p_pd,p_pd,Provincia di Padova,10,355.0,,,,Excellent
 2026-09-23,holder,c_h347,c_h347,Comune di Rive d'Arcano,6,355.0,,,,Excellent
 2026-09-23,holder,cissa_pi,cissa_pi,Consorzio Intercomunale Servizi Socio Assistenziali di Pianezza,3,355.0,,,,Excellent
 2026-09-23,holder,c_f144,c_f144,Comune di Mereto di Tomba,2,355.0,,,,Excellent
 2026-09-23,holder,c_c709,c_c709,Comune di Cino,6,355.0,,,,Excellent
 2026-09-23,holder,cciarso,cciarso,"Camera di Commercio, Industria, Artigianato e Agricoltura del Sud Est Sicilia",9,355.0,,,,Excellent
-2026-09-23,holder,comune di montorso vicentino,comune di montorso vicentino,Comune di Montorso Vicentino,10,355.0,,,,Excellent
+2026-09-23,holder,comune di montorso vicentino,comune di montorso vicentino,Comune di Montorso Vicentino,9,355.0,,,,Excellent
 2026-09-23,holder,c_f156,c_f156,Comune di Mesola,3,355.0,,,,Excellent
 2026-09-23,holder,03304640547,03304640547,AFoR,1,355.0,,,,Excellent
 2026-09-23,holder,comune di preganziol,comune di preganziol,Comune di Preganziol,20,355.0,,,,Excellent
 2026-09-23,holder,comune di sovizzo,comune di sovizzo,Comune di Sovizzo,13,355.0,,,,Excellent
-2026-09-23,holder,comune di costa di rovigo,comune di costa di rovigo,Comune di Costa di Rovigo,28,355.0,,,,Excellent
+2026-09-23,holder,comune di costa di rovigo,comune di costa di rovigo,Comune di Costa di Rovigo,27,355.0,,,,Excellent
 2026-09-23,holder,c_h238,c_h238,Comune di Resana,3,355.0,,,,Excellent
 2026-09-23,holder,assbre,assbre,ASBR - Azienda Speciale Servizi Bassa Reggiana,3,355.0,,,,Excellent
 2026-09-23,holder,c_h609,c_h609,Comune di Roveredo in Piano,4,355.0,,,,Excellent
@@ -82543,7 +82544,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_m309,c_m309,Comune di Fonte Nuova,5,355.0,,,,Excellent
 2026-09-23,holder,comune di valdastico,comune di valdastico,Comune di Valdastico,31,355.0,,,,Excellent
 2026-09-23,holder,c_a687,c_a687,Comune di Barzio,4,355.0,,,,Excellent
-2026-09-23,holder,comune di possagno,comune di possagno,Comune di Possagno,31,355.0,,,,Excellent
+2026-09-23,holder,comune di possagno,comune di possagno,Comune di Possagno,29,355.0,,,,Excellent
 2026-09-23,holder,comune di rivoli veronese,comune di rivoli veronese,Comune di Rivoli Veronese,18,355.0,,,,Excellent
 2026-09-23,holder,c_g508,c_g508,Comune di Petilia Policastro,10,355.0,,,,Excellent
 2026-09-23,holder,aptss,aptss,APT Servizi,2,355.0,,,,Excellent
@@ -82552,29 +82553,30 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_h895,c_h895,Comune di San Giorgio di Nogaro,4,355.0,,,,Excellent
 2026-09-23,holder,c_g220,c_g220,Comune di Paderno Dugnano,6,355.0,,,,Excellent
 2026-09-23,holder,comune di lendinara,comune di lendinara,Comune di Lendinara,11,355.0,,,,Excellent
-2026-09-23,holder,comune di povegliano veronese,comune di povegliano veronese,Comune di Povegliano Veronese,36,355.0,,,,Excellent
-2026-09-23,holder,comune di castelnovo bariano,comune di castelnovo bariano,Comune di Castelnovo Bariano,28,355.0,,,,Excellent
+2026-09-23,holder,comune di povegliano veronese,comune di povegliano veronese,Comune di Povegliano Veronese,34,355.0,,,,Excellent
+2026-09-23,holder,comune di castelnovo bariano,comune di castelnovo bariano,Comune di Castelnovo Bariano,26,355.0,,,,Excellent
 2026-09-23,holder,c_d700,c_d700,Comune di Forgaria nel Friuli,2,355.0,,,,Excellent
 2026-09-23,holder,c_m263,c_m263,Comune di Porto Cesareo,3,355.0,,,,Excellent
 2026-09-23,holder,comune di occhiobello,comune di occhiobello,Comune di Occhiobello,7,355.0,,,,Excellent
 2026-09-23,holder,c_h509,c_h509,Comune di Romano di Lombardia,10,355.0,,,,Excellent
-2026-09-23,holder,comune di san biagio di callalta,comune di san biagio di callalta,Comune di San Biagio di Callalta,13,355.0,,,,Excellent
+2026-09-23,holder,comune di san biagio di callalta,comune di san biagio di callalta,Comune di San Biagio di Callalta,12,355.0,,,,Excellent
 2026-09-23,holder,c_g886,c_g886,Comune di Porcia,12,355.0,,,,Excellent
 2026-09-23,holder,cciaa_ao,cciaa_ao,Camera Valdostana delle Imprese e delle Professioni,10,355.0,,,,Excellent
-2026-09-23,holder,comune di villafranca di verona,comune di villafranca di verona,Comune di Villafranca di Verona,6,355.0,,,,Excellent
+2026-09-23,holder,comune di villafranca di verona,comune di villafranca di verona,Comune di Villafranca di Verona,5,355.0,,,,Excellent
 2026-09-23,holder,c_b223,c_b223,Comune di Brusaporto,10,355.0,,,,Excellent
 2026-09-23,holder,comune di san stino di livenza,comune di san stino di livenza,Comune di San Stino di Livenza,2,355.0,,,,Excellent
 2026-09-23,holder,09000640012,09000640012,SORIS ,9,355.0,,,,Excellent
+2026-09-23,holder,comune di badia polesine,comune di badia polesine,Comune di Badia Polesine,34,355.0,,,,Excellent
 2026-09-23,holder,c_c420,c_c420,Comune di Cefalà Diana,16,355.0,,,,Excellent
 2026-09-23,holder,comune di pressana,comune di pressana,Comune di Pressana,15,355.0,,,,Excellent
-2026-09-23,holder,comune di sandrigo,comune di sandrigo,Comune di Sandrigo,18,355.0,,,,Excellent
+2026-09-23,holder,comune di sandrigo,comune di sandrigo,Comune di Sandrigo,17,355.0,,,,Excellent
 2026-09-23,holder,c_a283,c_a283,Comune di Andreis,2,355.0,,,,Excellent
 2026-09-23,holder,c_b483,c_b483,Comune di Camino al Tagliamento,2,355.0,,,,Excellent
-2026-09-23,holder,federazione dei comuni del camposampierese,federazione dei comuni del camposampierese,Federazione dei Comuni del Camposampierese,23,355.0,,,,Excellent
+2026-09-23,holder,federazione dei comuni del camposampierese,federazione dei comuni del camposampierese,Federazione dei Comuni del Camposampierese,22,355.0,,,,Excellent
 2026-09-23,holder,comune di arqua' petrarca,comune di arqua' petrarca,Comune di Arqua' Petrarca,17,355.0,,,,Excellent
 2026-09-23,holder,c_a516,c_a516,Comune di Aviano,2,355.0,,,,Excellent
 2026-09-23,holder,ucltdg,ucltdg,Unione di Comuni Lombarda Terra Dei Gonzaga,2,355.0,,,,Excellent
-2026-09-23,holder,ctvf_tn,ctvf_tn,Comunità Territoriale della Val di Fiemme,19,355.0,,,,Excellent
+2026-09-23,holder,ctvf_tn,ctvf_tn,Comunità Territoriale della Val di Fiemme,17,355.0,,,,Excellent
 2026-09-23,holder,c_d408,c_d408,Comune di Enemonzo,2,355.0,,,,Excellent
 2026-09-23,holder,utigemo,utigemo,Comunità di Montagna del Gemonese,8,355.0,,,,Excellent
 2026-09-23,holder,comune di vittorio veneto,comune di vittorio veneto,Comune di Vittorio Veneto,6,355.0,,,,Excellent
@@ -82597,27 +82599,27 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_e476,c_e476,Comune di Lauco,1,355.0,,,,Excellent
 2026-09-23,holder,c_a176,c_a176,Comune di Alcamo,10,355.0,,,,Excellent
 2026-09-23,holder,c_e473,c_e473,Comune di Latisana,14,355.0,,,,Excellent
-2026-09-23,holder,comune di bassano del grappa,comune di bassano del grappa,Comune di Bassano del Grappa,26,355.0,,,,Excellent
+2026-09-23,holder,comune di bassano del grappa,comune di bassano del grappa,Comune di Bassano del Grappa,23,355.0,,,,Excellent
 2026-09-23,holder,c_e957,c_e957,Comune di Marineo,8,355.0,,,,Excellent
 2026-09-23,holder,comune di torreglia,comune di torreglia,Comune di Torreglia,26,355.0,,,,Excellent
 2026-09-23,holder,comune di san pietro di feletto,comune di san pietro di feletto,Comune di San Pietro di Feletto,28,355.0,,,,Excellent
-2026-09-23,holder,comune di roncade,comune di roncade,Comune di Roncade,14,355.0,,,,Excellent
-2026-09-23,holder,c_i562,c_i562,Comune di Sedegliano,4,355.0,,,,Excellent
+2026-09-23,holder,comune di roncade,comune di roncade,Comune di Roncade,13,355.0,,,,Excellent
 2026-09-23,holder,c_c389,c_c389,Comune di Cavazzo Carnico,9,355.0,,,,Excellent
+2026-09-23,holder,c_i562,c_i562,Comune di Sedegliano,4,355.0,,,,Excellent
 2026-09-23,holder,f_756,f_756,Comune di Mortegliano,2,355.0,,,,Excellent
-2026-09-23,holder,comune di torri di quartesolo,comune di torri di quartesolo,Comune di Torri di Quartesolo,29,355.0,,,,Excellent
-2026-09-23,holder,comune di borgo veneto,comune di borgo veneto,Comune di Borgo Veneto,22,355.0,,,,Excellent
+2026-09-23,holder,comune di torri di quartesolo,comune di torri di quartesolo,Comune di Torri di Quartesolo,27,355.0,,,,Excellent
+2026-09-23,holder,comune di borgo veneto,comune di borgo veneto,Comune di Borgo Veneto,20,355.0,,,,Excellent
 2026-09-23,holder,c_e410,c_e410,Comune di Lagosanto,2,355.0,,,,Excellent
 2026-09-23,holder,amministrazione provinciale di belluno,amministrazione provinciale di belluno,Amministrazione Provinciale Di Belluno,5,355.0,,,,Excellent
 2026-09-23,holder,c_m399,c_m399,Comune di Treppo Ligosullo,1,355.0,,,,Excellent
-2026-09-23,holder,comune di bosaro,comune di bosaro,Comune di Bosaro,30,355.0,,,,Excellent
+2026-09-23,holder,comune di bosaro,comune di bosaro,Comune di Bosaro,29,355.0,,,,Excellent
 2026-09-23,holder,comune di codogne',comune di codogne',Comune di Codogne',16,355.0,,,,Excellent
-2026-09-23,holder,comune di bergantino,comune di bergantino,Comune di Bergantino,17,355.0,,,,Excellent
+2026-09-23,holder,comune di bergantino,comune di bergantino,Comune di Bergantino,16,355.0,,,,Excellent
 2026-09-23,holder,asstl,asstl,Azienda Socio Sanitaria Territoriale di Lecco,10,355.0,,,,Excellent
 2026-09-23,holder,arls_031,arls_031,ERSA,3,355.0,,,,Excellent
 2026-09-23,holder,comune di lusia,comune di lusia,Comune di Lusia,15,355.0,,,,Excellent
 2026-09-23,holder,c_a166,c_a166,Comune di Albisola Superiore,2,355.0,,,,Excellent
-2026-09-23,holder,c_f681,c_f681,Comune di Montodine,7,355.0,,,,Excellent
+2026-09-23,holder,c_f681,c_f681,Comune di Montodine,6,355.0,,,,Excellent
 2026-09-23,holder,c_f356,c_f356,Comune di Monfalcone,2,355.0,,,,Excellent
 2026-09-23,holder,comune di oderzo,comune di oderzo,Comune di Oderzo,1,355.0,,,,Excellent
 2026-09-23,holder,c_g028,c_g028,Comune di Olgiate Olona,5,355.0,,,,Excellent
@@ -82630,15 +82632,15 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,cbimt_ud,cbimt_ud,Consorzio del Bacino Imbrifero Montano del Tagliamento Nelle Province di Udine e Pordenone,2,355.0,,,,Excellent
 2026-09-23,holder,c_h455,c_h455,Comune di Roccella Valdemone,11,355.0,,,,Excellent
 2026-09-23,holder,comune di vigasio,comune di vigasio,Comune di Vigasio,20,355.0,,,,Excellent
-2026-09-23,holder,c_g529,c_g529,Comune di Pezzaze,9,355.0,,,,Excellent
+2026-09-23,holder,c_g529,c_g529,Comune di Pezzaze,8,355.0,,,,Excellent
 2026-09-23,holder,c_f080,c_f080,Comune di Mede,1,355.0,,,,Excellent
 2026-09-23,holder,uni_ba,uni_ba,Università degli Studi di Bari - Aldo Moro,105,355.0,,,,Excellent
 2026-09-23,holder,c_c101,c_c101,Comune di Castelfiorentino,6,355.0,,,,Excellent
 2026-09-23,holder,comune di negrar di valpolicella,comune di negrar di valpolicella,Comune di Negrar di Valpolicella,21,355.0,,,,Excellent
-2026-09-23,holder,comune di albaredo d'adige,comune di albaredo d'adige,Comune di Albaredo d'Adige,16,355.0,,,,Excellent
-2026-09-23,holder,comune di piacenza d'adige,comune di piacenza d'adige,Comune di Piacenza D'adige,28,355.0,,,,Excellent
+2026-09-23,holder,comune di albaredo d'adige,comune di albaredo d'adige,Comune di Albaredo d'Adige,12,355.0,,,,Excellent
+2026-09-23,holder,comune di piacenza d'adige,comune di piacenza d'adige,Comune di Piacenza D'adige,27,355.0,,,,Excellent
+2026-09-23,holder,comune di schio,comune di schio,Comune di Schio,41,355.0,,,,Excellent
 2026-09-23,holder,cciaa_to,cciaa_to,"Camera di Commercio, Industria, Artigianato e Agricoltura di Torino",23,355.0,,,,Excellent
-2026-09-23,holder,comune di schio,comune di schio,Comune di Schio,43,355.0,,,,Excellent
 2026-09-23,holder,c_l039,c_l039,Comune di Talmassons,5,355.0,,,,Excellent
 2026-09-23,holder,comune di farra di soligo,comune di farra di soligo,Comune di Farra di Soligo,23,355.0,,,,Excellent
 2026-09-23,holder,veneto lavoro,veneto lavoro,Veneto Lavoro,4,355.0,,,,Excellent
@@ -82647,52 +82649,52 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,istituto regionale ville venete,istituto regionale ville venete,Istituto Regionale Ville Venete,7,355.0,,,,Excellent
 2026-09-23,holder,comune di casalserugo,comune di casalserugo,Comune di Casalserugo,4,355.0,,,,Excellent
 2026-09-23,holder,c_e289,c_e289,Comune di Imola,33,355.0,,,,Excellent
-2026-09-23,holder,c_h650,c_h650,Comune di Sabbio Chiese,7,355.0,,,,Excellent
+2026-09-23,holder,c_h650,c_h650,Comune di Sabbio Chiese,6,355.0,,,,Excellent
 2026-09-23,holder,c_l725,c_l725,Comune di Venafro,10,355.0,,,,Excellent
 2026-09-23,holder,c_e507,c_e507,Comune di Lecco,9,355.0,,,,Excellent
 2026-09-23,holder,comune di follina,comune di follina,Comune di Follina,1,355.0,,,,Excellent
-2026-09-23,holder,comune di pove del grappa,comune di pove del grappa,Comune di Pove del Grappa,31,355.0,,,,Excellent
+2026-09-23,holder,comune di pove del grappa,comune di pove del grappa,Comune di Pove del Grappa,30,355.0,,,,Excellent
 2026-09-23,holder,c_e629,c_e629,Comune di Lizzanello,1,355.0,,,,Excellent
 2026-09-23,holder,comune di revine lago,comune di revine lago,Comune di Revine Lago,1,355.0,,,,Excellent
 2026-09-23,holder,comune di battaglia terme,comune di battaglia terme,Comune di Battaglia Terme,9,355.0,,,,Excellent
-2026-09-23,holder,comune di cartigliano,comune di cartigliano,Comune di Cartigliano,6,355.0,,,,Excellent
+2026-09-23,holder,comune di cartigliano,comune di cartigliano,Comune di Cartigliano,5,355.0,,,,Excellent
 2026-09-23,holder,c_l703,c_l703,Comune di Vedano Olona,1,355.0,,,,Excellent
 2026-09-23,holder,c_l389,c_l389,Comune di Trescore Cremasco,7,355.0,,,,Excellent
-2026-09-23,holder,comune di valdagno,comune di valdagno,Comune di Valdagno,9,355.0,,,,Excellent
-2026-09-23,holder,comune di roverchiara,comune di roverchiara,Comune di Roverchiara,7,355.0,,,,Excellent
+2026-09-23,holder,comune di valdagno,comune di valdagno,Comune di Valdagno,8,355.0,,,,Excellent
+2026-09-23,holder,comune di roverchiara,comune di roverchiara,Comune di Roverchiara,5,355.0,,,,Excellent
 2026-09-23,holder,cciaa_cs,cciaa_cs,"Camera di Commercio, Industria, Artigianato e Agricoltura di Cosenza",9,355.0,,,,Excellent
 2026-09-23,holder,c_e899,c_e899,Comune di Manzano,21,355.0,,,,Excellent
 2026-09-23,holder,comune di galliera veneta,comune di galliera veneta,Comune di Galliera Veneta,6,355.0,,,,Excellent
 2026-09-23,holder,udsm_mi,udsm_mi,Università degli studi di Milano,10,355.0,,,,Excellent
 2026-09-23,holder,comune di tezze sul brenta,comune di tezze sul brenta,Comune di Tezze sul Brenta,6,355.0,,,,Excellent
-2026-09-23,holder,comune di barbona,comune di barbona,Comune di Barbona,10,355.0,,,,Excellent
+2026-09-23,holder,comune di barbona,comune di barbona,Comune di Barbona,9,355.0,,,,Excellent
 2026-09-23,holder,c_i602,c_i602,Comune di Senago,3,355.0,,,,Excellent
 2026-09-23,holder,comune di pernumia,comune di pernumia,Comune di Pernumia,11,355.0,,,,Excellent
 2026-09-23,holder,unito,unito,Università di Torino,14,355.0,,,,Excellent
 2026-09-23,holder,c_d455,c_d455,Comune di Faedis,2,355.0,,,,Excellent
 2026-09-23,holder,c_b247,c_b247,Comune di Budoia,4,355.0,,,,Excellent
 2026-09-23,holder,iarls,iarls,Intercent-ER Agenzia Regionale per lo Sviluppo dei Mercati Telematici,8,355.0,,,,Excellent
-2026-09-23,holder,comune di rovere veronese,comune di rovere veronese,Comune di Rovere Veronese,36,355.0,,,,Excellent
+2026-09-23,holder,comune di rovere veronese,comune di rovere veronese,Comune di Rovere Veronese,34,355.0,,,,Excellent
 2026-09-23,holder,comune di san pietro in cariano,comune di san pietro in cariano,Comune di San Pietro in Cariano,24,355.0,,,,Excellent
 2026-09-23,holder,c_a184,c_a184,Comune di Alessano,4,355.0,,,,Excellent
 2026-09-23,holder,comune di camponogara,comune di camponogara,Comune di Camponogara,2,355.0,,,,Excellent
-2026-09-23,holder,comune di san giovanni lupatoto,comune di san giovanni lupatoto,Comune di San Giovanni Lupatoto,14,355.0,,,,Excellent
+2026-09-23,holder,comune di san giovanni lupatoto,comune di san giovanni lupatoto,Comune di San Giovanni Lupatoto,13,355.0,,,,Excellent
 2026-09-23,holder,c_a436,c_a436,Comune di Arquata Scrivia,2,355.0,,,,Excellent
-2026-09-23,holder,comune di campolongo maggiore,comune di campolongo maggiore,Comune di Campolongo Maggiore,15,355.0,,,,Excellent
+2026-09-23,holder,comune di campolongo maggiore,comune di campolongo maggiore,Comune di Campolongo Maggiore,14,355.0,,,,Excellent
 2026-09-23,holder,comune di crespadoro,comune di crespadoro,Comune di Crespadoro,30,355.0,,,,Excellent
 2026-09-23,holder,c_c885,c_c885,Comune di Colloredo di Monte Albano,2,355.0,,,,Excellent
 2026-09-23,holder,comune di montebelluna,comune di montebelluna,Comune di Montebelluna,1,355.0,,,,Excellent
-2026-09-23,holder,comune di santorso,comune di santorso,Comune di Santorso,45,355.0,,,,Excellent
+2026-09-23,holder,comune di santorso,comune di santorso,Comune di Santorso,37,355.0,,,,Excellent
 2026-09-23,holder,comune di saccolongo,comune di saccolongo,Comune di Saccolongo,21,355.0,,,,Excellent
 2026-09-23,holder,c_c342,c_c342,Comune di Enna,12,355.0,,,,Excellent
 2026-09-23,holder,comune di isola della scala,comune di isola della scala,Comune di Isola della Scala,7,355.0,,,,Excellent
 2026-09-23,holder,c_a193,c_a193,Comune di Algua,1,355.0,,,,Excellent
-2026-09-23,holder,comune di candiana,comune di candiana,Comune di Candiana,31,355.0,,,,Excellent
+2026-09-23,holder,comune di candiana,comune di candiana,Comune di Candiana,30,355.0,,,,Excellent
 2026-09-23,holder,spabdomm,spabdomm,"Magnifica Comunità di Montagna Dolomiti Friulane, Cavallo e Cansiglio",4,355.0,,,,Excellent
 2026-09-23,holder,comune di lastebasse,comune di lastebasse,Comune di Lastebasse,20,355.0,,,,Excellent
-2026-09-23,holder,comune di mussolente,comune di mussolente,Comune di Mussolente,8,355.0,,,,Excellent
+2026-09-23,holder,comune di mussolente,comune di mussolente,Comune di Mussolente,7,355.0,,,,Excellent
 2026-09-23,holder,c_i464,c_i464,Comune di Sauris,2,355.0,,,,Excellent
-2026-09-23,holder,comune di villadose,comune di villadose,Comune di Villadose,33,355.0,,,,Excellent
+2026-09-23,holder,comune di villadose,comune di villadose,Comune di Villadose,32,355.0,,,,Excellent
 2026-09-23,holder,c_h657,c_h657,Comune di Sacile,2,355.0,,,,Excellent
 2026-09-23,holder,comune di cogollo del cengio,comune di cogollo del cengio,Comune di Cogollo del Cengio,27,355.0,,,,Excellent
 2026-09-23,holder,uticar,uticar,Comunità di Montagna della Carnia,4,355.0,,,,Excellent
@@ -82701,22 +82703,22 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,comune di camisano vicentino,comune di camisano vicentino,Comune di Camisano Vicentino,24,355.0,,,,Excellent
 2026-09-23,holder,comune di agna,comune di agna,Comune di Agna,11,355.0,,,,Excellent
 2026-09-23,holder,c_l868,c_l868,Comune di Vigarano Mainarda,5,355.0,,,,Excellent
-2026-09-23,holder,comune di bevilacqua,comune di bevilacqua,Comune di Bevilacqua,22,355.0,,,,Excellent
+2026-09-23,holder,comune di bevilacqua,comune di bevilacqua,Comune di Bevilacqua,21,355.0,,,,Excellent
 2026-09-23,holder,c_e078,c_e078,Comune di Goito,9,355.0,,,,Excellent
 2026-09-23,holder,uni_napa,uni_napa,Università degli Studi di Napoli 'Parthenope',15,355.0,,,,Excellent
-2026-09-23,holder,comune di rossano veneto,comune di rossano veneto,Comune di Rossano Veneto,28,355.0,,,,Excellent
+2026-09-23,holder,comune di rossano veneto,comune di rossano veneto,Comune di Rossano Veneto,27,355.0,,,,Excellent
 2026-09-23,holder,atsm,atsm,ATS della Montagna,10,355.0,,,,Excellent
-2026-09-23,holder,comune di carbonera,comune di carbonera,Comune di Carbonera,38,355.0,,,,Excellent
+2026-09-23,holder,comune di carbonera,comune di carbonera,Comune di Carbonera,35,355.0,,,,Excellent
 2026-09-23,holder,comune di pederobba,comune di pederobba,Comune di Pederobba,8,355.0,,,,Excellent
-2026-09-23,holder,comune di posina,comune di posina,Comune di Posina,32,355.0,,,,Excellent
+2026-09-23,holder,comune di posina,comune di posina,Comune di Posina,31,355.0,,,,Excellent
 2026-09-23,holder,comune di monselice,comune di monselice,Comune di Monselice,6,355.0,,,,Excellent
 2026-09-23,holder,c_g888,c_g888,Comune di Pordenone,2,355.0,,,,Excellent
 2026-09-23,holder,c_l312,c_l312,Comune di Toscolano Maderno,10,355.0,,,,Excellent
 2026-09-23,holder,l_686,l_686,Comune di Varmo,4,355.0,,,,Excellent
-2026-09-23,holder,comune di porto tolle,comune di porto tolle,Comune di Porto Tolle,27,355.0,,,,Excellent
-2026-09-23,holder,apss,apss,Azienda sanitaria universitaria integrata del Trentino - Asuit,14,355.0,,,,Excellent
+2026-09-23,holder,comune di porto tolle,comune di porto tolle,Comune di Porto Tolle,25,355.0,,,,Excellent
+2026-09-23,holder,apss,apss,Azienda sanitaria universitaria integrata del Trentino - Asuit,13,355.0,,,,Excellent
 2026-09-23,holder,eavs,eavs,Ente Autonomo Volturno Srl,5,355.0,,,,Excellent
-2026-09-23,holder,comune di ferrara di monte baldo,comune di ferrara di monte baldo,Comune di Ferrara Di Monte Baldo,26,355.0,,,,Excellent
+2026-09-23,holder,comune di ferrara di monte baldo,comune di ferrara di monte baldo,Comune di Ferrara Di Monte Baldo,25,355.0,,,,Excellent
 2026-09-23,holder,comune di san michele al tagliamento,comune di san michele al tagliamento,Comune di San Michele al Tagliamento,2,355.0,,,,Excellent
 2026-09-23,holder,c_e364,c_e364,Comune di Isorella,3,355.0,,,,Excellent
 2026-09-23,holder,seunstna,seunstna,"Universita' degli Studi della Campania ""L. Vanvitelli""",11,355.0,,,,Excellent
@@ -82725,9 +82727,9 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,01749570303,01749570303,IRES,22,355.0,,,,Excellent
 2026-09-23,holder,c_h715,c_h715,Comune di Salle,1,355.0,,,,Excellent
 2026-09-23,holder,c_c882,c_c882,Comune di Collinas,6,355.0,,,,Excellent
-2026-09-23,holder,comune di albettone,comune di albettone,Comune di Albettone,11,355.0,,,,Excellent
+2026-09-23,holder,comune di albettone,comune di albettone,Comune di Albettone,10,355.0,,,,Excellent
 2026-09-23,holder,c_i657,c_i657,Comune di Serravalle Scrivia,2,355.0,,,,Excellent
-2026-09-23,holder,comune di colognola ai colli,comune di colognola ai colli,Comune di Colognola ai Colli,16,355.0,,,,Excellent
+2026-09-23,holder,comune di colognola ai colli,comune di colognola ai colli,Comune di Colognola ai Colli,14,355.0,,,,Excellent
 2026-09-23,holder,comune di valeggio sul mincio,comune di valeggio sul mincio,Comune di Valeggio sul Mincio,9,355.0,,,,Excellent
 2026-09-23,holder,c_d719,c_d719,Comune di Forni di Sopra,2,355.0,,,,Excellent
 2026-09-23,holder,comune di veronella,comune di veronella,Comune di Veronella,13,355.0,,,,Excellent
@@ -82742,28 +82744,28 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_b102,c_b102,Comune di Bovezzo,3,355.0,,,,Excellent
 2026-09-23,holder,c_c457,c_c457,Comune di Cenate Sotto,10,355.0,,,,Excellent
 2026-09-23,holder,um_cr,um_cr,Unione Municipia,8,355.0,,,,Excellent
-2026-09-23,holder,comune di chiuppano,comune di chiuppano,Comune di Chiuppano,27,355.0,,,,Excellent
+2026-09-23,holder,comune di chiuppano,comune di chiuppano,Comune di Chiuppano,25,355.0,,,,Excellent
 2026-09-23,holder,c_e271,c_e271,Comune di Gussago,7,355.0,,,,Excellent
-2026-09-23,holder,comune di grumolo delle abbadesse,comune di grumolo delle abbadesse,Comune di Grumolo delle Abbadesse,21,355.0,,,,Excellent
+2026-09-23,holder,comune di grumolo delle abbadesse,comune di grumolo delle abbadesse,Comune di Grumolo delle Abbadesse,19,355.0,,,,Excellent
 2026-09-23,holder,c_g710,c_g710,Comune di Pisogne,9,355.0,,,,Excellent
 2026-09-23,holder,cciaapp,cciaapp,"Camera di Commercio, Industria, Artigianato e Agricoltura di Pistoia-Prato",45,355.0,,,,Excellent
-2026-09-23,holder,c_e648,c_e648,Comune di Lodi,8,355.0,,,,Excellent
-2026-09-23,holder,comune di gambellara,comune di gambellara,Comune di Gambellara,38,355.0,,,,Excellent
-2026-09-23,holder,comune di gazzo veronese,comune di gazzo veronese,Comune di Gazzo Veronese,19,355.0,,,,Excellent
+2026-09-23,holder,c_e648,c_e648,Comune di Lodi,7,355.0,,,,Excellent
+2026-09-23,holder,comune di gambellara,comune di gambellara,Comune di Gambellara,36,355.0,,,,Excellent
+2026-09-23,holder,comune di gazzo veronese,comune di gazzo veronese,Comune di Gazzo Veronese,17,355.0,,,,Excellent
 2026-09-23,holder,c_i914,c_i914,Comune di Spino d'Adda,15,355.0,,,,Excellent
 2026-09-23,holder,r_friuve,r_friuve,Regione Autonoma Friuli Venezia Giulia - Direzione Centrale Autonomie Locali,6,355.0,,,,Excellent
-2026-09-23,holder,comune di san pietro di morubio,comune di san pietro di morubio,Comune di San Pietro di Morubio,26,355.0,,,,Excellent
+2026-09-23,holder,comune di san pietro di morubio,comune di san pietro di morubio,Comune di San Pietro di Morubio,25,355.0,,,,Excellent
 2026-09-23,holder,c_c327,c_c327,Comune di Castions di Strada,3,355.0,,,,Excellent
 2026-09-23,holder,comune di trecenta,comune di trecenta,Comune di Trecenta,16,355.0,,,,Excellent
 2026-09-23,holder,c_c121,c_c121,Comune di Castel Guelfo di Bologna,5,355.0,,,,Excellent
-2026-09-23,holder,comune di ceneselli,comune di ceneselli,Comune di Ceneselli,17,355.0,,,,Excellent
-2026-09-23,holder,comune di rosà,comune di rosà,Comune di Rosà,5,355.0,,,,Excellent
+2026-09-23,holder,comune di ceneselli,comune di ceneselli,Comune di Ceneselli,15,355.0,,,,Excellent
+2026-09-23,holder,comune di rosà,comune di rosà,Comune di Rosà,3,355.0,,,,Excellent
 2026-09-23,holder,c_f621,c_f621,COMUNE DI Monte San Giusto,52,355.0,,,,Excellent
 2026-09-23,holder,comune di  moriago della battaglia,comune di  moriago della battaglia,Comune di  Moriago della Battaglia,1,355.0,,,,Excellent
-2026-09-23,holder,comune di pieve del grappa,comune di pieve del grappa,Comune di Pieve del Grappa,31,355.0,,,,Excellent
 2026-09-23,holder,c_e618,c_e618,Comune di Milena,6,355.0,,,,Excellent
+2026-09-23,holder,comune di pieve del grappa,comune di pieve del grappa,Comune di Pieve del Grappa,30,355.0,,,,Excellent
 2026-09-23,holder,comune di roveredo di gua,comune di roveredo di gua,Comune di Roveredo Di Gua,17,355.0,,,,Excellent
-2026-09-23,holder,comune di monfumo,comune di monfumo,Comune di Monfumo,34,355.0,,,,Excellent
+2026-09-23,holder,comune di monfumo,comune di monfumo,Comune di Monfumo,29,355.0,,,,Excellent
 2026-09-23,holder,comune di enego,comune di enego,Comune di Enego,3,355.0,,,,Excellent
 2026-09-23,holder,comune di mareno di piave,comune di mareno di piave,Comune di Mareno di Piave,1,355.0,,,,Excellent
 2026-09-23,holder,c_h206,c_h206,Comune di Reana del Rojale,25,355.0,,,,Excellent
@@ -82773,18 +82775,19 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_e760,c_e760,Comune di Lusevera,4,355.0,,,,Excellent
 2026-09-23,holder,ccpbosc,ccpbosc,Consorzio dei Comuni della Provincia di Bolzano,1,355.0,,,,Excellent
 2026-09-23,holder,c_l424,c_l424,Comune di Trieste,3,355.0,,,,Excellent
-2026-09-23,holder,c_c396,c_c396,Comune di Cavernago,10,355.0,,,,Excellent
-2026-09-23,holder,comune di cordignano,comune di cordignano,Comune di Cordignano,38,355.0,,,,Excellent
+2026-09-23,holder,c_c396,c_c396,Comune di Cavernago,8,355.0,,,,Excellent
+2026-09-23,holder,comune di cordignano,comune di cordignano,Comune di Cordignano,36,355.0,,,,Excellent
+2026-09-23,holder,c_l995,c_l995,Comune di Villanuova Sul Clisi,6,355.0,,,,Excellent
 2026-09-23,holder,comune di giacciano con baruchella,comune di giacciano con baruchella,Comune di Giacciano con Baruchella,4,355.0,,,,Excellent
 2026-09-23,holder,comune di san donà di piave,comune di san donà di piave,Comune di San Donà di Piave,3,355.0,,,,Excellent
 2026-09-23,holder,c_d540,c_d540,Comune di Ferla,3,355.0,,,,Excellent
 2026-09-23,holder,asstla,asstla,Azienda Socio Sanitaria Territoriale Lariana,16,355.0,,,,Excellent
-2026-09-23,holder,c_c421,c_c421,Comune di Cefalù,20,355.0,,,,Excellent
-2026-09-23,holder,comune di isola rizza,comune di isola rizza,Comune di Isola Rizza,7,355.0,,,,Excellent
+2026-09-23,holder,c_c421,c_c421,Comune di Cefalù,19,355.0,,,,Excellent
+2026-09-23,holder,comune di isola rizza,comune di isola rizza,Comune di Isola Rizza,6,355.0,,,,Excellent
 2026-09-23,holder,comune di castelfranco veneto,comune di castelfranco veneto,Comune di Castelfranco Veneto,2,355.0,,,,Excellent
-2026-09-23,holder,comune di montecchio precalcino,comune di montecchio precalcino,Comune di Montecchio Precalcino,50,355.0,,,,Excellent
+2026-09-23,holder,comune di montecchio precalcino,comune di montecchio precalcino,Comune di Montecchio Precalcino,47,355.0,,,,Excellent
 2026-09-23,holder,wqf3zw8f,wqf3zw8f,Ministero del Turismo,16,355.0,,,,Excellent
-2026-09-23,holder,comune di malo,comune di malo,Comune di Malo,40,355.0,,,,Excellent
+2026-09-23,holder,comune di malo,comune di malo,Comune di Malo,39,355.0,,,,Excellent
 2026-09-23,holder,inail,inail,INAIL,102,355.0,,,,Excellent
 2026-09-23,holder,c_g047,c_g047,Comune di Olmeneta,3,355.0,,,,Excellent
 2026-09-23,holder,comune di asolo,comune di asolo,Comune di Asolo,1,355.0,,,,Excellent
@@ -82793,63 +82796,64 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,comune di megliadino san vitale,comune di megliadino san vitale,Comune di Megliadino San Vitale,14,355.0,,,,Excellent
 2026-09-23,holder,comune di dueville,comune di dueville,Comune di Dueville,15,355.0,,,,Excellent
 2026-09-23,holder,cciaa_rc,cciaa_rc,"Camera di Commercio, Industria, Artigianato e Agricoltura di Reggio Calabria",39,355.0,,,,Excellent
-2026-09-23,holder,comune di val liona,comune di val liona,Comune di Val Liona,14,355.0,,,,Excellent
+2026-09-23,holder,comune di val liona,comune di val liona,Comune di Val Liona,13,355.0,,,,Excellent
 2026-09-23,holder,comune di baone,comune di baone,Comune di Baone,10,355.0,,,,Excellent
 2026-09-23,holder,comune di san giorgio in bosco,comune di san giorgio in bosco,Comune di San Giorgio in Bosco,12,355.0,,,,Excellent
 2026-09-23,holder,c_m410,c_m410,Comune di Riva del Po,3,355.0,,,,Excellent
-2026-09-23,holder,comune di erbe',comune di erbe',Comune di Erbe',18,355.0,,,,Excellent
+2026-09-23,holder,comune di erbe',comune di erbe',Comune di Erbe',17,355.0,,,,Excellent
 2026-09-23,holder,comune di fossalta di portogruaro,comune di fossalta di portogruaro,Comune di Fossalta di Portogruaro,7,355.0,,,,Excellent
 2026-09-23,holder,comune di zugliano,comune di zugliano,Comune di Zugliano,17,355.0,,,,Excellent
 2026-09-23,holder,c_a846,c_a846,Comune di Bianzano,10,355.0,,,,Excellent
-2026-09-23,holder,comune di bovolone,comune di bovolone,Comune di Bovolone,7,355.0,,,,Excellent
+2026-09-23,holder,comune di bovolone,comune di bovolone,Comune di Bovolone,6,355.0,,,,Excellent
 2026-09-23,holder,comune di noventa di piave,comune di noventa di piave,Comune di Noventa di Piave,4,355.0,,,,Excellent
 2026-09-23,holder,comune di albignasego,comune di albignasego,Comune di Albignasego,1,355.0,,,,Excellent
 2026-09-23,holder,acfts,acfts,Azienda Forestale Trento - Sopramonte,3,355.0,,,,Excellent
 2026-09-23,holder,c_c634,c_c634,Comune di Chieve,7,355.0,,,,Excellent
 2026-09-23,holder,comune di vedelago,comune di vedelago,Comune di Vedelago,3,355.0,,,,Excellent
 2026-09-23,holder,c_g966,c_g966,Comune di Pozzuolo del Friuli,2,355.0,,,,Excellent
+2026-09-23,holder,c_i759,c_i759,Comune di Sirone,7,355.0,,,,Excellent
 2026-09-23,holder,comune di sernaglia della battaglia,comune di sernaglia della battaglia,Comune di Sernaglia della Battaglia,35,355.0,,,,Excellent
-2026-09-23,holder,comune di pescantina,comune di pescantina,Comune di Pescantina,16,355.0,,,,Excellent
+2026-09-23,holder,comune di pescantina,comune di pescantina,Comune di Pescantina,15,355.0,,,,Excellent
 2026-09-23,holder,p_pr,p_pr,Provincia di Parma,5,355.0,,,,Excellent
 2026-09-23,holder,c_b550,c_b550,Comune di Campomarino,1,355.0,,,,Excellent
 2026-09-23,holder,01581060223,01581060223,Alto Garda Servizi SpA,1,355.0,,,,Excellent
-2026-09-23,holder,comune di fiesso umbertiano,comune di fiesso umbertiano,Comune di Fiesso Umbertiano,21,355.0,,,,Excellent
-2026-09-23,holder,comune di belfiore,comune di belfiore,Comune di Belfiore,32,355.0,,,,Excellent
+2026-09-23,holder,comune di fiesso umbertiano,comune di fiesso umbertiano,Comune di Fiesso Umbertiano,20,355.0,,,,Excellent
+2026-09-23,holder,comune di belfiore,comune di belfiore,Comune di Belfiore,28,355.0,,,,Excellent
 2026-09-23,holder,utidt,utidt,Comunità di montagna del Natisone e Torre,2,355.0,,,,Excellent
 2026-09-23,holder,comune di quinto di treviso,comune di quinto di treviso,Comune di Quinto di Treviso,25,355.0,,,,Excellent
 2026-09-23,holder,icms_,icms_,Istituzione Comunale Marsala Schola,6,355.0,,,,Excellent
 2026-09-23,holder,arpal,arpal,Agenzia Regionale per Le Politiche Attive del Lavoro - Arpal Umbria,10,355.0,,,,Excellent
-2026-09-23,holder,comune di casale sul sile,comune di casale sul sile,Comune di Casale sul Sile,31,355.0,,,,Excellent
+2026-09-23,holder,comune di casale sul sile,comune di casale sul sile,Comune di Casale sul Sile,30,355.0,,,,Excellent
 2026-09-23,holder,comune di castagnaro,comune di castagnaro,Comune di Castagnaro,7,355.0,,,,Excellent
 2026-09-23,holder,cdg_,cdg_,Comunità delle Giudicarie,16,355.0,,,,Excellent
 2026-09-23,holder,comune di cazzano di tramigna,comune di cazzano di tramigna,Comune di Cazzano di Tramigna,39,355.0,,,,Excellent
 2026-09-23,holder,cnit,cnit,CNIT - Consorzio Nazionale Interuniversitario per le Telecomunicazioni,10,355.0,,,,Excellent
 2026-09-23,holder,aou_pisa,aou_pisa,Azienda Ospedaliero-Universitaria Pisana,3,355.0,,,,Excellent
 2026-09-23,holder,c_d324,c_d324,Comune di San Dorligo della Valle,2,355.0,,,,Excellent
-2026-09-23,holder,comune di pozzoleone,comune di pozzoleone,Comune di Pozzoleone,22,355.0,,,,Excellent
+2026-09-23,holder,comune di pozzoleone,comune di pozzoleone,Comune di Pozzoleone,21,355.0,,,,Excellent
 2026-09-23,holder,comune di riese pio x,comune di riese pio x,Comune di Riese Pio X,21,355.0,,,,Excellent
 2026-09-23,holder,c_m147,c_m147,Comune di Zanica,10,355.0,,,,Excellent
 2026-09-23,holder,comune di lonigo,comune di lonigo,Comune di Lonigo,4,355.0,,,,Excellent
 2026-09-23,holder,c_a810,c_a810,Comune di Bertiolo,5,355.0,,,,Excellent
 2026-09-23,holder,c_h533,c_h533,Comune di Ronchis,4,355.0,,,,Excellent
-2026-09-23,holder,cvc_tn,cvc_tn,Comunità della Valle di Cembra,24,355.0,,,,Excellent
-2026-09-23,holder,cvs_,cvs_,Comunità della Valle di Sole,23,355.0,,,,Excellent
+2026-09-23,holder,cvc_tn,cvc_tn,Comunità della Valle di Cembra,23,355.0,,,,Excellent
+2026-09-23,holder,cvs_,cvs_,Comunità della Valle di Sole,22,355.0,,,,Excellent
 2026-09-23,holder,comune di zermeghedo,comune di zermeghedo,Comune di Zermeghedo,19,355.0,,,,Excellent
-2026-09-23,holder,comune di musile di piave,comune di musile di piave,Comune di Musile di Piave,22,355.0,,,,Excellent
+2026-09-23,holder,comune di musile di piave,comune di musile di piave,Comune di Musile di Piave,19,355.0,,,,Excellent
 2026-09-23,holder,cciaadl,cciaadl,"Camera di Commercio, Industria, Artigianato e Agricoltura di Venezia Rovigo",12,355.0,,,,Excellent
 2026-09-23,holder,c_e854,c_e854,Comune di Maletto,11,355.0,,,,Excellent
-2026-09-23,holder,comune di fara vicentino,comune di fara vicentino,Comune di Fara Vicentino,18,355.0,,,,Excellent
+2026-09-23,holder,comune di fara vicentino,comune di fara vicentino,Comune di Fara Vicentino,17,355.0,,,,Excellent
 2026-09-23,holder,c_b788,c_b788,Comune di Carlino,4,355.0,,,,Excellent
 2026-09-23,holder,c_i056,c_i056,Comune di San Nicola La Strada,5,355.0,,,,Excellent
 2026-09-23,holder,comune di segusino,comune di segusino,Comune di Segusino,1,355.0,,,,Excellent
 2026-09-23,holder,c_a700,c_a700,Comune di Basiliano,2,355.0,,,,Excellent
-2026-09-23,holder,comune di villanova marchesana,comune di villanova marchesana,Comune di Villanova Marchesana,10,355.0,,,,Excellent
+2026-09-23,holder,comune di villanova marchesana,comune di villanova marchesana,Comune di Villanova Marchesana,8,355.0,,,,Excellent
 2026-09-23,holder,c_mont,c_mont,Comune di Montorfano,6,355.0,,,,Excellent
-2026-09-23,holder,comune di velo d'astico,comune di velo d'astico,Comune di Velo d'Astico,14,355.0,,,,Excellent
+2026-09-23,holder,comune di velo d'astico,comune di velo d'astico,Comune di Velo d'Astico,13,355.0,,,,Excellent
 2026-09-23,holder,co_unap,co_unap,Consorzio Universitario Piceno,10,355.0,,,,Excellent
 2026-09-23,holder,comune di angiari,comune di angiari,Comune di Angiari,7,355.0,,,,Excellent
 2026-09-23,holder,comune di zevio,comune di zevio,Comune di Zevio,26,355.0,,,,Excellent
-2026-09-23,holder,comune di castel d'azzano,comune di castel d'azzano,Comune di Castel d'Azzano,40,355.0,,,,Excellent
+2026-09-23,holder,comune di castel d'azzano,comune di castel d'azzano,Comune di Castel d'Azzano,36,355.0,,,,Excellent
 2026-09-23,holder,unsttren,unsttren,Università di Trento,10,355.0,,,,Excellent
 2026-09-23,holder,comune di sant'anna d'alfaedo,comune di sant'anna d'alfaedo,Comune di Sant'anna D'alfaedo,15,355.0,,,,Excellent
 2026-09-23,holder,p_tn82l3,p_tn82l3,Consiglio della Provincia Autonoma di Trento,6,355.0,,,,Excellent
@@ -82861,12 +82865,12 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,utismsm,utismsm,Comunita' Sile,2,355.0,,,,Excellent
 2026-09-23,holder,c_d360,c_d360,Comune di Dozza,5,355.0,,,,Excellent
 2026-09-23,holder,comune di cerro veronese,comune di cerro veronese,Comune di Cerro Veronese,18,355.0,,,,Excellent
-2026-09-23,holder,comune di tonezza del cimone,comune di tonezza del cimone,Comune di Tonezza Del Cimone,12,355.0,,,,Excellent
+2026-09-23,holder,comune di tonezza del cimone,comune di tonezza del cimone,Comune di Tonezza Del Cimone,11,355.0,,,,Excellent
 2026-09-23,holder,comune di castello di godego,comune di castello di godego,Comune di Castello di Godego,6,355.0,,,,Excellent
 2026-09-23,holder,comune di portogruaro,comune di portogruaro,Comune di Portogruaro,2,355.0,,,,Excellent
 2026-09-23,holder,c_c536,c_c536,Comune di Cerro al Lambro,7,355.0,,,,Excellent
 2026-09-23,holder,comune di campo san martino,comune di campo san martino,Comune di Campo San Martino,15,355.0,,,,Excellent
-2026-09-23,holder,comune di ponte san nicolo,comune di ponte san nicolo,Comune di Ponte San Nicolo,19,355.0,,,,Excellent
+2026-09-23,holder,comune di ponte san nicolo,comune di ponte san nicolo,Comune di Ponte San Nicolo,17,355.0,,,,Excellent
 2026-09-23,holder,comune di fossalta di piave,comune di fossalta di piave,Comune di Fossalta di Piave,5,355.0,,,,Excellent
 2026-09-23,holder,c_a892,c_a892,Comune di Bitetto,4,355.0,,,,Excellent
 2026-09-23,holder,c_e320,c_e320,Comune di Jolanda di Savoia,3,355.0,,,,Excellent
@@ -82874,31 +82878,31 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,comune di gazzo,comune di gazzo,Comune di Gazzo,37,355.0,,,,Excellent
 2026-09-23,holder,ccmm,ccmm,Camera di Commercio di Milano Monza Brianza Lodi,18,355.0,,,,Excellent
 2026-09-23,holder,cciaa_bz,cciaa_bz,"Camera di Commercio, Industria, Artigianato, Turismo e Agricoltura di Bolzano",16,355.0,,,,Excellent
-2026-09-23,holder,comune di adria,comune di adria,Comune di Adria,18,355.0,,,,Excellent
+2026-09-23,holder,comune di adria,comune di adria,Comune di Adria,17,355.0,,,,Excellent
 2026-09-23,holder,comune di cavallino-treporti,comune di cavallino-treporti,Comune di Cavallino-Treporti,6,355.0,,,,Excellent
-2026-09-23,holder,c_c785,c_c785,Comune di Civo,4,355.0,,,,Excellent
-2026-09-23,holder,comune di colceresa,comune di colceresa,Comune di Colceresa,4,355.0,,,,Excellent
-2026-09-23,holder,comune di mira,comune di mira,Comune di Mira,60,355.0,,,,Excellent
+2026-09-23,holder,c_c785,c_c785,Comune di Civo,3,355.0,,,,Excellent
+2026-09-23,holder,comune di colceresa,comune di colceresa,Comune di Colceresa,3,355.0,,,,Excellent
+2026-09-23,holder,comune di mira,comune di mira,Comune di Mira,58,355.0,,,,Excellent
+2026-09-23,holder,c_a965,c_a965,Comune di Bondeno,26,355.0,,,,Excellent
 2026-09-23,holder,comune di cessalto,comune di cessalto,Comune di Cessalto,32,355.0,,,,Excellent
-2026-09-23,holder,c_a965,c_a965,Comune di Bondeno,30,355.0,,,,Excellent
-2026-09-23,holder,comune di nove,comune di nove,Comune di Nove,26,355.0,,,,Excellent
+2026-09-23,holder,comune di nove,comune di nove,Comune di Nove,23,355.0,,,,Excellent
 2026-09-23,holder,c_h316,c_h316,Comune di Ripalta Guerina,7,355.0,,,,Excellent
-2026-09-23,holder,comune di selvazzano dentro,comune di selvazzano dentro,Comune di Selvazzano Dentro,21,355.0,,,,Excellent
+2026-09-23,holder,comune di selvazzano dentro,comune di selvazzano dentro,Comune di Selvazzano Dentro,19,355.0,,,,Excellent
 2026-09-23,holder,comune di agugliaro,comune di agugliaro,Comune di Agugliaro,18,355.0,,,,Excellent
-2026-09-23,holder,comune di giavera del montello,comune di giavera del montello,Comune di Giavera del Montello,37,355.0,,,,Excellent
+2026-09-23,holder,comune di giavera del montello,comune di giavera del montello,Comune di Giavera del Montello,36,355.0,,,,Excellent
 2026-09-23,holder,c_h002,c_h002,Comune di Prato Carnico,2,355.0,,,,Excellent
 2026-09-23,holder,esa copernicus,esa copernicus,ESA Copernicus,3,355.0,,,,Excellent
 2026-09-23,holder,c_e553,c_e553,Comune di Lestizza,2,355.0,,,,Excellent
-2026-09-23,holder,comune di colle umberto,comune di colle umberto,Comune di Colle Umberto,31,355.0,,,,Excellent
+2026-09-23,holder,comune di colle umberto,comune di colle umberto,Comune di Colle Umberto,30,355.0,,,,Excellent
 2026-09-23,holder,comune di borso del grappa,comune di borso del grappa,Comune di Borso del Grappa,32,355.0,,,,Excellent
 2026-09-23,holder,c_c641,c_c641,Comune di Chiopris-Viscone,2,355.0,,,,Excellent
 2026-09-23,holder,c_b892,c_b892,Comune di Casalfiumanese,5,355.0,,,,Excellent
 2026-09-23,holder,c_l018,c_l018,Comune di Sutrio,2,355.0,,,,Excellent
 2026-09-23,holder,c_l777,c_l777,Comune di Verolanuova,8,355.0,,,,Excellent
 2026-09-23,holder,c_­l024,c_­l024,Comune di Taggia,5,355.0,,,,Excellent
-2026-09-23,holder,c_g949,c_g949,Comune di Povoletto,33,355.0,,,,Excellent
+2026-09-23,holder,c_g949,c_g949,Comune di Povoletto,31,355.0,,,,Excellent
 2026-09-23,holder,comune di pedemonte,comune di pedemonte,Comune di Pedemonte,32,355.0,,,,Excellent
-2026-09-23,holder,comune di nogarole rocca,comune di nogarole rocca,Comune di Nogarole Rocca,31,355.0,,,,Excellent
+2026-09-23,holder,comune di nogarole rocca,comune di nogarole rocca,Comune di Nogarole Rocca,29,355.0,,,,Excellent
 2026-09-23,holder,comune di fontaniva,comune di fontaniva,Comune di Fontaniva,28,355.0,,,,Excellent
 2026-09-23,holder,comune di buttapietra,comune di buttapietra,Comune di Buttapietra,21,355.0,,,,Excellent
 2026-09-23,holder,udctf_fe,udctf_fe,Unione Terre e Fiumi,3,355.0,,,,Excellent
@@ -82908,21 +82912,21 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_f680,c_f680,Comune di Montirone,4,355.0,,,,Excellent
 2026-09-23,holder,c_f980,c_f980,Comune di Nurachi,29,355.0,,,,Excellent
 2026-09-23,holder,c_d630,c_d630,Comune di Flaibano,7,355.0,,,,Excellent
-2026-09-23,holder,comune di soave,comune di soave,Comune di Soave,35,355.0,,,,Excellent
+2026-09-23,holder,comune di soave,comune di soave,Comune di Soave,33,355.0,,,,Excellent
 2026-09-23,holder,c_g344,c_g344,Comune di Parrano,4,355.0,,,,Excellent
 2026-09-23,holder,c_i849,c_i849,Comune di Soresina,1,355.0,,,,Excellent
 2026-09-23,holder,c_d004,c_d004,Comune di Coriano,8,355.0,,,,Excellent
 2026-09-23,holder,c_g891,c_g891,Comune di Porpetto,2,355.0,,,,Excellent
-2026-09-23,holder,c_e193,c_e193,Comune di Grontardo,3,355.0,,,,Excellent
+2026-09-23,holder,c_e193,c_e193,Comune di Grontardo,2,355.0,,,,Excellent
 2026-09-23,holder,c_a553,c_a553,Comune di Bagnaria Arsa,25,355.0,,,,Excellent
 2026-09-23,holder,rseu_087,rseu_087,E.R.S.U. Catania,7,355.0,,,,Excellent
-2026-09-23,holder,c_a249,c_a249,Comune di Alzate Brianza,6,355.0,,,,Excellent
+2026-09-23,holder,c_a249,c_a249,Comune di Alzate Brianza,5,355.0,,,,Excellent
 2026-09-23,holder,c_d718,c_d718,Comune di Forni Avoltri,2,355.0,,,,Excellent
-2026-09-23,holder,comune di nogara,comune di nogara,Comune di Nogara,27,355.0,,,,Excellent
+2026-09-23,holder,comune di nogara,comune di nogara,Comune di Nogara,24,355.0,,,,Excellent
 2026-09-23,holder,c_g084,c_g084,Comune di Orani,20,355.0,,,,Excellent
 2026-09-23,holder,comune di oppeano,comune di oppeano,Comune di Oppeano,28,355.0,,,,Excellent
 2026-09-23,holder,cciaa_mo,cciaa_mo,"Camera di Commercio, Industria, Artigianato e Agricoltura di Modena",20,355.0,,,,Excellent
-2026-09-23,holder,comune di concamarise,comune di concamarise,Comune di Concamarise,24,355.0,,,,Excellent
+2026-09-23,holder,comune di concamarise,comune di concamarise,Comune di Concamarise,22,355.0,,,,Excellent
 2026-09-23,holder,cvt_tn,cvt_tn,Comunità Valsugana e Tesino,26,355.0,,,,Excellent
 2026-09-23,holder,c_d085,c_d085,Comune di Coseano,2,355.0,,,,Excellent
 2026-09-23,holder,comune di padova,comune di padova,Comune di Padova,1,355.0,,,,Excellent
@@ -82935,53 +82939,53 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,comune di sant'urbano,comune di sant'urbano,Comune di Sant'Urbano,22,355.0,,,,Excellent
 2026-09-23,holder,c_a983,c_a983,Comune di Bordano,2,355.0,,,,Excellent
 2026-09-23,holder,c_c654,c_c654,Comune di Chiusa Sclafani,13,355.0,,,,Excellent
-2026-09-23,holder,comune di zovencedo,comune di zovencedo,Comune di Zovencedo,25,355.0,,,,Excellent
+2026-09-23,holder,comune di zovencedo,comune di zovencedo,Comune di Zovencedo,23,355.0,,,,Excellent
 2026-09-23,holder,c_e953,c_e953,Comune di Marianopoli,27,355.0,,,,Excellent
 2026-09-23,holder,c_l011,c_l011,Comune di Surbo,6,355.0,,,,Excellent
 2026-09-23,holder,c_a640,c_a640,Comune di Barcis,2,355.0,,,,Excellent
-2026-09-23,holder,cciaa_le,cciaa_le,Camera di Commercio di Lecce,450,355.0,,,,Excellent
 2026-09-23,holder,comune di meolo,comune di meolo,Comune di Meolo,39,355.0,,,,Excellent
-2026-09-23,holder,comune di paese,comune di paese,Comune di Paese,17,355.0,,,,Excellent
+2026-09-23,holder,comune di paese,comune di paese,Comune di Paese,16,355.0,,,,Excellent
 2026-09-23,holder,c_c352,c_c352,Comune di Catanzaro,5,355.0,,,,Excellent
 2026-09-23,holder,roofcym9,roofcym9,Comunità del Collio,4,355.0,,,,Excellent
 2026-09-23,holder,c_f991,c_f991,Comune di Nuxis,10,355.0,,,,Excellent
 2026-09-23,holder,uticana,uticana,Comunita' di Montagna Canal del Ferro e Val Canale,2,355.0,,,,Excellent
-2026-09-23,holder,comune di monte di malo,comune di monte di malo,Comune di Monte di Malo,39,355.0,,,,Excellent
+2026-09-23,holder,comune di monte di malo,comune di monte di malo,Comune di Monte di Malo,35,355.0,,,,Excellent
 2026-09-23,holder,c_c991,c_c991,Comune di Cordenons,6,355.0,,,,Excellent
 2026-09-23,holder,comune di mozzecane,comune di mozzecane,Comune di Mozzecane,26,355.0,,,,Excellent
 2026-09-23,holder,c_a163,c_a163,Comune di Albino,5,355.0,,,,Excellent
-2026-09-23,holder,comune di san martino di lupari,comune di san martino di lupari,Comune di San Martino di Lupari,22,355.0,,,,Excellent
+2026-09-23,holder,comune di san martino di lupari,comune di san martino di lupari,Comune di San Martino di Lupari,21,355.0,,,,Excellent
 2026-09-23,holder,comune di villafranca padovana,comune di villafranca padovana,Comune di Villafranca Padovana,13,355.0,,,,Excellent
 2026-09-23,holder,c_f874,c_f874,Comune di Nerviano,10,355.0,,,,Excellent
-2026-09-23,holder,c_e107,c_e107,Comune di Goro,16,355.0,,,,Excellent
+2026-09-23,holder,c_e107,c_e107,Comune di Goro,14,355.0,,,,Excellent
 2026-09-23,holder,c_l246,c_l246,Comune di Torreano,2,355.0,,,,Excellent
 2026-09-23,holder,c_f898,c_f898,Comune di Nimis,4,355.0,,,,Excellent
 2026-09-23,holder,c_c556,c_c556,Comune di Cervignano del Friuli,2,355.0,,,,Excellent
 2026-09-23,holder,atu65953667,atu65953667,"Lichtbild, Kulturschatz Historische Photographie",1,355.0,,,,Excellent
 2026-09-23,holder,c_d383,c_d383,Comune di Duino-Aurisina,2,355.0,,,,Excellent
-2026-09-23,holder,comune di taglio di po,comune di taglio di po,Comune di Taglio Di Po,26,355.0,,,,Excellent
+2026-09-23,holder,comune di taglio di po,comune di taglio di po,Comune di Taglio Di Po,25,355.0,,,,Excellent
 2026-09-23,holder,c_g198,c_g198,Comune di Ovaro,2,355.0,,,,Excellent
 2026-09-23,holder,c_g969,c_g969,Comune di Pradamano,2,355.0,,,,Excellent
 2026-09-23,holder,c_d269,c_d269,Comune di Deliceto,3,355.0,,,,Excellent
-2026-09-23,holder,comune di lusiana conco,comune di lusiana conco,Comune di Lusiana Conco,25,355.0,,,,Excellent
-2026-09-23,holder,comune di alonte,comune di alonte,Comune di Alonte,29,355.0,,,,Excellent
+2026-09-23,holder,comune di lusiana conco,comune di lusiana conco,Comune di Lusiana Conco,23,355.0,,,,Excellent
+2026-09-23,holder,comune di alonte,comune di alonte,Comune di Alonte,26,355.0,,,,Excellent
 2026-09-23,holder,c_m400,c_m400,Comune di Fiumicello Villa Vicentina,2,355.0,,,,Excellent
-2026-09-23,holder,comune di gallio,comune di gallio,Comune di Gallio,30,355.0,,,,Excellent
+2026-09-23,holder,c_h177,c_h177,Comune di Ranzanico,9,355.0,,,,Excellent
+2026-09-23,holder,comune di gallio,comune di gallio,Comune di Gallio,28,355.0,,,,Excellent
 2026-09-23,holder,c_c293,c_c293,Comune di Castenedolo,8,355.0,,,,Excellent
 2026-09-23,holder,c_a491,c_a491,Comune di Attimis,2,355.0,,,,Excellent
 2026-09-23,holder,c_i028,c_i028,Comune di San Mauro Castelverde,7,355.0,,,,Excellent
 2026-09-23,holder,uclf_mn,uclf_mn,Unione Lombarda di Comuni FOEDUS,3,355.0,,,,Excellent
 2026-09-23,holder,consiglio di bacino verona nord,consiglio di bacino verona nord,Consiglio di Bacino Verona Nord,1,355.0,,,,Excellent
-2026-09-23,holder,comune di castelcucco,comune di castelcucco,Comune di Castelcucco,30,355.0,,,,Excellent
+2026-09-23,holder,comune di castelcucco,comune di castelcucco,Comune di Castelcucco,28,355.0,,,,Excellent
 2026-09-23,holder,c_h088,c_h088,Comune di Pula,2,355.0,,,,Excellent
 2026-09-23,holder,comune di pettorazza grimani,comune di pettorazza grimani,Comune di Pettorazza Grimani,23,355.0,,,,Excellent
 2026-09-23,holder,comune di trevenzuolo,comune di trevenzuolo,Comune di Trevenzuolo,20,355.0,,,,Excellent
 2026-09-23,holder,comune di marano di valpolicella,comune di marano di valpolicella,Comune di Marano di Valpolicella,11,355.0,,,,Excellent
 2026-09-23,holder,comune di ronco all'adige,comune di ronco all'adige,Comune di Ronco all'Adige,1,355.0,,,,Excellent
 2026-09-23,holder,comune di pianiga,comune di pianiga,Comune di Pianiga,31,355.0,,,,Excellent
-2026-09-23,holder,c_h229,c_h229,Comune di Remanzacco,26,355.0,,,,Excellent
+2026-09-23,holder,c_h229,c_h229,Comune di Remanzacco,24,355.0,,,,Excellent
 2026-09-23,holder,uni_pa,uni_pa,Università degli Studi di Palermo,19,355.0,,,,Excellent
-2026-09-23,holder,comune di stienta,comune di stienta,Comune di Stienta,8,355.0,,,,Excellent
+2026-09-23,holder,comune di stienta,comune di stienta,Comune di Stienta,7,355.0,,,,Excellent
 2026-09-23,holder,comune di romano d'ezzelino,comune di romano d'ezzelino,Comune di Romano D'ezzelino,7,355.0,,,,Excellent
 2026-09-23,holder,comune di caorle,comune di caorle,Comune di Caorle,5,355.0,,,,Excellent
 2026-09-23,holder,c_f760,c_f760,Comune di Moruzzo,2,355.0,,,,Excellent
@@ -82992,16 +82996,16 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,nucir_im,nucir_im,Nuovo Circondario Imolese,1,355.0,,,,Excellent
 2026-09-23,holder,comune di casale di scodosia,comune di casale di scodosia,Comune di Casale di Scodosia,9,355.0,,,,Excellent
 2026-09-23,holder,c_h787,c_h787,Comune di San Canzian d'Isonzo,2,355.0,,,,Excellent
-2026-09-23,holder,comune di montegalda,comune di montegalda,Comune di Montegalda,29,355.0,,,,Excellent
+2026-09-23,holder,comune di montegalda,comune di montegalda,Comune di Montegalda,26,355.0,,,,Excellent
 2026-09-23,holder,c_a346,c_a346,Comune di Aquileia,2,355.0,,,,Excellent
 2026-09-23,holder,c_c990,c_c990,Comune di Corciano,6,355.0,,,,Excellent
 2026-09-23,holder,comune di monteforte d'alpone,comune di monteforte d'alpone,COMUNE DI MONTEFORTE D'ALPONE,1,355.0,,,,Excellent
-2026-09-23,holder,mcdac_tn,mcdac_tn,Magnifica Comunità degli Altipiani Cimbri,24,355.0,,,,Excellent
+2026-09-23,holder,mcdac_tn,mcdac_tn,Magnifica Comunità degli Altipiani Cimbri,23,355.0,,,,Excellent
 2026-09-23,holder,kis1nl,kis1nl,Gemeinde Bozen,1,355.0,,,,Excellent
-2026-09-23,holder,comune di montecchio maggiore,comune di montecchio maggiore,Comune di Montecchio Maggiore,30,355.0,,,,Excellent
+2026-09-23,holder,comune di montecchio maggiore,comune di montecchio maggiore,Comune di Montecchio Maggiore,28,355.0,,,,Excellent
 2026-09-23,holder,c_a447,c_a447,Comune di Arta Terme,2,355.0,,,,Excellent
-2026-09-23,holder,comune di salgareda,comune di salgareda,Comune di Salgareda,32,355.0,,,,Excellent
 2026-09-23,holder,c_l195,c_l195,Comune di Tolmezzo,9,355.0,,,,Excellent
+2026-09-23,holder,comune di salgareda,comune di salgareda,Comune di Salgareda,32,355.0,,,,Excellent
 2026-09-23,holder,c_e098,c_e098,Comune di Gorizia,12,355.0,,,,Excellent
 2026-09-23,holder,ccdfriu,ccdfriu,Comunita' Collinare Del Friuli,4,355.0,,,,Excellent
 2026-09-23,holder,cmdrc,cmdrc,Città Metropolitana di Reggio Calabria,11,355.0,,,,Excellent
@@ -83014,29 +83018,29 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_i162,c_i162,Comune di San Siro,5,355.0,,,,Excellent
 2026-09-23,holder,itea,itea,ITEA Spa,1,355.0,,,,Excellent
 2026-09-23,holder,c_a710,c_a710,Comune di Bastia Umbra,5,355.0,,,,Excellent
-2026-09-23,holder,comune di saonara,comune di saonara,Comune di Saonara,19,355.0,,,,Excellent
+2026-09-23,holder,comune di saonara,comune di saonara,Comune di Saonara,15,355.0,,,,Excellent
 2026-09-23,holder,izs_um,izs_um,Istituto Zooprofilattico Sperimentale dell'Umbria e delle Marche,10,355.0,,,,Excellent
 2026-09-23,holder,arida_03,arida_03,Agenzia Regionale per il Diritto allo Studio,6,355.0,,,,Excellent
 2026-09-23,holder,comune di calto,comune di calto,Comune di Calto,27,355.0,,,,Excellent
 2026-09-23,holder,comune di pastrengo,comune di pastrengo,Comune di Pastrengo,24,355.0,,,,Excellent
 2026-09-23,holder,alsvi,alsvi,Agenzia Lavoro,4,355.0,,,,Excellent
 2026-09-23,holder,c_d645,c_d645,Comune di Fogliano Redipuglia,2,355.0,,,,Excellent
-2026-09-23,holder,comune di villaverla,comune di villaverla,Comune di Villaverla,6,355.0,,,,Excellent
-2026-09-23,holder,comune di erbezzo,comune di erbezzo,Comune di Erbezzo,8,355.0,,,,Excellent
+2026-09-23,holder,comune di villaverla,comune di villaverla,Comune di Villaverla,5,355.0,,,,Excellent
+2026-09-23,holder,comune di erbezzo,comune di erbezzo,Comune di Erbezzo,7,355.0,,,,Excellent
 2026-09-23,holder,comune di villorba,comune di villorba,Comune di Villorba,1,355.0,,,,Excellent
 2026-09-23,holder,c_b044,c_b044,Comune di Borgo Tossignano,5,355.0,,,,Excellent
 2026-09-23,holder,comune di brogliano,comune di brogliano,Comune di Brogliano,25,355.0,,,,Excellent
 2026-09-23,holder,c_g831,c_g831,Comune di Pontebba,2,355.0,,,,Excellent
 2026-09-23,holder,c_d416,c_d416,Comune di Erba,6,355.0,,,,Excellent
-2026-09-23,holder,comune di recoaro terme,comune di recoaro terme,Comune di Recoaro Terme,20,355.0,,,,Excellent
+2026-09-23,holder,comune di recoaro terme,comune di recoaro terme,Comune di Recoaro Terme,18,355.0,,,,Excellent
 2026-09-23,holder,c_e833,c_e833,Comune di Majano,2,355.0,,,,Excellent
 2026-09-23,holder,comune di ponzano veneto,comune di ponzano veneto,Comune di Ponzano Veneto,1,355.0,,,,Excellent
 2026-09-23,holder,arsac,arsac,ARSAC - Azienda Regionale per lo Sviluppo dell’Agricoltura Calabrese,7,355.0,,,,Excellent
-2026-09-23,holder,c_h314,c_h314,Comune di Ripalta Arpina,7,355.0,,,,Excellent
+2026-09-23,holder,c_h314,c_h314,Comune di Ripalta Arpina,5,355.0,,,,Excellent
 2026-09-23,holder,comune di spresiano,comune di spresiano,Comune di Spresiano,5,355.0,,,,Excellent
 2026-09-23,holder,cciaa_cn,cciaa_cn,"Camera di Commercio, Industria, Artigianato e Agricoltura di Cuneo",16,355.0,,,,Excellent
 2026-09-23,holder,comune di gaiba,comune di gaiba,Comune di Gaiba,16,355.0,,,,Excellent
-2026-09-23,holder,comune di brendola,comune di brendola,Comune di Brendola,34,355.0,,,,Excellent
+2026-09-23,holder,comune di brendola,comune di brendola,Comune di Brendola,32,355.0,,,,Excellent
 2026-09-23,holder,c_i699,c_i699,Comune di Settimo San Pietro,1,355.0,,,,Excellent
 2026-09-23,holder,c_i777,c_i777,Comune di Socchieve,2,355.0,,,,Excellent
 2026-09-23,holder,comune di caldiero,comune di caldiero,Comune di Caldiero,21,355.0,,,,Excellent
@@ -83045,113 +83049,114 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,comune di carre',comune di carre',Comune di Carre',31,355.0,,,,Excellent
 2026-09-23,holder,c_f209,c_f209,Comune di Militello in Val di Catania,10,355.0,,,,Excellent
 2026-09-23,holder,c_l521,c_l521,Comune di Uta,3,355.0,,,,Excellent
-2026-09-23,holder,comune di treviso,comune di treviso,Comune di Treviso,254,354.8,,,,Excellent
-2026-09-23,holder,comune di rovigo,comune di rovigo,Comune di Rovigo,97,354.79,,,,Excellent
+2026-09-23,holder,comune di treviso,comune di treviso,Comune di Treviso,242,354.79,,,,Excellent
+2026-09-23,holder,comune di rovigo,comune di rovigo,Comune di Rovigo,90,354.78,,,,Excellent
 2026-09-23,holder,c_h294,c_h294,Comune di Rimini,71,354.72,,,,Excellent
-2026-09-23,holder,regcal,regcal,Regione Calabria,327,354.63,,,,Excellent
+2026-09-23,holder,regcal,regcal,Regione Calabria,313,354.62,,,,Excellent
 2026-09-23,holder,csdlr,csdlr,Regione Friuli Venezia Giulia,197,354.59,,,,Excellent
-2026-09-23,holder,comune di vicenza,comune di vicenza,Comune di Vicenza,178,354.44,,,,Excellent
+2026-09-23,holder,comune di vicenza,comune di vicenza,Comune di Vicenza,169,354.41,,,,Excellent
 2026-09-23,holder,comune di sarego,comune di sarego,Comune di Sarego,39,354.23,,,,Excellent
-2026-09-23,holder,comune di castelnuovo del garda,comune di castelnuovo del garda,Comune di Castelnuovo del Garda,36,354.17,,,,Excellent
-2026-09-23,holder,comune di badia polesine,comune di badia polesine,Comune di Badia Polesine,35,354.14,,,,Excellent
 2026-09-23,holder,comune di refrontolo,comune di refrontolo,Comune di Refrontolo,34,354.12,,,,Excellent
-2026-09-23,holder,comune di casier,comune di casier,Comune di Casier,34,354.12,,,,Excellent
-2026-09-23,holder,comune di zenson di piave,comune di zenson di piave,Comune di Zenson di Piave,33,354.09,,,,Excellent
-2026-09-23,holder,regione del veneto,regione del veneto,Regione del Veneto,114,354.04,,,,Excellent
-2026-09-23,holder,comune di noale,comune di noale,Comune di Noale,31,354.03,,,,Excellent
-2026-09-23,holder,comune di creazzo,comune di creazzo,Comune di Creazzo,48,353.96,,,,Excellent
+2026-09-23,holder,comune di castelnuovo del garda,comune di castelnuovo del garda,Comune di Castelnuovo del Garda,33,354.09,,,,Excellent
+2026-09-23,holder,c_a389,c_a389,Comune di Arese,88,354.09,,,,Excellent
+2026-09-23,holder,comune di casier,comune di casier,Comune di Casier,31,354.03,,,,Excellent
+2026-09-23,holder,comune di noale,comune di noale,Comune di Noale,30,354.0,,,,Excellent
+2026-09-23,holder,regione del veneto,regione del veneto,Regione del Veneto,108,353.98,,,,Excellent
+2026-09-23,holder,comune di zenson di piave,comune di zenson di piave,Comune di Zenson di Piave,29,353.97,,,,Excellent
+2026-09-23,holder,comune di creazzo,comune di creazzo,Comune di Creazzo,47,353.94,,,,Excellent
 2026-09-23,holder,comune di pieve di soligo,comune di pieve di soligo,Comune di Pieve di Soligo,25,353.8,,,,Excellent
-2026-09-23,holder,comune di san vito di leguzzano,comune di san vito di leguzzano,Comune di San Vito di Leguzzano,40,353.75,,,,Excellent
-2026-09-23,holder,r_umbria,r_umbria,Regione Umbria,358,353.69,,,,Excellent
-2026-09-23,holder,comune di cerea,comune di cerea,Comune di Cerea,38,353.68,,,,Excellent
-2026-09-23,holder,comune di limena,comune di limena,Comune di Limena,15,353.67,,,,Excellent
-2026-09-23,holder,comune di campagna lupia,comune di campagna lupia,Comune di Campagna Lupia,21,353.57,,,,Excellent
+2026-09-23,holder,comune di san vito di leguzzano,comune di san vito di leguzzano,Comune di San Vito di Leguzzano,39,353.72,,,,Excellent
+2026-09-23,holder,r_umbria,r_umbria,Regione Umbria,354,353.67,,,,Excellent
+2026-09-23,holder,comune di cerea,comune di cerea,Comune di Cerea,36,353.61,,,,Excellent
+2026-09-23,holder,comune di limena,comune di limena,Comune di Limena,13,353.46,,,,Excellent
+2026-09-23,holder,comune di campagna lupia,comune di campagna lupia,Comune di Campagna Lupia,19,353.42,,,,Excellent
 2026-09-23,holder,comune di marcon,comune di marcon,Comune di Marcon,38,353.16,,,,Excellent
-2026-09-23,holder,comune di montegaldella,comune di montegaldella,Comune di Montegaldella,16,353.12,,,,Excellent
-2026-09-23,holder,comune di castelmassa,comune di castelmassa,Comune di Castelmassa,32,353.12,,,,Excellent
 2026-09-23,holder,comune di legnago,comune di legnago,Comune di Legnago,16,353.12,,,,Excellent
-2026-09-23,holder,comune di roana,comune di roana,Comune di Roana,16,353.12,,,,Excellent
+2026-09-23,holder,comune di castelmassa,comune di castelmassa,Comune di Castelmassa,31,353.06,,,,Excellent
 2026-09-23,holder,comune di san zenone degli ezzelini,comune di san zenone degli ezzelini,Comune di San Zenone Degli Ezzelini,41,353.05,,,,Excellent
 2026-09-23,holder,cciaa_rm,cciaa_rm,Camera di Commercio Industria Artigianato e Agricoltura di Roma,20,353.0,,,,Excellent
 2026-09-23,holder,comune di illasi,comune di illasi,Comune di Illasi,25,353.0,,,,Excellent
 2026-09-23,holder,c_g436,c_g436,COMUNE DI Penna San Giovanni,50,353.0,,,,Excellent
 2026-09-23,holder,comune di lazise,comune di lazise,Comune di Lazise,39,352.95,,,,Excellent
 2026-09-23,holder,comvalfo,comvalfo,Comune di Valfornace,38,352.89,,,,Excellent
-2026-09-23,holder,c_e506,c_e506,Comune di Lecce,474,352.85,,,,Excellent
-2026-09-23,holder,c_a334,c_a334,Comune di Appignano,61,352.7,,,,Excellent
+2026-09-23,holder,comune di montegaldella,comune di montegaldella,Comune di Montegaldella,14,352.86,,,,Excellent
+2026-09-23,holder,comune di roana,comune di roana,Comune di Roana,14,352.86,,,,Excellent
 2026-09-23,holder,comune di ospitale di cadore,comune di ospitale di cadore,Comune di Ospitale Di Cadore,26,352.69,,,,Excellent
 2026-09-23,holder,c_l483,c_l483,Comune di Udine,34,352.65,,,,Excellent
 2026-09-23,holder,comune di arsiero,comune di arsiero,Comune di Arsiero,34,352.65,,,,Excellent
+2026-09-23,holder,c_a334,c_a334,Comune di Appignano,59,352.63,,,,Excellent
 2026-09-23,holder,c_g273,c_g273,Comune di Palermo,1677,352.6,,,,Excellent
-2026-09-23,holder,comune di lamon,comune di lamon,Comune di Lamon,16,352.5,,,,Excellent
+2026-09-23,holder,c_e506,c_e506,Comune di Lecce,451,352.56,,,,Excellent
 2026-09-23,holder,comune di fonzaso,comune di fonzaso,Comune di Fonzaso,16,352.5,,,,Excellent
-2026-09-23,holder,c_f496,c_f496,COMUNE DI Montefano,56,352.5,,,,Excellent
-2026-09-23,holder,c_a389,c_a389,Comune di Arese,93,352.42,,,,Excellent
+2026-09-23,holder,c_d566,c_d566,COMUNE DI Poggio San Vicino,24,352.5,,,,Excellent
+2026-09-23,holder,c_f496,c_f496,COMUNE DI Montefano,53,352.36,,,,Excellent
 2026-09-23,holder,ardsu_to,ardsu_to,Azienda Regionale per il Diritto allo Studio Universitario,45,352.33,,,,Excellent
+2026-09-23,holder,consiglio di bacino laguna di venezia,consiglio di bacino laguna di venezia,Consiglio di bacino Laguna di Venezia,22,352.27,,,,Excellent
 2026-09-23,holder,c_f844,c_f844,Comune di Narni,11,352.27,,,,Excellent
 2026-09-23,holder,comune di alpago,comune di alpago,Comune di Alpago,7,352.14,,,,Excellent
 2026-09-23,holder,comune di san pietro in gu,comune di san pietro in gu,Comune di San Pietro in Gu,28,352.14,,,,Excellent
 2026-09-23,holder,aa1d3a2,aa1d3a2,PCM - Dipartimento per la trasformazione digitale,27,352.04,,,,Excellent
 2026-09-23,holder,comune di cinto euganeo,comune di cinto euganeo,Comune di Cinto Euganeo,10,352.0,,,,Excellent
-2026-09-23,holder,comune di ponte nelle alpi,comune di ponte nelle alpi,Comune di Ponte Nelle Alpi,20,352.0,,,,Excellent
 2026-09-23,holder,comune di brugine,comune di brugine,Comune di Brugine,10,352.0,,,,Excellent
+2026-09-23,holder,comune di lamon,comune di lamon,Comune di Lamon,13,351.92,,,,Excellent
 2026-09-23,holder,comune di asiago,comune di asiago,Comune di Asiago,25,351.8,,,,Excellent
-2026-09-23,holder,c_d566,c_d566,COMUNE DI Poggio San Vicino,25,351.8,,,,Excellent
 2026-09-23,holder,cciaa_vi,cciaa_vi,"Camera di Commercio, Industria, Artigianato e Agricoltura di Vicenza",60,351.67,,,,Excellent
 2026-09-23,holder,aspa_bz,aspa_bz,Azienda Sanitaria dell'Alto Adige,6,351.67,,,,Excellent
-2026-09-23,holder,c_i158,c_i158,Comune di San Severino Marche,65,351.62,,,,Excellent
-2026-09-23,holder,comune di verona,comune di verona,Comune di Verona,68,351.47,,,,Excellent
+2026-09-23,holder,comune di ponte nelle alpi,comune di ponte nelle alpi,Comune di Ponte Nelle Alpi,18,351.67,,,,Excellent
+2026-09-23,holder,c_i158,c_i158,Comune di San Severino Marche,64,351.56,,,,Excellent
+2026-09-23,holder,c_d142,c_d142,Comune di Crema,23,351.52,,,,Excellent
+2026-09-23,holder,comune di verona,comune di verona,Comune di Verona,67,351.42,,,,Excellent
 2026-09-23,holder,m_it,m_it,Ministero dell'Interno,38,351.32,,,,Excellent
-2026-09-23,holder,c_a794,c_a794,Comune di Bergamo,48,351.25,,,,Excellent
 2026-09-23,holder,comune di tregnago,comune di tregnago,Comune di Tregnago,13,351.15,,,,Excellent
-2026-09-23,holder,consiglio di bacino laguna di venezia,consiglio di bacino laguna di venezia,Consiglio di bacino Laguna di Venezia,23,351.09,,,,Excellent
-2026-09-23,holder,comune di marostica,comune di marostica,Comune di Marostica,5,351.0,,,,Excellent
+2026-09-23,holder,c_a794,c_a794,Comune di Bergamo,45,351.0,,,,Excellent
 2026-09-23,holder,iipsa,iipsa,Istituto Italiano per la Storia Antica,10,351.0,,,,Excellent
-2026-09-23,holder,c_f552,c_f552,Comune di Montelupone,69,350.94,,,,Good
 2026-09-23,holder,comune di marano vicentino,comune di marano vicentino,Comune di Marano Vicentino,27,350.93,,,,Good
+2026-09-23,holder,c_f552,c_f552,Comune di Montelupone,68,350.88,,,,Good
 2026-09-23,holder,c_f793,c_f793,Comune di Muccia,53,350.85,,,,Good
 2026-09-23,holder,c_f460,c_f460,COMUNE DI Monte Cavallo,28,350.71,,,,Good
-2026-09-23,holder,c_a947,c_a947,Comune di Bolognola,42,350.71,,,,Good
-2026-09-23,holder,c_i286,c_i286,COMUNE DI Sant'Angelo in Pontano,51,350.69,,,,Good
 2026-09-23,holder,c_d853,c_d853,Comune di Gagliole,51,350.69,,,,Good
 2026-09-23,holder,c_h223,c_h223,Comune di Reggio nell'Emilia,247,350.63,,,,Good
-2026-09-23,holder,comune di foza,comune di foza,Comune di Foza,25,350.6,,,,Good
+2026-09-23,holder,c_a947,c_a947,Comune di Bolognola,41,350.61,,,,Good
+2026-09-23,holder,c_i286,c_i286,COMUNE DI Sant'Angelo in Pontano,50,350.6,,,,Good
 2026-09-23,holder,c_l065,c_l065,Comune di Tavagnacco,18,350.56,,,,Good
 2026-09-23,holder,m_inf,m_inf,Ministero Infrastrutture e Trasporti,71,350.49,,,,Good
 2026-09-23,holder,cmbo,cmbo,Città Metropolitana di Bologna,31,350.48,,,,Good
-2026-09-23,holder,c_a329,c_a329,Comune di Apiro,59,350.25,,,,Good
-2026-09-23,holder,comune di lugo di vicenza,comune di lugo di vicenza,Comune di Lugo di Vicenza,25,350.2,,,,Good
+2026-09-23,holder,c_a329,c_a329,Comune di Apiro,58,350.17,,,,Good
 2026-09-23,holder,c_h323,c_h323,COMUNE DI Ripe San Ginesio,41,350.12,,,,Good
 2026-09-23,holder,c_d014,c_d014,Comune di Cormons,16,350.0,,,,Good
-2026-09-23,holder,comune di arsiè,comune di arsiè,Comune di Arsiè,20,350.0,,,,Good
+2026-09-23,holder,comune di marostica,comune di marostica,Comune di Marostica,4,350.0,,,,Good
+2026-09-23,holder,comune di foza,comune di foza,Comune di Foza,22,350.0,,,,Good
 2026-09-23,holder,c_g690,c_g690,COMUNE DI Pioraco,56,350.0,,,,Good
-2026-09-23,holder,c_g657,c_g657,COMUNE DI Pieve Torina,50,349.8,,,,Good
-2026-09-23,holder,c_i686,c_i686,Comune di Sesto al Reghena,15,349.67,,,,Good
+2026-09-23,holder,comune di lugo di vicenza,comune di lugo di vicenza,Comune di Lugo di Vicenza,24,350.0,,,,Good
 2026-09-23,holder,unive,unive,Università Ca' Foscari Venezia,15,349.67,,,,Good
-2026-09-23,holder,c_g515,c_g515,Comune di Petriolo,60,349.67,,,,Good
 2026-09-23,holder,c_i240,c_i240,Comune di Santa Maria di Licodia,43,349.65,,,,Good
-2026-09-23,holder,c_i661,c_i661,COMUNE DI Serravalle di Chienti,33,349.55,,,,Good
-2026-09-23,holder,c_l366,c_l366,Comune di Treia,77,349.55,,,,Good
+2026-09-23,holder,c_g515,c_g515,Comune di Petriolo,58,349.48,,,,Good
 2026-09-23,holder,c_l517,c_l517,Comune di Ussita,47,349.47,,,,Good
+2026-09-23,holder,comune di arsiè,comune di arsiè,Comune di Arsiè,18,349.44,,,,Good
+2026-09-23,holder,c_i661,c_i661,COMUNE DI Serravalle di Chienti,32,349.38,,,,Good
+2026-09-23,holder,c_g657,c_g657,COMUNE DI Pieve Torina,46,349.35,,,,Good
+2026-09-23,holder,c_l366,c_l366,Comune di Treia,74,349.32,,,,Good
+2026-09-23,holder,c_d150,c_d150,Comune di Cremona,70,349.29,,,,Good
 2026-09-23,holder,c_m408,c_m408,Comune di Barberino Tavarnelle,32,349.0,,,,Good
 2026-09-23,holder,c_c208,c_c208,Comune di Castel Mella,31,348.87,,,,Good
+2026-09-23,holder,c_i686,c_i686,Comune di Sesto al Reghena,13,348.85,,,,Good
 2026-09-23,holder,c_d634,c_d634,Comune di Flero,53,348.77,,,,Good
-2026-09-23,holder,c_f622,c_f622,Comune di Monte San Martino,41,348.66,,,,Good
-2026-09-23,holder,c_c886,c_c886,Comune di Colmurano,47,348.62,,,,Good
-2026-09-23,holder,c_h341,c_h341,Comune di Rivarolo del Re Ed Uniti,25,348.6,,,,Good
-2026-09-23,holder,c_d150,c_d150,Comune di Cremona,74,348.51,,,,Good
+2026-09-23,holder,c_f622,c_f622,Comune di Monte San Martino,40,348.5,,,,Good
+2026-09-23,holder,c_c886,c_c886,Comune di Colmurano,45,348.33,,,,Good
 2026-09-23,holder,c_f503,c_f503,Comune di Montefiorino,48,348.33,,,,Good
-2026-09-23,holder,c_d564,c_d564,COMUNE DI Fiastra,39,348.33,,,,Good
 2026-09-23,holder,comune di feltre,comune di feltre,Comune di Feltre,6,348.33,,,,Good
-2026-09-23,holder,c_d142,c_d142,Comune di Crema,24,348.33,,,,Good
+2026-09-23,holder,c_d564,c_d564,COMUNE DI Fiastra,38,348.16,,,,Good
 2026-09-23,holder,c_f268,c_f268,Comune di Mogliano,73,347.88,,,,Good
 2026-09-23,holder,c_g098,c_g098,Comune di Oria,21,347.86,,,,Good
 2026-09-23,holder,c_e694,c_e694,COMUNE DI Loro Piceno,56,347.86,,,,Good
-2026-09-23,holder,c_g919,c_g919,Comune di Porto Recanati,97,347.78,,,,Good
+2026-09-23,holder,c_g919,c_g919,Comune di Porto Recanati,94,347.77,,,,Good
+2026-09-23,holder,c_h341,c_h341,Comune di Rivarolo del Re Ed Uniti,22,347.73,,,,Good
 2026-09-23,holder,c_a652,c_a652,Comune di Bareggio,11,347.73,,,,Good
-2026-09-23,holder,c_b398,c_b398,Comune di Caldarola,50,347.55,,,,Good
+2026-09-23,holder,r_lomb,r_lomb,Consiglio Regionale della Lombardia,11,347.73,,,,Good
+2026-09-23,holder,c_m078,c_m078,Comune di Visso,56,347.5,,,,Good
 2026-09-23,holder,crev,crev,CREV,4,347.5,,,,Good
-2026-09-23,holder,p_tn,p_tn,Provincia Autonoma di Trento,1063,347.46,,,,Good
+2026-09-23,holder,p_tn,p_tn,Provincia Autonoma di Trento,1051,347.45,,,,Good
+2026-09-23,holder,c_b398,c_b398,Comune di Caldarola,49,347.4,,,,Good
 2026-09-23,holder,ciss_chi,ciss_chi,Consorzio Intercomunale Servizi Sociali di Chivasso,17,347.35,,,,Good
 2026-09-23,holder,c_c582,c_c582,Comune di Cessapalombo,47,347.34,,,,Good
 2026-09-23,holder,c_i436,c_i436,COMUNE DI Sarnano,52,347.31,,,,Good
@@ -83159,110 +83164,106 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_m104,c_m104,Comune di Vobarno,10,347.0,,,,Good
 2026-09-23,holder,c_i293,c_i293,Comune di Sant'Antimo,10,347.0,,,,Good
 2026-09-23,holder,c_l751,c_l751,Comune di Vercurago,10,347.0,,,,Good
-2026-09-23,holder,udcda_bs,udcda_bs,Unione Dei Comuni Delle Alpi Orobie Bresciane,10,347.0,,,,Good
 2026-09-23,holder,c_a799,c_a799,Comune di Berlingo,10,347.0,,,,Good
-2026-09-23,holder,c_e370,c_e370,Comune di Isso,20,347.0,,,,Good
 2026-09-23,holder,c_e100,c_e100,Comune di Gorlago,10,347.0,,,,Good
 2026-09-23,holder,c_l812,c_l812,Comune di Vestone,10,347.0,,,,Good
 2026-09-23,holder,c_i651,c_i651,COMUNE DI Serrapetrona,45,347.0,,,,Good
 2026-09-23,holder,c_e297,c_e297,Comune di Incudine,10,347.0,,,,Good
-2026-09-23,holder,c_i476,c_i476,Comune di Monticelli Brusati,10,347.0,,,,Good
-2026-09-23,holder,c_h342,c_h342,Comune di Rivarolo Mantovano,10,347.0,,,,Good
-2026-09-23,holder,c_i916,c_i916,Comune di Spinone Al  Lago,10,347.0,,,,Good
-2026-09-23,holder,c_h177,c_h177,Comune di Ranzanico,10,347.0,,,,Good
 2026-09-23,holder,c_h827,c_h827,Comune di San Donato Milanese,10,347.0,,,,Good
 2026-09-23,holder,c_b110,c_b110,Comune di Bozzolo,10,347.0,,,,Good
 2026-09-23,holder,c_c817,c_c817,Comune di Codroipo,10,347.0,,,,Good
 2026-09-23,holder,aci,aci,Automobile Club d'Italia,83,346.93,,,,Good
 2026-09-23,holder,c_e801,c_e801,Comune di Magenta,44,346.82,,,,Good
-2026-09-23,holder,c_c251,c_c251,Comune di Castelraimondo,63,346.75,,,,Good
 2026-09-23,holder,arpas_ca,arpas_ca,Agenzia Regionale per la Protezione dell'Ambiente della Sardegna,12,346.67,,,,Good
-2026-09-23,holder,c_d286,c_d286,Comune di Desio,19,346.58,,,,Good
-2026-09-23,holder,c_c704,c_c704,Comune di Cingoli,95,346.58,,,,Good
+2026-09-23,holder,c_c251,c_c251,Comune di Castelraimondo,62,346.61,,,,Good
 2026-09-23,holder,c_b562,c_b562,Comune di Camporotondo di Fiastrone,45,346.56,,,,Good
-2026-09-23,holder,c_f482,c_f482,Comune di Montecosaro,54,346.48,,,,Good
+2026-09-23,holder,c_c704,c_c704,Comune di Cingoli,94,346.49,,,,Good
 2026-09-23,holder,c_h883,c_h883,Unione di Comuni Lombarda San Giorgio e Bigarello,27,346.11,,,,Good
 2026-09-23,holder,c_c707,c_c707,Comune di Cinisello Balsamo,18,346.11,,,,Good
-2026-09-23,holder,p_lc,p_lc,Provincia di Lecco,27,346.11,,,,Good
-2026-09-23,holder,c_l872,c_l872,Comune di Vigevano,9,346.11,,,,Good
+2026-09-23,holder,udcda_bs,udcda_bs,Unione Dei Comuni Delle Alpi Orobie Bresciane,9,346.11,,,,Good
+2026-09-23,holder,c_e370,c_e370,Comune di Isso,18,346.11,,,,Good
+2026-09-23,holder,c_i476,c_i476,Comune di Monticelli Brusati,9,346.11,,,,Good
+2026-09-23,holder,c_h342,c_h342,Comune di Rivarolo Mantovano,9,346.11,,,,Good
+2026-09-23,holder,c_i916,c_i916,Comune di Spinone Al  Lago,9,346.11,,,,Good
 2026-09-23,holder,c_b036,c_b036,Comune di Borgo San Lorenzo,37,346.08,,,,Good
-2026-09-23,holder,c_m078,c_m078,Comune di Visso,58,346.03,,,,Good
 2026-09-23,holder,c_f704,c_f704,Comune di Monza,35,345.86,,,,Good
+2026-09-23,holder,c_f482,c_f482,Comune di Montecosaro,50,345.8,,,,Good
 2026-09-23,holder,c_h264,c_h264,Comune di Rho,26,345.77,,,,Good
+2026-09-23,holder,p_lc,p_lc,Provincia di Lecco,26,345.77,,,,Good
 2026-09-23,holder,c_b395,c_b395,Comune di Calcio,17,345.59,,,,Good
-2026-09-23,holder,comune di moriago della battaglia,comune di moriago della battaglia,Comune di Moriago della Battaglia,17,345.59,,,,Good
+2026-09-23,holder,c_d286,c_d286,Comune di Desio,17,345.59,,,,Good
 2026-09-23,holder,c_d429,c_d429,Comune di Esanatoglia,61,345.49,,,,Good
 2026-09-23,holder,c_c816,c_c816,Comune di Codogno,25,345.4,,,,Good
 2026-09-23,holder,00586190217,00586190217,STA - Strutture Trasporto Alto Adige SpA,2,345.0,,,,Good
 2026-09-23,holder,p_fc,p_fc,Provincia di Forli' Cesena,22,345.0,,,,Good
 2026-09-23,holder,c_e863,c_e863,Comune di Malnate,8,345.0,,,,Good
 2026-09-23,holder,c_h484,c_h484,Comune di Roè Volciano,8,345.0,,,,Good
-2026-09-23,holder,c_e983,c_e983,Comune di Martignana di Po,16,345.0,,,,Good
-2026-09-23,holder,c_i759,c_i759,Comune di Sirone,8,345.0,,,,Good
 2026-09-23,holder,c_i625,c_i625,Comune di Seregno,8,345.0,,,,Good
+2026-09-23,holder,c_l872,c_l872,Comune di Vigevano,8,345.0,,,,Good
+2026-09-23,holder,comune di moriago della battaglia,comune di moriago della battaglia,Comune di Moriago della Battaglia,16,345.0,,,,Good
 2026-09-23,holder,c_i551,c_i551,Comune di Scorzè,10,345.0,,,,Good
 2026-09-23,holder,consorzio bim piave di belluno,consorzio bim piave di belluno,Consorzio BIM Piave di Belluno,42,345.0,,,,Good
-2026-09-23,holder,c_d151,c_d151,Comune di Cremosano,8,345.0,,,,Good
+2026-09-23,holder,c_e983,c_e983,Comune di Martignana di Po,15,344.33,,,,Good
+2026-09-23,holder,cmmi,cmmi,Città Metropolitana Milano,192,344.17,,,,Good
 2026-09-23,holder,c_i569,c_i569,Comune di Sefro,42,344.05,,,,Good
-2026-09-23,holder,cmmi,cmmi,Città Metropolitana Milano,196,343.98,,,,Good
-2026-09-23,holder,c_c089,c_c089,Comune di Casteldidone,29,343.97,,,,Good
 2026-09-23,holder,udsb_pz,udsb_pz,Università della Basilicata,29,343.97,,,,Good
 2026-09-23,holder,c_a739,c_a739,Comune di Belforte del Chienti,54,343.89,,,,Good
-2026-09-23,holder,c_f567,c_f567,Comune di Pollenza,61,343.85,,,,Good
 2026-09-23,holder,c_d042,c_d042,Comune di Corridonia,78,343.72,,,,Good
 2026-09-23,holder,c_d027,c_d027,Comune di Corno di Rosazzo,7,343.57,,,,Good
 2026-09-23,holder,c_e462,c_e462,Comune di Lasnigo,7,343.57,,,,Good
-2026-09-23,holder,c_f372,c_f372,Comune di Monguzzo,7,343.57,,,,Good
+2026-09-23,holder,c_g061,c_g061,Comune di Ome,7,343.57,,,,Good
 2026-09-23,holder,c_d141,c_d141,Comune di Credera Rubbiano,7,343.57,,,,Good
-2026-09-23,holder,c_l995,c_l995,Comune di Villanuova Sul Clisi,7,343.57,,,,Good
+2026-09-23,holder,el,el,PoliS - Lombardia,161,343.57,,,,Good
 2026-09-23,holder,c_g603,c_g603,Comune di Pieranica,7,343.57,,,,Good
 2026-09-23,holder,c_b650,c_b650,Comune di Capergnanica,7,343.57,,,,Good
-2026-09-23,holder,c_e089,c_e089,Comune di Gonzaga,21,343.57,,,,Good
 2026-09-23,holder,c_d710,c_d710,Comune di Formigara,7,343.57,,,,Good
-2026-09-23,holder,c_d203,c_d203,Comune di Cumignano sul Naviglio,7,343.57,,,,Good
+2026-09-23,holder,c_d151,c_d151,Comune di Cremosano,7,343.57,,,,Good
 2026-09-23,holder,c_h488,c_h488,Comune di Roggiano Gravina,27,343.52,,,,Good
-2026-09-23,holder,cmvs8,cmvs8,Comunità Montana di Valle Sabbia,29,343.28,,,,Good
+2026-09-23,holder,c_f567,c_f567,Comune di Pollenza,59,343.47,,,,Good
 2026-09-23,holder,c_e228,c_e228,COMUNE DI Gualdo,44,343.18,,,,Good
-2026-09-23,holder,c_f454,c_f454,Comune di Montecassiano,73,342.95,,,,Good
+2026-09-23,holder,c_c089,c_c089,Comune di Casteldidone,27,343.15,,,,Good
+2026-09-23,holder,c_h876,c_h876,Comune di San Ginesio,60,343.0,,,,Good
+2026-09-23,holder,c_e089,c_e089,Comune di Gonzaga,20,343.0,,,,Good
 2026-09-23,holder,r_basili,r_basili,Regione Basilicata,224,342.9,,,,Good
-2026-09-23,holder,c_b474,c_b474,Comune di Camerino,81,342.41,,,,Good
+2026-09-23,holder,c_f454,c_f454,Comune di Montecassiano,72,342.78,,,,Good
+2026-09-23,holder,cmvs8,cmvs8,Comunità Montana di Valle Sabbia,27,342.41,,,,Good
 2026-09-23,holder,c_b899,c_b899,Comune di Casalmaiocco,19,342.37,,,,Good
-2026-09-23,holder,el,el,PoliS - Lombardia,175,342.2,,,,Good
-2026-09-23,holder,c_d612,c_d612,Comune di Firenze,1992,342.1,,,,Good
-2026-09-23,holder,c_f205,c_f205,Comune di Milano,2602,342.05,,,,Good
-2026-09-23,holder,c_h876,c_h876,Comune di San Ginesio,63,341.98,,,,Good
-2026-09-23,holder,c_d628,c_d628,Comune di Fiuminata,58,341.9,,,,Good
+2026-09-23,holder,c_d612,c_d612,Comune di Firenze,1869,342.26,,,,Good
+2026-09-23,holder,c_f205,c_f205,Comune di Milano,2469,342.23,,,,Good
+2026-09-23,holder,c_b474,c_b474,Comune di Camerino,79,342.09,,,,Good
+2026-09-23,holder,c_l191,c_l191,Comune di Tolentino,77,341.75,,,,Good
+2026-09-23,holder,c_d628,c_d628,Comune di Fiuminata,57,341.67,,,,Good
 2026-09-23,holder,c_g004,c_g004,Comune di Offanengo,6,341.67,,,,Good
-2026-09-23,holder,r_lomb,r_lomb,Consiglio Regionale della Lombardia,12,341.67,,,,Good
 2026-09-23,holder,c_a319,c_a319,Comune di Anzano del Parco,6,341.67,,,,Good
 2026-09-23,holder,c_l547,c_l547,Comune di Valbrona,6,341.67,,,,Good
+2026-09-23,holder,c_d203,c_d203,Comune di Cumignano sul Naviglio,6,341.67,,,,Good
 2026-09-23,holder,c_b598,c_b598,Comune di Caneva,6,341.67,,,,Good
 2026-09-23,holder,comune di cortina d'ampezzo,comune di cortina d'ampezzo,Comune di Cortina d'Ampezzo,3,341.67,,,,Good
-2026-09-23,holder,c_l501,c_l501,Comune di Urbisaglia,61,341.56,,,,Good
+2026-09-23,holder,c_l501,c_l501,Comune di Urbisaglia,60,341.33,,,,Good
 2026-09-23,holder,c_g388,c_g388,Comune di Pavia,29,341.21,,,,Good
 2026-09-23,holder,c_e951,c_e951,Comune di Mariano Comense,42,341.19,,,,Good
 2026-09-23,holder,c_b126,c_b126,Comune di Brebbia,23,341.09,,,,Good
-2026-09-23,holder,c_h771,c_h771,Comune di San Benedetto Po,17,340.88,,,,Good
-2026-09-23,holder,c_l191,c_l191,Comune di Tolentino,79,340.82,,,,Good
-2026-09-23,holder,c_e617,c_e617,Comune di Lissone,11,340.45,,,,Good
-2026-09-23,holder,cvtiap,cvtiap,anticorruzione,70,340.43,,,,Good
+2026-09-23,holder,cvtiap,cvtiap,anticorruzione,67,340.82,,,,Good
 2026-09-23,holder,c_f384,c_f384,Comune di Monsummano Terme,162,340.31,,,,Good
 2026-09-23,holder,m_sa,m_sa,Ministero della Salute,51,340.1,,,,Good
-2026-09-23,holder,c_c267,c_c267,Comune di Castelsantangelo sul Nera,52,340.0,,,,Good
+2026-09-23,holder,c_h771,c_h771,Comune di San Benedetto Po,16,340.0,,,,Good
 2026-09-23,holder,comune di santa giustina,comune di santa giustina,Comune di Santa Giustina,4,340.0,,,,Good
+2026-09-23,holder,p_mb,p_mb,Provincia di Monza e della Brianza,166,340.0,,,,Good
 2026-09-23,holder,c_l404,c_l404,Comune di Treviolo,39,339.87,,,,Good
+2026-09-23,holder,c_c267,c_c267,Comune di Castelsantangelo sul Nera,51,339.71,,,,Good
 2026-09-23,holder,c_d292,c_d292,Comune di Teggiano,37,339.59,,,,Good
 2026-09-23,holder,c_l833,c_l833,Comune di Viareggio,57,339.57,,,,Good
-2026-09-23,holder,p_mb,p_mb,Provincia di Monza e della Brianza,174,339.31,,,,Good
 2026-09-23,holder,c_f851,c_f851,Comune di Nave,42,339.29,,,,Good
 2026-09-23,holder,c_h665,c_h665,Comune di Sagrado,5,339.0,,,,Good
 2026-09-23,holder,c_l325,c_l325,Comune di Tramonti di Sotto,5,339.0,,,,Good
 2026-09-23,holder,umape,umape,Unione Montana Appennino Parma Est,5,339.0,,,,Good
 2026-09-23,holder,c_b805,c_b805,Comune di Caronno Pertusella,5,339.0,,,,Good
+2026-09-23,holder,c_e617,c_e617,Comune di Lissone,10,339.0,,,,Good
 2026-09-23,holder,c_c758,c_c758,Comune di Cividale del Friuli,5,339.0,,,,Good
 2026-09-23,holder,c_l057,c_l057,Comune di Tarvisio,5,339.0,,,,Good
 2026-09-23,holder,c_c790,c_c790,Comune di Claut,5,339.0,,,,Good
 2026-09-23,holder,c_d804,c_d804,Comune di Frisanco,5,339.0,,,,Good
+2026-09-23,holder,c_f372,c_f372,Comune di Monguzzo,5,339.0,,,,Good
 2026-09-23,holder,c_d426,c_d426,Comune di Erto e Casso,5,339.0,,,,Good
 2026-09-23,holder,c_f797,c_f797,Comune di Muggiò (MB),5,339.0,,,,Good
 2026-09-23,holder,c_a530,c_a530,Comune di Azzano Decimo,5,339.0,,,,Good
@@ -83279,63 +83280,63 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_e083,c_e083,Comune di Gonars,5,339.0,,,,Good
 2026-09-23,holder,c_l324,c_l324,Comune di Tramonti di Sopra,5,339.0,,,,Good
 2026-09-23,holder,c_g389,c_g389,Comune di Pavia di Udine,5,339.0,,,,Good
-2026-09-23,holder,p_bz,p_bz,Provincia Autonoma di Bolzano - Alto Adige,890,338.33,,,,Good
 2026-09-23,holder,c_e471,c_e471,Comune di Latiano,9,338.33,,,,Good
-2026-09-23,holder,c_b157,c_b157,Comune di Brescia,24,338.33,,,,Good
-2026-09-23,holder,c_f632,c_f632,Comune di Potenza Picena,88,337.5,,,,Good
+2026-09-23,holder,p_bz,p_bz,Provincia Autonoma di Bolzano - Alto Adige,884,338.28,,,,Good
+2026-09-23,holder,c_b157,c_b157,Comune di Brescia,23,337.61,,,,Good
 2026-09-23,holder,c_i577,c_i577,Comune di Segrate,9,337.22,,,,Good
-2026-09-23,holder,c_a578,c_a578,Comune di Bagolino,9,337.22,,,,Good
 2026-09-23,holder,c_l511,c_l511,Comune di Usmate Velate,9,337.22,,,,Good
+2026-09-23,holder,c_f632,c_f632,Comune di Potenza Picena,86,337.09,,,,Good
 2026-09-23,holder,c_i566,c_i566,Comune di Sedriano,10,337.0,,,,Good
 2026-09-23,holder,cm_monem,cm_monem,Unione dei Comuni Valdostani Mont - Emilius,5,337.0,,,,Good
 2026-09-23,holder,00514490010,00514490010,Comune di Torino,2076,336.74,,,,Good
 2026-09-23,holder,c_l409,c_l409,Comune di Trezzano sul Naviglio (MI),13,336.54,,,,Good
 2026-09-23,holder,c_a145,c_a145,Comune di Albenga,33,336.52,,,,Good
-2026-09-23,holder,arpav,arpav,ARPAV,111,336.08,,,,Good
+2026-09-23,holder,c_d171,c_d171,Comune di Crispiano,35,336.43,,,,Good
+2026-09-23,holder,arpav,arpav,ARPAV,109,336.1,,,,Good
 2026-09-23,holder,c_a657,c_a657,Comune di Barga,12,335.83,,,,Good
-2026-09-23,holder,c_d171,c_d171,Comune di Crispiano,36,335.56,,,,Good
 2026-09-23,holder,comune di selva di cadore,comune di selva di cadore,Comune di Selva Di Cadore,3,335.0,,,,Good
 2026-09-23,holder,c_b259,c_b259,Comune di Buja,4,335.0,,,,Good
-2026-09-23,holder,comune di san pietro di cadore,comune di san pietro di cadore,Comune di San Pietro di Cadore,3,335.0,,,,Good
+2026-09-23,holder,comune di san pietro di cadore,comune di san pietro di cadore,Comune di San Pietro di Cadore,2,335.0,,,,Good
 2026-09-23,holder,comune di livinallongo del col di lana,comune di livinallongo del col di lana,Comune di Livinallongo Del Col Di Lana,3,335.0,,,,Good
 2026-09-23,holder,c_f816,c_f816,Comune di Muro Leccese,12,335.0,,,,Good
 2026-09-23,holder,comune di cibiana di cadore,comune di cibiana di cadore,Comune di Cibiana di Cadore,2,335.0,,,,Good
 2026-09-23,holder,comune di pieve di cadore,comune di pieve di cadore,Comune di Pieve Di Cadore,3,335.0,,,,Good
 2026-09-23,holder,comune di sovramonte,comune di sovramonte,Comune di Sovramonte,3,335.0,,,,Good
-2026-09-23,holder,comune di san nicolo' di comelico,comune di san nicolo' di comelico,Comune di San Nicolo' Di Comelico,3,335.0,,,,Good
+2026-09-23,holder,comune di san nicolo' di comelico,comune di san nicolo' di comelico,Comune di San Nicolo' Di Comelico,2,335.0,,,,Good
 2026-09-23,holder,comune di sospirolo,comune di sospirolo,Comune di Sospirolo,3,335.0,,,,Good
 2026-09-23,holder,comune di perarolo di cadore,comune di perarolo di cadore,Comune di Perarolo Di Cadore,3,335.0,,,,Good
-2026-09-23,holder,comune di sedico,comune di sedico,Comune di Sedico,3,335.0,,,,Good
+2026-09-23,holder,comune di sedico,comune di sedico,Comune di Sedico,2,335.0,,,,Good
 2026-09-23,holder,comune di colle santa lucia,comune di colle santa lucia,Comune di Colle Santa Lucia,2,335.0,,,,Good
-2026-09-23,holder,comune di vodo di cadore,comune di vodo di cadore,Comune di Vodo Di Cadore,2,335.0,,,,Good
-2026-09-23,holder,comune di soverzene,comune di soverzene,Comune di Soverzene,3,335.0,,,,Good
+2026-09-23,holder,comune di vodo di cadore,comune di vodo di cadore,Comune di Vodo Di Cadore,1,335.0,,,,Good
+2026-09-23,holder,comune di soverzene,comune di soverzene,Comune di Soverzene,2,335.0,,,,Good
 2026-09-23,holder,comune di val di zoldo,comune di val di zoldo,Comune di Val Di Zoldo,2,335.0,,,,Good
-2026-09-23,holder,trenord,trenord,Trenord,9,335.0,,,,Good
-2026-09-23,holder,comune di vigo di cadore,comune di vigo di cadore,Comune di Vigo Di Cadore,3,335.0,,,,Good
-2026-09-23,holder,comune di cencenighe agordino,comune di cencenighe agordino,Comune di Cencenighe Agordino,3,335.0,,,,Good
+2026-09-23,holder,comune di vigo di cadore,comune di vigo di cadore,Comune di Vigo Di Cadore,2,335.0,,,,Good
+2026-09-23,holder,comune di cencenighe agordino,comune di cencenighe agordino,Comune di Cencenighe Agordino,2,335.0,,,,Good
 2026-09-23,holder,comune di longarone,comune di longarone,Comune di Longarone,3,335.0,,,,Good
 2026-09-23,holder,comune di seren del grappa,comune di seren del grappa,Comune di Seren Del Grappa,3,335.0,,,,Good
 2026-09-23,holder,bdi_rm,bdi_rm,Banca d'Italia,80,335.0,,,,Good
 2026-09-23,holder,comune di vallada agordina,comune di vallada agordina,Comune di Vallada Agordina,3,335.0,,,,Good
-2026-09-23,holder,c_g061,c_g061,Comune di Ome,8,335.0,,,,Good
 2026-09-23,holder,comune di rocca pietore,comune di rocca pietore,Comune di Rocca Pietore,3,335.0,,,,Good
 2026-09-23,holder,c_h816,c_h816,Comune di San Daniele del Friuli,4,335.0,,,,Good
 2026-09-23,holder,comune di gosaldo,comune di gosaldo,Comune di Gosaldo,2,335.0,,,,Good
-2026-09-23,holder,comune di quero vas,comune di quero vas,Comune di Quero Vas,9,335.0,,,,Good
+2026-09-23,holder,comune di quero vas,comune di quero vas,Comune di Quero Vas,8,335.0,,,,Good
 2026-09-23,holder,comune di san tomaso agordino,comune di san tomaso agordino,Comune di San Tomaso Agordino,3,335.0,,,,Good
 2026-09-23,holder,comune di voltago agordino,comune di voltago agordino,Comune di Voltago Agordino,2,335.0,,,,Good
-2026-09-23,holder,comune di alleghe,comune di alleghe,Comune di Alleghe,3,335.0,,,,Good
+2026-09-23,holder,comune di alleghe,comune di alleghe,Comune di Alleghe,2,335.0,,,,Good
 2026-09-23,holder,c_d358,c_d358,Comune di Dovera,8,335.0,,,,Good
 2026-09-23,holder,comune di limana,comune di limana,Comune di Limana,2,335.0,,,,Good
 2026-09-23,holder,comune di tambre,comune di tambre,Comune di Tambre,3,335.0,,,,Good
-2026-09-23,holder,comune di lentiai,comune di lentiai,Comune di Lentiai,3,335.0,,,,Good
+2026-09-23,holder,comune di lentiai,comune di lentiai,Comune di Lentiai,2,335.0,,,,Good
 2026-09-23,holder,comune di domegge di cadore,comune di domegge di cadore,Comune di Domegge di Cadore,2,335.0,,,,Good
 2026-09-23,holder,comune di zoppé di cadore,comune di zoppé di cadore,Comune di Zoppé Di Cadore,2,335.0,,,,Good
 2026-09-23,holder,istat,istat,Istituto Nazionale di Statistica - ISTAT,13,335.0,,,,Good
-2026-09-23,holder,comune di san vito di cadore,comune di san vito di cadore,Comune di San Vito Di Cadore,3,335.0,,,,Good
+2026-09-23,holder,c_a578,c_a578,Comune di Bagolino,8,335.0,,,,Good
+2026-09-23,holder,comune di san vito di cadore,comune di san vito di cadore,Comune di San Vito Di Cadore,2,335.0,,,,Good
 2026-09-23,holder,comune di lozzo di cadore,comune di lozzo di cadore,Comune di Lozzo di Cadore,3,335.0,,,,Good
 2026-09-23,holder,comune di cesiomaggiore,comune di cesiomaggiore,Comune di Cesiomaggiore,3,335.0,,,,Good
+2026-09-23,holder,comune di calalzo di cadore,comune di calalzo di cadore,Comune di Calalzo di Cadore,2,335.0,,,,Good
 2026-09-23,holder,comune di borca di cadore,comune di borca di cadore,Comune di Borca di Cadore,3,335.0,,,,Good
+2026-09-23,holder,comune di belluno,comune di belluno,Comune di Belluno,2,335.0,,,,Good
 2026-09-23,holder,comune di valle di cadore,comune di valle di cadore,Comune di Valle Di Cadore,3,335.0,,,,Good
 2026-09-23,holder,comune di pedavena,comune di pedavena,Comune di Pedavena,3,335.0,,,,Good
 2026-09-23,holder,comune di castellavazzo,comune di castellavazzo,Comune di Castellavazzo,3,335.0,,,,Good
@@ -83344,10 +83345,10 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,comune di rivamonte agordino,comune di rivamonte agordino,Comune di Rivamonte Agordino,3,335.0,,,,Good
 2026-09-23,holder,c_b639,c_b639,Comune di Cantu',8,335.0,,,,Good
 2026-09-23,holder,c_a103,c_a103,Comune di Aiello del Friuli,4,335.0,,,,Good
-2026-09-23,holder,comune di taibon agordino,comune di taibon agordino,Comune di Taibon Agordino,3,335.0,,,,Good
+2026-09-23,holder,comune di taibon agordino,comune di taibon agordino,Comune di Taibon Agordino,2,335.0,,,,Good
 2026-09-23,holder,comune di alano di piave,comune di alano di piave,Comune di Alano di Piave,2,335.0,,,,Good
 2026-09-23,holder,c_l382,c_l382,Comune di Treppo Grande,4,335.0,,,,Good
-2026-09-23,holder,comune di lorenzago di cadore,comune di lorenzago di cadore,Comune di Lorenzago Di Cadore,3,335.0,,,,Good
+2026-09-23,holder,comune di lorenzago di cadore,comune di lorenzago di cadore,Comune di Lorenzago Di Cadore,2,335.0,,,,Good
 2026-09-23,holder,m_bac-m900m0,m_bac-m900m0,Istituto centrale per il catalogo e la documentazione,23,335.0,,,,Good
 2026-09-23,holder,c_h089,c_h089,Comune di Pulfero,4,335.0,,,,Good
 2026-09-23,holder,comune di danta di cadore,comune di danta di cadore,Comune di Danta di Cadore,2,335.0,,,,Good
@@ -83357,18 +83358,18 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,agcom,agcom,AGCOM,1,335.0,,,,Good
 2026-09-23,holder,comune di falcade,comune di falcade,Comune di Falcade,2,335.0,,,,Good
 2026-09-23,holder,comune di san gregorio nelle alpi,comune di san gregorio nelle alpi,Comune di San Gregorio Nelle Alpi,3,335.0,,,,Good
-2026-09-23,holder,c_f749,c_f749,COMUNE di Morrovalle,57,334.65,,,,Good
 2026-09-23,holder,c_969,c_969,Comune di Genova,104,334.52,,,,Good
 2026-09-23,holder,c_c609,c_c609,Comune di Chianni,15,334.33,,,,Good
+2026-09-23,holder,c_f749,c_f749,COMUNE di Morrovalle,56,334.29,,,,Good
 2026-09-23,holder,c_b984,c_b984,Casole d'Elsa,16,333.57,,,,Good
 2026-09-23,holder,c_c986,c_c986,Comune di Corbetta,23,332.83,,,,Good
+2026-09-23,holder,trenord,trenord,Trenord,8,332.5,,,,Good
 2026-09-23,holder,c_b923,c_b923,Comune di Casamassima,38,332.37,,,,Good
 2026-09-23,holder,c_h222,c_h222,Comune di Reggello,17,332.33,,,,Good
 2026-09-23,holder,c_l887,c_l887,Comune di Specchia,6,331.67,,,,Good
+2026-09-23,holder,c_i909,c_i909,Comune di Spineda,27,331.3,,,,Good
 2026-09-23,holder,crsa,crsa,CREA - Consiglio per la ricerca in agricoltura e l'analisi dell'economia agraria,8,331.25,,,,Good
-2026-09-23,holder,c_l778,c_l778,Comune di Verolavecchia,10,331.0,,,,Good
 2026-09-23,holder,c_a817,c_a817,Comune di Berzo Inferiore,10,331.0,,,,Good
-2026-09-23,holder,c_g546,c_g546,Comune di Pian Camuno,10,331.0,,,,Good
 2026-09-23,holder,c_f979,c_f979,Comune di Nuoro,5,331.0,,,,Good
 2026-09-23,holder,c_c948,c_c948,Comune di Concesio,23,330.65,,,,Good
 2026-09-23,holder,c_h061,c_h061,Comune di Prignano sulla Secchia,48,330.62,,,,Good
@@ -83378,7 +83379,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_f023,c_f023,Comune di Massa,8,330.0,,,,Good
 2026-09-23,holder,c_l900,c_l900,Comune di Vigonza,26,329.62,,,,Good
 2026-09-23,holder,c_c059,c_c059,Comune di Castelbelforte,25,329.4,,,,Good
-2026-09-23,holder,c_i909,c_i909,Comune di Spineda,28,329.29,,,,Good
+2026-09-23,holder,c_l378,c_l378,Comune di Trento,33,328.94,,,,Good
 2026-09-23,holder,c_d969,c_d969,Comune di Genova,45,328.56,,,,Good
 2026-09-23,holder,c_d312,c_d312,Comune di Doberdo' del Lago,3,328.33,,,,Good
 2026-09-23,holder,c_e889,c_e889,Comune di Maniago,3,328.33,,,,Good
@@ -83395,22 +83396,24 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_c791,c_c791,Comune di Clauzetto,3,328.33,,,,Good
 2026-09-23,holder,c_d461,c_d461,Comune di Fagagna,3,328.33,,,,Good
 2026-09-23,holder,c_b215,c_b215,Comune di Brugnera,3,328.33,,,,Good
+2026-09-23,holder,c_l778,c_l778,Comune di Verolavecchia,9,328.33,,,,Good
 2026-09-23,holder,c_g680,c_g680,Comune di Pinzano al Tagliamento,3,328.33,,,,Good
+2026-09-23,holder,c_h630,c_h630,Comune di Rudiano,3,328.33,,,,Good
 2026-09-23,holder,c_a962,c_a962,Comune di Bonate Sotto,9,328.33,,,,Good
 2026-09-23,holder,c_a354,c_a354,Comune di Arba,3,328.33,,,,Good
 2026-09-23,holder,c_d088,c_d088,Comune di Cosio Valtellino,6,328.33,,,,Good
-2026-09-23,holder,c_h493,c_h493,Comune di Rogolo,3,328.33,,,,Good
 2026-09-23,holder,c_m101,c_m101,Comune di Vizzola Ticino,6,328.33,,,,Good
 2026-09-23,holder,c_a855,c_a855,Comune di Bicinicco,3,328.33,,,,Good
+2026-09-23,holder,c_g546,c_g546,Comune di Pian Camuno,9,328.33,,,,Good
 2026-09-23,holder,c_m311,c_m311,Comune di Campolongo Tapogliano,3,328.33,,,,Good
 2026-09-23,holder,c_f089,c_f089,Comune di Meduno,3,328.33,,,,Good
-2026-09-23,holder,c_l378,c_l378,Comune di Trento,38,328.16,,,,Good
-2026-09-23,holder,r_emiro,r_emiro,Regione Emilia-Romagna,657,327.75,,,,Good
+2026-09-23,holder,r_emiro,r_emiro,Regione Emilia-Romagna,656,327.74,,,,Good
 2026-09-23,holder,c_g634,c_g634,Comune di Pieve Emanuele,29,327.07,,,,Good
 2026-09-23,holder,c_i726,c_i726,Comune di Siena,328,327.07,,,,Good
 2026-09-23,holder,ls_ca,ls_ca,Agenzia Laore Sardegna,12,326.67,,,,Good
-2026-09-23,holder,arpa_umb,arpa_umb,Agenzia Regionale per la Protezione dell'Ambiente dell'Umbria,32,326.56,,,,Good
+2026-09-23,holder,c_f978,c_f978,Comune di Numana,28,326.43,,,,Good
 2026-09-23,holder,c_f127,c_f127,Comune di Mentana,45,326.33,,,,Good
+2026-09-23,holder,arpa_umb,arpa_umb,Agenzia Regionale per la Protezione dell'Ambiente dell'Umbria,31,326.29,,,,Good
 2026-09-23,holder,c_e884,c_e884,Comune di Manerbio,8,325.0,,,,Good
 2026-09-23,holder,c_c608,c_c608,Comune di Chianciano Terme,1,325.0,,,,Good
 2026-09-23,holder,c_b132,c_b132,Comune di Breganze,3,325.0,,,,Good
@@ -83423,9 +83426,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_b987,c_b987,Comune di Casorate Sempione,3,325.0,,,,Good
 2026-09-23,holder,uni_bo/cle/aform,uni_bo/cle/aform, AFORM - Area della Didattica,26,325.0,,,,Good
 2026-09-23,holder,c_i462,c_i462,Comune di Sassuolo,85,324.76,,,,Good
-2026-09-23,holder,c_f978,c_f978,Comune di Numana,29,324.66,,,,Good
 2026-09-23,holder,c_b248,c_b248,Comune di Budoni,29,324.31,,,,Good
-2026-09-23,holder,c_a273,c_a273,Comune di Andalo Valtellino,5,323.0,,,,Good
 2026-09-23,holder,c_c773,c_c773,Comune di Civitavecchia,10,323.0,,,,Good
 2026-09-23,holder,c_d258,c_d258,Comune di Dazio,5,323.0,,,,Good
 2026-09-23,holder,p_cr,p_cr,Provincia di Cremona,10,323.0,,,,Good
@@ -83433,44 +83434,43 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_f206,c_f206,Comune di Milazzo,42,322.62,,,,Good
 2026-09-23,holder,c_a365,c_a365,Comune di Arcene,41,322.56,,,,Good
 2026-09-23,holder,c_b850,c_b850,Comune di Carugate,3,321.67,,,,Good
-2026-09-23,holder,c_h623,c_h623,Comune di Rozzano,12,321.67,,,,Good
 2026-09-23,holder,c_b809,c_b809,Comune di Carovigno,58,321.55,,,,Good
 2026-09-23,holder,m_bac,m_bac,Ministero dei Beni Culturali,18,321.11,,,,Good
-2026-09-23,holder,c_f434,c_f434,Comune di Monte Cremasco,7,320.71,,,,Good
 2026-09-23,holder,c_g087,c_g087,Comune di Orbassano,47,320.32,,,,Good
+2026-09-23,holder,c_c770,c_c770,Comune di Civitanova Marche,116,320.0,,,,Good
 2026-09-23,holder,c_b212,c_b212,Comune di Brugherio,9,319.44,,,,Good
-2026-09-23,holder,c_c770,c_c770,Comune di Civitanova Marche,118,319.07,,,,Good
 2026-09-23,holder,cr_campa,cr_campa,Consiglio Regionale della Campania,25,317.0,,,,Good
 2026-09-23,holder,c_g478,c_g478,Comune di Perugia,9,316.11,,,,Good
 2026-09-23,holder,c_a159,c_a159,Comune di Albiate,54,315.37,,,,Good
 2026-09-23,holder,r_toscan,r_toscan,Regione Toscana,450,315.15,,,,Good
 2026-09-23,holder,cmge,cmge,CMGE,6,315.0,,,,Good
+2026-09-23,holder,c_f434,c_f434,Comune di Monte Cremasco,6,315.0,,,,Good
+2026-09-23,holder,c_a273,c_a273,Comune di Andalo Valtellino,4,315.0,,,,Good
 2026-09-23,holder,lepida,lepida,Lepida Scpa,2,315.0,,,,Good
+2026-09-23,holder,c_h623,c_h623,Comune di Rozzano,10,315.0,,,,Good
 2026-09-23,holder,08555280018,08555280018,GTT - Gruppo Torinese Trasporti,3,315.0,,,,Good
 2026-09-23,holder,uccdfo,uccdfo,Unione Lombarda dei Comuni Oglio - Ciria,2,315.0,,,,Good
-2026-09-23,holder,c_h630,c_h630,Comune di Rudiano,4,315.0,,,,Good
 2026-09-23,holder,c_c385,c_c385,Comune di Cavasso Nuovo,4,315.0,,,,Good
 2026-09-23,holder,c_b536,c_b536,Comune di Campoformido,2,315.0,,,,Good
+2026-09-23,holder,c_h493,c_h493,Comune di Rogolo,2,315.0,,,,Good
 2026-09-23,holder,c_g686,c_g686,Comune di Pioltello,2,315.0,,,,Good
 2026-09-23,holder,cciaa_lu,cciaa_lu,Camera di Commercio Industria Artigianato Agricoltura di Lucca,44,314.09,,,,Good
 2026-09-23,holder,p_lo,p_lo,Provincia di Lodi,78,313.97,,,,Good
 2026-09-23,holder,c_c469,c_c469,Comune di Cento,6,313.33,,,,Good
 2026-09-23,holder,c_a390,c_a390,Comune di Arezzo,983,313.32,,,,Good
 2026-09-23,holder,c_d607,c_d607,Comune di Fiorano Modenese,86,311.51,,,,Good
-2026-09-23,holder,arte_048,arte_048,Artea,31,311.13,,,,Good
 2026-09-23,holder,r_marche,r_marche,Regione Marche,76,310.66,,,,Good
 2026-09-23,holder,m_bac-7c56l5,m_bac-7c56l5,Istituto centrale per gli archivi,172,309.77,,,,Good
 2026-09-23,holder,d_969,d_969,Comune di Genova - musei e biblioteche,9,309.44,,,,Good
 2026-09-23,holder,c_e625,c_e625,Comune Livorno,107,308.83,,,,Good
+2026-09-23,holder,arte_048,arte_048,Artea,30,308.67,,,,Good
 2026-09-23,holder,comune di auronzo di cadore,comune di auronzo di cadore,Comune di Auronzo di Cadore,3,308.33,,,,Good
 2026-09-23,holder,uni_bo/cle/arag,uni_bo/cle/arag,ARAG - Finance and Subsidiaries Division,6,308.33,,,,Good
-2026-09-23,holder,comune di calalzo di cadore,comune di calalzo di cadore,Comune di Calalzo di Cadore,3,308.33,,,,Good
-2026-09-23,holder,comune di belluno,comune di belluno,Comune di Belluno,3,308.33,,,,Good
 2026-09-23,holder,c_c963,c_c963,Comune di Conselice,8,307.5,,,,Good
 2026-09-23,holder,c_a035,c_a035,Comune di Acqualagna,9,307.22,,,,Good
 2026-09-23,holder,arpat,arpat,ARPAT - Agenzia regionale per la protezione ambientale della Toscana,59,306.36,,,,Good
-2026-09-23,holder,r_lombar,r_lombar,Regione Lombardia,1057,305.96,,,,Good
-2026-09-23,holder,p_lu,p_lu,Provincia di Lucca,94,305.43,,,,Good
+2026-09-23,holder,p_lu,p_lu,Provincia di Lucca,91,305.44,,,,Good
+2026-09-23,holder,r_lombar,r_lombar,Regione Lombardia,1005,305.01,,,,Good
 2026-09-23,holder,c_d403,c_d403,Comune di Empoli,2,305.0,,,,Good
 2026-09-23,holder,c_i660,c_i660,Comune di Serravalle Pistoiese,2,305.0,,,,Good
 2026-09-23,holder,ars_tosc,ars_tosc,Ars,2,305.0,,,,Good
@@ -83525,13 +83525,13 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_a044,c_a044,Comune di Acquasanta Terme,4,295.0,,,,Good
 2026-09-23,holder,c_l850,c_l850,Comune di Vicopisano,8,295.0,,,,Good
 2026-09-23,holder,c_c524,c_c524,Comune di Cerreto D'Esi,3,295.0,,,,Good
+2026-09-23,holder,c_d808,c_d808,COMUNE DI Frontone,7,292.14,,,,Good
 2026-09-23,holder,c_a809,c_a809,Comune di Bertinoro,12,291.67,,,,Good
 2026-09-23,holder,c_i196,c_i196,Comune di Sant'Agata sul Santerno,8,291.25,,,,Good
 2026-09-23,holder,c_b636,c_b636,COMUNE DI Cantiano,9,290.56,,,,Good
+2026-09-23,holder,c_a092,c_a092,Comune di Agugliano,56,288.39,,,,Good
 2026-09-23,holder,c_f745,c_f745,COMUNE DI Morro D'Alba,3,288.33,,,,Good
 2026-09-23,holder,c_h979,c_h979,COMUNE di San Marcello,3,288.33,,,,Good
-2026-09-23,holder,c_a092,c_a092,Comune di Agugliano,58,287.93,,,,Good
-2026-09-23,holder,c_d808,c_d808,COMUNE DI Frontone,8,287.5,,,,Good
 2026-09-23,holder,c_a252,c_a252,Comune di Amandola,7,286.43,,,,Good
 2026-09-23,holder,c_f257,c_f257,Comune di Modena,111,285.4,,,,Good
 2026-09-23,holder,inea/cef/ict/a2019/2063604,inea/cef/ict/a2019/2063604,Odala,2,285.0,,,,Good
@@ -83548,20 +83548,21 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_f145,c_f145,COMUNE DI Mergo,7,280.71,,,,Good
 2026-09-23,holder,c_b352,c_b352,Comune di Cagli,8,280.0,,,,Good
 2026-09-23,holder,c_d965,c_d965,Comune di Genga,4,280.0,,,,Good
+2026-09-23,holder,c_io71,c_io71,Comune di San Paolo di Jesi,9,279.44,,,,Good
 2026-09-23,holder,uncobaro,uncobaro,Unione dei Comuni della Bassa Romagna,32,279.06,,,,Good
-2026-09-23,holder,c_io71,c_io71,Comune di San Paolo di Jesi,10,279.0,,,,Good
 2026-09-23,holder,r_lazio,r_lazio,Regione Lazio,406,278.75,,,,Good
 2026-09-23,holder,cvdl_tn,cvdl_tn,Comunità della Valle dei Laghi,23,278.48,,,,Good
+2026-09-23,holder,c_d451,c_d451,Comune di Fabriano,8,277.5,,,,Good
 2026-09-23,holder,c_e837,c_e837,Comune di Maiolati Spontini,8,277.5,,,,Good
-2026-09-23,holder,c_i608,c_i608,Comune di Senigallia,54,276.48,,,,Good
-2026-09-23,holder,c_h501,c_h501,Roma Capitale - Istituzione Sistema Biblioteche Centri Culturali,348,275.26,,,,Good
+2026-09-23,holder,c_i608,c_i608,Comune di Senigallia,53,276.51,,,,Good
+2026-09-23,holder,c_h501,c_h501,Roma Capitale - Istituzione Sistema Biblioteche Centri Culturali,331,275.27,,,,Good
 2026-09-23,holder,udcvs,udcvs,Unione dei Comuni Valle del Savio,525,275.06,,,,Good
 2026-09-23,holder,p_ra,p_ra,Provincia di Ravenna,5,275.0,,,,Good
 2026-09-23,holder,its_022,its_022,Trentino Digitale Spa,2,275.0,,,,Good
 2026-09-23,holder,udctp_,udctp_,Unione dei Comuni Terre di Pianura,1,275.0,,,,Good
 2026-09-23,holder,c_g003,c_g003,Comune di Offagna,21,275.0,,,,Good
 2026-09-23,holder,r_trenti,r_trenti,Regione Autonoma Trentino Alto-Adige/Südtirol,3,275.0,,,,Good
-2026-09-23,holder,udca_,udca_,Unione Terra dei Castelli,36,275.0,,,,Good
+2026-09-23,holder,udca_,udca_,Unione Terra dei Castelli,35,275.0,,,,Good
 2026-09-23,holder,c_f401,c_f401,COMUNE DI Ostra,48,275.0,,,,Good
 2026-09-23,holder,c_d829,c_d829,Comune di Fusignano,8,275.0,,,,Good
 2026-09-23,holder,c_f574,c_f574,Comune di Montenars,1,275.0,,,,Good
@@ -83574,14 +83575,14 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,umtv,umtv,Unione Montana del Tronto e Valfluvione,3,275.0,,,,Good
 2026-09-23,holder,c_l344,c_l344,Comune di Sant'Ippolito,12,275.0,,,,Good
 2026-09-23,holder,cdcoame,cdcoame,Comune di Colli al Metauro,36,275.0,,,,Good
-2026-09-23,holder,c_g803,c_g803,Comune di Polverigi,60,275.0,,,,Good
+2026-09-23,holder,c_g803,c_g803,Comune di Polverigi,58,275.0,,,,Good
 2026-09-23,holder,izsm,izsm,Istituto Zooprofilattico Sperimentale del Mezzogiorno,30,275.0,,,,Good
 2026-09-23,holder,c_m403,c_m403,Comune di Corigliano-Rossano,12,275.0,,,,Good
 2026-09-23,holder,cdtro,cdtro,Comune di Terre Roveresche,37,275.0,,,,Good
 2026-09-23,holder,c_a551,c_a551,Comune di Bagnara di Romagna,8,275.0,,,,Good
 2026-09-23,holder,c_d791,c_d791,COMUNE DI Fratte Rosa,10,275.0,,,,Good
-2026-09-23,holder,c_a626,c_a626,Comune di Barbara,31,275.0,,,,Good
-2026-09-23,holder,c_f348,c_f348,COMUNE DI Mondolfo,52,275.0,,,,Good
+2026-09-23,holder,c_a626,c_a626,Comune di Barbara,30,275.0,,,,Good
+2026-09-23,holder,c_f348,c_f348,COMUNE DI Mondolfo,50,275.0,,,,Good
 2026-09-23,holder,c_f474,c_f474,COMUNE DI Monteciccardo,2,275.0,,,,Good
 2026-09-23,holder,c_m318,c_m318,COMUNE DI Trecastelli,47,275.0,,,,Good
 2026-09-23,holder,c_e783,c_e783,Comune di Macerata,56,275.0,,,,Good
@@ -83591,8 +83592,8 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,cmgp_007,cmgp_007,Unione dei Comuni Valdostani Grand-Paradis,3,275.0,,,,Good
 2026-09-23,holder,c_c615,c_c615,Comune di Chiaravalle,12,275.0,,,,Good
 2026-09-23,holder,c_g157,c_g157,Comune di Osimo,43,275.0,,,,Good
-2026-09-23,holder,c_b468,c_b468,Comune di Camerano,52,275.0,,,,Good
-2026-09-23,holder,c_g453,c_g453,COMUNE DI Pergola,48,275.0,,,,Good
+2026-09-23,holder,c_b468,c_b468,Comune di Camerano,51,275.0,,,,Good
+2026-09-23,holder,c_g453,c_g453,COMUNE DI Pergola,47,275.0,,,,Good
 2026-09-23,holder,cm_esino,cm_esino,Unione Montana esino frasassi,6,275.0,,,,Good
 2026-09-23,holder,07401840017,07401840017,Turismo Torino e Provincia s.c.r.l.,7,275.0,,,,Good
 2026-09-23,holder,ucv_109,ucv_109,Unione Comuni Valdaso,1,275.0,,,,Good
@@ -83600,30 +83601,31 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,uvv_033,uvv_033,Unione Valnure e Valchero,3,275.0,,,,Good
 2026-09-23,holder,c_d121,c_d121,Comune di Cotignola,8,275.0,,,,Good
 2026-09-23,holder,asstnm,asstnm,Azienda Socio Sanitaria Territoriale Nord Milano,10,275.0,,,,Good
-2026-09-23,holder,c_d749,c_d749,COMUNE DI Fossombrone,23,275.0,,,,Good
+2026-09-23,holder,c_d749,c_d749,COMUNE DI Fossombrone,22,275.0,,,,Good
 2026-09-23,holder,c_f581,c_f581,COMUNE DI Ostra Vetere,45,275.0,,,,Good
 2026-09-23,holder,umdm,umdm,Unione Montana del Montefeltro,5,275.0,,,,Good
 2026-09-23,holder,c_e263,c_e263,Comune di Guidonia Montecelio,5,275.0,,,,Good
 2026-09-23,holder,c_i690,c_i690,Comune di Sesto San Giovanni,3,275.0,,,,Good
 2026-09-23,holder,ansfisa,ansfisa,Agenzia Nazionale per la Sicurezza delle Ferrovie e delle Infrastrutture Stradali e Autostradali,21,275.0,,,,Good
-2026-09-23,holder,c_f347,c_f347,COMUNE DI Mondavio,32,275.0,,,,Good
+2026-09-23,holder,c_i324,c_i324,COMUNE DI Sant'Elpidio a Mare,7,275.0,,,,Good
+2026-09-23,holder,c_f347,c_f347,COMUNE DI Mondavio,31,275.0,,,,Good
 2026-09-23,holder,c_f589,c_f589,COMUNE DI Monte Porzio,14,275.0,,,,Good
 2026-09-23,holder,c_l307,c_l307,Comune di Tortoreto,7,275.0,,,,Good
 2026-09-23,holder,c_d705,c_d705,Comune di Forlimpopoli,9,275.0,,,,Good
-2026-09-23,holder,c_b846,c_b846,COMUNE DI Cartoceto,30,275.0,,,,Good
+2026-09-23,holder,c_b846,c_b846,COMUNE DI Cartoceto,29,275.0,,,,Good
 2026-09-23,holder,c_g786,c_g786,Comune di Policoro,11,275.0,,,,Good
 2026-09-23,holder,c_f051,c_f051,Comune di Matelica,24,275.0,,,,Good
-2026-09-23,holder,c_f560,c_f560,COMUNE di Montemarciano,29,275.0,,,,Good
+2026-09-23,holder,c_f560,c_f560,COMUNE di Montemarciano,27,275.0,,,,Good
 2026-09-23,holder,m_d,m_d,Istituto Geografico Militare,1,275.0,,,,Good
 2026-09-23,holder,udcvm,udcvm,Unione dei Comuni Valle del Metauro,6,275.0,,,,Good
-2026-09-23,holder,c_d472,c_d472,Comune di Falconara Marittima,52,275.0,,,,Good
+2026-09-23,holder,c_d472,c_d472,Comune di Falconara Marittima,51,275.0,,,,Good
 2026-09-23,holder,c_f029,c_f029,Comune di Massa Lombarda,8,275.0,,,,Good
-2026-09-23,holder,c_c152,c_c152,COMUNE DI Castelleone di Suasa,45,275.0,,,,Good
+2026-09-23,holder,c_c152,c_c152,COMUNE DI Castelleone di Suasa,44,275.0,,,,Good
 2026-09-23,holder,c_g163,c_g163,Comune di Osoppo,1,275.0,,,,Good
 2026-09-23,holder,c_e730,c_e730,Comune di Lugo,8,275.0,,,,Good
 2026-09-23,holder,udcvtc,udcvtc,Unione dei Comuni Valli Taro e Ceno,3,275.0,,,,Good
 2026-09-23,holder,cm_monte76,cm_monte76,Unione dei Comuni valdostani Monte Cervino,5,275.0,,,,Good
-2026-09-23,holder,c_i643,c_i643,Comune di Serra de' Conti,31,275.0,,,,Good
+2026-09-23,holder,c_i643,c_i643,Comune di Serra de' Conti,30,275.0,,,,Good
 2026-09-23,holder,c_a547,c_a547,Comune di Bagnacavallo,8,275.0,,,,Good
 2026-09-23,holder,uc_vdt,uc_vdt,Unione dei Comuni Vallata del Tronto,1,275.0,,,,Good
 2026-09-23,holder,c_d211,c_d211,Comune di Cupramontana,9,275.0,,,,Good
@@ -83631,30 +83633,27 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,um_acqua,um_acqua,Unione dei Comuni della Romagna Forlivese - Unione Montana,4,275.0,,,,Good
 2026-09-23,holder,aldm_an,aldm_an,Assemblea Legislativa delle Marche,1,275.0,,,,Good
 2026-09-23,holder,c_d007,c_d007,COMUNE DI Corinaldo,51,275.0,,,,Good
-2026-09-23,holder,c_f600,c_f600,Comune di Monte Roberto,11,275.0,,,,Good
+2026-09-23,holder,c_f600,c_f600,Comune di Monte Roberto,10,275.0,,,,Good
 2026-09-23,holder,c_e690,c_e690,Comune di Loreto,51,275.0,,,,Good
 2026-09-23,holder,c_b026,c_b026,Comune di Borgo Pace,8,275.0,,,,Good
 2026-09-23,holder,sapns,sapns,Sistema Ambiente Provincia di Napoli S.P.A.,3,275.0,,,,Good
-2026-09-23,holder,c_c100,c_c100,Comune di Castelfidardo,65,274.23,,,,Good
-2026-09-23,holder,c_h958,c_h958,COMUNE DI San Lorenzo in Campo,36,273.89,,,,Good
-2026-09-23,holder,umdma,umdma,Unione Montana Dei Monti Azzurri,34,273.24,,,,Good
+2026-09-23,holder,c_c100,c_c100,Comune di Castelfidardo,64,274.22,,,,Good
+2026-09-23,holder,c_h958,c_h958,COMUNE DI San Lorenzo in Campo,35,273.86,,,,Good
 2026-09-23,holder,c_h809,c_h809,COMUNE DI San Costanzo,11,273.18,,,,Good
 2026-09-23,holder,c_f453,c_f453,COMUNE DI Montecarotto,11,273.18,,,,Good
-2026-09-23,holder,c_d451,c_d451,Comune di Fabriano,10,273.0,,,,Good
+2026-09-23,holder,umdma,umdma,Unione Montana Dei Monti Azzurri,33,273.18,,,,Good
 2026-09-23,holder,c_f633,c_f633,COMUNE DI Monte Urano,10,273.0,,,,Good
 2026-09-23,holder,c_c248,c_c248,COMUNE DI Castelplanio,10,273.0,,,,Good
 2026-09-23,holder,c_f520,c_f520,COMUNE DI Montegiorgio,9,272.78,,,,Good
 2026-09-23,holder,c_i912,c_i912,COMUNE DI Spinetoli,8,272.5,,,,Good
 2026-09-23,holder,c_h575,c_h575,Comune di Rosora,8,272.5,,,,Good
 2026-09-23,holder,c_c093,c_c093,COMUNE DI Castel di Lama,8,272.5,,,,Good
-2026-09-23,holder,c_i324,c_i324,COMUNE DI Sant'Elpidio a Mare,8,272.5,,,,Good
 2026-09-23,holder,c_f415,c_f415,COMUNE DI Montalto delle Marche,7,272.14,,,,Good
 2026-09-23,holder,c_b534,c_b534,Comune di Campofilone,7,272.14,,,,Good
 2026-09-23,holder,c_e868,c_e868,COMUNE DI Maltignano,7,272.14,,,,Good
 2026-09-23,holder,c_f614,c_f614,Comune di Monterubbiano,7,272.14,,,,Good
 2026-09-23,holder,c_c321,c_c321,Comune di Castignano,7,272.14,,,,Good
 2026-09-23,holder,c_a462,c_a462,Comune di Ascoli Piceno,7,272.14,,,,Good
-2026-09-23,holder,c_e807,c_e807,Comune di Magliano di Tenna,6,271.67,,,,Good
 2026-09-23,holder,c_c935,c_c935,COMUNE DI Comunanza,6,271.67,,,,Good
 2026-09-23,holder,ummc,ummc,Unione Montana Marca di Camerino,12,271.67,,,,Good
 2026-09-23,holder,c_g920,c_g920,Comune di Porto San Giorgio,6,271.67,,,,Good
@@ -83673,8 +83672,8 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_g873,c_g873,COMUNE DI Ponzano di Fermo,4,270.0,,,,Good
 2026-09-23,holder,c_f501,c_f501,COMUNE DI Montefiore dell'Aso,8,270.0,,,,Good
 2026-09-23,holder,c_d096,c_d096,COMUNE DI Cossignano,4,270.0,,,,Good
-2026-09-23,holder,c_b727,c_b727,COMUNE DI Carassai,8,270.0,,,,Good
 2026-09-23,holder,c_d652,c_d652,COMUNE DI Folignano,4,270.0,,,,Good
+2026-09-23,holder,c_e807,c_e807,Comune di Magliano di Tenna,4,270.0,,,,Good
 2026-09-23,holder,c_f428,c_f428,COMUNE DI Montappone,4,270.0,,,,Good
 2026-09-23,holder,c_g516,c_g516,COMUNE DI Petritoli,4,270.0,,,,Good
 2026-09-23,holder,c_h321,c_h321,COMUNE DI Ripatransone,4,270.0,,,,Good
@@ -83684,12 +83683,12 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_h182,c_h182,COMUNE DI Rapagnano,4,270.0,,,,Good
 2026-09-23,holder,c_g005,c_g005,COMUNE DI Offida,4,270.0,,,,Good
 2026-09-23,holder,c_m331,c_m331,COMUNE DI Vallefoglia,16,270.0,,,,Good
-2026-09-23,holder,c_f599,c_f599,Comune di Monte Rinaldo,4,270.0,,,,Good
 2026-09-23,holder,c_g137,c_g137,COMUNE DI Ortezzano,4,270.0,,,,Good
 2026-09-23,holder,c_i315,c_i315,COMUNE DI Santa Vittoria in Matenano,4,270.0,,,,Good
 2026-09-23,holder,c_d542,c_d542,Comune di Fermo,4,270.0,,,,Good
-2026-09-23,holder,umavp,umavp,UNIONE MONTANA POTENZA ESINO MUSONE,19,269.74,,,,Good
+2026-09-23,holder,c_b727,c_b727,COMUNE DI Carassai,7,269.29,,,,Good
 2026-09-23,holder,c_e447,c_e447,COMUNE DI Lapedona,7,269.29,,,,Good
+2026-09-23,holder,umavp,umavp,UNIONE MONTANA POTENZA ESINO MUSONE,16,268.75,,,,Good
 2026-09-23,holder,c_g403,c_g403,COMUNE DI Pedaso,3,268.33,,,,Good
 2026-09-23,holder,c_a760,c_a760,Comune di Belmonte Piceno,3,268.33,,,,Good
 2026-09-23,holder,c_l279,c_l279,COMUNE DI Torre San Patrizio,3,268.33,,,,Good
@@ -83698,6 +83697,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_a437,c_a437,Comune di Arquata del Tronto,3,268.33,,,,Good
 2026-09-23,holder,c_i774,c_i774,Comune di Smerillo,6,268.33,,,,Good
 2026-09-23,holder,c_f516,c_f516,COMUNE DI Montegallo,3,268.33,,,,Good
+2026-09-23,holder,c_f599,c_f599,Comune di Monte Rinaldo,3,268.33,,,,Good
 2026-09-23,holder,c_g289,c_g289,COMUNE DI Palmiano,3,268.33,,,,Good
 2026-09-23,holder,umavm,umavm,Unione Montana Alta Valle del Metauro,12,268.33,,,,Good
 2026-09-23,holder,c_f664,c_f664,COMUNE DI Monte Vidon Combatte,3,268.33,,,,Good
@@ -83713,19 +83713,19 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,c_l500,c_l500,Comune di Urbino,14,266.43,,,,Good
 2026-09-23,holder,c_l078,c_l078,Comune di Tavoleto,14,266.43,,,,Good
 2026-09-23,holder,c_f524,c_f524,COMUNE DI Monte Grimano Terme,14,266.43,,,,Good
-2026-09-23,holder,c_l498,c_l498,COMUNE DI Urbania,14,266.43,,,,Good
 2026-09-23,holder,c_m413,c_m413,Comune di Sassocorvaro Auditore,14,266.43,,,,Good
 2026-09-23,holder,c_f135,c_f135,COMUNE DI Mercatello sul Metauro,14,266.43,,,,Good
-2026-09-23,holder,c_g514,c_g514,Comune di Petriano,14,266.43,,,,Good
 2026-09-23,holder,c_d541,c_d541,Comune di Fermignano,14,266.43,,,,Good
-2026-09-23,holder,c_f450,c_f450,COMUNE DI Montecalvo in Foglia,13,265.77,,,,Good
+2026-09-23,holder,c_l498,c_l498,COMUNE DI Urbania,13,265.77,,,,Good
+2026-09-23,holder,c_g514,c_g514,Comune di Petriano,13,265.77,,,,Good
 2026-09-23,holder,c_e785,c_e785,Comune di Macerata Feltria,16,265.0,,,,Good
+2026-09-23,holder,c_f450,c_f450,COMUNE DI Montecalvo in Foglia,12,265.0,,,,Good
 2026-09-23,holder,06341981006,06341981006,ATAC S.p.A. Azienda per la mobilità,10,265.0,,,,Good
+2026-09-23,holder,c_g627,c_g627,Comune di Pietrarubbia,10,265.0,,,,Good
 2026-09-23,holder,c_e743,c_e743,COMUNE DI Lunano,11,264.09,,,,Good
 2026-09-23,holder,c_g551,c_g551,COMUNE DI Piandimeleto,11,264.09,,,,Good
 2026-09-23,holder,c_f467,c_f467,COMUNE DI Monte Cerignone,11,264.09,,,,Good
 2026-09-23,holder,c_d807,c_d807,Comune di Frontino,11,264.09,,,,Good
-2026-09-23,holder,c_g627,c_g627,Comune di Pietrarubbia,11,264.09,,,,Good
 2026-09-23,holder,c_e388,c_e388,Comune di Jesi,16,263.75,,,,Good
 2026-09-23,holder,c_g416,c_g416,Comune di Peglio,10,263.0,,,,Good
 2026-09-23,holder,c_h302,c_h302,Comune di Riolo Terme,3,261.67,,,,Good
@@ -83735,7 +83735,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,udcb_ra,udcb_ra,Unione della Romagna Faentina,3,261.67,,,,Good
 2026-09-23,holder,c_b188,c_b188,Comune di Brisighella,3,261.67,,,,Good
 2026-09-23,holder,aisg_052,aisg_052,ATO Toscana Sud,2,260.0,,,,Good
-2026-09-23,holder,c_g479,c_g479,Comune di Pesaro,20,258.0,,,,Good
+2026-09-23,holder,c_g479,c_g479,Comune di Pesaro,19,258.16,,,,Good
 2026-09-23,holder,c_e122,c_e122,COMUNE DI Gradara,17,256.18,,,,Good
 2026-09-23,holder,02863660359,02863660359,Amiat - Azienda Multiservizi Igiene Ambientale Torino S.p.A.,8,255.0,,,,Good
 2026-09-23,holder,c_d836,c_d836,COMUNE DI Gabicce Mare,16,255.0,,,,Good

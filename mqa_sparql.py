@@ -62,7 +62,14 @@ MASSIMI = {"scoring": 405, "findability": 100, "accessibility": 100,
 
 FILTRO = """  FILTER(?metrica IN (voc:scoring, voc:findabilityScoring,
                       voc:accessibilityScoring, voc:interoperabilityScoring,
-                      voc:reusabilityScoring, voc:contextualityScoring))"""
+                      voc:reusabilityScoring, voc:contextualityScoring))
+  # I dataset gia' passati al nuovo modello MQA tengono il predicato
+  # voc:scoring ma con un valore sulla scala 0-7,5 invece di 0-405, e perdono
+  # interoperabilita' e contestualita'. Mediarli con gli altri abbassa il
+  # punteggio del titolare senza che i suoi metadati siano cambiati, quindi si
+  # rileva sulla sola base omogenea finche' la migrazione non e' matura.
+  FILTER NOT EXISTS { GRAPH ?mgn { ?ds dqv:hasQualityMeasurement ?mn .
+                                   ?mn dqv:isMeasurementOf voc:finalScore } }"""
 
 PREFISSI = """PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -80,6 +87,15 @@ WHERE {
 """ + FILTRO + """
 }
 GROUP BY ?id ?metrica"""
+
+# Quanti dataset sono gia' passati al nuovo modello: serve a sapere quando la
+# base omogenea diventa troppo sottile e conviene cambiare sorgente.
+QUERY_MIGRATI = PREFISSI + """
+SELECT (COUNT(DISTINCT ?ds) AS ?migrati) WHERE {
+  GRAPH <%s> { ?c dcat:dataset ?ds }
+  GRAPH ?mg { ?ds dqv:hasQualityMeasurement ?m .
+              ?m dqv:isMeasurementOf voc:finalScore }
+}"""
 
 # Denominazioni dei titolari con la loro frequenza (~3 secondi).
 #
@@ -449,6 +465,15 @@ def main():
 
     day = dt.date.today().isoformat()
     esiti = {}
+
+    try:
+        d = interroga(QUERY_MIGRATI % (GRAFO % args.catalog), timeout=120)
+        migrati = int(d["results"]["bindings"][0]["migrati"]["value"])
+        if migrati:
+            print("[nuovo MQA] %d dataset gia' sulla scala 0-7,5: "
+                  "esclusi dalla media" % migrati)
+    except Exception as e:  # noqa: BLE001
+        print("[nuovo MQA] conteggio non riuscito: %s" % type(e).__name__)
 
     if args.solo != "organizzazioni":
         print("[titolari] dct:rightsHolder, query unica ...")
