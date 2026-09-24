@@ -115,10 +115,19 @@ potuto correggerlo.
 Quando un ente ha piu denominazioni la pagina lo segnala nel dettaglio della
 riga: e un difetto di metadati che la PA puo correggere.
 
-## Le cinque dimensioni
+## Le dimensioni
 
-Reperibilità, accessibilità, interoperabilità, riusabilità e contesto arrivano
-solo dal triplestore. L'API di ricerca espone il solo totale, e via REST
+Reperibilità, accessibilità e riusabilità arrivano solo dal triplestore.
+A livello dataset sono queste tre: l'interoperabilità vive su distribuzioni e
+servizi di dati, dove dipende da formato e media type, e la contestualità è
+stata eliminata con il modello nuovo.
+
+Vanno lette con cautela: sulla rilevazione del 24 settembre 2026 la
+riusabilità ha **un solo valore distinto** su 1.613 titolari (1,50) e
+l'accessibilità ne ha cinque. Tutta la variabilità fra gli enti italiani sta
+nella reperibilità, che ne ha quindici.
+
+Le dimensioni L'API di ricerca espone il solo totale, e via REST
 costerebbero una chiamata per dataset — misurato: ~90 minuti e rate limit oltre
 gli 8 thread paralleli.
 
@@ -205,40 +214,76 @@ settimana: con 2.000 enti ogni rilevazione pesa ~30 KB, e un anno di dati
 giornalieri renderebbe la pagina inutilizzabile. Lo storico integrale resta in
 `mqa/storico.csv`.
 
-## Soglie di rating
+## Il cambio di metodologia del 24 settembre 2026
 
-| Rating | Punteggio |
+data.europa.eu ha sostituito il modello MQA. Le differenze che contano qui:
+
+| | Prima | Ora |
+|---|---|---|
+| Punteggio massimo | 405 | **7,5 per classe di risorsa** |
+| Ponderazione | punti fissi per metrica | 1 obbligatorie, 0,5 raccomandate, 0,25 facoltative |
+| Dimensioni | cinque | quattro, contestualità eliminata |
+| Servizi di dati | non valutati | risorsa di prima classe |
+| Punteggio del dataset | miglior punteggio | media di distribuzioni e servizi |
+| Accessibilità | HTTP 2xx e 3xx | solo 2xx |
+| Distribuzioni deprecate | non trattate | ignorate; dataset con sole deprecate esclusi |
+| Conformità SHACL | nel punteggio | calcolata ma esclusa |
+
+### Soglie
+
+| Fascia | Punteggio |
 |---|---|
-| Excellent | 351–405 |
-| Good | 221–350 |
-| Sufficient | 121–220 |
-| Bad | 0–120 |
+| Eccellente | 5 – 7,5 |
+| Buono | 2,5 – 5 |
+| Sufficiente | 0 – 2,5 |
 
-Le cinque dimensioni valgono rispettivamente 100, 100, 110, 75 e 20 punti.
+**Il giudizio non distingue più nulla.** I punteggi italiani vanno da 5,50 a
+6,90: tutti i 1.613 titolari risultano eccellenti. Per questo la tabella mostra
+la percentuale del massimo, che varia fra il 73% e il 92%.
+
+A livello dataset le dimensioni valgono 5,00 la reperibilità, 0,75
+l'accessibilità e 1,75 la riusabilità: somma 7,50.
+
+### La migrazione e le due trappole
+
+La sostituzione è avvenuta un dataset alla volta, seguendo l'harvesting
+incrementale per data di modifica: il 23 settembre riguardava 1.051 dataset su
+62.583, il giorno dopo 61.111. Dall'1,7% al 97,5% in ventiquattr'ore.
+
+Durante la transizione due insidie, entrambe silenziose:
+
+- `voc:scoring` **mescola le due scale nello stesso campo**: sui migrati porta
+  valori su 7,5, sui residui su 405. Interrogandolo si otteneva una media di
+  15,56 con massimo 405 e minimo 5,5. Si legge `voc:finalScore`.
+- Le dimensioni esistono **in doppia copia** sugli stessi dataset, vecchia su
+  base 100 e nuova sulla scala dei pesi. Vanno prese dallo stesso grafo che
+  contiene `finalScore`, altrimenti si sommano: senza il vincolo uscivano
+  61.944 misure per 61.112 dataset.
+
+Le rilevazioni anteriori al 24 settembre sono riportate in proporzione sulla
+scala attuale, perché il grafico resti leggibile. **Non le rende equivalenti**:
+i due modelli pesano cose diverse, e un 6,3 di settembre non dice quanto un 6,3
+di ottobre.
 
 ## Perché il totale non coincide con quello di data.europa.eu
 
-Per l'intero catalogo `dati-gov-it` il portale europeo pubblica **371/405**,
-questa pagina una media più bassa. Non è una discrepanza: sono due statistiche
-diverse.
+Per l'intero catalogo `dati-gov-it` il portale europeo pubblica **6,571/7,5**,
+questa pagina una media leggermente diversa. Non è una discrepanza: sono due
+statistiche diverse.
+
+Si aggiunge un secondo scarto, temporaneo: il valore ufficiale è calcolato
+sui soli dataset già passati al modello nuovo, che durante la migrazione erano
+una minoranza non rappresentativa.
 
 - **EDP** costruisce un dataset "rappresentativo", applicando ai pesi massimi la
   percentuale di successo di ogni controllo, arrotondata all'unità.
 - **Qui** si fa la media aritmetica dei punteggi dei singoli dataset.
 
-| Dimensione | Qui | EDP |
-|---|---:|---:|
-| Findability | 99,9 | 100 |
-| Accessibility | 64,4 | 72 |
-| **Interoperability** | **69,5** | **104** |
-| Reusability | 74,4 | 75 |
-| Contextuality | 20,0 | 20 |
-
-Quattro dimensioni su cinque coincidono quasi perfettamente: quasi tutto lo scarto
-sta nell'interoperabilità, perché quei controlli si applicano alle
-*distribuzioni* e non ai dataset. Un dataset con dieci distribuzioni di cui una
-proprietaria perde punti nel proprio punteggio, ma nel conteggio aggregato pesa
-nove "sì" contro un "no".
+Lo scarto si concentra dove i controlli si applicano alle *distribuzioni* e non
+ai dataset. Un dataset con dieci distribuzioni di cui una proprietaria perde
+punti nel proprio punteggio, ma nel conteggio aggregato pesa nove "sì" contro
+un "no". Nel modello nuovo l'effetto è accentuato, perché il punteggio del
+dataset è definito come media dei punteggi delle sue distribuzioni.
 
 Per capire chi deve migliorare cosa serve la media dei punteggi, che si scompone
 per ente. Il valore ufficiale viene comunque letto a ogni run da
@@ -263,7 +308,7 @@ cd docs && python3 -m http.server
 ## Dettaglio dataset per dataset
 
 Nel dettaglio di un **titolare** un pulsante scarica un CSV con una riga per
-dataset: identificativo, URL su data.europa.eu, punteggio e le cinque dimensioni,
+dataset: identificativo, URL su data.europa.eu, punteggio e le tre dimensioni,
 ordinati dal peggiore al migliore. E l'elenco delle cose da sistemare.
 
 L'URL nel CSV punta alla pagina del dataset su data.europa.eu. Nel triplestore
