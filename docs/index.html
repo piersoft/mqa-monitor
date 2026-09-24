@@ -769,6 +769,12 @@ async function suggerisciCodice(codice, dove){
   }
 }
 
+/* I file di dati cambiano ogni giorno ma hanno sempre lo stesso nome: senza
+   un parametro che vari, il browser continua a servire la copia in cache. */
+function conVersione(nome){
+  return nome + "?v=" + Math.floor(Date.now() / 3600000);
+}
+
 const SPARQL = 'https://data.europa.eu/sparql';
 const BLOCCO = 300;
 const DIM_ORD = ['scoring','findability','accessibility','reusability'];
@@ -955,7 +961,7 @@ if (window.parent !== window && 'ResizeObserver' in window){
 }
 window.addEventListener('load', annunciaAltezza);
 
-fetch('data.json')
+fetch(conVersione('data.json'))
   .then(r => r.json())
   .then(d => {
     DATI = d; DATE = d.date;

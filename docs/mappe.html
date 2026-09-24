@@ -356,12 +356,18 @@ function aggiornaEtichetteEsri(){
 mappa.on("zoomend", aggiornaEtichetteEsri);
 aggiornaEtichetteEsri();
 
+/* I file di dati cambiano ogni giorno ma hanno sempre lo stesso nome: senza
+   un parametro che vari, il browser continua a servire la copia in cache. */
+function conVersione(nome){
+  return nome + "?v=" + Math.floor(Date.now() / 3600000);
+}
+
 var stato = {metrica:"mqa", comuni:true, regioni:true, escluse:{}};
 var dati=null, geoRegioni=null, stratoRegioni=null, stratoComuni=null;
 var maxDatasetComune=1, maxDatasetRegione=1;
 
 Promise.all([
-  fetch("maps_data.json").then(function(r){ return r.json(); }),
+  fetch(conVersione("maps_data.json")).then(function(r){ return r.json(); }),
   fetch("regioni_split.geojson").then(function(r){ return r.json(); })
 ]).then(function(res){
   dati=res[0]; geoRegioni=res[1];
