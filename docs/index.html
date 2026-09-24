@@ -318,10 +318,9 @@ footer p{max-width:78ch}
   </select>
   <select id="filtro" aria-label="Filtro per giudizio">
     <option value="">Tutti i giudizi</option>
-    <option value="Excellent">Excellent</option>
-    <option value="Good">Good</option>
-    <option value="Sufficient">Sufficient</option>
-    <option value="Bad">Bad</option>
+    <option value="Excellent">Eccellente (5 &ndash; 7,5)</option>
+    <option value="Good">Buono (2,5 &ndash; 5)</option>
+    <option value="Sufficient">Sufficiente (0 &ndash; 2,5)</option>
   </select>
   <span class="conteggio" id="conteggio"></span>
 </div>
@@ -335,7 +334,7 @@ footer p{max-width:78ch}
       <th scope="col" class="num">Punteggio</th>
       <th scope="col" class="num">7 giorni</th>
       <th scope="col" class="nascondi-stretto">Andamento</th>
-      <th scope="col" class="nascondi-stretto">Giudizio</th>
+      <th scope="col" class="num nascondi-stretto">% del massimo</th>
     </tr>
   </thead>
   <tbody id="corpo"></tbody>
@@ -363,7 +362,8 @@ footer p{max-width:78ch}
   <p>Nel grafico del dettaglio, passando sopra un punto ne compaiono data,
   punteggio, variazione rispetto alla rilevazione precedente e numero di dataset.
   La scala verticale si adatta all’escursione della singola serie, non all’intero
-  intervallo 0–405: variazioni di pochi punti sarebbero altrimenti impercettibili.</p>
+  intervallo 0–7,5: variazioni di pochi centesimi sarebbero altrimenti
+  impercettibili.</p>
 
   <p>Il tracciato riportato in tabella rappresenta l’andamento delle rilevazioni con
   scala adattata al singolo ente: la linea tratteggiata corrisponde alla prima misura
@@ -383,8 +383,11 @@ footer p{max-width:78ch}
   territoriale risultano pertanto con un numero ridotto di dataset, o non risultano
   affatto.</p>
 
-  <p id="nota-fonte">Fonte: data.europa.eu (Metadata Quality Assessment), scala 0–405.
-  Giudizi: Excellent ≥ 351, Good ≥ 221, Sufficient ≥ 121, Bad inferiore a 121. La
+  <p id="nota-fonte">Fonte: data.europa.eu (Metadata Quality Assessment), scala 0–7,5.
+  Fasce ufficiali: eccellente da 5, buono da 2,5, sufficiente sotto 2,5. Oggi tutti
+  i titolari italiani stanno nella fascia più alta, e per questo la tabella mostra
+  la percentuale del massimo invece del giudizio: è l’unico valore che varia in
+  modo leggibile. La
   composizione del punteggio, controllo per controllo, è descritta nella
   <a href="https://data.europa.eu/mqa/methodology?locale=it">metodologia MQA</a>. Il
   punteggio attribuito a un ente è la media dei punteggi dei suoi dataset, mentre il
@@ -420,11 +423,14 @@ footer p{max-width:78ch}
 </div>
 
 <script>
-const MAX = 405;
+const MAX = 7.5;
 let DATI = null, DATE = [], LIV = 'holder';
 const blocco = () => DATI.livelli[LIV];
 
 const nf1 = new Intl.NumberFormat('it-IT', {minimumFractionDigits:1, maximumFractionDigits:1});
+/* sulla scala 0-7,5 il campo italiano sta in 1,4 punti: con un decimale
+   solo meta' delle variazioni giornaliere sarebbe invisibile */
+const nf2 = new Intl.NumberFormat('it-IT', {minimumFractionDigits:2, maximumFractionDigits:2});
 const nf0 = new Intl.NumberFormat('it-IT');
 
 function dataBreve(iso){
@@ -523,10 +529,10 @@ function riga(e, i){
       <span class="nome">${e.nome}</span><span class="slug">${e.slug || e.id}</span>
     </button></td>
     <td class="num conta">${nf0.format(e.n)}</td>
-    <td class="num punteggio">${nf1.format(e.media)}</td>
+    <td class="num punteggio">${nf2.format(e.media)}</td>
     <td class="num">${segnoDelta(e.delta)}${scattoGiu(e)}</td>
     <td class="nascondi-stretto">${tracciato(e.serie)}</td>
-    <td class="nascondi-stretto"><span class="giudizio ${e.rating}">${e.rating}</span></td>
+    <td class="num nascondi-stretto quota">${nf1.format(e.media / MAX * 100)}%</td>
   </tr>`;
 }
 
@@ -543,11 +549,12 @@ function catalogoRegionale(e){
     : '';
 }
 
-const MAX_DIM = {findability:100, accessibility:100, interoperability:110,
-                 reusability:75, contextuality:20};
+/* A livello dataset le dimensioni sono tre: l'interoperabilita' vive su
+   distribuzioni e servizi di dati, la contestualita' e' stata eliminata.
+   I massimi sono la somma delle ponderazioni di ciascuna dimensione. */
+const MAX_DIM = {findability:5, accessibility:0.75, reusability:1.75};
 const ETICH_DIM = {findability:'Reperibilità', accessibility:'Accessibilità',
-                   interoperability:'Interoperabilità', reusability:'Riusabilità',
-                   contextuality:'Contesto'};
+                   reusability:'Riusabilità'};
 
 function dimensioni(d){
   if (!d) return '';
@@ -640,18 +647,14 @@ function avvisoMigrazione(){
   if (!el) return;
   const m = DATI.migrazione;
   if (!m || !m.migrati) return;
-  const misurati = DATI.livelli.holder.totali.dataset;
-  const quota = m.migrati / (m.migrati + misurati) * 100;
-  el.innerHTML = '<strong>Cambio di metodologia in corso.</strong> '
-    + 'data.europa.eu sta sostituendo il modello MQA: il punteggio passa dalla '
+  el.innerHTML = '<strong>Metodologia cambiata il 24 settembre 2026.</strong> '
+    + 'data.europa.eu ha sostituito il modello MQA: il punteggio passa dalla '
     + 'scala 0\u2013405 a una scala 0\u20137,5, le dimensioni scendono da cinque '
-    + 'a quattro e la contestualit\u00e0 sparisce. La sostituzione avviene un '
-    + 'dataset alla volta e ad oggi riguarda ' + nf0.format(m.migrati)
-    + ' dataset, il '
-    + quota.toLocaleString('it-IT', {minimumFractionDigits:1, maximumFractionDigits:1})
-    + '% del catalogo. Quei dataset restano fuori dalla media, che continua a '
-    + 'essere espressa su 405: mescolare le due scale farebbe crollare i '
-    + 'punteggi senza che i metadati siano cambiati.';
+    + 'a quattro e la contestualit\u00e0 sparisce. La rilevazione segue ora il '
+    + 'modello nuovo su ' + nf0.format(m.migrati) + ' dataset. Le misure '
+    + 'anteriori a quella data sono riportate in proporzione sulla scala '
+    + 'attuale perch\u00e9 il grafico resti leggibile: i due modelli pesano '
+    + 'cose diverse, quindi i valori di prima e di dopo non sono equivalenti.';
   el.hidden = false;
 }
 
@@ -768,8 +771,7 @@ async function suggerisciCodice(codice, dove){
 
 const SPARQL = 'https://data.europa.eu/sparql';
 const BLOCCO = 300;
-const DIM_ORD = ['scoring','findability','accessibility','interoperability',
-                 'reusability','contextuality'];
+const DIM_ORD = ['scoring','findability','accessibility','reusability'];
 
 async function chiedi(query){
   const r = await fetch(SPARQL, {
@@ -807,14 +809,16 @@ SELECT ?ds WHERE {
 SELECT ?ds ?metrica ?v WHERE {
   VALUES ?ds { ${blocco.map(u => '<' + u + '>').join(' ')} }
   GRAPH ?mg { ?ds dqv:hasQualityMeasurement ?m . ?m dqv:isMeasurementOf ?metrica ; dqv:value ?v }
-  FILTER(?metrica IN (voc:scoring, voc:findabilityScoring, voc:accessibilityScoring,
-                      voc:interoperabilityScoring, voc:reusabilityScoring,
-                      voc:contextualityScoring))
+  FILTER(?metrica IN (voc:finalScore, voc:findabilityScoring,
+                      voc:accessibilityScoring, voc:reusabilityScoring))
+  FILTER EXISTS { GRAPH ?mg { ?ds dqv:hasQualityMeasurement ?mf .
+                              ?mf dqv:isMeasurementOf voc:finalScore } }
 }`);
     for (const b of righe){
       const d = per[b.ds.value] || (per[b.ds.value] = {});
-      const nome = b.metrica.value.split('#').pop()
-        .replace('Scoring','').replace(/^./, c => c.toLowerCase());
+      const grezzo = b.metrica.value.split('#').pop();
+      const nome = grezzo === 'finalScore' ? 'scoring'
+        : grezzo.replace('Scoring','').replace(/^./, c => c.toLowerCase());
       d[nome === '' ? 'scoring' : nome] = Number(b.v.value);
     }
   }
