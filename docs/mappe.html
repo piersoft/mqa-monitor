@@ -273,11 +273,14 @@ select:focus-visible{outline:2px solid var(--inchiostro);outline-offset:1px}
    Un colore vale una fascia, così il confronto fra enti e' immediato
    e resta stabile nel tempo: un ente cambia colore solo quando cambia
    davvero fascia, non a ogni decimo di punto. */
+/* Fasce ufficiali del modello MQA in vigore da settembre 2026: la scala va
+   da 0 a 7,5 e la fascia "Scarso" e' stata eliminata. I punteggi italiani
+   stanno tutti sopra il 5, quindi a colorare per MQA la mappa risulta di un
+   colore solo: la metrica "Numero dataset" resta quella che distingue. */
 var CLASSI_MQA = [
-  {min:351, nome:"Ottimo",      soglia:"351 – 405", colore:"#1e8a5f"},
-  {min:221, nome:"Buono",       soglia:"221 – 350", colore:"#93b83a"},
-  {min:121, nome:"Sufficiente", soglia:"121 – 220", colore:"#e08a1e"},
-  {min:0,   nome:"Scarso",      soglia:"0 – 120",   colore:"#8c2f1d"}
+  {min:5.0, nome:"Ottimo",      soglia:"5 – 7,5",   colore:"#1e8a5f"},
+  {min:2.5, nome:"Buono",       soglia:"2,5 – 5",   colore:"#93b83a"},
+  {min:0,   nome:"Sufficiente", soglia:"0 – 2,5",   colore:"#e08a1e"}
 ];
 
 /* Classi per numero di dataset: ordini di grandezza, tinta diversa

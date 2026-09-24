@@ -263,15 +263,18 @@ def costruisci_regioni(data, harvest):
 
 
 def rating(mqa):
+    """Fasce ufficiali del modello MQA in vigore da settembre 2026.
+
+    La fascia "Bad" non esiste piu': sotto 2,5 si e' semplicemente
+    sufficienti.
+    """
     if mqa is None:
         return None
-    if mqa >= 351:
+    if mqa >= 5.0:
         return "Excellent"
-    if mqa >= 221:
+    if mqa >= 2.5:
         return "Good"
-    if mqa >= 121:
-        return "Sufficient"
-    return "Bad"
+    return "Sufficient"
 
 
 def main():
@@ -294,7 +297,7 @@ def main():
     out = {
         "aggiornato": data.get("aggiornato"),
         "catalogo": data.get("catalogo"),
-        "max_score": data.get("max_score", 405),
+        "max_score": data.get("max_score", 7.5),
         "comuni": comuni,
         "regioni": regioni,
         "scartati": scartati,
