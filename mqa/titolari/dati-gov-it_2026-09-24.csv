@@ -1,0 +1,81 @@
+id,slug,titolare,n_dataset,scoring,pct,findability,accessibility,interoperability,reusability,contextuality,n_nomi,in_ipa,ipa_nome,ipa_prov,ipa_reg,via
+anci,,Anci - Associazione Nazionale Comuni Italiani,1,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Associazione Nazionale Dei Comuni Italiani,RM,Lazio,regione-toscana
+cciaa_lu,,Camera di Commercio Industria Artigianato Agricoltura di Lucca,4,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,0,,,,regione-toscana
+c_i804,,Comune di Sulmona,2,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Comune di Sulmona,AQ,Abruzzo,comune-di-sulmona
+c_c963,,Comune di Conselice,2,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Comune di Conselice,RA,Emilia-Romagna,regione-emilia-romagna
+asl_vvta,,ASL TARANTO,1,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Azienda Sanitaria Locale di Taranto,TA,Puglia,regione-puglia
+c_i196,,Comune di Sant'Agata sul Santerno,1,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Comune di Sant'Agata Sul Santerno,RA,Emilia-Romagna,regione-emilia-romagna
+uncobaro,,Unione dei Comuni della Bassa Romagna,1,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Unione dei Comuni della Bassa Romagna,RA,Emilia-Romagna,regione-emilia-romagna
+pt,,Politecnico di Torino,2,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Politecnico di Torino,TO,Piemonte,politecnico-di-torino
+c_f572,,Comune di Montemurlo,1,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Comune di Montemurlo,PO,Toscana,regione-toscana
+c_i921,,Comune di Spoleto,1,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Comune di Spoleto,PG,Umbria,regione-umbria
+cmct,,Città Metropolitana di Catania,11,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Citta' Metropolitana di Catania,CT,Sicilia,citta-metropolitana-di-catania
+c_g999,,Comune di Prato,4,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Comune di Prato,PO,Toscana,regione-toscana
+c_g273,,Comune di Palermo,1,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Comune di Palermo,PA,Sicilia,comune-di-palermo
+uni_bo/cle/aform,, AFORM - Area della Didattica,10,405.0,100.0,100.0,100.0,110.0,75.0,20.0,2,0,,,,universita-di-bologna
+c_d863,,Comune di Galatone,3,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Comune di Galatone,LE,Puglia,regione-puglia
+c_l400,,Comune di Treviglio,41,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Comune di Treviglio,BG,Lombardia,comune-di-treviglio
+c_e202,,Comune di Grosseto,3,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Comune di Grosseto,GR,Toscana,regione-toscana
+unical,,Università della Calabria,2,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Università della Calabria,CS,Calabria,universita-della-calabria
+atsbs,,Agenzia di Tutela della Salute di Brescia,1,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Agenzia di Tutela della Salute di Brescia,BS,Lombardia,agenzia-di-tutela-della-salute-di-brescia
+asstv,,Azienda Socio Sanitaria Territoriale della Brianza,1,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Azienda Socio Sanitaria Territoriale della Brianza,MB,Lombardia,azienda-socio-sanitaria-territoriale-della-brianza
+c_a734,,Comune di Beinasco,1,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Comune di Beinasco,TO,Piemonte,comune-di-beinasco
+iacp_ba,,Arca - Puglia Centrale,2,405.0,100.0,100.0,100.0,110.0,75.0,20.0,1,1,Agenzia Regionale per la Casa e l'Abitare - Arca - Puglia Centrale,BA,Puglia,regione-puglia
+c_f656,,Comune di Montevarchi,10,403.0,99.51,100.0,100.0,108.0,75.0,20.0,1,1,Comune di Montevarchi,AR,Toscana,regione-toscana
+c_b626,,Comune di Cantagallo,4,400.0,98.77,100.0,100.0,105.0,75.0,20.0,1,1,Comune di Cantagallo,PO,Toscana,regione-toscana
+unrengal,,Unione Reno Galliera,2,400.0,98.77,100.0,100.0,110.0,70.0,20.0,1,1,Unione Reno Galliera,BO,Emilia-Romagna,regione-emilia-romagna
+c_l537,,Comune di Vaiano,7,396.43,97.88,100.0,100.0,101.43,75.0,20.0,1,1,Comune di Vaiano,PO,Toscana,regione-toscana
+cmbo,,Città Metropolitana di Bologna,5,391.0,96.54,100.0,100.0,96.0,75.0,20.0,1,1,Citta' Metropolitana di Bologna,BO,Emilia-Romagna,regione-emilia-romagna
+cmfi,,Città metropolitana di Firenze,12,390.0,96.3,100.0,100.0,95.0,75.0,20.0,1,1,Citta' Metropolitana di Firenze,FI,Toscana,regione-toscana
+cciaa_le,,Camera di Commercio di Lecce,20,389.0,96.05,100.0,84.0,110.0,75.0,20.0,1,1,"Camera di Commercio, Industria, Artigianato e Agricoltura di Lecce",LE,Puglia,regione-puglia
+r_emiro,,Regione Emilia-Romagna,51,387.16,95.6,100.0,93.73,98.43,75.0,20.0,1,1,Regione Emilia-Romagna,BO,Emilia-Romagna,regione-emilia-romagna
+uni_bo,,Alma Mater Studiorum - University of Bologna,2,385.0,95.06,100.0,100.0,90.0,75.0,20.0,2,1,Alma Mater Studiorum - Universita' di Bologna,BO,Emilia-Romagna,universita-di-bologna
+uni_bo/cle/arag,,ARAG - Finance and Subsidiaries Division,2,385.0,95.06,100.0,100.0,90.0,75.0,20.0,2,0,,,,universita-di-bologna
+r_campan,,Regione Campania,1,385.0,95.06,100.0,100.0,90.0,75.0,20.0,1,1,Regione Campania,NA,Campania,regione-campania
+r_umbria,,Regione Umbria,56,383.04,94.58,100.0,91.43,96.61,75.0,20.0,1,1,Regione Umbria,PG,Umbria,regione-umbria
+02904120546,,Associazione Centro Studi Città di Foligno,3,378.33,93.41,100.0,73.33,110.0,75.0,20.0,1,0,,,,regione-umbria
+m_lps,,Ministero del Lavoro,83,375.0,92.59,100.0,100.0,80.0,75.0,20.0,1,1,Ministero del Lavoro e delle Politiche Sociali,RM,Lazio,ministero-del-lavoro
+8w0q4vwz,,Agenzia Nazionale per la Meteorologia e Climatologia - ItaliaMeteo,5,373.0,92.1,100.0,100.0,78.0,75.0,20.0,1,1,Agenzia  Nazionale per la Meteorologia e Climatologia - ItaliaMeteo,RM,Lazio,agenzia-nazionale-per-la-meteorologia-e-climatologia-italiameteo
+c_c469,,Comune di Cento,3,371.67,91.77,100.0,73.33,103.33,75.0,20.0,1,1,Comune di Cento,FE,Emilia-Romagna,regione-emilia-romagna
+p_pi,,Provincia di Pisa,2,365.0,90.12,100.0,60.0,110.0,75.0,20.0,1,1,Provincia di Pisa,PI,Toscana,geodati-rndt-hvd;regione-toscana
+c_e506,,Comune di Lecce,2,365.0,90.12,100.0,60.0,110.0,75.0,20.0,1,1,Comune di Lecce,LE,Puglia,regione-puglia
+m_ef,,Ministero dell'Economia e delle Finanze,9,360.56,89.03,100.0,55.56,110.0,75.0,20.0,3,1,Ministero dell'Economia e delle Finanze,RM,Lazio,consip;ministero-dell-economia-e-delle-finanze
+p_bz,,Provincia Autonoma di Bolzano - Alto Adige,69,356.59,88.05,100.0,100.0,61.59,75.0,20.0,70,1,Provincia Autonoma di Bolzano,BZ,Trentino-Alto Adige/Südtirol,provincia-autonoma-di-bolzano
+regcal,,Regione Calabria,1,355.0,87.65,100.0,100.0,60.0,75.0,20.0,1,1,Regione Calabria,CZ,Calabria,regione-calabria
+r_basili,,Regione Basilicata,172,348.2,85.98,98.78,46.51,107.91,75.0,20.0,1,1,Regione Basilicata,PZ,Basilicata,regione-basilicata
+c_a035,,Comune di Acqualagna,3,345.0,85.19,100.0,46.67,103.33,75.0,20.0,1,1,Comune di Acqualagna,PU,Marche,regione-marche
+r_marche,,Regione Marche,11,341.36,84.29,100.0,41.82,104.55,75.0,20.0,1,1,Regione Marche,AN,Marche,regione-marche
+c_h501,,Roma Capitale - Istituzione Sistema Biblioteche Centri Culturali,5,341.0,84.2,100.0,36.0,110.0,75.0,20.0,7,1,ROMA CAPITALE,RM,Lazio,roma-capitale
+c_c745,,Comune di Città di Castello,4,337.5,83.33,100.0,40.0,102.5,75.0,20.0,1,1,Comune di Citta' di Castello,PG,Umbria,regione-umbria
+r_toscan,,Regione Toscana,30,329.0,81.23,100.0,64.0,83.33,65.0,16.67,1,1,Regione Toscana,FI,Toscana,geodati-rndt-hvd;regione-toscana
+comune di castelnuovo del garda,,Comune di Castelnuovo del Garda,1,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,0,,,,regione-veneto
+m_bac-m900m0,,Istituto centrale per il catalogo e la documentazione,1,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,0,,,,ministero-dei-beni-culturali
+comune di vicenza,,Comune di Vicenza,2,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,0,,,,regione-veneto
+comune di montegaldella,,Comune di Montegaldella,1,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,0,,,,regione-veneto
+comune di treviso,,Comune di Treviso,1,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,0,,,,regione-veneto
+crev,,CREV,1,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,0,,,,regione-veneto
+p_lu,,Provincia di Lucca,2,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,1,Provincia di Lucca,LU,Toscana,regione-toscana
+c_f844,,Comune di Narni,1,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,1,Comune di Narni,TR,Umbria,regione-umbria
+c_a252,,Comune di Amandola,2,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,1,Comune di Amandola,FM,Marche,regione-marche
+comune di arsiero,,Comune di Arsiero,1,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,0,,,,regione-veneto
+comune di lugo di vicenza,,Comune di Lugo di Vicenza,4,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,0,,,,regione-veneto
+regione del veneto,,Regione del Veneto,2,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,0,,,,regione-veneto
+c_a092,,Comune di Agugliano,15,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,1,Comune di Agugliano,AN,Marche,regione-marche
+comune di arsiè,,Comune di Arsiè,2,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,0,,,,regione-veneto
+comune di foza,,Comune di Foza,2,325.0,80.25,100.0,20.0,110.0,75.0,20.0,1,0,,,,regione-veneto
+00514490010,,Comune di Torino,20,324.0,80.0,100.0,28.0,101.0,75.0,20.0,1,0,,,,comune-di-torino
+c_f257,,Comune di Modena,3,318.33,78.6,100.0,20.0,103.33,75.0,20.0,1,1,Comune di Modena,MO,Emilia-Romagna,regione-emilia-romagna
+c_a233,,Comune di Altidona,5,317.0,78.27,100.0,20.0,102.0,75.0,20.0,1,1,Comune di Altidona,FM,Marche,regione-marche
+c_a044,,Comune di Acquasanta Terme,2,315.0,77.78,100.0,20.0,100.0,75.0,20.0,1,1,Comune di Acquasanta Terme,AP,Marche,regione-marche
+c_g478,,Comune di Perugia,1,305.0,75.31,100.0,20.0,90.0,75.0,20.0,1,1,Comune di Perugia,PG,Umbria,regione-umbria
+c_a327,,Comune di Apecchio,1,305.0,75.31,100.0,20.0,90.0,75.0,20.0,1,1,Comune di Apecchio,PU,Marche,regione-marche
+c_a047,,Comune di Acquaviva Picena,1,305.0,75.31,100.0,20.0,90.0,75.0,20.0,1,1,Comune di Acquaviva Picena,AP,Marche,regione-marche
+age,,Agenzia delle Entrate,1,300.0,74.07,100.0,20.0,85.0,75.0,20.0,1,1,Agenzia delle Entrate,RM,Lazio,geodati-rndt-hvd
+d_969,,Comune di Genova - musei e biblioteche,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,0,,,,comune-di-genova
+c_m318,,COMUNE DI Trecastelli,1,275.0,67.9,100.0,20.0,60.0,75.0,20.0,1,1,Comune di Trecastelli,AN,Marche,regione-marche
+r_puglia,,Regione Puglia,1,255.0,62.96,100.0,0.0,60.0,75.0,20.0,1,1,Regione Puglia,BA,Puglia,regione-puglia
+c_m408,,Comune di Barberino Tavarnelle,1,255.0,62.96,100.0,0.0,60.0,75.0,20.0,1,1,Comune di Barberino Tavarnelle,FI,Toscana,geodati-rndt-hvd;regione-toscana
+c_f384,,Comune di Monsummano Terme,9,231.67,57.2,100.0,0.0,36.67,75.0,20.0,1,1,Comune di Monsummano Terme,PT,Toscana,regione-toscana
+m_pi,,"Ministero dell'Istruzione, dell'Universita' e della Ricerca",12,225.0,55.56,100.0,0.0,30.0,75.0,20.0,1,1,Ministero dell'istruzione e del merito,RM,Lazio,ministero-dell-istruzione
+c_d612,,Comune di Firenze,1,185.0,45.68,100.0,0.0,30.0,45.0,10.0,1,1,Comune di Firenze,FI,Toscana,regione-toscana
+c_c665,,Comune di Chivasso,1,185.0,45.68,100.0,0.0,30.0,45.0,10.0,1,1,Comune di Chivasso,TO,Piemonte,comune-di-chivasso

@@ -83743,6 +83743,86 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,holder,000000000,000000000,Osservatorio Culturale del Piemonte,8,255.0,,,,Good
 2026-09-23,holder,10735431008,10735431008,Roma Servizi per la Mobilità,1,255.0,,,,Good
 2026-09-23,holder,c_d548,c_d548,Comune di Ferrara,259,240.87,,,,Good
+2026-09-24,holder,anci,anci,Anci - Associazione Nazionale Comuni Italiani,1,405.0,,,,Excellent
+2026-09-24,holder,cciaa_lu,cciaa_lu,Camera di Commercio Industria Artigianato Agricoltura di Lucca,4,405.0,,,,Excellent
+2026-09-24,holder,c_i804,c_i804,Comune di Sulmona,2,405.0,,,,Excellent
+2026-09-24,holder,c_c963,c_c963,Comune di Conselice,2,405.0,,,,Excellent
+2026-09-24,holder,asl_vvta,asl_vvta,ASL TARANTO,1,405.0,,,,Excellent
+2026-09-24,holder,c_i196,c_i196,Comune di Sant'Agata sul Santerno,1,405.0,,,,Excellent
+2026-09-24,holder,uncobaro,uncobaro,Unione dei Comuni della Bassa Romagna,1,405.0,,,,Excellent
+2026-09-24,holder,pt,pt,Politecnico di Torino,2,405.0,,,,Excellent
+2026-09-24,holder,c_f572,c_f572,Comune di Montemurlo,1,405.0,,,,Excellent
+2026-09-24,holder,c_i921,c_i921,Comune di Spoleto,1,405.0,,,,Excellent
+2026-09-24,holder,cmct,cmct,Città Metropolitana di Catania,11,405.0,,,,Excellent
+2026-09-24,holder,c_g999,c_g999,Comune di Prato,4,405.0,,,,Excellent
+2026-09-24,holder,c_g273,c_g273,Comune di Palermo,1,405.0,,,,Excellent
+2026-09-24,holder,uni_bo/cle/aform,uni_bo/cle/aform, AFORM - Area della Didattica,10,405.0,,,,Excellent
+2026-09-24,holder,c_d863,c_d863,Comune di Galatone,3,405.0,,,,Excellent
+2026-09-24,holder,c_l400,c_l400,Comune di Treviglio,41,405.0,,,,Excellent
+2026-09-24,holder,c_e202,c_e202,Comune di Grosseto,3,405.0,,,,Excellent
+2026-09-24,holder,unical,unical,Università della Calabria,2,405.0,,,,Excellent
+2026-09-24,holder,atsbs,atsbs,Agenzia di Tutela della Salute di Brescia,1,405.0,,,,Excellent
+2026-09-24,holder,asstv,asstv,Azienda Socio Sanitaria Territoriale della Brianza,1,405.0,,,,Excellent
+2026-09-24,holder,c_a734,c_a734,Comune di Beinasco,1,405.0,,,,Excellent
+2026-09-24,holder,iacp_ba,iacp_ba,Arca - Puglia Centrale,2,405.0,,,,Excellent
+2026-09-24,holder,c_f656,c_f656,Comune di Montevarchi,10,403.0,,,,Excellent
+2026-09-24,holder,c_b626,c_b626,Comune di Cantagallo,4,400.0,,,,Excellent
+2026-09-24,holder,unrengal,unrengal,Unione Reno Galliera,2,400.0,,,,Excellent
+2026-09-24,holder,c_l537,c_l537,Comune di Vaiano,7,396.43,,,,Excellent
+2026-09-24,holder,cmbo,cmbo,Città Metropolitana di Bologna,5,391.0,,,,Excellent
+2026-09-24,holder,cmfi,cmfi,Città metropolitana di Firenze,12,390.0,,,,Excellent
+2026-09-24,holder,cciaa_le,cciaa_le,Camera di Commercio di Lecce,20,389.0,,,,Excellent
+2026-09-24,holder,r_emiro,r_emiro,Regione Emilia-Romagna,51,387.16,,,,Excellent
+2026-09-24,holder,uni_bo,uni_bo,Alma Mater Studiorum - University of Bologna,2,385.0,,,,Excellent
+2026-09-24,holder,uni_bo/cle/arag,uni_bo/cle/arag,ARAG - Finance and Subsidiaries Division,2,385.0,,,,Excellent
+2026-09-24,holder,r_campan,r_campan,Regione Campania,1,385.0,,,,Excellent
+2026-09-24,holder,r_umbria,r_umbria,Regione Umbria,56,383.04,,,,Excellent
+2026-09-24,holder,02904120546,02904120546,Associazione Centro Studi Città di Foligno,3,378.33,,,,Excellent
+2026-09-24,holder,m_lps,m_lps,Ministero del Lavoro,83,375.0,,,,Excellent
+2026-09-24,holder,8w0q4vwz,8w0q4vwz,Agenzia Nazionale per la Meteorologia e Climatologia - ItaliaMeteo,5,373.0,,,,Excellent
+2026-09-24,holder,c_c469,c_c469,Comune di Cento,3,371.67,,,,Excellent
+2026-09-24,holder,p_pi,p_pi,Provincia di Pisa,2,365.0,,,,Excellent
+2026-09-24,holder,c_e506,c_e506,Comune di Lecce,2,365.0,,,,Excellent
+2026-09-24,holder,m_ef,m_ef,Ministero dell'Economia e delle Finanze,9,360.56,,,,Excellent
+2026-09-24,holder,p_bz,p_bz,Provincia Autonoma di Bolzano - Alto Adige,69,356.59,,,,Excellent
+2026-09-24,holder,regcal,regcal,Regione Calabria,1,355.0,,,,Excellent
+2026-09-24,holder,r_basili,r_basili,Regione Basilicata,172,348.2,,,,Good
+2026-09-24,holder,c_a035,c_a035,Comune di Acqualagna,3,345.0,,,,Good
+2026-09-24,holder,r_marche,r_marche,Regione Marche,11,341.36,,,,Good
+2026-09-24,holder,c_h501,c_h501,Roma Capitale - Istituzione Sistema Biblioteche Centri Culturali,5,341.0,,,,Good
+2026-09-24,holder,c_c745,c_c745,Comune di Città di Castello,4,337.5,,,,Good
+2026-09-24,holder,r_toscan,r_toscan,Regione Toscana,30,329.0,,,,Good
+2026-09-24,holder,comune di castelnuovo del garda,comune di castelnuovo del garda,Comune di Castelnuovo del Garda,1,325.0,,,,Good
+2026-09-24,holder,m_bac-m900m0,m_bac-m900m0,Istituto centrale per il catalogo e la documentazione,1,325.0,,,,Good
+2026-09-24,holder,comune di vicenza,comune di vicenza,Comune di Vicenza,2,325.0,,,,Good
+2026-09-24,holder,comune di montegaldella,comune di montegaldella,Comune di Montegaldella,1,325.0,,,,Good
+2026-09-24,holder,comune di treviso,comune di treviso,Comune di Treviso,1,325.0,,,,Good
+2026-09-24,holder,crev,crev,CREV,1,325.0,,,,Good
+2026-09-24,holder,p_lu,p_lu,Provincia di Lucca,2,325.0,,,,Good
+2026-09-24,holder,c_f844,c_f844,Comune di Narni,1,325.0,,,,Good
+2026-09-24,holder,c_a252,c_a252,Comune di Amandola,2,325.0,,,,Good
+2026-09-24,holder,comune di arsiero,comune di arsiero,Comune di Arsiero,1,325.0,,,,Good
+2026-09-24,holder,comune di lugo di vicenza,comune di lugo di vicenza,Comune di Lugo di Vicenza,4,325.0,,,,Good
+2026-09-24,holder,regione del veneto,regione del veneto,Regione del Veneto,2,325.0,,,,Good
+2026-09-24,holder,c_a092,c_a092,Comune di Agugliano,15,325.0,,,,Good
+2026-09-24,holder,comune di arsiè,comune di arsiè,Comune di Arsiè,2,325.0,,,,Good
+2026-09-24,holder,comune di foza,comune di foza,Comune di Foza,2,325.0,,,,Good
+2026-09-24,holder,00514490010,00514490010,Comune di Torino,20,324.0,,,,Good
+2026-09-24,holder,c_f257,c_f257,Comune di Modena,3,318.33,,,,Good
+2026-09-24,holder,c_a233,c_a233,Comune di Altidona,5,317.0,,,,Good
+2026-09-24,holder,c_a044,c_a044,Comune di Acquasanta Terme,2,315.0,,,,Good
+2026-09-24,holder,c_g478,c_g478,Comune di Perugia,1,305.0,,,,Good
+2026-09-24,holder,c_a327,c_a327,Comune di Apecchio,1,305.0,,,,Good
+2026-09-24,holder,c_a047,c_a047,Comune di Acquaviva Picena,1,305.0,,,,Good
+2026-09-24,holder,age,age,Agenzia delle Entrate,1,300.0,,,,Good
+2026-09-24,holder,d_969,d_969,Comune di Genova - musei e biblioteche,1,275.0,,,,Good
+2026-09-24,holder,c_m318,c_m318,COMUNE DI Trecastelli,1,275.0,,,,Good
+2026-09-24,holder,r_puglia,r_puglia,Regione Puglia,1,255.0,,,,Good
+2026-09-24,holder,c_m408,c_m408,Comune di Barberino Tavarnelle,1,255.0,,,,Good
+2026-09-24,holder,c_f384,c_f384,Comune di Monsummano Terme,9,231.67,,,,Good
+2026-09-24,holder,m_pi,m_pi,"Ministero dell'Istruzione, dell'Universita' e della Ricerca",12,225.0,,,,Good
+2026-09-24,holder,c_d612,c_d612,Comune di Firenze,1,185.0,,,,Sufficient
+2026-09-24,holder,c_c665,c_c665,Comune di Chivasso,1,185.0,,,,Sufficient
 2026-08-03,organization,0d3685ca-8d03-4226-a31d-ea60b7fcefce,inps,INPS,2280,399.23,,,,Excellent
 2026-08-03,organization,79d608ae-ea96-4736-9393-4154086f2e23,comune-di-treviglio,Comune di Treviglio,44,398.18,,,,Excellent
 2026-08-03,organization,ccc8eb67-5b1d-460c-be0c-1a698c9597aa,universita-della-calabria,Universita della Calabria,5,393.0,,,,Excellent
@@ -104456,6 +104536,37 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-09-23,organization,ffb309bb-fdd7-4a73-95db-ccb2ca258bde,comune-di-santhia,Comune di Santhia,3,275.0,,,,Good
 2026-09-23,organization,94b9330e-0382-4d23-a8f6-03c80ac74355,roma-capitale,Roma Capitale,359,274.92,,,,Good
 2026-09-23,organization,530a4f68-69d3-4278-b965-b74e726a489d,comune-di-vado-ligure,Comune di Vado Ligure,3,271.67,,,,Good
+2026-09-24,organization,184af785-59d7-44b3-aa77-31a8d724dc2b,comune-di-sulmona,Comune di Sulmona,2,405.0,,,,Excellent
+2026-09-24,organization,2d9eea42-cb60-48fd-9a8a-36ad3691a0ac,citta-metropolitana-di-catania,Citta Metropolitana di Catania,11,405.0,,,,Excellent
+2026-09-24,organization,79d608ae-ea96-4736-9393-4154086f2e23,comune-di-treviglio,Comune di Treviglio,41,405.0,,,,Excellent
+2026-09-24,organization,8c5d1e2f-95c7-4bc4-aeaf-ec34a5b31313,azienda-socio-sanitaria-territoriale-della-brianza,Azienda Socio Sanitaria Territoriale della Brianza,1,405.0,,,,Excellent
+2026-09-24,organization,a28cb2eb-0bcc-4cb9-9d3e-6cebe2b4511c,comune-di-palermo,Comune di Palermo,1,405.0,,,,Excellent
+2026-09-24,organization,ab0d75c7-04eb-4b48-b811-d4ca97bf1406,politecnico-di-torino,Politecnico di Torino,2,405.0,,,,Excellent
+2026-09-24,organization,bc5f05ae-4696-4db9-985a-88a78eab0da9,comune-di-beinasco,Comune di Beinasco,1,405.0,,,,Excellent
+2026-09-24,organization,ccc8eb67-5b1d-460c-be0c-1a698c9597aa,universita-della-calabria,Universita della Calabria,2,405.0,,,,Excellent
+2026-09-24,organization,f1086794-56a8-4455-9136-cb23744c0ff2,agenzia-di-tutela-della-salute-di-brescia,Agenzia di Tutela della Salute di Brescia,1,405.0,,,,Excellent
+2026-09-24,organization,f9cc510c-3548-4f1f-8b24-d0182de48f33,universita-di-bologna,Universita di Bologna,14,399.29,,,,Excellent
+2026-09-24,organization,585452e2-12b4-4187-89d6-c33068eff19f,regione-puglia,Regione Puglia,29,386.03,,,,Excellent
+2026-09-24,organization,c25963f5-2065-4819-9072-35a021ed3d11,regione-emilia-romagna,Regione Emilia Romagna,68,385.15,,,,Excellent
+2026-09-24,organization,1419afad-d904-4313-957b-2c933ed3fd3b,regione-campania,Regione Campania,1,385.0,,,,Excellent
+2026-09-24,organization,84f13bc0-e106-476f-8f32-19e5c15e8499,regione-umbria,Regione Umbria,66,378.33,,,,Excellent
+2026-09-24,organization,cf59d4fe-9521-4f97-b463-c2e8f1d4e647,ministero-del-lavoro,Ministero del Lavoro,83,375.0,,,,Excellent
+2026-09-24,organization,58f47ff9-996f-418a-938d-da7ac109079d,agenzia-nazionale-per-la-meteorologia-e-climatologia-italiameteo,Agenzia Nazionale per la Meteorologia e Climatologia Italiameteo,5,373.0,,,,Excellent
+2026-09-24,organization,656fad7d-c016-477c-a24e-d441a71f1437,ministero-dell-economia-e-delle-finanze,Ministero dell'Economia e delle Finanze,9,360.56,,,,Excellent
+2026-09-24,organization,4188f7ff-0b05-4dbf-982e-9a6d99da7bc6,provincia-autonoma-di-bolzano,Provincia Autonoma di Bolzano,70,356.14,,,,Excellent
+2026-09-24,organization,8c4b1fbd-cff7-4ec1-a4a0-8bfe778e1f89,regione-calabria,Regione Calabria,1,355.0,,,,Excellent
+2026-09-24,organization,9bcd4050-eecd-400b-8196-cd4db7b38c58,regione-toscana,Regione Toscana,91,353.02,,,,Excellent
+2026-09-24,organization,d605ab5c-50bd-4895-bace-4ac93714032c,regione-basilicata,Regione Basilicata,172,348.2,,,,Good
+2026-09-24,organization,24f39537-efc7-4c06-bb10-efd2d2f27ac3,camera-di-commercio-delle-marche,Camera di Commercio delle Marche,5,345.0,,,,Good
+2026-09-24,organization,94b9330e-0382-4d23-a8f6-03c80ac74355,roma-capitale,Roma Capitale,5,341.0,,,,Good
+2026-09-24,organization,2bbf9fca-aef9-4264-b4ef-31848f2cf206,regione-marche,Regione Marche,43,328.49,,,,Good
+2026-09-24,organization,0c8ebe34-c765-43c0-8deb-67940890204a,ministero-dei-beni-culturali,Ministero dei Beni Culturali,1,325.0,,,,Good
+2026-09-24,organization,e29d26ff-c0a3-4035-8566-63f1a6962b41,regione-veneto,Regione Veneto,17,325.0,,,,Good
+2026-09-24,organization,f804b34c-a5f7-42ca-bde2-82a0bcadd55e,comune-di-torino,Comune di Torino,20,324.0,,,,Good
+2026-09-24,organization,da926247-2672-4f13-9da2-bab96a552511,geodati-rndt-hvd,Geodati Rndt Hvd,2,300.0,,,,Good
+2026-09-24,organization,226f7e4e-979f-4e43-bcdc-7396b79248ec,comune-di-genova,Comune di Genova,1,275.0,,,,Good
+2026-09-24,organization,e4d3417e-3254-400a-9d80-6b4c890e1615,ministero-dell-istruzione,Ministero dell'Istruzione,12,225.0,,,,Good
+2026-09-24,organization,e4946893-e692-4a22-a460-039f524c0f6e,comune-di-chivasso,Comune di Chivasso,1,185.0,,,,Sufficient
 2026-08-02,publisher,"DIREZIONE REGIONALE PROGRAMMAZIONE, BILANCIO, RISORSE UMANE, CULTURA, AGENDA DIGITALE | SERVIZIO: Transizione digitale, sistema informativo regionale, governo dei dati, facilitazione digitale",,"DIREZIONE REGIONALE PROGRAMMAZIONE, BILANCIO, RISORSE UMANE, CULTURA, AGENDA DIGITALE | SERVIZIO: Transizione digitale, sistema informativo regionale, governo dei dati, facilitazione digitale",1,405.0,405,405,405,Excellent
 2026-08-02,publisher,Centro studi Città di Foligno,,Centro studi Città di Foligno,1,405.0,405,405,405,Excellent
 2026-08-02,publisher,"Direzione regionale Sviluppo economico, Agricoltura, Lavoro, Istruzione, Agenda Digitale | Servizio Agricoltura sostenibile e servizi fitosanitari",,"Direzione regionale Sviluppo economico, Agricoltura, Lavoro, Istruzione, Agenda Digitale | Servizio Agricoltura sostenibile e servizi fitosanitari",1,405.0,405,405,405,Excellent
