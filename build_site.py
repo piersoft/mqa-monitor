@@ -32,8 +32,30 @@ from mqa_monitor import MAX_SCORE, bucket, carica_titoli, titolizza
 
 DATA_RE = re.compile(r"_(\d{4}-\d{2}-\d{2})\.csv\.gz$")
 DATA_CSV_RE = re.compile(r"_(\d{4}-\d{2}-\d{2})\.csv$")
-DIMENSIONI = ["findability", "accessibility", "interoperability",
-              "reusability", "contextuality"]
+# A livello dataset il nuovo modello ha tre dimensioni: l'interoperabilita'
+# vive su distribuzioni e servizi di dati, la contestualita' e' stata
+# eliminata. I massimi sono la somma delle ponderazioni di ciascuna.
+DIMENSIONI = ["findability", "accessibility", "reusability"]
+MAX_DIMENSIONE = {"findability": 5.0, "accessibility": 0.75, "reusability": 1.75}
+
+# Massimi del modello precedente, usati solo per riportare le rilevazioni
+# anteriori al 24 settembre 2026 sulla scala attuale.
+MAX_PRECEDENTE = {"scoring": 405.0, "findability": 100.0,
+                  "accessibility": 100.0, "reusability": 75.0}
+
+
+def su_scala_nuova(valore, dimensione="scoring"):
+    """Un punteggio sulla vecchia scala riportato in proporzione su quella nuova.
+
+    Il riconoscimento e' per soglia: nessun valore del modello attuale supera
+    il proprio massimo, quindi tutto cio' che lo eccede viene dal modello
+    precedente. La conversione rende continua la serie, non equivalenti le due
+    misure: i modelli pesano cose diverse.
+    """
+    massimo = MAX_SCORE if dimensione == "scoring" else MAX_DIMENSIONE[dimensione]
+    if valore <= massimo:
+        return valore
+    return round(valore / MAX_PRECEDENTE[dimensione] * massimo, 3)
 
 # Cataloghi regionali federati su dati.gov.it.
 #
@@ -149,7 +171,7 @@ def storico_sparql(outdir, catalog, cartella):
         righe = {}
         with open(path, encoding="utf-8") as f:
             for r in csv.DictReader(f):
-                media = float(r["scoring"])
+                media = su_scala_nuova(float(r["scoring"]))
                 chiave = r["id"].lower()
                 if chiave in righe:  # stesso codice, maiuscole diverse
                     a = righe[chiave]
@@ -159,7 +181,8 @@ def storico_sparql(outdir, catalog, cartella):
                     for k in DIMENSIONI:
                         if r.get(k):
                             a["dim"][k] = round(
-                                (a["dim"].get(k, 0) * na + float(r[k]) * nb) / tot, 2)
+                                (a["dim"].get(k, 0) * na
+                                 + su_scala_nuova(float(r[k]), k) * nb) / tot, 2)
                     a["n_dataset"] = na + nb
                     a["rating"] = bucket(a["media"])
                     if len(r["titolare"]) > len(a["etichetta"]):
@@ -172,7 +195,8 @@ def storico_sparql(outdir, catalog, cartella):
                     "n_dataset": int(r["n_dataset"]),
                     "media": round(media, 2), "mediana": "", "min": "", "max": "",
                     "rating": bucket(media),
-                    "dim": dict((d, float(r[d])) for d in DIMENSIONI if r.get(d)),
+                    "dim": dict((d, su_scala_nuova(float(r[d]), d))
+                                for d in DIMENSIONI if r.get(d)),
                     "n_nomi": int(r["n_nomi"]) if r.get("n_nomi") else 0,
                     "reg": catalogo_regionale(r),
                     "ipa": {

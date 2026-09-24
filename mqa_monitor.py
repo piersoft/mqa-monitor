@@ -31,8 +31,11 @@ from collections import defaultdict
 
 BASE = "https://data.europa.eu/api/hub/search"
 CKAN = "https://www.dati.gov.it/opendata"
-MAX_SCORE = 405
-BUCKETS = [("Excellent", 351), ("Good", 221), ("Sufficient", 121), ("Bad", 0)]
+# Nuovo modello MQA da settembre 2026: punteggio su 7,5 per classe di
+# risorsa, fasce ufficiali sufficiente 0-2,5, buono 2,5-5, eccellente 5-7,5.
+# La fascia "Bad" non esiste piu'.
+MAX_SCORE = 7.5
+BUCKETS = [("Excellent", 5.0), ("Good", 2.5), ("Sufficient", 0)]
 ORG_RE = re.compile(r"/organization/([0-9a-fA-F-]{8,})")
 
 MINUSCOLE = {
@@ -205,8 +208,8 @@ def aggregate(rows, group_by, titoli):
             "media": round(media, 2), "pct": round(media / MAX_SCORE * 100, 2),
             "mediana": vals[n // 2], "min": vals[0], "max": vals[-1],
             "rating": bucket(media),
-            "n_excellent": sum(1 for x in vals if x >= 351),
-            "n_bad": sum(1 for x in vals if x < 121),
+            "n_excellent": sum(1 for x in vals if x >= 5.0),
+            "n_bad": sum(1 for x in vals if x < 2.5),
             "n_publisher": len(pubs[chiave]),
         }
     return agg

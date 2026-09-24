@@ -49,27 +49,27 @@ IPA_URL = ("https://indicepa.gov.it/public-services/opendata-read-service.php"
 GRAFO = "http://data.europa.eu/88u/catalogue/%s"
 ORG_RE = re.compile(r"/organization/([0-9a-fA-F-]{8,})")
 
+# Nuovo modello MQA, in vigore da settembre 2026. La contestualita' e' stata
+# eliminata e l'interoperabilita' non esiste a livello dataset: vive su
+# distribuzioni e servizi di dati.
 METRICHE = {
-    "scoring": "scoring",
+    "finalScore": "scoring",
     "findabilityScoring": "findability",
     "accessibilityScoring": "accessibility",
-    "interoperabilityScoring": "interoperability",
     "reusabilityScoring": "reusability",
-    "contextualityScoring": "contextuality",
 }
-MASSIMI = {"scoring": 405, "findability": 100, "accessibility": 100,
-           "interoperability": 110, "reusability": 75, "contextuality": 20}
+# Somma delle ponderazioni di ciascuna dimensione nella metodologia ufficiale.
+MASSIMI = {"scoring": 7.5, "findability": 5.0,
+           "accessibility": 0.75, "reusability": 1.75}
+FASCE = [(5.0, "Excellent"), (2.5, "Good"), (0.0, "Sufficient")]
 
-FILTRO = """  FILTER(?metrica IN (voc:scoring, voc:findabilityScoring,
-                      voc:accessibilityScoring, voc:interoperabilityScoring,
-                      voc:reusabilityScoring, voc:contextualityScoring))
-  # I dataset gia' passati al nuovo modello MQA tengono il predicato
-  # voc:scoring ma con un valore sulla scala 0-7,5 invece di 0-405, e perdono
-  # interoperabilita' e contestualita'. Mediarli con gli altri abbassa il
-  # punteggio del titolare senza che i suoi metadati siano cambiati, quindi si
-  # rileva sulla sola base omogenea finche' la migrazione non e' matura.
-  FILTER NOT EXISTS { GRAPH ?mgn { ?ds dqv:hasQualityMeasurement ?mn .
-                                   ?mn dqv:isMeasurementOf voc:finalScore } }"""
+# Le misure si prendono dal grafo che contiene finalScore: le tre dimensioni
+# esistono in doppia copia sugli stessi dataset, vecchia su base 100 e nuova
+# sulla scala dei pesi, e senza questo vincolo si sommerebbero.
+FILTRO = """  FILTER(?metrica IN (voc:finalScore, voc:findabilityScoring,
+                      voc:accessibilityScoring, voc:reusabilityScoring))
+  FILTER EXISTS { GRAPH ?mg { ?ds dqv:hasQualityMeasurement ?mf .
+                              ?mf dqv:isMeasurementOf voc:finalScore } }"""
 
 PREFISSI = """PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -349,8 +349,8 @@ def nomi_organizzazioni(outdir, catalog):
 
 # ---------------------------------------------------------------- salvataggio
 
-CAMPI = ["id", "slug", "titolare", "n_dataset", "scoring", "pct", "findability",
-         "accessibility", "interoperability", "reusability", "contextuality",
+CAMPI = ["id", "slug", "titolare", "n_dataset", "scoring", "pct", "rating",
+         "findability", "accessibility", "reusability",
          "n_nomi", "in_ipa", "ipa_nome", "ipa_prov", "ipa_reg", "via"]
 
 
@@ -431,6 +431,7 @@ def completa(righe):
         if "scoring" not in e:
             continue
         e["pct"] = round(e["scoring"] / MASSIMI["scoring"] * 100, 2)
+        e["rating"] = next(n for s, n in FASCE if e["scoring"] >= s)
         e.setdefault("slug", "")
         out.append(e)
     out.sort(key=lambda x: -x["scoring"])
@@ -448,8 +449,8 @@ def salva(righe, outdir, catalog, day, cartella):
             w.writerow(r)
     n = sum(r["n_dataset"] for r in righe)
     media = sum(r["scoring"] * r["n_dataset"] for r in righe) / max(n, 1)
-    print("      %s  (%d voci, %d dataset, media %.1f/405)"
-          % (path, len(righe), n, media))
+    print("      %s  (%d voci, %d dataset, media %.2f/%s)"
+          % (path, len(righe), n, media, MASSIMI["scoring"]))
     return path
 
 
@@ -470,8 +471,7 @@ def main():
         d = interroga(QUERY_MIGRATI % (GRAFO % args.catalog), timeout=120)
         migrati = int(d["results"]["bindings"][0]["migrati"]["value"])
         if migrati:
-            print("[nuovo MQA] %d dataset gia' sulla scala 0-7,5: "
-                  "esclusi dalla media" % migrati)
+            print("[nuovo MQA] %d dataset sulla scala 0-7,5" % migrati)
         # Il conteggio finisce in pagina: senza, il calo dei dataset misurati
         # resterebbe senza spiegazione per chi legge.
         os.makedirs(args.outdir, exist_ok=True)
