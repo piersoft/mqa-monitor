@@ -15,13 +15,13 @@ Livello di aggregazione: **organizzazione (catalogo di origine)**
 | Regione Friuli Venezia Giulia | 684.0 | 654.2 | -29.8 | +0 | Excellent |
 | Comune di Vieste | 715.0 | 690.0 | -25.0 | +0 | Excellent |
 | Ministero del Lavoro | 603.0 | 579.2 | -23.8 | +0 | Excellent |
-| Comune di Grottammare | 705.0 | 685.0 | -20.0 | +0 | Excellent |
 | Comune di Lonate Pozzolo | 675.0 | 655.0 | -20.0 | +0 | Excellent |
+| Comune di Grottammare | 705.0 | 685.0 | -20.0 | +0 | Excellent |
 | Camera di Commercio delle Marche | 714.2 | 695.0 | -19.2 | +0 | Excellent |
 | Comune di Cassano Allo Ionio | 716.7 | 700.0 | -16.7 | +0 | Excellent |
-| Comune di Taggia | 695.0 | 685.0 | -10.0 | +0 | Excellent |
 | Comune di Venafro | 700.0 | 690.0 | -10.0 | +0 | Excellent |
 | Comune di Termoli | 700.0 | 690.0 | -10.0 | +0 | Excellent |
+| Comune di Taggia | 695.0 | 685.0 | -10.0 | +0 | Excellent |
 | Comune di Bisignano | 695.0 | 685.0 | -10.0 | +0 | Excellent |
 | Unione dei Comuni del Trasimeno | 717.9 | 710.7 | -7.1 | +0 | Excellent |
 | Geodati Rndt Hvd | 563.6 | 557.3 | -6.4 | -24 | Excellent |
