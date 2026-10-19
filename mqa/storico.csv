@@ -176997,7 +176997,6 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Struttura Speciale Monitoraggio dell'Attuazione Regionale del PNRR,,Struttura Speciale Monitoraggio dell'Attuazione Regionale del PNRR,2,750.0,750,750,750,Excellent
 2026-10-19,publisher,Adisu,,Adisu,2,750.0,750,750,750,Excellent
 2026-10-19,publisher,Sezione Bilancio e ragioneria,,Sezione Bilancio e ragioneria,1,750.0,750,750,750,Excellent
-2026-10-19,publisher,Unione Montana dei Comuni dell’Appennino Reggiano,,Unione Montana dei Comuni dell’Appennino Reggiano,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Sezione Tutela e Valorizzazione dei Patrimoni Culturali,,Sezione Tutela e Valorizzazione dei Patrimoni Culturali,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,"Sezione Turismo e Internazionalizzazione - Servizio Sviluppo, Infrastrutture, Imprese, Professioni",,"Sezione Turismo e Internazionalizzazione - Servizio Sviluppo, Infrastrutture, Imprese, Professioni",1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Struttura Speciale Cooperazione Euro-Mediterranea,,Struttura Speciale Cooperazione Euro-Mediterranea,1,750.0,750,750,750,Excellent
@@ -177110,10 +177109,6 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Comune di Nimis,,Comune di Nimis,4,750.0,750,750,750,Excellent
 2026-10-19,publisher,Comune di Rive D'arcano,,Comune di Rive D'arcano,6,750.0,750,750,750,Excellent
 2026-10-19,publisher,Comune di Ferla,,Comune di Ferla,3,750.0,750,750,750,Excellent
-2026-10-19,publisher,Ufficio Scuola,,Ufficio Scuola,1,750.0,750,750,750,Excellent
-2026-10-19,publisher,ACI - Automobile Club d'Italia,,ACI - Automobile Club d'Italia,7,750.0,750,750,750,Excellent
-2026-10-19,publisher,Segreteria Generale,,Segreteria Generale,1,750.0,750,750,750,Excellent
-2026-10-19,publisher,Ufficio Segreteria,,Ufficio Segreteria,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Comune di Coseano,,Comune di Coseano,2,750.0,750,750,750,Excellent
 2026-10-19,publisher,Dirigente Dipartimento “Segretariato generale”,,Dirigente Dipartimento “Segretariato generale”,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Polizia locale Merano,,Polizia locale Merano,1,750.0,750,750,750,Excellent
@@ -177168,6 +177163,11 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Dipartimento Tutela della Salute e Servizi Socio-Sanitari,,Dipartimento Tutela della Salute e Servizi Socio-Sanitari,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Agenzia provinciale per i pagamenti,,Agenzia provinciale per i pagamenti,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,"Settore Fonti energetiche, rifiuti, cave e miniere",,"Settore Fonti energetiche, rifiuti, cave e miniere",5,750.0,750,750,750,Excellent
+2026-10-19,publisher,Ufficio Segreteria,,Ufficio Segreteria,1,750.0,750,750,750,Excellent
+2026-10-19,publisher,ACI - Automobile Club d'Italia,,ACI - Automobile Club d'Italia,7,750.0,750,750,750,Excellent
+2026-10-19,publisher,Segreteria Generale,,Segreteria Generale,1,750.0,750,750,750,Excellent
+2026-10-19,publisher,Ufficio Scuola,,Ufficio Scuola,1,750.0,750,750,750,Excellent
+2026-10-19,publisher,Unione Montana dei Comuni dell’Appennino Reggiano,,Unione Montana dei Comuni dell’Appennino Reggiano,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,ARPA Puglia,,ARPA Puglia,2,750.0,750,750,750,Excellent
 2026-10-19,publisher,Direzione Sistemi Informativi e Agenda Digitale,,Direzione Sistemi Informativi e Agenda Digitale,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,"Direzione Mobilità, Ambiente ed Energia - Area Trasporto Pubblico",,"Direzione Mobilità, Ambiente ed Energia - Area Trasporto Pubblico",1,750.0,750,750,750,Excellent
@@ -177188,9 +177188,6 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,MUR - Ufficio di Statistica,,MUR - Ufficio di Statistica,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Agenzia Provinciale per la Protezione dell'Ambiente,,Agenzia Provinciale per la Protezione dell'Ambiente,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Provincia autonoma di Trento - Servizio Trasporti,,Provincia autonoma di Trento - Servizio Trasporti,2,750.0,750,750,750,Excellent
-2026-10-19,publisher,Struttura Speciale Comunicazione Istituzionale,,Struttura Speciale Comunicazione Istituzionale,2,750.0,750,750,750,Excellent
-2026-10-19,publisher,Unione Terra di Mezzo,,Unione Terra di Mezzo,1,750.0,750,750,750,Excellent
-2026-10-19,publisher,ACI - Autmobile Club d'Italia,,ACI - Autmobile Club d'Italia,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Sezione Economia della Cultura,,Sezione Economia della Cultura,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Sezione Demanio e Patrimonio,,Sezione Demanio e Patrimonio,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Sezione Regionale di Vigilanza,,Sezione Regionale di Vigilanza,1,750.0,750,750,750,Excellent
@@ -177203,6 +177200,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Sezione Raccordo al Sistema Regionale - Servizio Contratti e Programmazione Acquisti,,Sezione Raccordo al Sistema Regionale - Servizio Contratti e Programmazione Acquisti,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Sezione Politiche per lo sviluppo delle aree produttive e industriali,,Sezione Politiche per lo sviluppo delle aree produttive e industriali,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,"Dipartimento Turismo, Economia della Cultura e Valorizzazione del Territorio - Sezione Sviluppo Innovazione Reti",,"Dipartimento Turismo, Economia della Cultura e Valorizzazione del Territorio - Sezione Sviluppo Innovazione Reti",2,750.0,750,750,750,Excellent
+2026-10-19,publisher,Struttura Speciale Comunicazione Istituzionale,,Struttura Speciale Comunicazione Istituzionale,2,750.0,750,750,750,Excellent
 2026-10-19,publisher,Sezione Strategie e Governo dell'Offerta,,Sezione Strategie e Governo dell'Offerta,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,"Dipartimento Turismo, Economia della Cultura e Valorizzazione del Territorio - Sezione Tutela e valorizzazione dei patrimoni culturali",,"Dipartimento Turismo, Economia della Cultura e Valorizzazione del Territorio - Sezione Tutela e valorizzazione dei patrimoni culturali",1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Servizio Struttura di Staff Amministrazione e Affari generali,,Servizio Struttura di Staff Amministrazione e Affari generali,1,750.0,750,750,750,Excellent
@@ -177233,7 +177231,6 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,"Comune di Bologna - Settore agenda digitale, Sistemi Informativi Territoriali (SIT)",,"Comune di Bologna - Settore agenda digitale, Sistemi Informativi Territoriali (SIT)",1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Comune di Lizzanello,,Comune di Lizzanello,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Comune di Moruzzo,,Comune di Moruzzo,2,750.0,750,750,750,Excellent
-2026-10-19,publisher,Segreteria Generale della Presidenza,,Segreteria Generale della Presidenza,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Comune di Deliceto - OpenData,,Comune di Deliceto - OpenData,3,750.0,750,750,750,Excellent
 2026-10-19,publisher,Comune di Cellole,,Comune di Cellole,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Comune di Salle,,Comune di Salle,1,750.0,750,750,750,Excellent
@@ -177258,6 +177255,9 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,"Biologisches Labor, Landesagentur für Umwelt, Autonome Provinz Bozen",,"Biologisches Labor, Landesagentur für Umwelt, Autonome Provinz Bozen",1,750.0,750,750,750,Excellent
 2026-10-19,publisher,ufficio lavori pubblii,,ufficio lavori pubblii,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,Agenzia Provinciale Opere Pubbliche - Servizio Opere Civili,,Agenzia Provinciale Opere Pubbliche - Servizio Opere Civili,1,750.0,750,750,750,Excellent
+2026-10-19,publisher,ACI - Autmobile Club d'Italia,,ACI - Autmobile Club d'Italia,1,750.0,750,750,750,Excellent
+2026-10-19,publisher,Unione Terra di Mezzo,,Unione Terra di Mezzo,1,750.0,750,750,750,Excellent
+2026-10-19,publisher,Segreteria Generale della Presidenza,,Segreteria Generale della Presidenza,1,750.0,750,750,750,Excellent
 2026-10-19,publisher,"Unione Italiana delle Camere di Commercio Industria, Artigianato e Agricoltura",,"Unione Italiana delle Camere di Commercio Industria, Artigianato e Agricoltura",475,749.89,750,700,750,Excellent
 2026-10-19,publisher,Comune di Milano - Direzione Innovazione Tecnologica e Digitale,,Comune di Milano - Direzione Innovazione Tecnologica e Digitale,633,749.45,750,700,750,Excellent
 2026-10-19,publisher,Comune di Milano - Unità Analytics e Open Data,,Comune di Milano - Unità Analytics e Open Data,106,749.06,750,700,750,Excellent
@@ -177355,9 +177355,6 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,ASL Taranto,,ASL Taranto,3,733.33,750,700,750,Excellent
 2026-10-19,publisher,5T srl,,5T srl,3,733.33,750,700,750,Excellent
 2026-10-19,publisher,Comune di Andrano,,Comune di Andrano,3,733.33,750,700,750,Excellent
-2026-10-19,publisher,Ufficio Transizione al Digitale,,Ufficio Transizione al Digitale,6,733.33,750,700,750,Excellent
-2026-10-19,publisher,Comune di Medesano,,Comune di Medesano,3,733.33,750,700,750,Excellent
-2026-10-19,publisher,Servizio Sistema Informatico Associato,,Servizio Sistema Informatico Associato,6,733.33,750,700,750,Excellent
 2026-10-19,publisher,Comune di Zollino,,Comune di Zollino,3,733.33,750,700,750,Excellent
 2026-10-19,publisher,Agenzia regionale strategica per lo Sviluppo Ecososteniile del Territorio,,Agenzia regionale strategica per lo Sviluppo Ecososteniile del Territorio,9,733.33,750,700,750,Excellent
 2026-10-19,publisher,Infrastrutture Lombarde,,Infrastrutture Lombarde,3,733.33,750,700,750,Excellent
@@ -177383,6 +177380,9 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Comune di Bologna - Dipartimento Cura e Qualità del Territorio,,Comune di Bologna - Dipartimento Cura e Qualità del Territorio,3,733.33,750,700,750,Excellent
 2026-10-19,publisher,Comune di Arbus,,Comune di Arbus,3,733.33,750,700,750,Excellent
 2026-10-19,publisher,Servizio impianti a fune e piste da sci,,Servizio impianti a fune e piste da sci,3,733.33,750,700,750,Excellent
+2026-10-19,publisher,Servizio Sistema Informatico Associato,,Servizio Sistema Informatico Associato,6,733.33,750,700,750,Excellent
+2026-10-19,publisher,Comune di Medesano,,Comune di Medesano,3,733.33,750,700,750,Excellent
+2026-10-19,publisher,Ufficio Transizione al Digitale,,Ufficio Transizione al Digitale,6,733.33,750,700,750,Excellent
 2026-10-19,publisher,Comune di Mandello del Lario,,Comune di Mandello del Lario,3,733.33,750,700,750,Excellent
 2026-10-19,publisher,GAL Terra dei Messapi,,GAL Terra dei Messapi,3,733.33,750,700,750,Excellent
 2026-10-19,publisher,MIUR,,MIUR,35,732.86,750,650,750,Excellent
@@ -177408,7 +177408,6 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Comune di Brusciano,,Comune di Brusciano,10,730.0,750,700,750,Excellent
 2026-10-19,publisher,Comune di Bussolengo,,Comune di Bussolengo,55,730.0,750,700,750,Excellent
 2026-10-19,publisher,Protezione Civile,,Protezione Civile,5,730.0,750,700,750,Excellent
-2026-10-19,publisher,Unione Montana Appennino Parma Est,,Unione Montana Appennino Parma Est,5,730.0,750,700,750,Excellent
 2026-10-19,publisher,Sistemi Informativi e Transizione Digitale,,Sistemi Informativi e Transizione Digitale,5,730.0,750,700,750,Excellent
 2026-10-19,publisher,Unione Valdera,,Unione Valdera,5,730.0,750,650,750,Excellent
 2026-10-19,publisher,Comune di Vittoria,,Comune di Vittoria,5,730.0,750,700,750,Excellent
@@ -177427,6 +177426,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,"Polizia Municipale e Viabilità, Trasporti e Mobilità, Vigilanza Edilizia",,"Polizia Municipale e Viabilità, Trasporti e Mobilità, Vigilanza Edilizia",5,730.0,750,650,750,Excellent
 2026-10-19,publisher,Provincia di Parma,,Provincia di Parma,5,730.0,750,700,750,Excellent
 2026-10-19,publisher,Comune di Palaia,,Comune di Palaia,5,730.0,750,650,750,Excellent
+2026-10-19,publisher,Unione Montana Appennino Parma Est,,Unione Montana Appennino Parma Est,5,730.0,750,700,750,Excellent
 2026-10-19,publisher,Comune di Gaggiano,,Comune di Gaggiano,52,729.81,750,700,750,Excellent
 2026-10-19,publisher,Comune di Baronissi,,Comune di Baronissi,27,729.63,750,700,750,Excellent
 2026-10-19,publisher,Comune di Rubano,,Comune di Rubano,22,729.55,750,700,750,Excellent
@@ -177437,10 +177437,10 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Comune di Camporotondo di Fiastrone,,Comune di Camporotondo di Fiastrone,45,728.89,750,650,750,Excellent
 2026-10-19,publisher,Comune di Apiro,,Comune di Apiro,59,728.81,750,600,750,Excellent
 2026-10-19,publisher,Comune di Mogliano Veneto,,Comune di Mogliano Veneto,42,728.57,750,700,750,Excellent
-2026-10-19,publisher,COMUNE DI MEDESANO,,COMUNE DI MEDESANO,7,728.57,750,700,750,Excellent
 2026-10-19,publisher,Comune di Casalgrande,,Comune di Casalgrande,28,728.57,750,700,750,Excellent
 2026-10-19,publisher,Unione dei Comuni del Trasimeno,,Unione dei Comuni del Trasimeno,7,728.57,750,700,750,Excellent
 2026-10-19,publisher,ARIDATA,,ARIDATA,7,728.57,750,700,750,Excellent
+2026-10-19,publisher,COMUNE DI MEDESANO,,COMUNE DI MEDESANO,7,728.57,750,700,750,Excellent
 2026-10-19,publisher,Comune di Prato,,Comune di Prato,276,728.44,750,450,750,Excellent
 2026-10-19,publisher,Comune di Altamura,,Comune di Altamura,30,728.33,750,700,750,Excellent
 2026-10-19,publisher,Comune di Treviolo,,Comune di Treviolo,39,728.21,750,700,750,Excellent
@@ -177506,7 +177506,6 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,ced,,ced,2,725.0,750,700,750,Excellent
 2026-10-19,publisher,Automobile Club d'Italia - ACI,,Automobile Club d'Italia - ACI,4,725.0,750,650,750,Excellent
 2026-10-19,publisher,Comune di Bologna - Gestione Bene Pubblico,,Comune di Bologna - Gestione Bene Pubblico,4,725.0,750,650,750,Excellent
-2026-10-19,publisher,Comune di Cento,,Comune di Cento,6,725.0,750,700,750,Excellent
 2026-10-19,publisher,Comune di Alessano,,Comune di Alessano,4,725.0,750,700,750,Excellent
 2026-10-19,publisher,Dipartimento “Segretariato generale”,,Dipartimento “Segretariato generale”,2,725.0,750,700,750,Excellent
 2026-10-19,publisher,MUR - Servizio Statistico,,MUR - Servizio Statistico,22,725.0,750,650,750,Excellent
@@ -177542,8 +177541,8 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,"Direzione regionale Risorse, programmazione, cultura, turismo | SERVIZIO: Valorizzazione risorse culturali, Musei, archivi e biblioteche",,"Direzione regionale Risorse, programmazione, cultura, turismo | SERVIZIO: Valorizzazione risorse culturali, Musei, archivi e biblioteche",2,725.0,750,700,750,Excellent
 2026-10-19,publisher,"Servizio Sistema informativo regionale, infrastrutture digitali",,"Servizio Sistema informativo regionale, infrastrutture digitali",2,725.0,750,700,750,Excellent
 2026-10-19,publisher,COMUNE DI Monte Cavallo,,COMUNE DI Monte Cavallo,28,725.0,750,700,750,Excellent
+2026-10-19,publisher,Comune di Cento,,Comune di Cento,6,725.0,750,700,750,Excellent
 2026-10-19,publisher,"PAB: Rip. 34 Innovazione, Ricerca, Università e Musei",,"PAB: Rip. 34 Innovazione, Ricerca, Università e Musei",1,725.0,725,725,725,Excellent
-2026-10-19,publisher,Ufficio Ragioneria,,Ufficio Ragioneria,2,725.0,750,700,750,Excellent
 2026-10-19,publisher,Team O.D.,,Team O.D.,2,725.0,750,700,750,Excellent
 2026-10-19,publisher,Sezione Organizzazione e Formazione del Personale,,Sezione Organizzazione e Formazione del Personale,2,725.0,750,700,750,Excellent
 2026-10-19,publisher,InnovaPuglia,,InnovaPuglia,2,725.0,750,700,750,Excellent
@@ -177553,6 +177552,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,SUAP UCRF,,SUAP UCRF,2,725.0,750,700,750,Excellent
 2026-10-19,publisher,Biblioteca nazionale centrale di firenze,,Biblioteca nazionale centrale di firenze,1,725.0,725,725,725,Excellent
 2026-10-19,publisher,Ars,,Ars,2,725.0,750,700,750,Excellent
+2026-10-19,publisher,Ufficio Ragioneria,,Ufficio Ragioneria,2,725.0,750,700,750,Excellent
 2026-10-19,publisher,Comune di Albenga,,Comune di Albenga,33,724.24,700,700,750,Excellent
 2026-10-19,publisher,Comune di Cingoli,,Comune di Cingoli,95,724.21,750,600,750,Excellent
 2026-10-19,publisher,Comune di Carovigno,,Comune di Carovigno,58,724.14,700,700,750,Excellent
@@ -177683,12 +177683,11 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Dipartimento Agricoltura Risorse Agroalimentari e Forestazione,,Dipartimento Agricoltura Risorse Agroalimentari e Forestazione,3,716.67,700,700,750,Excellent
 2026-10-19,publisher,RegioneCalabria,,RegioneCalabria,3,716.67,700,700,750,Excellent
 2026-10-19,publisher,Sezione Competitività delle Filiere Agroalimentari,,Sezione Competitività delle Filiere Agroalimentari,3,716.67,700,700,750,Excellent
-2026-10-19,publisher,Sezione Politiche Giovanili,,Sezione Politiche Giovanili,3,716.67,700,700,750,Excellent
 2026-10-19,publisher,comune di martina franca,,comune di martina franca,3,716.67,700,700,750,Excellent
 2026-10-19,publisher,Comune di San Pietro in Lama,,Comune di San Pietro in Lama,3,716.67,700,700,750,Excellent
 2026-10-19,publisher,Comune di Miggiano,,Comune di Miggiano,3,716.67,700,700,750,Excellent
+2026-10-19,publisher,Sezione Politiche Giovanili,,Sezione Politiche Giovanili,3,716.67,700,700,750,Excellent
 2026-10-19,publisher,Agid,,Agid,27,716.67,700,700,750,Excellent
-2026-10-19,publisher,Regione Emilia-Romagna. Settore Patrimonio culturale,,Regione Emilia-Romagna. Settore Patrimonio culturale,3,716.67,750,650,750,Excellent
 2026-10-19,publisher,Provincia Autonoma di Trento - Servizio Supporto alla Direzione Generale e ICT,,Provincia Autonoma di Trento - Servizio Supporto alla Direzione Generale e ICT,3,716.67,700,700,750,Excellent
 2026-10-19,publisher,"Provincia autonoma di Trento - Dipartimento organizzazione, personale e affari generali",,"Provincia autonoma di Trento - Dipartimento organizzazione, personale e affari generali",3,716.67,750,650,750,Excellent
 2026-10-19,publisher,COMUNE DI Serrapetrona,,COMUNE DI Serrapetrona,45,716.67,700,600,750,Excellent
@@ -177713,6 +177712,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Comune di La Spezia,,Comune di La Spezia,6,716.67,700,700,750,Excellent
 2026-10-19,publisher,Unione dei Comuni valdostani Walser,,Unione dei Comuni valdostani Walser,3,716.67,700,700,750,Excellent
 2026-10-19,publisher,Comune di Bologna - Settore Biblioteche Comunali,,Comune di Bologna - Settore Biblioteche Comunali,3,716.67,750,650,750,Excellent
+2026-10-19,publisher,Regione Emilia-Romagna. Settore Patrimonio culturale,,Regione Emilia-Romagna. Settore Patrimonio culturale,3,716.67,750,650,750,Excellent
 2026-10-19,publisher,Comune di Nociglia,,Comune di Nociglia,3,716.67,700,700,750,Excellent
 2026-10-19,publisher,Direzione regionale Salute e Welfare | SERVIZIO: Amministrativo e Risorse umane del SSR,,Direzione regionale Salute e Welfare | SERVIZIO: Amministrativo e Risorse umane del SSR,3,716.67,750,650,750,Excellent
 2026-10-19,publisher,Comune di Carugate,,Comune di Carugate,3,716.67,750,650,750,Excellent
@@ -177759,9 +177759,9 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Comune di Greve in Chianti,,Comune di Greve in Chianti,8,712.5,750,650,750,Excellent
 2026-10-19,publisher,Comune di Giuggianello,,Comune di Giuggianello,4,712.5,700,700,750,Excellent
 2026-10-19,publisher,Aress Puglia,,Aress Puglia,4,712.5,700,700,750,Excellent
-2026-10-19,publisher,Comune di Bertinoro,,Comune di Bertinoro,4,712.5,750,650,750,Excellent
 2026-10-19,publisher,Comune di Potenza Picena,,Comune di Potenza Picena,88,712.5,750,600,750,Excellent
 2026-10-19,publisher,Comune di Coriano,,Comune di Coriano,8,712.5,700,650,750,Excellent
+2026-10-19,publisher,Comune di Bertinoro,,Comune di Bertinoro,4,712.5,750,650,750,Excellent
 2026-10-19,publisher,Comune di Civitavecchia,,Comune di Civitavecchia,10,712.5,700,700,750,Excellent
 2026-10-19,publisher,Servizi Sociali,,Servizi Sociali,4,712.5,700,700,750,Excellent
 2026-10-19,publisher,InnovaPuglia Spa - Servizio Territorio e Ambiente info@sit.puglia.it,,InnovaPuglia Spa - Servizio Territorio e Ambiente info@sit.puglia.it,6,712.5,750,650,750,Excellent
@@ -177795,7 +177795,6 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Comune di Bologna - Sistema Informativo Territoriale (SIT),,Comune di Bologna - Sistema Informativo Territoriale (SIT),23,708.7,750,600,750,Excellent
 2026-10-19,publisher,"Servizio formazione professionale, formazione terziaria e funzioni di sistema",,"Servizio formazione professionale, formazione terziaria e funzioni di sistema",6,708.33,750,650,750,Excellent
 2026-10-19,publisher,"Direzione Contabilità, Economato, Tributi",,"Direzione Contabilità, Economato, Tributi",6,708.33,700,700,750,Excellent
-2026-10-19,publisher,Ufficio Segreteria Generale,,Ufficio Segreteria Generale,6,708.33,750,600,750,Excellent
 2026-10-19,publisher,DO,,DO,3,708.33,700,700,725,Excellent
 2026-10-19,publisher,Comune di Bologna - Settore mobilità sostenibile e Infrastrutture,,Comune di Bologna - Settore mobilità sostenibile e Infrastrutture,84,708.33,750,600,750,Excellent
 2026-10-19,publisher,Provincia Autonoma di Trento - Servizio Gestione Strade,,Provincia Autonoma di Trento - Servizio Gestione Strade,6,708.33,700,650,750,Excellent
@@ -177803,6 +177802,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Comune di Diano Marina,,Comune di Diano Marina,6,708.33,700,700,750,Excellent
 2026-10-19,publisher,Comune di Sternatia,,Comune di Sternatia,3,708.33,700,700,725,Excellent
 2026-10-19,publisher,Arpa Puglia - Direzione Scientifica - Centro Regionale Mare,,Arpa Puglia - Direzione Scientifica - Centro Regionale Mare,9,708.33,725,650,750,Excellent
+2026-10-19,publisher,Ufficio Segreteria Generale,,Ufficio Segreteria Generale,6,708.33,750,600,750,Excellent
 2026-10-19,publisher,Comune di Genova,,Comune di Genova,144,708.16,725,550,750,Excellent
 2026-10-19,publisher,Comune di Bari,,Comune di Bari,171,707.31,700,600,750,Excellent
 2026-10-19,publisher,ARET Ufficio Innovazione,,ARET Ufficio Innovazione,14,707.14,700,700,750,Excellent
@@ -177812,12 +177812,12 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Aspal - Agenzia Sarda per le Politiche Attive del Lavoro,,Aspal - Agenzia Sarda per le Politiche Attive del Lavoro,15,706.67,700,700,750,Excellent
 2026-10-19,publisher,Comune di Nembro,,Comune di Nembro,23,706.52,700,700,750,Excellent
 2026-10-19,publisher,CREA - Consiglio per la ricerca in agricoltura e l'analisi dell'economia agraria,,CREA - Consiglio per la ricerca in agricoltura e l'analisi dell'economia agraria,8,706.25,700,650,750,Excellent
-2026-10-19,publisher,Ufficio Urbanistica,,Ufficio Urbanistica,8,706.25,700,650,750,Excellent
 2026-10-19,publisher,Comune Lecce,,Comune Lecce,8,706.25,700,650,750,Excellent
 2026-10-19,publisher,Asst Spedali Civili di Brescia,,Asst Spedali Civili di Brescia,8,706.25,700,700,750,Excellent
 2026-10-19,publisher,Comune di Santo Stefano di Magra,,Comune di Santo Stefano di Magra,8,706.25,700,650,750,Excellent
 2026-10-19,publisher,Comune di Grottammare,,Comune di Grottammare,16,706.25,700,700,750,Excellent
 2026-10-19,publisher,Servizi elettorali Comune di Narni,,Servizi elettorali Comune di Narni,8,706.25,725,650,750,Excellent
+2026-10-19,publisher,Ufficio Urbanistica,,Ufficio Urbanistica,8,706.25,700,650,750,Excellent
 2026-10-19,publisher,Comune di Sulmona,,Comune di Sulmona,17,705.88,700,700,750,Excellent
 2026-10-19,publisher,Comune di Magliano in Toscana,,Comune di Magliano in Toscana,9,705.56,700,650,750,Excellent
 2026-10-19,publisher,Provincia di Catanzaro,,Provincia di Catanzaro,9,705.56,700,650,750,Excellent
@@ -177888,16 +177888,14 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Sezione Programmazione Acquisti servizio.affarigenerali@regione.puglia.it,,Sezione Programmazione Acquisti servizio.affarigenerali@regione.puglia.it,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,"Sezione Sicurezza del Cittadino, politiche per le migrazioni ed Antimafia sociale",,"Sezione Sicurezza del Cittadino, politiche per le migrazioni ed Antimafia sociale",1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Comune di Santa Cesarea Terme,,Comune di Santa Cesarea Terme,4,700.0,700,700,700,Excellent
-2026-10-19,publisher,Autorità idrica Pugliese (AIP),,Autorità idrica Pugliese (AIP),13,700.0,700,700,700,Excellent
-2026-10-19,publisher,Sezione Trasformazione Digitale,,Sezione Trasformazione Digitale,2,700.0,700,700,700,Excellent
 2026-10-19,publisher,Comune di Candela,,Comune di Candela,4,700.0,750,650,750,Excellent
 2026-10-19,publisher,Agenzia Regionale Strategica per la Salute ed il Sociale,,Agenzia Regionale Strategica per la Salute ed il Sociale,4,700.0,700,700,700,Excellent
 2026-10-19,publisher,Sezione Tutela e valorizzazione del paesaggio,,Sezione Tutela e valorizzazione del paesaggio,1,700.0,700,700,700,Excellent
-2026-10-19,publisher,Area Innovazione Tecnologica e Trasformazione Digitale,,Area Innovazione Tecnologica e Trasformazione Digitale,8,700.0,700,700,700,Excellent
 2026-10-19,publisher,Città di Trani,,Città di Trani,5,700.0,700,700,700,Excellent
 2026-10-19,publisher,Servizio Programmazione Acquisti,,Servizio Programmazione Acquisti,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Area Innovazione di Sistema e Qualità,,Area Innovazione di Sistema e Qualità,5,700.0,700,700,700,Excellent
 2026-10-19,publisher,Sezione Ricerca industriale e Innovazione,,Sezione Ricerca industriale e Innovazione,2,700.0,700,700,700,Excellent
+2026-10-19,publisher,Autorità idrica Pugliese (AIP),,Autorità idrica Pugliese (AIP),13,700.0,700,700,700,Excellent
 2026-10-19,publisher,Area di Direzione Amministrativa,,Area di Direzione Amministrativa,6,700.0,700,700,700,Excellent
 2026-10-19,publisher,Ufficio Sistemi Informativi e Flussi Informativi,,Ufficio Sistemi Informativi e Flussi Informativi,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Osservatorio Turismo,,Osservatorio Turismo,5,700.0,700,700,700,Excellent
@@ -177922,9 +177920,6 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,SEZIONE INCLUSIONE SOCIALE ATTIVA,,SEZIONE INCLUSIONE SOCIALE ATTIVA,5,700.0,700,700,700,Excellent
 2026-10-19,publisher,Affari generali,,Affari generali,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,SEZIONE INCLUSIONE SOCIALE ATTIVA e SEZIONE ISTRUZIONE E UNIVERSITA',,SEZIONE INCLUSIONE SOCIALE ATTIVA e SEZIONE ISTRUZIONE E UNIVERSITA',1,700.0,700,700,700,Excellent
-2026-10-19,publisher,Area Valutazione e Ricerca – Servizio Valutazione e Governo dell'Innovazione,,Area Valutazione e Ricerca – Servizio Valutazione e Governo dell'Innovazione,1,700.0,700,700,700,Excellent
-2026-10-19,publisher,APT Servizi,,APT Servizi,2,700.0,700,700,700,Excellent
-2026-10-19,publisher,Unione dei Comuni Valli Taro e Ceno,,Unione dei Comuni Valli Taro e Ceno,3,700.0,700,700,700,Excellent
 2026-10-19,publisher,TPER - Trasporto passeggeri Emilia-Romagna,,TPER - Trasporto passeggeri Emilia-Romagna,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Dipartimento Economia e Finanze,,Dipartimento Economia e Finanze,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Unità di missione strategica semplificazione e digitalizzazione,,Unità di missione strategica semplificazione e digitalizzazione,1,700.0,700,700,700,Excellent
@@ -177969,7 +177964,6 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Comune di Osimo,,Comune di Osimo,43,700.0,700,700,700,Excellent
 2026-10-19,publisher,COMUNE DI Offida,,COMUNE DI Offida,4,700.0,700,700,700,Excellent
 2026-10-19,publisher,COMUNE DI Ostra,,COMUNE DI Ostra,48,700.0,700,700,700,Excellent
-2026-10-19,publisher,A.FABBRI,,A.FABBRI,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,COMUNE DI Ostra Vetere,,COMUNE DI Ostra Vetere,45,700.0,700,700,700,Excellent
 2026-10-19,publisher,COMUNE DI Pergola,,COMUNE DI Pergola,48,700.0,700,700,700,Excellent
 2026-10-19,publisher,COMUNE DI Pedaso,,COMUNE DI Pedaso,3,700.0,700,700,700,Excellent
@@ -178091,6 +178085,12 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,COMUNE di Montemarciano,,COMUNE di Montemarciano,29,700.0,700,700,700,Excellent
 2026-10-19,publisher,COMUNE DI Mondavio,,COMUNE DI Mondavio,32,700.0,700,700,700,Excellent
 2026-10-19,publisher,COMUNE DI Monte Urano,,COMUNE DI Monte Urano,10,700.0,700,700,700,Excellent
+2026-10-19,publisher,Area Innovazione Tecnologica e Trasformazione Digitale,,Area Innovazione Tecnologica e Trasformazione Digitale,8,700.0,700,700,700,Excellent
+2026-10-19,publisher,A.FABBRI,,A.FABBRI,1,700.0,700,700,700,Excellent
+2026-10-19,publisher,Unione dei Comuni Valli Taro e Ceno,,Unione dei Comuni Valli Taro e Ceno,3,700.0,700,700,700,Excellent
+2026-10-19,publisher,APT Servizi,,APT Servizi,2,700.0,700,700,700,Excellent
+2026-10-19,publisher,Sezione Trasformazione Digitale,,Sezione Trasformazione Digitale,2,700.0,700,700,700,Excellent
+2026-10-19,publisher,Area Valutazione e Ricerca – Servizio Valutazione e Governo dell'Innovazione,,Area Valutazione e Ricerca – Servizio Valutazione e Governo dell'Innovazione,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Comune di Castions Di Strada,,Comune di Castions Di Strada,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,"Autonome Provinz Bozen. Abteilung Innovation, Forschung, Universität und Museen",,"Autonome Provinz Bozen. Abteilung Innovation, Forschung, Universität und Museen",1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Servizio Politiche di Sviluppo Rurale - Provincia Autonoma di Trento,,Servizio Politiche di Sviluppo Rurale - Provincia Autonoma di Trento,3,700.0,700,700,700,Excellent
@@ -178108,10 +178108,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Ufficio Previsioni e Pianificazione,,Ufficio Previsioni e Pianificazione,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Servizio Turismo e Sport,,Servizio Turismo e Sport,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Provincia Autonoma di Trento - Servizio Geologico,,Provincia Autonoma di Trento - Servizio Geologico,1,700.0,700,700,700,Excellent
-2026-10-19,publisher,Distr_nome,,Distr_nome,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Area Direzione Amministrativa - Servizio PMO e Internazionalizzazione,,Area Direzione Amministrativa - Servizio PMO e Internazionalizzazione,1,700.0,700,700,700,Excellent
-2026-10-19,publisher,Area E-Health,,Area E-Health,1,700.0,700,700,700,Excellent
-2026-10-19,publisher,Centro Regionale HTA - Area Valutazione e Ricerca,,Centro Regionale HTA - Area Valutazione e Ricerca,2,700.0,700,700,700,Excellent
 2026-10-19,publisher,Sezione Infrastrutture per la Mobilità,,Sezione Infrastrutture per la Mobilità,2,700.0,750,650,750,Excellent
 2026-10-19,publisher,Servizio Parchi e Tutela della Biodiversità,,Servizio Parchi e Tutela della Biodiversità,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Sezione Statistica,,Sezione Statistica,1,700.0,700,700,700,Excellent
@@ -178123,6 +178120,7 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,"Struttura di Progetto Attuazione della Politica Europea per gli Affari Marittimi, la Pesca e l'Acquacoltura",,"Struttura di Progetto Attuazione della Politica Europea per gli Affari Marittimi, la Pesca e l'Acquacoltura",2,700.0,700,700,700,Excellent
 2026-10-19,publisher,RegionePuglia,,RegionePuglia,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Area Direzione Amministrativa - Servizio Formazione e Innovazione dei Saperi,,Area Direzione Amministrativa - Servizio Formazione e Innovazione dei Saperi,1,700.0,700,700,700,Excellent
+2026-10-19,publisher,Centro Regionale HTA - Area Valutazione e Ricerca,,Centro Regionale HTA - Area Valutazione e Ricerca,2,700.0,700,700,700,Excellent
 2026-10-19,publisher,DIREZIONE AMMINISTRATIVA DEL GABINETTO - RTD,,DIREZIONE AMMINISTRATIVA DEL GABINETTO - RTD,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,DG 50 08,,DG 50 08,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,COMUNE DI Roccafluvione,,COMUNE DI Roccafluvione,4,700.0,700,700,700,Excellent
@@ -178131,7 +178129,6 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,"Direzione regionale Sviluppo economico, Agricoltura, Lavoro, Istruzione, Agenda Digitale | SEZIONE: Servizi alle imprese agricole",,"Direzione regionale Sviluppo economico, Agricoltura, Lavoro, Istruzione, Agenda Digitale | SEZIONE: Servizi alle imprese agricole",1,700.0,700,700,700,Excellent
 2026-10-19,publisher,"Direzione regionale Sviluppo economico, Agricoltura, Lavoro, Istruzione, Agenda Digitale",,"Direzione regionale Sviluppo economico, Agricoltura, Lavoro, Istruzione, Agenda Digitale",1,700.0,700,700,700,Excellent
 2026-10-19,publisher,"Direzione regionale Governo del territorio, ambiente e protezione civile | Servizio: Opere e lavori pubblici, osservatorio contratti pubblici, ricostruzione post sisma",,"Direzione regionale Governo del territorio, ambiente e protezione civile | Servizio: Opere e lavori pubblici, osservatorio contratti pubblici, ricostruzione post sisma",1,700.0,700,700,700,Excellent
-2026-10-19,publisher,Lepida Scpa,,Lepida Scpa,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Unione Comuni Valdaso,,Unione Comuni Valdaso,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Unione dei Comuni Vallata del Tronto,,Unione dei Comuni Vallata del Tronto,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,"Direzione regionale Risorse, programmazione, cultura, turismo | Servizio Affari europei, programmazione, indirizzo, monitoraggio e controllo FESR",,"Direzione regionale Risorse, programmazione, cultura, turismo | Servizio Affari europei, programmazione, indirizzo, monitoraggio e controllo FESR",1,700.0,700,700,700,Excellent
@@ -178189,6 +178186,9 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Agenzia provinciale per le risorse idriche e l'Energia,,Agenzia provinciale per le risorse idriche e l'Energia,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,FCT Holding SpA,,FCT Holding SpA,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,COMUNE DI Montappone,,COMUNE DI Montappone,4,700.0,700,700,700,Excellent
+2026-10-19,publisher,Distr_nome,,Distr_nome,1,700.0,700,700,700,Excellent
+2026-10-19,publisher,Lepida Scpa,,Lepida Scpa,1,700.0,700,700,700,Excellent
+2026-10-19,publisher,Area E-Health,,Area E-Health,1,700.0,700,700,700,Excellent
 2026-10-19,publisher,Regione Campania,,Regione Campania,340,699.71,700,650,750,Excellent
 2026-10-19,publisher,Provincia di Novara,,Provincia di Novara,44,698.86,700,650,700,Excellent
 2026-10-19,publisher,Regione Puglia,,Regione Puglia,62,698.39,700,550,750,Excellent
@@ -178208,8 +178208,8 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,COMUNE DI Porto Sant'Elpidio,,COMUNE DI Porto Sant'Elpidio,9,694.44,700,650,700,Excellent
 2026-10-19,publisher,COMUNE DI Montegiorgio,,COMUNE DI Montegiorgio,9,694.44,700,650,700,Excellent
 2026-10-19,publisher,Comunità Valsugana e Tesino,,Comunità Valsugana e Tesino,26,694.23,700,650,750,Excellent
-2026-10-19,publisher,Unione dei Comuni della Bassa Romagna,,Unione dei Comuni della Bassa Romagna,104,694.23,700,550,700,Excellent
 2026-10-19,publisher,Agenzia Regionale per la Protezione dell'Ambiente della Sardegna,,Agenzia Regionale per la Protezione dell'Ambiente della Sardegna,13,694.23,675,675,750,Excellent
+2026-10-19,publisher,Unione dei Comuni della Bassa Romagna,,Unione dei Comuni della Bassa Romagna,104,694.23,700,550,700,Excellent
 2026-10-19,publisher,Unione Montana Dei Monti Azzurri,,Unione Montana Dei Monti Azzurri,34,694.12,700,600,700,Excellent
 2026-10-19,publisher,Servizio Gestione Strade,,Servizio Gestione Strade,8,693.75,700,600,750,Excellent
 2026-10-19,publisher,COMUNE DI San Benedetto del Tronto,,COMUNE DI San Benedetto del Tronto,8,693.75,700,650,700,Excellent
@@ -178246,8 +178246,8 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Comune di Buti,,Comune di Buti,5,690.0,650,650,750,Excellent
 2026-10-19,publisher,Comune di Bientina,,Comune di Bientina,5,690.0,650,650,750,Excellent
 2026-10-19,publisher,Azienda Sanitaria Locale VCO,,Azienda Sanitaria Locale VCO,10,690.0,700,650,700,Excellent
-2026-10-19,publisher,COMUNE DI Grottazzolina,,COMUNE DI Grottazzolina,5,690.0,700,650,700,Excellent
 2026-10-19,publisher,Consiglio Regionale della Campania,,Consiglio Regionale della Campania,25,690.0,700,650,750,Excellent
+2026-10-19,publisher,COMUNE DI Grottazzolina,,COMUNE DI Grottazzolina,5,690.0,700,650,700,Excellent
 2026-10-19,publisher,Comune di Montemurlo,,Comune di Montemurlo,48,689.58,675,525,750,Excellent
 2026-10-19,publisher,Ufficio Transizione Digitale,,Ufficio Transizione Digitale,14,689.29,700,650,750,Excellent
 2026-10-19,publisher,COMUNE DI Sant'Angelo in Vado,,COMUNE DI Sant'Angelo in Vado,14,689.29,700,650,700,Excellent
@@ -178415,17 +178415,15 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Trafair,,Trafair,6,650.0,750,550,750,Excellent
 2026-10-19,publisher,Sezione Coordinamento dei Servizi Territoriali,,Sezione Coordinamento dei Servizi Territoriali,1,650.0,650,650,650,Excellent
 2026-10-19,publisher,Dipartimento Personale e Organizzazione - Sezione Personale,,Dipartimento Personale e Organizzazione - Sezione Personale,1,650.0,650,650,650,Excellent
-2026-10-19,publisher,Area Valutazione e Ricerca – Servizio Ricerca Sanitaria e Sperimentazioni Gestionali,,Area Valutazione e Ricerca – Servizio Ricerca Sanitaria e Sperimentazioni Gestionali,2,650.0,700,600,700,Excellent
 2026-10-19,publisher,"Dipartimento Agricoltura, sviluppo rurale e Ambientale - Sezione Attuazione dei Programmi Comunitari per l'agricoltura",,"Dipartimento Agricoltura, sviluppo rurale e Ambientale - Sezione Attuazione dei Programmi Comunitari per l'agricoltura",1,650.0,650,650,650,Excellent
-2026-10-19,publisher,Settore Tutela dell’ambiente ed economia circolare - Regione Emilia-Romagna,,Settore Tutela dell’ambiente ed economia circolare - Regione Emilia-Romagna,5,650.0,700,550,750,Excellent
 2026-10-19,publisher,Provincia Autonoma di Bolzano: Ripartizione 26. Protezione antincendi e civile,,Provincia Autonoma di Bolzano: Ripartizione 26. Protezione antincendi e civile,3,650.0,650,650,650,Excellent
 2026-10-19,publisher,"Dipartimento organizzazione, personale e affari generali",,"Dipartimento organizzazione, personale e affari generali",1,650.0,650,650,650,Excellent
 2026-10-19,publisher,"Autonome Provinz Bozen - Abteilung 28 - Natur, Landschaft und Raumentwicklung - Landeskartographie und Koordination der Geodaten",,"Autonome Provinz Bozen - Abteilung 28 - Natur, Landschaft und Raumentwicklung - Landeskartographie und Koordination der Geodaten",2,650.0,700,600,700,Excellent
 2026-10-19,publisher,Cartografia e Informazioni Territoriali,,Cartografia e Informazioni Territoriali,1,650.0,650,650,650,Excellent
 2026-10-19,publisher,Comune di Arcevia,,Comune di Arcevia,2,650.0,700,600,700,Excellent
-2026-10-19,publisher,da compilare,,da compilare,3,650.0,700,550,700,Excellent
 2026-10-19,publisher,Segreteria generale,,Segreteria generale,1,650.0,650,650,650,Excellent
 2026-10-19,publisher,anticorruzione,,anticorruzione,1,650.0,650,650,650,Excellent
+2026-10-19,publisher,Area Valutazione e Ricerca – Servizio Ricerca Sanitaria e Sperimentazioni Gestionali,,Area Valutazione e Ricerca – Servizio Ricerca Sanitaria e Sperimentazioni Gestionali,2,650.0,700,600,700,Excellent
 2026-10-19,publisher,"Direzione Risorse, Programmazione, Cultura e Turismo | Servizio Bilancio, finanza",,"Direzione Risorse, Programmazione, Cultura e Turismo | Servizio Bilancio, finanza",2,650.0,650,650,650,Excellent
 2026-10-19,publisher,Regione Siciliana - Assessorato Territorio e Ambiente - Area 2 Interdipartimentale,,Regione Siciliana - Assessorato Territorio e Ambiente - Area 2 Interdipartimentale,1,650.0,650,650,650,Excellent
 2026-10-19,publisher,Sezione Demanio e Patrimonio serviziodemaniopatrimonio.bari@pec.rupar.puglia.it,,Sezione Demanio e Patrimonio serviziodemaniopatrimonio.bari@pec.rupar.puglia.it,3,650.0,700,550,700,Excellent
@@ -178445,11 +178443,11 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,"Dipartimento ""Turismo, Marketing territoriale e Mobilità"" - Settore ""Osservatorio sul turismo e della mobilità""",,"Dipartimento ""Turismo, Marketing territoriale e Mobilità"" - Settore ""Osservatorio sul turismo e della mobilità""",1,650.0,650,650,650,Excellent
 2026-10-19,publisher,Comune di Acqualagna,,Comune di Acqualagna,9,650.0,650,600,700,Excellent
 2026-10-19,publisher,Comune di Castelbellino,,Comune di Castelbellino,6,650.0,700,550,700,Excellent
+2026-10-19,publisher,da compilare,,da compilare,3,650.0,700,550,700,Excellent
+2026-10-19,publisher,Settore Tutela dell’ambiente ed economia circolare - Regione Emilia-Romagna,,Settore Tutela dell’ambiente ed economia circolare - Regione Emilia-Romagna,5,650.0,700,550,750,Excellent
 2026-10-19,publisher,Dienststelle Informatik und Innovation,,Dienststelle Informatik und Innovation,1,650.0,650,650,650,Excellent
 2026-10-19,publisher,Comune di Merano,,Comune di Merano,2,650.0,700,600,700,Excellent
 2026-10-19,publisher,Servizio Politiche Sociali,,Servizio Politiche Sociali,1,650.0,650,650,650,Excellent
-2026-10-19,publisher,Arti Puglia,,Arti Puglia,1,650.0,650,650,650,Excellent
-2026-10-19,publisher,CED,,CED,1,650.0,650,650,650,Excellent
 2026-10-19,publisher,Sezione Promozione della salute e del benessere (servizio.sportpertutti@regione.puglia.it),,Sezione Promozione della salute e del benessere (servizio.sportpertutti@regione.puglia.it),3,650.0,700,550,700,Excellent
 2026-10-19,publisher,"Direzione regionale Risorse, programmazione, cultura, turismo | SERVIZIO: Turismo, Sport e Film Commission.",,"Direzione regionale Risorse, programmazione, cultura, turismo | SERVIZIO: Turismo, Sport e Film Commission.",1,650.0,650,650,650,Excellent
 2026-10-19,publisher,"Direzione regionale Sviluppo economico, Agricoltura, Lavoro, Istruzione, Agenda Digitale | Servizio Sviluppo delle imprese agricole e delle filiere agroalimentari - Sezione Interventi per lo sviluppo della diversificazione delle attività agricole",,"Direzione regionale Sviluppo economico, Agricoltura, Lavoro, Istruzione, Agenda Digitale | Servizio Sviluppo delle imprese agricole e delle filiere agroalimentari - Sezione Interventi per lo sviluppo della diversificazione delle attività agricole",2,650.0,700,600,700,Excellent
@@ -178465,6 +178463,8 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Dipartimento Sviluppo economico,,Dipartimento Sviluppo economico,1,650.0,650,650,650,Excellent
 2026-10-19,publisher,Roma Servizi per la Mobilità,,Roma Servizi per la Mobilità,1,650.0,650,650,650,Excellent
 2026-10-19,publisher,Comune di Monsano,,Comune di Monsano,3,650.0,700,550,700,Excellent
+2026-10-19,publisher,CED,,CED,1,650.0,650,650,650,Excellent
+2026-10-19,publisher,Arti Puglia,,Arti Puglia,1,650.0,650,650,650,Excellent
 2026-10-19,publisher,Comune di Castelfranco Piandiscò,,Comune di Castelfranco Piandiscò,131,648.85,650,525,750,Excellent
 2026-10-19,publisher,COMUNE DI Piobbico,,COMUNE DI Piobbico,10,647.5,650,525,700,Excellent
 2026-10-19,publisher,Comune di Pescaglia,,Comune di Pescaglia,16,646.88,650,525,750,Excellent
@@ -178528,13 +178528,13 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Servizi finanziari Comune di Narni,,Servizi finanziari Comune di Narni,1,600.0,600,600,600,Excellent
 2026-10-19,publisher,Comune di Cerreto D'Esi,,Comune di Cerreto D'Esi,3,600.0,600,500,700,Excellent
 2026-10-19,publisher,Provincia autonoma di Trento - Servizio Foreste e fauna,,Provincia autonoma di Trento - Servizio Foreste e fauna,1,600.0,600,600,600,Excellent
-2026-10-19,publisher,Città metropolitana di Bologna,,Città metropolitana di Bologna,1,600.0,600,600,600,Excellent
 2026-10-19,publisher,Servizio Protezione Civile,,Servizio Protezione Civile,1,600.0,600,600,600,Excellent
 2026-10-19,publisher,"Dipartimento - Politiche sociali, Lavoro, Istruzione e Formazione",,"Dipartimento - Politiche sociali, Lavoro, Istruzione e Formazione",1,600.0,600,600,600,Excellent
 2026-10-19,publisher,Provincia autonoma di Trento - Agenzia per la depurazione,,Provincia autonoma di Trento - Agenzia per la depurazione,1,600.0,600,600,600,Excellent
 2026-10-19,publisher,Assessorato Regionale del Territorio e dell'Ambiente - Dipartimento Regionale Ambiente - Servizio 2 - Pianificazione e Programmazione Ambientale,,Assessorato Regionale del Territorio e dell'Ambiente - Dipartimento Regionale Ambiente - Servizio 2 - Pianificazione e Programmazione Ambientale,1,600.0,600,600,600,Excellent
 2026-10-19,publisher,"Servizio Turismo, Sport e Film Commission  - Direzione regionale Risorse, programmazione, cultura, turismo",,"Servizio Turismo, Sport e Film Commission  - Direzione regionale Risorse, programmazione, cultura, turismo",1,600.0,600,600,600,Excellent
 2026-10-19,publisher,"Provincia autonoma di Bolzano, Ripartizione 23. Sanità",,"Provincia autonoma di Bolzano, Ripartizione 23. Sanità",1,600.0,600,600,600,Excellent
+2026-10-19,publisher,Città metropolitana di Bologna,,Città metropolitana di Bologna,1,600.0,600,600,600,Excellent
 2026-10-19,publisher,"Ministero dell'Istruzione, dell'Universita' e della Ricerca",,"Ministero dell'Istruzione, dell'Universita' e della Ricerca",105,599.52,650,350,700,Excellent
 2026-10-19,publisher,Unione Montana esino frasassi,,Unione Montana esino frasassi,6,591.67,600,500,700,Excellent
 2026-10-19,publisher,COMUNE DI Gabicce Mare,,COMUNE DI Gabicce Mare,16,587.5,550,550,700,Excellent
@@ -178545,17 +178545,17 @@ data,livello,chiave,slug,etichetta,n_dataset,media,mediana,min,max,rating
 2026-10-19,publisher,Provincia Autonoma di Trento - Servizio Gestioni patrimoniali e logistica,,Provincia Autonoma di Trento - Servizio Gestioni patrimoniali e logistica,1,550.0,550,550,550,Excellent
 2026-10-19,publisher,AMIAT,,AMIAT,5,550.0,550,550,550,Excellent
 2026-10-19,publisher,Provincia Autonoma di Bolzano: Ufficio Statistiche (ASTAT),,Provincia Autonoma di Bolzano: Ufficio Statistiche (ASTAT),1,550.0,550,550,550,Excellent
-2026-10-19,publisher,"Servizio Sistemi Informativi, Digitalizzazione, Agenda Digitale e Città Intelligente",,"Servizio Sistemi Informativi, Digitalizzazione, Agenda Digitale e Città Intelligente",3,550.0,500,450,700,Excellent
 2026-10-19,publisher,Sezione Personale e Organizzazione servizio.personale@regione.puglia.it,,Sezione Personale e Organizzazione servizio.personale@regione.puglia.it,1,550.0,550,550,550,Excellent
 2026-10-19,publisher,Area 2 Interdipartimentale S.I.T.R. - A.R.T.A. D.R.U. D.R.A. - Regione Siciliana,,Area 2 Interdipartimentale S.I.T.R. - A.R.T.A. D.R.U. D.R.A. - Regione Siciliana,1,550.0,550,550,550,Excellent
 2026-10-19,publisher,ATO Toscana Sud,,ATO Toscana Sud,2,550.0,550,550,550,Excellent
 2026-10-19,publisher,PAB: Rip. 32 Foreste,,PAB: Rip. 32 Foreste,1,550.0,550,550,550,Excellent
 2026-10-19,publisher,Comune di Merano  - Ufficio urbanistica ed edilizia privata,,Comune di Merano  - Ufficio urbanistica ed edilizia privata,2,550.0,550,550,550,Excellent
+2026-10-19,publisher,"Servizio Sistemi Informativi, Digitalizzazione, Agenda Digitale e Città Intelligente",,"Servizio Sistemi Informativi, Digitalizzazione, Agenda Digitale e Città Intelligente",3,550.0,500,450,700,Excellent
 2026-10-19,publisher,Sezione Bilancio e Ragioneria servizio.bilancio.ragioneria@pec.rupar.puglia.it,,Sezione Bilancio e Ragioneria servizio.bilancio.ragioneria@pec.rupar.puglia.it,1,550.0,550,550,550,Excellent
 2026-10-19,publisher,PAB: Ripartizione 23. Sanità,,PAB: Ripartizione 23. Sanità,1,550.0,550,550,550,Excellent
 2026-10-19,publisher,Sistema Informativo Forestale del Comando del Corpo Forestale,,Sistema Informativo Forestale del Comando del Corpo Forestale,1,550.0,550,550,550,Excellent
-2026-10-19,publisher,Comune di Ferrara,,Comune di Ferrara,2,500.0,550,450,550,Excellent
 2026-10-19,publisher,U.F.E. Dipartimento Acqua e Rifiuti,,U.F.E. Dipartimento Acqua e Rifiuti,1,500.0,500,500,500,Excellent
+2026-10-19,publisher,Comune di Ferrara,,Comune di Ferrara,2,500.0,550,450,550,Excellent
 2026-10-19,publisher,Ufficio Organizzazione,,Ufficio Organizzazione,1,500.0,500,500,500,Excellent
 2026-10-19,publisher,Agenzia Nazionale per la Meteorologia e Climatologia - ItaliaMeteo,,Agenzia Nazionale per la Meteorologia e Climatologia - ItaliaMeteo,8,439.38,385,365,700,Excellent
 2026-10-19,publisher,Istituto Geografico Militare,,Istituto Geografico Militare,1,375.0,375,375,375,Excellent
