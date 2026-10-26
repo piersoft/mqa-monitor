@@ -57,9 +57,9 @@ Livello di aggregazione: **organizzazione (catalogo di origine)**
 | Giustizia Amministrativa | 701.6 | 705.3 | +3.7 | +0 | Excellent |
 | Agenzia Laore Sardegna | 679.2 | 682.7 | +3.5 | +1 | Excellent |
 | Regione Calabria | 722.3 | 725.2 | +2.9 | +0 | Excellent |
-| Comune di Isernia | 725.0 | 727.8 | +2.8 | +1 | Excellent |
-| Universita degli Studi del Piemonte Orientale | 733.3 | 736.1 | +2.8 | +0 | Excellent |
 | Unione Municipia | 675.0 | 677.8 | +2.8 | +1 | Excellent |
+| Universita degli Studi del Piemonte Orientale | 733.3 | 736.1 | +2.8 | +0 | Excellent |
+| Comune di Isernia | 725.0 | 727.8 | +2.8 | +1 | Excellent |
 | Regione Toscana | 650.2 | 652.9 | +2.7 | +0 | Excellent |
 | Comune di Alba Adriatica | 687.5 | 690.0 | +2.5 | +1 | Excellent |
 | Universita di Torino | 714.3 | 716.7 | +2.4 | +1 | Excellent |
@@ -86,9 +86,9 @@ Livello di aggregazione: **organizzazione (catalogo di origine)**
 | ANAC | 70 | 661.4 | Excellent | 0 |
 | Comune di Torino | 2117 | 663.9 | Excellent | 0 |
 | Consiglio Regionale della Campania | 25 | 664.0 | Excellent | 0 |
+| Comune di Castiglione del Lago | 5 | 670.0 | Excellent | 0 |
 | Comune di Bitritto | 5 | 670.0 | Excellent | 0 |
 | Comune di Valenzano | 5 | 670.0 | Excellent | 0 |
-| Comune di Castiglione del Lago | 5 | 670.0 | Excellent | 0 |
 | Regione Umbria | 452 | 673.1 | Excellent | 0 |
 | Ministero della Salute | 51 | 675.5 | Excellent | 0 |
 | Regione Emilia Romagna | 1889 | 677.4 | Excellent | 0 |
@@ -97,4 +97,4 @@ Livello di aggregazione: **organizzazione (catalogo di origine)**
 | Istituto Nazionale di Statistica ISTAT | 13 | 680.8 | Excellent | 0 |
 | INPS | 2500 | 681.3 | Excellent | 0 |
 | Agenzia Laore Sardegna | 13 | 682.7 | Excellent | 0 |
-| Comune di Castelfiorentino | 6 | 683.3 | Excellent | 0 |
+| Agenzia Nazionale per la Sicurezza delle Ferrovie e delle Infrastrutture Stradali e Autostradali | 21 | 683.3 | Excellent | 0 |
